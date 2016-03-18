@@ -1,4 +1,5 @@
 {% extends "global/Instructions.html" %}
+{% load staticfiles otree_tags %}
 
 {% block instructions %}
 <p>
@@ -7,4 +8,25 @@ You have been randomly and anonymously paired with another participant. One of y
 <p>
 To start, participant A receives 100 points; participant B receives nothing. Participant A can send some or all of his 100 points to participant B. Before B receives these points they will be tripled. Once B receives the tripled points he can decide to send some or all of his points to A.
 </p>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "trust/trust_demo.js" %}"></script>
+
+<script>
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.trust_demo();
+
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+}
+$(function() { init() });
+</script>
+<canvas id="canvas" width="600" height="480" style="background-color:#CCD1DB"></canvas>
+
 {% endblock %}
