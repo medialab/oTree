@@ -54,3 +54,9 @@ input {
          -o-transform:skew(8deg) rotate(3deg);
             transform:skew(8deg) rotate(3deg);
 }
+
+.canvas {
+    position: relative;
+    left: 50%;
+    margin-left: -300px;
+}

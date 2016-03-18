@@ -19,6 +19,10 @@ class Introduction(Page):
     def vars_for_template(self):
         return {'amount_allocated': Constants.amount_allocated}
 
+class Simulation(Page):
+
+    template_name = 'trust/Simulation.html'
+
 
 class Question1(Page):
     template_name = 'global/Question.html'
@@ -110,6 +114,7 @@ class Results(Page):
 
 page_sequence =  [
         Introduction,
+        Simulation,
         Question1,
         Feedback,
         Send,

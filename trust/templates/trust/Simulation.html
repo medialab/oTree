@@ -1,0 +1,50 @@
+{% extends "global/Simulation.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+<p>
+Demo...
+</p>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "trust/trust_simulation.js" %}"></script>
+
+<script>
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.trust_simulation();
+
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+}
+$(function() { init() });
+</script>
+<div class="container">
+  <canvas id="canvas" width="600" height="480" style="background-color:#CCD1DB" class="col-sm-6 col-md-6 col-lg-6"></canvas>
+  <div class="form">
+    <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+      <label for="amount">Player A amount:</label>
+      <input class="form-control" type="number" id="amountA" min="0" max="10">
+      <button class="btn btn-default">Envoyer</button>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+      <label for="amount">Player B amount:</label>
+      <input class="form-control" type="number" id="amountB" min="0" max="10">
+      <button class="btn btn-default" id="send">Envoyer</button>
+    </div>
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3">
+    <br><br>
+    <button class="btn btn-warning col-sm-12 col-md-12 col-lg-12" id="reset">Reset</button>
+  </div>
+</div>
+
+{% endblock %}
