@@ -116,8 +116,8 @@ page_sequence =  [
         Introduction,
         Simulation,
         Send,
-        WaitPage,
+        #WaitPage,
         SendBack,
-        ResultsWaitPage,
-        Results,
+        # ResultsWaitPage,
+        # Results,
     ]

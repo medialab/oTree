@@ -77,5 +77,6 @@ page_sequence = [Introduction,
             Question1,
             Feedback1,
             Offer,
-            ResultsWaitPage,
-            Results]
+            # ResultsWaitPage,
+            # Results
+        ]

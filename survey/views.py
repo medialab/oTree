@@ -24,6 +24,5 @@ class CognitiveReflectionTest(Page):
         self.player.set_payoff()
 
 page_sequence = [
-    Demographics,
-    CognitiveReflectionTest
+    Demographics, CognitiveReflectionTest
 ]

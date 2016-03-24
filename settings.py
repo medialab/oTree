@@ -129,6 +129,12 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
+        'name': 'sowell_trust',
+        'display_name': 'Sowell TRUST',
+        'num_demo_participants': 6,
+        'app_sequence': ['public_goods', 'dictator', 'trust', 'iat', 'survey']
+    },
+    {
         'name': 'iat',
         'display_name': 'Implicit Association Test',
         'num_demo_participants': 1,
