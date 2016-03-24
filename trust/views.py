@@ -115,8 +115,6 @@ class Results(Page):
 page_sequence =  [
         Introduction,
         Simulation,
-        Question1,
-        Feedback,
         Send,
         WaitPage,
         SendBack,
