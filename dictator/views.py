@@ -37,8 +37,8 @@ class Feedback1(Page):
     def vars_for_template(self):
         p = self.player
         return {'answers': {
-                'participant 1': [p.training_participant1_payoff, 88],
-                'participant 2': [p.training_participant2_payoff, 12]}}
+                'participant 1': [p.training_participant1_payoff, 8.8],
+                'participant 2': [p.training_participant2_payoff, 1.2]}}
 
 
 class Offer(Page):

@@ -1,10 +1,32 @@
 {% extends "global/Instructions.html" %}
+{% load staticfiles otree_tags %}
 
 {% block instructions %}
 <p>
-You will be paired randomly and anonymously with another participant. In this study, one of you will be Participant 1 and the other Participant 2. Prior to making a decision, you will learn your role, which will be randomly assigned. 
+You will be paired randomly and anonymously with another participant. In this study, one of you will be Participant 1 and the other Participant 2. Prior to making a decision, you will learn your role, which will be randomly assigned.
 </p>
 <p>
-There are {{Constants.allocated_amount}} to split. Participant 1 will decide how many points she or he will retain. Then the rest will go to Participant 2.
+There are {{Constants.allocated_amount}} to split. Participant 1 will decide how many € she or he will retain. Then the rest will go to Participant 2.
 </p>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "dictator/dictator_demo.js" %}"></script>
+
+<script>
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.dictator_demo();
+
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+}
+$(function() { init() });
+</script>
+<canvas id="canvas" class="canvas" width="600" height="480" style="background-color:#CCD1DB"></canvas>
+
 {% endblock %}

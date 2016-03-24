@@ -129,6 +129,12 @@ SESSION_CONFIG_DEFAULTS = {
 
 SESSION_CONFIGS = [
     {
+        'name': 'iat',
+        'display_name': 'Implicit Association Test',
+        'num_demo_participants': 1,
+        'app_sequence': ['iat']
+    },
+    {
         'name': 'public_goods',
         'display_name': "Public Goods",
         'num_demo_participants': 3,

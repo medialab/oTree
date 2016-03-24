@@ -47,9 +47,9 @@ class Constants(BaseConstants):
     players_per_group = 2
     num_rounds = 1
 
-    bonus = c(10)
+    bonus = c(1)
     # Initial amount allocated to the dictator
-    allocated_amount = c(100)
+    allocated_amount = c(10)
 
 
 class Subsession(BaseSubsession):
