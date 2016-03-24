@@ -39,11 +39,11 @@ class Constants(BaseConstants):
     num_rounds = 1
 
     #"""Amount allocated to each player"""
-    endowment = c(100)
+    endowment = c(10)
     efficiency_factor = 1.8
     base_points = c(10)
 
-    question_correct = c(92)
+    question_correct = c(9.2)
 
 
 class Subsession(BaseSubsession):

@@ -1,16 +1,39 @@
-<div class="box effect7">
-    <h4>Instructions</h4>
-    <p>
-        In this study, you will be in a randomly formed group of {{ Constants.players_per_group }} participants. Each participant in the group is given {{ Constants.endowment }}. The group
-        has the opportunity to undertake a joint project. Each participant in the group decides how much she or he is going to contribute to
-        the project. Contribution could be any integer from 0 to {{ Constants.endowment }}.
-    </p>
-    <p>
-        The earnings from the project are calculated as follows: The contributions of all {{ Constants.players_per_group }} participants are added up, the total contribution
-        is multiplied by a factor of {{ Constants.efficiency_factor }}, and the resulting amount is the total earnings from the project, which is evenly split among all {{ Constants.players_per_group }}
-        participants. Your payoff equals your earnings from the project, plus the amount you did not contribute.
-    </p>
-    <p>
-    For your convenience, these instructions will remain available to you on all subsequent screens of this study.
-    </p>
-</div>
+{% extends "global/Instructions.html" %}
+{% load staticfiles otree_tags %}
+
+{% block instructions %}
+<p>
+    In this study, you will be in a randomly formed group of {{ Constants.players_per_group }} participants. Each participant in the group is given {{ Constants.endowment }}. The group
+    has the opportunity to undertake a joint project. Each participant in the group decides how much she or he is going to contribute to
+    the project. Contribution could be any integer from 0 to {{ Constants.endowment }}.
+</p>
+<p>
+    The earnings from the project are calculated as follows: The contributions of all {{ Constants.players_per_group }} participants are added up, the total contribution
+    is multiplied by a factor of {{ Constants.efficiency_factor }}, and the resulting amount is the total earnings from the project, which is evenly split among all {{ Constants.players_per_group }}
+    participants. Your payoff equals your earnings from the project, plus the amount you did not contribute.
+</p>
+<p>
+For your convenience, these instructions will remain available to you on all subsequent screens of this study.
+</p>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "public_goods/public_goods_demo.js" %}"></script>
+
+<script>
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.public_good_demo();
+
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+}
+$(function() { init() });
+</script>
+<canvas id="canvas" class="canvas" width="600" height="480" style="background-color:#CCD1DB"></canvas>
+
+{% endblock %}
