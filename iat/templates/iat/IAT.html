@@ -1,0 +1,54 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+{% load static %}
+
+
+{% block scripts %}
+  <script src={% static "js/iat.js" %}></script>
+  <script>
+    var data = {{Constants.data|safe}};
+    IAT.begin(data)
+       .then(function(results) {
+         console.log(results);
+         $('input[name="iat_results"]').val(JSON.stringify(results));
+         $('#form').submit();
+       })
+  </script>
+{% endblock %}
+
+{% block content %}
+
+    <style>
+      #iat_test {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      .wrong-answer {
+        display: block;
+        opacity: 1;
+        position: absolute;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+        margin-top: -245px;
+        font-size: 300px;
+        font-weight: 700;
+        color: red;
+        opacity: 0;
+      }
+
+    </style>
+
+    <input type="hidden" name="iat_results" />
+
+    <main id="iat_test">
+      <div class="row">
+        <div class="category left col-md-4">LEFT</div>
+        <div class="stimuli col-md-4">stimuli</div>
+        <div class="category right col-md-4">RIGHT</div>
+      </div>
+      <div class="wrong-answer">✕</div>
+    </main>
+
+{% endblock %}

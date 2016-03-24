@@ -1,0 +1,78 @@
+{
+  "config": {
+    "title": "IAT",
+    "keycodes": {
+      "left": 69,
+      "right": 73
+    },
+    "answer_time_limit": 5
+  },
+
+  "frames": [
+    {
+      "name": "trustworthy/untrustworthy",
+      "categories_stimuli": [
+        {
+          "category": "trustworthy",
+          "stimuli": [
+            "Truthful", "Moral", "Transparent", "Capable", "Skilful"
+          ]
+        },
+        {
+          "category": "untrustworthy",
+          "stimuli": [
+            "Lying", "Corrupt", "Immoral", "Inefficient", "Unskilled"
+          ]
+        }
+      ],
+      "stimuli_sequence":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
+    },
+    {
+      "name": "competent/incompetent",
+      "categories_stimuli": [
+        {
+          "category": "competent",
+          "stimuli": [
+            "Capable", "Skilful", "Proficient", "Smart", "Reliable"
+          ]
+        },
+        {
+          "category": "incompetent",
+          "stimuli": [
+            "Inefficient", "Unskilled", "Inexperienced", "Useless", "Powerless"
+          ]
+        }
+      ],
+      "stimuli_sequence":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
+    }
+  ],
+
+  "extras": [
+    {
+      "name": "governement",
+      "categories_stimuli": [
+        {
+          "category": "governement",
+          "stimuli": [
+            "Politicians", "Regulation", "Public servants", "Public administration", "State", "Judge"
+          ]
+        }
+      ],
+      "stimuli_sequence_left":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1],
+      "stimuli_sequence_right":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
+    },
+    {
+      "name": "judicial system",
+      "categories_stimuli": [
+        {
+          "category": "judicial system",
+          "stimuli": [
+            "Judge", "Laywer", "Department of Justice", "Court", "Public prosecutor"
+          ]
+        }
+      ],
+      "stimuli_sequence_left":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1],
+      "stimuli_sequence_right":[0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1]
+    }
+  ]
+}
