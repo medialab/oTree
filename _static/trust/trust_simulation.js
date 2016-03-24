@@ -1209,8 +1209,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		this.bubble1.label.text = amount1.toString() + currency;
 		this.bubble2.label.text = amount2.toString() + currency;
 	}
-	this.frame_84 = function() {
-		this.stop();
+	this.frame_54 = function() {
 		if (window) {
 			/**
 			 * Define/get default values.
@@ -1313,9 +1312,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				}.bind(this);
 				
 				var multiplyMoney = function (cartIndex, multiplier) {
-					var newAmount = carts[cartIndex].money * multiplier;
+					window.TRUST.multipliedMoney = carts[cartIndex].money * multiplier;
 					batchRemove(cartIndex);
-					batchAdd(cartIndex, newAmount, 'grey');
+					batchAdd(cartIndex, window.TRUST.multipliedMoney, 'grey');
 				}
 		
 				return {
@@ -1376,20 +1375,27 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					return this;
 				}.bind(this);
 				
-				// Initialize money stack for each player.
-				for (var i = 0; i < 2; i++) {
-					for (var j = 0; j < startAmount; j++) {
-						if (i === 0) {
-							increment(i, 'green');
-						} else {
-							increment(i, 'orange');
+				var reset = function () {
+					for (var i = 0; i < players.length; i++) {
+						while (players[i].stack.length > 0) {
+							decrement(i);
 						}
 					}
-				}
+					
+					for (var i = 0; i < players.length; i++) {
+						var colors = ['green', 'orange'];
+						while (players[i].stack.length < startAmount) {
+							increment(i, colors[i]);
+						}
+					}
+				}.bind(this);
+				
+				reset();
 		
 				return {
 					increment: increment,
-					decrement: decrement
+					decrement: decrement,
+					reset: reset
 				}
 			}.bind(this);
 			
@@ -1464,7 +1470,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 			}.bind(this);
 			
 			var reset = function () {
-				this.gotoAndPlay(1);
+				this.gotoAndPlay('start');
+				playersControls.reset();
 			}.bind(this);
 		
 			var init = function () {
@@ -1476,6 +1483,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		
 			window.TRUST = window.TRUST || init();
 		}
+	}
+	this.frame_84 = function() {
+		this.stop();
 	}
 	this.frame_123 = function() {
 		window.TRUST.operate.passInFactory();
@@ -1496,7 +1506,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(50).call(this.frame_84).wait(39).call(this.frame_123).wait(68).call(this.frame_191).wait(43).call(this.frame_234).wait(105).call(this.frame_339).wait(70).call(this.frame_409).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(20).call(this.frame_54).wait(30).call(this.frame_84).wait(39).call(this.frame_123).wait(68).call(this.frame_191).wait(43).call(this.frame_234).wait(105).call(this.frame_339).wait(70).call(this.frame_409).wait(1));
 
 	// multiplier
 	this.bubbleMultiplier = new lib.multiplier();
@@ -1513,10 +1523,18 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 
 	this.timeline.addTween(cjs.Tween.get(this.cart2).wait(74).to({_off:false},0).to({alpha:1},5,cjs.Ease.get(1)).wait(113).to({x:522.6,y:241.9},5,cjs.Ease.get(1)).to({x:223.6,y:375.9},32,cjs.Ease.get(1)).to({x:162.3,y:338.5},5).wait(176));
 
+	// Calque 1 (mask)
+	var mask = new cjs.Shape();
+	mask._off = true;
+	mask.graphics.p("AmXKFIAAmQImzkCIh9goIAArQIHgi0QDTgVDagIQFugOFUBeQAhAJAPAcQFnKHhyLxIv6HCg");
+	mask.setTransform(314.9,241.5);
+
 	// factory front
 	this.instance = new lib.factory();
 	this.instance.setTransform(300,-80,1,1,0,0,0,3.4,6.8);
 	this.instance._off = true;
+
+	this.instance.mask = mask;
 
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(4).to({_off:false},0).to({y:240},5,cjs.Ease.get(1)).wait(401));
 

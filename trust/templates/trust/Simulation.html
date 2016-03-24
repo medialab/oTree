@@ -21,29 +21,119 @@ function init() {
 
   createjs.Ticker.setFPS(lib.properties.fps);
   createjs.Ticker.addEventListener("tick", stage);
+
+  var $amountA = $('#amountA');
+  var $amountB = $('#amountB');
+  var $sendA = $('#sendA');
+  var $sendB = $('#sendB');
+  var $reset = $('#reset');
+  var $next = $('#next')
+
+  var currentTry = 0;
+  var requiredTries = 3;
+
+  var playerAFinished = false;
+  var playerBFInished = false;
+
+  $sendA.click(function (e) {
+    e.preventDefault();
+
+    $reset.attr('disabled', true);
+
+    if (!playerAFinished) {
+      var val = $amountA.val();
+      if (val >= 0 && val <= 10) {
+        for (var i = 0; i < val; i++) {
+          window.TRUST.operate.playerPutsOwnMoney(0, 0);
+        }
+        window.TRUST.operate.moveCart1();
+        playerAFinished = true;
+
+        $sendA.attr('disabled', true);
+        $amountA.attr('disabled', true);
+
+        setTimeout(function () {
+          $sendB.attr('disabled', false);
+          $amountB.attr('disabled', false);
+        }, 4000);
+      }
+    }
+  });
+
+  $sendB.click(function (e) {
+    e.preventDefault();
+
+    if (playerAFinished && !playerBFInished) {
+      var val = $amountB.val();
+      if (val >= 0 && val <= 10) {
+        for (var i = 0; i < val; i++) {
+          window.TRUST.operate.incrementFromCartToCart(0, 1);
+        }
+        window.TRUST.operate.moveCart2();
+        playerBFinished = true;
+
+        $sendB.attr('disabled', true);
+        $amountB.attr('disabled', true);
+
+        ++currentTry;
+
+        if (currentTry === requiredTries) {
+          $reset.addClass('hide');
+          $next.attr('disabled', false);
+          return;
+        }
+
+        $reset.attr('disabled', false);
+      }
+    }
+  });
+
+  $reset.click(function (e) {
+    e.preventDefault();
+
+    window.TRUST.reset();
+
+    playerAFinished = playerBFInished = false;
+
+    $sendA.val(0);
+    $sendB.attr('disabled', true).val(0);
+    $amountA.attr('disabled', false);
+    $sendA.attr('disabled', false);
+    $amountB.attr('disabled', true);
+  });
+
+  setTimeout(function () {
+    $('.commands').removeClass('hide')
+  }, 3000);
+
 }
 $(function() { init() });
 </script>
 <div class="container">
-  <canvas id="canvas" width="600" height="480" style="background-color:#CCD1DB" class="col-sm-6 col-md-6 col-lg-6"></canvas>
-  <div class="form">
+  <canvas id="canvas" width="600" height="480"
+          style="background-color:#CCD1DB"
+          class="col-sm-6 col-md-6 col-lg-6">
+  </canvas>
+  <div class="form commands hide">
     <div class="col-sm-3 col-md-3 col-lg-3 form-group">
       <label for="amount">Player A amount:</label>
       <input class="form-control" type="number" id="amountA" min="0" max="10">
-      <button class="btn btn-default">Envoyer</button>
+      <a class="btn btn-default" id="sendA">Envoyer</a>
     </div>
   </div>
 
-  <div class="form">
+  <div class="form commands hide">
     <div class="col-sm-4 col-md-4 col-lg-4 form-group">
       <label for="amount">Player B amount:</label>
-      <input class="form-control" type="number" id="amountB" min="0" max="10">
-      <button class="btn btn-default" id="send">Envoyer</button>
+      <input class="form-control" type="number" id="amountB" min="0" max="10" disabled="disabled">
+      <a class="btn btn-default" id="sendB" disabled="disabled">Send</a>
     </div>
   </div>
-  <div class="col-sm-3 col-md-3 col-lg-3">
+  <div class="col-sm-3 col-md-3 col-lg-3 commands hide">
     <br><br>
-    <button class="btn btn-warning col-sm-12 col-md-12 col-lg-12" id="reset">Reset</button>
+    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">Reset</a>
+    <br><br><br>
+    <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="next">Next</button>
   </div>
 </div>
 

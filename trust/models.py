@@ -38,7 +38,7 @@ class Constants(BaseConstants):
     num_rounds = 1
 
     #Initial amount allocated to each player
-    amount_allocated = c(100)
+    amount_allocated = c(10)
     multiplication_factor = 3
     bonus = c(10)
 
