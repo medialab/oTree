@@ -12,6 +12,10 @@ def vars_for_all_templates(self):
     return {'instructions': 'trust/Instructions.html', 'total_q': 1}
 
 
+class EndGame(Page):
+    pass
+
+
 class ExperimentIntroduction(Page):
 
     form_model = models.Player
@@ -128,6 +132,7 @@ page_sequence =  [
         Send,
         #WaitPage,
         SendBack,
+        EndGame
         # ResultsWaitPage,
         # Results,
     ]
