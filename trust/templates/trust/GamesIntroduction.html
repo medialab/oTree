@@ -1,0 +1,21 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+  <h3>General introduction to games</h3>
+
+  <p>We will start with the tasks section of the study, which will require you to make 3 choices in total. This part of the study will allow you to earn money.</p>
+
+  <p><strong>You will be grouped or paired with other participants, who are other respondents from [COUNTRY]</strong> at the beginning of each task.</p>
+  <p><strong>The other participants in your group or pair will be different in each task</strong>: the same person will never be in your group more than once.
+  <br/>Your earnings in each task will depend on your decisions and those of the other participants in your group.</p>
+
+  <h3>How will your earnings be calculated?</h3>
+  <p><strong>The other participants may not be online at this moment.</strong><br/>
+  Your answers in each task will be matched with those of other participants in order to calculate your earnings from each section.</p>
+  <p>One task will be randomly selected at the end of the study.
+  <strong>The amount of money that you will receive will correspond to your earnings in this task.</strong>
+  The results will be shared with you at the end of the study.</p>
+
+  {% next_button %}
+{% endblock %}

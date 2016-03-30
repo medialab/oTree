@@ -53,7 +53,8 @@ class Results(Page):
             'individual_earnings': self.player.payoff - Constants.base_points,
         }
 
-page_sequence = [Introduction,
+page_sequence = [
+            Introduction,
             Question,
             Feedback,
             Contribute,

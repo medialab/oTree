@@ -132,14 +132,14 @@ SESSION_CONFIGS = [
         'name': 'sowell_trust',
         'display_name': 'Sowell TRUST',
         'num_demo_participants': 6,
-        'app_sequence': ['public_goods', 'dictator', 'trust', 'iat', 'survey']
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey']
     },
-    # {
-    #     'name': 'iat',
-    #     'display_name': 'Implicit Association Test',
-    #     'num_demo_participants': 1,
-    #     'app_sequence': ['iat']
-    # },
+    {
+        'name': 'iat',
+        'display_name': 'Implicit Association Test',
+        'num_demo_participants': 1,
+        'app_sequence': ['iat']
+    },
     # {
     #     'name': 'public_goods',
     #     'display_name': "Public Goods",

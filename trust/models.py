@@ -73,8 +73,10 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
 
-    training_answer_x = models.CurrencyField(verbose_name='Participant A would have')
-    training_answer_y = models.CurrencyField(verbose_name='Participant B would have')
+    #training_answer_x = models.CurrencyField(verbose_name='Participant A would have')
+    #training_answer_y = models.CurrencyField(verbose_name='Participant B would have')
+
+    email = models.EmailField()
 
     def role(self):
         return {1: 'A', 2: 'B'}[self.id_in_group]

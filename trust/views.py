@@ -12,6 +12,14 @@ def vars_for_all_templates(self):
     return {'instructions': 'trust/Instructions.html', 'total_q': 1}
 
 
+class ExperimentIntroduction(Page):
+
+    form_model = models.Player
+    form_fields = ['email']
+
+class GamesIntroduction(Page):
+    pass
+
 class Introduction(Page):
 
     template_name = 'global/Introduction.html'
@@ -113,6 +121,8 @@ class Results(Page):
 
 
 page_sequence =  [
+        ExperimentIntroduction,
+        GamesIntroduction,
         Introduction,
         Simulation,
         Send,

@@ -2,12 +2,14 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
-<p>
-You have been randomly and anonymously paired with another participant. One of you will be selected at random to be participant A; the other will be participant B. You will learn whether you are participant A or B prior to making any decision.
-</p>
-<p>
-To start, participant A receives 10 euros; participant B receives nothing. Participant A can send some or all of his 10 euros to participant B. Before B receives these points they will be tripled. Once B receives the tripled points he can decide to send some or all of his points to A.
-</p>
+<h1>Trust Game</h1>
+<hr/>
+<p>In the first task, two people participate: Person A and Person B.
+<br/>Your role (A or B) will be revealed at the beginning of the task.</p>
+<p>This other participant, with whom you will interact only once during the study, also lives in [COUNTRY].
+<br/>Both participants will receive 10 Euro at the beginning of the game.</p>
+<p>If you are Person A, you must decide how much of your 10 Euro you want to send to Person B. This amount will automatically be multiplied by 3.<br/>
+If you are Person B, you have to decide, before knowing the decision of Person A, how much out of each of the amounts that Person A could send you, you want to send back.</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "trust/trust_demo.js" %}"></script>
