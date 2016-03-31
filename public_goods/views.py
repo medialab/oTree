@@ -24,6 +24,10 @@ class Feedback(Page):
         return True
 
 
+class DecisionInstructions(Page):
+    pass
+
+
 class Contribute(Page):
 
     """Player: Choose how much to contribute"""
@@ -55,8 +59,9 @@ class Results(Page):
 
 page_sequence = [
             Introduction,
-            Question,
-            Feedback,
+            # Question,
+            # Feedback,
+            DecisionInstructions,
             Contribute,
             # ResultsWaitPage,
             # Results
