@@ -73,5 +73,49 @@ class Player(BasePlayer):
 
     question = models.CurrencyField()
 
+    contribution_back_0 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_1 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_2 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_3 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_4 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_5 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_6 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_7 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_8 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_9 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
+    contribution_back_10 = models.CurrencyField(
+        min=0, max=Constants.endowment,
+    )
+
     def question_correct(self):
         return self.question == Constants.question_correct

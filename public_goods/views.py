@@ -10,6 +10,10 @@ class Introduction(Page):
     """Description of the game: How to play and returns expected"""
     pass
 
+
+class EndGame(Page):
+    pass
+
 class Question(Page):
 
     def is_displayed(self):
@@ -38,6 +42,24 @@ class Contribute(Page):
     timeout_submission = {'contribution': c(Constants.endowment/2)}
 
 
+class ContributeBack(Page):
+
+    form_model = models.Player
+    form_fields = [
+        'contribution_back_0',
+        'contribution_back_1',
+        'contribution_back_2',
+        'contribution_back_3',
+        'contribution_back_4',
+        'contribution_back_5',
+        'contribution_back_6',
+        'contribution_back_7',
+        'contribution_back_8',
+        'contribution_back_9',
+        'contribution_back_10'
+    ]
+
+
 class ResultsWaitPage(WaitPage):
 
     def after_all_players_arrive(self):
@@ -63,6 +85,8 @@ page_sequence = [
             # Feedback,
             DecisionInstructions,
             Contribute,
+            ContributeBack,
             # ResultsWaitPage,
             # Results
+            EndGame
         ]

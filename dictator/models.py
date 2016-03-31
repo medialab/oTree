@@ -59,17 +59,17 @@ class Subsession(BaseSubsession):
 
 class Group(BaseGroup):
 
-    kept = models.CurrencyField(
-        doc="""Amount dictator decided to keep for himself""",
+    given = models.CurrencyField(
+        doc="""Amount dictator decided to given""",
         min=0, max=Constants.allocated_amount,
-        verbose_name='I will keep (from 0 to %i)' % Constants.allocated_amount
+        verbose_name=''
     )
 
     def set_payoffs(self):
         p1 = self.get_player_by_id(1)
         p2 = self.get_player_by_id(2)
-        p1.payoff = Constants.bonus + self.kept
-        p2.payoff = Constants.bonus + Constants.allocated_amount - self.kept
+        p1.payoff = Constants.bonus + self.given
+        p2.payoff = Constants.bonus + Constants.allocated_amount - self.given
 
 
 class Player(BasePlayer):

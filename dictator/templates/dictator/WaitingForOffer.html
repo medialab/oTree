@@ -2,13 +2,14 @@
 {% load staticfiles otree_tags %}
 
 {% block title %}
-Results
+Now the task begins.
 {% endblock %}
 
 {% block content %}
 <p>
+Your role is that of Person B.<br/>
+While Person A is deciding how much money to send to you, please click the “Next” button to continue.
 <p>
 {% next_button %}
 </p>
-{% include instructions %}
 {% endblock %}

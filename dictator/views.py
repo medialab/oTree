@@ -10,6 +10,10 @@ def vars_for_all_templates(self):
             'constants': Constants}
 
 
+class EndGame(Page):
+    pass
+
+
 class Introduction(Page):
 
     template_name = 'global/Introduction.html'
@@ -44,10 +48,16 @@ class Feedback1(Page):
 class Offer(Page):
 
     form_model = models.Group
-    form_fields = ['kept']
+    form_fields = ['given']
 
     def is_displayed(self):
         return self.player.id_in_group == 1
+
+
+class WaitingForOffer(Page):
+
+    def is_displayed(self):
+        return self.player.id_in_group == 2
 
 
 class ResultsWaitPage(WaitPage):
@@ -65,18 +75,20 @@ class ResultsWaitPage(WaitPage):
 class Results(Page):
 
     def offer(self):
-        return Constants.allocated_amount - self.group.kept
+        return Constants.allocated_amount - self.group.given
 
     def vars_for_template(self):
         return {
-            'offer': Constants.allocated_amount - self.group.kept,
+            'offer': Constants.allocated_amount - self.group.given,
         }
 
 
 page_sequence = [Introduction,
-            Question1,
-            Feedback1,
+            # Question1,
+            # Feedback1,
             Offer,
+            WaitingForOffer,
+            EndGame,
             # ResultsWaitPage,
             # Results
         ]
