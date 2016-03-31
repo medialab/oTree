@@ -59,16 +59,66 @@ class Group(BaseGroup):
         doc="""Amount sent by P1""",
     )
 
-    sent_back_amount = models.CurrencyField(
-        doc="""Amount sent back by P2""",
+    sent_back_amount_0 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 0 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_1 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 1 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_2 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 2 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_3 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 3 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_4 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 4 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_5 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 5 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_6 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 6 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_7 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 7 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_8 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 8 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_9 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 9 from P1""",
+        min=c(0),
+    )
+
+    sent_back_amount_10 = models.CurrencyField(
+        doc="""Amount sent back by P2 for an contribution of 10 from P1""",
         min=c(0),
     )
 
     def set_payoffs(self):
         p1 = self.get_player_by_id(1)
         p2 = self.get_player_by_id(2)
-        p1.payoff = Constants.bonus + Constants.amount_allocated - self.sent_amount + self.sent_back_amount
-        p2.payoff = Constants.bonus + self.sent_amount * Constants.multiplication_factor - self.sent_back_amount
+        # p1.payoff = Constants.bonus + Constants.amount_allocated - self.sent_amount + self.sent_back_amount
+        # p2.payoff = Constants.bonus + self.sent_amount * Constants.multiplication_factor - self.sent_back_amount
 
 
 class Player(BasePlayer):

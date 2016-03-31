@@ -87,18 +87,30 @@ class SendBack(Page):
     P2 sends back some amount (of the tripled amount received) to P1"""
 
     form_model = models.Group
-    form_fields = ['sent_back_amount']
+    form_fields = [
+        'sent_back_amount_0',
+        'sent_back_amount_1',
+        'sent_back_amount_2',
+        'sent_back_amount_3',
+        'sent_back_amount_4',
+        'sent_back_amount_5',
+        'sent_back_amount_6',
+        'sent_back_amount_7',
+        'sent_back_amount_8',
+        'sent_back_amount_9',
+        'sent_back_amount_10',
+    ]
 
     def is_displayed(self):
         return self.player.id_in_group == 2
 
     def vars_for_template(self):
-        tripled_amount = self.group.sent_amount * Constants.multiplication_factor
+        #tripled_amount = self.group.sent_amount * Constants.multiplication_factor
 
-        return {'amount_allocated': Constants.amount_allocated,
-                'tripled_amount': tripled_amount,
-                'prompt':
-                'Please enter a number from 0 to %s:' % tripled_amount}
+        return {'amount_allocated': Constants.amount_allocated}
+                #'tripled_amount': tripled_amount,
+                #'prompt':
+                #'Please enter a number from 0 to %s:' % tripled_amount}
 
     def sent_back_amount_max(self):
         return self.group.sent_amount * Constants.multiplication_factor
@@ -130,7 +142,6 @@ page_sequence =  [
         Introduction,
         Simulation,
         Send,
-        #WaitPage,
         SendBack,
         EndGame
         # ResultsWaitPage,
