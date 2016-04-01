@@ -12,9 +12,13 @@ class Introduction(Page):
     template_name = 'global/Introduction.html'
 
 
+class EndGame(Page):
+    pass
+
+
 class IAT(Page):
     form_model = models.Player
     form_fields = ['iat_results']
 
 
-page_sequence = [Introduction, IAT]
+page_sequence = [Introduction, IAT, EndGame]

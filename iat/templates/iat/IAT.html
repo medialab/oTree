@@ -9,9 +9,9 @@
     var data = {{Constants.data|safe}};
     IAT.begin(data)
        .then(function(results) {
-         console.log(results);
-         //$('input[name="iat_results"]').val(JSON.stringify(results));
-         //$('#form').submit();
+         //console.log(results);
+         $('input[name="iat_results"]').val(JSON.stringify(results));
+         $('#form').submit();
        })
   </script>
 {% endblock %}
@@ -44,9 +44,9 @@
 
     <main id="iat_test">
       <div class="row">
-        <div class="category left col-md-4">LEFT</div>
-        <div class="stimuli col-md-4">stimuli</div>
-        <div class="category right col-md-4">RIGHT</div>
+        <div class="category left col-xs-4 col-sm-4 col-md-4 col-lg-4">LEFT</div>
+        <div class="stimuli col-xs-4 col-sm-4 col-md-4 col-lg-4">stimuli</div>
+        <div class="category right col-xs-4 col-sm-4 col-md-4 col-lg-4">RIGHT</div>
       </div>
       <div class="wrong-answer">✕</div>
     </main>
