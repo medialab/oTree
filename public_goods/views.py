@@ -14,6 +14,11 @@ class Introduction(Page):
 class EndGame(Page):
     pass
 
+
+class Simulation(Page):
+    pass
+
+
 class Question(Page):
 
     def is_displayed(self):
@@ -81,6 +86,7 @@ class Results(Page):
 
 page_sequence = [
             Introduction,
+            Simulation,
             # Question,
             # Feedback,
             DecisionInstructions,
