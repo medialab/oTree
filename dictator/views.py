@@ -50,9 +50,6 @@ class Offer(Page):
     form_model = models.Group
     form_fields = ['given']
 
-    def is_displayed(self):
-        return self.player.id_in_group == 1
-
 
 class WaitingForOffer(Page):
 
@@ -87,7 +84,6 @@ page_sequence = [Introduction,
             # Question1,
             # Feedback1,
             Offer,
-            WaitingForOffer,
             EndGame,
             # ResultsWaitPage,
             # Results
