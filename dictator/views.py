@@ -14,6 +14,10 @@ class EndGame(Page):
     pass
 
 
+class Simulation(Page):
+    pass
+
+
 class Introduction(Page):
 
     template_name = 'global/Introduction.html'
@@ -83,6 +87,7 @@ class Results(Page):
 page_sequence = [Introduction,
             # Question1,
             # Feedback1,
+            Simulation,
             Offer,
             EndGame,
             # ResultsWaitPage,
