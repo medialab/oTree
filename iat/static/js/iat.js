@@ -314,6 +314,8 @@ $(function(window, undefined) {
 
         timeLimitForAnswer = setTimeout(timeLimitHandler, answerTimeLimit * 1000);
         $window.on('keyup', keyUpHandler);
+        $('.btn-left').on('click', leftBtnHandler);
+        $('.btn-right').on('click', rightBtnHandler);
         timer.start();
       }
 
@@ -329,12 +331,12 @@ $(function(window, undefined) {
 
         clearTimeout(timeLimitForAnswer);
         $window.off('keyup', keyUpHandler);
+        $('.btn-left').off('click', leftBtnHandler);
+        $('.btn-right').off('click', rightBtnHandler);
       }
 
       /**
        * Handler for user input on keyboard.
-       * Check answer validity and resolve promise if valid.
-       * Otherwise, reset trial.
        *
        * @param  {Object} e jQuery.Event passed to handler.
        * @return {void}
@@ -342,16 +344,38 @@ $(function(window, undefined) {
       function keyUpHandler(e) {
         if (!keyPressed) {
           keyPressed = leftAndRightKeys[e.keyCode];
-
-          if (answerIsOk(keyPressed)) {
-            save('results', trial, timer.getElapsed())
-            dispose();
-            return deferred.resolve();
-          }
-
-          displayWrongAnswerFeedback(true);
-          setError(trial, timer.getElapsed());
+          return checkUserInputValidity(keyPressed);
         }
+      }
+
+      /**
+       * Check answer validity and resolve promise if valid.
+       * Otherwise, reset trial.
+       *
+       * @param  {string} leftOrRight 'left' or 'right' depending on user's input.
+       * @return {Object|void}  Resolve promise if correct.
+       */
+      function checkUserInputValidity(leftOrRight) {
+        if (answerIsOk(leftOrRight)) {
+          save('results', trial, timer.getElapsed())
+          dispose();
+          return deferred.resolve();
+        }
+
+        displayWrongAnswerFeedback(true);
+        setError(trial, timer.getElapsed());
+      }
+
+      function leftBtnHandler(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return checkUserInputValidity('left');
+      }
+
+      function rightBtnHandler(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        return checkUserInputValidity('right');
       }
 
       /**
