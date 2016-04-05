@@ -59,11 +59,12 @@ $(function(window, undefined) {
         $uiCategoryRight = $('.right'),
         $uiStimuli = $('.stimuli'),
         $uiWrongAnswerCross = $('.wrong-answer'),
-        $window = $(window);
+        $window = $(window),
+        mightBeUsingTablet = false;
 
     var answerStore = {
       results: [],
-      errors: []
+      errors: [],
     };
 
     /**
@@ -270,6 +271,10 @@ $(function(window, undefined) {
         .then(function(results) {
           var errorPercentage = (results.errors.length / results.results.length) * 100;
           results['error_percentage'] = errorPercentage;
+
+          var platform = mightBeUsingTablet ? 'tablet' : 'desktop';
+          results['platform'] = platform;
+
           return deferred.resolve(results);
         });
 
@@ -369,12 +374,18 @@ $(function(window, undefined) {
       }
 
       function leftBtnHandler(e) {
+        if (!mightBeUsingTablet) {
+          mightBeUsingTablet = true;
+        }
         e.stopPropagation();
         e.preventDefault();
         return checkUserInputValidity('left');
       }
 
       function rightBtnHandler(e) {
+        if (!mightBeUsingTablet) {
+          mightBeUsingTablet = true;
+        }
         e.stopPropagation();
         e.preventDefault();
         return checkUserInputValidity('right');
