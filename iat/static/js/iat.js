@@ -135,16 +135,26 @@ $(function(window, undefined) {
         var source = unorderedData[seq];
         var item = source.stimuli.shift();
         var result = {
-          correctCategory: source.category,
+          correctCategory: capitalize(source.category),
           stimuli: item,
-          left: unorderedData[0].category,
-          right: unorderedData[1].category,
+          left: capitalize(unorderedData[0].category),
+          right: capitalize(unorderedData[1].category),
           correctPosition: seq === 0 ? 'left' : 'right',
           blockName: name
         };
         source.stimuli.push(item);
         return result;
       });
+    }
+
+    /**
+     * Capitalize first letter.
+     *
+     * @param  {string} str Input string.
+     * @return {string} Capitalized string.
+     */
+    function capitalize(str) {
+      return str[0].toUpperCase() + str.slice(1);
     }
 
     /**
@@ -164,11 +174,11 @@ $(function(window, undefined) {
         name: name,
         categories_stimuli: [
           {
-            category: frameCatStimA.category + '<br />or<br />' + extrasCatStim.category,
+            category: '<span class="word">' + capitalize(frameCatStimA.category) + '</span><br />or<br /><span class="word">' + capitalize(extrasCatStim.category) + '</span>',
             stimuli: extrasCatStim.stimuli.concat(frameCatStimA.stimuli)
           },
           {
-            category: frameCatStimB.category,
+            category: '<span class="word">' + capitalize(frameCatStimB.category) + '</span>',
             stimuli: frameCatStimB.stimuli
           }
         ]
@@ -179,11 +189,11 @@ $(function(window, undefined) {
         name: name,
         categories_stimuli: [
           {
-            category: frameCatStimA.category,
+            category: '<span class="word">' + capitalize(frameCatStimA.category) + '</span>',
             stimuli: frameCatStimA.stimuli
           },
           {
-            category: frameCatStimB.category + '<br />or<br />' + extrasCatStim.category,
+            category: '<span class="word">' + capitalize(frameCatStimB.category) + '</span><br />or<br /><span class="word">' + capitalize(extrasCatStim.category) + '</span>',
             stimuli: extrasCatStim.stimuli.concat(frameCatStimB.stimuli)
           }
         ]

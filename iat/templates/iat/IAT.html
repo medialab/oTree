@@ -5,6 +5,27 @@
 
 {% block scripts %}
   <script src={% static "js/iat.js" %}></script>
+  <style type="text/css">
+    body {
+      background-color: black;
+      color: white;
+    }
+    .word {
+      color: green;
+    }
+    .page-header {
+      border: none;
+    }
+    .well {
+      display: none;
+    }
+
+    .v-align {
+      float: none;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  </style>
   <script>
     var data = {{Constants.data|safe}};
     IAT.begin(data)
@@ -44,9 +65,9 @@
 
     <main id="iat_test">
       <div class="row">
-        <div class="category left col-xs-4 col-sm-4 col-md-4 col-lg-4">LEFT</div>
-        <div class="stimuli col-xs-4 col-sm-4 col-md-4 col-lg-4">stimuli</div>
-        <div class="category right col-xs-4 col-sm-4 col-md-4 col-lg-4">RIGHT</div>
+        <div class="category left v-align col-xs-3 col-sm-3 col-md-3 col-lg-3">LEFT</div>
+        <div class="stimuli v-align col-xs-3 col-sm-3 col-md-3 col-lg-3">stimuli</div>
+        <div class="category right v-align col-xs-3 col-sm-3 col-md-3 col-lg-3">RIGHT</div>
       </div>
       <div class="wrong-answer">✕</div>
     </main>
