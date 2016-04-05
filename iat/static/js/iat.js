@@ -268,6 +268,8 @@ $(function(window, undefined) {
 
       startBlocks(prepareTrials(dataStore))
         .then(function(results) {
+          var errorPercentage = (results.errors.length / results.results.length) * 100;
+          results['error_percentage'] = errorPercentage;
           return deferred.resolve(results);
         });
 
@@ -308,7 +310,7 @@ $(function(window, undefined) {
        * @return {void}
        */
       function reset() {
-        console.log('showing', trial);
+        //console.log('showing', trial);
         displayWrongAnswerFeedback(false);
         dispose();
 
