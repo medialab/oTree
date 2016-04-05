@@ -5,27 +5,6 @@
 
 {% block scripts %}
   <script src={% static "js/iat.js" %}></script>
-  <style type="text/css">
-    body {
-      background-color: black;
-      color: white;
-    }
-    .word {
-      color: green;
-    }
-    .page-header {
-      border: none;
-    }
-    .well {
-      display: none;
-    }
-
-    .v-align {
-      float: none;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  </style>
   <script>
     var data = {{Constants.data|safe}};
     IAT.begin(data)
@@ -40,6 +19,24 @@
 {% block content %}
 
     <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      .page-header {
+        border: none;
+      }
+      .well {
+        display: none;
+      }
+
+      .v-align {
+        float: none;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
       #iat_test {
         text-align: center;
         font-size: 30px;
@@ -48,15 +45,24 @@
       .wrong-answer {
         display: block;
         opacity: 1;
-        position: absolute;
-        width: 300px;
+        position: relative;
+        width: 500px;
         left: 50%;
-        margin-left: -150px;
-        margin-top: -245px;
-        font-size: 300px;
+        margin-left: -250px;
+        margin-top: -350px;
+        font-size: 500px;
+        font-weight: 700;
         font-weight: 700;
         color: red;
         opacity: 0;
+      }
+
+      .category {
+        color: green;
+      }
+
+      .stimuli {
+        top: 230px;
       }
 
     </style>

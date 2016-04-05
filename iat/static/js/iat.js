@@ -174,11 +174,11 @@ $(function(window, undefined) {
         name: name,
         categories_stimuli: [
           {
-            category: '<span class="word">' + capitalize(frameCatStimA.category) + '</span><br />or<br /><span class="word">' + capitalize(extrasCatStim.category) + '</span>',
+            category: capitalize(frameCatStimA.category) + '<br /><span style="color:white">or</span><br />' + capitalize(extrasCatStim.category),
             stimuli: extrasCatStim.stimuli.concat(frameCatStimA.stimuli)
           },
           {
-            category: '<span class="word">' + capitalize(frameCatStimB.category) + '</span>',
+            category: capitalize(frameCatStimB.category),
             stimuli: frameCatStimB.stimuli
           }
         ]
@@ -189,11 +189,11 @@ $(function(window, undefined) {
         name: name,
         categories_stimuli: [
           {
-            category: '<span class="word">' + capitalize(frameCatStimA.category) + '</span>',
+            category: capitalize(frameCatStimA.category),
             stimuli: frameCatStimA.stimuli
           },
           {
-            category: '<span class="word">' + capitalize(frameCatStimB.category) + '</span><br />or<br /><span class="word">' + capitalize(extrasCatStim.category) + '</span>',
+            category: capitalize(frameCatStimB.category) + '<br /><span style="color:white">or</span><br />' + capitalize(extrasCatStim.category),
             stimuli: extrasCatStim.stimuli.concat(frameCatStimB.stimuli)
           }
         ]
