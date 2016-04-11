@@ -5,7 +5,6 @@ from . import models
 from ._builtin import Page
 
 def vars_for_all_templates(self):
-    print self.session.vars['order']
     return {
         'instructions': 'iat/Instructions.html',
         'data': self.session.vars['data'],
