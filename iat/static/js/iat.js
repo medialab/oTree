@@ -107,48 +107,6 @@ $(function(window, undefined) {
     }
 
     /**
-     * Generate a batch of processed data from the raw JSON node.
-     *
-     * @param  {Object} data Raw JSON node of data for the block.
-     * @return {Array} Stack of data to be processed in order.
-     */
-    function generateUnorderedData(data) {
-      return data.categories_stimuli.map(function(catStim, i) {
-        return {
-          index: i,
-          category: catStim.category,
-          stimuli: catStim.stimuli
-        };
-      });
-    }
-
-    /**
-     * Map the unordered data using the defined sequence order.
-     *
-     * @param  {Array}  stimuliSequence Sequence order, pattern of 0 (left) and 1 (right).
-     * @param  {Array}  unorderedData   Array of objects to pick from.
-     * @param  {String} Name of the block.
-     * @return {Array}  A stack of objects usable for displaying trials.
-     *                  The resulting array has a length equal to that of `stimuliSequence`.
-     */
-    function generateOrderedData(stimuliSequence, unorderedData, name) {
-      return stimuliSequence.map(function(seq) {
-        var source = unorderedData[seq];
-        var item = source.stimuli.shift();
-        var result = {
-          correctCategory: capitalize(source.category),
-          stimuli: item,
-          left: capitalize(unorderedData[0].category),
-          right: capitalize(unorderedData[1].category),
-          correctPosition: seq === 0 ? 'left' : 'right',
-          blockName: name
-        };
-        source.stimuli.push(item);
-        return result;
-      });
-    }
-
-    /**
      * Capitalize first letter.
      *
      * @param  {string} str Input string.
@@ -159,92 +117,30 @@ $(function(window, undefined) {
     }
 
     /**
-     * Generate batch of processed data from raw JSON nodes of "extras".
-     *
-     * @param  {String} name          Name of the block.
-     * @param  {Object} frameCatStimA First object of `categories_stimuli` array of the frame.
-     * @param  {Object} frameCatStimB Second object of `categories_stimuli` array of the frame.
-     * @param  {Object} extrasCatStim Object of `categories_stimuli` array of the extra.
-     * @param  {Array}  stimSeqA      Stimuli sequence for the first order.
-     * @param  {Array}  stimSeqB      Stimuli sequence for the second order.
-     * @return {Array}  Array containing two arrays: first order and second order of usable trials.
-     */
-    function generateExtrasData(name, frameCatStimA, frameCatStimB, extrasCatStim, stimSeqA, stimSeqB) {
-      // `A` mixes in a way the extra is displayed to the left.
-      var mixA = {
-        name: name,
-        categories_stimuli: [
-          {
-            category: capitalize(frameCatStimA.category) + '<br /><span style="color:white">or</span><br />' + capitalize(extrasCatStim.category),
-            stimuli: extrasCatStim.stimuli.concat(frameCatStimA.stimuli)
-          },
-          {
-            category: capitalize(frameCatStimB.category),
-            stimuli: frameCatStimB.stimuli
-          }
-        ]
-      };
-
-      // `A` mixes in a way the extra is displayed to the right.
-      var mixB = {
-        name: name,
-        categories_stimuli: [
-          {
-            category: capitalize(frameCatStimA.category),
-            stimuli: frameCatStimA.stimuli
-          },
-          {
-            category: capitalize(frameCatStimB.category) + '<br /><span style="color:white">or</span><br />' + capitalize(extrasCatStim.category),
-            stimuli: extrasCatStim.stimuli.concat(frameCatStimB.stimuli)
-          }
-        ]
-      };
-
-      var orderA = generateOrderedData(
-        stimSeqA, generateUnorderedData(mixA), mixA.name
-      );
-
-      var orderB = generateOrderedData(
-        stimSeqB, generateUnorderedData(mixB), mixB.name
-      );
-
-      return [orderA, orderB];
-    }
-
-    /**
      * Prepare the processed, usable trials.
      *
-     * @param  {Object} data Raw JSON data.
+     * @param  {Object} data  Raw JSON data.
+     * @param  {string} order The order of passage, such as "A B C D"...
      * @return {Array}  The ready-to-use, stack of trial objects.
      */
-    function prepareTrials(data) {
-      var trials = [];
+    function prepareTrials(data, order) {
+      var resultTrials = [];
 
-      // For each "frame", you get a block, i.e. a set of trials fed by "extras".
-      data.frames.forEach(function(frame) {
-        // So you start with a practice round of trials based on the frame only...
-
-        // Prepare the data using the available stimuli.
-        var unorderedData = generateUnorderedData(frame);
-        trials = trials.concat(
-          generateOrderedData(frame.stimuli_sequence, unorderedData, frame.name)
-        );
-
-        // Now "extras" will generate two new blocks each.
-        data.extras.forEach(function(extra) {
-          var name = extra.name + '+' + frame.name;
-          var extrasData = generateExtrasData(
-            name,
-            frame.categories_stimuli[0],
-            frame.categories_stimuli[1],
-            extra.categories_stimuli[0],
-            extra.stimuli_sequence_left,
-            extra.stimuli_sequence_right
-          );
-          trials = trials.concat(extrasData[0], extrasData[1]);
+      // Arrange the trials based on given order.
+      order.split('').forEach(function(character) {
+        data.trials[character].displayed.forEach(function(displayed) {
+          resultTrials.push({
+            correctCategory: capitalize(displayed[displayed.correct]),
+            stimuli: displayed.showing,
+            left: capitalize(displayed.left),
+            right: capitalize(displayed.right),
+            correctPosition: displayed.correct,
+            blockName: displayed.name
+          });
         });
       });
-      return trials;
+
+      return resultTrials;
     }
 
     function setKeyCodesAndTimeLimitFromConfig(dataStore) {
@@ -260,17 +156,20 @@ $(function(window, undefined) {
      * then return the results as a promise.
      *
      * @param  {Array}  dataStore
+     * @param  {string} order The order of passage, such as "A B C D"...
      * @return {Object} A promise resolving with the results payload.
      */
-    function loadBlocks(dataStore) {
+    function loadBlocks(dataStore, order) {
       setKeyCodesAndTimeLimitFromConfig(dataStore);
 
       var deferred = $.Deferred();
 
-      startBlocks(prepareTrials(dataStore))
+      startBlocks(prepareTrials(dataStore, order))
         .then(function(results) {
           var errorPercentage = (results.errors.length / results.results.length) * 100;
           results['error_percentage'] = errorPercentage;
+
+          results['order'] = order;
 
           var platform = mightBeUsingTablet ? 'tablet' : 'desktop';
           results['platform'] = platform;
@@ -315,7 +214,7 @@ $(function(window, undefined) {
        * @return {void}
        */
       function reset() {
-        //console.log('showing', trial);
+        // console.log('showing', trial);
         displayWrongAnswerFeedback(false);
         dispose();
 
@@ -485,8 +384,8 @@ $(function(window, undefined) {
      * Public API.
      */
     return {
-      begin: function(data) {
-        return loadBlocks(data);
+      begin: function(data, order) {
+        return loadBlocks(data, order);
       }
     }
   })(window, undefined);

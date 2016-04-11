@@ -136,17 +136,129 @@ SESSION_CONFIGS = [
         'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey']
     },
     {
+        'name': 'sowell_trust_A1a',
+        'display_name': 'Sowell TRUST (path A1a)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'A1a'
+    },
+    {
+        'name': 'sowell_trust_A1b',
+        'display_name': 'Sowell TRUST (path A1b)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'A1b'
+    },
+    {
+        'name': 'sowell_trust_A2a',
+        'display_name': 'Sowell TRUST (path A2a)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'A2a'
+    },
+    {
+        'name': 'sowell_trust_A2b',
+        'display_name': 'Sowell TRUST (path A2b)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'A2b'
+    },
+    {
+        'name': 'sowell_trust_B1a',
+        'display_name': 'Sowell TRUST (path B1a)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'B1a'
+    },
+    {
+        'name': 'sowell_trust_B1b',
+        'display_name': 'Sowell TRUST (path B1b)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'B1b'
+    },
+    {
+        'name': 'sowell_trust_B2a',
+        'display_name': 'Sowell TRUST (path B2a)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'B2a'
+    },
+    {
+        'name': 'sowell_trust_B2b',
+        'display_name': 'Sowell TRUST (path B2b)',
+        'num_demo_participants': 126,
+        'app_sequence': ['trust', 'public_goods', 'dictator', 'iat', 'survey'],
+        'treatment': 'B2b'
+    },
+    {
         'name': 'iat',
         'display_name': 'Implicit Association Test',
-        'num_demo_participants': 1,
+        'num_demo_participants': 100,
         'app_sequence': ['iat']
     },
-    # {
-    #     'name': 'public_goods',
-    #     'display_name': "Public Goods",
-    #     'num_demo_participants': 3,
-    #     'app_sequence': ['public_goods', 'payment_info'],
-    # },
+    {
+        'name': 'iat_A1a',
+        'display_name': 'Implicit Association Test (path A1a)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'A1a'
+    },
+    {
+        'name': 'iat_A1b',
+        'display_name': 'Implicit Association Test (path A1b)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'A1b'
+    },
+    {
+        'name': 'iat_A2a',
+        'display_name': 'Implicit Association Test (path A2a)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'A2a'
+    },
+    {
+        'name': 'iat_A2b',
+        'display_name': 'Implicit Association Test (path A2b)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'A2b'
+    },
+    {
+        'name': 'iat_B1a',
+        'display_name': 'Implicit Association Test (path B1a)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'B1a'
+    },
+    {
+        'name': 'iat_B1b',
+        'display_name': 'Implicit Association Test (path B1b)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'B1b'
+    },
+    {
+        'name': 'iat_B2a',
+        'display_name': 'Implicit Association Test (path B2a)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'B2a'
+    },
+    {
+        'name': 'iat_B2b',
+        'display_name': 'Implicit Association Test (path B2b)',
+        'num_demo_participants': 10,
+        'app_sequence': ['iat'],
+        'treatment': 'B2b'
+    },
+    {
+        'name': 'public_goods',
+        'display_name': "Public Goods",
+        'num_demo_participants': 3,
+        'app_sequence': ['public_goods', 'payment_info'],
+    },
     # {
     #     'name': 'public_goods_simple',
     #     'display_name': "Public Goods (simple version from tutorial)",
@@ -238,12 +350,12 @@ SESSION_CONFIGS = [
     #     'num_demo_participants': 2,
     #     'app_sequence': ['principal_agent', 'payment_info'],
     # },
-    # {
-    #     'name': 'dictator',
-    #     'display_name': "Dictator Game",
-    #     'num_demo_participants': 2,
-    #     'app_sequence': ['dictator', 'payment_info'],
-    # },
+    {
+        'name': 'dictator',
+        'display_name': "Dictator Game",
+        'num_demo_participants': 2,
+        'app_sequence': ['dictator', 'payment_info'],
+    },
     # {
     #     'name': 'matching_pennies',
     #     'display_name': "Matching Pennies",
