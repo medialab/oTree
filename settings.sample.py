@@ -123,7 +123,7 @@ SESSION_CONFIG_DEFAULTS = {
     'participation_fee': 10.00,
     'num_bots': 12,
     'doc': "",
-    'random_start_order': True,
+    #'random_start_order': True,
     'mturk_hit_settings': mturk_hit_settings,
 }
 

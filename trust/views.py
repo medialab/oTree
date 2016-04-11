@@ -77,7 +77,8 @@ class Send(Page):
     form_fields = ['sent_amount']
 
     def is_displayed(self):
-        return self.player.id_in_group == 1
+        return self.session.vars['treatment'][:1] == 'A'
+        # return self.player.id_in_group == 1
 
 
 
@@ -102,7 +103,8 @@ class SendBack(Page):
     ]
 
     def is_displayed(self):
-        return self.player.id_in_group == 2
+        return self.session.vars['treatment'][:1] == 'B'
+        # return self.player.id_in_group == 2
 
     def vars_for_template(self):
         #tripled_amount = self.group.sent_amount * Constants.multiplication_factor
