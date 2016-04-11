@@ -54,7 +54,9 @@ class Constants(BaseConstants):
 
 class Subsession(BaseSubsession):
 
-    pass
+    def before_session_starts(self):
+        if 'treatment' in self.session.config:
+            self.session.vars['treatment'] = self.session.config['treatment']
 
 
 class Group(BaseGroup):
