@@ -30,8 +30,7 @@ class Question1(Page):
         'training_participant1_payoff', 'training_participant2_payoff']
 
     def is_displayed(self):
-        return True
-        #return self.subsession.round_number == 1
+        return self.subsession.round_number == 1
 
     def vars_for_template(self):
         return {'question_template': 'dictator/Question.html'}
@@ -41,8 +40,7 @@ class Feedback1(Page):
     template_name = 'dictator/Feedback.html'
 
     def is_displayed(self):
-        return False
-        # return self.subsession.round_number == 1
+        return self.subsession.round_number == 1
 
     def vars_for_template(self):
         p = self.player
@@ -60,8 +58,7 @@ class Offer(Page):
 class WaitingForOffer(Page):
 
     def is_displayed(self):
-        return False
-        # return self.player.id_in_group == 2
+        return self.player.id_in_group == 2
 
 
 class ResultsWaitPage(WaitPage):
