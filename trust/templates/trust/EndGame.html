@@ -1,15 +1,13 @@
 {% extends "global/Base.html" %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
+{% blocktrans trimmed title %}
     Congratulations!
-{% endblock %}
+{% endblocktrans %}
 
 {% block content %}
-
-<p>You have finished the first task. Let’s move on to the second task.
-{% next_button %}
+<p>
+  {% blocktrans %}You have finished the first task. Let’s move on to the second task. {% endblocktrans %}
+  <button class="btn btn-primary">{% blocktrans %}Next{% endblocktrans %}</button>
 </p>
-
-
 {% endblock %}

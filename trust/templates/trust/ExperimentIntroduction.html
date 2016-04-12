@@ -3,23 +3,23 @@
 
 {% block content %}
   <h4>
-  Hello! Welcome!<br/>
-  GMI and Sciences Po Paris invite you to participate in a quick online experiment on decision-making.
+  {% trans "Hello! Welcome!" %}<br/>
+  {% trans "GMI and Sciences Po Paris invite you to participate in a quick online experiment on decision-making." %}
   </h4>
 
-  <h1>Study information</h1>
-  <p>Participants in this study are compensated for their time: at the end of this study, you will receive a fixed number of points. On top of that, you have the opportunity to earn an additional sum of money up to 40 Euro.</p>
-  <p>This study is divided into 3 sections. In the first part, you will participate in two simple tasks, in anonymous interaction with one or more people. In the second part, you’re going to associate sets of words. In the third part, we ask you to answer a few questions. The whole study should take you about 35 minutes.</p>
-  <p>Note that you should complete this study in one sitting, without any extensive period of inactivity. For best results, minimize distractions and close other programs.</p>
+  <h1>{% trans "Study information" %}</h1>
+  <p>{% trans "Participants in this study are compensated for their time: at the end of this study, you will receive a fixed number of points. On top of that, you have the opportunity to earn an additional sum of money up to 40 Euro." %}</p>
+  <p>{% trans "This study is divided into 3 sections. In the first part, you will participate in two simple tasks, in anonymous interaction with one or more people. In the second part, you’re going to associate sets of words. In the third part, we ask you to answer a few questions. The whole study should take you about 35 minutes." %}</p>
+  <p>{% trans "Note that you should complete this study in one sitting, without any extensive period of inactivity. For best results, minimize distractions and close other programs." %}</p>
 
-  <h1>Ethics and human subject protection</h1>
-  <p>The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only.</p>
+  <h1>{% trans "Ethics and human subject protection" %}</h1>
+  <p>{% trans "The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only." %}</p>
 
-  <h1>Payment details</h1>
-  <p>All participants are paid online via a PayPal account. It is not necessary to have a PayPal account prior to your participation to participate in the study. The only personal information that we require to process your payment is a valid e-mail address. You will then receive an email from PayPal that will guide you through the few simple steps leading to the creation of your account and the reception of your final earnings.</p>
-  <p>Please type a valid email address and then click on the “Begin” button in order to start the study.</p>
+  <h1>{% trans "Payment details" %}</h1>
+  <p>{% trans "All participants are paid online via a PayPal account. It is not necessary to have a PayPal account prior to your participation to participate in the study. The only personal information that we require to process your payment is a valid e-mail address. You will then receive an email from PayPal that will guide you through the few simple steps leading to the creation of your account and the reception of your final earnings." %}</p>
+  <p>{% trans "Please type a valid email address and then click on the “Begin” button in order to start the study." %}</p>
 
-  {% formfield player.email with label="Email" %}
+  {% formfield player.email with label="{% trans "Email" %}" %}
 
-  <button class="btn btn-primary">Begin</button>
+  <button class="btn btn-primary">{% trans "Begin" %}</button>
 {% endblock %}

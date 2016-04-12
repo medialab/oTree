@@ -1,13 +1,13 @@
 {% extends "global/Base.html" %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
+{% blocktrans trimmed title %}
     Now the real task starts.
-{% endblock %}
+{% endblocktrans %}
 
 {% block content %}
-<p>You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10).<br/>
-For each average contribution possible from other members, how much would you want to put in the project?</p>
+<p>{% trans "You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10)." %}<br/>
+{% trans "For each average contribution possible from other members, how much would you want to put in the project?" %}</p>
 
     {% formfield group.sent_back_amount_0 with label="If the other group members make an average contribution of 0" %}
     {% formfield group.sent_back_amount_1 with label="If the other group members make an average contribution of 1" %}
@@ -20,6 +20,6 @@ For each average contribution possible from other members, how much would you wa
     {% formfield group.sent_back_amount_8 with label="If the other group members make an average contribution of 8" %}
     {% formfield group.sent_back_amount_9 with label="If the other group members make an average contribution of 9" %}
     {% formfield group.sent_back_amount_10 with label="If the other group members make an average contribution of 10" %}
-    <p>{% next_button %}</p>
+    <button class="btn btn-primary">{% trans "Next" %}</button>
 
 {% endblock %}

@@ -1,19 +1,16 @@
 {% extends "global/Base.html" %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
-    Now the real task starts.
-{% endblock %}
+{% blocktrans trimmed title %}Now the real task starts.{% endblocktrans %}
 
 {% block content %}
 
-<p>Once you have made your decision and clicked the “Next” button, you cannot return to this screen.</p>
-<p>Your role is the one of Person A.<br/>
-You have {{Constants.amount_allocated}} in your possession. How much do you want to send to Person B?
-{% formfield group.sent_amount with label="Please enter a number from 0 to 10:" %}
+<p>{% trans "Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
+<p>{% trans "Your role is the one of Person A." %}<br/>
+{% trans "You have {{Constants.amount_allocated}} in your possession. How much do you want to send to Person B?" %}
+{% formfield group.sent_amount with label="{% trans 'Please enter a number from 0 to 10' %}:" %}
 <p>
-{% next_button %}
+<button class="btn btn-primary">{% trans "Next" %}</button>
 </p>
-
 
 {% endblock %}
