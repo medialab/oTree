@@ -6,6 +6,13 @@ from boto.mturk import qualification
 
 import otree.settings
 
+SETTINGS_DIR = os.path.dirname(__file__)
+PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
+PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+
+LOCALE_DIRS = (
+    PROJECT_PATH + 'locale',
+)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
