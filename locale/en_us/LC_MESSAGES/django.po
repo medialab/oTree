@@ -3,57 +3,62 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-12 17:55+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-04-13 14:49+0200\n"
+"PO-Revision-Date: 2016-04-13 14:50+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7\n"
 
-#: trust/templates/trust/EndGame.html:4
+#: trust/templates/trust/EndGame.html:6
 msgid "Congratulations!"
-msgstr ""
+msgstr "Congratulations!"
+
+#: trust/templates/trust/EndGame.html:8
+msgid "You have finished the first task. Let’s move on to the second task."
+msgstr "You have finished the first task. Let’s move on to the second task."
 
 #: trust/templates/trust/EndGame.html:10
-msgid "You have finished the first task. Let’s move on to the second task. "
-msgstr ""
-
-#: trust/templates/trust/EndGame.html:11
-#: trust/templates/trust/GamesIntroduction.html:20
-#: trust/templates/trust/Send.html:13 trust/templates/trust/SendBack.html:23
-#: trust/templates/trust/Simulation.html:137
+#: trust/templates/trust/GamesIntroduction.html:21
+#: trust/templates/trust/Send.html:14 trust/templates/trust/SendBack.html:24
+#: trust/templates/trust/Simulation.html:138
 msgid "Next"
-msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:6
-msgid "Hello! Welcome!"
-msgstr ""
+msgstr "Next"
 
 #: trust/templates/trust/ExperimentIntroduction.html:7
+msgid "Hello! Welcome!"
+msgstr "Hello! Welcome!"
+
+#: trust/templates/trust/ExperimentIntroduction.html:8
 msgid ""
 "GMI and Sciences Po Paris invite you to participate in a quick online "
 "experiment on decision-making."
 msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:10
-msgid "Study information"
-msgstr ""
+"GMI and Sciences Po Paris invite you to participate in a quick online "
+"experiment on decision-making."
 
 #: trust/templates/trust/ExperimentIntroduction.html:11
+msgid "Study information"
+msgstr "Study information"
+
+#: trust/templates/trust/ExperimentIntroduction.html:12
 msgid ""
 "Participants in this study are compensated for their time: at the end of "
 "this study, you will receive a fixed number of points. On top of that, you "
 "have the opportunity to earn an additional sum of money up to 40 Euro."
 msgstr ""
+"Participants in this study are compensated for their time: at the end of "
+"this study, you will receive a fixed number of points. On top of that, you "
+"have the opportunity to earn an additional sum of money up to 40 Euro."
 
-#: trust/templates/trust/ExperimentIntroduction.html:12
+#: trust/templates/trust/ExperimentIntroduction.html:13
 msgid ""
 "This study is divided into 3 sections. In the first part, you will "
 "participate in two simple tasks, in anonymous interaction with one or more "
@@ -61,30 +66,41 @@ msgid ""
 "third part, we ask you to answer a few questions. The whole study should "
 "take you about 35 minutes."
 msgstr ""
+"This study is divided into 3 sections. In the first part, you will "
+"participate in two simple tasks, in anonymous interaction with one or more "
+"people. In the second part, you’re going to associate sets of words. In the "
+"third part, we ask you to answer a few questions. The whole study should "
+"take you about 35 minutes."
 
-#: trust/templates/trust/ExperimentIntroduction.html:13
+#: trust/templates/trust/ExperimentIntroduction.html:14
 msgid ""
 "Note that you should complete this study in one sitting, without any "
 "extensive period of inactivity. For best results, minimize distractions and "
 "close other programs."
 msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:15
-msgid "Ethics and human subject protection"
-msgstr ""
+"Note that you should complete this study in one sitting, without any "
+"extensive period of inactivity. For best results, minimize distractions and "
+"close other programs."
 
 #: trust/templates/trust/ExperimentIntroduction.html:16
+msgid "Ethics and human subject protection"
+msgstr "Ethics and human subject protection"
+
+#: trust/templates/trust/ExperimentIntroduction.html:17
 msgid ""
 "The data gathered in this study is subject to European privacy protocols, "
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:18
-msgid "Payment details"
-msgstr ""
+"The data gathered in this study is subject to European privacy protocols, "
+"under the supervision of the European Research Council. We will use it for "
+"research purposes only."
 
 #: trust/templates/trust/ExperimentIntroduction.html:19
+msgid "Payment details"
+msgstr "Payment details"
+
+#: trust/templates/trust/ExperimentIntroduction.html:20
 msgid ""
 "All participants are paid online via a PayPal account. It is not necessary "
 "to have a PayPal account prior to your participation to participate in the "
@@ -93,134 +109,225 @@ msgid ""
 "will guide you through the few simple steps leading to the creation of your "
 "account and the reception of your final earnings."
 msgstr ""
+"All participants are paid online via a PayPal account. It is not necessary "
+"to have a PayPal account prior to your participation to participate in the "
+"study. The only personal information that we require to process your payment "
+"is a valid e-mail address. You will then receive an email from PayPal that "
+"will guide you through the few simple steps leading to the creation of your "
+"account and the reception of your final earnings."
 
-#: trust/templates/trust/ExperimentIntroduction.html:20
+#: trust/templates/trust/ExperimentIntroduction.html:21
 msgid ""
 "Please type a valid email address and then click on the “Begin” button in "
 "order to start the study."
 msgstr ""
+"Please type a valid email address and then click on the “Begin” button in "
+"order to start the study."
 
-#: trust/templates/trust/ExperimentIntroduction.html:24
+#: trust/templates/trust/ExperimentIntroduction.html:25
 msgid "Begin"
-msgstr ""
+msgstr "Begin"
 
-#: trust/templates/trust/GamesIntroduction.html:5
+#: trust/templates/trust/GamesIntroduction.html:6
 msgid "General introduction to games"
-msgstr ""
+msgstr "General introduction to games"
 
-#: trust/templates/trust/GamesIntroduction.html:7
+#: trust/templates/trust/GamesIntroduction.html:8
 msgid ""
 "We will start with the tasks section of the study, which will require you to "
 "make 3 choices in total. This part of the study will allow you to earn money."
 msgstr ""
-
-#: trust/templates/trust/GamesIntroduction.html:9
-msgid ""
-"You will be grouped or paired with other participants, who are other "
-"respondents from [COUNTRY]</strong> at the beginning of each task."
-msgstr ""
+"We will start with the tasks section of the study, which will require you to "
+"make 3 choices in total. This part of the study will allow you to earn money."
 
 #: trust/templates/trust/GamesIntroduction.html:10
 msgid ""
-"The other participants in your group or pair will be different in each task</"
-"strong>: the same person will never be in your group more than once."
+"<strong>You will be grouped or paired with other participants, who are other "
+"respondents from [COUNTRY]</strong> at the beginning of each task."
 msgstr ""
+"<strong>You will be grouped or paired with other participants, who are other "
+"respondents from [COUNTRY]</strong> at the beginning of each task."
 
 #: trust/templates/trust/GamesIntroduction.html:11
+msgid ""
+"<strong>The other participants in your group or pair will be different in "
+"each task</strong>: the same person will never be in your group more than "
+"once."
+msgstr ""
+"<strong>The other participants in your group or pair will be different in "
+"each task</strong>: the same person will never be in your group more than "
+"once."
+
+#: trust/templates/trust/GamesIntroduction.html:12
 msgid ""
 "Your earnings in each task will depend on your decisions and those of the "
 "other participants in your group."
 msgstr ""
+"Your earnings in each task will depend on your decisions and those of the "
+"other participants in your group."
 
-#: trust/templates/trust/GamesIntroduction.html:13
+#: trust/templates/trust/GamesIntroduction.html:14
 msgid "How will your earnings be calculated?"
-msgstr ""
+msgstr "How will your earnings be calculated?"
 
 #: trust/templates/trust/GamesIntroduction.html:15
+msgid "The other participants may not be online at this moment."
+msgstr "The other participants may not be online at this moment."
+
+#: trust/templates/trust/GamesIntroduction.html:16
 msgid ""
 "Your answers in each task will be matched with those of other participants "
 "in order to calculate your earnings from each section."
 msgstr ""
-
-#: trust/templates/trust/GamesIntroduction.html:16
-msgid "One task will be randomly selected at the end of the study."
-msgstr ""
+"Your answers in each task will be matched with those of other participants "
+"in order to calculate your earnings from each section."
 
 #: trust/templates/trust/GamesIntroduction.html:17
+msgid "One task will be randomly selected at the end of the study."
+msgstr "One task will be randomly selected at the end of the study."
+
+#: trust/templates/trust/GamesIntroduction.html:18
 msgid ""
 "The amount of money that you will receive will correspond to your earnings "
 "in this task."
 msgstr ""
+"The amount of money that you will receive will correspond to your earnings "
+"in this task."
 
-#: trust/templates/trust/GamesIntroduction.html:18
+#: trust/templates/trust/GamesIntroduction.html:19
 msgid "The results will be shared with you at the end of the study."
-msgstr ""
+msgstr "The results will be shared with you at the end of the study."
 
-#: trust/templates/trust/Introduction.html:4
+#: trust/templates/trust/Introduction.html:6
 msgid "Task 1"
-msgstr ""
+msgstr "Task 1"
 
-#: trust/templates/trust/Send.html:4 trust/templates/trust/SendBack.html:4
+#: trust/templates/trust/Send.html:5 trust/templates/trust/SendBack.html:6
 msgid "Now the real task starts."
-msgstr ""
+msgstr "Now the real task starts."
 
-#: trust/templates/trust/Send.html:8
+#: trust/templates/trust/Send.html:9
 msgid ""
 "Once you have made your decision and clicked the “Next” button, you cannot "
 "return to this screen."
 msgstr ""
-
-#: trust/templates/trust/Send.html:9
-msgid "Your role is the one of Person A."
-msgstr ""
+"Once you have made your decision and clicked the “Next” button, you cannot "
+"return to this screen."
 
 #: trust/templates/trust/Send.html:10
-msgid ""
-"You have {{Constants.amount_allocated}} in your possession. How much do you "
-"want to send to Person B?"
-msgstr ""
+msgid "Your role is the one of Person A."
+msgstr "Your role is the one of Person A."
 
-#: trust/templates/trust/SendBack.html:9
+#: trust/templates/trust/Send.html:11
+#, python-format
+msgid ""
+"You have %(amount_allocated)s in your possession. How much do you want to "
+"send to Person B? "
+msgstr ""
+"You have %(amount_allocated)s in your possession. How much do you want to "
+"send to Person B?"
+
+#: trust/templates/trust/SendBack.html:10
 msgid ""
 "You now see a table that lists all possible average contributions from other "
 "group members (all integers between 0 and 10)."
 msgstr ""
+"You now see a table that lists all possible average contributions from other "
+"group members (all integers between 0 and 10)."
 
-#: trust/templates/trust/SendBack.html:10
+#: trust/templates/trust/SendBack.html:11
 msgid ""
 "For each average contribution possible from other members, how much would "
 "you want to put in the project?"
 msgstr ""
+"For each average contribution possible from other members, how much would "
+"you want to put in the project?"
 
-#: trust/templates/trust/Simulation.html:5
+#: trust/templates/trust/Simulation.html:6
 msgid "Task 1 Simulation"
-msgstr ""
+msgstr "Task 1 Simulation"
 
-#: trust/templates/trust/Simulation.html:7
+#: trust/templates/trust/Simulation.html:8
 msgid ""
 "The test choices you make on this screen have no effect on your winnings in "
 "this task."
 msgstr ""
+"The test choices you make on this screen have no effect on your winnings in "
+"this task."
 
-#: trust/templates/trust/Simulation.html:8
+#: trust/templates/trust/Simulation.html:9
 msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
 msgstr ""
+"Between each test, click the “reset to zero” button below to reset the "
+"calculator."
 
-#: trust/templates/trust/Simulation.html:120
+#: trust/templates/trust/Simulation.html:121
 msgid "Amount sent by Player A"
-msgstr ""
+msgstr "Amount sent by Player A"
 
-#: trust/templates/trust/Simulation.html:122
-#: trust/templates/trust/Simulation.html:130
+#: trust/templates/trust/Simulation.html:123
+#: trust/templates/trust/Simulation.html:131
 msgid "Send"
-msgstr ""
+msgstr "Send"
 
-#: trust/templates/trust/Simulation.html:128
+#: trust/templates/trust/Simulation.html:129
 msgid "Amount sent by Player B"
-msgstr ""
+msgstr "Amount sent by Player B"
 
-#: trust/templates/trust/Simulation.html:135
+#: trust/templates/trust/Simulation.html:136
 msgid "Reset to zero"
-msgstr ""
+msgstr "Reset to zero"
+
+#: trust/views.py:29
+msgid "Email"
+msgstr "Email"
+
+#: trust/views.py:65
+msgid "Please enter a number from 0 to 10"
+msgstr "Please enter a number from 0 to 10"
+
+#: trust/views.py:95
+msgid "If the other group members make an average contribution of 0"
+msgstr "If the other group members make an average contribution of 0"
+
+#: trust/views.py:99
+msgid "If the other group members make an average contribution of 1"
+msgstr "If the other group members make an average contribution of 1"
+
+#: trust/views.py:103
+msgid "If the other group members make an average contribution of 2"
+msgstr "If the other group members make an average contribution of 2"
+
+#: trust/views.py:107
+msgid "If the other group members make an average contribution of 3"
+msgstr "If the other group members make an average contribution of 3"
+
+#: trust/views.py:111
+msgid "If the other group members make an average contribution of 4"
+msgstr "If the other group members make an average contribution of 4"
+
+#: trust/views.py:115
+msgid "If the other group members make an average contribution of 5"
+msgstr "If the other group members make an average contribution of 5"
+
+#: trust/views.py:119
+msgid "If the other group members make an average contribution of 6"
+msgstr "If the other group members make an average contribution of 6"
+
+#: trust/views.py:123
+msgid "If the other group members make an average contribution of 7"
+msgstr "If the other group members make an average contribution of 7"
+
+#: trust/views.py:127
+msgid "If the other group members make an average contribution of 8"
+msgstr "If the other group members make an average contribution of 8"
+
+#: trust/views.py:131
+msgid "If the other group members make an average contribution of 9"
+msgstr "If the other group members make an average contribution of 9"
+
+#: trust/views.py:135
+msgid "If the other group members make an average contribution of 10"
+msgstr "If the other group members make an average contribution of 10"

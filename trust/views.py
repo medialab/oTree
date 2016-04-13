@@ -5,6 +5,7 @@ from __future__ import division
 from ._builtin import Page
 from . import models
 from .models import Constants
+from django.utils.translation import ugettext_lazy as _
 
 
 def vars_for_all_templates(self):
@@ -21,6 +22,12 @@ class ExperimentIntroduction(Page):
 
     form_model = models.Player
     form_fields = ['email']
+
+    def vars_for_template(self):
+        """Return variables for use in template."""
+        return {
+            'email_label': _(u'Email')
+        }
 
 
 class GamesIntroduction(Page):
@@ -51,6 +58,13 @@ class Send(Page):
     form_model = models.Group
     form_fields = ['sent_amount']
 
+    def vars_for_template(self):
+        """Return variables for use in template."""
+        return {
+            'amount_allocated': Constants.amount_allocated,
+            'sent_amount_label': _(u'Please enter a number from 0 to 10')
+        }
+
     def is_displayed(self):
         """Display rule stating 'Send' is displayed for Player 1 only."""
         return self.session.vars['treatment'][:1] == 'A'
@@ -74,13 +88,58 @@ class SendBack(Page):
         'sent_back_amount_10',
     ]
 
+    def vars_for_template(self):
+        """Return variables for use in template."""
+        return {
+            'sent_back_amount_0_label': _(
+                u'If the other group members make an \
+average contribution of 0'
+            ),
+            'sent_back_amount_1_label': _(
+                u'If the other group members make an \
+average contribution of 1'
+            ),
+            'sent_back_amount_2_label': _(
+                u'If the other group members make an \
+average contribution of 2'
+            ),
+            'sent_back_amount_3_label': _(
+                u'If the other group members make an \
+average contribution of 3'
+            ),
+            'sent_back_amount_4_label': _(
+                u'If the other group members make an \
+average contribution of 4'
+            ),
+            'sent_back_amount_5_label': _(
+                u'If the other group members make an \
+average contribution of 5'
+            ),
+            'sent_back_amount_6_label': _(
+                u'If the other group members make an \
+average contribution of 6'
+            ),
+            'sent_back_amount_7_label': _(
+                u'If the other group members make an \
+average contribution of 7'
+            ),
+            'sent_back_amount_8_label': _(
+                u'If the other group members make an \
+average contribution of 8'
+            ),
+            'sent_back_amount_9_label': _(
+                u'If the other group members make an \
+average contribution of 9'
+            ),
+            'sent_back_amount_10_label': _(
+                u'If the other group members make an \
+average contribution of 10'
+            ),
+        }
+
     def is_displayed(self):
         """Display rule stating 'SendBack' appears for Player B only."""
         return self.session.vars['treatment'][:1] == 'B'
-
-    def vars_for_template(self):
-        """Local variables for template."""
-        return {'amount_allocated': Constants.amount_allocated}
 
 
 class EndGame(Page):

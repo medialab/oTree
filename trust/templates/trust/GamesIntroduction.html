@@ -1,4 +1,5 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block content %}
@@ -6,12 +7,12 @@
 
   <p>{% trans "We will start with the tasks section of the study, which will require you to make 3 choices in total. This part of the study will allow you to earn money." %}</p>
 
-  <p><strong>{% trans "You will be grouped or paired with other participants, who are other respondents from [COUNTRY]</strong> at the beginning of each task." %}</p>
-  <p><strong>{% trans "The other participants in your group or pair will be different in each task</strong>: the same person will never be in your group more than once." %}
+  <p>{% trans "<strong>You will be grouped or paired with other participants, who are other respondents from [COUNTRY]</strong> at the beginning of each task." %}</p>
+  <p>{% trans "<strong>The other participants in your group or pair will be different in each task</strong>: the same person will never be in your group more than once." %}
   <br/>{% trans "Your earnings in each task will depend on your decisions and those of the other participants in your group." %}</p>
 
   <h3>{% trans "How will your earnings be calculated?" %}</h3>
-  <p><strong>{% trans "The other participants may not be online at this moment." %</strong>}<br/>
+  <p><strong>{% trans "The other participants may not be online at this moment." %}</strong><br/>
   {% trans "Your answers in each task will be matched with those of other participants in order to calculate your earnings from each section." %}</p>
   <p>{% trans "One task will be randomly selected at the end of the study." %}
   <strong>{% trans "The amount of money that you will receive will correspond to your earnings in this task." %}</strong>

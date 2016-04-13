@@ -62,15 +62,13 @@ ACCESS_CODE_FOR_DEFAULT_SESSION = 'my_access_code'
 AWS_ACCESS_KEY_ID = environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY')
 
-
-# e.g. EUR, CAD, GBP, CHF, CNY, JPY
-REAL_WORLD_CURRENCY_CODE = 'EUR'
-USE_POINTS = False
-
-
 # e.g. en-gb, de-de, it-it, fr-fr.
 # see: https://docs.djangoproject.com/en/1.6/topics/i18n/
 LANGUAGE_CODE = 'en-us'
+
+# e.g. EUR, CAD, GBP, CHF, CNY, JPY
+REAL_WORLD_CURRENCY_CODE = LANGUAGE_CODE == 'en-us' and 'USD' or 'EUR'
+USE_POINTS = False
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
 INSTALLED_APPS = []

@@ -1,4 +1,5 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block content %}
@@ -19,7 +20,7 @@
   <p>{% trans "All participants are paid online via a PayPal account. It is not necessary to have a PayPal account prior to your participation to participate in the study. The only personal information that we require to process your payment is a valid e-mail address. You will then receive an email from PayPal that will guide you through the few simple steps leading to the creation of your account and the reception of your final earnings." %}</p>
   <p>{% trans "Please type a valid email address and then click on the “Begin” button in order to start the study." %}</p>
 
-  {% formfield player.email with label="{% trans "Email" %}" %}
+  {% formfield player.email with label=email_label %}
 
   <button class="btn btn-primary">{% trans "Begin" %}</button>
 {% endblock %}

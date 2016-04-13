@@ -1,25 +1,26 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% blocktrans trimmed title %}
-    Now the real task starts.
-{% endblocktrans %}
+{% block title %}
+   {% trans "Now the real task starts." %}
+{% endblock %}
 
 {% block content %}
 <p>{% trans "You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10)." %}<br/>
 {% trans "For each average contribution possible from other members, how much would you want to put in the project?" %}</p>
 
-    {% formfield group.sent_back_amount_0 with label="If the other group members make an average contribution of 0" %}
-    {% formfield group.sent_back_amount_1 with label="If the other group members make an average contribution of 1" %}
-    {% formfield group.sent_back_amount_2 with label="If the other group members make an average contribution of 2" %}
-    {% formfield group.sent_back_amount_3 with label="If the other group members make an average contribution of 3" %}
-    {% formfield group.sent_back_amount_4 with label="If the other group members make an average contribution of 4" %}
-    {% formfield group.sent_back_amount_5 with label="If the other group members make an average contribution of 5" %}
-    {% formfield group.sent_back_amount_6 with label="If the other group members make an average contribution of 6" %}
-    {% formfield group.sent_back_amount_7 with label="If the other group members make an average contribution of 7" %}
-    {% formfield group.sent_back_amount_8 with label="If the other group members make an average contribution of 8" %}
-    {% formfield group.sent_back_amount_9 with label="If the other group members make an average contribution of 9" %}
-    {% formfield group.sent_back_amount_10 with label="If the other group members make an average contribution of 10" %}
+    {% formfield group.sent_back_amount_0 with label=send_back_amount_0_label %}
+    {% formfield group.sent_back_amount_1 with label=send_back_amount_1_label %}
+    {% formfield group.sent_back_amount_2 with label=send_back_amount_2_label %}
+    {% formfield group.sent_back_amount_3 with label=send_back_amount_3_label %}
+    {% formfield group.sent_back_amount_4 with label=send_back_amount_4_label %}
+    {% formfield group.sent_back_amount_5 with label=send_back_amount_5_label %}
+    {% formfield group.sent_back_amount_6 with label=send_back_amount_6_label %}
+    {% formfield group.sent_back_amount_7 with label=send_back_amount_7_label %}
+    {% formfield group.sent_back_amount_8 with label=send_back_amount_8_label %}
+    {% formfield group.sent_back_amount_9 with label=send_back_amount_9_label %}
+    {% formfield group.sent_back_amount_10 with label=send_back_amount_10_label %}
     <button class="btn btn-primary">{% trans "Next" %}</button>
 
 {% endblock %}

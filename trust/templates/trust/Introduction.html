@@ -1,6 +1,7 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% blocktrans trimmed title %}
-    Task 1
-{% endblocktrans %}
+{% block title %}
+    {% trans "Task 1" %}
+{% endblock %}

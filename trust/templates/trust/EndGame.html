@@ -1,13 +1,11 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% blocktrans trimmed title %}
-    Congratulations!
-{% endblocktrans %}
-
 {% block content %}
+<h4>{% trans "Congratulations!" %}
 <p>
-  {% blocktrans %}You have finished the first task. Let’s move on to the second task. {% endblocktrans %}
-  <button class="btn btn-primary">{% blocktrans %}Next{% endblocktrans %}</button>
+  {% trans "You have finished the first task. Let’s move on to the second task." %}
 </p>
+<button class="btn btn-primary">{% trans "Next" %}</button>
 {% endblock %}
