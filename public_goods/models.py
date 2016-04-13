@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
+"""Models for Public Goods."""
+
 # <standard imports>
 from __future__ import division
 from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
-
-from otree import widgets
-from otree.common import Currency as c, currency_range
-import random
+from otree.common import Currency
 # </standard imports>
 
 doc = """
 This is a one-period public goods game with 3 players. Assignment to groups is
 random.
-
 """
 
 
@@ -34,37 +32,49 @@ keywords = ("Public Goods",)
 
 
 class Constants(BaseConstants):
+    """Constants for Public Goods."""
+
     name_in_url = 'public_goods'
     players_per_group = 3
     num_rounds = 1
 
-    #"""Amount allocated to each player"""
-    endowment = c(10)
+    # Amount allocated to each player
+    endowment = Currency(10)
     efficiency_factor = 1.8
-    base_points = c(10)
-
-    question_correct = c(9.2)
+    base_points = Currency(10)
 
 
 class Subsession(BaseSubsession):
+    """Subsession for Public Goods."""
 
     pass
 
 
 class Group(BaseGroup):
+    """Group for Public Goods."""
 
     total_contribution = models.CurrencyField()
 
     individual_share = models.CurrencyField()
 
     def set_payoffs(self):
-        self.total_contribution = sum([p.contribution for p in self.get_players()])
-        self.individual_share = self.total_contribution * Constants.efficiency_factor / Constants.players_per_group
+        """Set payoffs (used by test bot)."""
+        self.total_contribution = (
+            sum([p.contribution for p in self.get_players()])
+        )
+        self.individual_share = (
+            self.total_contribution *
+            Constants.efficiency_factor / Constants.players_per_group
+        )
         for p in self.get_players():
-            p.payoff = (Constants.endowment - p.contribution) + self.individual_share + Constants.base_points
+            p.payoff = (
+                (Constants.endowment - p.contribution) +
+                self.individual_share + Constants.base_points
+            )
 
 
 class Player(BasePlayer):
+    """Player for Public Goods."""
 
     contribution = models.CurrencyField(
         min=0, max=Constants.endowment,
@@ -116,6 +126,3 @@ class Player(BasePlayer):
     contribution_back_10 = models.CurrencyField(
         min=0, max=Constants.endowment,
     )
-
-    def question_correct(self):
-        return self.question == Constants.question_correct
