@@ -2,9 +2,9 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>Task 3 Simulation</h1>
+<h1>{% trans "Task 3 Simulation" %}</h1>
 <hr/>
-<p>The test choices you make on this screen have no effect on your winnings in this task.</p>
+<p>{% trans "The test choices you make on this screen have no effect on your winnings in this task." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "dictator/dictator_simulation.js" %}"></script>
@@ -43,10 +43,10 @@ $(function() { init() });
   </canvas>
   <div class="form commands">
     <div class="col-sm-3 col-md-3 col-lg-3 form-group">
-      <label for="amount">Amount sent by Player A</label>
+      <label for="amount">{% trans "Amount sent by Player A" %}</label>
       <input class="form-control" type="number" id="amount" min="0" max="10" placeholder="0">
-      <a class="btn btn-default col-sm-4 col-md-4 col-lg-4" id="send">Send</a>
-      <button class="btn btn-primary col-sm-offset-2 col-sm-4 col-md-4 col-lg-4" id="next">Next</button>
+      <a class="btn btn-default col-sm-4 col-md-4 col-lg-4" id="send">{% trans "Send" %}</a>
+      <button class="btn btn-primary col-sm-offset-2 col-sm-4 col-md-4 col-lg-4" id="next">{% trans "Next" %}</button>
     </div>
   </div>
 

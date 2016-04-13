@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-13 14:49+0200\n"
-"PO-Revision-Date: 2016-04-13 14:50+0200\n"
+"POT-Creation-Date: 2016-04-13 15:10+0200\n"
+"PO-Revision-Date: 2016-04-13 15:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -17,20 +17,111 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.7\n"
 
+#: dictator/templates/dictator/EndGame.html:5
 #: trust/templates/trust/EndGame.html:6
 msgid "Congratulations!"
 msgstr "Congratulations!"
 
-#: trust/templates/trust/EndGame.html:8
-msgid "You have finished the first task. Let’s move on to the second task."
-msgstr "You have finished the first task. Let’s move on to the second task."
+#: dictator/templates/dictator/EndGame.html:11
+msgid ""
+"You have completed all tasks. Let's go to the second section of the study, "
+"where you will be asked to sort a number of words and be timed while doing "
+"so."
+msgstr ""
+"You have completed all tasks. Let's go to the second section of the study, "
+"where you will be asked to sort a number of words and be timed while doing "
+"so."
 
+#: dictator/templates/dictator/EndGame.html:12
+#: dictator/templates/dictator/Simulation.html:49
 #: trust/templates/trust/EndGame.html:10
 #: trust/templates/trust/GamesIntroduction.html:21
 #: trust/templates/trust/Send.html:14 trust/templates/trust/SendBack.html:24
 #: trust/templates/trust/Simulation.html:138
 msgid "Next"
 msgstr "Next"
+
+#: dictator/templates/dictator/Instructions.html:5
+msgid "Task 3"
+msgstr "Task 3"
+
+#: dictator/templates/dictator/Instructions.html:7
+msgid ""
+"This task involves two participants – Person A and Person B. Your role "
+"(Player A or B) is revealed to you when making your decision."
+msgstr ""
+"This task involves two participants – Person A and Person B. Your role "
+"(Player A or B) is revealed to you when making your decision."
+
+#: dictator/templates/dictator/Instructions.html:8
+msgid ""
+"Reminder: The other participant is different from the ones you interacted "
+"with in the previous tasks."
+msgstr ""
+"Reminder: The other participant is different from the ones you interacted "
+"with in the previous tasks."
+
+#: dictator/templates/dictator/Instructions.html:9
+msgid ""
+"This task is very short and simple: Person A receives $10. Person A must "
+"then decide how many dollars of this amount will be transferred to Person B. "
+"To better understand, watch the animation below."
+msgstr ""
+"This task is very short and simple: Person A receives $10. Person A must "
+"then decide how many dollars of this amount will be transferred to Person B. "
+"To better understand, watch the animation below."
+
+#: dictator/templates/dictator/Offer.html:5
+msgid "Now the task begins."
+msgstr "Now the real task starts."
+
+#: dictator/templates/dictator/Offer.html:10 trust/templates/trust/Send.html:9
+msgid ""
+"Once you have made your decision and clicked the “Next” button, you cannot "
+"return to this screen."
+msgstr ""
+"Once you have made your decision and clicked the “Next” button, you cannot "
+"return to this screen."
+
+#: dictator/templates/dictator/Offer.html:11
+msgid "Your role is that of Person A."
+msgstr "Your role is the one of Person A. "
+
+#: dictator/templates/dictator/Offer.html:12
+msgid ""
+"You have 10 Euro in your possession. How much of it do you want to transfer "
+"to Person B?"
+msgstr ""
+"You have %(amount_allocated)s in your possession. How much do you want to "
+"send to Person B?"
+
+#: dictator/templates/dictator/Simulation.html:5
+msgid "Task 3 Simulation"
+msgstr "Task 3 Simulation"
+
+#: dictator/templates/dictator/Simulation.html:7
+#: trust/templates/trust/Simulation.html:8
+msgid ""
+"The test choices you make on this screen have no effect on your winnings in "
+"this task."
+msgstr ""
+"The test choices you make on this screen have no effect on your winnings in "
+"this task."
+
+#: dictator/templates/dictator/Simulation.html:46
+#: trust/templates/trust/Simulation.html:121
+msgid "Amount sent by Player A"
+msgstr "Amount sent by Player A"
+
+#: dictator/templates/dictator/Simulation.html:48
+#: trust/templates/trust/Simulation.html:123
+#: trust/templates/trust/Simulation.html:131
+msgid "Send"
+msgstr "Send"
+
+#: trust/templates/trust/EndGame.html:8
+msgid "You have finished the first task. Let’s move on to the second task."
+msgstr "You have finished the first task. Let’s move on to the second task."
 
 #: trust/templates/trust/ExperimentIntroduction.html:7
 msgid "Hello! Welcome!"
@@ -206,14 +297,6 @@ msgstr "Task 1"
 msgid "Now the real task starts."
 msgstr "Now the real task starts."
 
-#: trust/templates/trust/Send.html:9
-msgid ""
-"Once you have made your decision and clicked the “Next” button, you cannot "
-"return to this screen."
-msgstr ""
-"Once you have made your decision and clicked the “Next” button, you cannot "
-"return to this screen."
-
 #: trust/templates/trust/Send.html:10
 msgid "Your role is the one of Person A."
 msgstr "Your role is the one of Person A."
@@ -247,14 +330,6 @@ msgstr ""
 msgid "Task 1 Simulation"
 msgstr "Task 1 Simulation"
 
-#: trust/templates/trust/Simulation.html:8
-msgid ""
-"The test choices you make on this screen have no effect on your winnings in "
-"this task."
-msgstr ""
-"The test choices you make on this screen have no effect on your winnings in "
-"this task."
-
 #: trust/templates/trust/Simulation.html:9
 msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
@@ -262,15 +337,6 @@ msgid ""
 msgstr ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
-
-#: trust/templates/trust/Simulation.html:121
-msgid "Amount sent by Player A"
-msgstr "Amount sent by Player A"
-
-#: trust/templates/trust/Simulation.html:123
-#: trust/templates/trust/Simulation.html:131
-msgid "Send"
-msgstr "Send"
 
 #: trust/templates/trust/Simulation.html:129
 msgid "Amount sent by Player B"
