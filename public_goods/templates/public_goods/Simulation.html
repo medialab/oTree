@@ -2,9 +2,9 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>Task 2 Simulation</h1>
+<h1>{% trans "Task 2 Simulation" %}</h1>
 <hr/>
-<p>The test choices you make on this screen have no effect on your winnings in this task.</p>
+<p>{% trans "The test choices you make on this screen have no effect on your winnings in this task." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "public_goods/public_goods_simulation.js" %}"></script>
@@ -58,28 +58,28 @@ $(function() { init() });
   </canvas>
   <div class="form commands">
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">Amount sent by Player A</label>
+      <label for="amount">{% trans "Amount sent by Player A" %}</label>
       <input class="form-control" type="number" id="amountA" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">Amount sent by Player B</label>
+      <label for="amount">{% trans "Amount sent by Player B" %}</label>
       <input class="form-control" type="number" id="amountB" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">Amount sent by Player C</label>
+      <label for="amount">{% trans "Amount sent by Player C" %}</label>
       <input class="form-control" type="number" id="amountC" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">Amount sent by Player D</label>
+      <label for="amount">{% trans "Amount sent by Player D" %}</label>
       <input class="form-control" type="number" id="amountD" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <a class="btn btn-default" id="send">Send</a>
-      <button class="btn btn-primary" id="next">Next</button>
+      <a class="btn btn-default" id="send">{% trans "Send" %}</a>
+      <button class="btn btn-primary" id="next">{% trans "Next</button>
     </div>
 
   </div>

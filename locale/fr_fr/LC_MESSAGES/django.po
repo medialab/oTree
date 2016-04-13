@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-13 15:10+0200\n"
-"PO-Revision-Date: 2016-04-13 15:14+0200\n"
+"POT-Creation-Date: 2016-04-13 15:42+0200\n"
+"PO-Revision-Date: 2016-04-13 15:48+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: dictator/templates/dictator/EndGame.html:5
+#: public_goods/templates/public_goods/EndGame.html:5
 #: trust/templates/trust/EndGame.html:6
 msgid "Congratulations!"
 msgstr "Félicitations !"
@@ -35,6 +36,11 @@ msgstr ""
 
 #: dictator/templates/dictator/EndGame.html:12
 #: dictator/templates/dictator/Simulation.html:49
+#: public_goods/templates/public_goods/Contribute.html:15
+#: public_goods/templates/public_goods/ContributeBack.html:24
+#: public_goods/templates/public_goods/DecisionInstructions.html:10
+#: public_goods/templates/public_goods/EndGame.html:11
+#: public_goods/templates/public_goods/Introduction.html:11
 #: trust/templates/trust/EndGame.html:10
 #: trust/templates/trust/GamesIntroduction.html:21
 #: trust/templates/trust/Send.html:14 trust/templates/trust/SendBack.html:24
@@ -102,6 +108,7 @@ msgid "Task 3 Simulation"
 msgstr "Simulation de la Tâche 3"
 
 #: dictator/templates/dictator/Simulation.html:7
+#: public_goods/templates/public_goods/Simulation.html:7
 #: trust/templates/trust/Simulation.html:8
 msgid ""
 "The test choices you make on this screen have no effect on your winnings in "
@@ -111,15 +118,145 @@ msgstr ""
 "dans cette tâche."
 
 #: dictator/templates/dictator/Simulation.html:46
+#: public_goods/templates/public_goods/Simulation.html:61
 #: trust/templates/trust/Simulation.html:121
 msgid "Amount sent by Player A"
 msgstr "Montant envoyé par le Joueur A"
 
 #: dictator/templates/dictator/Simulation.html:48
+#: public_goods/templates/public_goods/Simulation.html:81
 #: trust/templates/trust/Simulation.html:123
 #: trust/templates/trust/Simulation.html:131
 msgid "Send"
 msgstr "Envoyer"
+
+#: public_goods/templates/public_goods/Contribute.html:5
+msgid "Now the real task begins."
+msgstr "La véritable tâche commence maintenant."
+
+#: public_goods/templates/public_goods/Contribute.html:10
+msgid ""
+"Now the real task begins. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
+msgstr ""
+"La véritable tâche commence maintenant. Une fois que vous avez pris votre "
+"décision et cliqué sur le bouton « Suivant », vous ne pouvez pas revenir à "
+"cet écran."
+
+#: public_goods/templates/public_goods/Contribute.html:11
+msgid ""
+"You have 10 Euro in your possession. How much do you want to put into the "
+"common project?"
+msgstr ""
+"Vous avez 10 euros en votre possession. Combien voulez-vous mettre dans le "
+"projet commun ?"
+
+#: public_goods/templates/public_goods/ContributeBack.html:5
+#: trust/templates/trust/Send.html:5 trust/templates/trust/SendBack.html:6
+msgid "Now the real task starts."
+msgstr "La véritable tâche commence maintenant."
+
+#: public_goods/templates/public_goods/ContributeBack.html:9
+#: trust/templates/trust/SendBack.html:10
+msgid ""
+"You now see a table that lists all possible average contributions from other "
+"group members (all integers between 0 and 10)."
+msgstr ""
+"Voyez maintenant ce tableau listant les contributions moyennes possibles des "
+"autres membres du groupe (nombres entiers entre 0 et 10)."
+
+#: public_goods/templates/public_goods/ContributeBack.html:10
+#: trust/templates/trust/SendBack.html:11
+msgid ""
+"For each average contribution possible from other members, how much would "
+"you want to put in the project?"
+msgstr ""
+"Pour chaque contribution possible des autres membres, combien mettriez-vous "
+"dans le pot commun du projet ?"
+
+#: public_goods/templates/public_goods/DecisionInstructions.html:5
+msgid ""
+"On the next page, you decide how much of your 10 Euro you want to transfer "
+"to the common project."
+msgstr ""
+"Dans la page suivante, vous déciderez de combien d’euros parmi les 10 dont "
+"vous disposez, vous souhaitez transférer dans le pot commun."
+
+#: public_goods/templates/public_goods/DecisionInstructions.html:6
+msgid "You will be asked to do it in two different situations:"
+msgstr ""
+"Il vous sera demandé ce que vous voulez faire dans deux différentes "
+"situations :"
+
+#: public_goods/templates/public_goods/DecisionInstructions.html:7
+msgid ""
+"In the first step, you simply decide how much of your 10 Euro you want to "
+"put into the common project."
+msgstr ""
+"Dans la première étape, vous décidez simplement combien d’euros, parmi les "
+"10 dont vous disposez, vous souhaitez mettre dans le pot commun."
+
+#: public_goods/templates/public_goods/DecisionInstructions.html:8
+msgid ""
+"In the second step, you have the opportunity to decide upon your "
+"contribution based on the contribution of other group members."
+msgstr ""
+"Dans la seconde étape, vous avez l’opportunité de décider de votre "
+"contribution, selon la contribution des autres membres."
+
+#: public_goods/templates/public_goods/EndGame.html:10
+msgid "You have finished the second task. Let’s move on to the third task."
+msgstr "Vous avez terminé la seconde tâche. Passons à la troisième."
+
+#: public_goods/templates/public_goods/Instructions.html:5
+msgid ""
+"In the second task, groups of 4 participants (yourself and 3 other people) "
+"are randomly formed."
+msgstr ""
+"Dans la seconde étape, des groupes de 4 participants (3 autres personnes et "
+"vous-mêmes) sont formés au hasard."
+
+#: public_goods/templates/public_goods/Instructions.html:6
+msgid ""
+"Reminder: The participants in your group are different from the one you "
+"interacted with in the previous task."
+msgstr ""
+"Rappel : les autres participants de votre groupes sont différents de ceux "
+"avec lesquels vous avez précédemment interagis."
+
+#: public_goods/templates/public_goods/Instructions.html:9
+msgid ""
+"The total amount transferred into the common project is multiplied by 1,6."
+msgstr "La somme total transférée dans le projet commun est multiplié par 1,6"
+
+#: public_goods/templates/public_goods/Instructions.html:10
+msgid ""
+"In the end, the money in the common project is split equally between the 4 "
+"group members (including yourself)."
+msgstr ""
+"A la fin, le montant du pot commun est partagé équitablement entre les 4 "
+"membres du groupe (vous inclus)."
+
+#: public_goods/templates/public_goods/Introduction.html:5
+msgid "Task 2"
+msgstr "Tâche 2"
+
+#: public_goods/templates/public_goods/Simulation.html:5
+msgid "Task 2 Simulation"
+msgstr "Simulation de la Tâche 2"
+
+#: public_goods/templates/public_goods/Simulation.html:66
+#: trust/templates/trust/Simulation.html:129
+msgid "Amount sent by Player B"
+msgstr "Montant envoyé par le Joueur B"
+
+#: public_goods/templates/public_goods/Simulation.html:71
+msgid "Amount sent by Player C"
+msgstr "Montant envoyé par le Participant C"
+
+#: public_goods/templates/public_goods/Simulation.html:76
+msgid "Amount sent by Player D"
+msgstr "Montant envoyé par le Participant D"
 
 #: trust/templates/trust/EndGame.html:8
 msgid "You have finished the first task. Let’s move on to the second task."
@@ -268,6 +405,7 @@ msgstr "Comment vos gains seront-ils calculés ?"
 #: trust/templates/trust/GamesIntroduction.html:15
 msgid "The other participants may not be online at this moment."
 msgstr ""
+"Les autres participants ne sont pas nécessairement en ligne en ce moment."
 
 #: trust/templates/trust/GamesIntroduction.html:16
 msgid ""
@@ -295,10 +433,6 @@ msgstr "Les résultats vous seront communiqués à la fin de l’étude."
 msgid "Task 1"
 msgstr "Tâche 1"
 
-#: trust/templates/trust/Send.html:5 trust/templates/trust/SendBack.html:6
-msgid "Now the real task starts."
-msgstr "La véritable tâche commence maintenant."
-
 #: trust/templates/trust/Send.html:10
 msgid "Your role is the one of Person A."
 msgstr "Votre rôle est celui du Joueur A."
@@ -312,22 +446,6 @@ msgstr ""
 "Vous disposez de %(amount_allocated)s. Combien voulez-vous donner au "
 "Participant B ?"
 
-#: trust/templates/trust/SendBack.html:10
-msgid ""
-"You now see a table that lists all possible average contributions from other "
-"group members (all integers between 0 and 10)."
-msgstr ""
-"Voyez maintenant ce tableau listant les contributions moyennes possibles des "
-"autres membres du groupe (nombres entiers entre 0 et 10)."
-
-#: trust/templates/trust/SendBack.html:11
-msgid ""
-"For each average contribution possible from other members, how much would "
-"you want to put in the project?"
-msgstr ""
-"Pour chaque contribution possible des autres membres, combien mettriez-vous "
-"dans le pot commun du projet ?"
-
 #: trust/templates/trust/Simulation.html:6
 msgid "Task 1 Simulation"
 msgstr "Simulation de la Tâche 1"
@@ -339,10 +457,6 @@ msgid ""
 msgstr ""
 "Entre chaque tests, cliquez sur le bouton « Redémarrer », sous le "
 "calculateur."
-
-#: trust/templates/trust/Simulation.html:129
-msgid "Amount sent by Player B"
-msgstr "Montant envoyé par le Joueur B"
 
 #: trust/templates/trust/Simulation.html:136
 msgid "Reset to zero"
