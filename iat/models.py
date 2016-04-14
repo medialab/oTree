@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
+"""IAT game."""
+
 # <standard imports>
 from __future__ import division
-from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 # </standard imports>
@@ -16,13 +17,18 @@ An implementation of the Implicit Association Test for oTree.
 
 
 class Constants(BaseConstants):
+    """Constants for IAT."""
+
     name_in_url = 'iat'
     players_per_group = None
     num_rounds = 1
 
 
 class Subsession(BaseSubsession):
+    """Subsession for IAT."""
+
     def before_session_starts(self):
+        """Derive data from chosen treatment."""
         treatments = {
             'A1a': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
             'A1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
@@ -43,13 +49,23 @@ class Subsession(BaseSubsession):
                 self.session.config['treatment']
             ]['iat_file']
 
-            self.session.vars['data'] = open('iat/static/' + self.session.vars['iat_file'], 'r').read()
+            self.session.vars['data'] = open(
+                'iat/static/' + self.session.vars['iat_file'], 'r'
+            ).read()
 
 
 class Group(BaseGroup):
-    pass
+    """Group for IAT."""
 
+    def treatment(self):
+        """Get data derived from chosen treatment."""
+        return {
+            'data': self.session.vars['data'],
+            'order': self.session.vars['order']
+        }
 
 
 class Player(BasePlayer):
+    """Player for IAT."""
+
     iat_results = jsonfield.JSONField()

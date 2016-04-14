@@ -7,8 +7,8 @@ from ._builtin import Page
 def vars_for_all_templates(self):
     return {
         'instructions': 'iat/Instructions.html',
-        'data': self.session.vars['data'],
-        'order': self.session.vars['order']
+        'data': self.group.treatment()['data'],
+        'order': self.group.treatment()['order']
     }
 
 class Introduction(Page):

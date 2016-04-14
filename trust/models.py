@@ -54,6 +54,9 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     """Group model for Trust game."""
 
+    def treatment(self):
+        return self.session.vars['treatment']
+
     sent_amount = models.CurrencyField(
         min=0, max=Constants.amount_allocated,
         doc="""Amount sent by P1""",

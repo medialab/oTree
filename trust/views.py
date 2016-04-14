@@ -67,7 +67,7 @@ class Send(Page):
 
     def is_displayed(self):
         """Display rule stating 'Send' is displayed for Player 1 only."""
-        return self.session.vars['treatment'][:1] == 'A'
+        return self.group.treatment()[:1] == 'A'
 
 
 class SendBack(Page):
@@ -139,7 +139,7 @@ average contribution of 10'
 
     def is_displayed(self):
         """Display rule stating 'SendBack' appears for Player B only."""
-        return self.session.vars['treatment'][:1] == 'B'
+        return self.group.treatment()[:1] == 'B'
 
 
 class EndGame(Page):
