@@ -1,25 +1,28 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block title %}
-    Now the real task starts.
+    {% trans "Now the real task starts." %}
 {% endblock %}
 
 {% block content %}
-<p>You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10).<br/>
-For each average contribution possible from other members, how much would you want to put in the project?</p>
+<p>{% trans "You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10)." %}<br/>
+{% trans "For each average contribution possible from other members, how much would you want to put in the project?" %}</p>
 
-    {% formfield player.contribution_back_0 with label="If the other group members make an average contribution of 0" %}
-    {% formfield player.contribution_back_1 with label="If the other group members make an average contribution of 1" %}
-    {% formfield player.contribution_back_2 with label="If the other group members make an average contribution of 2" %}
-    {% formfield player.contribution_back_3 with label="If the other group members make an average contribution of 3" %}
-    {% formfield player.contribution_back_4 with label="If the other group members make an average contribution of 4" %}
-    {% formfield player.contribution_back_5 with label="If the other group members make an average contribution of 5" %}
-    {% formfield player.contribution_back_6 with label="If the other group members make an average contribution of 6" %}
-    {% formfield player.contribution_back_7 with label="If the other group members make an average contribution of 7" %}
-    {% formfield player.contribution_back_8 with label="If the other group members make an average contribution of 8" %}
-    {% formfield player.contribution_back_9 with label="If the other group members make an average contribution of 9" %}
-    {% formfield player.contribution_back_10 with label="If the other group members make an average contribution of 10" %}
-    <p>{% next_button %}</p>
+    {% formfield player.contribution_back_0 with label=contribution_back_0_label %}
+    {% formfield player.contribution_back_1 with label=contribution_back_1_label %}
+    {% formfield player.contribution_back_2 with label=contribution_back_2_label %}
+    {% formfield player.contribution_back_3 with label=contribution_back_3_label %}
+    {% formfield player.contribution_back_4 with label=contribution_back_4_label %}
+    {% formfield player.contribution_back_5 with label=contribution_back_5_label %}
+    {% formfield player.contribution_back_6 with label=contribution_back_6_label %}
+    {% formfield player.contribution_back_7 with label=contribution_back_7_label %}
+    {% formfield player.contribution_back_8 with label=contribution_back_8_label %}
+    {% formfield player.contribution_back_9 with label=contribution_back_9_label %}
+    {% formfield player.contribution_back_10 with label=contribution_back_10_label %}
+    <p>
+        <button class="btn btn-primary">{% trans "Next" %}</button>
+    </p>
 
 {% endblock %}

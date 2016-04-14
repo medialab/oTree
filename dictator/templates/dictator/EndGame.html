@@ -1,15 +1,16 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block title %}
-    Congratulations!
+    {% trans "Congratulations!" %}
 {% endblock %}
 
 {% block content %}
 
 <p>
-You have completed all tasks. Let's go to the second section of the study, where you will be asked to sort a number of words and be timed while doing so.
-{% next_button %}
+{% trans "You have completed all tasks. Let's go to the second section of the study, where you will be asked to sort a number of words and be timed while doing so." %}
+<button class="btn btn-primary">{% trans "Next" %}</button>
 </p>
 
 

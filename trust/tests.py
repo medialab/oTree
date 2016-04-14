@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
+"""E2E test for Trust game."""
+
 from __future__ import division
-
-import random
-
-from otree.common import Currency as c, currency_range
-
 from ._builtin import Bot
 from .models import Constants
 from . import views
 
 
 class PlayerBot(Bot):
+    """Player bot (E2E tester)."""
 
     def play_round(self):
-
+        """Start testing round."""
         # start game
         self.submit(views.Introduction)
         self.submit(
@@ -33,6 +31,5 @@ class PlayerBot(Bot):
         self.submit(views.Results)
 
     def validate_play(self):
+        """Validate the number of players in group."""
         assert (Constants.players_per_group == 2)
-
-

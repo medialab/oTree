@@ -1,11 +1,12 @@
 {% extends "global/Simulation.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>Task 1 Simulation</h1>
+<h1>{% trans "Task 1 Simulation" %}</h1>
 <hr/>
-<p>The test choices you make on this screen have no effect on your winnings in this task.
-Between each test, click the “reset to zero” button below to reset the calculator.</p>
+<p>{% trans "The test choices you make on this screen have no effect on your winnings in this task." %}
+{% trans "Between each test, click the “reset to zero” button below to reset the calculator." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "trust/trust_simulation.js" %}"></script>
@@ -117,24 +118,24 @@ $(function() { init() });
   </canvas>
   <div class="form commands hide">
     <div class="col-sm-3 col-md-3 col-lg-3 form-group">
-      <label for="amount">Amount sent by Player A</label>
+      <label for="amount">{% trans "Amount sent by Player A" %}</label>
       <input class="form-control" type="number" id="amountA" min="0" max="10">
-      <a class="btn btn-default" id="sendA">Send</a>
+      <a class="btn btn-default" id="sendA">{% trans "Send" %}</a>
     </div>
   </div>
 
   <div class="form commands hide">
     <div class="col-sm-4 col-md-4 col-lg-4 form-group">
-      <label for="amount">Amount sent by Player B</label>
+      <label for="amount">{% trans "Amount sent by Player B" %}</label>
       <input class="form-control" type="number" id="amountB" min="0" max="10" disabled="disabled">
-      <a class="btn btn-default" id="sendB" disabled="disabled">Send</a>
+      <a class="btn btn-default" id="sendB" disabled="disabled">{% trans "Send" %}</a>
     </div>
   </div>
   <div class="col-sm-3 col-md-3 col-lg-3 commands hide">
     <br><br>
-    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">Reset to zero</a>
+    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a>
     <br><br><br>
-    <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="next">Next</button>
+    <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="next">{% trans "Next" %}</button>
   </div>
 </div>
 

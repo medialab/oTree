@@ -1,1 +1,1 @@
-{% extends "global/Base.html" %}{% load staticfiles otree_tags %}{% block title %}    Task 2{% endblock %}{% block content %}    {% include 'public_goods/Instructions.html' %}    {% next_button %}{% endblock %}
+{% extends "global/Base.html" %}{% load i18n %}{% load staticfiles otree_tags %}{% block title %}    {% trans "Task 2" %}{% endblock %}{% block content %}    {% include 'public_goods/Instructions.html' %}    <button class="btn btn-primary">{% trans "Next" %}</button>{% endblock %}

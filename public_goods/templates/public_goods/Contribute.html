@@ -1,18 +1,19 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
 {% block title %}
-    Now the real task begins.
+    {% trans "Now the real task begins." %}
 {% endblock %}
 
 {% block content %}
 
-    <p>Now the real task begins. Once you have made your decision and clicked the “Next” button, you cannot return to this screen.
-    <br/>You have 10 Euro in your possession. How much do you want to put into the common project?</p>
+    <p>{% trans "Now the real task begins. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}
+    <br/>{% trans "You have 10 Euro in your possession. How much do you want to put into the common project?" %}</p>
 
-    {% formfield player.contribution with label="from 0 to 10" %}
+    {% formfield player.contribution with label=contribution_label %}
 
-    {% next_button %}
+    <button class="btn btn-primary">{% trans "Next" %}</button>
 
 
 {% endblock %}

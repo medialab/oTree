@@ -1,12 +1,15 @@
 {% extends "global/Question.html" %}
+{% load i18n %}
 {% load otree_tags %}
 
-{% block title %}Now the task begins.{% endblock %}
+{% block title %}
+  {% trans "Now the task begins." %}
+{% endblock %}
 
 {% block question %}
 <p>
-Once you have made your decision and clicked the “Next” button, you cannot return to this screen.<br/>
-Your role is that of Person A.<br/>
-You have 10 Euro in your possession. How much of it do you want to transfer to Person B?
+{% trans "Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}<br/>
+{% trans "Your role is that of Person A." %}<br/>
+{% trans "You have 10 Euro in your possession. How much of it do you want to transfer to Person B?" %}
 </p>
 {% endblock %}

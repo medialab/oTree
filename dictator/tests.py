@@ -1,19 +1,18 @@
 # -*- coding: utf-8 -*-
+"""Test bot for Dictator game."""
+
 from __future__ import division
-
 import random
-
-from otree.common import Currency as c, currency_range
-
 from ._builtin import Bot
 from .models import Constants
 from . import views
 
 
 class PlayerBot(Bot):
+    """Test bot."""
 
     def play_round(self):
-
+        """Test a game round."""
         # start game
         self.submit(views.Introduction)
         self.submit(views.Question1, {'training_participant1_payoff': 1,
@@ -27,7 +26,7 @@ class PlayerBot(Bot):
         self.submit(views.Results)
 
     def validate_play(self):
+        """Make assertions."""
         # basic assertions
         assert (Constants.allocated_amount == 100)
         assert (Constants.players_per_group == 2)
-
