@@ -9,9 +9,7 @@
   <script>
     var data = {{data|safe}},
         order = '{{order}}',
-        lang = "{{language_code}}";
-
-    console.log(lang)
+        lang = '{{language_code}}'
 
     IAT.begin(data, order, lang)
        .then(function(results) {
@@ -50,7 +48,6 @@
 
       .wrong-answer {
         display: block;
-        opacity: 1;
         position: relative;
         width: 500px;
         left: 50%;
@@ -61,6 +58,20 @@
         font-weight: 700;
         color: red;
         opacity: 0;
+      }
+
+      .pause-message {
+        display: block;
+        position: relative;
+        width: 600px;
+        margin-left: -300px;
+        height: 400px;
+        margin-top: -200px;
+        font-size: 16px;
+        color: #FFF;
+        top: 50%;
+        left: 50%;
+        text-align: center;
       }
 
       .btn {
@@ -86,6 +97,7 @@
         <div class="category right v-align col-xs-3 col-sm-3 col-md-3 col-lg-3">RIGHT</div>
       </div>
       <div class="wrong-answer">✕</div>
+      <div class="pause-message"></div>
     </main>
 
     <nav class="hidden-md hidden-lg">

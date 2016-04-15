@@ -60,6 +60,7 @@ $(function(window, undefined) {
         $uiStimuli = $('.stimuli'),
         $uiWrongAnswerCross = $('.wrong-answer'),
         $window = $(window),
+        $pauseMessage = $('.pause-message'),
         mightBeUsingTablet = false;
 
     var answerStore = {
@@ -77,13 +78,45 @@ $(function(window, undefined) {
 
     /**
      * Update text on UI - left and right category, stimuli word.
+     * Deal differenly if the data set is a pause message.
+     *
      * @param  {Object} data Trial data.
      * @return {void}
      */
     function updateUIText(data) {
-      $uiCategoryLeft.html(data.left);
-      $uiCategoryRight.html(data.right);
-      $uiStimuli.html(data.stimuli);
+      if (!data.hasOwnProperty('message')) {
+        hidePauseMessage();
+        $uiCategoryLeft.html(data.left);
+        $uiCategoryRight.html(data.right);
+        $uiStimuli.html(data.stimuli);
+      } else {
+        showPauseMessage(data.message[lang]);
+      }
+    }
+
+    /**
+     * Show pause message screen.
+     *
+     * @param  {string} msg Message to display.
+     * @return {void}
+     */
+    function showPauseMessage(msg) {
+      $uiCategoryLeft.html('');
+      $uiCategoryRight.html('');
+      $uiStimuli.html('');
+      $pauseMessage.html(msg);
+      $pauseMessage.show();
+    }
+
+    /**
+     * Hide pause message screen.
+     *
+     * @return {void}
+     */
+    function hidePauseMessage() {
+      $pauseMessage.hide(0, function () {
+        $pauseMessage.html('');
+      });
     }
 
     /**
@@ -129,6 +162,11 @@ $(function(window, undefined) {
 
       // Arrange the trials based on given order.
       order.split('').forEach(function(character) {
+        // Queue in pause messages, if any.
+        if (data.trials[character].hasOwnProperty('message')) {
+          resultTrials.push({message: data.trials[character].message});
+        }
+
         data.trials[character].displayed.forEach(function(displayed) {
           resultTrials.push({
             correctCategory: capitalize(displayed[displayed.correct]),
@@ -216,15 +254,31 @@ $(function(window, undefined) {
        * @return {void}
        */
       function reset() {
-        // console.log('showing', trial);
         displayWrongAnswerFeedback(false);
         dispose();
 
-        timeLimitForAnswer = setTimeout(timeLimitHandler, answerTimeLimit * 1000);
-        $window.on('keyup', keyUpHandler);
-        $('.btn-left').on('click', leftBtnHandler);
-        $('.btn-right').on('click', rightBtnHandler);
-        timer.start();
+        if (!trial.hasOwnProperty('message')) {
+          timeLimitForAnswer = setTimeout(timeLimitHandler, answerTimeLimit * 1000);
+          $window.on('keyup', keyUpHandler);
+          $window.off('keyup', passPauseScreen);
+          $window.off('click touchstart', passPauseScreen);
+          $('.btn-left').on('click touchstart', leftBtnHandler);
+          $('.btn-right').on('click touchstart', rightBtnHandler);
+          timer.start();
+        } else {
+          $window.on('click touchstart', passPauseScreen);
+          $window.on('keyup', passPauseScreen);
+        }
+      }
+
+      /**
+       * Pass the currently displaying pause screen.
+       *
+       * @return {Object|void}  Resolve promise.
+       */
+      function passPauseScreen() {
+        dispose();
+        return deferred.resolve();
       }
 
       /**
@@ -239,8 +293,8 @@ $(function(window, undefined) {
 
         clearTimeout(timeLimitForAnswer);
         $window.off('keyup', keyUpHandler);
-        $('.btn-left').off('click', leftBtnHandler);
-        $('.btn-right').off('click', rightBtnHandler);
+        $('.btn-left').off('click touchstart', leftBtnHandler);
+        $('.btn-right').off('click touchstart', rightBtnHandler);
       }
 
       /**
@@ -356,6 +410,7 @@ $(function(window, undefined) {
        * @return {Object} Promise.
        */
       var showTrial = function(trial) {
+        console.log(trial);
         updateUIText(trial);
         return waitForAnswer(trial);
       };

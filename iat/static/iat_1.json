@@ -9,6 +9,10 @@
 
   "trials": {
     "A": {
+      "message": {
+        "en-us": "This message occurs before round A. Press space or touch anywhere to continue.",
+        "fr-fr": ""
+      },
       "name": "Trustworthy / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "Truthful", "fr-fr": ""}},
@@ -32,6 +36,10 @@
       ]
     },
     "B": {
+      "message": {
+        "en-us": "This message occurs before round B.<br/>There won't be anything before round C.<br/>Press space or touch anywhere to continue.",
+        "fr-fr": ""
+      },
       "name": "Trustworthy or Government / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Government", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "Constitution", "fr-fr": ""}},
