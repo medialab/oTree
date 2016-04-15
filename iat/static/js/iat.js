@@ -121,9 +121,10 @@ $(function(window, undefined) {
      *
      * @param  {Object} data  Raw JSON data.
      * @param  {string} order The order of passage, such as "A B C D"...
+     * @param  {string} lang  Language code to base sets on.
      * @return {Array}  The ready-to-use, stack of trial objects.
      */
-    function prepareTrials(data, order) {
+    function prepareTrials(data, order, lang) {
       var resultTrials = [];
 
       // Arrange the trials based on given order.
@@ -131,7 +132,7 @@ $(function(window, undefined) {
         data.trials[character].displayed.forEach(function(displayed) {
           resultTrials.push({
             correctCategory: capitalize(displayed[displayed.correct]),
-            stimuli: displayed.showing,
+            stimuli: displayed.showing[lang],
             left: capitalize(displayed.left),
             right: capitalize(displayed.right),
             correctPosition: displayed.correct,
@@ -157,14 +158,15 @@ $(function(window, undefined) {
      *
      * @param  {Array}  dataStore
      * @param  {string} order The order of passage, such as "A B C D"...
+     * @param  {string} lang  Language code to base sets on.
      * @return {Object} A promise resolving with the results payload.
      */
-    function loadBlocks(dataStore, order) {
+    function loadBlocks(dataStore, order, lang) {
       setKeyCodesAndTimeLimitFromConfig(dataStore);
 
       var deferred = $.Deferred();
 
-      startBlocks(prepareTrials(dataStore, order))
+      startBlocks(prepareTrials(dataStore, order, lang))
         .then(function(results) {
           var errorPercentage = (results.errors.length / results.results.length) * 100;
           results['error_percentage'] = errorPercentage;
@@ -384,8 +386,8 @@ $(function(window, undefined) {
      * Public API.
      */
     return {
-      begin: function(data, order) {
-        return loadBlocks(data, order);
+      begin: function(data, order, lang) {
+        return loadBlocks(data, order, lang);
       }
     }
   })(window, undefined);

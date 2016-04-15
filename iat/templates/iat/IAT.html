@@ -8,9 +8,12 @@
   <script src={% static "js/iat.js" %}></script>
   <script>
     var data = {{data|safe}},
-        order = '{{order}}';
+        order = '{{order}}',
+        lang = "{{language_code}}";
 
-    IAT.begin(data, order)
+    console.log(lang)
+
+    IAT.begin(data, order, lang)
        .then(function(results) {
          $('input[name="iat_results"]').val(JSON.stringify(results));
          $('#form').submit();

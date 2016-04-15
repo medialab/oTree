@@ -61,7 +61,8 @@ class Group(BaseGroup):
         """Get data derived from chosen treatment."""
         return {
             'data': self.session.vars['data'],
-            'order': self.session.vars['order']
+            'order': self.session.vars['order'],
+            'language_code': self.session.config['language_code']
         }
 
 
