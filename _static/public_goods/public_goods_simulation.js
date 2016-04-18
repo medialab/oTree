@@ -1,7 +1,6 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
-lib.webFontTxtFilters = {}; 
 
 // library properties:
 lib.properties = {
@@ -9,19 +8,11 @@ lib.properties = {
 	height: 480,
 	fps: 30,
 	color: "#CCD1DB",
-	webfonts: {},
 	manifest: []
 };
 
 
 
-lib.webfontAvailable = function(family) { 
-	lib.properties.webfonts[family] = true;
-	var txtFilters = lib.webFontTxtFilters && lib.webFontTxtFilters[family] || [];
-	for(var f = 0; f < txtFilters.length; ++f) {
-		txtFilters[f].updateCache();
-	}
-};
 // symbols:
 
 
@@ -1401,14 +1392,14 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 		Player.prototype.giveMoney = function (amount) {
 			if (amount <= max) {
 				this.currentAmount -= amount;
-				this.speak(currency + amount.toString());
+				this.speak(currency + this.currentAmount.toFixed(2).toString());
 				moneyFromGroup += amount;
 			}
 		};
 		
 		Player.prototype.receiveMoney = function (amount) {
 			this.currentAmount += amount;
-			this.speak(currency + amount.toFixed(2).toString());
+			this.speak(currency + this.currentAmount.toFixed(2).toString());
 		};
 		
 		Player.prototype.speak = function (text) {
