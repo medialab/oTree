@@ -1,0 +1,26 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+  <p>
+    <p>{{q_1_7_label}}</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{{q_2_2_label_1}}</th>
+          <th>{{q_2_2_label_2}}</th>
+          <th>{{q_2_2_label_3}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{% formfield player.q_2_2_1 with label='' %}</td>
+          <td>{% formfield player.q_2_2_2 with label='' %}</td>
+          <td>{% formfield player.q_2_2_3 with label='' %}</td>
+        </tr>
+      </tbody>
+    </table>
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+  <p class="religion">
+      {% formfield player.q_religion %}
+  </p>
+  <div class="jewish hide">
+      {% formfield player.q_jewish %}
+  </div>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+  <script>
+  $(function() {
+    var $j = $('.jewish'),
+        $r = $('.field-q_religion'),
+        $na = $j.find('li').first();
+
+    // Hide the "N/A" field.
+    $na.hide();
+
+    $r.find('input').click(function (e) {
+      if (e.target.id.indexOf('q_religion_1') > -1) {
+        $j.removeClass('hide');
+        $na.find('input').prop('checked', false);
+      } else {
+        $j.addClass('hide');
+        $na.find('input').prop('checked', true);
+      }
+    });
+  });
+  </script>
+{% endblock %}

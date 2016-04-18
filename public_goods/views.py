@@ -21,7 +21,7 @@ class EndGame(Page):
 
 
 class Simulation(Page):
-    """Simuation for Public Goods."""
+    """Simulation for Public Goods."""
 
     pass
 

@@ -6,58 +6,11 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree import widgets
-from django.forms import MultiWidget
+from django.forms import extras
 from datetime import date
 # </standard imports>
 
 from django_countries.fields import CountryField
-
-
-class DataSelectorWidget(MultiWidget):
-    """Form widget for birth date."""
-
-    def __init__(self, attrs=None):
-        """Create choices for days, months, years."""
-        years = [(year, year) for year in range(2014, 1900, -1)]
-        months = [(month, month) for month in (
-            '01', '02', '03', '04', '05', '06',
-            '07', '08', '09', '10', '11', '12'
-        )]
-        days = [(day, day) for day in range(1, 31)]
-        wid = (
-            widgets.Select(attrs=attrs, choices=days),
-            widgets.Select(attrs=attrs, choices=months),
-            widgets.Select(attrs=attrs, choices=years),
-        )
-        super(DataSelectorWidget, self).__init__(wid, attrs)
-
-    def decompress(self, value):
-        """Return a decompressed form of the date."""
-        # TODO: display depending on current locale
-        if value:
-            return [value.day, value.month, value.year]
-        return None
-
-    def format_output(self, rendered_widgets):
-        """Return formatted output."""
-        return ''.join(rendered_widgets)
-
-    def value_from_datadict(self, data, files, name):
-        """Return value from inner datadict."""
-        datelist = [
-            widget.value_from_datadict(data, files, name + '_%s' % i)
-            for i, widget in enumerate(self.widgets)
-        ]
-        try:
-            d = date(
-                day=int(datelist[0]),
-                month=int(datelist[1]),
-                year=int(datelist[2]),
-            )
-        except ValueError:
-            return ''
-        else:
-            return str(d)
 
 
 class Constants(BaseConstants):
@@ -226,10 +179,7 @@ never justifiable\" and 10 means that \"this action is always justifiable\".",
     )
 
     q_1_7_1 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="Your family",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -244,15 +194,12 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_1_7_2 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="People in your neighborhood",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -267,15 +214,12 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_1_7_3 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="People you know personally",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -290,15 +234,12 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_1_7_4 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="People you meet for the first time",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -313,15 +254,12 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_1_7_5 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="People of another religion",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -336,15 +274,12 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_1_7_6 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
-don't trust them at all and 10 means that you fully trust them.",
+        verbose_name="People of another nationality",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -359,7 +294,7 @@ don't trust them at all and 10 means that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
@@ -384,11 +319,7 @@ returned with its contents, or not?",
     )
 
     q_2_1_1 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust different \
-public institutions. How much trust do you have in the following to act \
-in the best interest of society? Please tell me on a scale of 0 to 10, \
-where 0 means that you don't trust them at all and 10 means \
-that you fully trust them.",
+        verbose_name="Your government",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -403,16 +334,12 @@ that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_1_2 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust different \
-public institutions. How much trust do you have in the following to act \
-in the best interest of society? Please tell me on a scale of 0 to 10, \
-where 0 means that you don't trust them at all and 10 means \
-that you fully trust them.",
+        verbose_name="The police",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -427,16 +354,12 @@ that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_1_3 = models.CharField(
-        verbose_name="I‘d like to ask you how much you trust different \
-public institutions. How much trust do you have in the following to act \
-in the best interest of society? Please tell me on a scale of 0 to 10, \
-where 0 means that you don't trust them at all and 10 means \
-that you fully trust them.",
+        verbose_name="The media",
         choices=(
             ('0', "0 - I don't trust them at all"),
             ('1', '1'),
@@ -451,12 +374,11 @@ that you fully trust them.",
             ('10', '10 - I fully trust them'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_2_1 = models.CharField(
-        verbose_name="Do you agree with the following statements?",
         choices=(
             ('0', "0 - I don't agree at all"),
             ('1', '1'),
@@ -471,12 +393,11 @@ that you fully trust them.",
             ('10', '10 - I fully agree'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_2_2 = models.CharField(
-        verbose_name="Do you agree with the following statements?",
         choices=(
             ('0', "0 - I don't agree at all"),
             ('1', '1'),
@@ -491,12 +412,11 @@ that you fully trust them.",
             ('10', '10 - I fully agree'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_2_3 = models.CharField(
-        verbose_name="Do you agree with the following statements?",
         choices=(
             ('0', "0 - I don't agree at all"),
             ('1', '1'),
@@ -511,12 +431,11 @@ that you fully trust them.",
             ('10', '10 - I fully agree'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_2_4 = models.CharField(
-        verbose_name="Do you agree with the following statements?",
         choices=(
             ('0', "0 - I don't agree at all"),
             ('1', '1'),
@@ -531,12 +450,11 @@ that you fully trust them.",
             ('10', '10 - I fully agree'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_2_2_5 = models.CharField(
-        verbose_name="Do you agree with the following statements?",
         choices=(
             ('0', "0 - I don't agree at all"),
             ('1', '1'),
@@ -551,13 +469,13 @@ that you fully trust them.",
             ('10', '10 - I fully agree'),
             ("Don't know", "Don't know"),
         ),
-        widget=widgets.Select(),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
     q_birthdate = models.CharField(
         verbose_name='What was your date of birth?',
-        widget=DataSelectorWidget()
+        widget=extras.SelectDateWidget(years=range(2016, 1900, -1))
     )
 
     q_gender = models.CharField(
@@ -590,7 +508,7 @@ the people who live in the same household as you',
 
     q_country_year = models.PositiveIntegerField(
         verbose_name='In what year did you arrive in this country',
-        choices=range(1900, 2016),
+        choices=range(date.today().year, 1900, -1),
         initial=None
     )
 
@@ -614,7 +532,7 @@ you have completed?',
 other post school qualification other than university', 'Diploma, trades \
 certificate or other post school qualification other than university'),
             ('Undergraduate degree (e.g. BA, BS', 'Undergraduate \
-degree (e.g. BA, BS'),
+degree (e.g. BA, BS)'),
             ('Post-graduate degree', 'Post-graduate degree'),
             ("Don't know", "Don't know"),
         ),
@@ -721,6 +639,20 @@ before tax or anything else was taken out?',
             ('Christian', 'Christian'),
             ('Druze', 'Druze'),
             ('Other', 'Other')
+        ),
+        widget=widgets.RadioSelect()
+    )
+
+    q_jewish = models.CharField(
+        verbose_name='Do you consider yourself as being:',
+        choices=(
+            ('N/A', 'N/A'),
+            ('Ultra-religious (“Haredi”)', 'Ultra-religious (“Haredi”)'),
+            ('Religious', 'Religious'),
+            ('Traditional but religious', 'Traditional but religious'),
+            ('Traditional but not so religious',
+                'Traditional but not so religious'),
+            ('Non-religious, secular', 'Non-religious, secular')
         ),
         widget=widgets.RadioSelect()
     )
