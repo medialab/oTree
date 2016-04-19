@@ -1217,12 +1217,22 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 			var startAmount = 10;
 			var currency = '€';
 			var multiplier = 3;
+			var labelA = 'participant A';
+			var labelB = 'participant B';
+			var multiplier = 3;
+			var amount1 = amount2 = 10;
+			var currency = '€';
 		
-			var canvas = window.document.getElementsByTagName('canvas')[0];
-			if (canvas) {
-				startAmount = canvas.dataset.startAmount || startAmount;
-				currency = canvas.dataset.currency || currency;
-				multiplier = canvas.dataset.currency || multiplier;
+			if (document) {
+				var canvas = document.getElementsByTagName('canvas')[0];
+				if (canvas) {
+					labelA = canvas.dataset.participantsLabelA || labelA;
+					labelB = canvas.dataset.participantsLabelB || labelB;
+					multiplier = canvas.dataset.multiplier || multiplier;
+					amount1 = canvas.dataset.amount1 || amount1;
+					amount2 = canvas.dataset.amount2 || amount2;
+					currency = canvas.dataset.currency || currency;
+				}
 			}
 			
 			function createDollar(color) {
