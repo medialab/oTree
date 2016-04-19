@@ -41,7 +41,7 @@ class Offer(Page):
 
 page_sequence = [
     Introduction,
-    Simulation,
+    # Simulation,
     Offer,
     EndGame
 ]
