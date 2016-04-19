@@ -28,7 +28,7 @@ function init() {
   var $amountB = $('#amountB');
   var $sendA = $('#sendA');
   var $sendB = $('#sendB');
-  var $reset = $('#reset');
+  // var $reset = $('#reset');
   var $next = $('#next')
 
   var currentTry = 0;
@@ -40,7 +40,7 @@ function init() {
   $sendA.click(function (e) {
     e.preventDefault();
 
-    $reset.attr('disabled', true);
+    // $reset.attr('disabled', true);
 
     if (!playerAFinished) {
       var val = $amountA.val();
@@ -80,15 +80,15 @@ function init() {
         ++currentTry;
 
         if (currentTry === REQUIRED_TRIES) {
-          $reset.addClass('hide');
+          // $reset.addClass('hide');
           $next.attr('disabled', false);
           return;
         }
 
-        $reset.attr('disabled', false);
+        // $reset.attr('disabled', false);
       }
     }
-  });
+  });/*
 
   $reset.click(function (e) {
     e.preventDefault();
@@ -102,7 +102,7 @@ function init() {
     $amountA.attr('disabled', false);
     $sendA.attr('disabled', false);
     $amountB.attr('disabled', true);
-  });
+  });*/
 
   setTimeout(function () {
     $('.commands').removeClass('hide')
@@ -114,7 +114,10 @@ $(function() { init() });
 <div class="container">
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
-          class="col-sm-6 col-md-6 col-lg-6">
+          class="col-sm-6 col-md-6 col-lg-6"
+          data-currency="{% trans '€'%}"
+          data-participants-label-a="Participant A"
+          data-participants-label-b="Participant B">
   </canvas>
   <div class="form commands hide">
     <div class="col-sm-3 col-md-3 col-lg-3 form-group">
@@ -133,7 +136,7 @@ $(function() { init() });
   </div>
   <div class="col-sm-3 col-md-3 col-lg-3 commands hide">
     <br><br>
-    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a>
+    <!-- <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a> -->
     <br><br><br>
     <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="next">{% trans "Next" %}</button>
   </div>

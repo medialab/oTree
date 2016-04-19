@@ -29,6 +29,15 @@ function init() {
 }
 $(function() { init() });
 </script>
-<canvas id="canvas" class="canvas" width="600" height="480" style="background-color:#CCD1DB"></canvas>
+<canvas
+  id="canvas"
+  class="canvas"
+  width="600"
+  height="480"
+  style="background-color:#CCD1DB"
+  data-currency="{% trans '€'%}"
+  data-participants-label-a="Participant A"
+  data-participants-label-b="Participant B">
+</canvas>
 
 {% endblock %}

@@ -1386,7 +1386,7 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 			this.startAmount = startAmount;
 			this.currentAmount = startAmount;
 			this.bubble = bubbleRef;
-			this.bubble.label.text = currency + '0';
+			this.bubble.label.text = currency + max;
 		};
 		
 		Player.prototype.giveMoney = function (amount) {

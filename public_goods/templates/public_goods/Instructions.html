@@ -28,6 +28,16 @@ function init() {
 }
 $(function() { init() });
 </script>
-<canvas id="canvas" class="canvas" width="600" height="480" style="background-color:#CCD1DB"></canvas>
+<canvas
+  id="canvas"
+  class="canvas"
+  width="600"
+  height="480"
+  style="background-color:#CCD1DB"
+  data-estimation-min="0"
+  data-estimation-max="10"
+  data-estimation-currency="{% trans '€'%}"
+  data-multipler="1.6">
+</canvas>
 
 {% endblock %}

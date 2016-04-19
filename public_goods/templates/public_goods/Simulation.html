@@ -55,7 +55,11 @@ $(function() { init() });
 <div class="container">
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
-          class="col-sm-6 col-md-6 col-lg-6">
+          class="col-sm-6 col-md-6 col-lg-6"
+          data-estimation-min="0"
+          data-estimation-max="10"
+          data-estimation-currency="{% trans '€'%}"
+          data-multipler="1.6">
   </canvas>
   <div class="form commands">
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
