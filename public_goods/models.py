@@ -7,6 +7,7 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
+from django.utils.translation import ugettext_lazy as _
 # </standard imports>
 
 doc = """
@@ -130,26 +131,26 @@ class Player(BasePlayer):
     def vars_for_template(self):
         """Return variables available for template."""
         return {
-            'contribution_back_0_label': 'If the other group members make an \
-average contribution of 0:',
-            'contribution_back_1_label': 'If the other group members make an \
-average contribution of 1:',
-            'contribution_back_2_label': 'If the other group members make an \
-average contribution of 2:',
-            'contribution_back_3_label': 'If the other group members make an \
-average contribution of 3:',
-            'contribution_back_4_label': 'If the other group members make an \
-average contribution of 4:',
-            'contribution_back_5_label': 'If the other group members make an \
-average contribution of 5:',
-            'contribution_back_6_label': 'If the other group members make an \
-average contribution of 6:',
-            'contribution_back_7_label': 'If the other group members make an \
-average contribution of 7:',
-            'contribution_back_8_label': 'If the other group members make an \
-average contribution of 8:',
-            'contribution_back_9_label': 'If the other group members make an \
-average contribution of 9:',
-            'contribution_back_10:_label': 'If the other group members make an \
-average contribution of 10:',
+            'contribution_back_0_label': _(u'If the other group members make an \
+average contribution of 0:'),
+            'contribution_back_1_label': _(u'If the other group members make an \
+average contribution of 1:'),
+            'contribution_back_2_label': _(u'If the other group members make an \
+average contribution of 2:'),
+            'contribution_back_3_label': _(u'If the other group members make an \
+average contribution of 3:'),
+            'contribution_back_4_label': _(u'If the other group members make an \
+average contribution of 4:'),
+            'contribution_back_5_label': _(u'If the other group members make an \
+average contribution of 5:'),
+            'contribution_back_6_label': _(u'If the other group members make an \
+average contribution of 6:'),
+            'contribution_back_7_label': _(u'If the other group members make an \
+average contribution of 7:'),
+            'contribution_back_8_label': _(u'If the other group members make an \
+average contribution of 8:'),
+            'contribution_back_9_label': _(u'If the other group members make an \
+average contribution of 9:'),
+            'contribution_back_10:_label': _(u'If the other group members make an \
+average contribution of 10:'),
         }
