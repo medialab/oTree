@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 11:49+0200\n"
+"POT-Creation-Date: 2016-04-28 14:10+0200\n"
 "PO-Revision-Date: 2016-04-13 15:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -40,7 +40,7 @@ msgstr ""
 #: public_goods/templates/public_goods/DecisionInstructions.html:11
 #: public_goods/templates/public_goods/EndGame.html:12
 #: public_goods/templates/public_goods/Introduction.html:12
-#: public_goods/templates/public_goods/Simulation.html:87
+#: public_goods/templates/public_goods/Simulation.html:97
 #: survey/templates/survey/Demographics1.html:10
 #: survey/templates/survey/Demographics10.html:10
 #: survey/templates/survey/Demographics11.html:10
@@ -108,7 +108,7 @@ msgstr ""
 
 #: dictator/templates/dictator/Instructions.html:34
 #: public_goods/templates/public_goods/Instructions.html:38
-#: public_goods/templates/public_goods/Simulation.html:61
+#: public_goods/templates/public_goods/Simulation.html:71
 #: trust/templates/trust/Instructions.html:39
 #: trust/templates/trust/Simulation.html:118
 msgid "€"
@@ -153,13 +153,13 @@ msgstr ""
 "this task."
 
 #: dictator/templates/dictator/Simulation.html:47
-#: public_goods/templates/public_goods/Simulation.html:66
+#: public_goods/templates/public_goods/Simulation.html:76
 #: trust/templates/trust/Simulation.html:124
 msgid "Amount sent by Player A"
 msgstr "Amount sent by Player A"
 
 #: dictator/templates/dictator/Simulation.html:49
-#: public_goods/templates/public_goods/Simulation.html:86
+#: public_goods/templates/public_goods/Simulation.html:96
 #: trust/templates/trust/Simulation.html:126
 #: trust/templates/trust/Simulation.html:134
 msgid "Send"
@@ -1406,6 +1406,72 @@ msgstr ""
 msgid "Honest --- Dishonest or Government --- Corrupt"
 msgstr ""
 
+#: public_goods/models.py:134
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid "If the other group members make an average contribution of 0:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/models.py:136
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 1"
+msgid "If the other group members make an average contribution of 1:"
+msgstr "If the other group members make an average contribution of 1"
+
+#: public_goods/models.py:138
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 2"
+msgid "If the other group members make an average contribution of 2:"
+msgstr "If the other group members make an average contribution of 2"
+
+#: public_goods/models.py:140
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 3"
+msgid "If the other group members make an average contribution of 3:"
+msgstr "If the other group members make an average contribution of 3"
+
+#: public_goods/models.py:142
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 4"
+msgid "If the other group members make an average contribution of 4:"
+msgstr "If the other group members make an average contribution of 4"
+
+#: public_goods/models.py:144
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 5"
+msgid "If the other group members make an average contribution of 5:"
+msgstr "If the other group members make an average contribution of 5"
+
+#: public_goods/models.py:146
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 6"
+msgid "If the other group members make an average contribution of 6:"
+msgstr "If the other group members make an average contribution of 6"
+
+#: public_goods/models.py:148
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 7"
+msgid "If the other group members make an average contribution of 7:"
+msgstr "If the other group members make an average contribution of 7"
+
+#: public_goods/models.py:150
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 8"
+msgid "If the other group members make an average contribution of 8:"
+msgstr "If the other group members make an average contribution of 8"
+
+#: public_goods/models.py:152
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 9"
+msgid "If the other group members make an average contribution of 9:"
+msgstr "If the other group members make an average contribution of 9"
+
+#: public_goods/models.py:154
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 10"
+msgid "If the other group members make an average contribution of 10:"
+msgstr "If the other group members make an average contribution of 10"
+
 #: public_goods/templates/public_goods/Contribute.html:6
 msgid "Now the real task begins."
 msgstr "Now the real task begins."
@@ -1526,16 +1592,16 @@ msgstr "Task 2"
 msgid "Task 2 Simulation"
 msgstr "Task 2 Simulation"
 
-#: public_goods/templates/public_goods/Simulation.html:71
+#: public_goods/templates/public_goods/Simulation.html:81
 #: trust/templates/trust/Simulation.html:132
 msgid "Amount sent by Player B"
 msgstr "Amount sent by Player B"
 
-#: public_goods/templates/public_goods/Simulation.html:76
+#: public_goods/templates/public_goods/Simulation.html:86
 msgid "Amount sent by Player C"
 msgstr "Amount sent by Player C"
 
-#: public_goods/templates/public_goods/Simulation.html:81
+#: public_goods/templates/public_goods/Simulation.html:91
 msgid "Amount sent by Player D"
 msgstr "Amount sent by Player D"
 
@@ -2337,9 +2403,41 @@ msgstr ""
 msgid "The results will be shared with you at the end of the study."
 msgstr "The results will be shared with you at the end of the study."
 
+#: trust/templates/trust/Instructions.html:6
 #: trust/templates/trust/Introduction.html:6
 msgid "Task 1"
 msgstr "Task 1"
+
+#: trust/templates/trust/Instructions.html:8
+msgid "In the first task, two people participate: Person A and Person B."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:9
+msgid "Your role (A or B) will be revealed at the beginning of the task."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:10
+msgid ""
+"This other participant, with whom you will interact only once during the "
+"study, also lives in [COUNTRY]."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:11
+msgid "Both participants will receive 10 Euro at the beginning of the game."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:12
+msgid ""
+"If you are Person A, you must decide how much of your 10 Euro you want to "
+"send to Person B. This amount will automatically be multiplied by 3."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:13
+msgid ""
+"If you are Person B, you have to decide, before knowing the decision of "
+"Person A, how much out of each of the amounts that Person A could send you, "
+"you want to send back."
+msgstr ""
 
 #: trust/templates/trust/Send.html:10
 msgid "Your role is the one of Person A."
