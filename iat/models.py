@@ -32,12 +32,12 @@ class Subsession(BaseSubsession):
         treatments = {
             'A1a': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
             'A1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
-            'A2a': {'order': 'ABCDEFG', 'iat_file': 'iat_2.json'},
-            'A2b': {'order': 'ACBEDGF', 'iat_file': 'iat_2.json'},
+            'A2a': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
+            'A2b': {'order': 'ACBDFE', 'iat_file': 'iat_2.json'},
             'B1a': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
             'B1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
-            'B2a': {'order': 'ABCDEFG', 'iat_file': 'iat_2.json'},
-            'B2b': {'order': 'ACBEDGF', 'iat_file': 'iat_2.json'},
+            'B2a': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
+            'B2b': {'order': 'ACBDFE', 'iat_file': 'iat_2.json'},
         }
 
         if 'treatment' in self.session.config:

@@ -90,19 +90,20 @@ $(function(window, undefined) {
         $uiCategoryRight.html(data.right);
         $uiStimuli.html(data.stimuli);
       } else {
-        showPauseMessage(data.message[lang]);
+        showPauseMessage(data.message[lang].text, data.message[lang].words);
       }
     }
 
     /**
      * Show pause message screen.
      *
-     * @param  {string} msg Message to display.
+     * @param  {string} msg   Message to display.
+     * @param  {Object} words The left/right words to display.
      * @return {void}
      */
-    function showPauseMessage(msg) {
-      $uiCategoryLeft.html('');
-      $uiCategoryRight.html('');
+    function showPauseMessage(msg, words) {
+      $uiCategoryLeft.html(words.left);
+      $uiCategoryRight.html(words.right);
       $uiStimuli.html('');
       $pauseMessage.html(msg);
       $pauseMessage.show();
