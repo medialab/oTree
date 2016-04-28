@@ -1371,10 +1371,10 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				min = canvas.dataset.estimationMin || min;
-				max = canvas.dataset.estimationMax || max;
+				min = +canvas.dataset.estimationMin || min;
+				max = +canvas.dataset.estimationMax || max;
 				currency = canvas.dataset.estimationCurrency || currency;
-				multiplier = canvas.dataset.multiplier|| multiplier;
+				multiplier = +canvas.dataset.multiplier|| multiplier;
 			}
 		}
 		
@@ -1417,16 +1417,16 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 			var players = [p1, p2, p3, p4];
 			
 			var giveMoney = function (playerIndex, amount) {
-				players[playerIndex].giveMoney(amount);
+				players[playerIndex].giveMoney(+amount);
 			};
 		
 			var send = function () {
-				resultMoney = (moneyFromGroup * multiplier) / NUM_PLAYERS;
+				resultMoney = (+moneyFromGroup * +multiplier) / +NUM_PLAYERS;
 				setTimeout(function () {
-					p1.receiveMoney(resultMoney);
-					p2.receiveMoney(resultMoney);
-					p3.receiveMoney(resultMoney);
-					p4.receiveMoney(resultMoney);
+					p1.receiveMoney(+resultMoney);
+					p2.receiveMoney(+resultMoney);
+					p3.receiveMoney(+resultMoney);
+					p4.receiveMoney(+resultMoney);
 				}, 10000);
 				
 				self.gotoAndPlay('send');

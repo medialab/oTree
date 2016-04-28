@@ -23,28 +23,38 @@ function init() {
   createjs.Ticker.setFPS(lib.properties.fps);
   createjs.Ticker.addEventListener("tick", stage);
 
-  $('#amountA').change(function (e) {
+  var $amountA = $('#amountA'),
+      $amountB = $('#amountB'),
+      $amountC = $('#amountC'),
+      $amountD = $('#amountD'),
+      MAX = 10;
+
+  $amountA.change(function (e) {
     e.preventDefault();
     window.PG.giveMoney(0, e.target.value);
   });
 
-  $('#amountB').change(function (e) {
+  $amountB.change(function (e) {
     e.preventDefault();
-    window.PG.giveMoney(1, e.target.value);
+    window.PG.giveMoney(1, +e.target.value);
   });
 
-  $('#amountC').change(function (e) {
+  $amountC.change(function (e) {
     e.preventDefault();
-    window.PG.giveMoney(2, e.target.value);
+    window.PG.giveMoney(2, +e.target.value);
   });
 
-  $('#amountD').change(function (e) {
+  $amountD.change(function (e) {
     e.preventDefault();
-    window.PG.giveMoney(3, e.target.value);
+    window.PG.giveMoney(3, +e.target.value);
   });
 
   $('#send').click(function (e) {
     e.preventDefault();
+    $amountA.val(0);
+    $amountB.val(0);
+    $amountC.val(0);
+    $amountD.val(0);
     window.PG.send();
   });
 }

@@ -1359,7 +1359,7 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 		 Assumes there is only on canvas in the page.
 		 */
 		 
-		var min = 5;
+		var min = 0;
 		var max = 10;
 		var currency = '€';
 		var multiplier = 1.6;
@@ -1370,10 +1370,10 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				min = canvas.dataset.estimationMin || min;
-				max = canvas.dataset.estimationMax || max;
+				min = +canvas.dataset.estimationMin || min;
+				max = +canvas.dataset.estimationMax || max;
 				currency = canvas.dataset.estimationCurrency || currency;
-				multiplier = canvas.dataset.multiplier|| multiplier;
+				multiplier = +canvas.dataset.multiplier|| multiplier;
 			}
 		}
 		
