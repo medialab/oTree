@@ -1392,7 +1392,10 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 		Player.prototype.giveMoney = function (amount) {
 			if (amount <= max) {
 				this.currentAmount -= amount;
-				this.speak(currency + this.currentAmount.toFixed(2).toString());
+				
+				var displayedAmount = (this.currentAmount % 1 === 0 ? this.currentAmount.toString() : this.currentAmount.toFixed(2).toString());
+				
+				this.speak(currency + displayedAmount);
 				moneyFromGroup += amount;
 			}
 		};

@@ -1074,7 +1074,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,24.1,12.3);
 	this.shape_5.setTransform(0.7,2.2);
 
 	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#474747").s().p("EgkJAQrIhthEICUgDIgnBHICSgFIgnBHgEgmoAPJIBagoIgoBGgEAg1gRBIBdgrIEXCsIhdAqg");
+	this.shape_6.graphics.f("#474747").s().p("EgkJAQrICSgFIgnBHgEgkJAQrIhthEICUgDIgnBHgEgl2APnIgygeIBagoIgoBGgEAg1gRBIBdgrIEXCsIhdAqg");
 	this.shape_6.setTransform(0,-6.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -1260,8 +1260,8 @@ p.nominalBounds = new cjs.Rectangle(-12,-7.6,24.1,15.3);
 				labelA = canvas.dataset.participantsLabelA || labelA;
 				labelB = canvas.dataset.participantsLabelB || labelB;
 				multiplier = canvas.dataset.multiplier || multiplier;
-				amount1 = canvas.dataset.amount1 || amount1;
-				amount2 = canvas.dataset.amount2 || amount2;
+				amount1 = +canvas.dataset.amount1 || amount1;
+				amount2 = +canvas.dataset.amount2 || amount2;
 				currency = canvas.dataset.currency || currency;
 			}
 		}
@@ -1278,7 +1278,7 @@ p.nominalBounds = new cjs.Rectangle(-12,-7.6,24.1,15.3);
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				amount1 = canvas.dataset.amount1 || amount1;
+				amount1 = +canvas.dataset.amount1 || amount1;
 				currency = canvas.dataset.currency || currency;
 			}
 		}

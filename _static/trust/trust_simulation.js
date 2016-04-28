@@ -1198,8 +1198,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				labelA = canvas.dataset.participantsLabelA || labelA;
 				labelB = canvas.dataset.participantsLabelB || labelB;
 				multiplier = canvas.dataset.multiplier || multiplier;
-				amount1 = canvas.dataset.amount1 || amount1;
-				amount2 = canvas.dataset.amount2 || amount2;
+				amount1 = +canvas.dataset.amount1 || amount1;
+				amount2 = +canvas.dataset.amount2 || amount2;
 				currency = canvas.dataset.currency || currency;
 			}
 		}
@@ -1229,8 +1229,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					labelA = canvas.dataset.participantsLabelA || labelA;
 					labelB = canvas.dataset.participantsLabelB || labelB;
 					multiplier = canvas.dataset.multiplier || multiplier;
-					amount1 = canvas.dataset.amount1 || amount1;
-					amount2 = canvas.dataset.amount2 || amount2;
+					amount1 = +canvas.dataset.amount1 || amount1;
+					amount2 = +canvas.dataset.amount2 || amount2;
 					currency = canvas.dataset.currency || currency;
 				}
 			}
@@ -1356,19 +1356,17 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		
 				var increment = function (i, moneyColor, force) {
 					var p = players[i];
-					if (force || (p.money + 1 <= startAmount)) {
-						p.money++;
+					p.money++;
 		
-						var bubble = i === 0 ? this.bubble1 : this.bubble2;
-						bubble.label.text = p.money.toString() + currency;
-							
-						var dollar = createDollar(moneyColor);
-						dollar.x = X_OFFSET;
-						dollar.y = Y_OFFSET - Z_OFFSET * p.stack.length;
+					var bubble = i === 0 ? this.bubble1 : this.bubble2;
+					bubble.label.text = p.money.toString() + currency;
 						
-						p.instance.addChild(dollar);
-						p.stack.push(dollar);
-					}
+					var dollar = createDollar(moneyColor);
+					dollar.x = X_OFFSET;
+					dollar.y = Y_OFFSET - Z_OFFSET * p.stack.length;
+					
+					p.instance.addChild(dollar);
+					p.stack.push(dollar);
 					return this;
 				}.bind(this);
 		
