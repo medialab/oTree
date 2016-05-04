@@ -40,6 +40,8 @@ class Introduction(Page):
     """Page introducing the Trust game."""
 
     template_name = 'global/Introduction.html'
+    form_model = models.Player
+    form_fields = ['total_time']
 
     def vars_for_template(self):
         """Local variables for the template."""
@@ -145,7 +147,11 @@ average contribution of 10'
 class EndGame(Page):
     """End of the game."""
 
-    pass
+    form_model = models.Player
+    form_fields = ['total_time']
+
+    def vars_for_template(self):
+        return {'start_time': self.player.total_time}
 
 
 page_sequence = [

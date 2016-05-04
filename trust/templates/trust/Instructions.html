@@ -12,6 +12,8 @@
 <p>{% trans "If you are Person A, you must decide how much of your 10 Euro you want to send to Person B. This amount will automatically be multiplied by 3." %}<br/>
 {% trans "If you are Person B, you have to decide, before knowing the decision of Person A, how much out of each of the amounts that Person A could send you, you want to send back." %}</p>
 
+<input id="timer" type="hidden" name="total_time" value="" />
+
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "trust/trust_demo.js" %}"></script>
 
@@ -27,6 +29,8 @@ function init() {
 
   createjs.Ticker.setFPS(lib.properties.fps);
   createjs.Ticker.addEventListener("tick", stage);
+
+  $('#timer').val(new Date());
 }
 $(function() { init() });
 </script>

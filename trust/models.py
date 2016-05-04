@@ -7,6 +7,7 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
+import datetime
 # </standard imports>
 
 
@@ -55,6 +56,7 @@ class Group(BaseGroup):
     """Group model for Trust game."""
 
     def treatment(self):
+        """Return chosen treatment for XP."""
         return self.session.vars['treatment']
 
     sent_amount = models.CurrencyField(
@@ -122,6 +124,7 @@ class Player(BasePlayer):
     """Player model for Trust."""
 
     email = models.EmailField()
+    total_time = models.CharField(blank=True, null=True)
 
     def role(self):
         """Return role ID/name based on ID in group."""
