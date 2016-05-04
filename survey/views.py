@@ -272,6 +272,10 @@ class WrapUp5(Page):
     form_fields = ['q_4_5']
     template_name = 'survey/WrapUp5.html'
 
+
+class EndGame(Page):
+    """End game page."""
+
     form_model = models.Player
     form_fields = ['total_time']
 
@@ -309,5 +313,6 @@ page_sequence = [
     WrapUp2,
     WrapUp3,
     WrapUp4,
-    WrapUp5
+    WrapUp5,
+    EndGame
 ]

@@ -1,0 +1,26 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block title %}
+    Survey finished
+{% endblock %}
+
+{% block content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<input id="timer" type="hidden" name="total_time" value="" />
+
+<p>{% next_button %}</p>
+
+<script type="text/javascript">
+  $(function() {
+    var startTime = '{{start_time}}',
+        endTime = new Date(),
+        sec = moment(endTime).diff(startTime) / 1000;
+
+    $('#timer').val(sec);
+  });
+</script>
+
+
+{% endblock %}
