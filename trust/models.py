@@ -7,7 +7,6 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
-import datetime
 # </standard imports>
 
 

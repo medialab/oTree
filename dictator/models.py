@@ -92,3 +92,5 @@ class Player(BasePlayer):
         verbose_name="Participant 1's payoff would be")
     training_participant2_payoff = models.CurrencyField(
         verbose_name="Participant 2's payoff would be")
+
+    total_time = models.CharField(blank=True, null=True)

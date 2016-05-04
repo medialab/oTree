@@ -12,6 +12,8 @@
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "dictator/dictator_demo.js" %}"></script>
 
+<input id="timer" type="hidden" name="total_time" value="" />
+
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -24,6 +26,8 @@ function init() {
 
   createjs.Ticker.setFPS(lib.properties.fps);
   createjs.Ticker.addEventListener("tick", stage);
+
+  $('#timer').val(new Date());
 }
 $(function() { init() });
 </script>
