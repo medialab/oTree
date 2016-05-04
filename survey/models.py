@@ -652,7 +652,7 @@ before tax or anything else was taken out?'),
         verbose_name=_(u'Do you consider yourself as being:'),
         choices=(
             ('N/A', _(u'N/A')),
-            ('Ultra-religious (“Haredi”)', _(u'Ultra-religious (“Haredi”)')),
+            ('Ultra-religious', _(u'Ultra-religious (“Haredi”)')),
             ('Religious', _(u'Religious')),
             ('Traditional but religious', _(u'Traditional but religious')),
             ('Traditional but not so religious',
@@ -720,8 +720,8 @@ the questions?'),
     )
 
     q_4_5 = models.CharField(
-        verbose_name=_(u'Were you in a calm environment when you answered \
-the questions?'),
+        verbose_name=_(u'Have you ever participated in another study that \
+seemed close to this one'),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),

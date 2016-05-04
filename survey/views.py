@@ -28,8 +28,8 @@ that you fully trust them."),
         'q_2_1_label_2': _('The police'),
         'q_2_1_label_3': _('The media'),
         'q_2_2_label': _("Do you agree with the following statements?"),
-        'q_2_2_label_1': _('Public institutions deliver public \
-services in the best possible way'),
+        'q_2_2_label_1': _('Public institutions deliver public services in the \
+best possible way'),
         'q_2_2_label_2': _('Public institutions pursue long term objectives'),
         'q_2_2_label_3': _('People working in public institutions \
 behave according to ethical standards aimed at avoiding corruption'),
