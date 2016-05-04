@@ -2,6 +2,7 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
+<input id="timer" type="hidden" name="total_time" value="" />
 <h1>Words Task</h1>
 <hr/>
 <div class="hidden-sm hidden-xs">
@@ -33,6 +34,8 @@
 
 <script type="text/javascript">
   $(function() {
+    $('#timer').val(new Date());
+
     $(document).keyup(function (e) {
       e.preventDefault();
       if (e.keyCode === 32) {

@@ -3,6 +3,7 @@
 
 # <standard imports>
 from __future__ import division
+from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 # </standard imports>
@@ -70,3 +71,4 @@ class Player(BasePlayer):
     """Player for IAT."""
 
     iat_results = jsonfield.JSONField()
+    total_time = models.CharField(blank=True, null=True)
