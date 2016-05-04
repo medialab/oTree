@@ -37,6 +37,8 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for Survey."""
 
+    total_time = models.CharField(blank=True, null=True)
+
     # Trust and trusting behaviour
     q_1_1 = models.CharField(
         verbose_name=_(u"Overall, how satisfied are you with life as a whole \

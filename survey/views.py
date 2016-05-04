@@ -43,7 +43,7 @@ class TrustAndTrustingBehaviour1(Page):
     """Page for Trust And Trusting Behaviour."""
 
     form_model = models.Player
-    form_fields = ['q_1_1']
+    form_fields = ['q_1_1', 'total_time']
     template_name = 'survey/TrustAndTrustingBehaviour1.html'
 
 
@@ -271,6 +271,13 @@ class WrapUp5(Page):
     form_model = models.Player
     form_fields = ['q_4_5']
     template_name = 'survey/WrapUp5.html'
+
+    form_model = models.Player
+    form_fields = ['total_time']
+
+    def vars_for_template(self):
+        """Make data available in template."""
+        return {'start_time': self.player.total_time}
 
 
 page_sequence = [

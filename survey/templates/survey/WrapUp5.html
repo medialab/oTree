@@ -7,4 +7,21 @@
       {% formfield player.q_4_5 %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+
+  <script type="text/javascript">
+    $(function() {
+      var $form = $('form');
+
+      $form.on('submit', function (e) {
+        e.preventDefault();
+        var startTime = '{{start_time}}',
+            endTime = new Date(),
+            sec = moment(endTime).diff(startTime) / 1000;
+
+        $('#timer').val(sec);
+
+        $form.off('submit').submit();
+      });
+    });
+  </script>
 {% endblock %}

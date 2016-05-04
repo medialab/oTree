@@ -3,9 +3,16 @@
 {% load otree_tags %}
 
 {% block content %}
+  <input id="timer" type="hidden" name="total_time" value="" />
   <p>
       {% formfield player.q_1_1 %}
 
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+
+  <script type="text/javascript">
+    $(function () {
+      $('#timer').val(new Date());
+    });
+  </script>
 {% endblock %}
