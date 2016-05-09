@@ -231,7 +231,7 @@ msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:15
 msgid ""
-"When the item belongs to a categoru of the right, press the I key. Items "
+"When the item belongs to a category on the right, press the I key. Items "
 "belong to only one category."
 msgstr ""
 

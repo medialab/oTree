@@ -100,7 +100,7 @@
       "message": {
         "en-gb": {
           "words": {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government"},
-          "text": "<strong>See above, the categories have changed.</strong> The items for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the items belongs to a category on the left, press the <strong>E</strong> key.<br/>When the item belongs to a categoru of the right, press the I key. Items belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>Press the <strong>space bar</strong> to begin.<br/>"
+          "text": "<strong>See above, the categories have changed.</strong> The items for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the items belongs to a category on the left, press the <strong>E</strong> key.<br/>When the item belongs to a category on the right, press the I key. Items belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>Press the <strong>space bar</strong> to begin.<br/>"
         }
       },
       "name": "Competent / Incompetent or Government",
@@ -247,7 +247,7 @@
       "message": {
         "en-gb": {
           "words": {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government"},
-          "text": "<strong>See above, the categories have changed.</strong> The items for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the items belongs to a category on the left, press the <strong>E</strong> key.<br/>When the item belongs to a categoru of the right, press the I key. Items belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>Press the <strong>space bar</strong> to begin.<br/>"
+          "text": "<strong>See above, the categories have changed.</strong> The items for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the items belongs to a category on the left, press the <strong>E</strong> key.<br/>When the item belongs to a category on the right, press the I key. Items belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>Press the <strong>space bar</strong> to begin.<br/>"
         }
       },
       "name": "Honest / Dishonest or Government",
