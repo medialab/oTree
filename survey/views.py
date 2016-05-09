@@ -9,6 +9,11 @@ from django.utils.translation import ugettext_lazy as _
 def vars_for_all_templates(self):
     """Return variables for all templates."""
     return {
+        'idk': _(u'Don\t know'),
+        'yes': _(u'Yes'),
+        'no': _(u'no'),
+        'i_dont_trust_them_at_all': _(u'I don\'t trust them at all'),
+        'i_fully_trust_them': _(u'I fully trust them'),
         'q_1_7_label': _("I‘d like to ask you how much you trust people from \
 various groups. Could you tell me for each of these groups how much you \
 trust them? Please tell me on a scale of 0 to 10, where 0 means that you \
@@ -37,6 +42,155 @@ behave according to ethical standards aimed at avoiding corruption'),
         'q_2_2_label_5': _('Public institutions treat all citizens \
 fairly regardless of their gender, race, age or economic condition equally'),
     }
+
+
+class Survey01(Page):
+    """Page 1 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '01_how_satisfied_are_you_with_life_as_a_whole',
+        '01_would_you_say_that_most_people_can_be_trusted',
+        '01_are_you_a_person_fully_prepared_to_take_risks'
+    ]
+
+    def vars_for_template(self):
+        """Return labels to use in template."""
+        return {
+            '01_label_how_satisfied_are_you_with_life_as_a_whole': _(
+                u'Overall, how satisfied are you with \
+life as a whole these days?'
+            ),
+            '01_label_how_satisfied_are_you_with_life_as_a_whole_A': _(
+                u'Not at all satisfied'
+            ),
+            '01_label_how_satisfied_are_you_with_life_as_a_whole_B': _(
+                u'Completely satisfied'
+            ),
+
+            '01_label_would_you_say_that_most_people_can_be_trusted': _(
+                u'Generally speaking, would you say that most people can \
+be trusted, or that you can\'t be too careful in dealing with people?'
+            ),
+            '01_label_would_you_say_that_most_people_can_be_trusted_A': _(
+                u'You cannot be too careful'
+            ),
+            '01_label_would_you_say_that_most_people_can_be_trusted_B': _(
+                u'Most people can be trusted'
+            ),
+
+            '01_label_are_you_a_person_fully_prepared_to_take_risks': _(
+                u'How do you see yourself: are you generally a person who is \
+fully prepared to take risks or do you try to avoid taking risks?'
+            ),
+            '01_label_are_you_a_person_fully_prepared_to_take_risks_A': _(
+                u'Generally unwilling to take risks'
+            ),
+            '01_label_are_you_a_person_fully_prepared_to_take_risks_B': _(
+                u'Fully prepared to take risks'
+            )
+        }
+
+
+class Survey02(Page):
+    """Page 2 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '02_people_are_only_looking_out_for_themselves',
+        '02_people_would_try_to_take_advantage_of_you',
+        '02_the_following_action_can_always_be_justified'
+    ]
+
+    def vars_for_template(self):
+        """Return labels to use in template."""
+        return {
+            '02_people_are_only_looking_out_for_themselves': _(
+                u'Would you say that most of the time people are only looking \
+out for themselves or that they mostly try to help each other?'
+            ),
+            '02_people_are_only_looking_out_for_themselves_A': _(
+                u'People are only looking out for themselves'
+            ),
+            '02_people_are_only_looking_out_for_themselves_B': _(
+                u'People mostly try to help each other'
+            ),
+
+            '02_people_would_try_to_take_advantage_of_you': _(
+                u'Do you think most people would try to take advantage of \
+you if they got a chance, or would they try to be fair?'
+            ),
+            '02_people_would_try_to_take_advantage_of_you_A': _(
+                u'Most people would try to take advantage of me'
+            ),
+            '02_people_would_try_to_take_advantage_of_you_B': _(
+                u'Most people would try to be fair'
+            ),
+
+            '02_the_following_action_can_always_be_justified': _(
+                u'Can you tell us whether you think the following action can \
+always be justified, never be justified, or something in between: \
+<br/>Receiving social allowances to which you are not entitled.'
+            ),
+            '02_the_following_action_can_always_be_justified_A': _(
+                u'Never justifiable'
+            ),
+            '02_the_following_action_can_always_be_justified_B': _(
+                u'Always justifiable'
+            )
+        }
+
+
+class Survey03(Page):
+    """Page 3 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '03_your_family',
+        '03_people_in_your_neighborhood',
+        '03_people_you_know_personally',
+        '03_people_you_meet_for_the_first_time',
+        '03_people_of_another_religion',
+        '03_people_of_another_nationality',
+    ]
+
+    def vars_for_template(self):
+        """Return labels to use in template."""
+        return {
+            '03_label_your_family': _(
+                u'Your family'
+            ),
+
+            '03_label_people_in_your_neighborhood': _(
+                u'People in your neighborhood'
+            ),
+
+            '03_label_people_you_know_personally': _(
+                u'People you know personally'
+            ),
+
+            '03_label_people_you_meet_for_the_first_time': _(
+                u'People you meet for the first time'
+            ),
+
+            '03_label_people_of_another_religion': _(
+                u'People of another religion'
+            ),
+
+            '03_label_people_of_another_nationality': _(
+                u'People of another nationality'
+            )
+        }
+
+
+class Survey04(Page):
+    """Page 4 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '04_you_lost_a_wallet_or_a_purse',
+        '04_you_vote_in_the_last_national_election'
+    ]
 
 
 class TrustAndTrustingBehaviour1(Page):
