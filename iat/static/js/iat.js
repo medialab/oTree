@@ -278,8 +278,10 @@ $(function(window, undefined) {
        * @return {Object|void}  Resolve promise.
        */
       function passPauseScreen() {
-        dispose();
-        return deferred.resolve();
+        setTimeout(function() {
+          dispose();
+          return deferred.resolve();
+        }, 2000);
       }
 
       /**
