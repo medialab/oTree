@@ -39,13 +39,11 @@ class Player(BasePlayer):
 
     total_time = models.CharField(blank=True, null=True)
 
-    # Trust and trusting behaviour
-    q_1_1 = models.CharField(
+    _01_how_satisfied_are_you_with_life_as_a_whole = models.CharField(
         verbose_name=_(u"Overall, how satisfied are you with life as a whole \
-these days? Please respond in a scale from 0 to 10. 0 means you feel not \
-at all satisfied and 10 means you feel completely satisfied."),
+these days?"),
         choices=(
-            ('0', _(u'0 - not at all satisfied')),
+            ('0', _(u'not at all satisfied')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -55,20 +53,18 @@ at all satisfied and 10 means you feel completely satisfied."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - completely satisfied')),
+            ('10', _(u'completely satisfied')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_2 = models.CharField(
+    _01_would_you_say_that_most_people_can_be_trusted = models.CharField(
         verbose_name=_(u"Generally speaking, would you say that most people \
-can be trusted, or that you can't be too careful in dealing with people? \
-Please tell me on a scale of 0 to 10, where 0 means that you can't be too \
-careful and 10 means that most people can be trusted."),
+can be trusted, or that you can't be too careful in dealing with people?"),
         choices=(
-            ('0', _(u"0 - you can't be too careful")),
+            ('0', _(u"you can't be too careful")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -78,21 +74,18 @@ careful and 10 means that most people can be trusted."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - most people can be trusted')),
+            ('10', _(u'most people can be trusted')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_3 = models.CharField(
+    _01_are_you_a_person_fully_prepared_to_take_risks = models.CharField(
         verbose_name=_(u"How do you see yourself: are you generally a person \
-who is fully prepared to take risks or do you try to avoid taking risks? \
-Please choose one number on this scale, where 0 means that you are \
-generally \"unwilling to take risks\" and 10 means that you are generally \
-\"fully prepared to take risks\"."),
+who is fully prepared to take risks or do you try to avoid taking risks?"),
         choices=(
-            ('0', _(u"0 - unwilling to take risks")),
+            ('0', _(u"generally unwilling to take risks")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -102,21 +95,18 @@ generally \"unwilling to take risks\" and 10 means that you are generally \
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - fully prepared to take risks')),
+            ('10', _(u'fully prepared to take risks')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_4 = models.CharField(
+    _02_people_are_only_looking_out_for_themselves = models.CharField(
         verbose_name=_(u"Would you say that most of the time people are only \
-looking out for themselves or that they mostly try to help each other? \
-Please choose one number on this scale, where 0 means that \"people are only \
-looking out for themselves\" and 10 means that \"people mostly try to help \
-each other\"."),
+looking out for themselves or that they mostly try to help each other?"),
         choices=(
-            ('0', _(u"0 - people are only looking out for themselves")),
+            ('0', _(u"people are only looking out for themselves")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -126,21 +116,18 @@ each other\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - people mostly try to help each other')),
+            ('10', _(u'people mostly try to help each other')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_5 = models.CharField(
+    _02_people_would_try_to_take_advantage_of_you = models.CharField(
         verbose_name=_(u"Do you think most people would try to take advantage \
-of you if they got a chance, or would they try to be fair? \
-Please choose one number on this scale, where 0 means that \"most people \
-would try to take advantage of me\", and 10 means that \"most people would \
-try to be fair\"."),
+of you if they got a chance, or would they try to be fair?"),
         choices=(
-            ('0', _(u"0 - most people would try to take advantage of me")),
+            ('0', _(u"most people would try to take advantage of me")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -150,21 +137,19 @@ try to be fair\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - most people would try to be fair')),
+            ('10', _(u'most people would try to be fair')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_6 = models.CharField(
+    _02_the_following_action_can_always_be_justified = models.CharField(
         verbose_name=_(u"Can you tell us whether you think the following action \
 can always be justified, never be justified, or something in between: \
-Receiving social allowances to which you are not entitled. \
-Please choose one number on this scale where 0 means that \"this action is \
-never justifiable\" and 10 means that \"this action is always justifiable\"."),
+<br/>Receiving social allowances to which you are not entitled."),
         choices=(
-            ('0', _(u"0 - this action is never justifiable")),
+            ('0', _(u"this action is never justifiable")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -174,17 +159,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - this action is always justifiable')),
+            ('10', _(u'this action is always justifiable')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.Select(),
         initial=None
     )
 
-    q_1_7_1 = models.CharField(
+    _03_your_family = models.CharField(
         verbose_name=_(u"Your family"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -194,17 +179,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_7_2 = models.CharField(
+    _03_people_in_your_neighborhood = models.CharField(
         verbose_name=_(u"People in your neighborhood"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -214,17 +199,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_7_3 = models.CharField(
+    _03_people_you_know_personally = models.CharField(
         verbose_name=_(u"People you know personally"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -234,17 +219,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_7_4 = models.CharField(
+    _03_people_you_meet_for_the_first_time = models.CharField(
         verbose_name=_(u"People you meet for the first time"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -254,17 +239,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_7_5 = models.CharField(
+    _03_people_of_another_religion = models.CharField(
         verbose_name=_(u"People of another religion"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -274,17 +259,17 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_7_6 = models.CharField(
+    _03_people_of_another_nationality = models.CharField(
         verbose_name=_(u"People of another nationality"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -294,14 +279,14 @@ never justifiable\" and 10 means that \"this action is always justifiable\"."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_1_8 = models.CharField(
+    _04_you_lost_a_wallet_or_a_purse = models.CharField(
         verbose_name=_(u"If you lost a wallet or a purse that contained items of \
 great value to you, and it was found by a stranger, do you think it would be \
 returned with its contents, or not?"),
@@ -312,7 +297,7 @@ returned with its contents, or not?"),
         )
     )
 
-    q_1_9 = models.CharField(
+    _04_you_vote_in_the_last_national_election = models.CharField(
         verbose_name=_(u"Did you vote in the last national election?"),
         choices=(
             ('Yes', _(u'Yes')),
@@ -321,10 +306,10 @@ returned with its contents, or not?"),
         )
     )
 
-    q_2_1_1 = models.CharField(
+    _05_your_government = models.CharField(
         verbose_name=_(u"Your government"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -334,17 +319,17 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_1_2 = models.CharField(
+    _05_the_police = models.CharField(
         verbose_name=_(u"The police"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -354,17 +339,17 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_1_3 = models.CharField(
+    _05_the_media = models.CharField(
         verbose_name=_(u"The media"),
         choices=(
-            ('0', _(u"0 - I don't trust them at all")),
+            ('0', _(u"I don't trust them at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -374,16 +359,16 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
+            ('10', _(u'I fully trust them')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_2_1 = models.CharField(
+    _06_public_institutions_deliver_services_in_the_best_way = models.CharField(
         choices=(
-            ('0', _(u"0 - I don't agree at all")),
+            ('0', _(u"I don't agree at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -393,16 +378,16 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully agree')),
+            ('10', _(u'I fully agree')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_2_2 = models.CharField(
+    _06_public_institutions_pursue_long_term_objectives = models.CharField(
         choices=(
-            ('0', _(u"0 - I don't agree at all")),
+            ('0', _(u"I don't agree at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -412,16 +397,16 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully agree')),
+            ('10', _(u'I fully agree')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_2_3 = models.CharField(
+    _06_people_working_in_public_institutions_ethical = models.CharField(
         choices=(
-            ('0', _(u"0 - I don't agree at all")),
+            ('0', _(u"I don't agree at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -431,16 +416,16 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully agree')),
+            ('10', _(u'I fully agree')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_2_4 = models.CharField(
+    _06_public_institutions_are_transparent = models.CharField(
         choices=(
-            ('0', _(u"0 - I don't agree at all")),
+            ('0', _(u"I don't agree at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -450,16 +435,16 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully agree')),
+            ('10', _(u'I fully agree')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_2_2_5 = models.CharField(
+    _06_public_institutions_treat_all_citizens_fairly = models.CharField(
         choices=(
-            ('0', _(u"0 - I don't agree at all")),
+            ('0', _(u"I don't agree at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -469,26 +454,26 @@ returned with its contents, or not?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - I fully agree')),
+            ('10', _(u'I fully agree')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    q_birthdate = models.CharField(
+    _07_what_is_your_date_of_birth = models.CharField(
         verbose_name=_(u'What was your date of birth?'),
         widget=extras.SelectDateWidget(years=range(2016, 1900, -1))
     )
 
-    q_gender = models.CharField(
+    _07_what_is_your_gender = models.CharField(
         initial=None,
         choices=[_(u'Male'), _(u'Female')],
         verbose_name=_(u'What is your gender?'),
         widget=widgets.RadioSelect()
     )
 
-    q_household = models.CharField(
+    _07_all_the_people_who_live_in_the_same_household_as_you = models.CharField(
         initial=None,
         choices=[
             _(u'My legal husband or wife'),
@@ -505,26 +490,17 @@ the people who live in the same household as you'),
         widget=widgets.RadioSelect()
     )
 
-    q_country = CountryField(
+    _07_which_country_were_you_born = CountryField(
         verbose_name=_(u'In which country were you born?')
     )
 
-    q_country_year = models.PositiveIntegerField(
+    _07_what_year_did_you_arrive_in_France = models.PositiveIntegerField(
         verbose_name=_(u'In what year did you arrive in this country'),
         choices=range(date.today().year, 1900, -1),
         initial=None
     )
 
-    q_country_citizenship = models.CharField(
-        verbose_name=_(u'Are you a citizen of this country?'),
-        choices=(
-            ('Yes', _(u'Yes, I am a citizen of this country.')),
-            ('No', _(u'I am not a citizen of this country.'))
-        ),
-        widget=widgets.RadioSelect()
-    )
-
-    q_education = models.CharField(
+    _08_highest_level_of_education_that_you_have_completed = models.CharField(
         verbose_name=_(u'What is the highest level of education that \
 you have completed?'),
         choices=(
@@ -542,11 +518,11 @@ degree (e.g. BA, BS)')),
         widget=widgets.RadioSelect()
     )
 
-    q_situation = models.CharField(
+    _08_which_of_these_best_describes_your_situation = models.CharField(
         verbose_name=_(u'Which of these best describes your situation?'),
         choices=(
-            ('At work as an employee or employer/self-employed', _(u'At work \
-as an employee or employer/self-employed')),
+            ('At work as an employee', _(u'At work as an employee')),
+            ('Employer/self-employed', _(u'Employer/self-employed')),
             ('Employed, on child-care leave or other leave', _(u'Employed, on \
 child-care leave or other leave')),
             ('At work as relative assisting on family farm or business', _(u'At \
@@ -558,21 +534,19 @@ months')),
             ('Unable to work due to long-term illness or disability', _(u'Unable \
 to work due to long-term illness or disability')),
             ('Retired', _(u'Retired')),
-            ('Full-time homemaker/responsible for ordinary shopping and \
-looking after the home', _(u'Full-time homemaker/responsible for ordinary \
-shopping and looking after the home')),
+            ('Full-time homemaker', _(u'Full-time homemaker')),
             ('In education (at school, university, etc) / student', _(u'In \
 education (at school, university, etc) / student')),
             ('Other', _(u'Other')),
         )
     )
 
-    q_work_sector = models.CharField(
+    _09_do_you_work_in_the = models.CharField(
         verbose_name=_(u'Do you work in the...?'),
         choices=(
             ('Central, regional or local government administration', _(u'Central, \
 regional or local government administration')),
-            ('Other public sector', _(u'Other public sector')),
+            ('Public sector, other', _(u'Public sector, other')),
             ('Private (for profit) sector', _(u'Private (for profit) sector')),
             ('Not for profit sector', _(u'Not for profit sector')),
             ('Other', _(u'Other')),
@@ -581,7 +555,7 @@ regional or local government administration')),
         widget=widgets.RadioSelect()
     )
 
-    q_trust = models.CharField(
+    _09_would_you_say_that_most_people_can_be_trusted = models.CharField(
         verbose_name=_(u'Generally speaking, would you say that most people \
 can be trusted or that you need to be very careful in dealing with people?'),
         choices=(
@@ -592,7 +566,7 @@ can be trusted or that you need to be very careful in dealing with people?'),
         widget=widgets.RadioSelect()
     )
 
-    q_income_sources = models.CharField(
+    __09_got_income_in_the_last_12_months_ending_today = models.CharField(
         verbose_name=_(u'What are all the ways that you got income in the \
 last 12 months ending today? You can choose as many as you need. Please do \
 not count loans as income.'),
@@ -616,31 +590,31 @@ bonuses etc paid by employer')),
         widget=widgets.RadioSelect()
     )
 
-    q_income_total = models.CharField(
+    _10_what_was_your_total_income = models.CharField(
         verbose_name=_(u'In the last 12 months what was your total income, \
 before tax or anything else was taken out?'),
         choices=(
             ('Loss', _(u'Loss')),
             ('Zero income', _(u'Zero income')),
-            ('$1 to $6,000', _(u'$1 to $6,000')),
-            ('$6,000 to $12,000', _(u'$6,000 to $12,000')),
-            ('$12,001 to $24,000', _(u'$12,001 to $24,000')),
-            ('$24,001 to $36,000', _(u'$24,001 to $36,000')),
-            ('$36,001 to $48,000', _(u'$36,001 to $48,000')),
-            ('$48,001 to $60,000', _(u'$48,001 to $60,000')),
-            ('$60,001 to $90,000', _(u'$60,001 to $90,000')),
-            ('$90,001 to $120,000', _(u'$90,001 to $120,000')),
-            ('$120,000 or more', _(u'$120,000 or more')),
+            ('€1 to €6,000', _(u'€1 to €6,000')),
+            ('€6,000 to €12,000', _(u'€6,000 to €12,000')),
+            ('€12,001 to €24,000', _(u'€12,001 to €24,000')),
+            ('€24,001 to €36,000', _(u'€24,001 to €36,000')),
+            ('€36,001 to €48,000', _(u'€36,001 to €48,000')),
+            ('€48,001 to €60,000', _(u'€48,001 to €60,000')),
+            ('€60,001 to €90,000', _(u'€60,001 to €90,000')),
+            ('€90,001 to €120,000', _(u'€90,001 to €120,000')),
+            ('€120,000 or more', _(u'€120,000 or more')),
             ("Don't know", _(u"Don't know"))
         ),
         widget=widgets.RadioSelect()
     )
 
-    q_religion = models.CharField(
+    _10_are_you = models.CharField(
         verbose_name='Are you:',
         choices=(
             ('Jewish', _(u'Jewish')),
-            ('Moslem', _(u'Moslem')),
+            ('Muslim', _(u'Muslim')),
             ('Christian', _(u'Christian')),
             ('Druze', _(u'Druze')),
             ('Other', _(u'Other'))
@@ -648,21 +622,21 @@ before tax or anything else was taken out?'),
         widget=widgets.RadioSelect()
     )
 
-    q_jewish = models.CharField(
-        verbose_name=_(u'Do you consider yourself as being:'),
-        choices=(
-            ('N/A', _(u'N/A')),
-            ('Ultra-religious', _(u'Ultra-religious (“Haredi”)')),
-            ('Religious', _(u'Religious')),
-            ('Traditional but religious', _(u'Traditional but religious')),
-            ('Traditional but not so religious',
-                _(u'Traditional but not so religious')),
-            ('Non-religious, secular', _(u'Non-religious, secular'))
-        ),
-        widget=widgets.RadioSelect()
-    )
+    # q_jewish = models.CharField(
+    #     verbose_name=_(u'Do you consider yourself as being:'),
+    #     choices=(
+    #         ('N/A', _(u'N/A')),
+    #         ('Ultra-religious', _(u'Ultra-religious (“Haredi”)')),
+    #         ('Religious', _(u'Religious')),
+    #         ('Traditional but religious', _(u'Traditional but religious')),
+    #         ('Traditional but not so religious',
+    #             _(u'Traditional but not so religious')),
+    #         ('Non-religious, secular', _(u'Non-religious, secular'))
+    #     ),
+    #     widget=widgets.RadioSelect()
+    # )
 
-    q_4_1 = models.CharField(
+    _11_other_participants_are_real_persons = models.CharField(
         verbose_name=_(u'For information purposes, could you tell us to what \
 extent you trusted the following two statements when you made your decisions: \
 The other participants in my group or pair are real persons who participated \
@@ -677,7 +651,7 @@ in the same study'),
         widget=widgets.RadioSelect()
     )
 
-    q_4_2 = models.CharField(
+    _11_earnings_will_be_calculated_in_euro = models.CharField(
         verbose_name=_(u'My final earnings will be calculated in dollars \
 according to the rules stated in the description of the study \
 and will be paid to me (or donated if I choose not to keep the \
@@ -692,7 +666,7 @@ at the end of the study)'),
         widget=widgets.RadioSelect()
     )
 
-    q_4_3 = models.CharField(
+    _11_you_read_the_descriptions_associated = models.CharField(
         verbose_name=_(u'At the end of this study, how would you say that you \
 read the descriptions associated with each of the 4 sections?'),
         choices=(
@@ -706,7 +680,7 @@ read the descriptions associated with each of the 4 sections?'),
         widget=widgets.RadioSelect()
     )
 
-    q_4_4 = models.CharField(
+    _11_were_you_in_a_calm_environment = models.CharField(
         verbose_name=_(u'Were you in a calm environment when you answered \
 the questions?'),
         choices=(
@@ -719,12 +693,23 @@ the questions?'),
         widget=widgets.RadioSelect()
     )
 
-    q_4_5 = models.CharField(
+    _11_have_you_ever_participated_in_another_study = models.CharField(
         verbose_name=_(u'Have you ever participated in another study that \
 seemed close to this one'),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
+        ),
+        widget=widgets.RadioSelect()
+    )
+
+    _11_which_device_did_you_take_this_study = models.CharField(
+        verbose_name=_(u'Which device did you take this study on?'),
+        choices=(
+            ('Desktop', _(u'Desktop')),
+            ('Laptop', _(u'Laptop')),
+            ('Tablet', _(u'Tablet')),
+            ('Other', _(u'Other')),
         ),
         widget=widgets.RadioSelect()
     )
