@@ -1,0 +1,13 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+  <p>
+      {% formfield player._01_how_satisfied_are_you_with_life_as_a_whole %}
+      {% formfield player._01_would_you_say_that_most_people_can_be_trusted %}
+      {% formfield player._01_are_you_a_person_fully_prepared_to_take_risks %}
+
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

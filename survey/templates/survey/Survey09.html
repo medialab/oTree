@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+  <p>
+      {% formfield player._09_do_you_work_in_the %}
+      {% formfield player._09_would_you_say_that_most_people_can_be_trusted %}
+      {% formfield player._09_got_income_in_the_last_12_months_ending_today %}
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

@@ -463,7 +463,7 @@ returned with its contents, or not?"),
 
     _07_what_is_your_date_of_birth = models.CharField(
         verbose_name=_(u'What was your date of birth?'),
-        widget=extras.SelectDateWidget(years=range(2016, 1900, -1))
+        widget=extras.SelectDateWidget(years=range(2016, 1950, -1))
     )
 
     _07_what_is_your_gender = models.CharField(
@@ -496,7 +496,7 @@ the people who live in the same household as you'),
 
     _07_what_year_did_you_arrive_in_France = models.PositiveIntegerField(
         verbose_name=_(u'In what year did you arrive in this country'),
-        choices=range(date.today().year, 1900, -1),
+        choices=range(date.today().year, 1950, -1),
         initial=None
     )
 
@@ -566,7 +566,7 @@ can be trusted or that you need to be very careful in dealing with people?'),
         widget=widgets.RadioSelect()
     )
 
-    __09_got_income_in_the_last_12_months_ending_today = models.CharField(
+    _09_got_income_in_the_last_12_months_ending_today = models.CharField(
         verbose_name=_(u'What are all the ways that you got income in the \
 last 12 months ending today? You can choose as many as you need. Please do \
 not count loans as income.'),

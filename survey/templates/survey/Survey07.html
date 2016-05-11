@@ -1,0 +1,14 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+  <p>
+      {% formfield player._07_what_is_your_date_of_birth %}
+      {% formfield player._07_what_is_your_gender %}
+      {% formfield player._07_all_the_people_who_live_in_the_same_household_as_you %}
+      {% formfield player._07_which_country_were_you_born %}
+      {% formfield player._07_what_year_did_you_arrive_in_France %}
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}
