@@ -3,15 +3,15 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
-<h1>{% trans "Task 3" %}</h1>
+<h1>{% trans "Task 3: Introduction" %}</h1>
 <hr/>
-<p>{% trans "This task involves two participants – Person A and Person B. Your role (Player A or B) is revealed to you when making your decision." %}</p>
-<p>{% trans "Reminder: The other participant is different from the ones you interacted with in the previous tasks." %}<br />
-{% trans "This task is very short and simple: Person A receives $10. Person A must then decide how many dollars of this amount will be transferred to Person B. To better understand, watch the animation below." %}</p>
+<p>{% trans "This last task involves <strong>two participants</strong> – Person A and Person B. <strong>Your role (Participant A or Participant B) is revealed to you at the beginning of the task</strong>." %}</p>
+<p>{% trans "Remember, the other participant, while also living in [COUNTRY], is different from the ones you interacted with in the previous two tasks." %}</p>
+<p>{% trans "This task is very short and simple: Participant A receives €10. Participant B does not receive money." %}</p>
+<p>{% trans "Participant A must now decide if and how many € he or she wants to transfer to Participant B. To better understand, watch the animation below." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "dictator/dictator_demo.js" %}"></script>
-
 <input id="timer" type="hidden" name="total_time" value="" />
 
 <script>
