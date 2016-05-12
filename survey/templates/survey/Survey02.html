@@ -3,6 +3,17 @@
 {% load otree_tags %}
 
 {% block content %}
+  <style>
+  li {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 13px;
+  }
+
+  li:nth-child(12) {
+    display: block;
+  }
+  </style>
   <p>
       {% formfield player._02_people_are_only_looking_out_for_themselves %}
       {% formfield player._02_people_would_try_to_take_advantage_of_you %}

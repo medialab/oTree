@@ -3,6 +3,17 @@
 {% load otree_tags %}
 
 {% block content %}
+<style>
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  li:nth-child(12) {
+    display: block;
+  }
+  </style>
+  <p>{% trans "Do you agree with the following statements?" %}</p>
   <p>
       {% formfield player._06_public_institutions_deliver_services_in_the_best_way %}
       {% formfield player._06_public_institutions_pursue_long_term_objectives %}

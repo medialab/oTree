@@ -3,6 +3,17 @@
 {% load otree_tags %}
 
 {% block content %}
+<style>
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  li:nth-child(12) {
+    display: block;
+  }
+  </style>
+  <p>{% trans "Could you tell me for each of these groups how much you trust them?" %}</p>
   <p>
       {% formfield player._03_your_family %}
       {% formfield player._03_people_in_your_neighborhood %}
