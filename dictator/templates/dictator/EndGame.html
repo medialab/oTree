@@ -2,16 +2,12 @@
 {% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
-    {% trans "Congratulations!" %}
-{% endblock %}
-
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <input id="timer" type="hidden" name="total_time" value="" />
 
 <h1>Congratulations once again!</h1>
-<p>You have completed all tasks of this section. Let's go to the second section of the study, where you will be asked to sort a number of words and be timed while doing so</p>
+<p>You have completed all tasks of this section. Let's go to the second section of the study, where you will be asked to sort a number of words and be timed while doing so.</p>
 <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 
 

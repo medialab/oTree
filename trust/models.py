@@ -134,7 +134,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player model for Trust."""
 
-    email = models.EmailField()
     total_time = models.CharField(blank=True, null=True)
 
     def role(self):

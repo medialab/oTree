@@ -20,14 +20,7 @@ class ExperimentIntroduction(Page):
     Assumes this is the first test.
     """
 
-    form_model = models.Player
-    form_fields = ['email']
-
-    def vars_for_template(self):
-        """Return variables for use in template."""
-        return {
-            'email_label': _(u'Email')
-        }
+    pass
 
 
 class GamesIntroduction(Page):
