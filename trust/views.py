@@ -94,48 +94,37 @@ class SendBack(Page):
         """Return variables for use in template."""
         return {
             'sent_back_amount_0_label': _(
-                u'If the other group members make an \
-average contribution of 0'
+                u'If Participant A sends you €0'
             ),
             'sent_back_amount_1_label': _(
-                u'If the other group members make an \
-average contribution of 1'
+                u'If Participant A sends you €1'
             ),
             'sent_back_amount_2_label': _(
-                u'If the other group members make an \
-average contribution of 2'
+                u'If Participant A sends you €2'
             ),
             'sent_back_amount_3_label': _(
-                u'If the other group members make an \
-average contribution of 3'
+                u'If Participant A sends you €3'
             ),
             'sent_back_amount_4_label': _(
-                u'If the other group members make an \
-average contribution of 4'
+                u'If Participant A sends you €4'
             ),
             'sent_back_amount_5_label': _(
-                u'If the other group members make an \
-average contribution of 5'
+                u'If Participant A sends you €5'
             ),
             'sent_back_amount_6_label': _(
-                u'If the other group members make an \
-average contribution of 6'
+                u'If Participant A sends you €6'
             ),
             'sent_back_amount_7_label': _(
-                u'If the other group members make an \
-average contribution of 7'
+                u'If Participant A sends you €7'
             ),
             'sent_back_amount_8_label': _(
-                u'If the other group members make an \
-average contribution of 8'
+                u'If Participant A sends you €8'
             ),
             'sent_back_amount_9_label': _(
-                u'If the other group members make an \
-average contribution of 9'
+                u'If Participant A sends you €9'
             ),
             'sent_back_amount_10_label': _(
-                u'If the other group members make an \
-average contribution of 10'
+                u'If Participant A sends you €10'
             ),
         }
 

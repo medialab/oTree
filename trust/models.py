@@ -59,63 +59,75 @@ class Group(BaseGroup):
         return self.session.vars['treatment']
 
     sent_amount = models.CurrencyField(
-        min=0, max=Constants.amount_allocated,
         doc="""Amount sent by P1""",
+        min=Currency(0),
+        max=Currency(10)
     )
 
     sent_back_amount_0 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 0 from P1""",
         min=Currency(0),
+        max=Currency(10)
     )
 
     sent_back_amount_1 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 1 from P1""",
         min=Currency(0),
+        max=Currency(10 + 1 * 3)
     )
 
     sent_back_amount_2 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 2 from P1""",
         min=Currency(0),
+        max=Currency(10 + 2 * 3)
     )
 
     sent_back_amount_3 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 3 from P1""",
         min=Currency(0),
+        max=Currency(10 + 3 * 3)
     )
 
     sent_back_amount_4 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 4 from P1""",
         min=Currency(0),
+        max=Currency(10 + 4 * 3)
     )
 
     sent_back_amount_5 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 5 from P1""",
         min=Currency(0),
+        max=Currency(10 + 5 * 3)
     )
 
     sent_back_amount_6 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 6 from P1""",
         min=Currency(0),
+        max=Currency(10 + 6 * 3)
     )
 
     sent_back_amount_7 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 7 from P1""",
         min=Currency(0),
+        max=Currency(10 + 7 * 3)
     )
 
     sent_back_amount_8 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 8 from P1""",
         min=Currency(0),
+        max=Currency(10 + 8 * 3)
     )
 
     sent_back_amount_9 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 9 from P1""",
         min=Currency(0),
+        max=Currency(10 + 9 * 3)
     )
 
     sent_back_amount_10 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 10 from P1""",
         min=Currency(0),
+        max=Currency(10 + 10 * 3)
     )
 
 

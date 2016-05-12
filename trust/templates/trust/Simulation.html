@@ -3,10 +3,11 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>{% trans "Task 1 Simulation" %}</h1>
+<h1>{% trans "Task 1: Test Simulation" %}</h1>
 <hr/>
-<p>{% trans "The test choices you make on this screen have no effect on your winnings in this task." %}
-{% trans "Between each test, click the “reset to zero” button below to reset the calculator." %}</p>
+<p>{% trans "If you wish, you can use this test screen to play with different choices of the two participants, to understand the task better." %}
+<p>{% trans "Between each test, click the “reset to zero” button below to reset the calculator." %}</p>
+<p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "trust/trust_simulation.js" %}"></script>
@@ -88,7 +89,7 @@ function init() {
         // $reset.attr('disabled', false);
       }
     }
-  });/*
+  });
 
   $reset.click(function (e) {
     e.preventDefault();
@@ -102,7 +103,7 @@ function init() {
     $amountA.attr('disabled', false);
     $sendA.attr('disabled', false);
     $amountB.attr('disabled', true);
-  });*/
+  });
 
   setTimeout(function () {
     $('.commands').removeClass('hide')
@@ -136,7 +137,7 @@ $(function() { init() });
   </div>
   <div class="col-sm-3 col-md-3 col-lg-3 commands hide">
     <br><br>
-    <!-- <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a> -->
+    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a>
     <br><br><br>
     <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="next">{% trans "Next" %}</button>
   </div>

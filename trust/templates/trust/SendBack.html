@@ -2,13 +2,12 @@
 {% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
-   {% trans "Now the real task starts." %}
-{% endblock %}
-
 {% block content %}
-<p>{% trans "You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10)." %}<br/>
-{% trans "For each average contribution possible from other members, how much would you want to put in the project?" %}</p>
+<h1>{% trans "Task 1: Real task" %}</h1>
+
+<p>{% trans "Now the real task 1 starts. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
+<p>{% trans "You were selected to be in the role of <strong>Participant B</strong>." %}</p>
+<p>{% trans "You have €10 in your possession. If Participant A sends you any of the amounts listed in the table below (keep in mind that it is multiplied by 3 each time), <strong>how much money do you want to send back to Participant A</strong>?" %}</p>
 
     {% formfield group.sent_back_amount_0 with label=sent_back_amount_0_label %}
     {% formfield group.sent_back_amount_1 with label=sent_back_amount_1_label %}

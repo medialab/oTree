@@ -3,20 +3,18 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-  <h3>{% trans "General introduction to games" %}</h3>
+  <h1>{% trans "Section 1: Tasks" %}</h1>
 
-  <p>{% trans "We will start with the tasks section of the study, which will require you to make 3 choices in total. This part of the study will allow you to earn money." %}</p>
+  <p>{% trans "We will start giving you three tasks in total. This is the part of the experiment that will allow you to earn money." %}</p>
+  <p>{% trans "<strong>For this, you will be grouped with other participants, who are other respondents from [COUNTRY] at the beginning of each task</strong>." %}</p>
+  <p>{% trans "<strong>The other participants in your group will be different in each task</strong>: the same person will never be in your group more than once. Note that the other participants may not be online at this exact moment, but are participating in the experiment just like you in this wave." %}</p>
 
-  <p>{% trans "<strong>You will be grouped or paired with other participants, who are other respondents from [COUNTRY]</strong> at the beginning of each task." %}</p>
-  <p>{% trans "<strong>The other participants in your group or pair will be different in each task</strong>: the same person will never be in your group more than once." %}
-  <br/>{% trans "Your earnings in each task will depend on your decisions and those of the other participants in your group." %}</p>
+  <h1>{% trans "How will your earnings be calculated?" %}</h1>
 
-  <h3>{% trans "How will your earnings be calculated?" %}</h3>
-  <p><strong>{% trans "The other participants may not be online at this moment." %}</strong><br/>
-  {% trans "Your answers in each task will be matched with those of other participants in order to calculate your earnings from each section." %}</p>
-  <p>{% trans "One task will be randomly selected at the end of the study." %}
-  <strong>{% trans "The amount of money that you will receive will correspond to your earnings in this task." %}</strong>
-  {% trans "The results will be shared with you at the end of the study." %}</p>
+  <p>{% trans "<strong>Your earnings in each task will depend on your decisions and those of the other participants in your group</strong>." %}</p>
+  <p>{% trans "Your answers in each task will be matched with those of other participants." %}</p>
+  <p>{% trans "At the end of the study, one of the three tasks will be randomly selected. <strong>The amount of money that you will receive will correspond to your earnings in this task</strong>. The results will be shared with you at the end of the study." %}</p>
+  <p>{% trans "There, you will also have the option to donate part of your earnings to the charity UNICEF, should you wish to do so." %}</p>
 
   <button class="btn btn-primary">{% trans "Next" %}</button>
 {% endblock %}

@@ -9,19 +9,16 @@
   </h4>
 
   <h1>{% trans "Study information" %}</h1>
-  <p>{% trans "Participants in this study are compensated for their time: at the end of this study, you will receive a fixed number of points. On top of that, you have the opportunity to earn an additional sum of money up to 40 Euro." %}</p>
-  <p>{% trans "This study is divided into 3 sections. In the first part, you will participate in two simple tasks, in anonymous interaction with one or more people. In the second part, you’re going to associate sets of words. In the third part, we ask you to answer a few questions. The whole study should take you about 35 minutes." %}</p>
-  <p>{% trans "Note that you should complete this study in one sitting, without any extensive period of inactivity. For best results, minimize distractions and close other programs." %}</p>
-  <p>{% trans "<strong>You should use Internet Explorer 11 or higher, Chrome or Firefox for this experiment.</strong>" %}</p>
+  <p>{% trans "Participants in this study are <strong>compensated</strong> for their time: at the end of this study, you will receive a fixed number of points. On top of that, you have the <strong>opportunity to earn an additional sum of actual money up to €40</strong>. The money will be paid to the participants online via a PayPal account." %}</p>
+  <p>{% trans "This study is divided into three sections:" %}</p>
+  <p>{% trans "In the first part, you will participate in three simple tasks, in anonymous interaction with one or more other people." %}</p>
+  <p>{% trans "In the second part, you’re going to associate sets of words." %}</p>
+  <p>{% trans "In the third part, we ask you to answer a few questions." %}</p>
+  <p>{% trans "The whole study should take you about 35 minutes. Note that <strong>you should complete this study in one sitting</strong>, without any extensive period of inactivity. For best results, minimize distractions and close other programs." %}</p>
+  <p>{% trans "<strong>You should use Internet Explorer 11 or higher, Chrome or Firefox for this experiment</strong>." %}</p>
 
-  <h1>{% trans "Ethics and human subject protection" %}</h1>
+  <h1>{% trans "Data protection" %}</h1>
   <p>{% trans "The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only." %}</p>
-
-  <h1>{% trans "Payment details" %}</h1>
-  <p>{% trans "All participants are paid online via a PayPal account. It is not necessary to have a PayPal account prior to your participation to participate in the study. The only personal information that we require to process your payment is a valid e-mail address. You will then receive an email from PayPal that will guide you through the few simple steps leading to the creation of your account and the reception of your final earnings." %}</p>
-  <p>{% trans "Please type a valid email address and then click on the “Begin” button in order to start the study." %}</p>
-
-  {% formfield player.email with label=email_label %}
 
   <button class="btn btn-primary">{% trans "Begin" %}</button>
 {% endblock %}
