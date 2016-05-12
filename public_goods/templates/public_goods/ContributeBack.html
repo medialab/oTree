@@ -7,8 +7,9 @@
 {% endblock %}
 
 {% block content %}
-<p>{% trans "You now see a table that lists all possible average contributions from other group members (all integers between 0 and 10)." %}<br/>
-{% trans "For each average contribution possible from other members, how much would you want to put in the project?" %}</p>
+<h1>{% trans "Task 2: Real task continued" %}</h1>
+<p>{% trans "Now imagine that this time, you find out how much money the other three members of your group are transferring into the common pot." %}</p>
+<p>{% trans "Based on their contributions, how much of your €10 do you want to invest into the common project?" %}</p>
 
     {% formfield player.contribution_back_0 with label=contribution_back_0_label %}
     {% formfield player.contribution_back_1 with label=contribution_back_1_label %}

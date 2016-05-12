@@ -3,11 +3,11 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
-<p>{% trans "In the second task, groups of 4 participants (yourself and 3 other people) are randomly formed." %}<br/>
-{% trans "Reminder: The participants in your group are different from the one you interacted with in the previous task." %}</p>
-<p>{% trans "At the beginning of the task, each group member receives 10 Euro. Each member of the group must choose how many Euros to keep and how much will be transferred into a common project." %}
-<br/>{% trans "The total amount transferred into the common project is multiplied by 1,6." %}</p>
-<p>{% trans "In the end, the money in the common project is split equally between the 4 group members (including yourself)." %}</p>
+<h1>{% trans "Task Two: Introduction" %}</h1>
+<p>{% trans "In the second task, groups of <strong>4 participants</strong> (yourself and 3 other people) are randomly formed.<br/>Remember, the participants in your group are different from the one you interacted with in the previous task. However, they all live in [COUNTRY]" %}</p>
+<p>{% trans "At the beginning of the task, each group member receives €10. Each member of the group must choose how much money to keep and how much will be transferred into a <strong>common project</strong>. <br/>The total amount invested into the common project by all participants is multiplied by 1,6." %}</p>
+<p>{% trans "In the end, the money in the common project will be split equally between the 4 group members (including yourself)." %}</p>
+<p>{% trans "To better understand, watch the animation below." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "public_goods/public_goods_demo.js" %}"></script>

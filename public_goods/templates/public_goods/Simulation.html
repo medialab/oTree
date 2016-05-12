@@ -3,9 +3,10 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>{% trans "Task 2 Simulation" %}</h1>
+<h1>{% trans "Task 2: Test Simulation" %}</h1>
 <hr/>
-<p>{% trans "The test choices you make on this screen have no effect on your winnings in this task." %}</p>
+<p>{% trans "If you wish, you can use this test screen to play with different choices of the four participants, to understand the task better." %}</p>
+<p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "public_goods/public_goods_simulation.js" %}"></script>
@@ -73,22 +74,22 @@ $(function() { init() });
   </canvas>
   <div class="form commands">
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">{% trans "Amount sent by Player A" %}</label>
+      <label for="amount">{% trans "Amount sent by Participant A" %}</label>
       <input class="form-control" type="number" id="amountA" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">{% trans "Amount sent by Player B" %}</label>
+      <label for="amount">{% trans "Amount sent by Participant B" %}</label>
       <input class="form-control" type="number" id="amountB" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">{% trans "Amount sent by Player C" %}</label>
+      <label for="amount">{% trans "Amount sent by Participant C" %}</label>
       <input class="form-control" type="number" id="amountC" min="0" max="10" placeholder="0">
     </div>
 
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
-      <label for="amount">{% trans "Amount sent by Player D" %}</label>
+      <label for="amount">{% trans "Amount sent by Participant D" %}</label>
       <input class="form-control" type="number" id="amountD" min="0" max="10" placeholder="0">
     </div>
 
