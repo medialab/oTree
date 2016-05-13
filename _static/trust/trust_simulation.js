@@ -1083,40 +1083,6 @@ p.nominalBounds = new cjs.Rectangle(-247.3,-119.8,494.7,239.7);
 p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 
 
-(lib.cart = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Calque 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#000000").s().p("AkzAaIGVizIDSCBImXCygAkoAaIDFB7IGMiuIjHh7g");
-	this.shape.setTransform(30.9,15.5);
-
-	this.shape_1 = new cjs.Shape();
-	this.shape_1.graphics.f("#FFFFFF").s().p("AkzAaIGWi0IDRCCImXCyg");
-	this.shape_1.setTransform(30.9,15.5);
-
-	this.shape_2 = new cjs.Shape();
-	this.shape_2.graphics.f("#000000").s().p("AjLBDIGXiyIAAAtImXCygAjGBGIAAAiIGNitIAAgig");
-	this.shape_2.setTransform(41.2,24.3);
-
-	this.shape_3 = new cjs.Shape();
-	this.shape_3.graphics.f("#A3A3A3").s().p("AjLBDIGXiyIAAAtImXCyg");
-	this.shape_3.setTransform(41.2,24.3);
-
-	this.shape_4 = new cjs.Shape();
-	this.shape_4.graphics.f("#000000").s().p("AhmgqIAAgrIDNB+IAAAtgAhhgsIDDB5IAAghIjDh4g");
-	this.shape_4.setTransform(10.4,26.8);
-
-	this.shape_5 = new cjs.Shape();
-	this.shape_5.graphics.f("#FFFFFF").s().p("AhmgqIAAgrIDNB+IAAAtg");
-	this.shape_5.setTransform(10.4,26.8);
-
-	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,61.7,35.5);
-
-
 (lib.bubbleOrange = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1161,6 +1127,70 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
+
+
+(lib.bubbleBlue = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Calque 2
+	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
+	this.label.name = "label";
+	this.label.textAlign = "center";
+	this.label.lineHeight = 30;
+	this.label.setTransform(36.6,29.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#0099FF").s().p("Ai8ErQgsgagmgmQhwhwAAidQAAifBwhwQBwhwCeAAQCeAABxBwQBwBwAACfQAACdhwBwQhxBxieAAQgmAAgkgHIhyBNg");
+	this.shape.setTransform(38.4,41.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
+
+
+(lib.cart = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// Calque 2
+	this.bubble = new lib.bubbleBlue();
+	this.bubble.setTransform(82.9,-17.5,0.642,0.55,0,0,31,38.4,41.9);
+	this.bubble.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.bubble).wait(1));
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#000000").s().p("AkzAaIGVizIDSCBImXCygAkoAaIDFB7IGMiuIjHh7g");
+	this.shape.setTransform(30.9,15.5);
+
+	this.shape_1 = new cjs.Shape();
+	this.shape_1.graphics.f("#FFFFFF").s().p("AkzAaIGWi0IDRCCImXCyg");
+	this.shape_1.setTransform(30.9,15.5);
+
+	this.shape_2 = new cjs.Shape();
+	this.shape_2.graphics.f("#000000").s().p("AjLBDIGXiyIAAAtImXCygAjGBGIAAAiIGNitIAAgig");
+	this.shape_2.setTransform(41.2,24.3);
+
+	this.shape_3 = new cjs.Shape();
+	this.shape_3.graphics.f("#A3A3A3").s().p("AjLBDIGXiyIAAAtImXCyg");
+	this.shape_3.setTransform(41.2,24.3);
+
+	this.shape_4 = new cjs.Shape();
+	this.shape_4.graphics.f("#000000").s().p("AhmgqIAAgrIDNB+IAAAtgAhhgsIDDB5IAAghIjDh4g");
+	this.shape_4.setTransform(10.4,26.8);
+
+	this.shape_5 = new cjs.Shape();
+	this.shape_5.graphics.f("#FFFFFF").s().p("AhmgqIAAgrIDNB+IAAAtg");
+	this.shape_5.setTransform(10.4,26.8);
+
+	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 
 
 // stage content:
@@ -1281,6 +1311,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					cart.stack.push(dollar);
 					cart.money++;
 					
+					cart.instance.bubble.alpha = 1;
+					cart.instance.bubble.label.text = currency + cart.money.toString();
+					
 					return this;
 				}
 				
@@ -1290,6 +1323,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 						var removable = cart.stack.pop();
 						cart.instance.removeChild(removable);
 						cart.money--;
+						cart.instance.bubble.label.text = currency + cart.money.toString();
 						return true;
 					}
 					
@@ -1359,7 +1393,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					p.money++;
 		
 					var bubble = i === 0 ? this.bubble1 : this.bubble2;
-					bubble.label.text = p.money.toString() + currency;
+					bubble.label.text = currency + p.money.toString();
 						
 					var dollar = createDollar(moneyColor);
 					dollar.x = X_OFFSET;
@@ -1375,7 +1409,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					if (p.money - 1 >= 0) {
 						p.money--;
 						var bubble = i === 0 ? this.bubble1 : this.bubble2;
-						bubble.label.text = p.money.toString() + currency;
+						bubble.label.text = currency + p.money.toString();
 						
 						var removable = p.stack.pop();
 						p.instance.removeChild(removable);
