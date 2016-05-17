@@ -1287,6 +1287,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				var X_OFFSET = 18;
 				var Y_OFFSET = 9;
 				var Z_OFFSET = 3;
+				
+				this.cart1.bubble.alpha = 0;
+				this.cart2.bubble.alpha = 0;
 		
 				var carts = [{
 					money: 0,
@@ -1351,6 +1354,11 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 						this.gotoAndPlay('first_move');
 					} else {
 						this.gotoAndPlay('second_move');
+						var self = this;
+						setTimeout(function () {
+							self.cart1.bubble.alpha = 0;
+							self.cart2.bubble.alpha = 0;
+						}, 2000);
 					}
 					return this;
 				}.bind(this);
@@ -1360,13 +1368,25 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					batchRemove(cartIndex);
 					batchAdd(cartIndex, window.TRUST.multipliedMoney, 'grey');
 				}
+				
+				var reset = function () {
+					this.cart1.bubble.alpha = 0;
+					this.cart2.bubble.alpha = 0;
+					carts[0].money = 0;
+					carts[0].color = '';
+					carts[0].stack = [];
+					carts[1].money = 0;
+					carts[0].color = '';
+					carts[0].stack = [];
+				}.bind(this);
 		
 				return {
 					increment: increment,
 					decrement: decrement,
 					move: move,
 					multiply: multiplyMoney,
-					removeAll: batchRemove
+					removeAll: batchRemove,
+					reset: reset
 				}
 			}.bind(this);
 		
@@ -1514,6 +1534,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 			var reset = function () {
 				this.gotoAndPlay('start');
 				playersControls.reset();
+				cartsControls.reset();
 			}.bind(this);
 		
 			var init = function () {

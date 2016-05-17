@@ -3,12 +3,13 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-
-<h1>{% trans "Task 1: Real task" %}</h1>
+<style type="text/css">label {font-weight: normal;}</style>
+<h1 style="color:#357EBD">{% trans "Task 1: Real task" %}</h1>
 
 <p>{% trans "Now the real task 1 starts. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
 <p>{% trans "You were selected to be in the role of <strong>Participant A</strong>." %}</p>
 <p>{% blocktrans %}You have {{amount_allocated}} in your possession. <strong>How much do you want to send to Person B</strong>? {% endblocktrans %}</p>
+<hr/>
 {% formfield group.sent_amount with label=sent_amount_label %}
 <p>
 <button class="btn btn-primary">{% trans "Next" %}</button>

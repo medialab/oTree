@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-04-28 14:10+0200\n"
+"POT-Creation-Date: 2016-05-17 17:19+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,136 +17,226 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: dictator/templates/dictator/EndGame.html:6
-#: public_goods/templates/public_goods/EndGame.html:6
-#: trust/templates/trust/EndGame.html:6
-msgid "Congratulations!"
-msgstr ""
-
-#: dictator/templates/dictator/EndGame.html:12
-msgid ""
-"You have completed all tasks. Let's go to the second section of the study, "
-"where you will be asked to sort a number of words and be timed while doing "
-"so."
-msgstr ""
-
-#: dictator/templates/dictator/EndGame.html:13
-#: dictator/templates/dictator/Simulation.html:50
-#: public_goods/templates/public_goods/Contribute.html:16
-#: public_goods/templates/public_goods/ContributeBack.html:25
+#: dictator/templates/dictator/EndGame.html:11
+#: dictator/templates/dictator/Simulation.html:51
+#: iat/templates/iat/Instructions.html:37
+#: public_goods/templates/public_goods/Contribute.html:12
+#: public_goods/templates/public_goods/ContributeBack.html:24
 #: public_goods/templates/public_goods/DecisionInstructions.html:11
 #: public_goods/templates/public_goods/EndGame.html:12
-#: public_goods/templates/public_goods/Introduction.html:12
-#: public_goods/templates/public_goods/Simulation.html:97
-#: survey/templates/survey/Demographics1.html:10
-#: survey/templates/survey/Demographics10.html:10
-#: survey/templates/survey/Demographics11.html:10
-#: survey/templates/survey/Demographics12.html:10
-#: survey/templates/survey/Demographics13.html:12
-#: survey/templates/survey/Demographics2.html:10
-#: survey/templates/survey/Demographics3.html:10
-#: survey/templates/survey/Demographics4.html:10
-#: survey/templates/survey/Demographics5.html:10
-#: survey/templates/survey/Demographics6.html:10
-#: survey/templates/survey/Demographics7.html:10
-#: survey/templates/survey/Demographics8.html:10
-#: survey/templates/survey/Demographics9.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour1.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour2.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour3.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour4.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour5.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour6.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour7.html:41
-#: survey/templates/survey/TrustAndTrustingBehaviour8.html:10
-#: survey/templates/survey/TrustAndTrustingBehaviour9.html:10
-#: survey/templates/survey/TrustInInstitution1.html:25
-#: survey/templates/survey/TrustInInstitution2.html:25
-#: survey/templates/survey/WrapUp1.html:10
-#: survey/templates/survey/WrapUp2.html:9
-#: survey/templates/survey/WrapUp3.html:9
-#: survey/templates/survey/WrapUp4.html:9
-#: survey/templates/survey/WrapUp5.html:9 trust/templates/trust/EndGame.html:10
-#: trust/templates/trust/GamesIntroduction.html:21
-#: trust/templates/trust/Send.html:14 trust/templates/trust/SendBack.html:24
-#: trust/templates/trust/Simulation.html:141
+#: public_goods/templates/public_goods/Introduction.html:8
+#: public_goods/templates/public_goods/Simulation.html:115
+#: survey/templates/survey/Survey01.html:34
+#: survey/templates/survey/Survey02.html:40
+#: survey/templates/survey/Survey03.html:43
+#: survey/templates/survey/Survey04.html:32
+#: survey/templates/survey/Survey05.html:37
+#: survey/templates/survey/Survey06.html:40
+#: survey/templates/survey/Survey07.html:30
+#: survey/templates/survey/Survey08.html:19
+#: survey/templates/survey/Survey09.html:22
+#: survey/templates/survey/Survey10.html:18
+#: survey/templates/survey/Survey11.html:23
+#: trust/templates/trust/EndGame.html:9
+#: trust/templates/trust/GamesIntroduction.html:20
+#: trust/templates/trust/Send.html:15 trust/templates/trust/SendBack.html:25
+#: trust/templates/trust/Simulation.html:136
 msgid "Next"
 msgstr ""
 
 #: dictator/templates/dictator/Instructions.html:6
-msgid "Task 3"
+msgid "Task 3: Introduction"
 msgstr ""
 
 #: dictator/templates/dictator/Instructions.html:8
 msgid ""
-"This task involves two participants – Person A and Person B. Your role "
-"(Player A or B) is revealed to you when making your decision."
+"This last task involves <strong>two participants</strong> – Person A and "
+"Person B."
 msgstr ""
 
 #: dictator/templates/dictator/Instructions.html:9
 msgid ""
-"Reminder: The other participant is different from the ones you interacted "
-"with in the previous tasks."
+"Your role (Participant A or Participant B) is revealed to you at the "
+"beginning of the task."
 msgstr ""
 
 #: dictator/templates/dictator/Instructions.html:10
 msgid ""
-"This task is very short and simple: Person A receives $10. Person A must "
-"then decide how many dollars of this amount will be transferred to Person B. "
-"To better understand, watch the animation below."
+"Remember, the other participant, while also living in France, is different "
+"from the ones you interacted with in the previous two tasks."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:34
-#: public_goods/templates/public_goods/Instructions.html:38
-#: public_goods/templates/public_goods/Simulation.html:71
-#: trust/templates/trust/Instructions.html:39
-#: trust/templates/trust/Simulation.html:118
+#: dictator/templates/dictator/Instructions.html:11
+msgid ""
+"Participant A starts off with <strong>€10</strong>. Participant B "
+"<strong>does not start off with any money</strong>."
+msgstr ""
+
+#: dictator/templates/dictator/Instructions.html:12
+msgid ""
+"Participant A must now decide if and how many € he or she wants to transfer "
+"to Participant B. To better understand, watch the animation below."
+msgstr ""
+
+#: dictator/templates/dictator/Instructions.html:13
+#: public_goods/templates/public_goods/Instructions.html:12
+#: trust/templates/trust/Instructions.html:14
+msgid ""
+"The numbers shown here are just for illustration purposes — the actual "
+"person you'll be playing with might make very different decisions."
+msgstr ""
+
+#: dictator/templates/dictator/Instructions.html:40
+#: public_goods/templates/public_goods/Instructions.html:43
+#: public_goods/templates/public_goods/Simulation.html:89
+#: trust/templates/trust/Instructions.html:44
+#: trust/templates/trust/Simulation.html:113
 msgid "€"
 msgstr ""
 
 #: dictator/templates/dictator/Offer.html:6
-msgid "Now the task begins."
+msgid "Task 3: Real Task"
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:11 trust/templates/trust/Send.html:9
+#: dictator/templates/dictator/Offer.html:7
+msgid "Now the real task 3 starts."
+msgstr ""
+
+#: dictator/templates/dictator/Offer.html:8
 msgid ""
 "Once you have made your decision and clicked the “Next” button, you cannot "
 "return to this screen."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:12
-msgid "Your role is that of Person A."
+#: dictator/templates/dictator/Offer.html:9
+msgid ""
+"You were selected to be in the role of <strong>Participant A</strong>. You "
+"have <strong>€10</strong> in your possession."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:13
+#: dictator/templates/dictator/Offer.html:10
 msgid ""
-"You have 10 Euro in your possession. How much of it do you want to transfer "
-"to Person B?"
+"Do you want to transfer any money to Participant B</strong>, and if so "
+"<strong>how much</strong>?"
 msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:6
-msgid "Task 3 Simulation"
+msgid "Task 3: Simulation"
 msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:8
-#: public_goods/templates/public_goods/Simulation.html:8
-#: trust/templates/trust/Simulation.html:8
 msgid ""
-"The test choices you make on this screen have no effect on your winnings in "
-"this task."
+"If you wish, you can use this test screen to play with different choices of "
+"Participant A, to understand the task better."
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:47
-#: public_goods/templates/public_goods/Simulation.html:76
-#: trust/templates/trust/Simulation.html:124
-msgid "Amount sent by Player A"
+#: dictator/templates/dictator/Simulation.html:9
+#: public_goods/templates/public_goods/Simulation.html:9
+#: trust/templates/trust/Simulation.html:10
+msgid "Whenever you are ready to proceed to the real task, click next."
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:49
-#: public_goods/templates/public_goods/Simulation.html:96
-#: trust/templates/trust/Simulation.html:126
-#: trust/templates/trust/Simulation.html:134
+#: dictator/templates/dictator/Simulation.html:48
+#: public_goods/templates/public_goods/Simulation.html:94
+#: trust/templates/trust/Simulation.html:119
+msgid "Amount sent by Participant A"
+msgstr ""
+
+#: dictator/templates/dictator/Simulation.html:50
+#: public_goods/templates/public_goods/Simulation.html:114
+#: trust/templates/trust/Simulation.html:121
+#: trust/templates/trust/Simulation.html:129
 msgid "Send"
+msgstr ""
+
+#: iat/templates/iat/EndGame.html:11
+#: public_goods/templates/public_goods/EndGame.html:11
+#: trust/templates/trust/EndGame.html:8
+msgid "Congratulations!"
+msgstr ""
+
+#: iat/templates/iat/EndGame.html:12
+msgid ""
+"You have now completed the sorting task. We will now move on to the last "
+"part of the study, where you are asked a few questions about yourself."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:9
+msgid "Words Task"
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:12
+msgid ""
+"Put your middle or index fingers on the <strong>E</strong> and <strong>I</"
+"strong> keys of your keyboard. In this part of the study, words representing "
+"categories will appear one-by-one in the middle of the screen. Two labels at "
+"the top will tell you which words go with each key."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:13
+msgid ""
+"When the item belongs to a category on the <strong>left</strong>, press the "
+"<strong>E</strong> key; when the item belongs to a category on the "
+"<strong>right</strong>, press the <strong>I</strong> key. Each word has an "
+"easy correct classification and belongs to only one category. If you make an "
+"error, an X will appear – fix the error by hitting the other key."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:14
+#: iat/templates/iat/Instructions.html:27
+msgid "A few rules to remember:"
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:16
+msgid "Keep your index fingers on the E and I keys to enable rapid response."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:17
+#: iat/templates/iat/Instructions.html:30
+msgid ""
+"The test gives no results if you go slow. Please try to go as fast as "
+"possible."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:18
+#: iat/templates/iat/Instructions.html:31
+msgid "Expect to make a few mistakes because of going fast. That's OK."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:19
+#: iat/templates/iat/Instructions.html:32
+msgid "For best results, avoid distractions and stay focused."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:21
+msgid "Press the space bar to begin."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:25
+msgid ""
+"Put your middle or index fingers on the <strong>LEFT</strong> and "
+"<strong>RIGHT</strong> buttons. In this part of the study, words "
+"representing categories will appear one-by-one in the middle of the screen. "
+"Two labels at the top will tell you which words go with each key."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:26
+msgid ""
+"When the item belongs to a category on the <strong>left</strong>, tap the "
+"<strong>LEFT</strong> button; when the item belongs to a category on the "
+"<strong>right</strong>, press the <strong>RIGHT</strong> button. Each word "
+"has an easy correct classification and belongs to only one category. If you "
+"make an error, an X will appear – fix the error by hitting the other key."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:29
+msgid ""
+"Keep your index fingers on the LEFT and RIGHT buttons to enable rapid "
+"response."
+msgstr ""
+
+#: iat/templates/iat/Instructions.html:34
+msgid "Tap the NEXT button to begin."
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:3
@@ -1390,83 +1480,36 @@ msgstr ""
 msgid "Honest --- Dishonest or Government --- Corrupt"
 msgstr ""
 
-#: public_goods/models.py:134
-msgid "If the other group members make an average contribution of 0:"
-msgstr ""
-
-#: public_goods/models.py:136
-msgid "If the other group members make an average contribution of 1:"
-msgstr ""
-
-#: public_goods/models.py:138
-msgid "If the other group members make an average contribution of 2:"
-msgstr ""
-
-#: public_goods/models.py:140
-msgid "If the other group members make an average contribution of 3:"
-msgstr ""
-
-#: public_goods/models.py:142
-msgid "If the other group members make an average contribution of 4:"
-msgstr ""
-
-#: public_goods/models.py:144
-msgid "If the other group members make an average contribution of 5:"
-msgstr ""
-
-#: public_goods/models.py:146
-msgid "If the other group members make an average contribution of 6:"
-msgstr ""
-
-#: public_goods/models.py:148
-msgid "If the other group members make an average contribution of 7:"
-msgstr ""
-
-#: public_goods/models.py:150
-msgid "If the other group members make an average contribution of 8:"
-msgstr ""
-
-#: public_goods/models.py:152
-msgid "If the other group members make an average contribution of 9:"
-msgstr ""
-
-#: public_goods/models.py:154
-msgid "If the other group members make an average contribution of 10:"
-msgstr ""
-
 #: public_goods/templates/public_goods/Contribute.html:6
-msgid "Now the real task begins."
+msgid "Task 2: Real task"
 msgstr ""
 
-#: public_goods/templates/public_goods/Contribute.html:11
+#: public_goods/templates/public_goods/Contribute.html:7
 msgid ""
-"Now the real task begins. Once you have made your decision and clicked the "
+"Now the real task 2 starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
 
-#: public_goods/templates/public_goods/Contribute.html:12
+#: public_goods/templates/public_goods/Contribute.html:8
 msgid ""
-"You have 10 Euro in your possession. How much do you want to put into the "
-"common project?"
+"Like the other players, you have <strong>€10</strong> in your possession. "
+"<strong>How much do you want to invest into the common project?</strong>"
 msgstr ""
 
-#: public_goods/templates/public_goods/ContributeBack.html:6
-#: trust/templates/trust/Send.html:5 trust/templates/trust/SendBack.html:6
-msgid "Now the real task starts."
+#: public_goods/templates/public_goods/ContributeBack.html:8
+msgid "Task 2: Real task continued"
+msgstr ""
+
+#: public_goods/templates/public_goods/ContributeBack.html:9
+msgid ""
+"Now imagine that this time, you find out how much money the other three "
+"members of your group are transferring into the common pot."
 msgstr ""
 
 #: public_goods/templates/public_goods/ContributeBack.html:10
-#: trust/templates/trust/SendBack.html:10
 msgid ""
-"You now see a table that lists all possible average contributions from other "
-"group members (all integers between 0 and 10)."
-msgstr ""
-
-#: public_goods/templates/public_goods/ContributeBack.html:11
-#: trust/templates/trust/SendBack.html:11
-msgid ""
-"For each average contribution possible from other members, how much would "
-"you want to put in the project?"
+"<strong>Based on their contributions</strong>, how much of your €10 do you "
+"want to invest into the common project?"
 msgstr ""
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:6
@@ -1491,685 +1534,826 @@ msgid ""
 "contribution based on the contribution of other group members."
 msgstr ""
 
-#: public_goods/templates/public_goods/EndGame.html:11
-msgid "You have finished the second task. Let’s move on to the third task."
-msgstr ""
-
 #: public_goods/templates/public_goods/Instructions.html:6
-msgid ""
-"In the second task, groups of 4 participants (yourself and 3 other people) "
-"are randomly formed."
+msgid "Task Two: Introduction"
 msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:7
 msgid ""
-"Reminder: The participants in your group are different from the one you "
-"interacted with in the previous task."
+"In the second task, groups of <strong>4 participants</strong> (yourself and "
+"3 other people) are randomly formed.<br/>Remember, the participants in your "
+"group are different from the one you interacted with in the previous task. "
+"<br/>But, just like before, they all live in France."
 msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:8
 msgid ""
-"At the beginning of the task, each group member receives 10 Euro. Each "
-"member of the group must choose how many Euros to keep and how much will be "
-"transferred into a common project."
+"At the beginning of the task, each group member receives <strong>€10</"
+"strong>."
 msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:9
 msgid ""
-"The total amount transferred into the common project is multiplied by 1,6."
+"Each member of the group must choose how much money to keep and how much "
+"will be transferred into a <strong>common project</strong>. <br/>The total "
+"amount invested into the common project by all participants is multiplied by "
+"1,6."
 msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:10
 msgid ""
-"In the end, the money in the common project is split equally between the 4 "
-"group members (including yourself)."
+"In the end, the money in the common project will be split equally between "
+"the 4 group members (including yourself)."
 msgstr ""
 
-#: public_goods/templates/public_goods/Introduction.html:6
-msgid "Task 2"
+#: public_goods/templates/public_goods/Instructions.html:11
+#: trust/templates/trust/Instructions.html:13
+msgid "To better understand, watch the animation below."
 msgstr ""
 
 #: public_goods/templates/public_goods/Simulation.html:6
-msgid "Task 2 Simulation"
+msgid "Task 2: Test Simulation"
 msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:81
-#: trust/templates/trust/Simulation.html:132
-msgid "Amount sent by Player B"
-msgstr ""
-
-#: public_goods/templates/public_goods/Simulation.html:86
-msgid "Amount sent by Player C"
-msgstr ""
-
-#: public_goods/templates/public_goods/Simulation.html:91
-msgid "Amount sent by Player D"
-msgstr ""
-
-#: survey/models.py:42
+#: public_goods/templates/public_goods/Simulation.html:8
 msgid ""
-"Overall, how satisfied are you with life as a whole these days? Please "
-"respond in a scale from 0 to 10. 0 means you feel not at all satisfied and "
-"10 means you feel completely satisfied."
+"If you wish, you can use this test screen to play with different choices of "
+"the four participants, to understand the task better."
 msgstr ""
 
-#: survey/models.py:46
-msgid "0 - not at all satisfied"
+#: public_goods/templates/public_goods/Simulation.html:10
+msgid "Amounts must be a number between 0 and 10"
 msgstr ""
 
-#: survey/models.py:56
-msgid "10 - completely satisfied"
+#: public_goods/templates/public_goods/Simulation.html:99
+#: trust/templates/trust/Simulation.html:127
+msgid "Amount sent by Participant B"
 msgstr ""
 
-#: survey/models.py:57 survey/models.py:80 survey/models.py:104
-#: survey/models.py:128 survey/models.py:152 survey/models.py:176
-#: survey/models.py:196 survey/models.py:216 survey/models.py:236
-#: survey/models.py:256 survey/models.py:276 survey/models.py:296
-#: survey/models.py:309 survey/models.py:318 survey/models.py:336
-#: survey/models.py:356 survey/models.py:376 survey/models.py:395
-#: survey/models.py:414 survey/models.py:433 survey/models.py:452
-#: survey/models.py:471 survey/models.py:538 survey/models.py:577
-#: survey/models.py:588 survey/models.py:612 survey/models.py:632
-#: survey/models.py:673 survey/models.py:688 survey/models.py:702
-#: survey/models.py:715
+#: public_goods/templates/public_goods/Simulation.html:104
+msgid "Amount sent by Participant C"
+msgstr ""
+
+#: public_goods/templates/public_goods/Simulation.html:109
+msgid "Amount sent by Participant D"
+msgstr ""
+
+#: public_goods/views.py:72
+msgid "If the other group members make an average contribution of €0:"
+msgstr ""
+
+#: public_goods/views.py:74
+msgid "If the other group members make an average contribution of €1:"
+msgstr ""
+
+#: public_goods/views.py:76
+msgid "If the other group members make an average contribution of €2:"
+msgstr ""
+
+#: public_goods/views.py:78
+msgid "If the other group members make an average contribution of €3:"
+msgstr ""
+
+#: public_goods/views.py:80
+msgid "If the other group members make an average contribution of €4:"
+msgstr ""
+
+#: public_goods/views.py:82
+msgid "If the other group members make an average contribution of €5:"
+msgstr ""
+
+#: public_goods/views.py:84
+msgid "If the other group members make an average contribution of €6:"
+msgstr ""
+
+#: public_goods/views.py:86
+msgid "If the other group members make an average contribution of €7:"
+msgstr ""
+
+#: public_goods/views.py:88
+msgid "If the other group members make an average contribution of €8:"
+msgstr ""
+
+#: public_goods/views.py:90
+msgid "If the other group members make an average contribution of €9:"
+msgstr ""
+
+#: public_goods/views.py:92
+msgid "If the other group members make an average contribution of €10:"
+msgstr ""
+
+#: survey/models.py:44
+msgid "Overall, how satisfied are you with life as a whole these days?"
+msgstr ""
+
+#: survey/models.py:47
+msgid "0 - Not at all satisfied"
+msgstr ""
+
+#: survey/models.py:57
+msgid "10 - Completely satisfied"
+msgstr ""
+
+#: survey/models.py:58 survey/models.py:79 survey/models.py:100
+#: survey/models.py:121 survey/models.py:142 survey/models.py:162
+#: survey/models.py:182 survey/models.py:202 survey/models.py:222
+#: survey/models.py:242 survey/models.py:262 survey/models.py:282
+#: survey/models.py:295 survey/models.py:306 survey/models.py:326
+#: survey/models.py:346 survey/models.py:366 survey/models.py:386
+#: survey/models.py:406 survey/models.py:426 survey/models.py:446
+#: survey/models.py:466 survey/models.py:524 survey/models.py:562
+#: survey/models.py:573 survey/models.py:597 survey/models.py:617
+#: survey/models.py:656 survey/models.py:671 survey/models.py:685
+#: survey/models.py:698
 msgid "Don't know"
 msgstr ""
 
-#: survey/models.py:64
+#: survey/models.py:65
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
-"you can't be too careful in dealing with people? Please tell me on a scale "
-"of 0 to 10, where 0 means that you can't be too careful and 10 means that "
-"most people can be trusted."
+"you can't be too careful in dealing with people?"
 msgstr ""
 
-#: survey/models.py:69
-msgid "0 - you can't be too careful"
+#: survey/models.py:68
+msgid "0 -You can't be too careful"
 msgstr ""
 
-#: survey/models.py:79
-msgid "10 - most people can be trusted"
+#: survey/models.py:78
+msgid "10 - Most people can be trusted"
 msgstr ""
 
-#: survey/models.py:87
+#: survey/models.py:86
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
-"take risks or do you try to avoid taking risks? Please choose one number on "
-"this scale, where 0 means that you are generally \"unwilling to take risks\" "
-"and 10 means that you are generally \"fully prepared to take risks\"."
+"take risks or do you try to avoid taking risks?"
 msgstr ""
 
-#: survey/models.py:93
-msgid "0 - unwilling to take risks"
+#: survey/models.py:89
+msgid "0 - Generally unwilling to take risks"
 msgstr ""
 
-#: survey/models.py:103
-msgid "10 - fully prepared to take risks"
+#: survey/models.py:99
+msgid "10 - Fully prepared to take risks"
 msgstr ""
 
-#: survey/models.py:111
+#: survey/models.py:107
 msgid ""
 "Would you say that most of the time people are only looking out for "
-"themselves or that they mostly try to help each other? Please choose one "
-"number on this scale, where 0 means that \"people are only looking out for "
-"themselves\" and 10 means that \"people mostly try to help each other\"."
+"themselves or that they mostly try to help each other?"
 msgstr ""
 
-#: survey/models.py:117
-msgid "0 - people are only looking out for themselves"
+#: survey/models.py:110
+msgid "0 - People are only looking out for themselves"
 msgstr ""
 
-#: survey/models.py:127
-msgid "10 - people mostly try to help each other"
+#: survey/models.py:120
+msgid "10 - People mostly try to help each other"
 msgstr ""
 
-#: survey/models.py:135
+#: survey/models.py:128
 msgid ""
 "Do you think most people would try to take advantage of you if they got a "
-"chance, or would they try to be fair? Please choose one number on this "
-"scale, where 0 means that \"most people would try to take advantage of me\", "
-"and 10 means that \"most people would try to be fair\"."
+"chance, or would they try to be fair?"
+msgstr ""
+
+#: survey/models.py:131
+msgid "0 - Most people would try to take advantage of me"
 msgstr ""
 
 #: survey/models.py:141
-msgid "0 - most people would try to take advantage of me"
+msgid "10 - Most people would try to be fair"
+msgstr ""
+
+#: survey/models.py:149
+msgid "Receiving social allowances to which you are not entitled."
 msgstr ""
 
 #: survey/models.py:151
-msgid "10 - most people would try to be fair"
+msgid "0 - This action is never justifiable"
 msgstr ""
 
-#: survey/models.py:159
-msgid ""
-"Can you tell us whether you think the following action can always be "
-"justified, never be justified, or something in between: Receiving social "
-"allowances to which you are not entitled. Please choose one number on this "
-"scale where 0 means that \"this action is never justifiable\" and 10 means "
-"that \"this action is always justifiable\"."
+#: survey/models.py:161
+msgid "10 - This action is always justifiable"
 msgstr ""
 
-#: survey/models.py:165
-msgid "0 - this action is never justifiable"
+#: survey/models.py:169
+msgid "Your family."
 msgstr ""
 
-#: survey/models.py:175
-msgid "10 - this action is always justifiable"
-msgstr ""
-
-#: survey/models.py:183 survey/views.py:16
-msgid "Your family"
-msgstr ""
-
-#: survey/models.py:185 survey/models.py:205 survey/models.py:225
-#: survey/models.py:245 survey/models.py:265 survey/models.py:285
-#: survey/models.py:325 survey/models.py:345 survey/models.py:365
+#: survey/models.py:171 survey/models.py:191 survey/models.py:211
+#: survey/models.py:231 survey/models.py:251 survey/models.py:271
+#: survey/models.py:315 survey/models.py:335 survey/models.py:355
 msgid "0 - I don't trust them at all"
 msgstr ""
 
-#: survey/models.py:195 survey/models.py:215 survey/models.py:235
-#: survey/models.py:255 survey/models.py:275 survey/models.py:295
-#: survey/models.py:335 survey/models.py:355 survey/models.py:375
+#: survey/models.py:181 survey/models.py:201 survey/models.py:221
+#: survey/models.py:241 survey/models.py:261 survey/models.py:281
+#: survey/models.py:325 survey/models.py:345 survey/models.py:365
 msgid "10 - I fully trust them"
 msgstr ""
 
-#: survey/models.py:203 survey/views.py:17
-msgid "People in your neighborhood"
+#: survey/models.py:189
+msgid "People in your neighborhood."
 msgstr ""
 
-#: survey/models.py:223 survey/views.py:18
-msgid "People you know personally"
+#: survey/models.py:209
+msgid "People you know personally."
 msgstr ""
 
-#: survey/models.py:243 survey/views.py:19
-msgid "People you meet for the first time"
+#: survey/models.py:229
+msgid "People you meet for the first time."
 msgstr ""
 
-#: survey/models.py:263 survey/views.py:20
-msgid "People of another religion"
+#: survey/models.py:249
+msgid "People of another religion."
 msgstr ""
 
-#: survey/models.py:283 survey/views.py:21
-msgid "People of another nationality"
+#: survey/models.py:269
+msgid "People of another nationality."
 msgstr ""
 
-#: survey/models.py:303
+#: survey/models.py:289
 msgid ""
 "If you lost a wallet or a purse that contained items of great value to you, "
 "and it was found by a stranger, do you think it would be returned with its "
 "contents, or not?"
 msgstr ""
 
-#: survey/models.py:307 survey/models.py:316 survey/models.py:724
+#: survey/models.py:293 survey/models.py:304 survey/models.py:707
 msgid "Yes"
 msgstr ""
 
-#: survey/models.py:308 survey/models.py:317 survey/models.py:725
+#: survey/models.py:294 survey/models.py:305 survey/models.py:708
 msgid "No"
 msgstr ""
 
-#: survey/models.py:314
+#: survey/models.py:302
 msgid "Did you vote in the last national election?"
 msgstr ""
 
-#: survey/models.py:323 survey/views.py:27
-msgid "Your government"
+#: survey/models.py:313
+msgid "Your government."
 msgstr ""
 
-#: survey/models.py:343 survey/views.py:28
-msgid "The police"
+#: survey/models.py:333
+msgid "The police."
 msgstr ""
 
-#: survey/models.py:363 survey/views.py:29
-msgid "The media"
+#: survey/models.py:353
+msgid "The media."
 msgstr ""
 
-#: survey/models.py:384 survey/models.py:403 survey/models.py:422
-#: survey/models.py:441 survey/models.py:460
+#: survey/models.py:373
+msgid "Public institutions deliver public services in the best possible way."
+msgstr ""
+
+#: survey/models.py:375 survey/models.py:395 survey/models.py:415
+#: survey/models.py:435 survey/models.py:455
 msgid "0 - I don't agree at all"
 msgstr ""
 
-#: survey/models.py:394 survey/models.py:413 survey/models.py:432
-#: survey/models.py:451 survey/models.py:470
+#: survey/models.py:385 survey/models.py:405 survey/models.py:425
+#: survey/models.py:445 survey/models.py:465
 msgid "10 - I fully agree"
 msgstr ""
 
-#: survey/models.py:478
-msgid "What was your date of birth?"
+#: survey/models.py:393
+msgid "Public institutions pursue long term objectives."
 msgstr ""
 
-#: survey/models.py:484
+#: survey/models.py:413
+msgid ""
+"People working in public institutions behave according to ethical standards "
+"aimed at avoiding corruption."
+msgstr ""
+
+#: survey/models.py:433
+msgid "Public institutions are transparent."
+msgstr ""
+
+#: survey/models.py:453
+msgid ""
+"Public institutions treat all citizens fairly regardless of their gender, "
+"race, age or economic condition equally."
+msgstr ""
+
+#: survey/models.py:473
+msgid "What is your date of birth?"
+msgstr ""
+
+#: survey/models.py:479
 msgid "Male"
 msgstr ""
 
-#: survey/models.py:484
+#: survey/models.py:479
 msgid "Female"
 msgstr ""
 
-#: survey/models.py:485
-msgid "What is your gender?"
-msgstr ""
-
-#: survey/models.py:492
-msgid "My legal husband or wife"
-msgstr ""
-
-#: survey/models.py:493
-msgid "My civil union partner"
-msgstr ""
-
-#: survey/models.py:494
-msgid "My de-facto partner, boyfriend or girlfriend"
-msgstr ""
-
-#: survey/models.py:495
-msgid "My mother and/or father"
-msgstr ""
-
-#: survey/models.py:496
-msgid "My children"
-msgstr ""
-
-#: survey/models.py:497
-msgid "My brothers and/or sisters"
-msgstr ""
-
-#: survey/models.py:498
-msgid "My flatmates"
-msgstr ""
-
-#: survey/models.py:499 survey/models.py:564 survey/models.py:576
-#: survey/models.py:644
+#: survey/models.py:479 survey/models.py:494 survey/models.py:548
+#: survey/models.py:561 survey/models.py:629 survey/models.py:719
 msgid "Other"
 msgstr ""
 
-#: survey/models.py:501
+#: survey/models.py:480
+msgid "What is your gender?"
+msgstr ""
+
+#: survey/models.py:487
+msgid "My legal husband or wife"
+msgstr ""
+
+#: survey/models.py:488
+msgid "My civil union partner"
+msgstr ""
+
+#: survey/models.py:489
+msgid "My de-facto partner, boyfriend or girlfriend"
+msgstr ""
+
+#: survey/models.py:490
+msgid "My mother and/or father"
+msgstr ""
+
+#: survey/models.py:491
+msgid "My children"
+msgstr ""
+
+#: survey/models.py:492
+msgid "My brothers and/or sisters"
+msgstr ""
+
+#: survey/models.py:493
+msgid "My flatmates"
+msgstr ""
+
+#: survey/models.py:496
 msgid ""
 "Mark as many spaces as you need to show all the people who live in the same "
 "household as you"
 msgstr ""
 
-#: survey/models.py:507
+#: survey/models.py:502
 msgid "In which country were you born?"
 msgstr ""
 
-#: survey/models.py:511
-msgid "In what year did you arrive in this country"
+#: survey/models.py:506
+msgid "In what year did you arrive in this France?"
 msgstr ""
 
-#: survey/models.py:517
-msgid "Are you a citizen of this country?"
-msgstr ""
-
-#: survey/models.py:519
-msgid "Yes, I am a citizen of this country."
-msgstr ""
-
-#: survey/models.py:520
-msgid "I am not a citizen of this country."
-msgstr ""
-
-#: survey/models.py:526
+#: survey/models.py:512
 msgid "What is the highest level of education that you have completed?"
 msgstr ""
 
-#: survey/models.py:529
+#: survey/models.py:515
 msgid "Less than high school"
 msgstr ""
 
-#: survey/models.py:530
+#: survey/models.py:516
 msgid "High school"
 msgstr ""
 
-#: survey/models.py:531
+#: survey/models.py:517
 msgid "Some college"
 msgstr ""
 
-#: survey/models.py:533
+#: survey/models.py:519
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
 msgstr ""
 
-#: survey/models.py:535
+#: survey/models.py:521
 msgid "Undergraduate degree (e.g. BA, BS)"
 msgstr ""
 
-#: survey/models.py:537
+#: survey/models.py:523
 msgid "Post-graduate degree"
 msgstr ""
 
-#: survey/models.py:544
+#: survey/models.py:530
 msgid "Which of these best describes your situation?"
 msgstr ""
 
-#: survey/models.py:546
-msgid "At work as an employee or employer/self-employed"
+#: survey/models.py:532
+msgid "At work as an employee"
 msgstr ""
 
-#: survey/models.py:548
+#: survey/models.py:533
+msgid "Employer/self-employed"
+msgstr ""
+
+#: survey/models.py:534
 msgid "Employed, on child-care leave or other leave"
 msgstr ""
 
-#: survey/models.py:550
+#: survey/models.py:536
 msgid "At work as relative assisting on family farm or business"
 msgstr ""
 
-#: survey/models.py:552
+#: survey/models.py:538
 msgid "Unemployed less than 12 months"
 msgstr ""
 
-#: survey/models.py:555
+#: survey/models.py:541
 msgid "Unemployed 12 months or more"
 msgstr ""
 
-#: survey/models.py:556
+#: survey/models.py:542
 msgid "Unable to work due to long-term illness or disability"
 msgstr ""
 
-#: survey/models.py:558
+#: survey/models.py:544
 msgid "Retired"
 msgstr ""
 
-#: survey/models.py:560
-msgid ""
-"Full-time homemaker/responsible for ordinary shopping and looking after the "
-"home"
+#: survey/models.py:545
+msgid "Full-time homemaker"
 msgstr ""
 
-#: survey/models.py:562
+#: survey/models.py:546
 msgid "In education (at school, university, etc) / student"
 msgstr ""
 
-#: survey/models.py:569
+#: survey/models.py:554
 msgid "Do you work in the...?"
 msgstr ""
 
-#: survey/models.py:571
+#: survey/models.py:556
 msgid "Central, regional or local government administration"
 msgstr ""
 
-#: survey/models.py:573
-msgid "Other public sector"
+#: survey/models.py:558
+msgid "Public sector, other"
 msgstr ""
 
-#: survey/models.py:574
+#: survey/models.py:559
 msgid "Private (for profit) sector"
 msgstr ""
 
-#: survey/models.py:575
+#: survey/models.py:560
 msgid "Not for profit sector"
 msgstr ""
 
-#: survey/models.py:583
+#: survey/models.py:568
 msgid ""
 "Generally speaking, would you say that most people can be trusted or that "
 "you need to be very careful in dealing with people?"
 msgstr ""
 
-#: survey/models.py:586
+#: survey/models.py:571
 msgid "Most people can be trusted"
 msgstr ""
 
-#: survey/models.py:587
+#: survey/models.py:572
 msgid "Need to be vary careful"
 msgstr ""
 
-#: survey/models.py:594
+#: survey/models.py:579
 msgid ""
 "What are all the ways that you got income in the last 12 months ending "
 "today? You can choose as many as you need. Please do not count loans as "
 "income."
 msgstr ""
 
-#: survey/models.py:599
+#: survey/models.py:584
 msgid "Wages, salary, commissions, bonuses etc paid by employer"
 msgstr ""
 
-#: survey/models.py:601
+#: survey/models.py:586
 msgid "Self-employment or business"
 msgstr ""
 
-#: survey/models.py:603
+#: survey/models.py:588
 msgid "Interest, dividends, rent, other investments"
 msgstr ""
 
-#: survey/models.py:605
+#: survey/models.py:590
 msgid "Regular payments from a workplace accident insurer"
 msgstr ""
 
-#: survey/models.py:606
+#: survey/models.py:591
 msgid "Pension"
 msgstr ""
 
-#: survey/models.py:608
+#: survey/models.py:593
 msgid "Social insurance payments, state benefits"
 msgstr ""
 
-#: survey/models.py:609
+#: survey/models.py:594
 msgid "Other sources of income"
 msgstr ""
 
-#: survey/models.py:611
+#: survey/models.py:596
 msgid "No source of income during that time"
 msgstr ""
 
-#: survey/models.py:618
+#: survey/models.py:603
 msgid ""
 "In the last 12 months what was your total income, before tax or anything "
 "else was taken out?"
 msgstr ""
 
-#: survey/models.py:621
+#: survey/models.py:606
 msgid "Loss"
 msgstr ""
 
-#: survey/models.py:622
+#: survey/models.py:607
 msgid "Zero income"
 msgstr ""
 
-#: survey/models.py:623
-msgid "$1 to $6,000"
+#: survey/models.py:608
+msgid "€1 to €6,000"
 msgstr ""
 
-#: survey/models.py:624
-msgid "$6,000 to $12,000"
+#: survey/models.py:609
+msgid "€6,000 to €12,000"
+msgstr ""
+
+#: survey/models.py:610
+msgid "€12,001 to €24,000"
+msgstr ""
+
+#: survey/models.py:611
+msgid "€24,001 to €36,000"
+msgstr ""
+
+#: survey/models.py:612
+msgid "€36,001 to €48,000"
+msgstr ""
+
+#: survey/models.py:613
+msgid "€48,001 to €60,000"
+msgstr ""
+
+#: survey/models.py:614
+msgid "€60,001 to €90,000"
+msgstr ""
+
+#: survey/models.py:615
+msgid "€90,001 to €120,000"
+msgstr ""
+
+#: survey/models.py:616
+msgid "€120,000 or more"
 msgstr ""
 
 #: survey/models.py:625
-msgid "$12,001 to $24,000"
+msgid "Christian - Roman Catholic"
 msgstr ""
 
 #: survey/models.py:626
-msgid "$24,001 to $36,000"
+msgid "Christian - Protestant"
 msgstr ""
 
 #: survey/models.py:627
-msgid "$36,001 to $48,000"
+msgid "Muslim"
 msgstr ""
 
 #: survey/models.py:628
-msgid "$48,001 to $60,000"
-msgstr ""
-
-#: survey/models.py:629
-msgid "$60,001 to $90,000"
-msgstr ""
-
-#: survey/models.py:630
-msgid "$90,001 to $120,000"
-msgstr ""
-
-#: survey/models.py:631
-msgid "$120,000 or more"
-msgstr ""
-
-#: survey/models.py:640
 msgid "Jewish"
 msgstr ""
 
-#: survey/models.py:641
-msgid "Moslem"
-msgstr ""
-
-#: survey/models.py:642
-msgid "Christian"
-msgstr ""
-
-#: survey/models.py:643
-msgid "Druze"
-msgstr ""
-
-#: survey/models.py:650
-msgid "Do you consider yourself as being:"
-msgstr ""
-
-#: survey/models.py:652
-msgid "N/A"
-msgstr ""
-
-#: survey/models.py:653
-msgid "Ultra-religious (“Haredi”)"
-msgstr ""
-
-#: survey/models.py:654
-msgid "Religious"
-msgstr ""
-
-#: survey/models.py:655
-msgid "Traditional but religious"
-msgstr ""
-
-#: survey/models.py:657
-msgid "Traditional but not so religious"
-msgstr ""
-
-#: survey/models.py:658
-msgid "Non-religious, secular"
-msgstr ""
-
-#: survey/models.py:664
+#: survey/models.py:649
 msgid ""
-"For information purposes, could you tell us to what extent you trusted the "
-"following two statements when you made your decisions: The other "
-"participants in my group or pair are real persons who participated in the "
-"same study"
+"The other participants in my group or pair are real persons who participated "
+"in the same study."
 msgstr ""
 
-#: survey/models.py:669 survey/models.py:684
+#: survey/models.py:652 survey/models.py:667
 msgid "No trust at all"
 msgstr ""
 
-#: survey/models.py:670 survey/models.py:685
+#: survey/models.py:653 survey/models.py:668
 msgid "Little trust"
 msgstr ""
 
-#: survey/models.py:671 survey/models.py:686
+#: survey/models.py:654 survey/models.py:669
 msgid "Quite a bit of trust"
 msgstr ""
 
-#: survey/models.py:672 survey/models.py:687
+#: survey/models.py:655 survey/models.py:670
 msgid "A lot of trust"
 msgstr ""
 
-#: survey/models.py:679
+#: survey/models.py:662
 msgid ""
 "My final earnings will be calculated in dollars according to the rules "
 "stated in the description of the study and will be paid to me (or donated if "
-"I choose not to keep the at the end of the study)"
+"I choose not to keep the at the end of the study)."
 msgstr ""
 
-#: survey/models.py:694
+#: survey/models.py:677
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the 4 sections?"
 msgstr ""
 
-#: survey/models.py:697
+#: survey/models.py:680
 msgid "With very little care"
 msgstr ""
 
-#: survey/models.py:698
+#: survey/models.py:681
 msgid "With little care"
 msgstr ""
 
-#: survey/models.py:699
+#: survey/models.py:682
 msgid "With care"
 msgstr ""
 
-#: survey/models.py:700
+#: survey/models.py:683
 msgid "With a lot of care"
 msgstr ""
 
-#: survey/models.py:701
+#: survey/models.py:684
 msgid "With extreme care"
 msgstr ""
 
-#: survey/models.py:708 survey/models.py:721
+#: survey/models.py:691
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr ""
 
-#: survey/models.py:711
+#: survey/models.py:694
 msgid "Not calm at all"
 msgstr ""
 
-#: survey/models.py:712
+#: survey/models.py:695
 msgid "Not very calm"
 msgstr ""
 
-#: survey/models.py:713
+#: survey/models.py:696
 msgid "Fairly calm"
 msgstr ""
 
-#: survey/models.py:714
+#: survey/models.py:697
 msgid "Very calm"
+msgstr ""
+
+#: survey/models.py:704
+msgid ""
+"Have you ever participated in another study that seemed close to this one?"
+msgstr ""
+
+#: survey/models.py:714
+msgid "Which device did you take this study on?"
+msgstr ""
+
+#: survey/models.py:716
+msgid "Desktop"
+msgstr ""
+
+#: survey/models.py:717
+msgid "Laptop"
+msgstr ""
+
+#: survey/models.py:718
+msgid "Tablet"
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:7
+msgid "Thank you very much for your participation in this study!"
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:8
+msgid "Your survey responses have been correctly recorded. "
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as "
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:11
+msgid ""
+"This money will be paid to you via Paypal – you will receive an email with "
+"more information on how to proceed shortly."
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:13
+msgid ""
+"Additionally, you have the option to donate none, some or all of your "
+"earnings to UNICEF. UNICEF provides humanitarian and development assistance "
+"to children and mothers in developing countries. You can find more "
+"information <a href='http://www.unicef.org' target='_blank'>here</a>."
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:15
+msgid "Please enter the amount you wish to donate to UNICEF: "
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:16
+msgid "If you do not wish to donate anything, enter 0."
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:18
+msgid "Once again, thank you very much for participating."
+msgstr ""
+
+#: survey/templates/survey/EndGame.html:19
+msgid "Finish study"
+msgstr ""
+
+#: survey/templates/survey/Survey03.html:27
+msgid "Could you tell me for each of these groups how much you trust them?"
+msgstr ""
+
+#: survey/templates/survey/Survey05.html:27
+msgid ""
+"How much trust do you have in the following to act in the best interest of "
+"society?"
+msgstr ""
+
+#: survey/templates/survey/Survey06.html:27 survey/views.py:27
+msgid "Do you agree with the following statements?"
+msgstr ""
+
+#: survey/templates/survey/Survey07.html:20
+msgid ""
+"Click on the options below to show all the people who live in the same "
+"household as you."
+msgstr ""
+
+#: survey/templates/survey/Survey07.html:21
+msgid "You can choose as many as you need."
+msgstr ""
+
+#: survey/templates/survey/Survey11.html:15
+msgid ""
+"For information purposes, could you tell us to what extent you trusted the "
+"following two statements when you made your decisions:"
 msgstr ""
 
 #: survey/views.py:12
 msgid ""
 "I‘d like to ask you how much you trust people from various groups. Could you "
-"tell me for each of these groups how much you trust them? Please tell me on "
-"a scale of 0 to 10, where 0 means that you don't trust them at all and 10 "
-"means that you fully trust them."
+"tell me for each of these groups how much you trust them?"
 msgstr ""
 
-#: survey/views.py:22
+#: survey/views.py:15
+msgid "Your family"
+msgstr ""
+
+#: survey/views.py:16
+msgid "People in your neighborhood"
+msgstr ""
+
+#: survey/views.py:17
+msgid "People you know personally"
+msgstr ""
+
+#: survey/views.py:18
+msgid "People you meet for the first time"
+msgstr ""
+
+#: survey/views.py:19
+msgid "People of another religion"
+msgstr ""
+
+#: survey/views.py:20
+msgid "People of another nationality"
+msgstr ""
+
+#: survey/views.py:21
 msgid ""
 "I‘d like to ask you how much you trust different public institutions. How "
 "much trust do you have in the following to act in the best interest of "
-"society? Please tell me on a scale of 0 to 10, where 0 means that you don't "
-"trust them at all and 10 means that you fully trust them."
+"society?"
+msgstr ""
+
+#: survey/views.py:24
+msgid "Your government"
+msgstr ""
+
+#: survey/views.py:25
+msgid "The police"
+msgstr ""
+
+#: survey/views.py:26
+msgid "The media"
+msgstr ""
+
+#: survey/views.py:28
+msgid "Public institutions deliver public services in the best possible way"
 msgstr ""
 
 #: survey/views.py:30
-msgid "Do you agree with the following statements?"
-msgstr ""
-
-#: survey/views.py:31
-msgid "Public institutions deliver public services in the best possible way"
-msgstr ""
-
-#: survey/views.py:33
 msgid "Public institutions pursue long term objectives"
 msgstr ""
 
-#: survey/views.py:34
+#: survey/views.py:31
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption"
 msgstr ""
 
-#: survey/views.py:36
+#: survey/views.py:33
 msgid "Public institutions are transparent"
 msgstr ""
 
-#: survey/views.py:37
+#: survey/views.py:34
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
 "race, age or economic condition equally"
-msgstr ""
-
-#: trust/templates/trust/EndGame.html:8
-msgid "You have finished the first task. Let’s move on to the second task."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:7
@@ -2188,174 +2372,192 @@ msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:12
 msgid ""
-"Participants in this study are compensated for their time: at the end of "
-"this study, you will receive a fixed number of points. On top of that, you "
-"have the opportunity to earn an additional sum of money up to 40 Euro."
+"Participants in this study are <strong>compensated</strong> for their time: "
+"at the end of this study, you will receive a fixed number of points. On top "
+"of that, you have the <strong>opportunity to earn an additional sum of "
+"actual money up to €40</strong>. The money will be paid to the participants "
+"online via a PayPal account."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:13
-msgid ""
-"This study is divided into 3 sections. In the first part, you will "
-"participate in two simple tasks, in anonymous interaction with one or more "
-"people. In the second part, you’re going to associate sets of words. In the "
-"third part, we ask you to answer a few questions. The whole study should "
-"take you about 35 minutes."
+msgid "This study is divided into three sections:"
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:14
 msgid ""
-"Note that you should complete this study in one sitting, without any "
-"extensive period of inactivity. For best results, minimize distractions and "
-"close other programs."
+"In the first part, you will participate in three simple tasks, in anonymous "
+"interaction with one or more other people."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:15
-msgid ""
-"<strong>You should use Internet Explorer 11 or higher, Chrome or Firefox for "
-"this experiment.</strong>"
+msgid "In the second part, you’re going to associate sets of words."
+msgstr ""
+
+#: trust/templates/trust/ExperimentIntroduction.html:16
+msgid "In the third part, we ask you to answer a few questions."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:17
-msgid "Ethics and human subject protection"
+msgid ""
+"The whole study should take you about 35 minutes. Note that <strong>you "
+"should complete this study in one sitting</strong>, without any extensive "
+"period of inactivity. For best results, minimize distractions and close "
+"other programs."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:18
+msgid ""
+"You should use Chrome or Firefox for this experiment. You can do this "
+"experiment on a desktop, laptop or a tablet, but not on a mobile phone."
+msgstr ""
+
+#: trust/templates/trust/ExperimentIntroduction.html:20
+msgid "Data protection"
+msgstr ""
+
+#: trust/templates/trust/ExperimentIntroduction.html:21
 msgid ""
 "The data gathered in this study is subject to European privacy protocols, "
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
 
-#: trust/templates/trust/ExperimentIntroduction.html:20
-msgid "Payment details"
-msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:21
-msgid ""
-"All participants are paid online via a PayPal account. It is not necessary "
-"to have a PayPal account prior to your participation to participate in the "
-"study. The only personal information that we require to process your payment "
-"is a valid e-mail address. You will then receive an email from PayPal that "
-"will guide you through the few simple steps leading to the creation of your "
-"account and the reception of your final earnings."
-msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:22
-msgid ""
-"Please type a valid email address and then click on the “Begin” button in "
-"order to start the study."
-msgstr ""
-
-#: trust/templates/trust/ExperimentIntroduction.html:26
+#: trust/templates/trust/ExperimentIntroduction.html:23
 msgid "Begin"
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:6
-msgid "General introduction to games"
+msgid "Section 1: Tasks"
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:8
 msgid ""
-"We will start with the tasks section of the study, which will require you to "
-"make 3 choices in total. This part of the study will allow you to earn money."
+"We will start giving you three tasks in total. This is the part of the "
+"experiment that will allow you to earn money."
+msgstr ""
+
+#: trust/templates/trust/GamesIntroduction.html:9
+msgid ""
+"At the beginning of each task, you will be grouped with other participants."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:10
-msgid ""
-"<strong>You will be grouped or paired with other participants, who are other "
-"respondents from [COUNTRY]</strong> at the beginning of each task."
+msgid "This people are respondents from France."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:11
 msgid ""
-"<strong>The other participants in your group or pair will be different in "
-"each task</strong>: the same person will never be in your group more than "
-"once."
+"<strong>The other participants in your group will be different in each task</"
+"strong>: the same person will never be in your group more than once. Note "
+"that the other participants may not be online at this exact moment, but are "
+"participating in the experiment in this wave just like you."
 msgstr ""
 
-#: trust/templates/trust/GamesIntroduction.html:12
-msgid ""
-"Your earnings in each task will depend on your decisions and those of the "
-"other participants in your group."
-msgstr ""
-
-#: trust/templates/trust/GamesIntroduction.html:14
+#: trust/templates/trust/GamesIntroduction.html:13
 msgid "How will your earnings be calculated?"
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:15
-msgid "The other participants may not be online at this moment."
+msgid ""
+"<strong>Your earnings in each task will depend on your decisions and those "
+"of the other participants in your group</strong>."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:16
 msgid ""
-"Your answers in each task will be matched with those of other participants "
-"in order to calculate your earnings from each section."
+"Your answers in each task will be matched with those of other participants."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:17
-msgid "One task will be randomly selected at the end of the study."
+msgid ""
+"At the end of the study, one of the three tasks will be randomly selected. "
+"<strong>The amount of money that you will receive will correspond to your "
+"earnings in this task</strong>. The results will be shared with you at the "
+"end of the study."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:18
 msgid ""
-"The amount of money that you will receive will correspond to your earnings "
-"in this task."
-msgstr ""
-
-#: trust/templates/trust/GamesIntroduction.html:19
-msgid "The results will be shared with you at the end of the study."
+"There, you will also have the option to donate part of your earnings to the "
+"charity UNICEF, should you wish to do so."
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:6
-#: trust/templates/trust/Introduction.html:6
-msgid "Task 1"
+msgid "Task One: Introduction"
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:8
-msgid "In the first task, two people participate: Person A and Person B."
+msgid ""
+"In the first task, <strong>two people participate</strong>: Participant A "
+"and Participant B. As you already know, this other participant, with whom "
+"you will interact only once during the study, also lives in France."
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:9
-msgid "Your role (A or B) will be revealed at the beginning of the task."
+msgid "Your role (A or B) will be revealed at the beginning of the task"
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:10
 msgid ""
-"This other participant, with whom you will interact only once during the "
-"study, also lives in [COUNTRY]."
+"Both participants will receive <strong>€10</strong> at the beginning of the "
+"game."
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:11
-msgid "Both participants will receive 10 Euro at the beginning of the game."
+msgid ""
+"If you are Person A, you must decide how much of your €10 you want to send "
+"to Person B. This amount will automatically be multiplied by 3."
 msgstr ""
 
 #: trust/templates/trust/Instructions.html:12
 msgid ""
-"If you are Person A, you must decide how much of your 10 Euro you want to "
-"send to Person B. This amount will automatically be multiplied by 3."
+"If you are Person B, you have to decide how much, if any, money you want to "
+"send back to Person A."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:13
+#: trust/templates/trust/Send.html:7 trust/templates/trust/SendBack.html:7
+msgid "Task 1: Real task"
+msgstr ""
+
+#: trust/templates/trust/Send.html:9 trust/templates/trust/SendBack.html:9
 msgid ""
-"If you are Person B, you have to decide, before knowing the decision of "
-"Person A, how much out of each of the amounts that Person A could send you, "
-"you want to send back."
+"Now the real task 1 starts. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
 msgstr ""
 
 #: trust/templates/trust/Send.html:10
-msgid "Your role is the one of Person A."
+msgid "You were selected to be in the role of <strong>Participant A</strong>."
 msgstr ""
 
 #: trust/templates/trust/Send.html:11
 #, python-format
 msgid ""
-"You have %(amount_allocated)s in your possession. How much do you want to "
-"send to Person B? "
+"You have %(amount_allocated)s in your possession. <strong>How much do you "
+"want to send to Person B</strong>? "
+msgstr ""
+
+#: trust/templates/trust/SendBack.html:10
+msgid "You were selected to be in the role of <strong>Participant B</strong>."
+msgstr ""
+
+#: trust/templates/trust/SendBack.html:11
+msgid "You already have <strong>€10</strong> in your possession."
+msgstr ""
+
+#: trust/templates/trust/SendBack.html:12
+msgid ""
+"If Participant A sends you any of the amounts listed in the table below, "
+"<strong>how much money do you want to send back to Participant A</strong>?"
 msgstr ""
 
 #: trust/templates/trust/Simulation.html:6
-msgid "Task 1 Simulation"
+msgid "Task 1: Test Simulation"
+msgstr ""
+
+#: trust/templates/trust/Simulation.html:8
+msgid ""
+"If you wish, you can use this test screen to play with different choices of "
+"the two participants, to understand the task better."
 msgstr ""
 
 #: trust/templates/trust/Simulation.html:9
@@ -2364,58 +2566,54 @@ msgid ""
 "calculator."
 msgstr ""
 
-#: trust/templates/trust/Simulation.html:139
+#: trust/templates/trust/Simulation.html:134
 msgid "Reset to zero"
 msgstr ""
 
-#: trust/views.py:29
-msgid "Email"
-msgstr ""
-
-#: trust/views.py:65
+#: trust/views.py:60
 msgid "Please enter a number from 0 to 10"
 msgstr ""
 
-#: trust/views.py:95
-msgid "If the other group members make an average contribution of 0"
+#: trust/views.py:90
+msgid "If Participant A sends you €0 (you receive €0×3 = €0)"
+msgstr ""
+
+#: trust/views.py:93
+msgid "If Participant A sends you €1 (you receive €1×3 = €3)"
+msgstr ""
+
+#: trust/views.py:96
+msgid "If Participant A sends you €2 (you receive €2×3 = €6)"
 msgstr ""
 
 #: trust/views.py:99
-msgid "If the other group members make an average contribution of 1"
+msgid "If Participant A sends you €3 (you receive €3×3 = €9)"
 msgstr ""
 
-#: trust/views.py:103
-msgid "If the other group members make an average contribution of 2"
+#: trust/views.py:102
+msgid "If Participant A sends you €4 (you receive €4×3 = €12)"
 msgstr ""
 
-#: trust/views.py:107
-msgid "If the other group members make an average contribution of 3"
+#: trust/views.py:105
+msgid "If Participant A sends you €5 (you receive €5×3 = €15)"
+msgstr ""
+
+#: trust/views.py:108
+msgid "If Participant A sends you €6 (you receive €6×3 = €18)"
 msgstr ""
 
 #: trust/views.py:111
-msgid "If the other group members make an average contribution of 4"
+msgid "If Participant A sends you €7 (you receive €7×3 = €21)"
 msgstr ""
 
-#: trust/views.py:115
-msgid "If the other group members make an average contribution of 5"
+#: trust/views.py:114
+msgid "If Participant A sends you €8 (you receive €8×3 = €24)"
 msgstr ""
 
-#: trust/views.py:119
-msgid "If the other group members make an average contribution of 6"
+#: trust/views.py:117
+msgid "If Participant A sends you €9 (you receive €9×3 = €27)"
 msgstr ""
 
-#: trust/views.py:123
-msgid "If the other group members make an average contribution of 7"
-msgstr ""
-
-#: trust/views.py:127
-msgid "If the other group members make an average contribution of 8"
-msgstr ""
-
-#: trust/views.py:131
-msgid "If the other group members make an average contribution of 9"
-msgstr ""
-
-#: trust/views.py:135
-msgid "If the other group members make an average contribution of 10"
+#: trust/views.py:120
+msgid "If Participant A sends you €10 (you receive €10×3 = €30)"
 msgstr ""

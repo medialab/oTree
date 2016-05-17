@@ -42,7 +42,6 @@ class IAT(Page):
 
 
 page_sequence = [
-    Introduction,
     IAT,
     EndGame
 ]

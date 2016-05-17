@@ -7,7 +7,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.9.0/lodash.min.js"></script>
   <script src={% static "js/iat.js" %}></script>
   <script>
-    //console.log(Detectizr.detect());
     var data = {{data|safe}},
         order = '{{order}}',
         lang = '{{language_code}}'
@@ -25,6 +24,7 @@
       body {
         background-color: black;
         color: white;
+        padding-top: 50px;
       }
 
       .page-header {
@@ -52,7 +52,7 @@
         width: 500px;
         left: 50%;
         margin-left: -250px;
-        margin-top: -350px;
+        margin-top: -150px;
         font-size: 500px;
         font-weight: 700;
         font-weight: 700;

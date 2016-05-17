@@ -2,13 +2,30 @@
 {% load i18n %}
 {% load otree_tags %}
 
+
+
 {% block content %}
+<style>
+  label {
+    font-weight: normal;
+  }
+
+  .control-label {font-weight: bold}
+</style>
   <p>
       {% formfield player._07_what_is_your_date_of_birth %}
+      <hr>
       {% formfield player._07_what_is_your_gender %}
-      {% formfield player._07_all_the_people_who_live_in_the_same_household_as_you %}
+
+
+      <hr>
       {% formfield player._07_which_country_were_you_born %}
+      <hr>
       {% formfield player._07_what_year_did_you_arrive_in_France %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+
+  <script type="text/javascript">
+    $('#id__07_all_the_people_who_live_in_the_same_household_as_you').find('li')[0].remove()
+  </script>
 {% endblock %}

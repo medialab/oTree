@@ -3,7 +3,16 @@
 {% load otree_tags %}
 
 {% block content %}
+<style>
+label {font-weight: normal;}
+  .control-label {font-weight: bold}
+  label[for="id__11_other_participants_are_real_persons"], label[for="id__11_earnings_will_be_calculated_in_euro"] {
+    color: #357EBD;
+  }
+
+  </style>
   <p>
+      <div class="control-label"><strong>{% trans "For information purposes, could you tell us to what extent you trusted the following two statements when you made your decisions:" %}</strong><br/><br/> </div>
       {% formfield player._11_other_participants_are_real_persons %}
       {% formfield player._11_earnings_will_be_calculated_in_euro %}
       {% formfield player._11_you_read_the_descriptions_associated %}

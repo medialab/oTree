@@ -3,12 +3,14 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
-<h1>{% trans "Task 3: Introduction" %}</h1>
+<h1 style="color:#800080">{% trans "Task 3: Introduction" %}</h1>
 <hr/>
-<p>{% trans "This last task involves <strong>two participants</strong> – Person A and Person B. <strong>Your role (Participant A or Participant B) is revealed to you at the beginning of the task</strong>." %}</p>
-<p>{% trans "Remember, the other participant, while also living in [COUNTRY], is different from the ones you interacted with in the previous two tasks." %}</p>
-<p>{% trans "This task is very short and simple: Participant A receives €10. Participant B does not receive money." %}</p>
+<p>{% trans "This last task involves <strong>two participants</strong> – Person A and Person B." %}</p>
+<p><strong>{% trans "Your role (Participant A or Participant B) is revealed to you at the beginning of the task." %}</strong></p>
+<p>{% trans "Remember, the other participant, while also living in France, is different from the ones you interacted with in the previous two tasks." %}</p>
+<p>{% trans "Participant A starts off with <strong>€10</strong>. Participant B <strong>does not start off with any money</strong>." %}</p>
 <p>{% trans "Participant A must now decide if and how many € he or she wants to transfer to Participant B. To better understand, watch the animation below." %}</p>
+<p><strong>{% trans "The numbers shown here are just for illustration purposes — the actual person you'll be playing with might make very different decisions." %}</strong></p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "dictator/dictator_demo.js" %}"></script>

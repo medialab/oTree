@@ -12,14 +12,31 @@
   li:nth-child(12) {
     display: block;
   }
+
+  .controls ul li label {
+    color: #357EBD;
+  }
+
+  label {font-weight: normal;}
+  .control-label {
+    font-weight: bold;
+    color: #357EBD;
+  }
   </style>
-  <p>{% trans "Could you tell me for each of these groups how much you trust them?" %}</p>
+  <br/><br/><br/><br/><br/>
+  <p><strong>{% trans "Could you tell me for each of these groups how much you trust them?" %}</strong></p>
+  <br/>
   <p>
       {% formfield player._03_your_family %}
+      <hr>
       {% formfield player._03_people_in_your_neighborhood %}
+      <hr>
       {% formfield player._03_people_you_know_personally %}
+      <hr>
       {% formfield player._03_people_you_meet_for_the_first_time %}
+      <hr>
       {% formfield player._03_people_of_another_religion %}
+      <hr>
       {% formfield player._03_people_of_another_nationality %}
 
   </p>

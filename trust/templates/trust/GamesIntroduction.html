@@ -3,13 +3,14 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-  <h1>{% trans "Section 1: Tasks" %}</h1>
+  <h1 style="color:#357EBD">{% trans "Section 1: Tasks" %}</h1>
 
   <p>{% trans "We will start giving you three tasks in total. This is the part of the experiment that will allow you to earn money." %}</p>
-  <p>{% trans "<strong>For this, you will be grouped with other participants, who are other respondents from [COUNTRY] at the beginning of each task</strong>." %}</p>
-  <p>{% trans "<strong>The other participants in your group will be different in each task</strong>: the same person will never be in your group more than once. Note that the other participants may not be online at this exact moment, but are participating in the experiment just like you in this wave." %}</p>
+  <p><strong>{% trans "At the beginning of each task, you will be grouped with other participants." %}</strong></p>
+  <p><strong>{% trans "This people are respondents from France." %}</strong></p>
+  <p>{% trans "<strong>The other participants in your group will be different in each task</strong>: the same person will never be in your group more than once. Note that the other participants may not be online at this exact moment, but are participating in the experiment in this wave just like you." %}</p>
 
-  <h1>{% trans "How will your earnings be calculated?" %}</h1>
+  <h3>{% trans "How will your earnings be calculated?" %}</h3>
 
   <p>{% trans "<strong>Your earnings in each task will depend on your decisions and those of the other participants in your group</strong>." %}</p>
   <p>{% trans "Your answers in each task will be matched with those of other participants." %}</p>

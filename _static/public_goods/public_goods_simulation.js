@@ -1173,17 +1173,17 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Calque 2
-	this.label = new cjs.Text("10€", "20px 'Gotham Medium'", "#FFFFFF");
+	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
 	this.label.name = "label";
 	this.label.textAlign = "center";
-	this.label.lineHeight = 20;
+	this.label.lineHeight = 30;
 	this.label.setTransform(36.6,29.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
 	// Calque 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#0099FF").s().p("ABLFVQgkAHgnAAQidAAhxhxQhwhwAAidQAAifBwhwQBxhwCdAAQCfAABvBwQBxBwAACfQAACdhxBwQgmAmgrAaIAAB3g");
+	this.shape.graphics.f("#0099FF").s().p("Ai8ErQgsgagmgmQhwhwAAidQAAifBwhwQBwhwCeAAQCeAABxBwQBwBwAACfQAACdhwBwQhxBxieAAQgmAAgkgHIhyBNg");
 	this.shape.setTransform(38.4,41.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
@@ -1394,7 +1394,6 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		var max = 10;
 		var currency = '€';
 		var multiplier = 1.6;
-		var moneyFromGroup = 0;
 		var resultMoney = 0;
 		var NUM_PLAYERS = 4;
 		
@@ -1415,18 +1414,19 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		function Player(startAmount, bubbleRef) {
 			this.startAmount = startAmount;
 			this.currentAmount = startAmount;
+			this.givingAmount = 0;
 			this.bubble = bubbleRef;
 			this.bubble.label.text = currency + max;
 		};
 		
 		Player.prototype.giveMoney = function (amount) {
 			if (amount <= max) {
-				this.currentAmount -= amount;
+				this.currentAmount = max - amount;
 				
 				var displayedAmount = (this.currentAmount % 1 === 0 ? this.currentAmount.toString() : this.currentAmount.toFixed(2).toString());
 				
 				this.speak(currency + displayedAmount);
-				moneyFromGroup += amount;
+				this.givingAmount = amount;
 			}
 		};
 		
@@ -1444,6 +1444,10 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		var p3 = new Player(max, this.bubble3);
 		var p4 = new Player(max, this.bubble4);
 		
+		var moneyFromGroup = function() {
+			return p1.givingAmount + p2.givingAmount + p3.givingAmount + p4.givingAmount;
+		}
+		
 		this.bubbleMultiplier.label.text = '×' + multiplier;
 		
 		window.PG = (function () {
@@ -1452,16 +1456,21 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 			var giveMoney = function (playerIndex, amount) {
 				players[playerIndex].giveMoney(+amount);
 				self.cart.bubble.alpha = 1;
-				self.cart.bubble.label.text = currency + moneyFromGroup.toString();
+				self.cart.bubble.label.text = currency + moneyFromGroup().toString();
 			};
 		
 			var send = function () {
-				resultMoney = (+moneyFromGroup * +multiplier) / +NUM_PLAYERS;
+				resultMoney = (+moneyFromGroup() * +multiplier) / +NUM_PLAYERS;
 				
 				setTimeout(function () {
 					self.cart.bubble.alpha = 1;
-					self.cart.bubble.label.text = currency + moneyFromGroup.toString();
+					self.cart.bubble.label.text = currency + moneyFromGroup().toString();
 				}, 2000);
+				
+				setTimeout(function () {
+					var multipliedAmount = moneyFromGroup() * multiplier;
+					self.cart.bubble.label.text = currency + multipliedAmount.toString();
+				}, 6000);
 				
 				setTimeout(function () {
 					p1.receiveMoney(+resultMoney);

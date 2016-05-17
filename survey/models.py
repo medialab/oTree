@@ -7,6 +7,7 @@ from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree import widgets
 from django.forms import extras
+from django.forms import widgets as django_widgets
 from datetime import date
 from django.utils.translation import ugettext_lazy as _
 # </standard imports>
@@ -43,7 +44,7 @@ class Player(BasePlayer):
         verbose_name=_(u"Overall, how satisfied are you with life as a whole \
 these days?"),
         choices=(
-            ('0', _(u'0 - not at all satisfied')),
+            ('0', _(u'0 - Not at all satisfied')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -53,7 +54,7 @@ these days?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - completely satisfied')),
+            ('10', _(u'10 - Completely satisfied')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -64,7 +65,7 @@ these days?"),
         verbose_name=_(u"Generally speaking, would you say that most people \
 can be trusted, or that you can't be too careful in dealing with people?"),
         choices=(
-            ('0', _(u"0 - you can't be too careful")),
+            ('0', _(u"0 -You can't be too careful")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -74,7 +75,7 @@ can be trusted, or that you can't be too careful in dealing with people?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - most people can be trusted')),
+            ('10', _(u'10 - Most people can be trusted')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -85,7 +86,7 @@ can be trusted, or that you can't be too careful in dealing with people?"),
         verbose_name=_(u"How do you see yourself: are you generally a person \
 who is fully prepared to take risks or do you try to avoid taking risks?"),
         choices=(
-            ('0', _(u"0 - generally unwilling to take risks")),
+            ('0', _(u"0 - Generally unwilling to take risks")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -95,7 +96,7 @@ who is fully prepared to take risks or do you try to avoid taking risks?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - fully prepared to take risks')),
+            ('10', _(u'10 - Fully prepared to take risks')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -106,7 +107,7 @@ who is fully prepared to take risks or do you try to avoid taking risks?"),
         verbose_name=_(u"Would you say that most of the time people are only \
 looking out for themselves or that they mostly try to help each other?"),
         choices=(
-            ('0', _(u"0 - people are only looking out for themselves")),
+            ('0', _(u"0 - People are only looking out for themselves")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -116,7 +117,7 @@ looking out for themselves or that they mostly try to help each other?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - people mostly try to help each other')),
+            ('10', _(u'10 - People mostly try to help each other')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -127,7 +128,7 @@ looking out for themselves or that they mostly try to help each other?"),
         verbose_name=_(u"Do you think most people would try to take advantage \
 of you if they got a chance, or would they try to be fair?"),
         choices=(
-            ('0', _(u"0 - most people would try to take advantage of me")),
+            ('0', _(u"0 - Most people would try to take advantage of me")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -137,7 +138,7 @@ of you if they got a chance, or would they try to be fair?"),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - most people would try to be fair')),
+            ('10', _(u'10 - Most people would try to be fair')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -145,11 +146,9 @@ of you if they got a chance, or would they try to be fair?"),
     )
 
     _02_the_following_action_can_always_be_justified = models.CharField(
-        verbose_name=_(u"Can you tell us whether you think the following action \
-can always be justified, never be justified, or something in between: \
-receiving social allowances to which you are not entitled."),
+        verbose_name=_(u"Receiving social allowances to which you are not entitled."),
         choices=(
-            ('0', _(u"0 - this action is never justifiable")),
+            ('0', _(u"0 - This action is never justifiable")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -159,7 +158,7 @@ receiving social allowances to which you are not entitled."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - this action is always justifiable')),
+            ('10', _(u'10 - This action is always justifiable')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
@@ -167,7 +166,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_your_family = models.CharField(
-        verbose_name=_(u"Your family"),
+        verbose_name=_(u"Your family."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -187,7 +186,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_people_in_your_neighborhood = models.CharField(
-        verbose_name=_(u"People in your neighborhood"),
+        verbose_name=_(u"People in your neighborhood."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -207,7 +206,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_people_you_know_personally = models.CharField(
-        verbose_name=_(u"People you know personally"),
+        verbose_name=_(u"People you know personally."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -227,7 +226,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_people_you_meet_for_the_first_time = models.CharField(
-        verbose_name=_(u"People you meet for the first time"),
+        verbose_name=_(u"People you meet for the first time."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -247,7 +246,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_people_of_another_religion = models.CharField(
-        verbose_name=_(u"People of another religion"),
+        verbose_name=_(u"People of another religion."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -267,7 +266,7 @@ receiving social allowances to which you are not entitled."),
     )
 
     _03_people_of_another_nationality = models.CharField(
-        verbose_name=_(u"People of another nationality"),
+        verbose_name=_(u"People of another nationality."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -311,7 +310,7 @@ returned with its contents, or not?"),
     )
 
     _05_your_government = models.CharField(
-        verbose_name=_(u"Your government"),
+        verbose_name=_(u"Your government."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -331,7 +330,7 @@ returned with its contents, or not?"),
     )
 
     _05_the_police = models.CharField(
-        verbose_name=_(u"The police"),
+        verbose_name=_(u"The police."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -351,7 +350,7 @@ returned with its contents, or not?"),
     )
 
     _05_the_media = models.CharField(
-        verbose_name=_(u"The media"),
+        verbose_name=_(u"The media."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -471,13 +470,13 @@ returned with its contents, or not?"),
     )
 
     _07_what_is_your_date_of_birth = models.CharField(
-        verbose_name=_(u'What was your date of birth?'),
+        verbose_name=_(u'What is your date of birth?'),
         widget=extras.SelectDateWidget(years=range(1950, 2016, 1))
     )
 
     _07_what_is_your_gender = models.CharField(
         initial=None,
-        choices=[_(u'Male'), _(u'Female')],
+        choices=[_(u'Male'), _(u'Female'), _(u'Other')],
         verbose_name=_(u'What is your gender?'),
         widget=widgets.RadioSelect()
     )
@@ -496,7 +495,7 @@ returned with its contents, or not?"),
         ],
         verbose_name=_(u'Mark as many spaces as you need to show all \
 the people who live in the same household as you'),
-        widget=widgets.RadioSelect()
+        widget=django_widgets.SelectMultiple()
     )
 
     _07_which_country_were_you_born = CountryField(
@@ -623,10 +622,10 @@ before tax or anything else was taken out?'),
     _10_are_you = models.CharField(
         verbose_name='Are you:',
         choices=(
-            ('Jewish', _(u'Jewish')),
+            ('Christian - Roman Catholic', _(u'Christian - Roman Catholic')),
+            ('Christian - Protestant', _(u'Christian - Protestant')),
             ('Muslim', _(u'Muslim')),
-            ('Christian', _(u'Christian')),
-            ('Druze', _(u'Druze')),
+            ('Jewish', _(u'Jewish')),
             ('Other', _(u'Other'))
         ),
         widget=widgets.RadioSelect()
@@ -647,10 +646,8 @@ before tax or anything else was taken out?'),
     # )
 
     _11_other_participants_are_real_persons = models.CharField(
-        verbose_name=_(u'For information purposes, could you tell us to what \
-extent you trusted the following two statements when you made your decisions: \
-The other participants in my group or pair are real persons who participated \
-in the same study'),
+        verbose_name=_(u'The other participants in my group or pair are real \
+persons who participated in the same study.'),
         choices=(
             ('No trust at all', _(u'No trust at all')),
             ('Little trust', _(u'Little trust')),
@@ -665,7 +662,7 @@ in the same study'),
         verbose_name=_(u'My final earnings will be calculated in dollars \
 according to the rules stated in the description of the study \
 and will be paid to me (or donated if I choose not to keep the \
-at the end of the study)'),
+at the end of the study).'),
         choices=(
             ('No trust at all', _(u'No trust at all')),
             ('Little trust', _(u'Little trust')),
@@ -705,7 +702,7 @@ the questions?'),
 
     _11_have_you_ever_participated_in_another_study = models.CharField(
         verbose_name=_(u'Have you ever participated in another study that \
-seemed close to this one'),
+seemed close to this one?'),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),

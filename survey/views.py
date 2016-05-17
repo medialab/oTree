@@ -113,7 +113,7 @@ class Survey07(Page):
     form_fields = [
         '_07_what_is_your_date_of_birth',
         '_07_what_is_your_gender',
-        '_07_all_the_people_who_live_in_the_same_household_as_you',
+        # '_07_all_the_people_who_live_in_the_same_household_as_you',
         '_07_which_country_were_you_born',
         '_07_what_year_did_you_arrive_in_France'
     ]
@@ -136,7 +136,7 @@ class Survey09(Page):
     form_fields = [
         '_09_do_you_work_in_the',
         '_09_would_you_say_that_most_people_can_be_trusted',
-        '_09_got_income_in_the_last_12_months_ending_today'
+        # '_09_got_income_in_the_last_12_months_ending_today'
     ]
 
 

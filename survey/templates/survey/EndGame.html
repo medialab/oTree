@@ -3,16 +3,16 @@
 {% load i18n %}
 
 {% block content %}
-
-<p>{% trans "Thank you very much for your participation in this study!" %}</p>
+<br/><br/><br/><br/><br/>
+<h3>{% trans "Thank you very much for your participation in this study!" %}</h3>
 <p>{% trans "Your survey responses have been correctly recorded. " %}</p>
 
-<p>{% trans "After being matched with the other players, your earnings have been calculated as _________ Euro." %}</p>
+<p>{% trans "After being matched with the other players, your earnings have been calculated as " %}</p>
 <p>{% trans "This money will be paid to you via Paypal – you will receive an email with more information on how to proceed shortly." %}</p>
 
-<p>{% trans "Additionally, you have the option to donate none, some or all of your earnings to UNICEF. UNICEF provides humanitarian and development assistance to children and mothers in developing countries. You can find more information here." %}</p>
+<p><strong>{% trans "Additionally, you have the option to donate none, some or all of your earnings to UNICEF. UNICEF provides humanitarian and development assistance to children and mothers in developing countries. You can find more information <a href='http://www.unicef.org' target='_blank'>here</a>." %}</strong></p>
 
-<p>{% trans "Please enter the amount you wish to donate to UNICEF: ________" %}</p>
+<p><strong>{% trans "Please enter the amount you wish to donate to UNICEF: " %}</strong></p>
 <p>{% trans "If you do not wish to donate anything, enter 0." %}</p>
 
 <p>{% trans "Once again, thank you very much for participating." %}</p>
