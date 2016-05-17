@@ -186,7 +186,7 @@
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "left", "showing": {"en-gb": "Proficient", "fr-fr": ""}},
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "right", "showing": {"en-gb": "Unskilled", "fr-fr": ""}},
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
-        {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "left", "showing": {"en-gb": "Immoral", "fr-fr": ""}},
+        {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "right", "showing": {"en-gb": "Immoral", "fr-fr": ""}},
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "right", "showing": {"en-gb": "Inexperienced", "fr-fr": ""}},
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "left", "showing": {"en-gb": "Truthful", "fr-fr": ""}},
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "right", "showing": {"en-gb": "Inefficient", "fr-fr": ""}},
