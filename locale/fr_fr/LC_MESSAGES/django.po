@@ -1985,7 +1985,7 @@ msgid "In which country were you born?"
 msgstr ""
 
 #: survey/models.py:506
-msgid "In what year did you arrive in this France?"
+msgid "In what year did you arrive in France?"
 msgstr ""
 
 #: survey/models.py:512
