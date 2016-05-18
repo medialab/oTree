@@ -503,7 +503,7 @@ the people who live in the same household as you'),
     )
 
     _07_what_year_did_you_arrive_in_France = models.PositiveIntegerField(
-        verbose_name=_(u'In what year did you arrive in this France?'),
+        verbose_name=_(u'In what year did you arrive in France?'),
         choices=range(date.today().year, 1950, -1),
         initial=None
     )
