@@ -136,7 +136,7 @@ class Survey09(Page):
     form_fields = [
         '_09_do_you_work_in_the',
         '_09_would_you_say_that_most_people_can_be_trusted',
-        # '_09_got_income_in_the_last_12_months_ending_today'
+        '_09_got_income_in_the_last_12_months_ending_today'
     ]
 
 

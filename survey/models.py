@@ -146,7 +146,8 @@ of you if they got a chance, or would they try to be fair?"),
     )
 
     _02_the_following_action_can_always_be_justified = models.CharField(
-        verbose_name=_(u"Receiving social allowances to which you are not entitled."),
+        verbose_name=_(u"Receiving social allowances to which you are not \
+entitled."),
         choices=(
             ('0', _(u"0 - This action is never justifiable")),
             ('1', '1'),
@@ -370,7 +371,8 @@ returned with its contents, or not?"),
     )
 
     _06_public_institutions_deliver_services_in_the_best_way = models.CharField(
-        verbose_name=_(u'Public institutions deliver public services in the best possible way.'),
+        verbose_name=_(u'Public institutions deliver public services in the \
+best possible way.'),
         choices=(
             ('0', _(u"0 - I don't agree at all")),
             ('1', '1'),
@@ -410,7 +412,8 @@ returned with its contents, or not?"),
     )
 
     _06_people_working_in_public_institutions_ethical = models.CharField(
-        verbose_name=_(u'People working in public institutions behave according to ethical standards aimed at avoiding corruption.'),
+        verbose_name=_(u'People working in public institutions behave \
+according to ethical standards aimed at avoiding corruption.'),
         choices=(
             ('0', _(u"0 - I don't agree at all")),
             ('1', '1'),
@@ -450,7 +453,8 @@ returned with its contents, or not?"),
     )
 
     _06_public_institutions_treat_all_citizens_fairly = models.CharField(
-        verbose_name=_(u'Public institutions treat all citizens fairly regardless of their gender, race, age or economic condition equally.'),
+        verbose_name=_(u'Public institutions treat all citizens fairly \
+regardless of their gender, race, age or economic condition equally.'),
         choices=(
             ('0', _(u"0 - I don't agree at all")),
             ('1', '1'),
@@ -502,9 +506,11 @@ the people who live in the same household as you'),
         verbose_name=_(u'In which country were you born?')
     )
 
-    _07_what_year_did_you_arrive_in_France = models.PositiveIntegerField(
+    _07_what_year_did_you_arrive_in_France = models.CharField(
         verbose_name=_(u'In what year did you arrive in France?'),
-        choices=range(date.today().year, 1950, -1),
+        choices=[_(u'I was born here')] + [
+            str(x) for x in range(date.today().year, 1950, -1)
+        ],
         initial=None
     )
 
@@ -576,27 +582,19 @@ can be trusted or that you need to be very careful in dealing with people?'),
     )
 
     _09_got_income_in_the_last_12_months_ending_today = models.CharField(
-        verbose_name=_(u'What are all the ways that you got income in the \
-last 12 months ending today? You can choose as many as you need. Please do \
-not count loans as income.'),
-        choices=(
-            ('Wages, salary, commissions, bonuses etc paid by employer',
-                _(u'Wages, salary, commissions, \
-bonuses etc paid by employer')),
-            ('Self-employment or business', _(u'Self-employment or business')),
-            ('Interest, dividends, rent, other investments',
-                _(u'Interest, dividends, rent, other investments')),
-            ('Regular payments from a workplace accident insurer',
-                _(u'Regular payments from a workplace accident insurer')),
-            ('Pension', _(u'Pension')),
-            ('Social insurance payments, state benefits',
-                _(u'Social insurance payments, state benefits')),
-            ('Other sources of income', _(u'Other sources of income')),
-            ('No source of income during that time',
-                _(u'No source of income during that time')),
-            ("Don't know", _(u"Don't know"))
-        ),
-        widget=widgets.RadioSelect()
+#         verbose_name=_(u'What are all the ways that you got income in the \
+# last 12 months ending today? You can choose as many as you need. Please do \
+# not count loans as income.'),
+        # choices=[_(u'Wages, salary, commissions, bonuses etc paid by employer'),
+        #  _(u'Self-employment or business'),
+        #  _(u'Interest, dividends, rent, other investments'),
+        #  _(u'Regular payments from a workplace accident insurer'),
+        #  _(u'Pension'),
+        #  _(u'Social insurance payments, state benefits'),
+        #  _(u'Other sources of income'),
+        #  _(u'No source of income during that time'),
+        #  _(u"Don't know")],
+        widget=django_widgets.SelectMultiple()
     )
 
     _10_what_was_your_total_income = models.CharField(
