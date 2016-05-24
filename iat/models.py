@@ -39,6 +39,8 @@ class Subsession(BaseSubsession):
             'B1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
             'B2a': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
             'B2b': {'order': 'ACBDFE', 'iat_file': 'iat_2.json'},
+            'C1a': {'order': 'ABC', 'iat_file': 'iat_3.json'},
+            'C2a': {'order': 'ABC', 'iat_file': 'iat_4.json'},
         }
 
         if 'treatment' in self.session.config:
