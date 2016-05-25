@@ -19,8 +19,8 @@
         {% trans "What are all the ways that you got income in the last 12 months ending today? You can choose as many as you need. <br/>Please do not count loans as income." %}
       </label>
 
-      <input type="hidden" id="id__09_got_income_in_the_last_12_months_ending_today" name="_09_got_income_in_the_last_12_months_ending_today">
-      <select multiple="multiple" maxlength="500" id="helper__09_got_income_in_the_last_12_months_ending_today">
+      <input required="required" type="hidden" id="id__09_got_income_in_the_last_12_months_ending_today" name="_09_got_income_in_the_last_12_months_ending_today">
+      <select required="required" multiple="multiple" maxlength="500" id="helper__09_got_income_in_the_last_12_months_ending_today">
         <option value="Wages, salary, commissions, bonuses etc paid by employer">{% trans "Wages, salary, commissions, bonuses etc paid by employer" %}</option>
         <option value="Self-employment or business">{% trans "Self-employment or business" %}</option>
         <option value="Interest, dividends, rent, other investments">{% trans "Interest, dividends, rent, other investments" %}</option>
@@ -50,8 +50,10 @@
           }
         });
 
-        $('#id__09_got_income_in_the_last_12_months_ending_today').val(selectMultipleValue);
-        $('form').submit();
+        if (selectMultipleValue !== '') {
+          $('#id__09_got_income_in_the_last_12_months_ending_today').val(selectMultipleValue);
+          $('form').submit();
+        }
       });
     });
   </script>
