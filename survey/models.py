@@ -486,19 +486,19 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_all_the_people_who_live_in_the_same_household_as_you = models.CharField(
-        initial=None,
-        choices=[
-            _(u'My legal husband or wife'),
-            _(u'My civil union partner'),
-            _(u'My de-facto partner, boyfriend or girlfriend'),
-            _(u'My mother and/or father'),
-            _(u'My children'),
-            _(u'My brothers and/or sisters'),
-            _(u'My flatmates'),
-            _(u'Other')
-        ],
-        verbose_name=_(u'Mark as many spaces as you need to show all \
-the people who live in the same household as you'),
+#         initial=None,
+#         choices=[
+#             _(u'My legal husband or wife'),
+#             _(u'My civil union partner'),
+#             _(u'My de-facto partner, boyfriend or girlfriend'),
+#             _(u'My mother and/or father'),
+#             _(u'My children'),
+#             _(u'My brothers and/or sisters'),
+#             _(u'My flatmates'),
+#             _(u'Other')
+#         ],
+#         verbose_name=_(u'Mark as many spaces as you need to show all \
+# the people who live in the same household as you'),
         widget=django_widgets.SelectMultiple()
     )
 
