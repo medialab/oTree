@@ -300,10 +300,12 @@ returned with its contents, or not?"),
     )
 
     _04_you_vote_in_the_last_national_election = models.CharField(
-        verbose_name=_(u"Did you vote in the last national election?"),
+        verbose_name=_(u"Did you vote in the last national \
+election in France?"),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
+            ("I could not vote", _(u"I could not vote")),
             ("Don't know", _(u"Don't know"))
         ),
         widget=widgets.RadioSelect(),
@@ -475,7 +477,7 @@ regardless of their gender, race, age or economic condition equally.'),
 
     _07_what_is_your_date_of_birth = models.CharField(
         verbose_name=_(u'What is your date of birth?'),
-        widget=extras.SelectDateWidget(years=range(1950, 2016, 1))
+        widget=extras.SelectDateWidget(years=range(1940, 2005, 1))
     )
 
     _07_what_is_your_gender = models.CharField(
@@ -509,7 +511,7 @@ regardless of their gender, race, age or economic condition equally.'),
     _07_what_year_did_you_arrive_in_France = models.CharField(
         verbose_name=_(u'In what year did you arrive in France?'),
         choices=[_(u'I was born here')] + [
-            str(x) for x in range(date.today().year, 1950, -1)
+            str(x) for x in range(date.today().year, 1940, -1)
         ],
         initial=None
     )
@@ -528,6 +530,7 @@ certificate or other post school qualification other than university')),
 degree (e.g. BA, BS)')),
             ('Post-graduate degree', _(u'Post-graduate degree')),
             ("Don't know", _(u"Don't know")),
+            ("I prefer not to answer", _(u"I prefer not to answer")),
         ),
         widget=widgets.RadioSelect()
     )
@@ -552,6 +555,7 @@ to work due to long-term illness or disability')),
             ('In education (at school, university, etc) / student', _(u'In \
 education (at school, university, etc) / student')),
             ('Other', _(u'Other')),
+            ('I prefer not to answer', _(u'I prefer not to answer')),
         ),
         widget=widgets.RadioSelect()
     )
@@ -565,7 +569,9 @@ regional or local government administration')),
             ('Private (for profit) sector', _(u'Private (for profit) sector')),
             ('Not for profit sector', _(u'Not for profit sector')),
             ('Other', _(u'Other')),
-            ("Don't know", _(u"Don't know"))
+            ("Don't know", _(u"Don't know")),
+            ("I prefer not to answer", _(u"I prefer not to answer")),
+            ("Not applicable", _(u"Not applicable"))
         ),
         widget=widgets.RadioSelect()
     )
@@ -598,8 +604,9 @@ can be trusted or that you need to be very careful in dealing with people?'),
     )
 
     _10_what_was_your_total_income = models.CharField(
-        verbose_name=_(u'In the last 12 months what was your total income, \
-before tax or anything else was taken out?'),
+        verbose_name=_(u'In the last 12 months what was your personal \
+total income, before tax or anything else was taken out, and before any \
+social benefit was added?'),
         choices=(
             ('Loss', _(u'Loss')),
             ('Zero income', _(u'Zero income')),
@@ -611,8 +618,9 @@ before tax or anything else was taken out?'),
             ('48,001 to 60,000', _(u'€48,001 to €60,000')),
             ('60,001 to 90,000', _(u'€60,001 to €90,000')),
             ('90,001 to 120,000', _(u'€90,001 to €120,000')),
-            ('120,000 or more', _(u'€120,000 or more')),
-            ("Don't know", _(u"Don't know"))
+            ('120,001 or more', _(u'€120,001 or more')),
+            ("Don't know", _(u"Don't know")),
+            ("I prefer not to answer", _(u"I prefer not to answer"))
         ),
         widget=widgets.RadioSelect()
     )
@@ -624,7 +632,8 @@ before tax or anything else was taken out?'),
             ('Christian - Protestant', _(u'Christian - Protestant')),
             ('Muslim', _(u'Muslim')),
             ('Jewish', _(u'Jewish')),
-            ('Other', _(u'Other'))
+            ('Other', _(u'Other')),
+            ('I prefer not to answer', _(u'I prefer not to answer'))
         ),
         widget=widgets.RadioSelect()
     )
@@ -644,7 +653,7 @@ before tax or anything else was taken out?'),
     # )
 
     _11_other_participants_are_real_persons = models.CharField(
-        verbose_name=_(u'The other participants in my group or pair are real \
+        verbose_name=_(u'The other participants in the first tasks are real \
 persons who participated in the same study.'),
         choices=(
             ('No trust at all', _(u'No trust at all')),
@@ -657,7 +666,7 @@ persons who participated in the same study.'),
     )
 
     _11_earnings_will_be_calculated_in_euro = models.CharField(
-        verbose_name=_(u'My final earnings will be calculated in dollars \
+        verbose_name=_(u'My final earnings will be calculated in € \
 according to the rules stated in the description of the study \
 and will be paid to me (or donated if I choose not to keep the \
 at the end of the study).'),
@@ -673,7 +682,7 @@ at the end of the study).'),
 
     _11_you_read_the_descriptions_associated = models.CharField(
         verbose_name=_(u'At the end of this study, how would you say that you \
-read the descriptions associated with each of the 4 sections?'),
+read the descriptions associated with each of the 3 sections?'),
         choices=(
             ('With very little care', _(u'With very little care')),
             ('With little care', _(u'With little care')),
@@ -712,7 +721,8 @@ seemed close to this one?'),
         verbose_name=_(u'Which device did you take this study on?'),
         choices=(
             ('Desktop', _(u'Desktop')),
-            ('Laptop', _(u'Laptop')),
+            ('Laptop (non-touchscreen)', _(u'Laptop (non-touchscreen)')),
+            ('Laptop (touchscreen)', _(u'Laptop (touchscreen)')),
             ('Tablet', _(u'Tablet')),
             ('Other', _(u'Other')),
         ),

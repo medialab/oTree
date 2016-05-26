@@ -3,37 +3,7 @@
 from __future__ import division
 from ._builtin import Page
 from . import models
-from django.utils.translation import ugettext_lazy as _
-
-
-def vars_for_all_templates(self):
-    """Return variables for all templates."""
-    return {
-        'q_1_7_label': _("I‘d like to ask you how much you trust people from \
-various groups. Could you tell me for each of these groups how much you \
-trust them?"),
-        'q_1_7_label_1': _('Your family'),
-        'q_1_7_label_2': _('People in your neighborhood'),
-        'q_1_7_label_3': _('People you know personally'),
-        'q_1_7_label_4': _('People you meet for the first time'),
-        'q_1_7_label_5': _('People of another religion'),
-        'q_1_7_label_6': _('People of another nationality'),
-        'q_2_1_label': _("I‘d like to ask you how much you trust different \
-public institutions. How much trust do you have in the following to act \
-in the best interest of society?"),
-        'q_2_1_label_1': _('Your government'),
-        'q_2_1_label_2': _('The police'),
-        'q_2_1_label_3': _('The media'),
-        'q_2_2_label': _("Do you agree with the following statements?"),
-        'q_2_2_label_1': _('Public institutions deliver public services in the \
-best possible way'),
-        'q_2_2_label_2': _('Public institutions pursue long term objectives'),
-        'q_2_2_label_3': _('People working in public institutions \
-behave according to ethical standards aimed at avoiding corruption'),
-        'q_2_2_label_4': _('Public institutions are transparent'),
-        'q_2_2_label_5': _('Public institutions treat all citizens \
-fairly regardless of their gender, race, age or economic condition equally'),
-    }
+# from django.utils.translation import ugettext_lazy as _
 
 
 class Survey01(Page):
