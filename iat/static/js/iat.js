@@ -258,9 +258,8 @@ $(function(window, undefined) {
       function passPauseScreen() {
         dispose();
         setTimeout(function() {
-
           return deferred.resolve();
-        }, 2000);
+        }, 10000);
       }
 
       /**
