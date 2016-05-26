@@ -4,21 +4,27 @@
 
 {% block content %}
   <h3>
-  {% trans "Hello! Welcome!" %}<br/>
+  {% trans "Welcome!" %}<br/>
   {% trans "GMI and Sciences Po Paris invite you to participate in a quick online study on decision-making." %}
   </h3>
 
   <h3>{% trans "Study information" %}</h3>
-  <p>{% trans "Participants in this study are <strong>compensated</strong> for their time: at the end of this study, you will receive a fixed number of points. On top of that, you have the <strong>opportunity to earn an additional sum of actual money up to €40</strong>. The money will be paid to the participants online via a PayPal account." %}</p>
-  <p>{% trans "This study is divided into three sections:" %}</p>
-  <p>{% trans "In the first part, you will participate in three simple tasks, in anonymous interaction with one or more other people." %}</p>
-  <p>{% trans "In the second part, you’re going to associate sets of words." %}</p>
-  <p>{% trans "In the third part, we ask you to answer a few questions." %}</p>
+  <p>{% trans "The aim of this study is to learn more about how we as human beings behave – how do we make decisions? How do we interact with one another when faced with different choices? How do we feel about the people and institutions around us?" %}</p>
+  <p>{% trans "To find this out, you will be participating in different exercises:" %}</p>
+  <ul>
+    <li>{% trans "In the first part, you will participate in three simple tasks, in anonymous interaction with one or more other people." %}</li>
+    <li>{% trans "In the second part, you are going to sort different sets of words." %}</li>
+    <li>{% trans "In the third part, we ask you to answer a few questions about yourself and your opinions." %}</li>
+  </ul>
   <p>{% trans "The whole study should take you about 35 minutes. Note that <strong>you should complete this study in one sitting</strong>, without any extensive period of inactivity. For best results, minimize distractions and close other programs." %}</p>
-  <p style="color:red"><strong>{% trans "You should use Chrome (preferred), Firefox or Safari for this study. You can do this study on a desktop computer, laptop or a tablet, but not on a mobile phone." %}</strong></p>
+  <p style="color:red"><strong>{% trans "You should use Internet Explorer 11 or higher, Chrome or Firefox for this experiment." %}</strong></p>
+
+  <h3>{% trans "Payment" %}</h3>
+  <p>{% trans "This survey is different from most GMI surveys – in addition to the points GMI rewards you for your participation, you can earn an additional amount of real money, of up to €40." %}</p>
+  <p>{% trans "The amount you will earn will depend on the strategic decisions you make together with the other players during the study’s tasks. You will receive this money at the end of the study via a transfer to your PayPal account." %}</p>
 
   <h3>{% trans "Data protection" %}</h3>
-  <p>{% trans "The data gathered in this study is subject to rigorous privacy protocols. The collected data is <strong>stricly anonymous</strong> - it will only be used for research purposes. At no moment can we identify you." %}</p>
+  <p>{% trans "The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only." %}</p>
 
   <button class="btn btn-primary">{% trans "Begin" %}</button>
 {% endblock %}

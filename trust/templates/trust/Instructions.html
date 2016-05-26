@@ -5,45 +5,14 @@
 {% block instructions %}
 <h1 style="color:#357EBD">{% trans "Task One: Introduction" %}</h1>
 <hr/>
-<p>{% trans "In the first task, <strong>two people participate</strong>: Participant A and Participant B. As you already know, this other participant, with whom you will interact only once during the study, also lives in France." %}</p>
-<p><strong>{% trans "Your role (A or B) will be revealed at the beginning of the task" %}</strong></p>
-<p>{% trans "Both participants will receive <strong>€10</strong> at the beginning of the game." %}</p>
-<p>{% trans "If you are Person A, you must decide how much of your €10 you want to send to Person B. This amount will automatically be multiplied by 3." %}</p>
-<p>{% trans "If you are Person B, you have to decide how much, if any, money you want to send back to Person A." %}</p>
-<p>{% trans "To better understand, watch the animation below." %}</p>
-<p><strong>{% trans "The numbers shown here are just for illustration purposes — the actual person you'll be playing with might make very different decisions." %}</strong></p>
-
-<input id="timer" type="hidden" name="total_time" value="" />
-
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="{% static "trust/trust_demo.js" %}"></script>
-
-<script>
-var canvas, stage, exportRoot;
-function init() {
-  canvas = document.getElementById("canvas");
-  exportRoot = new lib.trust_demo();
-
-  stage = new createjs.Stage(canvas);
-  stage.addChild(exportRoot);
-  stage.update();
-
-  createjs.Ticker.setFPS(lib.properties.fps);
-  createjs.Ticker.addEventListener("tick", stage);
-
-  $('#timer').val(new Date());
-}
-$(function() { init() });
-</script>
-<canvas
-  id="canvas"
-  class="canvas"
-  width="600"
-  height="480"
-  style="background-color:#CCD1DB"
-  data-currency="{% trans '€'%}"
-  data-participants-label-a="Participant A"
-  data-participants-label-b="Participant B">
-</canvas>
+<p>{% trans "In the first task, <strong>two people participate</strong>: Participant A and Participant B. As mentioned before, this other participant also lives in France." %}</p>
+<p><strong>{% trans "These are the rules of the task:" %}</strong></p>
+<ul>
+  <li>{% trans "At the beginning of the task, both participants receive €10." %}</li>
+  <li>{% trans "Participant A has the option to transfer none, part or all of his or her €10 to Participant B." %}</li>
+  <li>{% trans "Whatever amount Participant A sends is multiplied by 3." %}</li>
+  <li>{% trans "Participant B, after receiving the transfer of Participant A, has to decide how much, if any, money he or she want to send back to Participant A." %}</li>
+</ul>
+<p>{% trans "Your role (A or B) will be revealed at the beginning of the task." %}</p>
 
 {% endblock %}

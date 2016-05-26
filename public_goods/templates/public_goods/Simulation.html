@@ -3,11 +3,10 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1 style="color:#008068">{% trans "Task 2: Test Simulation" %}</h1>
+<h1 style="color:#008068">{% trans "Task Two: Test Simulation" %}</h1>
 <hr/>
-<p>{% trans "If you wish, you can use this test screen to play with different choices of the four participants, to understand the task better." %}</p>
+<p>{% trans "This is not the real task yet, but a simulation to help you better understand the rules. You can use the test screen below to play with the different choices of the four participants." %}</p>
 <p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
-<p class="error hide" style="color:red">{% trans "Amounts must be a number between 0 and 10" %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "public_goods/public_goods_simulation.js" %}"></script>

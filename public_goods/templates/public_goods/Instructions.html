@@ -4,44 +4,14 @@
 
 {% block instructions %}
 <h1 style="color:#008068">{% trans "Task Two: Introduction" %}</h1>
-<p>{% trans "In the second task, groups of <strong>4 participants</strong> (yourself and 3 other people) are randomly formed.<br/>Remember, the participants in your group are different from the one you interacted with in the previous task. <br/>But, just like before, they all live in France." %}</p>
-<p>{% trans "At the beginning of the task, each group member receives <strong>€10</strong>." %}
-<p>{% trans "Each member of the group must choose how much money to keep and how much will be transferred into a <strong>common project</strong>. <br/>The total amount invested into the common project by all participants is multiplied by 1,6." %}</p>
-<p>{% trans "In the end, the money in the common project will be split equally between the 4 group members (including yourself)." %}</p>
-<p>{% trans "To better understand, watch the animation below." %}</p>
-<p><strong>{% trans "The numbers shown here are just for illustration purposes — the actual person you'll be playing with might make very different decisions." %}</strong></p>
-
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="{% static "public_goods/public_goods_demo.js" %}"></script>
-<input id="timer" type="hidden" name="total_time" value="" />
-
-<script>
-var canvas, stage, exportRoot;
-function init() {
-  canvas = document.getElementById("canvas");
-  exportRoot = new lib.public_good_demo();
-
-  stage = new createjs.Stage(canvas);
-  stage.addChild(exportRoot);
-  stage.update();
-
-  createjs.Ticker.setFPS(lib.properties.fps);
-  createjs.Ticker.addEventListener("tick", stage);
-
-  $('#timer').val(new Date());
-}
-$(function() { init() });
-</script>
-<canvas
-  id="canvas"
-  class="canvas"
-  width="600"
-  height="480"
-  style="background-color:#CCD1DB"
-  data-estimation-min="5"
-  data-estimation-max="10"
-  data-estimation-currency="{% trans '€'%}"
-  data-multipler="1.6">
-</canvas>
+<p>{% trans "In the second task, groups of <strong>4 participants</strong> (yourself and 3 other people) are formed" %}</p>
+<p>{% trans "Remember, the participants in this group are different from the person you interacted with in the previous task. However, they all live in France." %}</p>
+<p>{% trans "These are the rules:" %}</p>
+<ul>
+  <li>{% trans "At the beginning, each group member has €10." %}</li>
+  <li>{% trans "Every group member has to choose how much of these €10 he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
+  <li>{% trans "The total amount invested into the joint project is <strong>multiplied by 1,6.</strong>" %}</li>
+  <li>{% trans "At the end, the money in the joint project will be re-divided and <strong>split equally between all 4 group members</strong> (including yourself)." %}</li>
+</ul>
 
 {% endblock %}
