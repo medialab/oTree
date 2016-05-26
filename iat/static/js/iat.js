@@ -1,47 +1,25 @@
 $(function(window, undefined) {
   /**
    * Timer for measuring user input speed.
-   * It's a self-correcting timer to compense for the latency
-   * induced by depending upon CPU time (which itself is
-   * dependant on its current load).
-   *
-   * @see http://www.sitepoint.com/creating-accurate-timers-in-javascript/
    */
   var Timer = (function() {
     var startTime = new Date().getTime();
-    var time = 0;
     var elapsed = 0;
-    var timer = null;
-
-    // Process calculations with auto-correction.
-    var instance = function() {
-      time += 100;
-      elapsed = (time / 100) / 10;
-      var diff = (new Date().getTime() - startTime) - time;
-      window.setTimeout(instance, (100 - diff));
-    }.bind(this);
 
     // Starts the timer.
-    var start = function() {
-      if (startTime === null) {
-        startTime = new Date().getTime();
-      }
-
-      time = 0;
-      elapsed = 0;
-      timer = window.setTimeout(instance, 100);
-    }.bind(this);
+    function start() {
+      startTime = new Date().getTime();
+    };
 
     // Stops the timer.
-    var stop = function() {
-      startTime = null;
-      clearTimeout(timer);
-    }.bind(this);
+    function stop() {
+      elapsed = new Date().getTime() - startTime;
+    }
 
-    // Return elpased time.
-    var getElapsed = function() {
+    // Return elapsed time.
+    function getElapsed() {
       return elapsed;
-    };
+    }
 
     // Public API.
     return {
@@ -278,8 +256,9 @@ $(function(window, undefined) {
        * @return {Object|void}  Resolve promise.
        */
       function passPauseScreen() {
+        dispose();
         setTimeout(function() {
-          dispose();
+
           return deferred.resolve();
         }, 2000);
       }
@@ -322,8 +301,8 @@ $(function(window, undefined) {
        */
       function checkUserInputValidity(leftOrRight) {
         if (answerIsOk(leftOrRight)) {
-          save('results', trial, timer.getElapsed())
           dispose();
+          save('results', trial, timer.getElapsed())
           return deferred.resolve();
         }
 
