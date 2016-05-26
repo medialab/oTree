@@ -377,12 +377,11 @@ $(function(window, undefined) {
 
       /**
        * Triggered on time out... store time out as an error,
-       * and reset the trial.
+       * and reset the trial silently (don't display red X).
        *
        * @return {void}
        */
       function timeLimitHandler() {
-        displayWrongAnswerFeedback(true);
         setError(trial, timer.getElapsed(), true);
       }
 
