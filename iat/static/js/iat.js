@@ -259,7 +259,7 @@ $(function(window, undefined) {
         dispose();
         setTimeout(function() {
           return deferred.resolve();
-        }, 10000);
+        }, 5000);
       }
 
       /**
