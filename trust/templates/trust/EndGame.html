@@ -5,7 +5,9 @@
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <input id="timer" type="hidden" name="total_time" value="" />
-<h1>{% trans "Thank you very much for entering your choice. We have recorded your decision and are waiting for the other participant to make his or her selection. In the meantime, please proceed to the second task." %}</h1>
+<h1>{% trans "Thank you very much for entering your choice." %}</h1>
+<p>{% trans "We have recorded your decision and are waiting for the other participant to make his or her selection." %}</p>
+<p>{% trans "In the meantime, please proceed to the second task." %}</p>
 <p>{% trans "You have finished task 1. Let’s move on to the second task of this section." %}</p>
 <button class="btn btn-primary">{% trans "Next" %}</button>
 

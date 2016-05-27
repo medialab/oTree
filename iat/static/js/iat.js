@@ -258,7 +258,13 @@ $(function(window, undefined) {
       function passPauseScreen() {
         dispose();
         setTimeout(function() {
-          return deferred.resolve();
+          function next() {
+            return deferred.resolve();
+            $window.off('keyup', next);
+            $window.off('click touchstart', next);
+          }
+          $window.on('keyup', next);
+          $window.on('click touchstart', next);
         }, 5000);
       }
 
