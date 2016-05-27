@@ -1,9 +1,7 @@
 """Models for Earnings."""
 # -*- coding: utf-8 -*-
-# <standard imports>
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
-# # </standard imports>
 
 doc = """
 This application calculates earnings for the Trustlab experiments,
@@ -16,7 +14,7 @@ keywords = {}
 
 
 class Constants(BaseConstants):
-    """Constants."""
+    """Constants model."""
 
     name_in_url = 'earnings'
     players_per_group = None
@@ -24,18 +22,18 @@ class Constants(BaseConstants):
 
 
 class Subsession(BaseSubsession):
-    """Subsession."""
+    """Subsession model."""
 
     pass
 
 
 class Group(BaseGroup):
-    """Group."""
+    """Group model."""
 
     pass
 
 
 class Player(BasePlayer):
-    """Player."""
+    """Player model."""
 
     pass
