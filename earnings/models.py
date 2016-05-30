@@ -1,5 +1,6 @@
 """Models for Earnings."""
 # -*- coding: utf-8 -*-
+from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 
@@ -36,4 +37,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player model."""
 
-    pass
+    donation = models.IntegerField(
+        verbose_name='Please enter the amount you wish to donate to UNICEF'
+    )
