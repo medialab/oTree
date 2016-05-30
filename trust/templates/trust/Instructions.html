@@ -5,10 +5,10 @@
 {% block instructions %}
 <h1 style="color:#357EBD">{% trans "Task One: Introduction" %}</h1>
 <hr/>
-<p>{% trans "In the first task, <strong>two people participate</strong>: Participant A and Participant B. As you already know, this other participant, with whom you will interact only once during the study, also lives in France." %}</p>
+<p>{% trans "In the first task, <strong>two people participate</strong>: Participant A and Participant B. As you already know, this other participant, with whom you will interact only once during the study, also lives in the US." %}</p>
 <p><strong>{% trans "Your role (A or B) will be revealed at the beginning of the task" %}</strong></p>
-<p>{% trans "Both participants will receive <strong>€10</strong> at the beginning of the game." %}</p>
-<p>{% trans "If you are Person A, you must decide how much of your €10 you want to send to Person B. This amount will automatically be multiplied by 3." %}</p>
+<p>{% trans "Both participants will receive <strong>$10</strong> at the beginning of the game." %}</p>
+<p>{% trans "If you are Person A, you must decide how much of your $10 you want to send to Person B. This amount will automatically be multiplied by 3." %}</p>
 <p>{% trans "If you are Person B, you have to decide how much, if any, money you want to send back to Person A." %}</p>
 <p>{% trans "To better understand, watch the animation below." %}</p>
 <p><strong>{% trans "The numbers shown here are just for illustration purposes — the actual person you'll be playing with might make very different decisions." %}</strong></p>
@@ -41,7 +41,7 @@ $(function() { init() });
   width="600"
   height="480"
   style="background-color:#CCD1DB"
-  data-currency="{% trans '€'%}"
+  data-currency="{% trans '$'%}"
   data-participants-label-a="Participant A"
   data-participants-label-b="Participant B">
 </canvas>

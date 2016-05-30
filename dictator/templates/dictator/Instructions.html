@@ -7,9 +7,9 @@
 <hr/>
 <p>{% trans "This last task involves <strong>two participants</strong> – Person A and Person B." %}</p>
 <p><strong>{% trans "Your role (Participant A or Participant B) is revealed to you at the beginning of the task." %}</strong></p>
-<p>{% trans "Remember, the other participant, while also living in France, is different from the ones you interacted with in the previous two tasks." %}</p>
-<p>{% trans "Participant A starts off with <strong>€10</strong>. Participant B <strong>does not start off with any money</strong>." %}</p>
-<p>{% trans "Participant A must now decide if and how many € he or she wants to transfer to Participant B. To better understand, watch the animation below." %}</p>
+<p>{% trans "Remember, the other participant, while also living in the US, is different from the ones you interacted with in the previous two tasks." %}</p>
+<p>{% trans "Participant A starts off with <strong>$10</strong>. Participant B <strong>does not start off with any money</strong>." %}</p>
+<p>{% trans "Participant A must now decide if and how many $ he or she wants to transfer to Participant B. To better understand, watch the animation below." %}</p>
 <p><strong>{% trans "The numbers shown here are just for illustration purposes — the actual person you'll be playing with might make very different decisions." %}</strong></p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
@@ -37,7 +37,7 @@ $(function() { init() });
         class="canvas"
         width="600"
         height="480"
-        data-estimation-currency="{% trans '€'%}"
+        data-estimation-currency="{% trans '$'%}"
         style="background-color:#CCD1DB"
         data-participants-label-a="Participant A"
         data-participants-label-b="Participant B">
