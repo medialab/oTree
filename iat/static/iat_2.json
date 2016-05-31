@@ -18,7 +18,7 @@
       "name": "Competent / Incompetent",
       "displayed": [
         {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
-        {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Inefficient", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Proficient", "fr-fr": ""}},
@@ -34,7 +34,7 @@
         {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Bright", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Inexperienced", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Powerless", "fr-fr": ""}},
-        {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}}
+        {"left": "Competent", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}}
       ]
     },
     "B": {
@@ -50,7 +50,7 @@
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Regulation", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "State", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Civil servants", "fr-fr": ""}},
-        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Public administration", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Constitution", "fr-fr": ""}},
@@ -73,7 +73,7 @@
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Smart", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Inexperienced", "fr-fr": ""}},
-        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Weak", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Proficient", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Public administration", "fr-fr": ""}},
@@ -92,7 +92,7 @@
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Weak", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Inefficient", "fr-fr": ""}},
-        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent<br /><span style=\"color:white\">or</span><br />Government", "right": "Incompetent", "correct": "right", "showing": {"en-gb": "Inexperienced", "fr-fr": ""}}
       ]
     },
@@ -120,19 +120,19 @@
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "State", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Constitution", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Public administration", "fr-fr": ""}},
-        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Unskilled", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Reliable", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Smart", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Civil servants", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Capable", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Bright", "fr-fr": ""}},
-        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Weak", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "State", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Proficient", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Unskilled", "fr-fr": ""}},
-        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skilful", "fr-fr": ""}},
+        {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Skillful", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Constitution", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-gb": "Smart", "fr-fr": ""}},
         {"left": "Competent", "right": "Incompetent<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-gb": "Powerless", "fr-fr": ""}},
