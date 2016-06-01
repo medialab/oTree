@@ -100,10 +100,12 @@ class Group(BaseGroup):
                 else:
                     print('z')
                     player.calculation_from_role = 'B'
-                    given_by_player_b = self.strat_player_b_trust(p)
-                    given_by_player_a = getattr(
-                        'sent_back_amount_', str(int(given_by_player_b))
+                    given_by_player_a = self.strat_player_b_trust(p)
+                    print('given_by_player_a', int(given_by_player_a))
+                    given_by_player_b = getattr(
+                        p, 'sent_back_amount_' + str(int(given_by_player_a))
                     )
+                    print('given_by_player_b', int(given_by_player_b))
                     payoff = base_money + given_by_player_a - given_by_player_b
                 break
 
@@ -200,19 +202,22 @@ class Group(BaseGroup):
         other_players = []
 
         def add_player_if_eligible(player):
-            if player._meta.app_label == 'trust' and player.role() == 'A':
+            if player._meta.app_label == 'trust':
                 # Should never happen, but double check nonetheless.
-                if player is not player_b:
+                print(player, player_b)
+                if player is not player_b and player.sent_amount is not None:
+                    print('adding player ' + str(player))
                     other_players.append(player)
 
         for s in Session.objects.all():
             if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                    # `Participants` are all possible players.
-                    for p in s.get_participants():
-                        # For each participant, get their occurence of Trust
-                        # game players and see if they are eligible.
-                        trust_player = p.get_players()[0]
-                        add_player_if_eligible(trust_player)
+                # `Participants` are all possible players.
+                for p in s.get_participants():
+                    # For each participant, get their occurence of Trust
+                    # game players and see if they are eligible.
+                    trust_player = p.get_players()[0]
+                    print('trust_player', trust_player)
+                    add_player_if_eligible(trust_player)
 
         # Pick a random player A from eligible players and return money.
         player_a = random.choice(other_players)
