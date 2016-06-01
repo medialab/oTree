@@ -297,6 +297,9 @@ class Player(BasePlayer):
     # Role played by this user in chosen game.
     calculation_from_role = models.CharField(max_length=3)
 
+    # ID of matched player for calculations, if any.
+    calculation_from_matched_player_id = models.CharField(max_length=10)
+
     def calculate_payoff(self):
         """
         Calculate and return earnings for a player.
