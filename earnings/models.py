@@ -78,8 +78,10 @@ class Group(BaseGroup):
         payoff = None
         base_money = Constants.allocated_amount
 
+        # Get the occurence of this player when she played 'Trust'.
         for p in player.participant.get_players():
             if p._meta.app_label is 'trust':
+                # If her role was A.
                 if p.role() is 'A':
                     player.calculation_from_role = 'A'
                     given_by_player_a = p.sent_amount
@@ -87,6 +89,7 @@ class Group(BaseGroup):
                         p, given_by_player_a
                     )
                     payoff = base_money - given_by_player_a + given_by_player_b
+                # If her role was B.
                 else:
                     player.calculation_from_role = 'B'
                     given_by_player_b = self.strat_player_b_trust(p)
@@ -102,13 +105,18 @@ class Group(BaseGroup):
         """Calculate and return payoff for Trust game."""
         payoff = None
         base_money = Constants.allocated_amount
+
+        # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
 
+        # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
             if p._meta.app_label is 'dictator':
+                # If her role was A.
                 if role is 'A':
                     player.calculation_from_role = 'A'
                     payoff = base_money - p.given
+                # If her role was A.
                 else:
                     player.calculation_from_role = 'B'
                     payoff = base_money - self.strat_player_dictator(p)
@@ -124,6 +132,7 @@ class Group(BaseGroup):
         # There's no A/B role in this game.
         player.calculation_from_role = None
 
+        # Get the occurence of this player when she played 'Public Goods'.
         for p in player.participant.get_players():
             if p._meta.app.app_label is 'public_goods':
                 p_gave = p.contribution
@@ -217,7 +226,8 @@ class Group(BaseGroup):
         """
         Pick 3 other players in PG game in return the money.
 
-        It is the sum of their contributions related to 1st player's.
+        It is the sum of their contributions related to 1st player's,
+        plus 1st player's.
         """
         # Payoff group for this session
         pg = self.session.config['payoff_group']
