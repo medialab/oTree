@@ -1,6 +1,8 @@
 """Models for Earnings."""
 # -*- coding: utf-8 -*-
 from __future__ import division
+import os
+import json
 import random
 from otree.db import models
 from otree.constants import BaseConstants
@@ -16,6 +18,13 @@ source_code = ""
 bibliography = ()
 links = {}
 keywords = {}
+
+
+# Load fallback data for the very first players
+# of the game who will not found anyone to match
+path = os.path.dirname(os.path.realpath(__file__)) + '/fallback_data.json'
+with open(path) as json_file:
+    fallback_data = json.load(json_file)
 
 
 class Constants(BaseConstants):
@@ -290,17 +299,25 @@ class Group(BaseGroup):
 
         # Return the sum of their contributions related to 1st player's
         # plus 1st player's contribution.
-        joint_sum = [
-            getattr(
-                p, 'contribution_back_' + str(int(player.contribution))
-            ) for p in other_players
-        ]
-        joint_sum.append(p.contribution)
+        if len(other_players) == 3:
+            joint_sum = [
+                getattr(
+                    p, 'contribution_back_' + str(int(player.contribution))
+                ) for p in other_players
+            ]
+            print('player', player)
 
-        # IDs of matched players.
-        matched_ids = ','.join(
-            [str(u.id) for u in other_players]
-        )
+            # IDs of matched players.
+            matched_ids = ','.join(
+                [str(u.id) for u in other_players]
+            )
+        else:
+            joint_sum = [5 * 3]
+            matched_ids = 'fallback'
+
+        joint_sum.append(player.contribution)
+
+        print('matched_ids', matched_ids)
 
         return [sum(joint_sum), matched_ids]
 
