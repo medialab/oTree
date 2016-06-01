@@ -12,6 +12,7 @@ class Earnings(Page):
     form_fields = ['donation']
 
     def vars_for_template(self):
+        """Return variables for the template."""
         return {
             'payoff': self.player.calculate_payoff()
         }
