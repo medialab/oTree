@@ -58,11 +58,12 @@ class Group(BaseGroup):
         # player.calculation_from_game = chosen_game
 
         # Get payoff from game.
-        payoff, matched_ids = self.payoff_public_goods(player)
-        player.calculation_from_game = 'public_goods'
-        player.calculation_from_matched_player_id = matched_ids
+        payoff, matched_id, role = self.payoff_trust(player)
+        player.calculation_from_game = 'trust'
+        player.calculation_from_matched_player_id = matched_id
+        player.calculation_from_role = role
 
-        print('payoff from PG', payoff)
+        print('payoff from trust', payoff)
         return payoff
         # if chosen_game is 'trust':
         #     return self.payoff_trust(player)
@@ -82,36 +83,33 @@ class Group(BaseGroup):
     def payoff_trust(self, player):
         """Calculate and return payoff for Trust game."""
         payoff = None
+        matched_id = None
+        with_role = None
+
         base_money = Constants.allocated_amount
 
         # Get the occurence of this player when she played 'Trust'.
         for p in player.participant.get_players():
-            print('p._meta.app_label', p._meta.app_label)
             if p._meta.app_label == 'trust':
-                print('treatment', self.session.vars['treatment'][:1])
                 # If her role was A (role is based on app treatment in config)
                 if self.session.vars['treatment'][:1] == 'A':
-                    print('y')
-                    player.calculation_from_role = 'A'
+                    with_role = 'A'
                     given_by_player_a = p.sent_amount
-                    given_by_player_b = self.strat_player_a_trust(
+                    given_by_player_b, matched_id = self.strat_a_trust(
                         p, given_by_player_a
                     )
                     payoff = base_money - given_by_player_a + given_by_player_b
                 # If her role was B.
                 else:
-                    print('z')
-                    player.calculation_from_role = 'B'
-                    given_by_player_a = self.strat_player_b_trust(p)
-                    print('given_by_player_a', int(given_by_player_a))
+                    with_role = 'B'
+                    given_by_player_a, matched_id = self.strat_b_trust(p)
                     given_by_player_b = getattr(
                         p, 'sent_back_amount_' + str(int(given_by_player_a))
                     )
-                    print('given_by_player_b', int(given_by_player_b))
                     payoff = base_money + given_by_player_a - given_by_player_b
                 break
 
-        return payoff
+        return [payoff, matched_id, with_role]
 
     def payoff_dictator(self, player):
         """Calculate and return payoff for Trust game."""
@@ -131,7 +129,7 @@ class Group(BaseGroup):
                 # If her role was B.
                 else:
                     player.calculation_from_role = 'B'
-                    payoff = base_money - self.strat_player_dictator(p)
+                    payoff = base_money - self.strat_dictator(p)
                 break
 
         return payoff
@@ -149,14 +147,14 @@ class Group(BaseGroup):
         for p in player.participant.get_players():
             if p._meta.app_label == 'public_goods':
                 # Get joint project sum and matching players' IDs.
-                joint_sum, matched_ids = self.strat_player_public_goods(p)
+                joint_sum, matched_ids = self.strat_public_goods(p)
                 p_gave = p.contribution
                 payoff = (base_money - p_gave) + ((joint_sum * 1.8) / 4)
                 break
 
         return [payoff, matched_ids]
 
-    def strat_player_a_trust(self, player_a, player_a_gave):
+    def strat_a_trust(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
         # Payoff group for this session
         pg = self.session.config['payoff_group']
@@ -169,12 +167,10 @@ class Group(BaseGroup):
         def add_player_if_eligible(player):
             if player._meta.app_label == 'trust':
                 # Should never happen, but double check nonetheless.
-                print(player_a)
                 if player is not player_a:
                     if getattr(
                         player, 'sent_back_amount_' + str(int(player_a_gave))
                     ) is not None:
-                        print('adding eligible player ' + str(player))
                         other_players.append(player)
 
         for s in Session.objects.all():
@@ -184,21 +180,19 @@ class Group(BaseGroup):
                     # For each participant, get their occurence of Trust
                     # game players and see if they are eligible.
                     trust_player = p.get_players()[0]
-                    print('trust_player', trust_player)
                     add_player_if_eligible(trust_player)
 
         # Pick a random player B from eligible players and return money.
-        print('other_players', other_players)
         player_b = random.choice(other_players)
 
         # Store matched player's ID.
-        player_a.calculation_from_matched_player_id = str(player_b.id)
-        print('player_b', player_b)
-        sent_back = getattr(player_b, 'sent_back_amount_' + str(int(player_a_gave)))
-        print(sent_back)
-        return sent_back
+        matched_id = str(player_b.id)
+        sent_back = getattr(
+            player_b, 'sent_back_amount_' + str(int(player_a_gave))
+        )
+        return [sent_back, matched_id]
 
-    def strat_player_b_trust(self, player_b):
+    def strat_b_trust(self, player_b):
         """Select a player B for Trust and return related amount."""
         # Payoff group for this session
         pg = self.session.config['payoff_group']
@@ -211,9 +205,7 @@ class Group(BaseGroup):
         def add_player_if_eligible(player):
             if player._meta.app_label == 'trust':
                 # Should never happen, but double check nonetheless.
-                print(player, player_b)
                 if player is not player_b and player.sent_amount is not None:
-                    print('adding player ' + str(player))
                     other_players.append(player)
 
         for s in Session.objects.all():
@@ -223,17 +215,17 @@ class Group(BaseGroup):
                     # For each participant, get their occurence of Trust
                     # game players and see if they are eligible.
                     trust_player = p.get_players()[0]
-                    print('trust_player', trust_player)
                     add_player_if_eligible(trust_player)
 
         # Pick a random player A from eligible players and return money.
         player_a = random.choice(other_players)
 
         # Store matched player's ID.
-        player_b.calculation_from_matched_player_id = player_a.id
-        return getattr(player_a, 'sent_amount')
+        matched_id = player_a.id
 
-    def strat_player_dictator(self, player):
+        return [player_a.sent_amount, matched_id]
+
+    def strat_dictator(self, player):
         """Pick and return a given amount from another Dictator player."""
         # Payoff group for this session
         pg = self.session.config['payoff_group']
@@ -258,7 +250,7 @@ class Group(BaseGroup):
         player.calculation_from_matched_player_id = str(matched.id)
         return matched.given
 
-    def strat_player_public_goods(self, player):
+    def strat_public_goods(self, player):
         """
         Pick 3 other players in PG game in return the money.
 
