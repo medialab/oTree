@@ -116,7 +116,7 @@ class Group(BaseGroup):
                 if role is 'A':
                     player.calculation_from_role = 'A'
                     payoff = base_money - p.given
-                # If her role was A.
+                # If her role was B.
                 else:
                     player.calculation_from_role = 'B'
                     payoff = base_money - self.strat_player_dictator(p)
