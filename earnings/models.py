@@ -43,6 +43,7 @@ class Constants(BaseConstants):
     # Define when to use fallback data for some games.
     min_other_players_for_pg = 3
     min_other_players_for_dictator = 1
+    min_other_players_for_trust = 1
 
 
 class Subsession(BaseSubsession):
@@ -73,7 +74,7 @@ class Group(BaseGroup):
 
         # Get payoff from game.
         payoff = None
-        chosen_game = 'dictator'
+        chosen_game = 'trust'
 
         if chosen_game is 'dictator':
             payoff, matched_id, role = self.payoff_dictator(player)
@@ -202,13 +203,21 @@ class Group(BaseGroup):
                     add_player_if_eligible(trust_player)
 
         # Pick a random player B from eligible players and return money.
-        player_b = random.choice(other_players)
+        # Use fallback data if none available yet.
+        if len(other_players) >= Constants.min_other_players_for_trust:
+            player_b = random.choice(other_players)
 
-        # Store matched player's ID.
-        matched_id = str(player_b.id)
-        sent_back = getattr(
-            player_b, 'sent_back_amount_' + str(int(player_a_gave))
-        )
+            # Store matched player's ID.
+            matched_id = str(player_b.id)
+            sent_back = getattr(
+                player_b, 'sent_back_amount_' + str(int(player_a_gave))
+            )
+        else:
+            sent_back = fallback_data['trust'][0][
+                'sent_back_amount_' + str(int(player_a_gave))
+            ]
+            matched_id = 'fallback'
+
         return [sent_back, matched_id]
 
     def strat_trust_b(self, player_b):
