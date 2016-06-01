@@ -86,7 +86,7 @@ $(function() { init() });
           data-estimation-min="0"
           data-estimation-max="10"
           data-estimation-currency="{% trans '$'%}"
-          data-multipler="1.6">
+          data-multipler="{{Constants.efficiency_factor}}">
   </canvas>
   <div class="form commands">
     <div class="col-sm-6 col-md-6 col-lg-6 form-group">
