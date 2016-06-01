@@ -25,6 +25,7 @@ keywords = {}
 path = os.path.dirname(os.path.realpath(__file__)) + '/fallback_data.json'
 with open(path) as json_file:
     fallback_data = json.load(json_file)
+    print(fallback_data)
 
 
 class Constants(BaseConstants):
