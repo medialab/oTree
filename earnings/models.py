@@ -6,6 +6,7 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer, Session
 from otree.common import Currency
+from public_goods.models import Constants as Public_goods_constants
 
 doc = """
 This application calculates earnings for the Trustlab experiments,
@@ -59,6 +60,7 @@ class Group(BaseGroup):
 
         # Get payoff from game.
         payoff = None
+        chosen_game = 'public_goods'
 
         if chosen_game is 'dictator':
             payoff, matched_id, role = self.payoff_dictator(player)
@@ -151,7 +153,9 @@ class Group(BaseGroup):
                 # Get joint project sum and matching players' IDs.
                 joint_sum, matched_ids = self.strat_public_goods(p)
                 p_gave = p.contribution
-                payoff = (base_money - p_gave) + ((joint_sum * 1.8) / 4)
+                payoff = (base_money - p_gave) + (
+                    (joint_sum * Public_goods_constants.efficiency_factor) / 4
+                )
                 break
 
         return [payoff, matched_ids]
