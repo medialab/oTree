@@ -54,22 +54,28 @@ class Group(BaseGroup):
         Save key variables and results in the model.
         """
         # Choose (and save reference in DB) a game.
-        # chosen_game = self.chose_game(Constants.eligible_games)
-        # player.calculation_from_game = chosen_game
+        chosen_game = self.chose_game(Constants.eligible_games)
+        player.calculation_from_game = chosen_game
 
         # Get payoff from game.
-        payoff, matched_id, role = self.payoff_dictator(player)
-        player.calculation_from_game = 'dictator'
-        player.calculation_from_matched_player_id = matched_id
-        player.calculation_from_role = role
+        payoff = None
 
+        if chosen_game is 'dictator':
+            payoff, matched_id, role = self.payoff_dictator(player)
+            player.calculation_from_game = 'dictator'
+            player.calculation_from_matched_player_id = matched_id
+            player.calculation_from_role = role
+        elif chosen_game is 'public_goods':
+            payoff, matched_ids = self.payoff_public_goods(player)
+            player.calculation_from_game = 'public_goods'
+            player.calculation_from_matched_player_id = matched_ids
+            player.calculation_from_role = 'N/A'
+        elif chosen_game is 'trust':
+            payoff, matched_id, role = self.payoff_trust(player)
+            player.calculation_from_game = 'trust'
+            player.calculation_from_matched_player_id = matched_id
+            player.calculation_from_role = role
         return payoff
-        # if chosen_game is 'trust':
-        #     return self.payoff_trust(player)
-        # elif chosen_game is 'public_goods':
-        #     return self.payoff_public_goods(player)
-        # elif chosen_game is 'dictator':
-        #     return self.payoff_dictator(player)
 
     def chose_game(self, games):
         """Choose an eligible game at random."""
@@ -138,9 +144,6 @@ class Group(BaseGroup):
         payoff = None
         joint_sum = None
         base_money = Constants.allocated_amount
-
-        # There's no A/B role in this game.
-        player.calculation_from_role = 'N/A'
 
         # Get the occurence of this player when she played 'Public Goods'.
         for p in player.participant.get_players():
@@ -291,11 +294,11 @@ class Group(BaseGroup):
         joint_sum.append(p.contribution)
 
         # IDs of matched players.
-        calculation_from_matched_player_id = ','.join(
+        matched_ids = ','.join(
             [str(u.id) for u in other_players]
         )
 
-        return [sum(joint_sum), calculation_from_matched_player_id]
+        return [sum(joint_sum), matched_ids]
 
 
 class Player(BasePlayer):
