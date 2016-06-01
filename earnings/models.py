@@ -76,10 +76,6 @@ class Group(BaseGroup):
         """Choose an eligible game at random."""
         return random.choice(games)
 
-    def get_role(self, player, game):
-        """Fetch role of current Player in chosen game."""
-        pass
-
     def payoff_trust(self, player):
         """Calculate and return payoff for Trust game."""
         payoff = None
@@ -95,14 +91,14 @@ class Group(BaseGroup):
                 if self.session.vars['treatment'][:1] == 'A':
                     with_role = 'A'
                     given_by_player_a = p.sent_amount
-                    given_by_player_b, matched_id = self.strat_a_trust(
+                    given_by_player_b, matched_id = self.strat_trust_a(
                         p, given_by_player_a
                     )
                     payoff = base_money - given_by_player_a + given_by_player_b
                 # If her role was B.
                 else:
                     with_role = 'B'
-                    given_by_player_a, matched_id = self.strat_b_trust(p)
+                    given_by_player_a, matched_id = self.strat_trust_b(p)
                     given_by_player_b = getattr(
                         p, 'sent_back_amount_' + str(int(given_by_player_a))
                     )
@@ -154,7 +150,7 @@ class Group(BaseGroup):
 
         return [payoff, matched_ids]
 
-    def strat_a_trust(self, player_a, player_a_gave):
+    def strat_trust_a(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
         # Payoff group for this session
         pg = self.session.config['payoff_group']
@@ -192,7 +188,7 @@ class Group(BaseGroup):
         )
         return [sent_back, matched_id]
 
-    def strat_b_trust(self, player_b):
+    def strat_trust_b(self, player_b):
         """Select a player B for Trust and return related amount."""
         # Payoff group for this session
         pg = self.session.config['payoff_group']
