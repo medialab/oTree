@@ -5,17 +5,23 @@ from ._builtin import Page
 # from .models import Constants
 
 
+class Calculate(Page):
+
+    form_model = models.Player
+
+    def before_next_page(self):
+        """Return variables for the template."""
+        payoff = self.player.calculate_payoff()
+        return {
+            'payoff': payoff
+        }
+
+
 class Earnings(Page):
     """Earnings page."""
 
     form_model = models.Player
     form_fields = ['donation']
 
-    def vars_for_template(self):
-        """Return variables for the template."""
-        return {
-            'payoff': self.player.calculate_payoff()
-        }
 
-
-page_sequence = [Earnings]
+page_sequence = [Calculate, Earnings]

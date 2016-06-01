@@ -68,7 +68,7 @@ class Send(Page):
 class SendBack(Page):
     """Page where Player 2 sends mony in return for possible P1 grants."""
 
-    form_model = models.Group
+    form_model = models.Player
     form_fields = [
         'sent_back_amount_0',
         'sent_back_amount_1',
@@ -138,10 +138,10 @@ class EndGame(Page):
 
 
 page_sequence = [
-    ExperimentIntroduction,
-    GamesIntroduction,
-    Introduction,
-    Simulation,
+    # ExperimentIntroduction,
+    # GamesIntroduction,
+    # Introduction,
+    # Simulation,
     Send,
     SendBack,
     EndGame

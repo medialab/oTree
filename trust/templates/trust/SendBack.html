@@ -11,17 +11,17 @@
 <p>{% trans "You already have <strong>€10</strong> in your possession." %}</p>
 <p>{% trans "If Participant A sends you any of the amounts listed in the table below, <strong>how much money do you want to send back to Participant A</strong>?" %}</p>
 <hr/>
-    {% formfield group.sent_back_amount_0 with label=sent_back_amount_0_label %}
-    {% formfield group.sent_back_amount_1 with label=sent_back_amount_1_label %}
-    {% formfield group.sent_back_amount_2 with label=sent_back_amount_2_label %}
-    {% formfield group.sent_back_amount_3 with label=sent_back_amount_3_label %}
-    {% formfield group.sent_back_amount_4 with label=sent_back_amount_4_label %}
-    {% formfield group.sent_back_amount_5 with label=sent_back_amount_5_label %}
-    {% formfield group.sent_back_amount_6 with label=sent_back_amount_6_label %}
-    {% formfield group.sent_back_amount_7 with label=sent_back_amount_7_label %}
-    {% formfield group.sent_back_amount_8 with label=sent_back_amount_8_label %}
-    {% formfield group.sent_back_amount_9 with label=sent_back_amount_9_label %}
-    {% formfield group.sent_back_amount_10 with label=sent_back_amount_10_label %}
+    {% formfield player.sent_back_amount_0 with label=sent_back_amount_0_label %}
+    {% formfield player.sent_back_amount_1 with label=sent_back_amount_1_label %}
+    {% formfield player.sent_back_amount_2 with label=sent_back_amount_2_label %}
+    {% formfield player.sent_back_amount_3 with label=sent_back_amount_3_label %}
+    {% formfield player.sent_back_amount_4 with label=sent_back_amount_4_label %}
+    {% formfield player.sent_back_amount_5 with label=sent_back_amount_5_label %}
+    {% formfield player.sent_back_amount_6 with label=sent_back_amount_6_label %}
+    {% formfield player.sent_back_amount_7 with label=sent_back_amount_7_label %}
+    {% formfield player.sent_back_amount_8 with label=sent_back_amount_8_label %}
+    {% formfield player.sent_back_amount_9 with label=sent_back_amount_9_label %}
+    {% formfield player.sent_back_amount_10 with label=sent_back_amount_10_label %}
     <button class="btn btn-primary">{% trans "Next" %}</button>
 
 {% endblock %}

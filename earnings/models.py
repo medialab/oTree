@@ -54,16 +54,20 @@ class Group(BaseGroup):
         Save key variables and results in the model.
         """
         # Choose (and save reference in DB) a game.
-        chosen_game = self.chose_game(Constants.eligible_games)
-        player.calculation_from_game = chosen_game
+        # chosen_game = self.chose_game(Constants.eligible_games)
+        # player.calculation_from_game = chosen_game
 
         # Get payoff from game.
-        if chosen_game is 'trust':
-            return self.payoff_trust(player)
-        elif chosen_game is 'public_goods':
-            return self.payoff_public_goods(player)
-        elif chosen_game is 'dictator':
-            return self.payoff_dictator(player)
+        payoff = self.payoff_trust(player)
+        player.calculation_from_game = 'trust'
+        print('payoff from Trust', payoff)
+        return payoff
+        # if chosen_game is 'trust':
+        #     return self.payoff_trust(player)
+        # elif chosen_game is 'public_goods':
+        #     return self.payoff_public_goods(player)
+        # elif chosen_game is 'dictator':
+        #     return self.payoff_dictator(player)
 
     def chose_game(self, games):
         """Choose an eligible game at random."""
@@ -80,9 +84,12 @@ class Group(BaseGroup):
 
         # Get the occurence of this player when she played 'Trust'.
         for p in player.participant.get_players():
-            if p._meta.app_label is 'trust':
-                # If her role was A.
-                if p.role() is 'A':
+            print('p._meta.app_label', p._meta.app_label)
+            if p._meta.app_label == 'trust':
+                print('treatment', self.session.vars['treatment'][:1])
+                # If her role was A (role is based on app treatment in config)
+                if self.session.vars['treatment'][:1] == 'A':
+                    print('y')
                     player.calculation_from_role = 'A'
                     given_by_player_a = p.sent_amount
                     given_by_player_b = self.strat_player_a_trust(
@@ -91,10 +98,11 @@ class Group(BaseGroup):
                     payoff = base_money - given_by_player_a + given_by_player_b
                 # If her role was B.
                 else:
+                    print('z')
                     player.calculation_from_role = 'B'
                     given_by_player_b = self.strat_player_b_trust(p)
                     given_by_player_a = getattr(
-                        'sent_back_amount_', given_by_player_b
+                        'sent_back_amount_', str(int(given_by_player_b))
                     )
                     payoff = base_money + given_by_player_a - given_by_player_b
                 break
@@ -111,9 +119,9 @@ class Group(BaseGroup):
 
         # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
-            if p._meta.app_label is 'dictator':
+            if p._meta.app_label == 'dictator':
                 # If her role was A.
-                if role is 'A':
+                if role == 'A':
                     player.calculation_from_role = 'A'
                     payoff = base_money - p.given
                 # If her role was B.
@@ -137,7 +145,7 @@ class Group(BaseGroup):
             if p._meta.app.app_label is 'public_goods':
                 p_gave = p.contribution
                 joint_sum = self.strat_player_public_goods(p)
-                payoff = (base_money - p_gave) + ((joint_sum * 1.3) / 4)
+                payoff = (base_money - p_gave) + ((joint_sum * 1.8) / 4)
                 break
 
         return payoff
@@ -153,23 +161,33 @@ class Group(BaseGroup):
         other_players = []
 
         def add_player_if_eligible(player):
-            if player._meta.app_label is 'trust' and player.role() is 'B':
+            if player._meta.app_label == 'trust':
                 # Should never happen, but double check nonetheless.
+                print(player_a)
                 if player is not player_a:
-                    other_players.append(player)
+                    if getattr(
+                        player, 'sent_back_amount_' + str(int(player_a_gave))
+                    ) is not None:
+                        print('adding eligible player ' + str(player))
+                        other_players.append(player)
 
         for s in Session.objects.all():
             if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                    # `Participants` are all possible players.
-                    for p in s.get_participants():
-                        # For each participant, get their occurence of Trust
-                        # game players and see if they are eligible.
-                        trust_player = p.get_players()[0]
-                        add_player_if_eligible(trust_player)
+                # `Participants` are all possible players.
+                for p in s.get_participants():
+                    # For each participant, get their occurence of Trust
+                    # game players and see if they are eligible.
+                    trust_player = p.get_players()[0]
+                    print('trust_player', trust_player)
+                    add_player_if_eligible(trust_player)
 
         # Pick a random player B from eligible players and return money.
+        print('other_players', other_players)
         player_b = random.choice(other_players)
-        return getattr(player_b, 'sent_back_amount_' + player_a_gave)
+        print('player_b', player_b)
+        sent_back = getattr(player_b, 'sent_back_amount_' + str(int(player_a_gave)))
+        print(sent_back)
+        return sent_back
 
     def strat_player_b_trust(self, player_b):
         """Select a player B for Trust and return related amount."""
@@ -182,7 +200,7 @@ class Group(BaseGroup):
         other_players = []
 
         def add_player_if_eligible(player):
-            if player._meta.app_label is 'trust' and player.role() is 'A':
+            if player._meta.app_label == 'trust' and player.role() == 'A':
                 # Should never happen, but double check nonetheless.
                 if player is not player_b:
                     other_players.append(player)
@@ -211,7 +229,7 @@ class Group(BaseGroup):
         other_players = []
 
         def add_player_if_eligible(p):
-            if p._meta.app_label is 'dictator' and p is not player:
+            if p._meta.app_label == 'dictator' and p is not player:
                 other_players.append(p)
 
         for s in Session.objects.all():
@@ -238,7 +256,7 @@ class Group(BaseGroup):
         other_players = []
 
         def add_player_if_eligible(p):
-            if p._meta.app_label is 'public_goods' and p is not player:
+            if p._meta.app_label == 'public_goods' and p is not player:
                 other_players.append(p)
 
         for s in Session.objects.all():
@@ -281,4 +299,4 @@ class Player(BasePlayer):
         Save key variables and results in the model.
         Proxies method of the same name in Group.
         """
-        return self.group.calculate_payoff(self)
+        self.payoff = self.group.calculate_payoff(self)
