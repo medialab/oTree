@@ -58,9 +58,11 @@ class Group(BaseGroup):
         # player.calculation_from_game = chosen_game
 
         # Get payoff from game.
-        payoff = self.payoff_trust(player)
-        player.calculation_from_game = 'trust'
-        print('payoff from Trust', payoff)
+        payoff, matched_ids = self.payoff_public_goods(player)
+        player.calculation_from_game = 'public_goods'
+        player.calculation_from_matched_player_id = matched_ids
+
+        print('payoff from PG', payoff)
         return payoff
         # if chosen_game is 'trust':
         #     return self.payoff_trust(player)
@@ -137,20 +139,22 @@ class Group(BaseGroup):
     def payoff_public_goods(self, player):
         """Calculate and return payoff for Public Goods game."""
         payoff = None
+        joint_sum = None
         base_money = Constants.allocated_amount
 
         # There's no A/B role in this game.
-        player.calculation_from_role = None
+        player.calculation_from_role = 'N/A'
 
         # Get the occurence of this player when she played 'Public Goods'.
         for p in player.participant.get_players():
-            if p._meta.app.app_label is 'public_goods':
+            if p._meta.app_label == 'public_goods':
+                # Get joint project sum and matching players' IDs.
+                joint_sum, matched_ids = self.strat_player_public_goods(p)
                 p_gave = p.contribution
-                joint_sum = self.strat_player_public_goods(p)
                 payoff = (base_money - p_gave) + ((joint_sum * 1.8) / 4)
                 break
 
-        return payoff
+        return [payoff, matched_ids]
 
     def strat_player_a_trust(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
@@ -271,12 +275,15 @@ class Group(BaseGroup):
 
         def add_player_if_eligible(p):
             if p._meta.app_label == 'public_goods' and p is not player:
-                other_players.append(p)
+                if getattr(
+                    p, 'contribution_back_' + str(int(player.contribution))
+                ) is not None:
+                    other_players.append(p)
 
         for s in Session.objects.all():
             if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
                 for p in s.get_participants():
-                    public_goods_player = p.get_players[1]
+                    public_goods_player = p.get_players()[1]
                     add_player_if_eligible(public_goods_player)
 
         # Shuffle and pick three.
@@ -284,17 +291,20 @@ class Group(BaseGroup):
         other_players = other_players[:3]
 
         # Return the sum of their contributions related to 1st player's
-        # plus 1st player's contribution. Store the ID of matched players.
+        # plus 1st player's contribution.
         joint_sum = [
-            getattr(p, 'contribution_back_') for p in other_players
+            getattr(
+                p, 'contribution_back_' + str(int(player.contribution))
+            ) for p in other_players
         ]
         joint_sum.append(p.contribution)
 
-        player.calculation_from_matched_player_id = ','.join(
+        # IDs of matched players.
+        calculation_from_matched_player_id = ','.join(
             [str(u.id) for u in other_players]
         )
 
-        return sum(joint_sum)
+        return [sum(joint_sum), calculation_from_matched_player_id]
 
 
 class Player(BasePlayer):
