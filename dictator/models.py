@@ -71,12 +71,6 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     """Group for Dictator game."""
 
-    given = models.CurrencyField(
-        doc="""Amount dictator decided to given""",
-        min=0, max=Constants.allocated_amount,
-        verbose_name=''
-    )
-
     def set_payoffs(self):
         """Set payoffs (used by test bot)."""
         p1 = self.get_player_by_id(1)
@@ -87,6 +81,12 @@ class Group(BaseGroup):
 
 class Player(BasePlayer):
     """Player for Dictator game."""
+
+    given = models.CurrencyField(
+        doc="""Amount dictator decided to given""",
+        min=0, max=Constants.allocated_amount,
+        verbose_name=''
+    )
 
     training_participant1_payoff = models.CurrencyField(
         verbose_name="Participant 1's payoff would be")

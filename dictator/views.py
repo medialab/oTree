@@ -42,7 +42,7 @@ class Introduction(Page):
 class Offer(Page):
     """Offer (participant A) page."""
 
-    form_model = models.Group
+    form_model = models.Player
     form_fields = ['given']
 
 

@@ -10,7 +10,7 @@
 <p>{% trans "You were selected to be in the role of <strong>Participant A</strong>." %}</p>
 <p>{% trans "You have €10 in your possession. <strong>How much do you want to send to Participant B?</strong>" %}</p>
 <hr/>
-{% formfield group.sent_amount with label=sent_amount_label %}
+{% formfield player.sent_amount with label=sent_amount_label %}
 <p>
 <button class="btn btn-primary">{% trans "Next" %}</button>
 </p>

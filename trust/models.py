@@ -54,9 +54,13 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     """Group model for Trust game."""
 
-    def treatment(self):
-        """Return chosen treatment for XP."""
-        return self.session.vars['treatment']
+    pass
+
+
+class Player(BasePlayer):
+    """Player model for Trust."""
+
+    total_time = models.CharField(blank=True, null=True)
 
     sent_amount = models.CurrencyField(
         doc="""Amount sent by P1""",
@@ -130,12 +134,10 @@ class Group(BaseGroup):
         max=Currency(10 + 10 * 3)
     )
 
-
-class Player(BasePlayer):
-    """Player model for Trust."""
-
-    total_time = models.CharField(blank=True, null=True)
-
     def role(self):
         """Return role ID/name based on ID in group."""
         return {1: 'A', 2: 'B'}[self.id_in_group]
+
+    def treatment(self):
+        """Return chosen treatment for XP."""
+        return self.session.vars['treatment']

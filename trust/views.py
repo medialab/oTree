@@ -50,7 +50,7 @@ class Simulation(Page):
 class Send(Page):
     """Page where Player 1 sends money."""
 
-    form_model = models.Group
+    form_model = models.Player
     form_fields = ['sent_amount']
 
     def vars_for_template(self):
@@ -62,7 +62,7 @@ class Send(Page):
 
     def is_displayed(self):
         """Display rule stating 'Send' is displayed for Player 1 only."""
-        return self.group.treatment()[:1] == 'A'
+        return self.player.treatment()[:1] == 'A'
 
 
 class SendBack(Page):
@@ -123,7 +123,7 @@ class SendBack(Page):
 
     def is_displayed(self):
         """Display rule stating 'SendBack' appears for Player B only."""
-        return self.group.treatment()[:1] == 'B'
+        return self.player.treatment()[:1] == 'B'
 
 
 class EndGame(Page):
