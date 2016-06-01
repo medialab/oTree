@@ -7,6 +7,7 @@ from ._builtin import Page
 
 class Calculate(Page):
     """Calculate then redirect to last page."""
+
     form_model = models.Player
 
     def before_next_page(self):
