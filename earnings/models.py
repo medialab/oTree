@@ -74,7 +74,6 @@ class Group(BaseGroup):
 
         # Get payoff from game.
         payoff = None
-        chosen_game = 'trust'
 
         if chosen_game is 'dictator':
             payoff, matched_id, role = self.payoff_dictator(player)
@@ -91,6 +90,7 @@ class Group(BaseGroup):
             player.calculation_from_game = 'trust'
             player.calculation_from_matched_player_id = matched_id
             player.calculation_from_role = role
+
         return payoff
 
     def chose_game(self, games):
@@ -245,13 +245,17 @@ class Group(BaseGroup):
                     trust_player = p.get_players()[0]
                     add_player_if_eligible(trust_player)
 
-        # Pick a random player A from eligible players and return money.
-        player_a = random.choice(other_players)
+        # Pick a random player A from eligible players and return money and
+        # store matched player's ID. Use fallback in case of lack of data.
+        if len(other_players) >= Constants.min_other_players_for_trust:
+            player_a = random.choice(other_players)
+            sent_amount = player_a.sent_amount
+            matched_id = player_a.id
+        else:
+            sent_amount = fallback_data['trust'][0]['sent_amount']
+            matched_id = 'fallback'
 
-        # Store matched player's ID.
-        matched_id = player_a.id
-
-        return [player_a.sent_amount, matched_id]
+        return [sent_amount, matched_id]
 
     def strat_dictator(self, player):
         """Pick and return a given amount from another Dictator player."""
