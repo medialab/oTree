@@ -11,17 +11,19 @@ class Calculate(Page):
 
     def before_next_page(self):
         """Return variables for the template."""
-        payoff = self.player.calculate_payoff()
-        return {
-            'payoff': payoff
-        }
+        self.player.calculate_payoff()
 
 
 class Earnings(Page):
     """Earnings page."""
 
     form_model = models.Player
-    form_fields = ['donation']
+    # form_fields = ['donation']
+
+    def vars_for_template(self):
+        return {
+            'payoff': self.player.payoff
+        }
 
 
 page_sequence = [Calculate, Earnings]

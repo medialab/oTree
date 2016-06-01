@@ -4,6 +4,10 @@
 
 {% block content %}
 <br/><br/><br/><br/><br/>
-<h3>{% trans "Calculate" %}</h3>
-<p><button class="btn btn-primary">{% trans "next" %}</button></p>
+<p><button id="next" class="btn btn-primary" style="display: none">{% trans "next" %}</button></p>
+<script>
+$(function() {
+  $('#next').click()
+});
+</script>
 {% endblock %}
