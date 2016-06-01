@@ -47,26 +47,23 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     """Group model."""
 
-    def calculate_payoff(self, player, game, role):
+    def calculate_payoff(self, player):
         """
         Calculate and return earnings for a player.
 
         Save key variables and results in the model.
         """
-        player.calculation_from_game = self.chose_game(
-            Constants.eligible_games
-        )
-        player.calculation_from_role = self.get_role(
-            player, player.calculation_from_game
-        )
+        # Choose (and save reference in DB) a game.
+        chosen_game = self.chose_game(Constants.eligible_games)
+        player.calculation_from_game = chosen_game
 
-        # Trust game
-        # for p in self.get_players():
-        #     print(p, player, p is player)
-        # self.payoff_trust(player)
-
-        # for p in player.participant.get_players():
-        #     print(p._meta.get_fields())
+        # Get payoff from game.
+        if chosen_game is 'trust':
+            return self.payoff_trust(player)
+        elif chosen_game is 'public_goods':
+            return self.payoff_public_goods(player)
+        elif chosen_game is 'dictator':
+            return self.payoff_dictator(player)
 
     def chose_game(self, games):
         """Choose an eligible game at random."""
@@ -82,26 +79,59 @@ class Group(BaseGroup):
         base_money = Constants.allocated_amount
 
         for p in player.participant.get_players():
-            if p._meta.app_label == 'trust':
-                if p.role == 'A':
+            if p._meta.app_label is 'trust':
+                if p.role() is 'A':
+                    player.calculation_from_role = 'A'
                     given_by_player_a = p.sent_amount
                     given_by_player_b = self.strat_player_a_trust(
                         p, given_by_player_a
                     )
                     payoff = base_money - given_by_player_a + given_by_player_b
                 else:
-                    given_by_player_a = self.strat_player_b_trust(p)
-                    given_by_player_b = getattr(
-                        'sent_back_amount_', given_by_player_a
+                    player.calculation_from_role = 'B'
+                    given_by_player_b = self.strat_player_b_trust(p)
+                    given_by_player_a = getattr(
+                        'sent_back_amount_', given_by_player_b
                     )
                     payoff = base_money + given_by_player_a - given_by_player_b
+                break
 
         return payoff
 
-    # def payoff_dictator(self, player):
-    #     """Calculate and return payoff for Trust game."""
-    #     payoff = None
-    #     base_money = Constants.allocated_amount
+    def payoff_dictator(self, player):
+        """Calculate and return payoff for Trust game."""
+        payoff = None
+        base_money = Constants.allocated_amount
+        role = random.choice(['A', 'B'])
+
+        for p in player.participant.get_players():
+            if p._meta.app_label is 'dictator':
+                if role is 'A':
+                    player.calculation_from_role = 'A'
+                    payoff = base_money - p.given
+                else:
+                    player.calculation_from_role = 'B'
+                    payoff = base_money - self.strat_player_dictator(p)
+                break
+
+        return payoff
+
+    def payoff_public_goods(self, player):
+        """Calculate and return payoff for Public Goods game."""
+        payoff = None
+        base_money = Constants.allocated_amount
+
+        # There's no A/B role in this game.
+        player.calculation_from_role = None
+
+        for p in player.participant.get_players():
+            if p._meta.app.app_label is 'public_goods':
+                p_gave = p.contribution
+                joint_sum = self.strat_player_public_goods(p)
+                payoff = (base_money - p_gave) + ((joint_sum * 1.3) / 4)
+                break
+
+        return payoff
 
     def strat_player_a_trust(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
@@ -161,6 +191,64 @@ class Group(BaseGroup):
         player_a = random.choice(other_players)
         return getattr(player_a, 'sent_amount')
 
+    def strat_player_dictator(self, player):
+        """Pick and return a given amount from another Dictator player."""
+        # Payoff group for this session
+        pg = self.session.config['payoff_group']
+
+        # In sessions from same payoff_group, find a random player A.
+        # If we wanted only players from this session:
+        # all_other_players = self.get_players()
+        other_players = []
+
+        def add_player_if_eligible(p):
+            if p._meta.app_label is 'dictator' and p is not player:
+                other_players.append(p)
+
+        for s in Session.objects.all():
+            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
+                for p in s.get_participants():
+                    dictator_player = p.get_players()[2]
+                    add_player_if_eligible(dictator_player)
+
+        return random.choice(other_players).given
+
+    def strat_player_public_goods(self, player):
+        """
+        Pick 3 other players in PG game in return the money.
+
+        It is the sum of their contributions related to 1st player's.
+        """
+        # Payoff group for this session
+        pg = self.session.config['payoff_group']
+
+        # In sessions from same payoff_group, find a random player A.
+        # If we wanted only players from this session:
+        # all_other_players = self.get_players()
+        other_players = []
+
+        def add_player_if_eligible(p):
+            if p._meta.app_label is 'public_goods' and p is not player:
+                other_players.append(p)
+
+        for s in Session.objects.all():
+            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
+                for p in s.get_participants():
+                    public_goods_player = p.get_players[1]
+                    add_player_if_eligible(public_goods_player)
+
+        # Shuffle and pick three.
+        random.shuffle(other_players)
+        other_players = other_players[:3]
+
+        # Return the sum of their contributions related to 1st player's
+        # plus 1st player's contribution.
+        joint_sum = [
+            getattr(p, 'contribution_back_') for p in other_players
+        ]
+        joint_sum.append(p.contribution)
+        return sum(joint_sum)
+
 
 class Player(BasePlayer):
     """Player model."""
@@ -183,4 +271,4 @@ class Player(BasePlayer):
         Save key variables and results in the model.
         Proxies method of the same name in Group.
         """
-        return self.group.calculate_payoff(self, None, None)
+        return self.group.calculate_payoff(self)
