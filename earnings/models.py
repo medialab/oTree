@@ -312,8 +312,12 @@ class Group(BaseGroup):
             matched_ids = ','.join(
                 [str(u.id) for u in other_players]
             )
+        # If there are not enough players yet, use fallback data.
         else:
-            joint_sum = [5 * 3]
+            joint_sum = [
+                d['contribution_back_' + str(int(player.contribution))]
+                for d in fallback_data['public_goods']
+            ]
             matched_ids = 'fallback'
 
         joint_sum.append(player.contribution)
