@@ -25,7 +25,6 @@ keywords = {}
 path = os.path.dirname(os.path.realpath(__file__)) + '/fallback_data.json'
 with open(path) as json_file:
     fallback_data = json.load(json_file)
-    print(fallback_data)
 
 
 class Constants(BaseConstants):
@@ -40,6 +39,10 @@ class Constants(BaseConstants):
 
     # Base money for all games.
     allocated_amount = Currency(10)
+
+    # Define when to use fallback data for some games.
+    min_other_players_for_pg = 3
+    min_other_players_for_dictator = 1
 
 
 class Subsession(BaseSubsession):
@@ -70,7 +73,7 @@ class Group(BaseGroup):
 
         # Get payoff from game.
         payoff = None
-        chosen_game = 'public_goods'
+        chosen_game = 'dictator'
 
         if chosen_game is 'dictator':
             payoff, matched_id, role = self.payoff_dictator(player)
@@ -263,8 +266,16 @@ class Group(BaseGroup):
                     add_player_if_eligible(dictator_player)
 
         # Pick matching player, return money and matched player's ID.
-        matched = random.choice(other_players)
-        return [matched.given, str(matched.id)]
+        # Use fallback data if there are not enough players.
+        if len(other_players) >= Constants.min_other_players_for_dictator:
+            matched = random.choice(other_players)
+            given = matched.given
+            id = str(matched.id)
+        else:
+            given = fallback_data['dictator'][0]['given']
+            id = 'fallback'
+
+        return [given, id]
 
     def strat_public_goods(self, player):
         """
@@ -300,13 +311,12 @@ class Group(BaseGroup):
 
         # Return the sum of their contributions related to 1st player's
         # plus 1st player's contribution.
-        if len(other_players) == 3:
+        if len(other_players) == Constants.min_other_players_for_pg:
             joint_sum = [
                 getattr(
                     p, 'contribution_back_' + str(int(player.contribution))
                 ) for p in other_players
             ]
-            print('player', player)
 
             # IDs of matched players.
             matched_ids = ','.join(
@@ -321,8 +331,6 @@ class Group(BaseGroup):
             matched_ids = 'fallback'
 
         joint_sum.append(player.contribution)
-
-        print('matched_ids', matched_ids)
 
         return [sum(joint_sum), matched_ids]
 
