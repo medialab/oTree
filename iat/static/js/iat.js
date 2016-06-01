@@ -137,7 +137,8 @@ $(function(window, undefined) {
      * @return {Array}  The ready-to-use, stack of trial objects.
      */
     function prepareTrials(data, order, lang) {
-      var resultTrials = [];
+      var resultTrials = [],
+          id = 0;
 
       // Arrange the trials based on given order.
       order.split('').forEach(function(character) {
@@ -148,6 +149,7 @@ $(function(window, undefined) {
 
         data.trials[character].displayed.forEach(function(displayed) {
           resultTrials.push({
+            id: id,
             correctCategory: capitalize(displayed[displayed.correct]),
             stimuli: displayed.showing[lang],
             left: capitalize(displayed.left),
@@ -155,6 +157,8 @@ $(function(window, undefined) {
             correctPosition: displayed.correct,
             blockName: displayed.name
           });
+
+          id++;
         });
       });
 
