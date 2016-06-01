@@ -58,12 +58,11 @@ class Group(BaseGroup):
         # player.calculation_from_game = chosen_game
 
         # Get payoff from game.
-        payoff, matched_id, role = self.payoff_trust(player)
-        player.calculation_from_game = 'trust'
+        payoff, matched_id, role = self.payoff_dictator(player)
+        player.calculation_from_game = 'dictator'
         player.calculation_from_matched_player_id = matched_id
         player.calculation_from_role = role
 
-        print('payoff from trust', payoff)
         return payoff
         # if chosen_game is 'trust':
         #     return self.payoff_trust(player)
@@ -110,25 +109,29 @@ class Group(BaseGroup):
     def payoff_dictator(self, player):
         """Calculate and return payoff for Trust game."""
         payoff = None
+        matched_id = None
+
         base_money = Constants.allocated_amount
 
         # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
+        role = 'B'
 
         # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
             if p._meta.app_label == 'dictator':
-                # If her role was A.
+                # If her role has been determined as A...
+                # Basically we lose money we gave away.
                 if role == 'A':
-                    player.calculation_from_role = 'A'
                     payoff = base_money - p.given
-                # If her role was B.
+                    matched_id = 'N/A'
+                # If her role has been determined as B...
+                # We receive the money the chosen "Player A" has given away.
                 else:
-                    player.calculation_from_role = 'B'
-                    payoff = base_money - self.strat_dictator(p)
+                    payoff, matched_id = self.strat_dictator(p)
                 break
 
-        return payoff
+        return [payoff, matched_id, role]
 
     def payoff_public_goods(self, player):
         """Calculate and return payoff for Public Goods game."""
@@ -233,7 +236,8 @@ class Group(BaseGroup):
 
         def add_player_if_eligible(p):
             if p._meta.app_label == 'dictator' and p is not player:
-                other_players.append(p)
+                if p.given is not None:
+                    other_players.append(p)
 
         for s in Session.objects.all():
             if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
@@ -241,10 +245,9 @@ class Group(BaseGroup):
                     dictator_player = p.get_players()[2]
                     add_player_if_eligible(dictator_player)
 
-        # Pick matching player, store ID, return money.
+        # Pick matching player, return money and matched player's ID.
         matched = random.choice(other_players)
-        player.calculation_from_matched_player_id = str(matched.id)
-        return matched.given
+        return [matched.given, str(matched.id)]
 
     def strat_public_goods(self, player):
         """
