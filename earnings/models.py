@@ -186,6 +186,9 @@ class Group(BaseGroup):
         # Pick a random player B from eligible players and return money.
         print('other_players', other_players)
         player_b = random.choice(other_players)
+
+        # Store matched player's ID.
+        player_a.calculation_from_matched_player_id = str(player_b.id)
         print('player_b', player_b)
         sent_back = getattr(player_b, 'sent_back_amount_' + str(int(player_a_gave)))
         print(sent_back)
@@ -221,6 +224,9 @@ class Group(BaseGroup):
 
         # Pick a random player A from eligible players and return money.
         player_a = random.choice(other_players)
+
+        # Store matched player's ID.
+        player_b.calculation_from_matched_player_id = player_a.id
         return getattr(player_a, 'sent_amount')
 
     def strat_player_dictator(self, player):
@@ -243,7 +249,10 @@ class Group(BaseGroup):
                     dictator_player = p.get_players()[2]
                     add_player_if_eligible(dictator_player)
 
-        return random.choice(other_players).given
+        # Pick matching player, store ID, return money.
+        matched = random.choice(other_players)
+        player.calculation_from_matched_player_id = str(matched.id)
+        return matched.given
 
     def strat_player_public_goods(self, player):
         """
@@ -275,11 +284,16 @@ class Group(BaseGroup):
         other_players = other_players[:3]
 
         # Return the sum of their contributions related to 1st player's
-        # plus 1st player's contribution.
+        # plus 1st player's contribution. Store the ID of matched players.
         joint_sum = [
             getattr(p, 'contribution_back_') for p in other_players
         ]
         joint_sum.append(p.contribution)
+
+        player.calculation_from_matched_player_id = ','.join(
+            [str(u.id) for u in other_players]
+        )
+
         return sum(joint_sum)
 
 
@@ -298,7 +312,7 @@ class Player(BasePlayer):
     calculation_from_role = models.CharField(max_length=3)
 
     # ID of matched player for calculations, if any.
-    calculation_from_matched_player_id = models.CharField(max_length=10)
+    calculation_from_matched_player_id = models.CharField(max_length=50)
 
     def calculate_payoff(self):
         """
