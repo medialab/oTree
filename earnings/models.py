@@ -137,7 +137,6 @@ class Group(BaseGroup):
 
         # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
-        role = 'B'
 
         # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
@@ -213,10 +212,11 @@ class Group(BaseGroup):
                 player_b, 'sent_back_amount_' + str(int(player_a_gave))
             )
         else:
-            sent_back = fallback_data['trust'][0][
+            u = random.choice(fallback_data['trust'])
+            sent_back = u[
                 'sent_back_amount_' + str(int(player_a_gave))
             ]
-            matched_id = 'fallback'
+            matched_id = u['id']
 
         return [sent_back, matched_id]
 
@@ -252,8 +252,9 @@ class Group(BaseGroup):
             sent_amount = player_a.sent_amount
             matched_id = player_a.id
         else:
-            sent_amount = fallback_data['trust'][0]['sent_amount']
-            matched_id = 'fallback'
+            u = random.choice(fallback_data['trust'])
+            sent_amount = u['sent_amount']
+            matched_id = u['id']
 
         return [sent_amount, matched_id]
 
@@ -285,8 +286,9 @@ class Group(BaseGroup):
             given = matched.given
             id = str(matched.id)
         else:
-            given = fallback_data['dictator'][0]['given']
-            id = 'fallback'
+            u=random.choice(fallback_data['dictator'])
+            given = u['given']
+            id = u['id']
 
         return [given, id]
 
@@ -307,9 +309,7 @@ class Group(BaseGroup):
 
         def add_player_if_eligible(p):
             if p._meta.app_label == 'public_goods' and p is not player:
-                if getattr(
-                    p, 'contribution_back_' + str(int(player.contribution))
-                ) is not None:
+                if p.contribution is not None:
                     other_players.append(p)
 
         for s in Session.objects.all():
@@ -318,30 +318,25 @@ class Group(BaseGroup):
                     public_goods_player = p.get_players()[1]
                     add_player_if_eligible(public_goods_player)
 
-        # Shuffle and pick three.
-        random.shuffle(other_players)
-        other_players = other_players[:3]
-
-        # Return the sum of their contributions related to 1st player's
-        # plus 1st player's contribution.
-        if len(other_players) == Constants.min_other_players_for_pg:
-            joint_sum = [
-                getattr(
-                    p, 'contribution_back_' + str(int(player.contribution))
-                ) for p in other_players
-            ]
-
-            # IDs of matched players.
-            matched_ids = ','.join(
-                [str(u.id) for u in other_players]
-            )
-        # If there are not enough players yet, use fallback data.
+        fallback_players=[]
+        if len(other_players) >= Constants.min_other_players_for_pg :
+            # Shuffle and pick three.
+            other_players=random.sample(other_players,Constants.min_other_players_for_pg)
         else:
-            joint_sum = [
-                d['contribution_back_' + str(int(player.contribution))]
-                for d in fallback_data['public_goods']
-            ]
-            matched_ids = 'fallback'
+            # first players will miss existing players to be matched to
+            # let's use fallback data to add the missing results
+            nb_missing_players=len(other_players) - Constants.min_other_players_for_pg
+            fallback_players=random.sample(fallback_data['public_goods'],nb_missing_players)
+
+        # Return the sum of their contributions 
+        # plus 1st player's contribution.
+        joint_sum = [p.contribution for p in other_players]
+        joint_sum += [p['contribution'] for p in fallback_players]
+
+        # IDs of matched players.
+        matched_ids = ','.join(
+            [str(u.id) for u in other_players]+[u['id'] for u in fallback_players]
+        )
 
         joint_sum.append(player.contribution)
 

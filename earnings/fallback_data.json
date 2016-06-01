@@ -1,51 +1,33 @@
 {
   "public_goods": [
     {
-      "public_goods_fallback_player_id": 1,
-      "contribution_back_0": 4,
-      "contribution_back_1": 4,
-      "contribution_back_2": 4,
-      "contribution_back_3": 4,
-      "contribution_back_4": 4,
-      "contribution_back_5": 4,
-      "contribution_back_6": 4,
-      "contribution_back_7": 4,
-      "contribution_back_8": 4,
-      "contribution_back_9": 4,
-      "contribution_back_10": 4
+      "id": "fallback_1",
+      "contribution": 4
     },
     {
-      "public_goods_fallback_player_id": 2,
-      "contribution_back_0": 5,
-      "contribution_back_1": 5,
-      "contribution_back_2": 5,
-      "contribution_back_3": 5,
-      "contribution_back_5": 5,
-      "contribution_back_5": 5,
-      "contribution_back_6": 5,
-      "contribution_back_7": 5,
-      "contribution_back_8": 5,
-      "contribution_back_9": 5,
-      "contribution_back_10": 5
+      "id": "fallback_2",
+      "contribution": 5
     },
     {
-      "public_goods_fallback_player_id": 3,
-      "contribution_back_0": 6,
-      "contribution_back_1": 6,
-      "contribution_back_2": 6,
-      "contribution_back_3": 6,
-      "contribution_back_6": 6,
-      "contribution_back_5": 6,
-      "contribution_back_6": 6,
-      "contribution_back_7": 6,
-      "contribution_back_8": 6,
-      "contribution_back_9": 6,
-      "contribution_back_10": 6
+      "id": "fallback_3",
+      "contribution": 6
+    },
+    {
+      "id": "fallback_4",
+      "contribution": 7
+    },
+    {
+      "id": "fallback_5",
+      "contribution": 8
+    },
+    {
+      "id": "fallback_6",
+      "contribution": 9
     }
   ],
   "trust": [
     {
-      "trust_fallback_player_id": 1,
+      "id": "fallback_1",
       "sent_amount": 4,
       "sent_back_amount_0": 4,
       "sent_back_amount_1": 4,
@@ -58,12 +40,50 @@
       "sent_back_amount_8": 4,
       "sent_back_amount_9": 4,
       "sent_back_amount_10": 4
+    },
+    {
+      "id": "fallback_2",
+      "sent_amount": 2,
+      "sent_back_amount_0": 6,
+      "sent_back_amount_1": 6,
+      "sent_back_amount_2": 6,
+      "sent_back_amount_3": 6,
+      "sent_back_amount_4": 6,
+      "sent_back_amount_5": 6,
+      "sent_back_amount_6": 6,
+      "sent_back_amount_7": 6,
+      "sent_back_amount_8": 6,
+      "sent_back_amount_9": 6,
+      "sent_back_amount_10": 6
+    },
+    {
+      "id": "fallback_3",
+      "sent_amount": 7,
+      "sent_back_amount_0": 3,
+      "sent_back_amount_1": 3,
+      "sent_back_amount_2": 3,
+      "sent_back_amount_3": 3,
+      "sent_back_amount_4": 3,
+      "sent_back_amount_5": 3,
+      "sent_back_amount_6": 3,
+      "sent_back_amount_7": 3,
+      "sent_back_amount_8": 3,
+      "sent_back_amount_9": 3,
+      "sent_back_amount_10": 3
     }
   ],
   "dictator": [
     {
-      "dictator_fallback_player_id": 1,
+      "id": "fallback_1",
       "given": 3
+    },
+    {
+      "id": "fallback_2",
+      "given": 6
+    }
+    {
+      "id": "fallback_3",
+      "given": 2
     }
   ]
 }
