@@ -3,6 +3,7 @@
 {% load otree_tags %}
 
 {% block content %}
+  <input id="timer" type="hidden" name="total_time" value="">
   <style>
   li {
     display: inline-block;
@@ -32,4 +33,8 @@
 
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+
+  <script>
+  $('#timer').val(new Date());
+  </script>
 {% endblock %}

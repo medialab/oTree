@@ -20,6 +20,7 @@
 {% endblock %}
 
 {% block content %}
+    <input id="timer" type="hidden" name="total_time" value="">
     <style>
       body {
         background-color: black;
@@ -110,5 +111,9 @@
       if ('ontouchstart' in document.documentElement) {
         $('.mobile-nav').removeClass('hide')
       }
+    </script>
+
+    <script>
+    $('#timer').val(new Date());
     </script>
 {% endblock %}

@@ -11,6 +11,7 @@ class Survey01(Page):
 
     form_model = models.Player
     form_fields = [
+        'total_time',
         '_01_how_satisfied_are_you_with_life_as_a_whole',
         '_01_would_you_say_that_most_people_can_be_trusted',
         '_01_are_you_a_person_fully_prepared_to_take_risks'
@@ -130,14 +131,23 @@ class Survey11(Page):
         '_11_you_read_the_descriptions_associated',
         '_11_were_you_in_a_calm_environment',
         '_11_have_you_ever_participated_in_another_study',
-        '_11_which_device_did_you_take_this_study'
+        '_11_which_device_did_you_take_this_study',
+        'total_time'
     ]
+
+    def vars_for_template(self):
+        """Make data available in template."""
+        return {'start_time': self.player.total_time}
 
 
 class EndGame(Page):
     """End of survey."""
 
-    pass
+    form_fields = ['total_time']
+
+    def vars_for_template(self):
+        """Make data available in template."""
+        return {'start_time': self.player.total_time}
 
 
 page_sequence = [

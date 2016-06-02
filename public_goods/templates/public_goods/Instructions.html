@@ -3,6 +3,8 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
+<input id="timer" type="hidden" name="total_time" value="">
+
 <h1 style="color:#008068">{% trans "Task Two: Introduction" %}</h1>
 <p>{% trans "In the second task, groups of <strong>4 participants</strong> (yourself and 3 other people) are formed" %}</p>
 <p>{% trans "Remember, the participants in this group are different from the person you interacted with in the previous task. However, they all live in the US." %}</p>
@@ -13,5 +15,9 @@
   <li>{% trans "The total amount invested into the joint project is <strong>multiplied by " %}{{Constants.efficiency_factor}}.</strong></li>
   <li>{% trans "At the end, the money in the joint project will be re-divided and <strong>split equally between all 4 group members</strong> (including yourself)." %}</li>
 </ul>
+
+<script>
+$('#timer').val(new Date());
+</script>
 
 {% endblock %}

@@ -3,6 +3,8 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
+<input id="timer" type="hidden" name="total_time" value="">
+
 <h1 style="color:#800080">{% trans "Task Three: Introduction" %}</h1>
 <hr/>
 <p>{% trans "This last task involves <strong>two participants</strong> – Participant A and Participant B." %}</p>
@@ -17,5 +19,8 @@
 <p><strong>{% trans "Your role (Participant A or Participant B) is revealed to you at the beginning of the task." %}</strong></p>
 <p><strong>{% trans "Because this task is simple, there will be no simulator to test out different choices." %}</strong></p>
 
+<script>
+$('#timer').val(new Date());
+</script>
 
 {% endblock %}
