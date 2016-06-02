@@ -152,5 +152,5 @@ page_sequence = [
     Survey09,
     Survey10,
     Survey11,
-    EndGame
+    # EndGame
 ]

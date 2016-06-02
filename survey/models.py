@@ -509,7 +509,7 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_what_year_did_you_arrive_in_France = models.CharField(
-        verbose_name=_(u'In what year did you arrive in France?'),
+        verbose_name=_(u'In what year did you arrive in the US?'),
         choices=[_(u'I was born here')] + [
             str(x) for x in range(date.today().year, 1940, -1)
         ],
