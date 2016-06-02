@@ -328,12 +328,9 @@ class Group(BaseGroup):
         else:
             # first players will miss existing players to be matched to
             # let's use fallback data to add the missing results
-            nb_missing_players = len(
-                other_players
-            ) - Constants.min_other_players_for_pg
-
-            print('nb_missing_players', nb_missing_players)
-            print("fallback_data['public_goods']", fallback_data['public_goods'])
+            nb_missing_players = (
+                Constants.min_other_players_for_pg - len(other_players)
+            )
 
             fallback_players = random.sample(
                 fallback_data['public_goods'], nb_missing_players
