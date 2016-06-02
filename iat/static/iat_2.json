@@ -208,7 +208,7 @@
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "right", "showing": {"en-us": "Lying", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Politicians", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Credible", "fr-fr": ""}},
-        {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Corrupt", "fr-fr": ""}},
+        {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "right", "showing": {"en-us": "Corrupt", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "State", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Politicians", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Regulation", "fr-fr": ""}},
@@ -240,7 +240,7 @@
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Fair", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "right", "showing": {"en-us": "Unfair", "fr-fr": ""}},
         {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "right", "showing": {"en-us": "Immoral", "fr-fr": ""}},
-        {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "left", "showing": {"en-us": "Lying", "fr-fr": ""}}
+        {"left": "Honest<br /><span style=\"color:white\">or</span><br />Government", "right": "Dishonest", "correct": "right", "showing": {"en-us": "Lying", "fr-fr": ""}}
       ]
     },
     "F": {
@@ -299,7 +299,7 @@
         {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-us": "Lying", "fr-fr": ""}},
         {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-us": "Regulation", "fr-fr": ""}},
         {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-us": "Corrupt", "fr-fr": ""}},
-        {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-us": "Moral", "fr-fr": ""}}
+        {"left": "Honest", "right": "Dishonest<br /><span style=\"color:white\">or</span><br />Government", "correct": "left", "showing": {"en-us": "Moral", "fr-fr": ""}}
       ]
     }
   }
