@@ -70,6 +70,7 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.chose_game(Constants.eligible_games)
+        chosen_game = 'public_goods'
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
@@ -286,7 +287,7 @@ class Group(BaseGroup):
             given = matched.given
             id = str(matched.id)
         else:
-            u=random.choice(fallback_data['dictator'])
+            u = random.choice(fallback_data['dictator'])
             given = u['given']
             id = u['id']
 
@@ -318,24 +319,35 @@ class Group(BaseGroup):
                     public_goods_player = p.get_players()[1]
                     add_player_if_eligible(public_goods_player)
 
-        fallback_players=[]
-        if len(other_players) >= Constants.min_other_players_for_pg :
+        fallback_players = []
+        if len(other_players) >= Constants.min_other_players_for_pg:
             # Shuffle and pick three.
-            other_players=random.sample(other_players,Constants.min_other_players_for_pg)
+            other_players = random.sample(
+                other_players, Constants.min_other_players_for_pg
+            )
         else:
             # first players will miss existing players to be matched to
             # let's use fallback data to add the missing results
-            nb_missing_players=len(other_players) - Constants.min_other_players_for_pg
-            fallback_players=random.sample(fallback_data['public_goods'],nb_missing_players)
+            nb_missing_players = len(
+                other_players
+            ) - Constants.min_other_players_for_pg
 
-        # Return the sum of their contributions 
+            print('nb_missing_players', nb_missing_players)
+            print("fallback_data['public_goods']", fallback_data['public_goods'])
+
+            fallback_players = random.sample(
+                fallback_data['public_goods'], nb_missing_players
+            )
+
+        # Return the sum of their contributions
         # plus 1st player's contribution.
         joint_sum = [p.contribution for p in other_players]
         joint_sum += [p['contribution'] for p in fallback_players]
 
         # IDs of matched players.
         matched_ids = ','.join(
-            [str(u.id) for u in other_players]+[u['id'] for u in fallback_players]
+            [str(u.id) for u in other_players] +
+            [u['id'] for u in fallback_players]
         )
 
         joint_sum.append(player.contribution)
