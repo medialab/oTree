@@ -8,9 +8,9 @@ import otree.db.models
 
 class Migration(migrations.Migration):
 
-    dependencies = [
-        ('otree', '0002_auto_20160602_0734'),
-    ]
+    # dependencies = [
+    #     ('otree', '0002_auto_20160602_0734'),
+    # ]
 
     operations = [
         migrations.CreateModel(
