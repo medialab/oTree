@@ -333,7 +333,7 @@ election in France?"),
     )
 
     _05_the_police = models.CharField(
-        verbose_name=_(u"The police."),
+        verbose_name=_(u"The judicial system."),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
