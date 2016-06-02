@@ -34,6 +34,7 @@ function init() {
 
   var currentTry = 0;
   var REQUIRED_TRIES = 1;
+  var PLAYER_1_ENDOWMENT = 10;
 
   var playerAFinished = false;
   var playerBFInished = false;
@@ -45,7 +46,7 @@ function init() {
 
     if (!playerAFinished) {
       var val = $amountA.val();
-      if (val >= 0 && val <= 10) {
+      if (val >= 0 && val <= PLAYER_1_ENDOWMENT) {
         for (var i = 0; i < val; i++) {
           window.TRUST.operate.playerPutsOwnMoney(0, 0);
         }
@@ -65,10 +66,9 @@ function init() {
 
   $sendB.click(function (e) {
     e.preventDefault();
-
     if (playerAFinished && !playerBFInished) {
       var val = $amountB.val();
-      if (val >= 0 && val <= 10) {
+      if (val >= 0 && val <= window.TRUST.operate.getMaxAmount1()) {
         for (var i = 0; i < val; i++) {
           window.TRUST.operate.incrementFromCartToCart(0, 1);
         }
@@ -117,7 +117,7 @@ $(function() { init() });
   <div class="form commands hide">
     <div class="col-sm-3 col-md-3 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant A" %}</label>
-      <input class="form-control" type="number" id="amountA" min="0" max="10">
+      <input class="form-control" type="number" id="amountA" min="0">
       <a class="btn btn-default" id="sendA">{% trans "Send" %}</a>
     </div>
   </div>
@@ -125,7 +125,7 @@ $(function() { init() });
   <div class="form commands hide">
     <div class="col-sm-4 col-md-4 col-lg-4 form-group">
       <label for="amount">{% trans "Amount sent by Participant B" %}</label>
-      <input class="form-control" type="number" id="amountB" min="0" max="10" disabled="disabled">
+      <input class="form-control" type="number" id="amountB" min="0" disabled="disabled">
       <a class="btn btn-default" id="sendB" disabled="disabled">{% trans "Send" %}</a>
     </div>
   </div>

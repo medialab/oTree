@@ -1245,7 +1245,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 			 * Define/get default values.
 			 */
 			var startAmount = 10;
-			var currency = '€';
 			var multiplier = 3;
 			var labelA = 'participant A';
 			var labelB = 'participant B';
@@ -1386,7 +1385,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					move: move,
 					multiply: multiplyMoney,
 					removeAll: batchRemove,
-					reset: reset
+					reset: reset,
+					carts: carts
 				}
 			}.bind(this);
 		
@@ -1519,6 +1519,14 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					}
 				}
 				
+				var getMaxAmount1 = function () {
+					return carts.carts[0].money;
+				}
+				
+				var getMaxAmount2 = function () {
+					return carts.carts[1].money;
+				}
+				
 				return {
 					playerPutsOwnMoney: playerPutsOwnMoney,
 					playerTakesMoney: playerTakesMoney,
@@ -1527,7 +1535,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					passInFactory: passInFactory,
 					incrementFromCartToCart: incrementFromCartToCart,
 					decrementFromCartToCart: decrementFromCartToCart,
-					dispatchFinalGains: dispatchFinalGains
+					dispatchFinalGains: dispatchFinalGains,
+					
+					getMaxAmount1: getMaxAmount1,
+					getMaxAmount2: getMaxAmount2
 				}
 			}.bind(this);
 			
