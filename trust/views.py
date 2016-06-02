@@ -138,10 +138,10 @@ class EndGame(Page):
 
 
 page_sequence = [
-    # ExperimentIntroduction,
-    # GamesIntroduction,
-    # Introduction,
-    # Simulation,
+    ExperimentIntroduction,
+    GamesIntroduction,
+    Introduction,
+    Simulation,
     Send,
     SendBack,
     EndGame

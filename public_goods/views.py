@@ -95,8 +95,8 @@ group members contributes $10:'),
 
 
 page_sequence = [
-    # Introduction,
-    # Simulation,
+    Introduction,
+    Simulation,
     Contribute,
     ContributeBack,
     EndGame
