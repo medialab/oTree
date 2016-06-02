@@ -301,7 +301,7 @@ returned with its contents, or not?"),
 
     _04_you_vote_in_the_last_national_election = models.CharField(
         verbose_name=_(u"Did you vote in the last national \
-election in France?"),
+election?"),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
