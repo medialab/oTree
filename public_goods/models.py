@@ -35,7 +35,7 @@ class Constants(BaseConstants):
     """Constants for Public Goods."""
 
     name_in_url = 'public_goods'
-    players_per_group = 3
+    players_per_group = None
     num_rounds = 1
 
     # Amount allocated to each player

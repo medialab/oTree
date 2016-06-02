@@ -30,7 +30,7 @@ class Constants(BaseConstants):
     """Constants for Trust game."""
 
     name_in_url = 'trust'
-    players_per_group = 2
+    players_per_group = None
     num_rounds = 1
 
     # Initial amount allocated to each player

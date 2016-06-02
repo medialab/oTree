@@ -46,7 +46,7 @@ class Constants(BaseConstants):
     """Constants for Dictator game."""
 
     name_in_url = 'dictator'
-    players_per_group = 2
+    players_per_group = None
     num_rounds = 1
 
     bonus = Currency(1)
