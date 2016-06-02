@@ -27,8 +27,8 @@ def write_meta_file(meta):
 def write_file(res, stem):
     """Write down results CSV file."""
     filename = (
-        'exports_iat/' + stem + '__' + res[0][1][3] + '__' +
-        res[0][1][1] + '__' + res[0][1][2] + '__'
+        'exports_iat/' + stem + '__' + res[0][1][4] + '__' +
+        res[0][1][2] + '__' + res[0][1][3] + '__'
     )
     with open(filename + '.csv', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=',', quotechar='|')
@@ -39,22 +39,10 @@ def write_file(res, stem):
 
 def remove_html(value):
     """Clean up HTML from entered values."""
-    return value.replace(
+    return str(value).replace(
         '<br /><span style=""color:white"">', ' '
     ).replace('</span><br />', ' ')
 
-
-def build_entry_line(values):
-    """Return formatted entry from raw data."""
-    return {
-        'Left category': remove_html(values['left']),
-        'Right category': remove_html(values['right']),
-        'Stimuli word': remove_html(values['stimuli']),
-        'Correct position': remove_html(values['correctPosition']),
-        'Correct category': remove_html(values['correctCategory']),
-        'Time taken': values['timing'],
-        'Has timed out': values['timedOut']
-    }
 
 with open(sys.argv[1], 'r') as f:
     # Index of current user.
@@ -103,13 +91,14 @@ with open(sys.argv[1], 'r') as f:
                     for r in trials_results:
                         results.append([
                             [
-                                'ID in session', 'Code', 'Label',
-                                'Time started', 'Left category',
+                                'Trial ID', 'Player ID in session', 'Code',
+                                'Label', 'Time started', 'Left category',
                                 'Right category', 'Stimuli word',
                                 'Correct position', 'Correct category',
                                 'Time taken'
                             ],
                             [
+                                remove_html(r['id']),
                                 id_in_session, code, label, time_started,
                                 remove_html(r['left']),
                                 remove_html(r['right']),
@@ -125,13 +114,14 @@ with open(sys.argv[1], 'r') as f:
                     for r in trials_results:
                         errors.append([
                             [
-                                'ID in session', 'Code', 'Label',
+                                'Trial ID', 'ID in session', 'Code', 'Label',
                                 'Time started', 'Left category',
                                 'Right category', 'Stimuli word',
                                 'Correct position', 'Correct category',
                                 'Failed by time out', 'Time taken'
                             ],
                             [
+                                remove_html(r['id']),
                                 id_in_session, code, label, time_started,
                                 remove_html(r['left']),
                                 remove_html(r['right']),
