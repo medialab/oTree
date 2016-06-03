@@ -37,7 +37,7 @@ function init() {
   var PLAYER_1_ENDOWMENT = 10;
 
   var playerAFinished = false;
-  var playerBFInished = false;
+  var playerBFinished = false;
 
   $sendA.click(function (e) {
     e.preventDefault();
@@ -66,12 +66,34 @@ function init() {
 
   $sendB.click(function (e) {
     e.preventDefault();
-    if (playerAFinished && !playerBFInished) {
+    if (playerAFinished && !playerBFinished) {
+      var cartAmount = window.TRUST.operate.getMaxCart1Money();
+      var playerBAmount = window.TRUST.operate.getMaxPlayer2Money();
       var val = $amountB.val();
-      if (val >= 0 && val <= window.TRUST.operate.getMaxAmount1()) {
-        for (var i = 0; i < val; i++) {
-          window.TRUST.operate.incrementFromCartToCart(0, 1);
+      var disposableAmount = cartAmount + playerBAmount;
+
+      if (val >= 0 && val <= disposableAmount) {
+
+        var i, j;
+
+        // Money from first cart, if enough.
+        if (val >= 0 && val <= cartAmount) {
+          for (i = 0; i < val; i++) {
+            window.TRUST.operate.incrementFromCartToCart(0, 1);
+          }
         }
+
+        // Money from first cart and then, from player.
+        else if (val > cartAmount && val <= disposableAmount) {
+          for (i = 0; i < cartAmount; i++) {
+            window.TRUST.operate.incrementFromCartToCart(0, 1);
+          }
+
+          for (j = i; j < val; j++) {
+            window.TRUST.operate.playerPutsOwnMoney(1, 1);
+          }
+        }
+
         window.TRUST.operate.moveCart2();
         playerBFinished = true;
 
@@ -90,7 +112,7 @@ function init() {
 
     window.TRUST.reset();
 
-    playerAFinished = playerBFInished = false;
+    playerAFinished = playerBFinished = false;
 
     $sendA.val(0);
     $sendB.attr('disabled', true).val(0);

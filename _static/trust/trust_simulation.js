@@ -1452,12 +1452,22 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					}
 				}.bind(this);
 				
+				var getMaxPlayer1Money = function () {
+					return players[0].money;
+				}.bind(this);
+				
+				var getMaxPlayer2Money = function () {
+					return players[1].money;
+				}.bind(this);
+				
 				reset();
 		
 				return {
 					increment: increment,
 					decrement: decrement,
-					reset: reset
+					reset: reset,
+					getMaxPlayer1Money: getMaxPlayer1Money,
+					getMaxPlayer2Money: getMaxPlayer2Money
 				}
 			}.bind(this);
 			
@@ -1519,12 +1529,20 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					}
 				}
 				
-				var getMaxAmount1 = function () {
+				var getMaxCart1Money = function () {
 					return carts.carts[0].money;
 				}
 				
-				var getMaxAmount2 = function () {
+				var getMaxCart2Money = function () {
 					return carts.carts[1].money;
+				}
+				
+				var getMaxPlayer1Money = function () {
+					return players.getMaxPlayer1Money();
+				}
+				
+				var getMaxPlayer2Money = function () {
+					return players.getMaxPlayer2Money();
 				}
 				
 				return {
@@ -1537,8 +1555,10 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					decrementFromCartToCart: decrementFromCartToCart,
 					dispatchFinalGains: dispatchFinalGains,
 					
-					getMaxAmount1: getMaxAmount1,
-					getMaxAmount2: getMaxAmount2
+					getMaxCart1Money: getMaxCart1Money,
+					getMaxCart2Money: getMaxCart2Money,
+					getMaxPlayer1Money: getMaxPlayer1Money,
+					getMaxPlayer2Money: getMaxPlayer2Money
 				}
 			}.bind(this);
 			
