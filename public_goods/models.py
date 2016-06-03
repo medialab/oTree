@@ -40,7 +40,7 @@ class Constants(BaseConstants):
 
     # Amount allocated to each player
     endowment = Currency(10)
-    efficiency_factor = 1.8
+    efficiency_factor = 1.6
     base_points = Currency(10)
 
 
