@@ -31,7 +31,15 @@ class EndGame(Page):
 
     def vars_for_template(self):
         """Make data available in template."""
-        return {'start_time': self.player.total_time}
+        return {
+            'start_time': self.player.total_time,
+            'normal_render': self.group.treatment()[
+                'oecd_iat'
+            ] is True and 'hide' or '',
+            'oecd_render': self.group.treatment()[
+                'oecd_iat'
+            ] is not True and 'hide' or ''
+        }
 
 
 class IAT(Page):
@@ -41,7 +49,4 @@ class IAT(Page):
     form_fields = ['iat_results']
 
 
-page_sequence = [
-    IAT,
-    EndGame
-]
+page_sequence = [IAT, EndGame]
