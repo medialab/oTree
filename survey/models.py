@@ -610,15 +610,15 @@ social benefit was added?'),
         choices=(
             ('Loss', _(u'Loss')),
             ('Zero income', _(u'Zero income')),
-            ('1 to 6,000', _(u'€1 to €6,000')),
-            ('6,000 to 12,000', _(u'€6,000 to €12,000')),
-            ('12,001 to 24,000', _(u'€12,001 to €24,000')),
-            ('24,001 to 36,000', _(u'€24,001 to €36,000')),
-            ('36,001 to 48,000', _(u'€36,001 to €48,000')),
-            ('48,001 to 60,000', _(u'€48,001 to €60,000')),
-            ('60,001 to 90,000', _(u'€60,001 to €90,000')),
-            ('90,001 to 120,000', _(u'€90,001 to €120,000')),
-            ('120,001 or more', _(u'€120,001 or more')),
+            ('1 to 6,000', _(u'$1 to $6,000')),
+            ('6,000 to 12,000', _(u'$6,000 to $12,000')),
+            ('12,001 to 24,000', _(u'$12,001 to $24,000')),
+            ('24,001 to 36,000', _(u'$24,001 to $36,000')),
+            ('36,001 to 48,000', _(u'$36,001 to $48,000')),
+            ('48,001 to 60,000', _(u'$48,001 to $60,000')),
+            ('60,001 to 90,000', _(u'$60,001 to $90,000')),
+            ('90,001 to 120,000', _(u'$90,001 to $120,000')),
+            ('120,001 or more', _(u'$120,001 or more')),
             ("Don't know", _(u"Don't know")),
             ("I prefer not to answer", _(u"I prefer not to answer"))
         ),
@@ -666,7 +666,7 @@ persons who participated in the same study.'),
     )
 
     _11_earnings_will_be_calculated_in_euro = models.CharField(
-        verbose_name=_(u'My final earnings will be calculated in € \
+        verbose_name=_(u'My final earnings will be calculated in $ \
 according to the rules stated in the description of the study \
 and will be paid to me (or donated if I choose not to keep the \
 at the end of the study).'),
