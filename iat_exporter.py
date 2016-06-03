@@ -67,95 +67,102 @@ with open(file_to_parse, 'r') as f:
     count = 0
 
     for line in f.readlines():
-        print(line)
+        line.replace(',', ', ')
+
         # Skip header line.
         if 'Participant._id_in_session' not in line:
             # First batch of data (meta - before actual IAT test).
             m = line[:line.find('"')]
 
             # Get MTurk ID, code, label, time started.
-            m = m.split(',')
+            m = m.replace(',', ', ').split(', ')
+
             # Process only finished sessions.
             if 'Not visited yet' not in m[7]:
                 mturk_id = m[15]
-                code = m[1].replace('\n', '')
-                label = m[2].replace('\n', '')
-                time_started = m[10].replace('\n', '')
 
+                # Process only MTurk workers.
                 if mturk_id is not None and mturk_id != '':
-                    meta.append([
-                        [
-                            'MTurk ID', 'Code', 'Label', 'Time started',
-                            'Trials order', 'Error percentage'
-                        ],
-                        [
-                            mturk_id, code, label, time_started
-                        ]
+                    code = m[1].replace('\n', '')
+                    label = m[2].replace('\n', '')
+                    time_started = m[10].replace('\n', '')
 
-                    ])
+                    if mturk_id is not None and mturk_id != '':
+                        meta.append([
+                            [
+                                'MTurk ID', 'Code', 'Label', 'Time started',
+                                'Trials order', 'Error percentage'
+                            ],
+                            [
+                                mturk_id, code, label, time_started
+                            ]
 
-                    # Second batch of data (actual IAT results): isolate it.
-                    data = line[line.find('"') + 1:line.rfind('"')]
-                    data = data.replace('u\'', '\'')
+                        ])
 
-                    try:
-                        # Deserialize data as dict.
-                        data = ast.literal_eval(data)
+                        # Second batch of data (actual IAT results).
+                        data = line[line.find('"') + 1:line.rfind('"')]
+                        data = data.replace('u\'', '\'')
 
-                        # Get more metadata: trials order, % of errors.
-                        meta[count][1].append(data['order'])
-                        meta[count][1].append(data['error_percentage'])
+                        try:
+                            # Deserialize data as dict.
+                            data = ast.literal_eval(data)
 
-                        # Process regular trials' results:
-                        trials_results = data['results']
-                        for r in trials_results:
-                            results.append([
-                                [
-                                    'Trial ID', 'Player MTurk ID', 'Code',
-                                    'Label', 'Time started', 'Left category',
-                                    'Right category', 'Stimuli word',
-                                    'Correct position', 'Correct category',
-                                    'Time taken'
-                                ],
-                                [
-                                    remove_html(r['id']),
-                                    mturk_id, code, label, time_started,
-                                    remove_html(r['left']),
-                                    remove_html(r['right']),
-                                    remove_html(r['stimuli']),
-                                    remove_html(r['correctPosition']),
-                                    remove_html(r['correctCategory']),
-                                    r['timing']
-                                ]
-                            ])
+                            # Get more metadata: trials order, % of errors.
+                            meta[count][1].append(data['order'])
+                            meta[count][1].append(data['error_percentage'])
 
-                        # Process regular trials' errors:
-                        trials_results = data['errors']
-                        for r in trials_results:
-                            errors.append([
-                                [
-                                    'Trial ID', 'MTurk ID', 'Code', 'Label',
-                                    'Time started', 'Left category',
-                                    'Right category', 'Stimuli word',
-                                    'Correct position', 'Correct category',
-                                    'Failed by time out', 'Time taken'
-                                ],
-                                [
-                                    remove_html(r['id']),
-                                    mturk_id, code, label, time_started,
-                                    remove_html(r['left']),
-                                    remove_html(r['right']),
-                                    remove_html(r['stimuli']),
-                                    remove_html(r['correctPosition']),
-                                    remove_html(r['correctCategory']),
-                                    r['timedOut'],
-                                    r['timing']
-                                ]
-                            ])
-                    except Exception as e:
-                        print(e)
+                            # Process regular trials' results:
+                            trials_results = data['results']
+                            for r in trials_results:
+                                results.append([
+                                    [
+                                        'Trial ID', 'Player MTurk ID', 'Code',
+                                        'Label', 'Time started',
+                                        'Left category',
+                                        'Right category', 'Stimuli word',
+                                        'Correct position', 'Correct category',
+                                        'Time taken'
+                                    ],
+                                    [
+                                        remove_html(r['id']),
+                                        mturk_id, code, label, time_started,
+                                        remove_html(r['left']),
+                                        remove_html(r['right']),
+                                        remove_html(r['stimuli']),
+                                        remove_html(r['correctPosition']),
+                                        remove_html(r['correctCategory']),
+                                        r['timing']
+                                    ]
+                                ])
 
-                count += 1
+                            # Process regular trials' errors:
+                            trials_results = data['errors']
+                            for r in trials_results:
+                                errors.append([
+                                    [
+                                        'Trial ID', 'MTurk ID', 'Code',
+                                        'Label', 'Time started',
+                                        'Left category', 'Right category',
+                                        'Stimuli word', 'Correct position',
+                                        'Correct category',
+                                        'Failed by time out', 'Time taken'
+                                    ],
+                                    [
+                                        remove_html(r['id']),
+                                        mturk_id, code, label, time_started,
+                                        remove_html(r['left']),
+                                        remove_html(r['right']),
+                                        remove_html(r['stimuli']),
+                                        remove_html(r['correctPosition']),
+                                        remove_html(r['correctCategory']),
+                                        r['timedOut'],
+                                        r['timing']
+                                    ]
+                                ])
+                        except Exception as e:
+                            print(e)
+
+                    count += 1
     f.close()
 
 write_meta_file(meta)
