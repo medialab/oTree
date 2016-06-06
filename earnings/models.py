@@ -8,7 +8,8 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer, Session
 from otree.common import Currency
-from public_goods.models import Constants as Public_goods_constants
+from public_goods.models import Constants as Public_goods_const
+from trust.models import Constants as Trust_const
 
 doc = """
 This application calculates earnings for the Trustlab experiments,
@@ -123,7 +124,9 @@ class Group(BaseGroup):
                     given_by_player_b = getattr(
                         p, 'sent_back_amount_' + str(int(given_by_player_a))
                     )
-                    payoff = base_money + given_by_player_a - given_by_player_b
+                    payoff = base_money + (
+                        given_by_player_a * Trust_const.multiplication_factor
+                    ) - given_by_player_b
                 break
 
         return [payoff, matched_id, with_role]
@@ -167,7 +170,7 @@ class Group(BaseGroup):
                 joint_sum, matched_ids = self.strat_public_goods(p)
                 p_gave = p.contribution
                 payoff = (base_money - p_gave) + (
-                    (joint_sum * Public_goods_constants.efficiency_factor) / 4
+                    (joint_sum * Public_goods_const.efficiency_factor) / 4
                 )
                 break
 
