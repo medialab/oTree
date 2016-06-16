@@ -213,7 +213,7 @@ $(function(window, undefined) {
      */
     function save(type, trial, timing, timedOut) {
       answerStore[type].push(
-        Object.assign({}, trial, {timing: timing, timedOut: timedOut ? true : false}
+        _.assign({}, trial, {timing: timing, timedOut: timedOut ? true : false}
       ));
     }
 
