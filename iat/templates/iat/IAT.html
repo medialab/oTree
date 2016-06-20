@@ -103,11 +103,14 @@
     </main>
 
     <nav class="mobile-nav hide">
-      <button class="btn btn-default btn-left col-xs-4 col-sm-4 col-md-4 col-lg-4">LEFT</button>
-      <button class="btn btn-default btn-right col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4 col-xs-4 col-sm-4 col-md-4 col-lg-4">RIGHT</button>
+      <button class="btn btn-default btn-left col-xs-2 col-sm-2 col-md-2 col-lg-2">LEFT</button>
+      <button class="btn btn-default btn-right col-xs-offset-8 col-sm-offset-8 col-md-offset-8 col-lg-offset-8 col-xs-2 col-sm-2 col-md-2 col-lg-2">RIGHT</button>
     </nav>
 
     <script>
+      $('.btn').on('click touchstart', function (e) {
+        e.preventDefault();
+      });
       if ('ontouchstart' in document.documentElement) {
         $('.mobile-nav').removeClass('hide')
       }
