@@ -21,7 +21,7 @@ lib.properties = {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Calque 1
-	this.label = new cjs.Text("×1.6", "bold 40px 'Gotham Bold'");
+	this.label = new cjs.Text("×", "bold 40px 'Gotham Bold'");
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 49;
@@ -1380,7 +1380,7 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		 Find if canvas in HTML shell page has the following data-attributes:
 		 - `data-estimation-min`
 		 - `data-estimation-max`
-		 - `data-estimation-currency`
+		 - `data-currency`
 		 - `data-multipler`
 		 
 		 Use them as attributes in the animation if found.
@@ -1400,10 +1400,10 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				min = +canvas.dataset.estimationMin || min;
-				max = +canvas.dataset.estimationMax || max;
-				currency = canvas.dataset.estimationCurrency || currency;
-				multiplier = +canvas.dataset.multiplier|| multiplier;
+				min = +canvas.getAttribute('data-estimation-min') || min;
+				max = +canvas.getAttribute('data-estimation-max') || max;
+				currency = canvas.getAttribute('data-currency')|| currency;
+				multiplier = +canvas.getAttribute('data-multiplier') || multiplier;
 			}
 		}
 		

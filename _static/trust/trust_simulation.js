@@ -1225,12 +1225,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				labelA = canvas.dataset.participantsLabelA || labelA;
-				labelB = canvas.dataset.participantsLabelB || labelB;
-				multiplier = canvas.dataset.multiplier || multiplier;
-				amount1 = +canvas.dataset.amount1 || amount1;
-				amount2 = +canvas.dataset.amount2 || amount2;
-				currency = canvas.dataset.currency || currency;
+				labelA = canvas.getAttribute('data-participants-label-a') || labelA;
+				labelB = canvas.getAttribute('data-participants-label-b') || labelB;
+				multiplier = canvas.getAttribute('data-multiplier') || multiplier;
+				amount1 = +canvas.getAttribute('data-amount1') || amount1;
+				amount2 = +canvas.getAttribute('data-amount2') || amount2;
+				currency = canvas.getAttribute('data-currency') || currency;
 			}
 		}
 		
@@ -1255,12 +1255,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 			if (document) {
 				var canvas = document.getElementsByTagName('canvas')[0];
 				if (canvas) {
-					labelA = canvas.dataset.participantsLabelA || labelA;
-					labelB = canvas.dataset.participantsLabelB || labelB;
-					multiplier = canvas.dataset.multiplier || multiplier;
-					amount1 = +canvas.dataset.amount1 || amount1;
-					amount2 = +canvas.dataset.amount2 || amount2;
-					currency = canvas.dataset.currency || currency;
+					labelA = canvas.getAttribute('data-participants-label-a') || labelA;
+					labelB = canvas.getAttribute('data-participants-label-b') || labelB;
+					multiplier = canvas.getAttribute('data-multiplier') || multiplier;
+					amount1 = +canvas.getAttribute('data-amount-1') || amount1;
+					amount2 = +canvas.getAttribute('data-amount-2') || amount2;
+					currency = canvas.getAttribute('data-currency') || currency;
 				}
 			}
 			
@@ -1575,7 +1575,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				}
 			}.bind(this)
 		
-			window.TRUST = window.TRUST || init();
+			var TRUST = init();
+			window.TRUST = TRUST;
 		}
 	}
 	this.frame_84 = function() {
