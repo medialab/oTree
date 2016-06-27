@@ -1,0 +1,43 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+{% load i18n %}
+
+{% block content %}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+  <input type="hidden" id="quota_max" name="max" value=""/>
+  <input type="hidden" id="quota_current" name="current" value=""/>
+  <input type="hidden" name="label" value="{{label}}"/>
+
+  Initializing quota for: {{quotas}} <br/>
+  Label: {{label}}
+
+  <script type="text/javascript">
+    var data = JSON.parse("{{quotas}}".split('&#39;').join('"'));
+    var quota = getQuota(data, '{{label}}');
+    var max =  quota.max;
+    var current =  quota.current;
+
+    $('#quota_max').attr('value', max);
+
+    var ticket = current + 1;
+
+    if (ticket >= max) {
+      alert('Quota full');
+    } else {
+      $('#quota_current').attr('value', ticket)
+    }
+
+    function getQuota (data, label) {
+      var quota;
+      _.every(data, function (o) {
+        if (_.has(o, label)) {
+          quota = o[label]
+          return true
+        }
+      })
+      return quota;
+    }
+  </script>
+
+  <button class="">Next</button>
+{% endblock %}
