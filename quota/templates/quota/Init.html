@@ -9,20 +9,24 @@
   <input type="hidden" name="label" value="{{label}}"/>
 
   Initializing quota for: {{quotas}} <br/>
-  Label: {{label}}
+  Label: {{label}} <br/>
+  Current: {{current}}
 
   <script type="text/javascript">
     var data = JSON.parse("{{quotas}}".split('&#39;').join('"'));
     var quota = getQuota(data, '{{label}}');
-    var max =  quota.max;
-    var current =  quota.current;
+    var max =  +quota.max;
+    var current =  +{{current}};
 
     $('#quota_max').attr('value', max);
 
     var ticket = current + 1;
 
+    console.log('ticket', 'current')
+    console.log(ticket, current)
+
     if (ticket >= max) {
-      alert('Quota full');
+      $('#quota_current').attr('value', 'quota full')
     } else {
       $('#quota_current').attr('value', ticket)
     }
@@ -39,5 +43,5 @@
     }
   </script>
 
-  <button class="">Next</button>
+  <button class="btn btn-primary">Next</button>
 {% endblock %}

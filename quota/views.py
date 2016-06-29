@@ -13,7 +13,8 @@ class Init(Page):
     def vars_for_template(self):
         return {
             'quotas': self.group.get_quotas(),
-            'label': self.participant.label
+            'label': self.participant.label,
+            'current': self.group.current
         }
 
 
