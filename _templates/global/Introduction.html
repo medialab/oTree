@@ -1,7 +1,8 @@
 {% extends "global/Base.html" %}
 {% load otree_tags %}
+{% load i18n %}
 
 {% block content %}
   {% include instructions %}
-{% next_button %}
+  <button class="btn btn-primary pull-right">{% trans "Next" %}</button>
 {% endblock %}
