@@ -1460,7 +1460,12 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 			var giveMoney = function (playerIndex, amount) {
 				players[playerIndex].giveMoney(+amount);
 				self.cart.bubble.alpha = 1;
-				self.cart.bubble.label.text = currency + moneyFromGroup().toString();
+				self.cart.bubble.label.text = currency + moneyFromGroup().toFixed(2).toString();
+			};
+			
+			var multiply = function () {
+				multipliedAmount = moneyFromGroup() * multiplier;
+				self.cart.bubble.label.text = currency + multipliedAmount.toFixed(2).toString();
 			};
 		
 			var send = function () {
@@ -1468,33 +1473,31 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 				
 				setTimeout(function () {
 					self.cart.bubble.alpha = 1;
-					self.cart.bubble.label.text = currency + moneyFromGroup().toString();
+					self.cart.bubble.label.text = currency + moneyFromGroup().toFixed(2).toString();
 				}, 2000);
 				
-				setTimeout(function () {
+				/* setTimeout(function () {
 					var multipliedAmount = moneyFromGroup() * multiplier;
 					self.cart.bubble.label.text = currency + multipliedAmount.toString();
-				}, 4000);
-				
-				setTimeout(function () {
-					p1.receiveMoney(+resultMoney);
-					p2.receiveMoney(+resultMoney);
-					p3.receiveMoney(+resultMoney);
-					p4.receiveMoney(+resultMoney);
-					self.cart.bubble.label.text = currency + '0';
-					
-					setTimeout(function () {
-						self.cart.bubble.alpha = 0;
-					}, 1000);
-				}, 7000);
+				}, 4000);*/
 				
 				
 				self.gotoAndPlay('send');
 			};
 			
+			var receive = function () {
+				p1.receiveMoney(+resultMoney);
+				p2.receiveMoney(+resultMoney);
+				p3.receiveMoney(+resultMoney);
+				p4.receiveMoney(+resultMoney);
+				self.cart.bubble.label.text = currency + '0';
+			}
+			
 			return {
 				giveMoney: giveMoney,
-				send: send
+				send: send,
+				multiply: multiply,
+				receive: receive
 			}
 		})();
 	}
@@ -1504,6 +1507,7 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 	this.frame_146 = function() {
 		this.stop();
 		this.gotoAndPlay('multiply');
+		window.PG.multiply();
 	}
 	this.frame_186 = function() {
 		this.stop();
@@ -1513,12 +1517,15 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		this.stop();
 		this.gotoAndPlay('results');
 	}
+	this.frame_257 = function() {
+		window.PG.receive();
+	}
 	this.frame_499 = function() {
 		this.gotoAndPlay('start');
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(35).call(this.frame_35).wait(19).call(this.frame_54).wait(92).call(this.frame_146).wait(40).call(this.frame_186).wait(50).call(this.frame_236).wait(263).call(this.frame_499).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(35).call(this.frame_35).wait(19).call(this.frame_54).wait(92).call(this.frame_146).wait(40).call(this.frame_186).wait(50).call(this.frame_236).wait(21).call(this.frame_257).wait(242).call(this.frame_499).wait(1));
 
 	// bubble multiplier
 	this.bubbleMultiplier = new lib.multiplier();
