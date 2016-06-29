@@ -82,29 +82,29 @@ $(function() { init() });
 <div class="container">
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
-          class="col-sm-6 col-md-6 col-lg-6"
+          class="col-sm-8 col-md-8 col-lg-6"
           data-estimation-min="0"
           data-estimation-max="10"
           data-estimation-currency="{% trans '$'%}"
           data-multiplier="{{Constants.efficiency_factor}}">
   </canvas>
   <div class="form commands">
-    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant A" %}</label>
       <input class="form-control" type="number" id="amountA" min="0" max="10">
     </div>
 
-    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant B" %}</label>
       <input class="form-control" type="number" id="amountB" min="0" max="10">
     </div>
 
-    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant C" %}</label>
       <input class="form-control" type="number" id="amountC" min="0" max="10">
     </div>
 
-    <div class="col-sm-6 col-md-6 col-lg-6 form-group">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant D" %}</label>
       <input class="form-control" type="number" id="amountD" min="0" max="10">
     </div>

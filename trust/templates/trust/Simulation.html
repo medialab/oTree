@@ -131,13 +131,13 @@ $(function() { init() });
 <div class="container">
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
-          class="col-sm-6 col-md-6 col-lg-6"
+          class="col-sm-8 col-md-8 col-lg-6"
           data-currency="{% trans '$'%}"
           data-participants-label-a="Participant A"
           data-participants-label-b="Participant B">
   </canvas>
   <div class="form commands hide">
-    <div class="col-sm-3 col-md-3 col-lg-3 form-group">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant A" %}</label>
       <input class="form-control" type="number" id="amountA" min="0">
       <a class="btn btn-default" id="sendA">{% trans "Send" %}</a>
