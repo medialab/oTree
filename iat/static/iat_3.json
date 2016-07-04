@@ -99,7 +99,7 @@
       "message": {
         "en-us": {
           "words": {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Government"},
-          "text": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the I key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
+          "text": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
         }
       },
       "name": "Trustworthy / Untrustworthy or Government",
