@@ -70,27 +70,27 @@ class ContributeBack(Page):
         """Return variables available for template."""
         return {
             'contribution_back_0_label': _(u'If on average, each of the other \
-group members contributes $0:'),
+group members contributes 0 euro:'),
             'contribution_back_1_label': _(u'If on average, each of the other \
-group members contributes $1:'),
+group members contributes 1 euro:'),
             'contribution_back_2_label': _(u'If on average, each of the other \
-group members contributes $2:'),
+group members contributes 2 euros:'),
             'contribution_back_3_label': _(u'If on average, each of the other \
-group members contributes $3:'),
+group members contributes 3 euros:'),
             'contribution_back_4_label': _(u'If on average, each of the other \
-group members contributes $4:'),
+group members contributes 4 euros:'),
             'contribution_back_5_label': _(u'If on average, each of the other \
-group members contributes $5:'),
+group members contributes 5 euros:'),
             'contribution_back_6_label': _(u'If on average, each of the other \
-group members contributes $6:'),
+group members contributes 6 euros:'),
             'contribution_back_7_label': _(u'If on average, each of the other \
-group members contributes $7:'),
+group members contributes 7 euros:'),
             'contribution_back_8_label': _(u'If on average, each of the other \
-group members contributes $8:'),
+group members contributes 8 euros:'),
             'contribution_back_9_label': _(u'If on average, each of the other \
-group members contributes $9:'),
+group members contributes 9 euros:'),
             'contribution_back_10_label': _(u'If on average, each of the other \
-group members contributes $10:'),
+group members contributes 10 euros:'),
         }
 
 
