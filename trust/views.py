@@ -87,37 +87,37 @@ class SendBack(Page):
         """Return variables for use in template."""
         return {
             'sent_back_amount_0_label': _(
-                u'If Participant A sends you $0 (you receive $0×3 = $0)'
+                u'If Participant A sends you $0 (you receive 0€ × 3 = 0€)'
             ),
             'sent_back_amount_1_label': _(
-                u'If Participant A sends you $1 (you receive $1×3 = $3)'
+                u'If Participant A sends you $1 (you receive 1€ × 3 = 3€)'
             ),
             'sent_back_amount_2_label': _(
-                u'If Participant A sends you $2 (you receive $2×3 = $6)'
+                u'If Participant A sends you $2 (you receive 2€ × 3 = 6€)'
             ),
             'sent_back_amount_3_label': _(
-                u'If Participant A sends you $3 (you receive $3×3 = $9)'
+                u'If Participant A sends you $3 (you receive 3€ × 3 = 9€)'
             ),
             'sent_back_amount_4_label': _(
-                u'If Participant A sends you $4 (you receive $4×3 = $12)'
+                u'If Participant A sends you $4 (you receive 4€ × 3 = 12€)'
             ),
             'sent_back_amount_5_label': _(
-                u'If Participant A sends you $5 (you receive $5×3 = $15)'
+                u'If Participant A sends you $5 (you receive 5€ × 3 = 15€)'
             ),
             'sent_back_amount_6_label': _(
-                u'If Participant A sends you $6 (you receive $6×3 = $18)'
+                u'If Participant A sends you $6 (you receive 6€ × 3 = 18€)'
             ),
             'sent_back_amount_7_label': _(
-                u'If Participant A sends you $7 (you receive $7×3 = $21)'
+                u'If Participant A sends you $7 (you receive 7€ × 3 = 21€)'
             ),
             'sent_back_amount_8_label': _(
-                u'If Participant A sends you $8 (you receive $8×3 = $24)'
+                u'If Participant A sends you $8 (you receive 8€ × 3 = 24€)'
             ),
             'sent_back_amount_9_label': _(
-                u'If Participant A sends you $9 (you receive $9×3 = $27)'
+                u'If Participant A sends you $9 (you receive 9€ × 3 = 27€)'
             ),
             'sent_back_amount_10_label': _(
-                u'If Participant A sends you $10 (you receive $10×3 = $30)'
+                u'If Participant A sends you $10 (you receive 10€ ×3 = 30€)'
             ),
         }
 
