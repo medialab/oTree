@@ -5,7 +5,7 @@
 {% block content %}
 <h1 style="color:#008068">{% trans "Task Two: Test Simulation" %}</h1>
 <hr/>
-<p>{% trans "This is not the real task yet, but a simulation to help you better understand the rules. You can use the test screen below to play with the different choices of the four participants." %}</p>
+<p>{% trans "This is not the real task yet, but a simulation to help you understand the rules better. You can use the test screen below to play with the different choices of the four participants." %}</p>
 <p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
 
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
@@ -85,7 +85,7 @@ $(function() { init() });
           class="col-sm-8 col-md-8 col-lg-6"
           data-estimation-min="0"
           data-estimation-max="10"
-          data-estimation-currency="{% trans '$'%}"
+          data-estimation-currency="{% trans '€' %}"
           data-multiplier="{{Constants.efficiency_factor}}">
   </canvas>
   <div class="form commands">
