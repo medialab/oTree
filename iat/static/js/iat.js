@@ -129,6 +129,75 @@ $(function(window, undefined) {
     }
 
     /**
+     * Shuffle an array using de-facto unbiased Fisher-Yates (aka Knuth) dedicated algorithm.
+     * @see https://bost.ocks.org/mike/shuffle/
+     *
+     * @param  {Array} arr The array to shuffle.
+     * @return {Array} A new array based on the first one, with shuffled values.
+     */
+    function shuffleArray(arr) {
+      var currentIndex = arr.length, temporaryValue, randomIndex;
+
+      // While there remain elements to shuffle...
+      while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = arr[currentIndex];
+        arr[currentIndex] = arr[randomIndex];
+        arr[randomIndex] = temporaryValue;
+      }
+
+      return arr;
+    }
+
+    /**
+     * Given an array of even numbers of letters (each representing a trial set),
+     * shuffle and return a new array of them.
+     *
+     * @param  {Array} order Array of letters.
+     * @return {Array} Array of shuffled letters.
+     */
+    function shuffleTrialPairs(order) {
+      var reordered = [];
+
+      order.map(function (letter, index, array) {
+        reordered = reordered.concat(shuffleArray(array.splice(0, 2)));
+        if (array.length === 2) reordered = reordered.concat(shuffleArray(array));
+      });
+
+      return reordered;
+    }
+
+    /**
+     * Randomize set of trials.
+     *
+     * @param  {order} order String of letters where each letter is attached to a set of trials.
+     * @return {Array} Array of letters, randomized from the first order.
+     */
+    function randomizeTrialsSets(order) {
+      var reordered = [],
+          order = order.split('');
+
+      // First round is practice round. Leave it as is.
+      if (order[0] === 'A') reordered.push(order.shift());
+
+      // If remaining letters form an even set, we can simply randomize each pairs.
+      // If it's an odd pair, kick out the tail round, shuffle, then add it back.
+      if (order.length % 2 === 0) {
+        reordered = reordered.concat(shuffleTrialPairs(order));
+      } else {
+        var tail = order.pop();
+        reordered = reordered.concat(shuffleTrialPairs(order).push(tail));
+      }
+
+      return reordered;
+    }
+
+    /**
      * Prepare the processed, usable trials.
      *
      * @param  {Object} data  Raw JSON data.
@@ -140,8 +209,13 @@ $(function(window, undefined) {
       var resultTrials = [],
           id = 0;
 
+      // Randomize orders of set of trials.
+      order = randomizeTrialsSets(order);
+
+      console.log('order', order)
+
       // Arrange the trials based on given order.
-      order.split('').forEach(function(character) {
+      order.forEach(function(character) {
         // Queue in pause messages, if any.
         if (data.trials[character].hasOwnProperty('message')) {
           resultTrials.push({message: data.trials[character].message});
