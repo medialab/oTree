@@ -5,7 +5,7 @@
 {% block content %}
 <h1 style="color:#357EBD">{% trans "Task One: Test Simulation" %}</h1>
 <hr/>
-<p>{% trans "This is not the real task yet, but a simulation to help you better understand the rules." %}
+<p>{% trans "This is not the real task yet, but a simulation to help you understand the rules better." %}
 <p>{% trans "You can use the test screen below to play with the different choices of the two participants." %}</p>
 <p>{% trans "Between each test, click the “reset to zero” button below to reset the calculator." %}</p>
 
@@ -132,7 +132,9 @@ $(function() { init() });
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
           class="col-sm-8 col-md-8 col-lg-6"
-          data-currency="{% trans '$'%}"
+          data-currency="{% trans '€' %}"
+          data-amount1="10"
+          data-amount1="10"
           data-participants-label-a="Participant A"
           data-participants-label-b="Participant B">
   </canvas>
