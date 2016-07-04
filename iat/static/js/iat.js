@@ -209,19 +209,15 @@ $(function(window, undefined) {
       var resultTrials = [],
           id = 0;
 
-      // Randomize orders of set of trials.
-      order = randomizeTrialsSets(order);
-
-      console.log('order', order)
-
-      // Arrange the trials based on given order.
-      order.forEach(function(character) {
+      // Randomize orders of set of trials,
+      // then arrange the trials based on given order.
+      randomizeTrialsSets(order).forEach(function(character) {
         // Queue in pause messages, if any.
         if (data.trials[character].hasOwnProperty('message')) {
           resultTrials.push({message: data.trials[character].message});
         }
 
-        data.trials[character].displayed.forEach(function(displayed) {
+        shuffleArray(data.trials[character].displayed).forEach(function(displayed) {
           resultTrials.push({
             id: id,
             correctCategory: capitalize(displayed[displayed.correct]),
