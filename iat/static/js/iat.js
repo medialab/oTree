@@ -165,9 +165,11 @@ $(function(window, undefined) {
       var reordered = [];
 
       order.map(function (letter, index, array) {
-        reordered = reordered.concat(shuffleArray(array.splice(0, 2)));
-        if (array.length === 2) reordered = reordered.concat(shuffleArray(array));
+        reordered.push(shuffleArray(array.splice(0, 2)));
+        if (array.length === 2) reordered.push(shuffleArray(array));
       });
+
+      reordered = [].concat.apply([], shuffleArray(reordered));
 
       return reordered;
     }
@@ -193,6 +195,8 @@ $(function(window, undefined) {
         var tail = order.pop();
         reordered = reordered.concat(shuffleTrialPairs(order).push(tail));
       }
+
+      console.log(reordered)
 
       return reordered;
     }
