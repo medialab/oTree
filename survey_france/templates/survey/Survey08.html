@@ -1,0 +1,20 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+
+<style>
+  label {
+    font-weight: normal;
+  }
+
+  .control-label {font-weight: bold}
+</style>
+  <br/><br/><br/><br/><br/>
+  <p>
+      {% formfield player._08_highest_level_of_education_that_you_have_completed %}
+      {% formfield player._08_which_of_these_best_describes_your_situation %}
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}
