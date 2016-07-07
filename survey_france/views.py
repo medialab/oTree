@@ -23,9 +23,18 @@ class Survey02(Page):
 
     form_model = models.Player
     form_fields = [
-        '_02_people_are_only_looking_out_for_themselves',
-        '_02_people_would_try_to_take_advantage_of_you',
-        '_02_the_following_action_can_always_be_justified'
+        '_02_treats_you_unfairly',
+        '_02_treats_others_unfairly',
+        '_02_give_to_good_causes'
+    ]
+
+
+class Survey02A(Page):
+    """Page 2A of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_02A_altruism'
     ]
 
 
@@ -53,6 +62,42 @@ class Survey04(Page):
     ]
 
 
+class Survey04A(Page):
+    """Page 4 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_04A_try_to_help_each_other',
+        '_04A_try_to_take_advantage_of_you',
+        '_04A_can_be_justified'
+    ]
+
+
+class Survey04B(Page):
+    """Page 4 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_04B_your_family',
+        '_04B_your_neighbourhood',
+        '_04B_personally',
+        '_04B_meet_for_the_first_time',
+        '_04B_another_religion',
+        '_04B_another_nationality',
+    ]
+
+
+class Survey04C(Page):
+    """Page 4 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_04C_wallet',
+        '_04C_you_vote_in_the_last_national_election',
+        '_04C_good_at_math',
+    ]
+
+
 class Survey05(Page):
     """Page 5 of survey."""
 
@@ -60,7 +105,9 @@ class Survey05(Page):
     form_fields = [
         '_05_your_government',
         '_05_the_police',
-        '_05_the_media'
+        '_05_the_media',
+        '_05_the_judicial_system',
+        '_05_financial_institutions'
     ]
 
 
@@ -84,9 +131,12 @@ class Survey07(Page):
     form_fields = [
         '_07_what_is_your_date_of_birth',
         '_07_what_is_your_gender',
-        '_07_all_the_people_who_live_in_the_same_household_as_you',
+        '_07_all_the_people_who_live_in_the_same_household',
+        '_07_how_many_people_adults',
+        '_07_how_many_people_children',
         '_07_which_country_were_you_born',
-        '_07_what_year_did_you_arrive_in_France'
+        '_07_what_year_did_you_arrive_in_country',
+        '_07_do_you_live_in'
     ]
 
 
@@ -96,7 +146,6 @@ class Survey08(Page):
     form_model = models.Player
     form_fields = [
         '_08_highest_level_of_education_that_you_have_completed',
-        '_08_which_of_these_best_describes_your_situation',
     ]
 
 
@@ -105,9 +154,9 @@ class Survey09(Page):
 
     form_model = models.Player
     form_fields = [
+        '_09_which_of_these_best_describes_your_situation',
         '_09_do_you_work_in_the',
-        '_09_would_you_say_that_most_people_can_be_trusted',
-        '_09_got_income_in_the_last_12_months_ending_today'
+        '_09_people_only_have_the_best_intentions'
     ]
 
 
@@ -153,8 +202,12 @@ class EndGame(Page):
 page_sequence = [
     Survey01,
     Survey02,
+    Survey02A,
     Survey03,
     Survey04,
+    Survey04A,
+    Survey04B,
+    Survey04C,
     Survey05,
     Survey06,
     Survey07,

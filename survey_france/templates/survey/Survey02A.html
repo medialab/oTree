@@ -3,13 +3,14 @@
 {% load otree_tags %}
 
 {% block content %}
-<style>
+  <style>
   li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
+    font-size: 13px;
   }
 
-  li:nth-child(3) {
+  li:nth-child(12) {
     display: block;
   }
 
@@ -23,9 +24,8 @@
   }
   </style>
   <br/><br/><br/><br/><br/>
-  <p><strong>Please think about what you would do in the following situation:</strong></p>
   <p>
-      {% formfield player._04_thank_you_gift %}
+      {% formfield player._02A_altruism %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 {% endblock %}

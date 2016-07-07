@@ -20,45 +20,48 @@
       {% formfield player._07_what_is_your_gender %}
 
       <div class="form-group" required>
-        <label class="control-label" for="id__07_all_the_people_who_live_in_the_same_household_as_you">
+        <label class="control-label" for="id__07_all_the_people_who_live_in_the_same_household">
           {% trans "Click on all options below to show all the people who live in the same household as you. <br/>You can choose as many as you need." %}
         </label>
         <div class="controls">
-          <input required="required" type="hidden" id="id__07_all_the_people_who_live_in_the_same_household_as_you" name="_07_all_the_people_who_live_in_the_same_household_as_you">
+          <input required="required" type="hidden" id="id__07_all_the_people_who_live_in_the_same_household" name="_07_all_the_people_who_live_in_the_same_household">
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My legal husband or wife">{% trans "My legal husband or wife" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My legal husband or wife">{% trans "My legal husband or wife" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My civil union partner">{% trans "My civil union partner" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My civil union partner">{% trans "My civil union partner" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My de-facto partner, boyfriend or girlfriend">{% trans "My de-facto partner, boyfriend or girlfriend" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My de-facto partner, boyfriend or girlfriend">{% trans "My de-facto partner, boyfriend or girlfriend" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My mother and/or father">{% trans "My mother and/or father" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My mother and/or father">{% trans "My mother and/or father" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My children">{% trans "My children" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My children">{% trans "My children" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My brothers and/or sisters">{% trans "My brothers and/or sisters" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My brothers and/or sisters">{% trans "My brothers and/or sisters" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="My flatmates">{% trans "My flatmates" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="My flatmates">{% trans "My flatmates" %}</label>
           </div>
           <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="Don't know">{% trans "Don't know" %}</label>
-          </div>
-          <div class="checkbox">
-            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household_as_you" value="I don't want to answer">{% trans "I don't want to answer" %}</label>
+            <label><input type="checkbox" name="_07_all_the_people_who_live_in_the_same_household" value="Alone">{% trans "Alone" %}</label>
           </div>
         </div>
       </div>
 
       <hr>
+      {% formfield player._07_how_many_people_adults %} adults (18 years or older)
+      <hr>
+      {% formfield player._07_how_many_people_children %} children (younger than 18 years)
+      <hr>
       {% formfield player._07_which_country_were_you_born %}
       <hr>
-      {% formfield player._07_what_year_did_you_arrive_in_France %}
+      {% formfield player._07_what_year_did_you_arrive_in_country %}
+      <hr>
+      {% formfield player._07_do_you_live_in %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 
@@ -68,7 +71,7 @@
         e.preventDefault();
 
         var selectMultipleValue = '',
-            $selections = $('input[type="checkbox"][name="_07_all_the_people_who_live_in_the_same_household_as_you"]:checked');
+            $selections = $('input[type="checkbox"][name="_07_all_the_people_who_live_in_the_same_household"]:checked');
 
         $selections.each(function (i, elm) {
           selectMultipleValue += $(elm).val();
@@ -78,7 +81,7 @@
         });
 
         if (selectMultipleValue !== '') {
-          $('#id__07_all_the_people_who_live_in_the_same_household_as_you').val(selectMultipleValue);
+          $('#id__07_all_the_people_who_live_in_the_same_household').val(selectMultipleValue);
           $('form').submit();
         }
       });

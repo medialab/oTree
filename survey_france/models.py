@@ -103,11 +103,145 @@ who is fully prepared to take risks or do you try to avoid taking risks?"),
         initial=None
     )
 
-    _02_people_are_only_looking_out_for_themselves = models.CharField(
-        verbose_name=_(u"Would you say that most of the time people are only \
-looking out for themselves or that they mostly try to help each other?"),
+    _02_treats_you_unfairly = models.CharField(
+        verbose_name=_(u'How willing are you to someone who treats you \
+unfairly, even if there may be costs for you?'),
         choices=(
-            ('0', _(u"0 - People are only looking out for themselves")),
+            ('0', _(u"0 - Completely unwilling to do so")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Very willing to do so')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _02_treats_others_unfairly = models.CharField(
+        verbose_name=_(u'How willing are you to punish someone who treats \
+others unfairly, even if there may be costs for you?'),
+        choices=(
+            ('0', _(u"0 - Completely unwilling to do so")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Very willing to do so')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _02_give_to_good_causes = models.CharField(
+        verbose_name=_(u'How willing are you to give to good causes without \
+expecting anything in return? '),
+        choices=(
+            ('0', _(u"0 - Completely unwilling to do so")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Very willing to do so')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _02A_altruism = models.CurrencyField(
+        verbose_name=_(u'Imagine the following situation: you won 1000 euros \
+in a lottery. Considering your current situation, how much would you donate \
+to a good cause?'),
+        initial=0,
+        choices=range(0, 1000)
+    )
+
+    _03_does_me_a_favor = models.CharField(
+        verbose_name=_(u"When someone does me a favour I am willing to return it."),
+        choices=(
+            ('0', _(u"0 - Does not describe me at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Describes me perfectly')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _03_treated_injustly = models.CharField(
+        verbose_name=_(u"If I am treated very unjustly, I will take revenge \
+    at the first occasion, even if there is a cost to do so."),
+        choices=(
+            ('0', _(u"0 - Does not describe me at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Describes me perfectly')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _04_thank_you_gift = models.CharField(
+        verbose_name=_(u"You are in an area you are not familiar with, and \
+    you realize that you lost your way. You ask a stranger for directions. \
+    The stranger offers to take you to your destination. Helping you costs \
+    the stranger about 20 Euro in total. However, the stranger says he or \
+    she does not want any money from you. You have 6 presents with you. \
+    The cheapest present costs 5 euros, the most expensive one costs 30 euros.\
+     Do you give one of the presents to the stranger as a “thank-you”-gift? \
+    If so, which present do you give to the stranger?"),
+        choices=(
+            ('no present', _(u'no present')),
+            ('the present worth 5 euros', _(u'the present worth 5 euros')),
+            ('the present worth 10 euros', _(u'the present worth 10 euros')),
+            ('the present worth 15 euros', _(u'the present worth 15 euros')),
+            ('the present worth 20 euros', _(u'the present worth 20 euros')),
+            ('the present worth 25 euros', _(u'the present worth 25 euros')),
+            ('the present worth 30 euros', _(u'the present worth 30 euros')),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _04A_try_to_help_each_other = models.CharField(
+        verbose_name=_(u"Would you say that most of the time people are only \
+    looking out for themselves or that they mostly try to help each other?"),
+        choices=(
+            ('0', _(u"0 - People are only looking out for themselves ")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -124,9 +258,9 @@ looking out for themselves or that they mostly try to help each other?"),
         initial=None
     )
 
-    _02_people_would_try_to_take_advantage_of_you = models.CharField(
+    _04A_try_to_take_advantage_of_you = models.CharField(
         verbose_name=_(u"Do you think most people would try to take advantage \
-of you if they got a chance, or would they try to be fair?"),
+    of you if they got a chance, or would they try to be fair?"),
         choices=(
             ('0', _(u"0 - Most people would try to take advantage of me")),
             ('1', '1'),
@@ -145,11 +279,12 @@ of you if they got a chance, or would they try to be fair?"),
         initial=None
     )
 
-    _02_the_following_action_can_always_be_justified = models.CharField(
-        verbose_name=_(u"Receiving social allowances to which you are not \
-entitled."),
+    _04A_can_be_justified = models.CharField(
+        verbose_name=_(u"Can you tell us whether you think the following \
+    action can always be justified, never be justified, or something in \
+    between:"),
         choices=(
-            ('0', _(u"0 - This action is never justifiable")),
+            ('0', _(u"0 - This action is never wrong")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -159,35 +294,15 @@ entitled."),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - This action is always justifiable')),
+            ('10', _(u'10 - This action is always wrong')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
-    _03_your_family = models.CharField(
-        verbose_name=_(u"Your family."),
-        choices=(
-            ('0', _(u"0 - I don't trust them at all")),
-            ('1', '1'),
-            ('2', '2'),
-            ('3', '3'),
-            ('4', '4'),
-            ('5', '5'),
-            ('6', '6'),
-            ('7', '7'),
-            ('8', '8'),
-            ('9', '9'),
-            ('10', _(u'10 - I fully trust them')),
-            ("Don't know", _(u"Don't know")),
-        ),
-        widget=widgets.RadioSelect(),
-        initial=None
-    )
-
-    _03_people_in_your_neighborhood = models.CharField(
-        verbose_name=_(u"People in your neighborhood."),
+    _04B_your_family = models.CharField(
+        verbose_name=_(u"Your family:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -206,8 +321,8 @@ entitled."),
         initial=None
     )
 
-    _03_people_you_know_personally = models.CharField(
-        verbose_name=_(u"People you know personally."),
+    _04B_your_neighbourhood = models.CharField(
+        verbose_name=_(u"People in your neighbourhood:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -226,8 +341,8 @@ entitled."),
         initial=None
     )
 
-    _03_people_you_meet_for_the_first_time = models.CharField(
-        verbose_name=_(u"People you meet for the first time."),
+    _04B_personally = models.CharField(
+        verbose_name=_(u"People you know personally:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -246,8 +361,8 @@ entitled."),
         initial=None
     )
 
-    _03_people_of_another_religion = models.CharField(
-        verbose_name=_(u"People of another religion."),
+    _04B_meet_for_the_first_time = models.CharField(
+        verbose_name=_(u"People you meet for the first time:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -266,8 +381,8 @@ entitled."),
         initial=None
     )
 
-    _03_people_of_another_nationality = models.CharField(
-        verbose_name=_(u"People of another nationality."),
+    _04B_another_religion = models.CharField(
+        verbose_name=_(u"People of another religion:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -286,10 +401,30 @@ entitled."),
         initial=None
     )
 
-    _04_you_lost_a_wallet_or_a_purse = models.CharField(
-        verbose_name=_(u"If you lost a wallet or a purse that contained items of \
-great value to you, and it was found by a stranger, do you think it would be \
-returned with its contents, or not?"),
+    _04B_another_nationality = models.CharField(
+        verbose_name=_(u"People of another nationality:"),
+        choices=(
+            ('0', _(u"0 - I don't trust them at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - I fully trust them')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _04C_wallet = models.CharField(
+        verbose_name=_(u"If you lost a wallet or a purse that contained items \
+of great value to you, and it was found by a stranger, do you think it would \
+be returned with its contents, or not?"),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
@@ -299,21 +434,40 @@ returned with its contents, or not?"),
         initial=None
     )
 
-    _04_you_vote_in_the_last_national_election = models.CharField(
+    _04C_you_vote_in_the_last_national_election = models.CharField(
         verbose_name=_(u"Did you vote in the last national \
 election?"),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
             ("I could not vote", _(u"I could not vote")),
-            ("Don't know", _(u"Don't know"))
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _04C_good_at_math = models.CharField(
+        verbose_name=_(u"I am good at math."),
+        choices=(
+            ('0', _(u"0 - Does not describe me at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Describes me perfectly')),
+            ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect(),
         initial=None
     )
 
     _05_your_government = models.CharField(
-        verbose_name=_(u"Your government."),
+        verbose_name=_(u"Your government:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -332,8 +486,28 @@ election?"),
         initial=None
     )
 
-    _05_the_police = models.CharField(
-        verbose_name=_(u"The judicial system."),
+    _05_the_parliament = models.CharField(
+        verbose_name=_(u"The parliament:"),
+        choices=(
+            ('0', _(u"0 - I don't trust them at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - I fully trust them')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _05_the_judicial_system = models.CharField(
+        verbose_name=_(u"The judicial system:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -353,7 +527,7 @@ election?"),
     )
 
     _05_the_media = models.CharField(
-        verbose_name=_(u"The media."),
+        verbose_name=_(u"The media:"),
         choices=(
             ('0', _(u"0 - I don't trust them at all")),
             ('1', '1'),
@@ -372,7 +546,27 @@ election?"),
         initial=None
     )
 
-    _06_public_institutions_deliver_services_in_the_best_way = models.CharField(
+    _05_financial_institutions = models.CharField(
+        verbose_name=_(u"Financial Institutions (e.g. banks):"),
+        choices=(
+            ('0', _(u"0 - I don't trust them at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - I fully trust them')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
+    _06_public_institutions_deliver_services = models.CharField(
         verbose_name=_(u'Public institutions deliver public services in the \
 best possible way.'),
         choices=(
@@ -487,32 +681,57 @@ regardless of their gender, race, age or economic condition equally.'),
         widget=widgets.RadioSelect()
     )
 
-    _07_all_the_people_who_live_in_the_same_household_as_you = models.CharField(
-#         initial=None,
-#         choices=[
-#             _(u'My legal husband or wife'),
-#             _(u'My civil union partner'),
-#             _(u'My de-facto partner, boyfriend or girlfriend'),
-#             _(u'My mother and/or father'),
-#             _(u'My children'),
-#             _(u'My brothers and/or sisters'),
-#             _(u'My flatmates'),
-#             _(u'Other')
-#         ],
-#         verbose_name=_(u'Mark as many spaces as you need to show all \
-# the people who live in the same household as you'),
+    _07_all_the_people_who_live_in_the_same_household = models.CharField(
         widget=django_widgets.SelectMultiple()
+    )
+
+    _07_how_many_people_adults = models.CharField(
+        verbose_name=_(u'Public institutions are transparent.'),
+        choices=(
+            ('0', '0'),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5')
+        )
+    )
+
+    _07_how_many_people_children = models.CharField(
+        verbose_name=_(u'Public institutions are transparent.'),
+        choices=(
+            ('0', '0'),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5')
+        )
     )
 
     _07_which_country_were_you_born = CountryField(
         verbose_name=_(u'In which country were you born?')
     )
 
-    _07_what_year_did_you_arrive_in_France = models.CharField(
-        verbose_name=_(u'In what year did you arrive in the US?'),
+    _07_what_year_did_you_arrive_in_country = models.CharField(
+        verbose_name=_(u'In what year did you arrive in France?'),
         choices=[_(u'I was born here')] + [
             str(x) for x in range(date.today().year, 1940, -1)
         ],
+        initial=None
+    )
+
+    _07_do_you_live_in = models.CharField(
+        verbose_name=_(u'Do you live in a:'),
+        choices=(
+            ('Large Metropolitan area', _(u"Large Metropolitan area (More than 1,5 million inhabitants)")),
+            ('Medium-sized metropolitan area', _(u"Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)")),
+            ('Small metropolitan area', _(u"  Small metropolitan area (200.000 to 500.000 inhabitants)")),
+            ('Town', _(u"Town (50.000 to 200.000 inhabitants)")),
+            ('Village', _(u"Village (Less than 50.000 inhabitants)")),
+            ('Rural area', _(u"Rural area")),
+        ),
+        widget=widgets.RadioSelect(),
         initial=None
     )
 
@@ -520,42 +739,27 @@ regardless of their gender, race, age or economic condition equally.'),
         verbose_name=_(u'What is the highest level of education that \
 you have completed?'),
         choices=(
-            ('Less than high school', _(u'Less than high school')),
-            ('High school', _(u'High school')),
-            ('Some college', _(u'Some college')),
-            ('Diploma, trades certificate or \
-other post school qualification other than university', _(u'Diploma, trades \
-certificate or other post school qualification other than university')),
-            ('Undergraduate degree (e.g. BA, BS)', _(u'Undergraduate \
-degree (e.g. BA, BS)')),
-            ('Post-graduate degree', _(u'Post-graduate degree')),
-            ("Don't know", _(u"Don't know")),
-            ("I prefer not to answer", _(u"I prefer not to answer")),
+            ('Aucun diplôme', _(u'Aucun diplôme')),
+            ('Brevet des collèges', _(u'Brevet des collèges')),
+            ('CAP BEP ou équivalent', _(u'CAP BEP ou équivalent')),
+            ('Baccalauréat', _(u'Baccalauréat')),
+            ('Diplômé du supérieur court (BTS, DUT, etc.)', _(u'Diplômé du \
+supérieur court (BTS, DUT, etc.)')),
+            ('Licence (Bac + 3)', _(u'Licence (Bac + 3)')),
+            ("Master (Bac + 5) ou Doctorat", _(u"Master (Bac + 5) ou Doctorat")),
         ),
         widget=widgets.RadioSelect()
     )
 
-    _08_which_of_these_best_describes_your_situation = models.CharField(
+    _09_which_of_these_best_describes_your_situation = models.CharField(
         verbose_name=_(u'Which of these best describes your situation?'),
         choices=(
             ('At work as an employee', _(u'At work as an employee')),
             ('Employer/self-employed', _(u'Employer/self-employed')),
-            ('Employed, on child-care leave or other leave', _(u'Employed, on \
-child-care leave or other leave')),
-            ('At work as relative assisting on family farm or business', _(u'At \
-work as relative assisting on family farm or business')),
-            ('Unemployed less than 12 months', _(u'Unemployed less than 12 \
-months')),
-            ('Unemployed 12 months or more',
-                _(u'Unemployed 12 months or more')),
-            ('Unable to work due to long-term illness or disability', _(u'Unable \
-to work due to long-term illness or disability')),
-            ('Retired', _(u'Retired')),
-            ('Full-time homemaker', _(u'Full-time homemaker')),
-            ('In education (at school, university, etc) / student', _(u'In \
-education (at school, university, etc) / student')),
-            ('Other', _(u'Other')),
-            ('I prefer not to answer', _(u'I prefer not to answer')),
+            ('Unemployed', _(u'Unemployed')),
+            ('Outside the labour force (e.g. homemaker, student, retired, \
+unable to work)', _(u'Outside the labour force (e.g. homemaker, student, \
+retired, unable to work)')),
         ),
         widget=widgets.RadioSelect()
     )
@@ -576,32 +780,27 @@ regional or local government administration')),
         widget=widgets.RadioSelect()
     )
 
-    _09_would_you_say_that_most_people_can_be_trusted = models.CharField(
-        verbose_name=_(u'Generally speaking, would you say that most people \
-can be trusted or that you need to be very careful in dealing with people?'),
+    _09_people_only_have_the_best_intentions = models.CharField(
+        verbose_name=_(u'As long as I am not convinced otherwise, I assume \
+that people have only the best intentions.'),
         choices=(
-            ('Most people can be trusted', _(u'Most people can be trusted')),
-            ('Need to be vary careful', _(u'Need to be vary careful')),
-            ("Don't know", _(u"Don't know"))
+            ('0', _(u"0 - Does not describe me at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Describes me perfectly')),
+            ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect()
     )
 
-    _09_got_income_in_the_last_12_months_ending_today = models.CharField(
-#         verbose_name=_(u'What are all the ways that you got income in the \
-# last 12 months ending today? You can choose as many as you need. Please do \
-# not count loans as income.'),
-        # choices=[_(u'Wages, salary, commissions, bonuses etc paid by employer'),
-        #  _(u'Self-employment or business'),
-        #  _(u'Interest, dividends, rent, other investments'),
-        #  _(u'Regular payments from a workplace accident insurer'),
-        #  _(u'Pension'),
-        #  _(u'Social insurance payments, state benefits'),
-        #  _(u'Other sources of income'),
-        #  _(u'No source of income during that time'),
-        #  _(u"Don't know")],
-        widget=django_widgets.SelectMultiple()
-    )
+    _10_main_ways_income = models.CharField()
 
     _10_what_was_your_total_income = models.CharField(
         verbose_name=_(u'In the last 12 months what was your personal \
