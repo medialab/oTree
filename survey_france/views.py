@@ -165,8 +165,80 @@ class Survey10(Page):
 
     form_model = models.Player
     form_fields = [
-        '_10_what_was_your_total_income',
-        '_10_are_you'
+        '_10_main_ways_income',
+        '_10_household_income'
+    ]
+
+
+class Survey10A(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10A_household_income'
+    ]
+
+
+class Survey10B(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10B_household_income'
+    ]
+
+
+class Survey10C(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10C_income'
+    ]
+
+
+class Survey10D(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10D_income'
+    ]
+
+
+class Survey10E(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10E_income'
+    ]
+
+
+class Survey10F(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10F_income'
+    ]
+
+
+class Survey10G(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10G_income'
+    ]
+
+
+class Survey10H(Page):
+    """Page 10 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_10H_income'
     ]
 
 
@@ -187,6 +259,16 @@ class Survey11(Page):
     def vars_for_template(self):
         """Make data available in template."""
         return {'start_time': self.player.total_time}
+
+
+class Survey12(Page):
+    """Page 12 of survey."""
+
+    form_model = models.Player
+    form_fields = [
+        '_12_final_comments',
+        'total_time'
+    ]
 
 
 class EndGame(Page):
@@ -214,6 +296,15 @@ page_sequence = [
     Survey08,
     Survey09,
     Survey10,
+    Survey10A,
+    Survey10B,
+    Survey10C,
+    Survey10D,
+    Survey10E,
+    Survey10F,
+    Survey10G,
+    Survey10H,
     Survey11,
+    Survey12,
     # EndGame
 ]

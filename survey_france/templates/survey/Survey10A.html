@@ -1,0 +1,18 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+<style>
+  label {
+    font-weight: normal;
+  }
+</style>
+  <br/><br/><br/><br/><br/>
+  <p>Now think about the income of your household. This can be just you, or the collective income of your family, your parents, or whoever you share your income and expenditures with.</p>
+  <p>
+      {% formfield player._10A_household_income %}
+  </p>
+
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}
