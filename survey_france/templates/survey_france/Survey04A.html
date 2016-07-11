@@ -4,15 +4,6 @@
 
 {% block content %}
 <style>
-  li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  li:nth-child(12) {
-    display: block;
-  }
-
   .controls ul li label {
     color: #357EBD;
   }
@@ -20,14 +11,13 @@
   label {font-weight: normal;}
   .control-label {
     font-weight: bold;
-    color: #357EBD;
   }
   </style>
   <br/><br/><br/><br/><br/>
   <p>
-      {% formfield player._03_does_me_a_favor %}
-      <hr>
-      {% formfield player._03_treated_injustly %}
+      {% formfield player._04A_try_to_help_each_other %}
+      {% formfield player._04A_try_to_take_advantage_of_you %}
+      {% formfield player._04A_can_be_justified %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 {% endblock %}

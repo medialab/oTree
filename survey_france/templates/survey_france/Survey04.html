@@ -4,14 +4,6 @@
 
 {% block content %}
 <style>
-  li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  li:nth-child(3) {
-    display: block;
-  }
 
   .controls ul li label {
     color: #357EBD;
@@ -23,10 +15,9 @@
   }
   </style>
   <br/><br/><br/><br/><br/>
+  <p><strong>Please think about what you would do in the following situation:</strong></p>
   <p>
-      {% formfield player._04A_try_to_help_each_other %}
-      {% formfield player._04A_try_to_take_advantage_of_you %}
-      {% formfield player._04A_can_be_justified %}
+      {% formfield player._04_thank_you_gift %}
   </p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 {% endblock %}

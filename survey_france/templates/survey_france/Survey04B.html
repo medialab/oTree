@@ -4,15 +4,6 @@
 
 {% block content %}
 <style>
-  li {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  li:nth-child(3) {
-    display: block;
-  }
-
   .controls ul li label {
     color: #357EBD;
   }
@@ -24,10 +15,12 @@
   </style>
   <br/><br/><br/><br/><br/>
   <p>
-      {% formfield player._04C_wallet %}
-      {% formfield player._04C_you_vote_in_the_last_national_election %}
+      {% formfield player._04B_your_family %}
+      {% formfield player._04B_your_neighbourhood %}
+      {% formfield player._04B_personally %}
+      {% formfield player._04B_meet_for_the_first_time %}
+      {% formfield player._04B_another_religion %}
+      {% formfield player._04B_another_nationality %}
   </p>
-  <p>How well does the following statement describe you as a person?</p>
-  <p>{% formfield player._04C_good_at_math %}</p>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 {% endblock %}

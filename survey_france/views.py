@@ -43,12 +43,8 @@ class Survey03(Page):
 
     form_model = models.Player
     form_fields = [
-        '_03_your_family',
-        '_03_people_in_your_neighborhood',
-        '_03_people_you_know_personally',
-        '_03_people_you_meet_for_the_first_time',
-        '_03_people_of_another_religion',
-        '_03_people_of_another_nationality',
+        '_03_does_me_a_favor',
+        '_03_treated_injustly',
     ]
 
 
@@ -57,8 +53,7 @@ class Survey04(Page):
 
     form_model = models.Player
     form_fields = [
-        '_04_you_lost_a_wallet_or_a_purse',
-        '_04_you_vote_in_the_last_national_election'
+        '_04_thank_you_gift'
     ]
 
 
@@ -104,6 +99,7 @@ class Survey05(Page):
     form_model = models.Player
     form_fields = [
         '_05_your_government',
+        '_05_the_parliament',
         '_05_the_police',
         '_05_the_media',
         '_05_the_judicial_system',
@@ -116,7 +112,7 @@ class Survey06(Page):
 
     form_model = models.Player
     form_fields = [
-        '_06_public_institutions_deliver_services_in_the_best_way',
+        '_06_public_institutions_deliver_services',
         '_06_public_institutions_pursue_long_term_objectives',
         '_06_people_working_in_public_institutions_ethical',
         '_06_public_institutions_are_transparent',
@@ -253,6 +249,7 @@ class Survey11(Page):
         '_11_were_you_in_a_calm_environment',
         '_11_have_you_ever_participated_in_another_study',
         '_11_which_device_did_you_take_this_study',
+        '_11_which_browser',
         'total_time'
     ]
 

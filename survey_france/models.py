@@ -18,7 +18,7 @@ from django_countries.fields import CountryField
 class Constants(BaseConstants):
     """Constants for Survey."""
 
-    name_in_url = 'survey'
+    name_in_url = 'survey_fr'
     players_per_group = None
     num_rounds = 1
 
@@ -171,11 +171,13 @@ expecting anything in return? '),
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?'),
         initial=0,
-        choices=range(0, 1000)
+        min=0,
+        max=1000,
     )
 
     _03_does_me_a_favor = models.CharField(
-        verbose_name=_(u"When someone does me a favour I am willing to return it."),
+        verbose_name=_(u"When someone does me a favour \
+I am willing to return it."),
         choices=(
             ('0', _(u"0 - Does not describe me at all")),
             ('1', '1'),
@@ -566,6 +568,26 @@ election?"),
         initial=None
     )
 
+    _05_the_police = models.CharField(
+        verbose_name=_(u"The police:"),
+        choices=(
+            ('0', _(u"0 - I don't trust them at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - I fully trust them')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
     _06_public_institutions_deliver_services = models.CharField(
         verbose_name=_(u'Public institutions deliver public services in the \
 best possible way.'),
@@ -686,7 +708,8 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_how_many_people_adults = models.CharField(
-        verbose_name=_(u'Public institutions are transparent.'),
+        verbose_name=_(u'How many people live in your household \
+(including yourself)?'),
         choices=(
             ('0', '0'),
             ('1', '1'),
@@ -698,7 +721,6 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_how_many_people_children = models.CharField(
-        verbose_name=_(u'Public institutions are transparent.'),
         choices=(
             ('0', '0'),
             ('1', '1'),
@@ -724,9 +746,12 @@ regardless of their gender, race, age or economic condition equally.'),
     _07_do_you_live_in = models.CharField(
         verbose_name=_(u'Do you live in a:'),
         choices=(
-            ('Large Metropolitan area', _(u"Large Metropolitan area (More than 1,5 million inhabitants)")),
-            ('Medium-sized metropolitan area', _(u"Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)")),
-            ('Small metropolitan area', _(u"  Small metropolitan area (200.000 to 500.000 inhabitants)")),
+            ('Large Metropolitan area', _(u"Large Metropolitan area \
+(More than 1,5 million inhabitants)")),
+            ('Medium-sized metropolitan area', _(u"Medium-sized metropolitan \
+area (500.000 to 1,5 million inhabitants)")),
+            ('Small metropolitan area', _(u"  Small metropolitan area \
+(200.000 to 500.000 inhabitants)")),
             ('Town', _(u"Town (50.000 to 200.000 inhabitants)")),
             ('Village', _(u"Village (Less than 50.000 inhabitants)")),
             ('Rural area', _(u"Rural area")),
@@ -746,7 +771,8 @@ you have completed?'),
             ('Diplômé du supérieur court (BTS, DUT, etc.)', _(u'Diplômé du \
 supérieur court (BTS, DUT, etc.)')),
             ('Licence (Bac + 3)', _(u'Licence (Bac + 3)')),
-            ("Master (Bac + 5) ou Doctorat", _(u"Master (Bac + 5) ou Doctorat")),
+            ("Master (Bac + 5) ou Doctorat", _(u"Master (Bac + 5) ou \
+Doctorat")),
         ),
         widget=widgets.RadioSelect()
     )
@@ -803,11 +829,10 @@ that people have only the best intentions.'),
     _10_main_ways_income = models.CharField()
     _10_household_income = models.CharField()
 
-    _10A_household_income = models.CharField(
+    _10A_household_income = models.CurrencyField(
         verbose_name=_(u'In the last 12 months, what was the total income of \
 your household after taxes have been deducted? (Income can come from any of \
 the sources mentioned in the previous question.)'),
-        widget=widgets.NumberInput()
     )
 
     _10B_household_income = models.CharField(
@@ -816,49 +841,79 @@ corresponds best to the income of your entire household (the people you share \
 your income and expenditures with). Remember, we are asking for the income of \
 your household, after taxes have been deducted.'),
         choices=(
-            ('0 to [15.000 x sqrt (household size)] euros per year', _(u'0 to [15.000 x sqrt (household size)] euros per year')),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household size)]', _(u'[15.000 x sqrt (household size)] to [20.000 x sqrt (household size)]')),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household size)]', _(u'[20.000 x sqrt (household size)] to [25.000 x sqrt (household size)]')),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household size)]', _(u'[25.000 x sqrt (household size)] to [32.000 x sqrt (household size)]')),
-            ('[32.000 x sqrt (household size)] euro or more per year]', _(u'[32.000 x sqrt (household size)] euro or more per year]')),
+            ('0 to [15.000 x sqrt (household size)] euros per year', _(u'0 \
+to [15.000 x sqrt (household size)] euros per year')),
+            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
+size)]', _(u'[15.000 x sqrt (household size)] to [20.000 x sqrt \
+(household size)]')),
+            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
+size)]', _(u'[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
+size)]')),
+            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
+size)]', _(u'[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
+size)]')),
+            ('[32.000 x sqrt (household size)] euro or more per year]', _(u'[\
+32.000 x sqrt (household size)] euro or more per year]')),
         ),
         widget=widgets.RadioSelect()
     )
 
-    _10C_income = models.CharField(
-        verbose_name=_(u'In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come from any of the sources mentioned in the previous question.)')
+    _10C_income = models.CurrencyField(
+        verbose_name=_(u'In the last 12 months, what was your total income, \
+the income that you received as an individual, after taxes have been \
+deducted? (Income can come from any of the sources mentioned in the \
+previous question.)'),
     )
 
     _10D_income = models.CharField(
-        verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have been deducted.'),
+        verbose_name=_(u'Just to confirm, which of these income bands \
+corresponds best to your personal income? Remember, we are asking for \
+your individual income, after taxes have been deducted.'),
         choices=(
             ('0 to 15.000 euro per year', _(u"0 to 15.000 euro per year")),
-            ('15.000 to 20.000 euro per year', '15.000 to 20.000 euro per year'),
-            ('20.000 to 25.000 euro per year', '20.000 to 25.000 euro per year'),
-            ('25.000 to 32.000 euro per year', '25.000 to 32.000 euro per year'),
+            ('15.000 to 20.000 euro per year', '15.000 to 20.000 euro per \
+year'),
+            ('20.000 to 25.000 euro per year', '20.000 to 25.000 euro per \
+year'),
+            ('25.000 to 32.000 euro per year', '25.000 to 32.000 euro per \
+year'),
             ('32.000 euro per year or more', '32.000 euro per year or more')
         ),
         widget=widgets.RadioSelect()
     )
 
-    _10E_income = models.CharField(
-        verbose_name=_(u'In the last 12 months, what was the total income of your household after taxes have been deducted? (Income can come from any of the sources mentioned in the previous question.)')
+    _10E_income = models.CurrencyField(
+        verbose_name=_(u'In the last 12 months, what was the total income of \
+your household after taxes have been deducted? (Income can come from any of \
+the sources mentioned in the previous question.)'),
     )
 
     _10F_income = models.CharField(
-        verbose_name=_(u'Just to confirm, which of these income bands corresponds best to the income of your entire household (the people you share your income and expenditures with). Remember, we are asking for the income of your household, after taxes have been deducted.'),
+        verbose_name=_(u'Just to confirm, which of these income bands \
+corresponds best to the income of your entire household (the people you \
+share your income and expenditures with). Remember, we are asking for the \
+income of your household, after taxes have been deducted.'),
         choices=(
-            ('0 to [15.000 x sqrt (household size)] euro per year', _(u"0 to [15.000 x sqrt (household size)] euro per year")),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household size)]', '[15.000 x sqrt (household size)] to [20.000 x sqrt (household size)]'),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household size)]', '[20.000 x sqrt (household size)] to [25.000 x sqrt (household size)]'),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household size)]', '[25.000 x sqrt (household size)] to [32.000 x sqrt (household size)]'),
-            ('[32.000 x sqrt (household size)] euro or more per year', '[32.000 x sqrt (household size)] euro or more per year')
+            ('0 to [15.000 x sqrt (household size)] euro per year', _(u"0 to \
+[15.000 x sqrt (household size)] euro per year")),
+            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
+size)]', '[15.000 x sqrt (household size)] to [20.000 x sqrt \
+(household size)]'),
+            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
+size)]', '[20.000 x sqrt (household size)] to [25.000 x sqrt \
+(household size)]'),
+            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
+size)]', '[25.000 x sqrt (household size)] to [32.000 x sqrt \
+(household size)]'),
+            ('[32.000 x sqrt (household size)] euro or more per year', '[\
+32.000 x sqrt (household size)] euro or more per year')
         ),
         widget=widgets.RadioSelect()
     )
 
     _10G_income = models.CharField(
-        verbose_name=_(u'Did you or your household save any money in the previous year?'),
+        verbose_name=_(u'Did you or your household save any money in the \
+previous year?'),
         choices=(
             ('Yes', _(u"Yes")),
             ('No', _(u'No')),
@@ -868,7 +923,8 @@ your household, after taxes have been deducted.'),
     )
 
     _10H_income = models.CharField(
-        verbose_name=_(u'How important would you say religion is in your own life?'),
+        verbose_name=_(u'How important would you say religion is in your \
+own life?'),
         choices=(
             ('0', _(u"0 - Does not describe me at all")),
             ('1', '1'),
@@ -900,7 +956,8 @@ persons who participated in the same study.'),
     )
 
     _11_earnings_will_be_calculated_in_euro = models.CharField(
-        verbose_name=_(u'My final earnings will be calculated according to the rules stated in the description of the study and will be paid to me.'),
+        verbose_name=_(u'My final earnings will be calculated according to \
+the rules stated in the description of the study and will be paid to me.'),
         choices=(
             ('No trust at all', _(u'No trust at all')),
             ('Little trust', _(u'Little trust')),
@@ -912,7 +969,8 @@ persons who participated in the same study.'),
     )
 
     _11_you_read_the_descriptions_associated = models.CharField(
-        verbose_name=_(u'At the end of this study, how would you say that you read the descriptions associated with each of the sections?'),
+        verbose_name=_(u'At the end of this study, how would you say that you \
+read the descriptions associated with each of the sections?'),
         choices=(
             ('With very little care', _(u'With very little care')),
             ('With little care', _(u'With little care')),
@@ -969,5 +1027,8 @@ seemed close to this one?'),
     )
 
     _12_final_comments = models.CharField(
-        verbose_name=_(u'If you have any comments about your experience taking this survey, with regard to the functionality of the platform, or the content of the tasks and questions, please provide us with relevant feedback:'),
+        verbose_name=_(u'If you have any comments about your experience \
+taking this survey, with regard to the functionality of the platform, or the \
+content of the tasks and questions, please provide us with relevant \
+feedback:'),
     )
