@@ -1,0 +1,41 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+<style>
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  li:nth-child(12) {
+    display: block;
+  }
+
+  .controls ul li label {
+    color: #357EBD;
+  }
+
+  label {font-weight: normal;}
+  .control-label {
+    font-weight: bold;
+    color: #357EBD;
+  }
+  </style>
+  <br/><br/><br/><br/><br/>
+  <p><strong>{% trans "Do you agree with the following statements?" %}</strong></p>
+   <br/>
+  <p>
+      {% formfield player._06_public_institutions_deliver_services %}
+      <hr>
+      {% formfield player._06_public_institutions_pursue_long_term_objectives %}
+      <hr>
+      {% formfield player._06_people_working_in_public_institutions_ethical %}
+      <hr>
+      {% formfield player._06_public_institutions_are_transparent %}
+      <hr>
+      {% formfield player._06_public_institutions_treat_all_citizens_fairly %}
+  </p>
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

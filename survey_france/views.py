@@ -271,7 +271,7 @@ class Survey12(Page):
 class EndGame(Page):
     """End of survey."""
 
-    form_fields = ['total_time']
+    form_fields = ['total_time', 'donation']
 
     def vars_for_template(self):
         """Make data available in template."""
@@ -303,5 +303,5 @@ page_sequence = [
     Survey10H,
     Survey11,
     Survey12,
-    # EndGame
+    EndGame
 ]
