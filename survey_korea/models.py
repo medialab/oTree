@@ -18,7 +18,7 @@ from django_countries.fields import CountryField
 class Constants(BaseConstants):
     """Constants for Survey."""
 
-    name_in_url = 'survey_fr'
+    name_in_url = 'survey_kr'
     players_per_group = None
     num_rounds = 1
 
@@ -168,7 +168,7 @@ expecting anything in return? '),
     )
 
     _02A_altruism = models.CurrencyField(
-        verbose_name=_(u'Imagine the following situation: you won 1000 euros \
+        verbose_name=_(u'Imagine the following situation: you won 1000 Won \
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?'),
         initial=0,
@@ -222,19 +222,19 @@ I am willing to return it."),
         verbose_name=_(u"You are in an area you are not familiar with, and \
     you realize that you lost your way. You ask a stranger for directions. \
     The stranger offers to take you to your destination. Helping you costs \
-    the stranger about 20 Euro in total. However, the stranger says he or \
+    the stranger about 20.000 Won in total. However, the stranger says he or \
     she does not want any money from you. You have 6 presents with you. \
-    The cheapest present costs 5 euros, the most expensive one costs 30 euros.\
-     Do you give one of the presents to the stranger as a “thank-you”-gift? \
-    If so, which present do you give to the stranger?"),
+    The cheapest present costs 5.000 Won, the most expensive one costs \
+    30.000 Won. Do you give one of the presents to the stranger as a \
+    “thank-you”-gift? If so, which present do you give to the stranger?"),
         choices=(
             ('no present', _(u'no present')),
-            ('the present worth 5 euros', _(u'the present worth 5 euros')),
-            ('the present worth 10 euros', _(u'the present worth 10 euros')),
-            ('the present worth 15 euros', _(u'the present worth 15 euros')),
-            ('the present worth 20 euros', _(u'the present worth 20 euros')),
-            ('the present worth 25 euros', _(u'the present worth 25 euros')),
-            ('the present worth 30 euros', _(u'the present worth 30 euros')),
+            ('the present worth 5.000 Won', _(u'the present worth 5.000 Won')),
+            ('the present worth 10.000 Won', _(u'the present worth 10.000 Won')),
+            ('the present worth 15.000 Won', _(u'the present worth 15.000 Won')),
+            ('the present worth 20.000 Won', _(u'the present worth 20.000 Won')),
+            ('the present worth 25.000 Won', _(u'the present worth 25.000 Won')),
+            ('the present worth 30.000 Won', _(u'the present worth 30.000 Won')),
         ),
         widget=widgets.RadioSelect(),
         initial=None
@@ -737,7 +737,7 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_what_year_did_you_arrive_in_country = models.CharField(
-        verbose_name=_(u'In what year did you arrive in France?'),
+        verbose_name=_(u'In what year did you arrive in Korea?'),
         choices=[_(u'I was born here')] + [
             str(x) for x in range(date.today().year, 1940, -1)
         ],
@@ -765,15 +765,15 @@ area (500.000 to 1,5 million inhabitants)")),
         verbose_name=_(u'What is the highest level of education that \
 you have completed?'),
         choices=(
-            ('Aucun diplôme', _(u'Aucun diplôme')),
-            ('Brevet des collèges', _(u'Brevet des collèges')),
-            ('CAP BEP ou équivalent', _(u'CAP BEP ou équivalent')),
-            ('Baccalauréat', _(u'Baccalauréat')),
-            ('Diplômé du supérieur court (BTS, DUT, etc.)', _(u'Diplômé du \
-supérieur court (BTS, DUT, etc.)')),
-            ('Licence (Bac + 3)', _(u'Licence (Bac + 3)')),
-            ("Master (Bac + 5) ou Doctorat", _(u"Master (Bac + 5) ou \
-Doctorat")),
+            ('Less than high school', _(u'Less than high school')),
+            ('High school', _(u'High school')),
+            ('Some college', _(u'Some college')),
+            ('Diploma, trades certificate or other post school \
+qualification other than university', _(u'Diploma, trades certificate or \
+other post school qualification other than university')),
+            ('Undergraduate degree (e.g. BA, BS)', _(u'Undergraduate degree \
+(e.g. BA, BS)')),
+            ('Post-graduate degree', _(u'Post-graduate degree')),
         ),
         widget=widgets.RadioSelect()
     )
@@ -842,19 +842,19 @@ corresponds best to the income of your entire household (the people you share \
 your income and expenditures with). Remember, we are asking for the income of \
 your household, after taxes have been deducted.'),
         choices=(
-            ('0 to [15.000 x sqrt (household size)] euros per year', _(u'0 \
-to [15.000 x sqrt (household size)] euros per year')),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
-size)]', _(u'[15.000 x sqrt (household size)] to [20.000 x sqrt \
+            ('0 to [13.000.000 x sqrt (household size)] Won per year', _(u'0 \
+to [13.000.000 x sqrt (household size)] Won per year')),
+            ('[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household \
+size)]', _(u'[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt \
 (household size)]')),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
-size)]', _(u'[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
+            ('[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household \
+size)]', _(u'[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household \
 size)]')),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
-size)]', _(u'[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
+            ('[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household \
+size)]', _(u'[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household \
 size)]')),
-            ('[32.000 x sqrt (household size)] euro or more per year]', _(u'[\
-32.000 x sqrt (household size)] euro or more per year]')),
+            ('[34.000.000 x sqrt (household size)] Won or more per year]', _(u'[\
+34.000.000 x sqrt (household size)] Won or more per year]')),
         ),
         widget=widgets.RadioSelect()
     )
@@ -871,14 +871,16 @@ previous question.)'),
 corresponds best to your personal income? Remember, we are asking for \
 your individual income, after taxes have been deducted.'),
         choices=(
-            ('0 to 15.000 euro per year', _(u"0 to 15.000 euro per year")),
-            ('15.000 to 20.000 euro per year', '15.000 to 20.000 euro per \
-year'),
-            ('20.000 to 25.000 euro per year', '20.000 to 25.000 euro per \
-year'),
-            ('25.000 to 32.000 euro per year', '25.000 to 32.000 euro per \
-year'),
-            ('32.000 euro per year or more', '32.000 euro per year or more')
+            ('0 to 13.000.000 Won per year', _(u"0 to 13.000.000 Won \
+per year")),
+            ('13.000.000 to 20.000.000 Won per year', '13.000.000 to \
+20.000.000 Won per year'),
+            ('20.000.000 to 25.000.000 Won per year', '20.000.000 to \
+25.000.000 Won per year'),
+            ('25.000.000 to 34.000.000 per year', '25.000.000 to \
+34.000.000 per year'),
+            ('34.000.000 Won or more per year', '34.000.000 Won or more \
+per year')
         ),
         widget=widgets.RadioSelect()
     )
@@ -895,19 +897,19 @@ corresponds best to the income of your entire household (the people you \
 share your income and expenditures with). Remember, we are asking for the \
 income of your household, after taxes have been deducted.'),
         choices=(
-            ('0 to [15.000 x sqrt (household size)] euro per year', _(u"0 to \
-[15.000 x sqrt (household size)] euro per year")),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
-size)]', '[15.000 x sqrt (household size)] to [20.000 x sqrt \
+            ('0 to [13.000.000 x sqrt (household size)] Won per year', _(u"0 to \
+[13.000.000 x sqrt (household size)] Won per year")),
+            ('[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household \
+size)]', '[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt \
 (household size)]'),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
-size)]', '[20.000 x sqrt (household size)] to [25.000 x sqrt \
+            ('[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household \
+size)]', '[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt \
 (household size)]'),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
-size)]', '[25.000 x sqrt (household size)] to [32.000 x sqrt \
+            ('[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household \
+size)]', '[25.000.000 x sqrt (household size)] to [34.000.0000 x sqrt \
 (household size)]'),
-            ('[32.000 x sqrt (household size)] euro or more per year', '[\
-32.000 x sqrt (household size)] euro or more per year')
+            ('[34.000.000 x sqrt (household size)] Won or more per year', '[\
+34.000.000 x sqrt (household size)] Won or more per year')
         ),
         widget=widgets.RadioSelect()
     )

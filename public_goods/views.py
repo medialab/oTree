@@ -47,6 +47,12 @@ class Contribute(Page):
 
     timeout_submission = {'contribution': Currency(Constants.endowment / 2)}
 
+    def vars_for_template(self):
+        return {
+            'fr': {'amount': _(u'10 euros')},
+            'kr': {'amount': _(u'10.000 Won')},
+        }
+
 
 class ContributeBack(Page):
     """Participant B's contribution."""
@@ -69,28 +75,54 @@ class ContributeBack(Page):
     def vars_for_template(self):
         """Return variables available for template."""
         return {
-            'contribution_back_0_label': _(u'If on average, each of the other \
-group members contributes 0 euro:'),
-            'contribution_back_1_label': _(u'If on average, each of the other \
-group members contributes 1 euro:'),
-            'contribution_back_2_label': _(u'If on average, each of the other \
-group members contributes 2 euros:'),
-            'contribution_back_3_label': _(u'If on average, each of the other \
-group members contributes 3 euros:'),
-            'contribution_back_4_label': _(u'If on average, each of the other \
-group members contributes 4 euros:'),
-            'contribution_back_5_label': _(u'If on average, each of the other \
-group members contributes 5 euros:'),
-            'contribution_back_6_label': _(u'If on average, each of the other \
-group members contributes 6 euros:'),
-            'contribution_back_7_label': _(u'If on average, each of the other \
-group members contributes 7 euros:'),
-            'contribution_back_8_label': _(u'If on average, each of the other \
-group members contributes 8 euros:'),
-            'contribution_back_9_label': _(u'If on average, each of the other \
-group members contributes 9 euros:'),
-            'contribution_back_10_label': _(u'If on average, each of the other \
-group members contributes 10 euros:'),
+            'fr': {
+                'contribution_back_0_label': _(u'If on average, each of the other \
+    group members contributes 0 euro:'),
+                'contribution_back_1_label': _(u'If on average, each of the other \
+    group members contributes 1 euro:'),
+                'contribution_back_2_label': _(u'If on average, each of the other \
+    group members contributes 2 euros:'),
+                'contribution_back_3_label': _(u'If on average, each of the other \
+    group members contributes 3 euros:'),
+                'contribution_back_4_label': _(u'If on average, each of the other \
+    group members contributes 4 euros:'),
+                'contribution_back_5_label': _(u'If on average, each of the other \
+    group members contributes 5 euros:'),
+                'contribution_back_6_label': _(u'If on average, each of the other \
+    group members contributes 6 euros:'),
+                'contribution_back_7_label': _(u'If on average, each of the other \
+    group members contributes 7 euros:'),
+                'contribution_back_8_label': _(u'If on average, each of the other \
+    group members contributes 8 euros:'),
+                'contribution_back_9_label': _(u'If on average, each of the other \
+    group members contributes 9 euros:'),
+                'contribution_back_10_label': _(u'If on average, each of the other \
+    group members contributes 10 euros:'),
+            },
+            'kr': {
+                'contribution_back_0_label': _(u'If on average, each of the other \
+    group members contributes 0 euro:'),
+                'contribution_back_1_label': _(u'If on average, each of the other \
+    group members contributes 1.000 Won:'),
+                'contribution_back_2_label': _(u'If on average, each of the other \
+    group members contributes 2.000 Won:'),
+                'contribution_back_3_label': _(u'If on average, each of the other \
+    group members contributes 3.000 Won:'),
+                'contribution_back_4_label': _(u'If on average, each of the other \
+    group members contributes 4.000 Won:'),
+                'contribution_back_5_label': _(u'If on average, each of the other \
+    group members contributes 5.000 Won:'),
+                'contribution_back_6_label': _(u'If on average, each of the other \
+    group members contributes 6.000 Won:'),
+                'contribution_back_7_label': _(u'If on average, each of the other \
+    group members contributes 7.000 Won:'),
+                'contribution_back_8_label': _(u'If on average, each of the other \
+    group members contributes 8.000 Won:'),
+                'contribution_back_9_label': _(u'If on average, each of the other \
+    group members contributes 9.000 Won:'),
+                'contribution_back_10_label': _(u'If on average, each of the other \
+    group members contributes 10.000 Won:'),
+            }
         }
 
 

@@ -56,8 +56,14 @@ class Send(Page):
     def vars_for_template(self):
         """Return variables for use in template."""
         return {
-            'amount_allocated': Constants.amount_allocated,
-            'sent_amount_label': _(u'Please enter a number from 0 to 10')
+            'fr': {
+                'amount_allocated': Constants.amount_allocated,
+                'sent_amount_label': _(u'Please enter a number from 0 to 10')
+            },
+            'kr': {
+                'amount_allocated': Constants.amount_allocated,
+                'sent_amount_label': _(u'Please enter a number from 0 to 10.000')
+            }
         }
 
     def is_displayed(self):
@@ -86,39 +92,77 @@ class SendBack(Page):
     def vars_for_template(self):
         """Return variables for use in template."""
         return {
-            'sent_back_amount_0_label': _(
-                u'If Participant A sends you $0 (you receive 0€ × 3 = 0€)'
-            ),
-            'sent_back_amount_1_label': _(
-                u'If Participant A sends you $1 (you receive 1€ × 3 = 3€)'
-            ),
-            'sent_back_amount_2_label': _(
-                u'If Participant A sends you $2 (you receive 2€ × 3 = 6€)'
-            ),
-            'sent_back_amount_3_label': _(
-                u'If Participant A sends you $3 (you receive 3€ × 3 = 9€)'
-            ),
-            'sent_back_amount_4_label': _(
-                u'If Participant A sends you $4 (you receive 4€ × 3 = 12€)'
-            ),
-            'sent_back_amount_5_label': _(
-                u'If Participant A sends you $5 (you receive 5€ × 3 = 15€)'
-            ),
-            'sent_back_amount_6_label': _(
-                u'If Participant A sends you $6 (you receive 6€ × 3 = 18€)'
-            ),
-            'sent_back_amount_7_label': _(
-                u'If Participant A sends you $7 (you receive 7€ × 3 = 21€)'
-            ),
-            'sent_back_amount_8_label': _(
-                u'If Participant A sends you $8 (you receive 8€ × 3 = 24€)'
-            ),
-            'sent_back_amount_9_label': _(
-                u'If Participant A sends you $9 (you receive 9€ × 3 = 27€)'
-            ),
-            'sent_back_amount_10_label': _(
-                u'If Participant A sends you $10 (you receive 10€ ×3 = 30€)'
-            ),
+            'fr': {
+                'sent_back_amount_0_label': _(
+                    u'If Participant A sends you 0€ (you receive 0€ × 3 = 0€)'
+                ),
+                'sent_back_amount_1_label': _(
+                    u'If Participant A sends you 1€ (you receive 1€ × 3 = 3€)'
+                ),
+                'sent_back_amount_2_label': _(
+                    u'If Participant A sends you 2€ (you receive 2€ × 3 = 6€)'
+                ),
+                'sent_back_amount_3_label': _(
+                    u'If Participant A sends you 3€ (you receive 3€ × 3 = 9€)'
+                ),
+                'sent_back_amount_4_label': _(
+                    u'If Participant A sends you 4€ (you receive 4€ × 3 = 12€)'
+                ),
+                'sent_back_amount_5_label': _(
+                    u'If Participant A sends you 5€ (you receive 5€ × 3 = 15€)'
+                ),
+                'sent_back_amount_6_label': _(
+                    u'If Participant A sends you 6€ (you receive 6€ × 3 = 18€)'
+                ),
+                'sent_back_amount_7_label': _(
+                    u'If Participant A sends you 7€ (you receive 7€ × 3 = 21€)'
+                ),
+                'sent_back_amount_8_label': _(
+                    u'If Participant A sends you 8€ (you receive 8€ × 3 = 24€)'
+                ),
+                'sent_back_amount_9_label': _(
+                    u'If Participant A sends you 9€ (you receive 9€ × 3 = 27€)'
+                ),
+                'sent_back_amount_10_label': _(
+                    u'If Participant A sends you 10€ (you receive 10€ ×3 = 30€)'
+                ),
+            },
+
+            'kr': {
+                'sent_back_amount_0_label': _(
+                    u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
+                ),
+                'sent_back_amount_1_label': _(
+                    u'If Participant A sends you 1.000 Won (you receive 1.000 Won × 3 = 3.000 Won)'
+                ),
+                'sent_back_amount_2_label': _(
+                    u'If Participant A sends you 2 Won (you receive 2.000 Won × 3 = 6.000 Won)'
+                ),
+                'sent_back_amount_3_label': _(
+                    u'If Participant A sends you 3.000 Won (you receive 3.000 Won × 3 = 9.000 Won)'
+                ),
+                'sent_back_amount_4_label': _(
+                    u'If Participant A sends you 4.000 Won (you receive 4.000 Won × 3 = 12.000 Won)'
+                ),
+                'sent_back_amount_5_label': _(
+                    u'If Participant A sends you 5.000 Won (you receive 5.000 Won × 3 = 15.000 Won)'
+                ),
+                'sent_back_amount_6_label': _(
+                    u'If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)'
+                ),
+                'sent_back_amount_7_label': _(
+                    u'If Participant A sends you 7.000 Won (you receive 7.000 Won × 3 = 21.000 Won)'
+                ),
+                'sent_back_amount_8_label': _(
+                    u'If Participant A sends you 8.000 Won (you receive 8.000 Won × 3 = 24.000 Won)'
+                ),
+                'sent_back_amount_9_label': _(
+                    u'If Participant A sends you 9.000 Won (you receive 9.000 Won × 3 = 27.000 Won)'
+                ),
+                'sent_back_amount_10_label': _(
+                    u'If Participant A sends you 10.000 Won (you receive 10.000 Won ×3 = 30.000 Won)'
+                ),
+            }
         }
 
     def is_displayed(self):

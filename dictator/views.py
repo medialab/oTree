@@ -38,12 +38,24 @@ class Introduction(Page):
     form_model = models.Player
     form_fields = ['total_time']
 
+    def vars_for_template(self):
+        return {
+            'fr': {'amount': '10 euros'},
+            'kr': {'amount': '10.000 Won'},
+        }
+
 
 class Offer(Page):
     """Offer (participant A) page."""
 
     form_model = models.Player
     form_fields = ['given']
+
+    def vars_for_template(self):
+        return {
+            'fr': {'amount': '10 euros'},
+            'kr': {'amount': '10.000 Won'},
+        }
 
 
 page_sequence = [
