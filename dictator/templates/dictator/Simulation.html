@@ -3,7 +3,7 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-<h1>{% trans "Task 3: Simulation" %}</h1>
+<h1>{% trans "Task Three: Simulation" %}</h1>
 <hr/>
 <p>{% trans "If you wish, you can use this test screen to play with different choices of Participant A, to understand the task better." %}</p>
 <p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
@@ -46,7 +46,7 @@ $(function() { init() });
   <div class="form commands">
     <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant A" %}</label>
-      <input class="form-control" type="number" id="amount" min="0" max="10" placeholder="0">
+      <input class="form-control" type="number" id="amount" min="0" max="{{max}}" placeholder="0">
       <a class="btn btn-default col-sm-4 col-md-4 col-lg-4" id="send">{% trans "Send" %}</a>
       <button class="btn btn-primary col-sm-offset-2 col-sm-4 col-md-4 col-lg-4" id="next">{% trans "Next" %}</button>
     </div>
