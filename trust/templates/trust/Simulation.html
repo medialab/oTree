@@ -12,6 +12,12 @@
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="{% static "trust/trust_simulation.js" %}"></script>
 
+<style type="text/css">
+.btn {
+  float: left !important;
+}
+</style>
+
 <script>
 var canvas, stage, exportRoot;
 function init() {
@@ -34,7 +40,7 @@ function init() {
 
   var currentTry = 0;
   var REQUIRED_TRIES = 1;
-  var PLAYER_1_ENDOWMENT = 10;
+  var PLAYER_1_ENDOWMENT = {{max}};
 
   var playerAFinished = false;
   var playerBFinished = false;

@@ -10,7 +10,11 @@ from django.utils.translation import ugettext_lazy as _
 
 def vars_for_all_templates(self):
     """Provide global template variables."""
-    return {'instructions': 'trust/Instructions.html', 'total_q': 1}
+    return {
+        'instructions': 'trust/Instructions.html',
+        'total_q': 1,
+        'lang': self.session.vars['lang']
+    }
 
 
 class ExperimentIntroduction(Page):
@@ -45,6 +49,12 @@ class Simulation(Page):
     """Simulation page."""
 
     template_name = 'trust/Simulation.html'
+
+    def vars_for_template(self):
+        max = {'fr': 10, 'kr': 10000}
+        return {
+            'max': max[self.session.vars['lang']]
+        }
 
 
 class Send(Page):

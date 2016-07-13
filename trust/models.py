@@ -49,6 +49,10 @@ class Subsession(BaseSubsession):
         """Set treatment of the game (see settings.py) as global var."""
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
+        if 'language_code' in self.session.config:
+            self.session.vars['lang'] = (
+                self.session.config['language_code'][3:]
+            )
 
 
 class Group(BaseGroup):
