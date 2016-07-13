@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-11 17:15+0200\n"
+"POT-Creation-Date: 2016-07-12 14:51+0200\n"
 "PO-Revision-Date: 2016-04-13 15:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,6 +63,30 @@ msgstr ""
 #: survey_france/templates/survey_france/Survey10H.html:16
 #: survey_france/templates/survey_france/Survey11.html:26
 #: survey_france/templates/survey_france/Survey12.html:17
+#: survey_korea/templates/survey_korea/Survey01.html:35
+#: survey_korea/templates/survey_korea/Survey02.html:35
+#: survey_korea/templates/survey_korea/Survey02A.html:30
+#: survey_korea/templates/survey_korea/Survey03.html:31
+#: survey_korea/templates/survey_korea/Survey04.html:22
+#: survey_korea/templates/survey_korea/Survey04A.html:22
+#: survey_korea/templates/survey_korea/Survey04B.html:25
+#: survey_korea/templates/survey_korea/Survey04C.html:24
+#: survey_korea/templates/survey_korea/Survey05.html:45
+#: survey_korea/templates/survey_korea/Survey06.html:40
+#: survey_korea/templates/survey_korea/Survey07.html:65
+#: survey_korea/templates/survey_korea/Survey08.html:18
+#: survey_korea/templates/survey_korea/Survey09.html:21
+#: survey_korea/templates/survey_korea/Survey10.html:122
+#: survey_korea/templates/survey_korea/Survey10A.html:17
+#: survey_korea/templates/survey_korea/Survey10B.html:16
+#: survey_korea/templates/survey_korea/Survey10C.html:16
+#: survey_korea/templates/survey_korea/Survey10D.html:16
+#: survey_korea/templates/survey_korea/Survey10E.html:17
+#: survey_korea/templates/survey_korea/Survey10F.html:16
+#: survey_korea/templates/survey_korea/Survey10G.html:16
+#: survey_korea/templates/survey_korea/Survey10H.html:16
+#: survey_korea/templates/survey_korea/Survey11.html:26
+#: survey_korea/templates/survey_korea/Survey12.html:17
 #: trust/templates/trust/EndGame.html:11
 #: trust/templates/trust/GamesIntroduction.html:21
 #: trust/templates/trust/Send.html:15 trust/templates/trust/SendBack.html:25
@@ -137,7 +161,7 @@ msgstr ""
 #| "You have %(amount_allocated)s in your possession. How much do you want to "
 #| "send to Person B? "
 msgid ""
-"You have 10 euros in your possession. <strong>How much do you want to "
+"You have {{amount}} in your possession. <strong>How much do you want to "
 "transfer to Participant B?</strong>"
 msgstr ""
 "You have %(amount_allocated)s in your possession. How much do you want to "
@@ -182,6 +206,7 @@ msgstr ""
 #: earnings/templates/earnings/Earnings.html:7
 #: survey/templates/survey/EndGame.html:9
 #: survey_france/templates/survey_france/EndGame.html:9
+#: survey_korea/templates/survey_korea/EndGame.html:9
 msgid "Thank you very much for your participation in this study!"
 msgstr ""
 
@@ -1592,9 +1617,13 @@ msgid ""
 msgstr ""
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:6
+#, fuzzy
+#| msgid ""
+#| "On the next page, you decide how much of your 10 Euro you want to "
+#| "transfer to the common project."
 msgid ""
-"On the next page, you decide how much of your 10 Euro you want to transfer "
-"to the common project."
+"On the next page, you decide how much of your {{amount}} you want to "
+"transfer to the common project."
 msgstr ""
 "On the next page, you decide how much of your 10 Euro you want to transfer "
 "to the common project."
@@ -1604,8 +1633,12 @@ msgid "You will be asked to do it in two different situations:"
 msgstr "You will be asked to do it in two different situations:"
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:8
+#, fuzzy
+#| msgid ""
+#| "In the first step, you simply decide how much of your 10 Euro you want to "
+#| "put into the common project."
 msgid ""
-"In the first step, you simply decide how much of your 10 Euro you want to "
+"In the first step, you simply decide how much of your {{amount}} you want to "
 "put into the common project."
 msgstr ""
 "In the first step, you simply decide how much of your 10 Euro you want to "
@@ -1734,81 +1767,160 @@ msgstr "Amount sent by Player C"
 msgid "Amount sent by Participant D"
 msgstr "Amount sent by Player D"
 
-#: public_goods/views.py:72
+#: public_goods/views.py:52
+msgid "10 euros"
+msgstr ""
+
+#: public_goods/views.py:53
+msgid "10.000 Won"
+msgstr ""
+
+#: public_goods/views.py:79 public_goods/views.py:103
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 0"
-msgid "If on average, each of the other group members contributes 0 euro:"
+msgid "If on average, each of the other     group members contributes 0 euro:"
 msgstr "If the other group members make an average contribution of 0"
 
-#: public_goods/views.py:74
+#: public_goods/views.py:81
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 1"
-msgid "If on average, each of the other group members contributes 1 euro:"
+msgid "If on average, each of the other     group members contributes 1 euro:"
 msgstr "If the other group members make an average contribution of 1"
 
-#: public_goods/views.py:76
+#: public_goods/views.py:83
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 2"
-msgid "If on average, each of the other group members contributes 2 euros:"
+msgid "If on average, each of the other     group members contributes 2 euros:"
 msgstr "If the other group members make an average contribution of 2"
 
-#: public_goods/views.py:78
+#: public_goods/views.py:85
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 3"
-msgid "If on average, each of the other group members contributes 3 euros:"
+msgid "If on average, each of the other     group members contributes 3 euros:"
 msgstr "If the other group members make an average contribution of 3"
 
-#: public_goods/views.py:80
+#: public_goods/views.py:87
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 4"
-msgid "If on average, each of the other group members contributes 4 euros:"
+msgid "If on average, each of the other     group members contributes 4 euros:"
 msgstr "If the other group members make an average contribution of 4"
 
-#: public_goods/views.py:82
+#: public_goods/views.py:89
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 5"
-msgid "If on average, each of the other group members contributes 5 euros:"
+msgid "If on average, each of the other     group members contributes 5 euros:"
 msgstr "If the other group members make an average contribution of 5"
 
-#: public_goods/views.py:84
+#: public_goods/views.py:91
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 6"
-msgid "If on average, each of the other group members contributes 6 euros:"
+msgid "If on average, each of the other     group members contributes 6 euros:"
 msgstr "If the other group members make an average contribution of 6"
 
-#: public_goods/views.py:86
+#: public_goods/views.py:93
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 7"
-msgid "If on average, each of the other group members contributes 7 euros:"
+msgid "If on average, each of the other     group members contributes 7 euros:"
 msgstr "If the other group members make an average contribution of 7"
 
-#: public_goods/views.py:88
+#: public_goods/views.py:95
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 8"
-msgid "If on average, each of the other group members contributes 8 euros:"
+msgid "If on average, each of the other     group members contributes 8 euros:"
 msgstr "If the other group members make an average contribution of 8"
 
-#: public_goods/views.py:90
+#: public_goods/views.py:97
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 9"
-msgid "If on average, each of the other group members contributes 9 euros:"
+msgid "If on average, each of the other     group members contributes 9 euros:"
 msgstr "If the other group members make an average contribution of 9"
 
-#: public_goods/views.py:92
+#: public_goods/views.py:99
 #, fuzzy
 #| msgid "If the other group members make an average contribution of 10"
-msgid "If on average, each of the other group members contributes 10 euros:"
+msgid ""
+"If on average, each of the other     group members contributes 10 euros:"
 msgstr "If the other group members make an average contribution of 10"
 
-#: survey/models.py:44 survey_france/models.py:45
+#: public_goods/views.py:105
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 10"
+msgid ""
+"If on average, each of the other     group members contributes 1.000 Won:"
+msgstr "If the other group members make an average contribution of 10"
+
+#: public_goods/views.py:107
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 2.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:109
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 3.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:111
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 4.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:113
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 5.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:115
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 6.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:117
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 7.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:119
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 8.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:121
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 0"
+msgid ""
+"If on average, each of the other     group members contributes 9.000 Won:"
+msgstr "If the other group members make an average contribution of 0"
+
+#: public_goods/views.py:123
+#, fuzzy
+#| msgid "If the other group members make an average contribution of 10"
+msgid ""
+"If on average, each of the other     group members contributes 10.000 Won:"
+msgstr "If the other group members make an average contribution of 10"
+
+#: survey/models.py:44 survey_france/models.py:45 survey_korea/models.py:45
 msgid "Overall, how satisfied are you with life as a whole these days?"
 msgstr ""
 
-#: survey/models.py:47 survey_france/models.py:48
+#: survey/models.py:47 survey_france/models.py:48 survey_korea/models.py:48
 msgid "0 - Not at all satisfied"
 msgstr ""
 
-#: survey/models.py:57 survey_france/models.py:58
+#: survey/models.py:57 survey_france/models.py:58 survey_korea/models.py:58
 msgid "10 - Completely satisfied"
 msgstr ""
 
@@ -1844,24 +1956,44 @@ msgstr ""
 #: survey_france/models.py:967
 #: survey_france/templates/survey_france/Survey10.html:46
 #: survey_france/templates/survey_france/Survey10.html:84
+#: survey_korea/models.py:59 survey_korea/models.py:80
+#: survey_korea/models.py:101 survey_korea/models.py:122
+#: survey_korea/models.py:143 survey_korea/models.py:164
+#: survey_korea/models.py:194 survey_korea/models.py:215
+#: survey_korea/models.py:258 survey_korea/models.py:279
+#: survey_korea/models.py:301 survey_korea/models.py:321
+#: survey_korea/models.py:341 survey_korea/models.py:361
+#: survey_korea/models.py:381 survey_korea/models.py:401
+#: survey_korea/models.py:421 survey_korea/models.py:434
+#: survey_korea/models.py:466 survey_korea/models.py:486
+#: survey_korea/models.py:506 survey_korea/models.py:526
+#: survey_korea/models.py:546 survey_korea/models.py:566
+#: survey_korea/models.py:586 survey_korea/models.py:607
+#: survey_korea/models.py:627 survey_korea/models.py:648
+#: survey_korea/models.py:668 survey_korea/models.py:689
+#: survey_korea/models.py:803 survey_korea/models.py:825
+#: survey_korea/models.py:923 survey_korea/models.py:943
+#: survey_korea/models.py:956 survey_korea/models.py:969
+#: survey_korea/templates/survey_korea/Survey10.html:46
+#: survey_korea/templates/survey_korea/Survey10.html:84
 msgid "Don't know"
 msgstr ""
 
-#: survey/models.py:65 survey_france/models.py:66
+#: survey/models.py:65 survey_france/models.py:66 survey_korea/models.py:66
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
 "you can't be too careful in dealing with people?"
 msgstr ""
 
-#: survey/models.py:68 survey_france/models.py:69
+#: survey/models.py:68 survey_france/models.py:69 survey_korea/models.py:69
 msgid "0 -You can't be too careful"
 msgstr ""
 
-#: survey/models.py:78 survey_france/models.py:79
+#: survey/models.py:78 survey_france/models.py:79 survey_korea/models.py:79
 msgid "10 - Most people can be trusted"
 msgstr ""
 
-#: survey/models.py:86 survey_france/models.py:87
+#: survey/models.py:86 survey_france/models.py:87 survey_korea/models.py:87
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
 "take risks or do you try to avoid taking risks?"
@@ -1885,7 +2017,7 @@ msgstr ""
 msgid "0 - People are only looking out for themselves"
 msgstr ""
 
-#: survey/models.py:120 survey_france/models.py:257
+#: survey/models.py:120 survey_france/models.py:257 survey_korea/models.py:257
 msgid "10 - People mostly try to help each other"
 msgstr ""
 
@@ -1895,11 +2027,11 @@ msgid ""
 "chance, or would they try to be fair?"
 msgstr ""
 
-#: survey/models.py:131 survey_france/models.py:268
+#: survey/models.py:131 survey_france/models.py:268 survey_korea/models.py:268
 msgid "0 - Most people would try to take advantage of me"
 msgstr ""
 
-#: survey/models.py:141 survey_france/models.py:278
+#: survey/models.py:141 survey_france/models.py:278 survey_korea/models.py:278
 msgid "10 - Most people would try to be fair"
 msgstr ""
 
@@ -1928,6 +2060,12 @@ msgstr ""
 #: survey_france/models.py:475 survey_france/models.py:495
 #: survey_france/models.py:515 survey_france/models.py:535
 #: survey_france/models.py:555 survey_france/models.py:575
+#: survey_korea/models.py:310 survey_korea/models.py:330
+#: survey_korea/models.py:350 survey_korea/models.py:370
+#: survey_korea/models.py:390 survey_korea/models.py:410
+#: survey_korea/models.py:475 survey_korea/models.py:495
+#: survey_korea/models.py:515 survey_korea/models.py:535
+#: survey_korea/models.py:555 survey_korea/models.py:575
 msgid "0 - I don't trust them at all"
 msgstr ""
 
@@ -1940,6 +2078,12 @@ msgstr ""
 #: survey_france/models.py:485 survey_france/models.py:505
 #: survey_france/models.py:525 survey_france/models.py:545
 #: survey_france/models.py:565 survey_france/models.py:585
+#: survey_korea/models.py:320 survey_korea/models.py:340
+#: survey_korea/models.py:360 survey_korea/models.py:380
+#: survey_korea/models.py:400 survey_korea/models.py:420
+#: survey_korea/models.py:485 survey_korea/models.py:505
+#: survey_korea/models.py:525 survey_korea/models.py:545
+#: survey_korea/models.py:565 survey_korea/models.py:585
 msgid "10 - I fully trust them"
 msgstr ""
 
@@ -1963,7 +2107,7 @@ msgstr ""
 msgid "People of another nationality."
 msgstr ""
 
-#: survey/models.py:290 survey_france/models.py:428
+#: survey/models.py:290 survey_france/models.py:428 survey_korea/models.py:428
 msgid ""
 "If you lost a wallet or a purse that contained items of great value to you, "
 "and it was found by a stranger, do you think it would be returned with its "
@@ -1973,20 +2117,24 @@ msgstr ""
 #: survey/models.py:294 survey/models.py:306 survey/models.py:714
 #: survey_france/models.py:432 survey_france/models.py:444
 #: survey_france/models.py:919 survey_france/models.py:1001
+#: survey_korea/models.py:432 survey_korea/models.py:444
+#: survey_korea/models.py:921 survey_korea/models.py:1003
 msgid "Yes"
 msgstr ""
 
 #: survey/models.py:295 survey/models.py:307 survey/models.py:715
 #: survey_france/models.py:433 survey_france/models.py:445
 #: survey_france/models.py:920 survey_france/models.py:1002
+#: survey_korea/models.py:433 survey_korea/models.py:445
+#: survey_korea/models.py:922 survey_korea/models.py:1004
 msgid "No"
 msgstr ""
 
-#: survey/models.py:303 survey_france/models.py:441
+#: survey/models.py:303 survey_france/models.py:441 survey_korea/models.py:441
 msgid "Did you vote in the last national election?"
 msgstr ""
 
-#: survey/models.py:308 survey_france/models.py:446
+#: survey/models.py:308 survey_france/models.py:446 survey_korea/models.py:446
 msgid "I could not vote"
 msgstr ""
 
@@ -2002,7 +2150,7 @@ msgstr ""
 msgid "The media."
 msgstr ""
 
-#: survey/models.py:376 survey_france/models.py:593
+#: survey/models.py:376 survey_france/models.py:593 survey_korea/models.py:593
 msgid "Public institutions deliver public services in the best possible way."
 msgstr ""
 
@@ -2010,6 +2158,9 @@ msgstr ""
 #: survey/models.py:440 survey/models.py:461 survey_france/models.py:596
 #: survey_france/models.py:616 survey_france/models.py:637
 #: survey_france/models.py:657 survey_france/models.py:678
+#: survey_korea/models.py:596 survey_korea/models.py:616
+#: survey_korea/models.py:637 survey_korea/models.py:657
+#: survey_korea/models.py:678
 msgid "0 - I don't agree at all"
 msgstr ""
 
@@ -2017,53 +2168,58 @@ msgstr ""
 #: survey/models.py:450 survey/models.py:471 survey_france/models.py:606
 #: survey_france/models.py:626 survey_france/models.py:647
 #: survey_france/models.py:667 survey_france/models.py:688
+#: survey_korea/models.py:606 survey_korea/models.py:626
+#: survey_korea/models.py:647 survey_korea/models.py:667
+#: survey_korea/models.py:688
 msgid "10 - I fully agree"
 msgstr ""
 
-#: survey/models.py:397 survey_france/models.py:614
+#: survey/models.py:397 survey_france/models.py:614 survey_korea/models.py:614
 msgid "Public institutions pursue long term objectives."
 msgstr ""
 
-#: survey/models.py:417 survey_france/models.py:634
+#: survey/models.py:417 survey_france/models.py:634 survey_korea/models.py:634
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption."
 msgstr ""
 
-#: survey/models.py:438 survey_france/models.py:655
+#: survey/models.py:438 survey_france/models.py:655 survey_korea/models.py:655
 msgid "Public institutions are transparent."
 msgstr ""
 
-#: survey/models.py:458 survey_france/models.py:675
+#: survey/models.py:458 survey_france/models.py:675 survey_korea/models.py:675
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
 "race, age or economic condition equally."
 msgstr ""
 
-#: survey/models.py:479 survey_france/models.py:696
+#: survey/models.py:479 survey_france/models.py:696 survey_korea/models.py:696
 msgid "What is your date of birth?"
 msgstr ""
 
-#: survey/models.py:485 survey_france/models.py:702
+#: survey/models.py:485 survey_france/models.py:702 survey_korea/models.py:702
 msgid "Male"
 msgstr ""
 
-#: survey/models.py:485 survey_france/models.py:702
+#: survey/models.py:485 survey_france/models.py:702 survey_korea/models.py:702
 msgid "Female"
 msgstr ""
 
 #: survey/models.py:485 survey/models.py:557 survey/models.py:571
 #: survey/models.py:635 survey/models.py:727 survey_france/models.py:702
 #: survey_france/models.py:802 survey_france/models.py:1014
-#: survey_france/models.py:1025
+#: survey_france/models.py:1025 survey_korea/models.py:702
+#: survey_korea/models.py:802 survey_korea/models.py:1016
+#: survey_korea/models.py:1027
 msgid "Other"
 msgstr ""
 
-#: survey/models.py:486 survey_france/models.py:703
+#: survey/models.py:486 survey_france/models.py:703 survey_korea/models.py:703
 msgid "What is your gender?"
 msgstr ""
 
-#: survey/models.py:508 survey_france/models.py:736
+#: survey/models.py:508 survey_france/models.py:736 survey_korea/models.py:736
 msgid "In which country were you born?"
 msgstr ""
 
@@ -2071,54 +2227,55 @@ msgstr ""
 msgid "In what year did you arrive in the US?"
 msgstr ""
 
-#: survey/models.py:513 survey_france/models.py:741
+#: survey/models.py:513 survey_france/models.py:741 survey_korea/models.py:741
 msgid "I was born here"
 msgstr ""
 
-#: survey/models.py:520 survey_france/models.py:765
+#: survey/models.py:520 survey_france/models.py:765 survey_korea/models.py:765
 msgid "What is the highest level of education that you have completed?"
 msgstr ""
 
-#: survey/models.py:523
+#: survey/models.py:523 survey_korea/models.py:768
 msgid "Less than high school"
 msgstr ""
 
-#: survey/models.py:524
+#: survey/models.py:524 survey_korea/models.py:769
 msgid "High school"
 msgstr ""
 
-#: survey/models.py:525
+#: survey/models.py:525 survey_korea/models.py:770
 msgid "Some college"
 msgstr ""
 
-#: survey/models.py:527
+#: survey/models.py:527 survey_korea/models.py:772
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
 msgstr ""
 
-#: survey/models.py:529
+#: survey/models.py:529 survey_korea/models.py:774
 msgid "Undergraduate degree (e.g. BA, BS)"
 msgstr ""
 
-#: survey/models.py:531
+#: survey/models.py:531 survey_korea/models.py:776
 msgid "Post-graduate degree"
 msgstr ""
 
 #: survey/models.py:533 survey/models.py:558 survey/models.py:573
 #: survey/models.py:623 survey/models.py:636 survey_france/models.py:804
+#: survey_korea/models.py:804
 msgid "I prefer not to answer"
 msgstr ""
 
-#: survey/models.py:539 survey_france/models.py:782
+#: survey/models.py:539 survey_france/models.py:782 survey_korea/models.py:782
 msgid "Which of these best describes your situation?"
 msgstr ""
 
-#: survey/models.py:541 survey_france/models.py:784
+#: survey/models.py:541 survey_france/models.py:784 survey_korea/models.py:784
 msgid "At work as an employee"
 msgstr ""
 
-#: survey/models.py:542 survey_france/models.py:785
+#: survey/models.py:542 survey_france/models.py:785 survey_korea/models.py:785
 msgid "Employer/self-employed"
 msgstr ""
 
@@ -2154,27 +2311,27 @@ msgstr ""
 msgid "In education (at school, university, etc) / student"
 msgstr ""
 
-#: survey/models.py:564 survey_france/models.py:795
+#: survey/models.py:564 survey_france/models.py:795 survey_korea/models.py:795
 msgid "Do you work in the...?"
 msgstr ""
 
-#: survey/models.py:566 survey_france/models.py:797
+#: survey/models.py:566 survey_france/models.py:797 survey_korea/models.py:797
 msgid "Central, regional or local government administration"
 msgstr ""
 
-#: survey/models.py:568 survey_france/models.py:799
+#: survey/models.py:568 survey_france/models.py:799 survey_korea/models.py:799
 msgid "Public sector, other"
 msgstr ""
 
-#: survey/models.py:569 survey_france/models.py:800
+#: survey/models.py:569 survey_france/models.py:800 survey_korea/models.py:800
 msgid "Private (for profit) sector"
 msgstr ""
 
-#: survey/models.py:570 survey_france/models.py:801
+#: survey/models.py:570 survey_france/models.py:801 survey_korea/models.py:801
 msgid "Not for profit sector"
 msgstr ""
 
-#: survey/models.py:574 survey_france/models.py:805
+#: survey/models.py:574 survey_france/models.py:805 survey_korea/models.py:805
 msgid "Not applicable"
 msgstr ""
 
@@ -2258,29 +2415,33 @@ msgstr ""
 msgid "Jewish"
 msgstr ""
 
-#: survey/models.py:656 survey_france/models.py:947
+#: survey/models.py:656 survey_france/models.py:947 survey_korea/models.py:949
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
 msgstr ""
 
 #: survey/models.py:659 survey/models.py:674 survey_france/models.py:950
-#: survey_france/models.py:963
+#: survey_france/models.py:963 survey_korea/models.py:952
+#: survey_korea/models.py:965
 msgid "No trust at all"
 msgstr ""
 
 #: survey/models.py:660 survey/models.py:675 survey_france/models.py:951
-#: survey_france/models.py:964
+#: survey_france/models.py:964 survey_korea/models.py:953
+#: survey_korea/models.py:966
 msgid "Little trust"
 msgstr ""
 
 #: survey/models.py:661 survey/models.py:676 survey_france/models.py:952
-#: survey_france/models.py:965
+#: survey_france/models.py:965 survey_korea/models.py:954
+#: survey_korea/models.py:967
 msgid "Quite a bit of trust"
 msgstr ""
 
 #: survey/models.py:662 survey/models.py:677 survey_france/models.py:953
-#: survey_france/models.py:966
+#: survey_france/models.py:966 survey_korea/models.py:955
+#: survey_korea/models.py:968
 msgid "A lot of trust"
 msgstr ""
 
@@ -2297,68 +2458,73 @@ msgid ""
 "associated with each of the 3 sections?"
 msgstr ""
 
-#: survey/models.py:687 survey_france/models.py:976
+#: survey/models.py:687 survey_france/models.py:976 survey_korea/models.py:978
 msgid "With very little care"
 msgstr ""
 
-#: survey/models.py:688 survey_france/models.py:977
+#: survey/models.py:688 survey_france/models.py:977 survey_korea/models.py:979
 msgid "With little care"
 msgstr ""
 
-#: survey/models.py:689 survey_france/models.py:978
+#: survey/models.py:689 survey_france/models.py:978 survey_korea/models.py:980
 msgid "With care"
 msgstr ""
 
-#: survey/models.py:690 survey_france/models.py:979
+#: survey/models.py:690 survey_france/models.py:979 survey_korea/models.py:981
 msgid "With a lot of care"
 msgstr ""
 
-#: survey/models.py:691 survey_france/models.py:980
+#: survey/models.py:691 survey_france/models.py:980 survey_korea/models.py:982
 msgid "With extreme care"
 msgstr ""
 
-#: survey/models.py:698 survey_france/models.py:986
+#: survey/models.py:698 survey_france/models.py:986 survey_korea/models.py:988
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr ""
 
-#: survey/models.py:701 survey_france/models.py:989
+#: survey/models.py:701 survey_france/models.py:989 survey_korea/models.py:991
 msgid "Not calm at all"
 msgstr ""
 
-#: survey/models.py:702 survey_france/models.py:990
+#: survey/models.py:702 survey_france/models.py:990 survey_korea/models.py:992
 msgid "Not very calm"
 msgstr ""
 
-#: survey/models.py:703 survey_france/models.py:991
+#: survey/models.py:703 survey_france/models.py:991 survey_korea/models.py:993
 msgid "Fairly calm"
 msgstr ""
 
-#: survey/models.py:704 survey_france/models.py:992
+#: survey/models.py:704 survey_france/models.py:992 survey_korea/models.py:994
 msgid "Very calm"
 msgstr ""
 
-#: survey/models.py:711 survey_france/models.py:998
+#: survey/models.py:711 survey_france/models.py:998 survey_korea/models.py:1000
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
 msgstr ""
 
 #: survey/models.py:721 survey_france/models.py:1008
+#: survey_korea/models.py:1010
 msgid "Which device did you take this study on?"
 msgstr ""
 
 #: survey/models.py:723 survey_france/models.py:1010
+#: survey_korea/models.py:1012
 msgid "Desktop"
 msgstr ""
 
 #: survey/models.py:724 survey_france/models.py:1011
+#: survey_korea/models.py:1013
 msgid "Laptop (non-touchscreen)"
 msgstr ""
 
 #: survey/models.py:725 survey_france/models.py:1012
+#: survey_korea/models.py:1014
 msgid "Laptop (touchscreen)"
 msgstr ""
 
 #: survey/models.py:726 survey_france/models.py:1013
+#: survey_korea/models.py:1015
 msgid "Tablet"
 msgstr ""
 
@@ -2386,6 +2552,7 @@ msgstr ""
 
 #: survey/templates/survey/EndGame.html:21
 #: survey_france/templates/survey_france/EndGame.html:52
+#: survey_korea/templates/survey_korea/EndGame.html:52
 msgid "Finish study"
 msgstr ""
 
@@ -2400,6 +2567,7 @@ msgstr ""
 
 #: survey/templates/survey/Survey05.html:29
 #: survey_france/templates/survey_france/Survey05.html:29
+#: survey_korea/templates/survey_korea/Survey05.html:29
 msgid ""
 "How much trust do you have in the following to act in the best interest of "
 "society?"
@@ -2407,11 +2575,13 @@ msgstr ""
 
 #: survey/templates/survey/Survey06.html:27
 #: survey_france/templates/survey_france/Survey06.html:27
+#: survey_korea/templates/survey_korea/Survey06.html:27
 msgid "Do you agree with the following statements?"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:16
 #: survey_france/templates/survey_france/Survey07.html:16
+#: survey_korea/templates/survey_korea/Survey07.html:16
 msgid ""
 "We will now ask you questions about your personal situation. Remember, all "
 "data is anonymous."
@@ -2419,6 +2589,7 @@ msgstr ""
 
 #: survey/templates/survey/Survey07.html:24
 #: survey_france/templates/survey_france/Survey07.html:24
+#: survey_korea/templates/survey_korea/Survey07.html:24
 msgid ""
 "Click on all options below to show all the people who live in the same "
 "household as you. <br/>You can choose as many as you need."
@@ -2426,36 +2597,43 @@ msgstr ""
 
 #: survey/templates/survey/Survey07.html:29
 #: survey_france/templates/survey_france/Survey07.html:29
+#: survey_korea/templates/survey_korea/Survey07.html:29
 msgid "My legal husband or wife"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:32
 #: survey_france/templates/survey_france/Survey07.html:32
+#: survey_korea/templates/survey_korea/Survey07.html:32
 msgid "My civil union partner"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:35
 #: survey_france/templates/survey_france/Survey07.html:35
+#: survey_korea/templates/survey_korea/Survey07.html:35
 msgid "My de-facto partner, boyfriend or girlfriend"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:38
 #: survey_france/templates/survey_france/Survey07.html:38
+#: survey_korea/templates/survey_korea/Survey07.html:38
 msgid "My mother and/or father"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:41
 #: survey_france/templates/survey_france/Survey07.html:41
+#: survey_korea/templates/survey_korea/Survey07.html:41
 msgid "My children"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:44
 #: survey_france/templates/survey_france/Survey07.html:44
+#: survey_korea/templates/survey_korea/Survey07.html:44
 msgid "My brothers and/or sisters"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:47
 #: survey_france/templates/survey_france/Survey07.html:47
+#: survey_korea/templates/survey_korea/Survey07.html:47
 msgid "My flatmates"
 msgstr ""
 
@@ -2478,12 +2656,16 @@ msgstr ""
 #: survey/templates/survey/Survey09.html:28
 #: survey_france/templates/survey_france/Survey10.html:25
 #: survey_france/templates/survey_france/Survey10.html:63
+#: survey_korea/templates/survey_korea/Survey10.html:25
+#: survey_korea/templates/survey_korea/Survey10.html:63
 msgid "Self-employment or business"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:31
 #: survey_france/templates/survey_france/Survey10.html:31
 #: survey_france/templates/survey_france/Survey10.html:69
+#: survey_korea/templates/survey_korea/Survey10.html:31
+#: survey_korea/templates/survey_korea/Survey10.html:69
 msgid "Interest, dividends, rent, other investments"
 msgstr ""
 
@@ -2494,65 +2676,76 @@ msgstr ""
 #: survey/templates/survey/Survey09.html:37
 #: survey_france/templates/survey_france/Survey10.html:34
 #: survey_france/templates/survey_france/Survey10.html:72
+#: survey_korea/templates/survey_korea/Survey10.html:34
+#: survey_korea/templates/survey_korea/Survey10.html:72
 msgid "Pension"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:40
 #: survey_france/templates/survey_france/Survey10.html:37
 #: survey_france/templates/survey_france/Survey10.html:75
+#: survey_korea/templates/survey_korea/Survey10.html:37
+#: survey_korea/templates/survey_korea/Survey10.html:75
 msgid "Social insurance payments, state benefits"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:43
 #: survey_france/templates/survey_france/Survey10.html:40
 #: survey_france/templates/survey_france/Survey10.html:78
+#: survey_korea/templates/survey_korea/Survey10.html:40
+#: survey_korea/templates/survey_korea/Survey10.html:78
 msgid "Other sources of income"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:46
 #: survey_france/templates/survey_france/Survey10.html:43
 #: survey_france/templates/survey_france/Survey10.html:81
+#: survey_korea/templates/survey_korea/Survey10.html:43
+#: survey_korea/templates/survey_korea/Survey10.html:81
 msgid "No source of income during that time"
 msgstr ""
 
 #: survey/templates/survey/Survey11.html:17
 #: survey_france/templates/survey_france/Survey11.html:17
+#: survey_korea/templates/survey_korea/Survey11.html:17
 msgid ""
 "For information purposes, could you tell us to what extent you trusted the "
 "following two statements when you made your decisions:"
 msgstr ""
 
-#: survey_france/models.py:90
+#: survey_france/models.py:90 survey_korea/models.py:90
 msgid "0 - Completely unwilling to take risks"
 msgstr ""
 
-#: survey_france/models.py:100
+#: survey_france/models.py:100 survey_korea/models.py:100
 msgid "10 - Very willing to take risks"
 msgstr ""
 
-#: survey_france/models.py:108
+#: survey_france/models.py:108 survey_korea/models.py:108
 msgid ""
 "How willing are you to someone who treats you unfairly, even if there may be "
 "costs for you?"
 msgstr ""
 
 #: survey_france/models.py:111 survey_france/models.py:132
-#: survey_france/models.py:153
+#: survey_france/models.py:153 survey_korea/models.py:111
+#: survey_korea/models.py:132 survey_korea/models.py:153
 msgid "0 - Completely unwilling to do so"
 msgstr ""
 
 #: survey_france/models.py:121 survey_france/models.py:142
-#: survey_france/models.py:163
+#: survey_france/models.py:163 survey_korea/models.py:121
+#: survey_korea/models.py:142 survey_korea/models.py:163
 msgid "10 - Very willing to do so"
 msgstr ""
 
-#: survey_france/models.py:129
+#: survey_france/models.py:129 survey_korea/models.py:129
 msgid ""
 "How willing are you to punish someone who treats others unfairly, even if "
 "there may be costs for you?"
 msgstr ""
 
-#: survey_france/models.py:150
+#: survey_france/models.py:150 survey_korea/models.py:150
 msgid ""
 "How willing are you to give to good causes without expecting anything in "
 "return? "
@@ -2565,23 +2758,27 @@ msgid ""
 "cause?"
 msgstr ""
 
-#: survey_france/models.py:180
+#: survey_france/models.py:180 survey_korea/models.py:180
 msgid "When someone does me a favour I am willing to return it."
 msgstr ""
 
 #: survey_france/models.py:183 survey_france/models.py:204
 #: survey_france/models.py:455 survey_france/models.py:814
-#: survey_france/models.py:930
+#: survey_france/models.py:930 survey_korea/models.py:183
+#: survey_korea/models.py:204 survey_korea/models.py:455
+#: survey_korea/models.py:814 survey_korea/models.py:932
 msgid "0 - Does not describe me at all"
 msgstr ""
 
 #: survey_france/models.py:193 survey_france/models.py:214
 #: survey_france/models.py:465 survey_france/models.py:824
-#: survey_france/models.py:940
+#: survey_france/models.py:940 survey_korea/models.py:193
+#: survey_korea/models.py:214 survey_korea/models.py:465
+#: survey_korea/models.py:824 survey_korea/models.py:942
 msgid "10 - Describes me perfectly"
 msgstr ""
 
-#: survey_france/models.py:201
+#: survey_france/models.py:201 survey_korea/models.py:201
 msgid ""
 "If I am treated very unjustly, I will take revenge     at the first "
 "occasion, even if there is a cost to do so."
@@ -2599,7 +2796,7 @@ msgid ""
 "you give to the stranger?"
 msgstr ""
 
-#: survey_france/models.py:231
+#: survey_france/models.py:231 survey_korea/models.py:231
 msgid "no present"
 msgstr ""
 
@@ -2627,89 +2824,89 @@ msgstr ""
 msgid "the present worth 30 euros"
 msgstr ""
 
-#: survey_france/models.py:244
+#: survey_france/models.py:244 survey_korea/models.py:244
 msgid ""
 "Would you say that most of the time people are only     looking out for "
 "themselves or that they mostly try to help each other?"
 msgstr ""
 
-#: survey_france/models.py:247
+#: survey_france/models.py:247 survey_korea/models.py:247
 msgid "0 - People are only looking out for themselves "
 msgstr ""
 
-#: survey_france/models.py:265
+#: survey_france/models.py:265 survey_korea/models.py:265
 msgid ""
 "Do you think most people would try to take advantage     of you if they got "
 "a chance, or would they try to be fair?"
 msgstr ""
 
-#: survey_france/models.py:286
+#: survey_france/models.py:286 survey_korea/models.py:286
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between:"
 msgstr ""
 
-#: survey_france/models.py:290
+#: survey_france/models.py:290 survey_korea/models.py:290
 msgid "0 - This action is never wrong"
 msgstr ""
 
-#: survey_france/models.py:300
+#: survey_france/models.py:300 survey_korea/models.py:300
 msgid "10 - This action is always wrong"
 msgstr ""
 
-#: survey_france/models.py:308
+#: survey_france/models.py:308 survey_korea/models.py:308
 msgid "Your family:"
 msgstr ""
 
-#: survey_france/models.py:328
+#: survey_france/models.py:328 survey_korea/models.py:328
 msgid "People in your neighbourhood:"
 msgstr ""
 
-#: survey_france/models.py:348
+#: survey_france/models.py:348 survey_korea/models.py:348
 msgid "People you know personally:"
 msgstr ""
 
-#: survey_france/models.py:368
+#: survey_france/models.py:368 survey_korea/models.py:368
 msgid "People you meet for the first time:"
 msgstr ""
 
-#: survey_france/models.py:388
+#: survey_france/models.py:388 survey_korea/models.py:388
 msgid "People of another religion:"
 msgstr ""
 
-#: survey_france/models.py:408
+#: survey_france/models.py:408 survey_korea/models.py:408
 msgid "People of another nationality:"
 msgstr ""
 
-#: survey_france/models.py:453
+#: survey_france/models.py:453 survey_korea/models.py:453
 msgid "I am good at math."
 msgstr ""
 
-#: survey_france/models.py:473
+#: survey_france/models.py:473 survey_korea/models.py:473
 msgid "Your government:"
 msgstr ""
 
-#: survey_france/models.py:493
+#: survey_france/models.py:493 survey_korea/models.py:493
 msgid "The parliament:"
 msgstr ""
 
-#: survey_france/models.py:513
+#: survey_france/models.py:513 survey_korea/models.py:513
 msgid "The judicial system:"
 msgstr ""
 
-#: survey_france/models.py:533
+#: survey_france/models.py:533 survey_korea/models.py:533
 msgid "The media:"
 msgstr ""
 
-#: survey_france/models.py:553
+#: survey_france/models.py:553 survey_korea/models.py:553
 msgid "Financial Institutions (e.g. banks):"
 msgstr ""
 
-#: survey_france/models.py:573
+#: survey_france/models.py:573 survey_korea/models.py:573
 msgid "The police:"
 msgstr ""
 
-#: survey_france/models.py:712
+#: survey_france/models.py:712 survey_korea/models.py:712
 msgid "How many people live in your household (including yourself)?"
 msgstr ""
 
@@ -2717,31 +2914,31 @@ msgstr ""
 msgid "In what year did you arrive in France?"
 msgstr ""
 
-#: survey_france/models.py:748
+#: survey_france/models.py:748 survey_korea/models.py:748
 msgid "Do you live in a:"
 msgstr ""
 
-#: survey_france/models.py:750
+#: survey_france/models.py:750 survey_korea/models.py:750
 msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
 msgstr ""
 
-#: survey_france/models.py:752
+#: survey_france/models.py:752 survey_korea/models.py:752
 msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
 msgstr ""
 
-#: survey_france/models.py:754
+#: survey_france/models.py:754 survey_korea/models.py:754
 msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
 msgstr ""
 
-#: survey_france/models.py:756
+#: survey_france/models.py:756 survey_korea/models.py:756
 msgid "Town (50.000 to 200.000 inhabitants)"
 msgstr ""
 
-#: survey_france/models.py:757
+#: survey_france/models.py:757 survey_korea/models.py:757
 msgid "Village (Less than 50.000 inhabitants)"
 msgstr ""
 
-#: survey_france/models.py:758
+#: survey_france/models.py:758 survey_korea/models.py:758
 msgid "Rural area"
 msgstr ""
 
@@ -2773,22 +2970,23 @@ msgstr ""
 msgid "Master (Bac + 5) ou Doctorat"
 msgstr ""
 
-#: survey_france/models.py:786
+#: survey_france/models.py:786 survey_korea/models.py:786
 msgid "Unemployed"
 msgstr ""
 
-#: survey_france/models.py:788
+#: survey_france/models.py:788 survey_korea/models.py:788
 msgid ""
 "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
 msgstr ""
 
-#: survey_france/models.py:811
+#: survey_france/models.py:811 survey_korea/models.py:811
 msgid ""
 "As long as I am not convinced otherwise, I assume that people have only the "
 "best intentions."
 msgstr ""
 
 #: survey_france/models.py:834 survey_france/models.py:887
+#: survey_korea/models.py:834 survey_korea/models.py:889
 msgid ""
 "In the last 12 months, what was the total income of your household after "
 "taxes have been deducted? (Income can come from any of the sources mentioned "
@@ -2796,6 +2994,7 @@ msgid ""
 msgstr ""
 
 #: survey_france/models.py:840 survey_france/models.py:893
+#: survey_korea/models.py:840 survey_korea/models.py:895
 msgid ""
 "Just to confirm, which of these income bands corresponds best to the income "
 "of your entire household (the people you share your income and expenditures "
@@ -2823,14 +3022,14 @@ msgstr ""
 msgid "[32.000 x sqrt (household size)] euro or more per year]"
 msgstr ""
 
-#: survey_france/models.py:863
+#: survey_france/models.py:863 survey_korea/models.py:863
 msgid ""
 "In the last 12 months, what was your total income, the income that you "
 "received as an individual, after taxes have been deducted? (Income can come "
 "from any of the sources mentioned in the previous question.)"
 msgstr ""
 
-#: survey_france/models.py:870
+#: survey_france/models.py:870 survey_korea/models.py:870
 msgid ""
 "Just to confirm, which of these income bands corresponds best to your "
 "personal income? Remember, we are asking for your individual income, after "
@@ -2845,43 +3044,43 @@ msgstr ""
 msgid "0 to [15.000 x sqrt (household size)] euro per year"
 msgstr ""
 
-#: survey_france/models.py:916
+#: survey_france/models.py:916 survey_korea/models.py:918
 msgid "Did you or your household save any money in the previous year?"
 msgstr ""
 
-#: survey_france/models.py:927
+#: survey_france/models.py:927 survey_korea/models.py:929
 msgid "How important would you say religion is in your own life?"
 msgstr ""
 
-#: survey_france/models.py:960
+#: survey_france/models.py:960 survey_korea/models.py:962
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
 msgstr ""
 
-#: survey_france/models.py:973
+#: survey_france/models.py:973 survey_korea/models.py:975
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
 msgstr ""
 
-#: survey_france/models.py:1020
+#: survey_france/models.py:1020 survey_korea/models.py:1022
 msgid "Which browser did you take this survey on?"
 msgstr ""
 
-#: survey_france/models.py:1022
+#: survey_france/models.py:1022 survey_korea/models.py:1024
 msgid "Google Chrome"
 msgstr ""
 
-#: survey_france/models.py:1023
+#: survey_france/models.py:1023 survey_korea/models.py:1025
 msgid "Firefox"
 msgstr ""
 
-#: survey_france/models.py:1024
+#: survey_france/models.py:1024 survey_korea/models.py:1026
 msgid "Internet Explorer"
 msgstr ""
 
-#: survey_france/models.py:1031
+#: survey_france/models.py:1031 survey_korea/models.py:1033
 msgid ""
 "If you have any comments about your experience taking this survey, with "
 "regard to the functionality of the platform, or the content of the tasks and "
@@ -2895,26 +3094,31 @@ msgid ""
 msgstr ""
 
 #: survey_france/templates/survey_france/EndGame.html:49
+#: survey_korea/templates/survey_korea/EndGame.html:49
 msgid "(Should you not wish to donate anything at this point, please enter 0)."
 msgstr ""
 
 #: survey_france/templates/survey_france/EndGame.html:50
+#: survey_korea/templates/survey_korea/EndGame.html:50
 msgid ""
 "Once again, thank you very much for participating. You will now be "
 "redirected in order to collect your reward."
 msgstr ""
 
 #: survey_france/templates/survey_france/Survey05.html:27
+#: survey_korea/templates/survey_korea/Survey05.html:27
 msgid ""
 "When answering the following questions, please think about French "
 "institutions."
 msgstr ""
 
 #: survey_france/templates/survey_france/Survey07.html:50
+#: survey_korea/templates/survey_korea/Survey07.html:50
 msgid "Alone"
 msgstr ""
 
 #: survey_france/templates/survey_france/Survey10.html:17
+#: survey_korea/templates/survey_korea/Survey10.html:17
 msgid ""
 "What are all the ways that you got income in the last 12 months ending "
 "today? <br/>Please choose the three most relevant options. <br/><br/>Please "
@@ -2923,19 +3127,103 @@ msgstr ""
 
 #: survey_france/templates/survey_france/Survey10.html:22
 #: survey_france/templates/survey_france/Survey10.html:60
+#: survey_korea/templates/survey_korea/Survey10.html:22
+#: survey_korea/templates/survey_korea/Survey10.html:60
 msgid "Salaries and wages"
 msgstr ""
 
 #: survey_france/templates/survey_france/Survey10.html:28
 #: survey_france/templates/survey_france/Survey10.html:66
+#: survey_korea/templates/survey_korea/Survey10.html:28
+#: survey_korea/templates/survey_korea/Survey10.html:66
 msgid "Profit from self-employment or business"
 msgstr ""
 
 #: survey_france/templates/survey_france/Survey10.html:55
+#: survey_korea/templates/survey_korea/Survey10.html:55
 msgid ""
 "What are the main ways that your household received income in the last 12 "
 "months? <br/>Please choose the three most relevant options. <br/><br/>Please "
 "do not count loans as income."
+msgstr ""
+
+#: survey_korea/models.py:171
+msgid ""
+"Imagine the following situation: you won 1000 Won in a lottery. Considering "
+"your current situation, how much would you donate to a good cause?"
+msgstr ""
+
+#: survey_korea/models.py:222
+msgid ""
+"You are in an area you are not familiar with, and     you realize that you "
+"lost your way. You ask a stranger for directions.     The stranger offers to "
+"take you to your destination. Helping you costs     the stranger about "
+"20.000 Won in total. However, the stranger says he or     she does not want "
+"any money from you. You have 6 presents with you.     The cheapest present "
+"costs 5.000 Won, the most expensive one costs     30.000 Won. Do you give "
+"one of the presents to the stranger as a     “thank-you”-gift? If so, which "
+"present do you give to the stranger?"
+msgstr ""
+
+#: survey_korea/models.py:232
+msgid "the present worth 5.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:233
+msgid "the present worth 10.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:234
+msgid "the present worth 15.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:235
+msgid "the present worth 20.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:236
+msgid "the present worth 25.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:237
+msgid "the present worth 30.000 Won"
+msgstr ""
+
+#: survey_korea/models.py:740
+msgid "In what year did you arrive in Korea?"
+msgstr ""
+
+#: survey_korea/models.py:845 survey_korea/models.py:900
+msgid "0 to [13.000.000 x sqrt (household size)] Won per year"
+msgstr ""
+
+#: survey_korea/models.py:848
+msgid ""
+"[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household size)]"
+msgstr ""
+
+#: survey_korea/models.py:851
+msgid ""
+"[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household size)]"
+msgstr ""
+
+#: survey_korea/models.py:854
+msgid ""
+"[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household size)]"
+msgstr ""
+
+#: survey_korea/models.py:856
+msgid "[34.000.000 x sqrt (household size)] Won or more per year]"
+msgstr ""
+
+#: survey_korea/models.py:874
+msgid "0 to 13.000.000 Won per year"
+msgstr ""
+
+#: survey_korea/templates/survey_korea/EndGame.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as {{payoff_amount}} Won."
 msgstr ""
 
 #: trust/templates/trust/EndGame.html:9
@@ -3284,52 +3572,113 @@ msgstr ""
 msgid "Reset to zero"
 msgstr "Reset to zero"
 
-#: trust/views.py:60
+#: trust/views.py:61
 msgid "Please enter a number from 0 to 10"
 msgstr "Please enter a number from 0 to 10"
 
-#: trust/views.py:90
-msgid "If Participant A sends you $0 (you receive 0€ × 3 = 0€)"
+#: trust/views.py:65
+#, fuzzy
+#| msgid "Please enter a number from 0 to 10"
+msgid "Please enter a number from 0 to 10.000"
+msgstr "Please enter a number from 0 to 10"
+
+#: trust/views.py:97
+msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
 msgstr ""
 
-#: trust/views.py:93
-msgid "If Participant A sends you $1 (you receive 1€ × 3 = 3€)"
+#: trust/views.py:100
+msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
 msgstr ""
 
-#: trust/views.py:96
-msgid "If Participant A sends you $2 (you receive 2€ × 3 = 6€)"
+#: trust/views.py:103
+msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
 msgstr ""
 
-#: trust/views.py:99
-msgid "If Participant A sends you $3 (you receive 3€ × 3 = 9€)"
+#: trust/views.py:106
+msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
 msgstr ""
 
-#: trust/views.py:102
-msgid "If Participant A sends you $4 (you receive 4€ × 3 = 12€)"
+#: trust/views.py:109
+msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
 msgstr ""
 
-#: trust/views.py:105
-msgid "If Participant A sends you $5 (you receive 5€ × 3 = 15€)"
+#: trust/views.py:112
+msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
 msgstr ""
 
-#: trust/views.py:108
-msgid "If Participant A sends you $6 (you receive 6€ × 3 = 18€)"
+#: trust/views.py:115
+msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
 msgstr ""
 
-#: trust/views.py:111
-msgid "If Participant A sends you $7 (you receive 7€ × 3 = 21€)"
+#: trust/views.py:118
+msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
 msgstr ""
 
-#: trust/views.py:114
-msgid "If Participant A sends you $8 (you receive 8€ × 3 = 24€)"
+#: trust/views.py:121
+msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
 msgstr ""
 
-#: trust/views.py:117
-msgid "If Participant A sends you $9 (you receive 9€ × 3 = 27€)"
+#: trust/views.py:124
+msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
 msgstr ""
 
-#: trust/views.py:120
-msgid "If Participant A sends you $10 (you receive 10€ ×3 = 30€)"
+#: trust/views.py:127
+msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
+msgstr ""
+
+#: trust/views.py:133
+msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
+msgstr ""
+
+#: trust/views.py:136
+msgid ""
+"If Participant A sends you 1.000 Won (you receive 1.000 Won × 3 = 3.000 Won)"
+msgstr ""
+
+#: trust/views.py:139
+msgid ""
+"If Participant A sends you 2 Won (you receive 2.000 Won × 3 = 6.000 Won)"
+msgstr ""
+
+#: trust/views.py:142
+msgid ""
+"If Participant A sends you 3.000 Won (you receive 3.000 Won × 3 = 9.000 Won)"
+msgstr ""
+
+#: trust/views.py:145
+msgid ""
+"If Participant A sends you 4.000 Won (you receive 4.000 Won × 3 = 12.000 Won)"
+msgstr ""
+
+#: trust/views.py:148
+msgid ""
+"If Participant A sends you 5.000 Won (you receive 5.000 Won × 3 = 15.000 Won)"
+msgstr ""
+
+#: trust/views.py:151
+msgid ""
+"If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
+msgstr ""
+
+#: trust/views.py:154
+msgid ""
+"If Participant A sends you 7.000 Won (you receive 7.000 Won × 3 = 21.000 Won)"
+msgstr ""
+
+#: trust/views.py:157
+msgid ""
+"If Participant A sends you 8.000 Won (you receive 8.000 Won × 3 = 24.000 Won)"
+msgstr ""
+
+#: trust/views.py:160
+msgid ""
+"If Participant A sends you 9.000 Won (you receive 9.000 Won × 3 = 27.000 Won)"
+msgstr ""
+
+#: trust/views.py:163
+msgid ""
+"If Participant A sends you 10.000 Won (you receive 10.000 Won ×3 = 30.000 "
+"Won)"
 msgstr ""
 
 #, fuzzy
