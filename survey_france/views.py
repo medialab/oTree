@@ -3,7 +3,15 @@
 from __future__ import division
 from ._builtin import Page
 from . import models
+import math
 # from django.utils.translation import ugettext_lazy as _
+
+
+def vars_for_all_templates(self):
+    """Provide global template variables."""
+    return {
+        'lang': self.session.vars['lang']
+    }
 
 
 class Survey01(Page):
@@ -218,6 +226,22 @@ class Survey10F(Page):
     form_fields = [
         '_10F_income'
     ]
+
+    def vars_for_template(self):
+        value_adults = int(self.player._07_how_many_people_adults)
+        value_children = int(self.player._07_how_many_people_children)
+        household_size = math.sqrt(value_adults + value_children)
+        value_15000 = int(15000 * household_size)
+        value_20000 = int(20000 * household_size)
+        value_25000 = int(25000 * household_size)
+        value_32000 = int(32000 * household_size)
+        return {
+            'household_size': household_size,
+            'value_15000': value_15000,
+            'value_20000': value_20000,
+            'value_25000': value_25000,
+            'value_32000': value_32000
+        }
 
 
 class Survey10G(Page):

@@ -838,25 +838,8 @@ the sources mentioned in the previous question.)'),
 
     _10B_household_income = models.CharField(
         verbose_name=_(u'Just to confirm, which of these income bands \
-corresponds best to the income of your entire household (the people you share \
-your income and expenditures with). Remember, we are asking for the income of \
-your household, after taxes have been deducted.'),
-        choices=(
-            ('0 to [15.000 x sqrt (household size)] euros per year', _(u'0 \
-to [15.000 x sqrt (household size)] euros per year')),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
-size)]', _(u'[15.000 x sqrt (household size)] to [20.000 x sqrt \
-(household size)]')),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
-size)]', _(u'[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
-size)]')),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
-size)]', _(u'[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
-size)]')),
-            ('[32.000 x sqrt (household size)] euro or more per year]', _(u'[\
-32.000 x sqrt (household size)] euro or more per year]')),
-        ),
-        widget=widgets.RadioSelect()
+corresponds best to your personal income? Remember, we are asking for \
+your individual income, after taxes have been deducted.'),
     )
 
     _10C_income = models.CurrencyField(
@@ -886,7 +869,7 @@ year'),
     _10E_income = models.CurrencyField(
         verbose_name=_(u'In the last 12 months, what was the total income of \
 your household after taxes have been deducted? (Income can come from any of \
-the sources mentioned in the previous question.)'),
+the sources mentioned in the previous question)'),
     )
 
     _10F_income = models.CharField(
@@ -894,22 +877,6 @@ the sources mentioned in the previous question.)'),
 corresponds best to the income of your entire household (the people you \
 share your income and expenditures with). Remember, we are asking for the \
 income of your household, after taxes have been deducted.'),
-        choices=(
-            ('0 to [15.000 x sqrt (household size)] euro per year', _(u"0 to \
-[15.000 x sqrt (household size)] euro per year")),
-            ('[15.000 x sqrt (household size)] to [20.000 x sqrt (household \
-size)]', '[15.000 x sqrt (household size)] to [20.000 x sqrt \
-(household size)]'),
-            ('[20.000 x sqrt (household size)] to [25.000 x sqrt (household \
-size)]', '[20.000 x sqrt (household size)] to [25.000 x sqrt \
-(household size)]'),
-            ('[25.000 x sqrt (household size)] to [32.000 x sqrt (household \
-size)]', '[25.000 x sqrt (household size)] to [32.000 x sqrt \
-(household size)]'),
-            ('[32.000 x sqrt (household size)] euro or more per year', '[\
-32.000 x sqrt (household size)] euro or more per year')
-        ),
-        widget=widgets.RadioSelect()
     )
 
     _10G_income = models.CharField(
