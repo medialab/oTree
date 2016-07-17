@@ -1,0 +1,41 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+<style>
+  label {
+    font-weight: normal;
+  }
+  .control-label {
+    font-weight: bold;
+  }
+</style>
+  <br/><br/><br/><br/><br/>
+  <p>
+    <div class="form-group required">
+    <label class="control-label" for="id__10B_household_income">{% trans "Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have been deducted." %}</label>
+      <div class="controls field-_10B_household_income">
+          {% if lang == 'fr' %}
+          <ul>
+            <li><label for="id__10B_household_income_1"><input type="radio" id="id__10B_household_income_1" value="0 to 15.000 euro per year" name="_10B_household_income" required=""> {% trans "0 to 15.000 euro per year" %}</label></li>
+            <li><label for="id__10B_household_income_2"><input type="radio" id="id__10B_household_income_2" value="15.000 to 20.000 euro per year" name="_10B_household_income" required=""> {% trans "15.000 to 20.000 euro per year" %}</label></li>
+            <li><label for="id__10B_household_income_3"><input type="radio" id="id__10B_household_income_3" value="20.000 to 25.000 euro per year" name="_10B_household_income" required=""> {% trans "20.000 to 25.000 euro per year" %}</label></li>
+            <li><label for="id__10B_household_income_4"><input type="radio" id="id__10B_household_income_4" value="25.000 to 32.000 euro per year" name="_10B_household_income" required=""> {% trans "25.000 to 32.000 euro per year" %}</label></li>
+            <li><label for="id__10B_household_income_5"><input type="radio" id="id__10B_household_income_5" value="32.000 euro per year or more" name="_10B_household_income" required=""> {% trans "32.000 euro per year or more" %}</label></li>
+          </ul>
+          {% elif lang == 'kr' %}
+          <ul>
+            <li><label for="id__10B_household_income_1"><input type="radio" id="id__10B_household_income_1" value="0 to 13.000.000 Won per year" name="_10B_household_income" required=""> {% trans "0 to 13.000.000 Won per year" %}</label></li>
+            <li><label for="id__10B_household_income_2"><input type="radio" id="id__10B_household_income_2" value="13.000.000 to 20.000.000 Won per year" name="_10B_household_income" required=""> {% trans "13.000.000 to 20.000.000 Won per year" %}</label></li>
+            <li><label for="id__10B_household_income_3"><input type="radio" id="id__10B_household_income_3" value="20.000.000 to 25.000.000 Won per year" name="_10B_household_income" required=""> {% trans "20.000.000 to 25.000.000 Won per year" %}</label></li>
+            <li><label for="id__10B_household_income_4"><input type="radio" id="id__10B_household_income_4" value="25.000.000 to 34.000.000 Won per year" name="_10B_household_income" required=""> {% trans "25.000.000 to 34.000.000 Won per year" %}</label></li>
+            <li><label for="id__10B_household_income_5"><input type="radio" id="id__10B_household_income_5" value="34.000.000 Won or more per year" name="_10B_household_income" required=""> {% trans "34.000.000 Won or more per year" %}</label></li>
+          </ul>
+          {% endif %}
+      </div><!--- .controls -->
+    </div>
+  </p>
+
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

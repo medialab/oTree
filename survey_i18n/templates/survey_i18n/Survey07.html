@@ -13,7 +13,7 @@
   .control-label {font-weight: bold}
 </style>
   <br/>
-  <p>{% trans "We will now ask you questions about your personal situation. Remember, all data is anonymous." %}</p>
+  <p>{% trans "We will now ask you questions about your personal situation. All data is anonymous and will not be shared with a third party." %}</p>
   <p>
       {% formfield player._07_what_is_your_date_of_birth %}
       <hr>
@@ -58,7 +58,8 @@
       <hr>
       {% formfield player._07_which_country_were_you_born %}
       <hr>
-      {% formfield player._07_what_year_did_you_arrive_in_country %}
+      <label class="control-label" for="id__07_what_year_did_you_arrive_in_country">{{label_what_year}}</label>
+      {% formfield player._07_what_year_did_you_arrive_in_country with label='' %}
       <hr>
       {% formfield player._07_do_you_live_in %}
   </p>

@@ -4,6 +4,14 @@
 
 {% block content %}
 <style>
+  li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  li:nth-child(12) {
+    display: block;
+  }
 
   .controls ul li label {
     color: #357EBD;
@@ -13,7 +21,8 @@
   .control-label {
     font-weight: bold;
   }
-  </style>
+</style>
+
   <br/><br/><br/><br/><br/>
   <p>
       {% formfield player._04C_wallet %}

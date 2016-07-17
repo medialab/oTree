@@ -18,7 +18,7 @@ from django_countries.fields import CountryField
 class Constants(BaseConstants):
     """Constants for Survey."""
 
-    name_in_url = 'survey_fr'
+    name_in_url = 'survey_i18n'
     players_per_group = None
     num_rounds = 1
 
@@ -26,7 +26,11 @@ class Constants(BaseConstants):
 class Subsession(BaseSubsession):
     """Subsession for Survey."""
 
-    pass
+    def before_session_starts(self):
+        if 'language_code' in self.session.config:
+            self.session.vars['lang'] = (
+                self.session.config['language_code'][3:]
+            )
 
 
 class Group(BaseGroup):
@@ -168,9 +172,6 @@ expecting anything in return? '),
     )
 
     _02A_altruism = models.CurrencyField(
-        verbose_name=_(u'Imagine the following situation: you won 1000 euros \
-in a lottery. Considering your current situation, how much would you donate \
-to a good cause?'),
         initial=0,
         min=0,
         max=1000,
@@ -218,27 +219,7 @@ I am willing to return it."),
         initial=None
     )
 
-    _04_thank_you_gift = models.CharField(
-        verbose_name=_(u"You are in an area you are not familiar with, and \
-    you realize that you lost your way. You ask a stranger for directions. \
-    The stranger offers to take you to your destination. Helping you costs \
-    the stranger about 20 Euro in total. However, the stranger says he or \
-    she does not want any money from you. You have 6 presents with you. \
-    The cheapest present costs 5 euros, the most expensive one costs 30 euros.\
-     Do you give one of the presents to the stranger as a “thank-you”-gift? \
-    If so, which present do you give to the stranger?"),
-        choices=(
-            ('no present', _(u'no present')),
-            ('the present worth 5 euros', _(u'the present worth 5 euros')),
-            ('the present worth 10 euros', _(u'the present worth 10 euros')),
-            ('the present worth 15 euros', _(u'the present worth 15 euros')),
-            ('the present worth 20 euros', _(u'the present worth 20 euros')),
-            ('the present worth 25 euros', _(u'the present worth 25 euros')),
-            ('the present worth 30 euros', _(u'the present worth 30 euros')),
-        ),
-        widget=widgets.RadioSelect(),
-        initial=None
-    )
+    _04_thank_you_gift = models.CharField()
 
     _04A_try_to_help_each_other = models.CharField(
         verbose_name=_(u"Would you say that most of the time people are only \
@@ -737,7 +718,6 @@ regardless of their gender, race, age or economic condition equally.'),
     )
 
     _07_what_year_did_you_arrive_in_country = models.CharField(
-        verbose_name=_(u'In what year did you arrive in France?'),
         choices=[_(u'I was born here')] + [
             str(x) for x in range(date.today().year, 1940, -1)
         ],
@@ -830,11 +810,7 @@ that people have only the best intentions.'),
     _10_main_ways_income = models.CharField()
     _10_household_income = models.CharField()
 
-    _10A_household_income = models.CurrencyField(
-        verbose_name=_(u'In the last 12 months, what was the total income of \
-your household after taxes have been deducted? (Income can come from any of \
-the sources mentioned in the previous question.)'),
-    )
+    _10A_household_income = models.CharField()
 
     _10B_household_income = models.CharField(
         verbose_name=_(u'Just to confirm, which of these income bands \
@@ -849,35 +825,7 @@ deducted? (Income can come from any of the sources mentioned in the \
 previous question.)'),
     )
 
-    _10D_income = models.CharField(
-        verbose_name=_(u'Just to confirm, which of these income bands \
-corresponds best to your personal income? Remember, we are asking for \
-your individual income, after taxes have been deducted.'),
-        choices=(
-            ('0 to 15.000 euro per year', _(u"0 to 15.000 euro per year")),
-            ('15.000 to 20.000 euro per year', '15.000 to 20.000 euro per \
-year'),
-            ('20.000 to 25.000 euro per year', '20.000 to 25.000 euro per \
-year'),
-            ('25.000 to 32.000 euro per year', '25.000 to 32.000 euro per \
-year'),
-            ('32.000 euro per year or more', '32.000 euro per year or more')
-        ),
-        widget=widgets.RadioSelect()
-    )
-
-    _10E_income = models.CurrencyField(
-        verbose_name=_(u'In the last 12 months, what was the total income of \
-your household after taxes have been deducted? (Income can come from any of \
-the sources mentioned in the previous question)'),
-    )
-
-    _10F_income = models.CharField(
-        verbose_name=_(u'Just to confirm, which of these income bands \
-corresponds best to the income of your entire household (the people you \
-share your income and expenditures with). Remember, we are asking for the \
-income of your household, after taxes have been deducted.'),
-    )
+    _10D_income = models.CharField()
 
     _10G_income = models.CharField(
         verbose_name=_(u'Did you or your household save any money in the \

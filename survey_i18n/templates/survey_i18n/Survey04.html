@@ -1,0 +1,38 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+<style>
+
+  .controls ul li label {
+    color: #357EBD;
+  }
+
+  label {font-weight: normal;}
+  .control-label {
+    font-weight: bold;
+  }
+  </style>
+  <br/><br/><br/><br/><br/>
+  <p><strong>{% trans "Please think about what you would do in the following situation:" %}</strong></p>
+
+  <div class="form-group required">
+    <label class="control-label" for="id__04_thank_you_gift">
+      {% trans "You are in an area you are not familiar with, and you realize that you lost your way. You ask a stranger for directions. The stranger offers to take you to your destination. Helping you costs the stranger about 20 Euro in total. However, the stranger says he or she does not want any money from you. You have 6 presents with you. The cheapest present costs 5 euros, the most expensive one costs 30 euros. Do you give one of the presents to the stranger as a “thank-you”-gift? If so, which present do you give to the stranger?" %}
+    </label>
+    <div class="controls  field-_04_thank_you_gift">
+      <ul>
+        <li><label for="id__04_thank_you_gift_1"><input type="radio" id="id__04_thank_you_gift_1" value="no present" name="_04_thank_you_gift" required=""> {{labels.present_00}}</label></li>
+        <li><label for="id__04_thank_you_gift_2"><input type="radio" id="id__04_thank_you_gift_2" value="the present worth 5 euros" name="_04_thank_you_gift" required=""> {{labels.present_05}}</label></li>
+        <li><label for="id__04_thank_you_gift_3"><input type="radio" id="id__04_thank_you_gift_3" value="the present worth 10 euros" name="_04_thank_you_gift" required=""> {{labels.present_10}}</label></li>
+        <li><label for="id__04_thank_you_gift_4"><input type="radio" id="id__04_thank_you_gift_4" value="the present worth 15 euros" name="_04_thank_you_gift" required=""> {{labels.present_15}}</label></li>
+        <li><label for="id__04_thank_you_gift_5"><input type="radio" id="id__04_thank_you_gift_5" value="the present worth 20 euros" name="_04_thank_you_gift" required=""> {{labels.present_20}}</label></li>
+        <li><label for="id__04_thank_you_gift_6"><input type="radio" id="id__04_thank_you_gift_6" value="the present worth 25 euros" name="_04_thank_you_gift" required=""> {{labels.present_25}}</label></li>
+        <li><label for="id__04_thank_you_gift_7"><input type="radio" id="id__04_thank_you_gift_7" value="the present worth 30 euros" name="_04_thank_you_gift" required=""> {{labels.present_30}}</label></li>
+      </ul>
+    </div>
+  </div>
+
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

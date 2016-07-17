@@ -1,0 +1,27 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load otree_tags %}
+
+{% block content %}
+<style>
+  label {
+    font-weight: normal;
+  }
+
+  .control-label {
+    font-weight: bold;
+  }
+
+  .input-group {
+    float: left;
+    margin-right: 10px;
+  }
+</style>
+  <br/><br/><br/><br/><br/>
+  <p>{% trans "Now think about the income of your household. This can be just you, or the collective income of your family, your parents, or whoever you share your income and expenditures with." %}</p>
+  <p>
+      {% formfield player._10C_income %} <span>{% trans "per year" %}</span>
+  </p>
+
+  <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+{% endblock %}

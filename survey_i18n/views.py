@@ -4,7 +4,7 @@ from __future__ import division
 from ._builtin import Page
 from . import models
 import math
-# from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import ugettext_lazy as _
 
 
 def vars_for_all_templates(self):
@@ -45,6 +45,32 @@ class Survey02A(Page):
         '_02A_altruism'
     ]
 
+    def vars_for_template(self):
+        label = {
+            'fr': _(u'Imagine the following situation: you won 1000 euros \
+in a lottery. Considering your current situation, how much would you donate \
+to a good cause?'),
+            'kr': _(u'Imagine the following situation: you won 1000 Won \
+in a lottery. Considering your current situation, how much would you donate \
+to a good cause?')
+        }
+
+        money = {
+            'fr': {
+                'max': 1000,
+                'currency': _(u'€')
+            },
+            'kr': {
+                'max': 1000000,
+                'currency': _(u'Won')
+            }
+        }
+
+        return {
+            'label': label[self.session.vars['lang']],
+            'money': money[self.session.vars['lang']]
+        }
+
 
 class Survey03(Page):
     """Page 3 of survey."""
@@ -63,6 +89,31 @@ class Survey04(Page):
     form_fields = [
         '_04_thank_you_gift'
     ]
+
+    def vars_for_template(self):
+        labels = {
+            'fr': {
+                'present_00': _(u'no present'),
+                'present_05': _(u'the present worth 5 euros'),
+                'present_10': _(u'the present worth 10 euros'),
+                'present_15': _(u'the present worth 15 euros'),
+                'present_20': _(u'the present worth 20 euros'),
+                'present_25': _(u'the present worth 25 euros'),
+                'present_30': _(u'the present worth 30 euros'),
+            },
+            'kr': {
+                'present_00': _(u'no present'),
+                'present_05': _(u'the present worth 5.000 Won'),
+                'present_10': _(u'the present worth 10.000 Won'),
+                'present_15': _(u'the present worth 15.000 Won'),
+                'present_20': _(u'the present worth 20.000 Won'),
+                'present_25': _(u'the present worth 25.000 Won'),
+                'present_30': _(u'the present worth 30.000 Won'),
+            }
+        }
+        return {
+            'labels': labels[self.session.vars['lang']]
+        }
 
 
 class Survey04A(Page):
@@ -114,6 +165,15 @@ class Survey05(Page):
         '_05_financial_institutions'
     ]
 
+    def vars_for_template(self):
+        instructions = {
+            'fr': _(u'When answering the following questions, please think about French institutions.'),
+            'kr': _(u'When answering the following questions, please think about Korean institutions.'),
+        }
+        return {
+            'instructions': instructions[self.session.vars['lang']]
+        }
+
 
 class Survey06(Page):
     """Page 6 of survey."""
@@ -143,6 +203,16 @@ class Survey07(Page):
         '_07_do_you_live_in'
     ]
 
+    def vars_for_template(self):
+        label_what_year = {
+            'fr': _(u'In what year did you arrive in France?'),
+            'kr': _(u'In what year did you arrive in Korea?'),
+        }
+
+        return {
+            'label_what_year': label_what_year[self.session.vars['lang']]
+        }
+
 
 class Survey08(Page):
     """Page 8 of survey."""
@@ -151,6 +221,32 @@ class Survey08(Page):
     form_fields = [
         '_08_highest_level_of_education_that_you_have_completed',
     ]
+
+    def vars_for_template(self):
+        fields = {
+            'fr': {
+                'f01': _(u'Aucun diplôme'),
+                'f02': _(u'Brevet des collèges'),
+                'f03': _(u'CAP BEP ou équivalent'),
+                'f04': _(u'Baccalauréat'),
+                'f05': _(u'Diplômé du supérieur court (BTS, DUT, etc.)'),
+                'f06': _(u'Licence (Bac + 3)'),
+                'f07': _(u'Master (Bac + 5) ou Doctorat')
+            },
+            'kr': {
+                'f01': _(u'Less than high school'),
+                'f02': _(u'High school'),
+                'f03': _(u'Some college'),
+                'f04': _(u'Diploma, trades certificate or other post school qualification other than university'),
+                'f05': _(u'Undergraduate degree (e.g. BA, BS)'),
+                'f06': _(u'Post-graduate degree')
+            }
+        }
+
+        return {
+            'lang': self.session.vars['lang'],
+            'fields': fields[self.session.vars['lang']]
+        }
 
 
 class Survey09(Page):
@@ -182,6 +278,17 @@ class Survey10A(Page):
         '_10A_household_income'
     ]
 
+    def vars_for_template(self):
+        currency = {
+            'fr': _(u'€'),
+            'kr': _(u'Won')
+        }
+
+        return {
+            'currency': currency[self.session.vars['lang']],
+            'dont_know': _(u"Don't know")
+        }
+
 
 class Survey10B(Page):
     """Page 10 of survey."""
@@ -209,38 +316,34 @@ class Survey10D(Page):
         '_10D_income'
     ]
 
-
-class Survey10E(Page):
-    """Page 10 of survey."""
-
-    form_model = models.Player
-    form_fields = [
-        '_10E_income'
-    ]
-
-
-class Survey10F(Page):
-    """Page 10 of survey."""
-
-    form_model = models.Player
-    form_fields = [
-        '_10F_income'
-    ]
-
     def vars_for_template(self):
+        values = {
+            'fr': {
+                'A': 15000,
+                'B': 20000,
+                'C': 25000,
+                'D': 32000
+            },
+            'kr': {
+                'A': 13000000,
+                'B': 20000000,
+                'C': 25000000,
+                'D': 34000000
+            }
+        }
         value_adults = int(self.player._07_how_many_people_adults)
         value_children = int(self.player._07_how_many_people_children)
         household_size = math.sqrt(value_adults + value_children)
-        value_15000 = int(15000 * household_size)
-        value_20000 = int(20000 * household_size)
-        value_25000 = int(25000 * household_size)
-        value_32000 = int(32000 * household_size)
+        value_a = int(values[self.session.vars['lang']]['A'] * household_size)
+        value_b = int(values[self.session.vars['lang']]['B'] * household_size)
+        value_c = int(values[self.session.vars['lang']]['C'] * household_size)
+        value_d = int(values[self.session.vars['lang']]['D'] * household_size)
         return {
             'household_size': household_size,
-            'value_15000': value_15000,
-            'value_20000': value_20000,
-            'value_25000': value_25000,
-            'value_32000': value_32000
+            'value_a': value_a,
+            'value_b': value_b,
+            'value_c': value_c,
+            'value_d': value_d
         }
 
 
@@ -273,13 +376,8 @@ class Survey11(Page):
         '_11_were_you_in_a_calm_environment',
         '_11_have_you_ever_participated_in_another_study',
         '_11_which_device_did_you_take_this_study',
-        '_11_which_browser',
-        'total_time'
+        '_11_which_browser'
     ]
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {'start_time': self.player.total_time}
 
 
 class Survey12(Page):
@@ -291,15 +389,15 @@ class Survey12(Page):
         'total_time'
     ]
 
+    def vars_for_template(self):
+        """Make data available in template."""
+        return {'start_time': self.player.total_time}
+
 
 class EndGame(Page):
     """End of survey."""
 
-    form_fields = ['total_time', 'donation']
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {'start_time': self.player.total_time}
+    pass
 
 
 page_sequence = [
@@ -321,11 +419,8 @@ page_sequence = [
     Survey10B,
     Survey10C,
     Survey10D,
-    Survey10E,
-    Survey10F,
     Survey10G,
     Survey10H,
     Survey11,
     Survey12,
-    EndGame
 ]
