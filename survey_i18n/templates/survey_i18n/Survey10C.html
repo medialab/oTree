@@ -18,10 +18,41 @@
   }
 </style>
   <br/><br/><br/><br/><br/>
-  <p>{% trans "Now think about the income of your household. This can be just you, or the collective income of your family, your parents, or whoever you share your income and expenditures with." %}</p>
+
   <p>
-      {% formfield player._10C_income %} <span>{% trans "per year" %}</span>
+    <label class="control-label" for="id__10C_income">{% trans "In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come from any of the sources mentioned in the previous question.)" %}</label>
+    <div class="controls  field-_10C_income">
+      <div class="input-group input-group-narrow">
+        <span class="input-group-addon">{{currency}}</span>
+        <input type="number" name="_10C_income" id="id__10C_income" step="0.01" class="form-control">
+      </div>
+    </div>
+    <span class="clearfix">{% trans "per year" %}</span>
+
+    <div class="controls" class="clearfix">
+      <div class="checkbox">
+        <label><input type="checkbox" name="_10C_income_2" value="{{dont_know}}">{{dont_know}}</label>
+      </div>
+    </div>
   </p>
 
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
+
+  <script>
+    $(function () {
+      var $dontKnow = $('[name=_10C_income_2]');
+
+      $('.btn').click(function (e) {
+        e.preventDefault();
+
+        if ($dontKnow.prop('checked')) {
+          $('#id__10C_income').val(-1)
+        }
+
+        if ($('#id__10C_income').val() !== '') {
+          $('form').submit();
+        }
+      });
+    })
+  </script>
 {% endblock %}

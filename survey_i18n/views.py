@@ -307,6 +307,17 @@ class Survey10C(Page):
         '_10C_income'
     ]
 
+    def vars_for_template(self):
+        currency = {
+            'fr': _(u'€'),
+            'kr': _(u'Won')
+        }
+
+        return {
+            'currency': currency[self.session.vars['lang']],
+            'dont_know': _(u"Don't know")
+        }
+
 
 class Survey10D(Page):
     """Page 10 of survey."""

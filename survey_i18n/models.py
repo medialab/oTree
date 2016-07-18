@@ -266,7 +266,7 @@ I am willing to return it."),
     _04A_can_be_justified = models.CharField(
         verbose_name=_(u"Can you tell us whether you think the following \
     action can always be justified, never be justified, or something in \
-    between:"),
+    between"),
         choices=(
             ('0', _(u"0 - This action is never wrong")),
             ('1', '1'),
@@ -818,12 +818,7 @@ corresponds best to your personal income? Remember, we are asking for \
 your individual income, after taxes have been deducted.'),
     )
 
-    _10C_income = models.CurrencyField(
-        verbose_name=_(u'In the last 12 months, what was your total income, \
-the income that you received as an individual, after taxes have been \
-deducted? (Income can come from any of the sources mentioned in the \
-previous question.)'),
-    )
+    _10C_income = models.CharField()
 
     _10D_income = models.CharField()
 
@@ -842,7 +837,7 @@ previous year?'),
         verbose_name=_(u'How important would you say religion is in your \
 own life?'),
         choices=(
-            ('0', _(u"0 - Does not describe me at all")),
+            ('0', _(u"0 - Not important at all")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -852,7 +847,7 @@ own life?'),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u'10 - Describes me perfectly')),
+            ('10', _(u'10 - Very important')),
             ("Don't know", _(u"Don't know")),
         ),
         widget=widgets.RadioSelect()
