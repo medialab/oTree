@@ -11,10 +11,18 @@ config = {
 
     # URL stems for redirections
     'quota_redirects': {
-        'complete': 'http://globaltestmarket.com/20/survey/finished.phtml?ac=[ACCESS_CODE]&sn=[STUDY_NUMBER]&lang=[LANG]',
-        'screen': 'http://globaltestmarket.com/20/survey/finished.phtml?ac=[ACCESS_CODE]&sn=[STUDY_NUMBER]&lang=[LANG]&sco=s',
-        'quota_full': 'http://globaltestmarket.com/20/survey/finished.phtml?ac=[ACCESS_CODE]&sn=[STUDY_NUMBER]&lang=[LANG]&sco=o',
-        'speedster': 'http://globaltestmarket.com/20/survey/finished.phtml?ac=[ACCESS_CODE]&sn=[STUDY_NUMBER]&lang=[LANG]&sco=tf',
+        'complete': (
+            'http://globaltestmarket.com/20/survey/finished.phtml'
+        ),
+        'screen': (
+            'http://globaltestmarket.com/20/survey/finished.phtml?sco=s'
+        ),
+        'quota_full': (
+            'http://globaltestmarket.com/20/survey/finished.phtml?sco=o'
+        ),
+        'speedster': (
+            'http://globaltestmarket.com/20/survey/finished.phtml?sco=tf'
+        ),
     },
 
     # Must match number of participants for this link.

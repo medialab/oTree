@@ -8,16 +8,19 @@
   <input type="hidden" id="income_groups" name="income_groups">
   <input type="hidden" id="gender_age_groups" name="gender_age_groups">
 
+  <!--
   <p>Quota: {{quotas}} </p>
   <p>Total population: {{total_population}} </p>
   <p>Label: {{label}} </p>
   <p>Language: {{language_code}}</p>
   <p>Redirects: {{redirects}}</p>
+  -->
 
   <script type="text/javascript">
     $(function () {
       var labelData = getLabelData('{{label}}');
       var quotaData = JSON.parse('{{quotas}}'.split('&#39;').join('"'));
+      var gmiRedirections = JSON.parse('{{redirects}}'.split('&#39;').join('"'));
       var totalPopulation = +{{total_population}};
       var genderAgeQuota = getGenderAge(labelData);
       var incomeQuota = getIncome(labelData);
@@ -30,10 +33,11 @@
 
       if (!isQuotaFull) {
         console.log('All good')
-        // Redirect here to next page.
+        redirect('quota_full', gmiRedirections);
+        redirect('next');
       } else {
         console.log('Quota full (' + name + ' exceeded) -- redirecting...')
-        // 'Quota full' redirection.
+        redirect('quota_full', gmiRedirections);
       }
 
       // Populate with data (maybe updated) to store for the next round/player.
@@ -86,6 +90,32 @@
         });
 
         return income;
+      }
+
+      function redirect(type, gmiRedirections) {
+        if (type === 'next') {
+          $('form').submit();
+        }
+
+        if (gmiRedirections && gmiRedirections.hasOwnProperty(type)) {
+          var url = generateGmiRedirection(type, '{{label}}', gmiRedirections);
+          window.location.href = url;
+        }
+      }
+
+      function extractLang(languageCode) {
+        return languageCode.slice(languageCode.length - 2);
+      }
+
+      function generateGmiRedirection(type, label, redirections) {
+        var fragment = label.split('|').filter(function (f) {
+          if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1) {
+            return f;
+          }
+        }).join('&');
+
+        var redirect = redirections[type] + '&' + fragment + '&lang=' + extractLang('{{language_code}}');
+        return redirect;
       }
     })
   </script>
