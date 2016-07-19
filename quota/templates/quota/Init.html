@@ -4,43 +4,90 @@
 
 {% block content %}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
-  <input type="hidden" id="quota_max" name="max" value=""/>
-  <input type="hidden" id="quota_current" name="current" value=""/>
-  <input type="hidden" name="label" value="{{label}}"/>
 
-  Initializing quota for: {{quotas}} <br/>
-  Label: {{label}} <br/>
-  Current: {{current}}
+  <input type="hidden" id="income_groups" name="income_groups">
+  <input type="hidden" id="gender_age_groups" name="gender_age_groups">
+
+  <p>Quota: {{quotas}} </p>
+  <p>Total population: {{total_population}} </p>
+  <p>Label: {{label}} </p>
+  <p>Language: {{language_code}}</p>
+  <p>Redirects: {{redirects}}</p>
 
   <script type="text/javascript">
-    var data = JSON.parse("{{quotas}}".split('&#39;').join('"'));
-    var quota = getQuota(data, '{{label}}');
-    var max =  +quota.max;
-    var current =  +{{current}};
+    $(function () {
+      var labelData = getLabelData('{{label}}');
+      var quotaData = JSON.parse('{{quotas}}'.split('&#39;').join('"'));
+      var totalPopulation = +{{total_population}};
+      var genderAgeQuota = getGenderAge(labelData);
+      var incomeQuota = getIncome(labelData);
+      var isQuotaFull = false;
 
-    $('#quota_max').attr('value', max);
+      // Test quotas.
+      // Increment if test passes. Mark if test fails.
+      testQuota('gender_age_groups', genderAgeQuota, quotaData, totalPopulation)
+      testQuota('income_groups', incomeQuota, quotaData, totalPopulation);
 
-    var ticket = current + 1;
+      if (!isQuotaFull) {
+        console.log('All good')
+        // Redirect here to next page.
+      } else {
+        console.log('Quota full (' + name + ' exceeded) -- redirecting...')
+        // 'Quota full' redirection.
+      }
 
-    console.log('ticket', 'current')
-    console.log(ticket, current)
+      // Populate with data (maybe updated) to store for the next round/player.
+      $('#income_groups').val(JSON.stringify(quotaData.income_groups));
+      $('#gender_age_groups').val(JSON.stringify(quotaData.gender_age_groups));
 
-    if (ticket >= max) {
-      $('#quota_current').attr('value', 'quota full')
-    } else {
-      $('#quota_current').attr('value', ticket)
-    }
+      console.log(quotaData);
 
-    function getQuota (data, label) {
-      var quota;
-      _.every(data, function (o) {
-        if (_.has(o, label)) {
-          quota = o[label]
-          return true
+      function testQuota(name, key, base, population) {
+        if (Math.round(base[name][key].currently) < Math.round(base[name][key].expected)) {
+          incrementQuota(name, key, base, population)
+        } else {
+          isQuotaFull = true;
         }
-      })
-      return quota;
-    }
+      }
+
+      function incrementQuota(name, key, data, population) {
+        var oneUserAsPercent = population * (1 / 100);
+        data[name][key].currently = oneUserAsPercent;
+      }
+
+      function getLabelData(data) {
+        return data.split('|').map(function (chunk) {
+          var o = {};
+          o[chunk.split('=')[0]] = chunk.split('=')[1] || true
+          return o;
+        })
+      }
+
+      function getGenderAge(data) {
+        var gender = '';
+        var age = '';
+
+        data.forEach(function (d) {
+          if (d.hasOwnProperty('gender')) gender = d.gender;
+          if (d.hasOwnProperty('age')) age = d.age;
+        });
+
+        return gender + '_' + age;
+      }
+
+      function getIncome(data) {
+        var income = '';
+
+        data.some(function (d) {
+          if (d.hasOwnProperty('inc')) {
+            income = d.inc;
+            return true;
+          }
+        });
+
+        return income;
+      }
+    })
   </script>
 
   <button class="btn btn-primary">Next</button>
