@@ -36,39 +36,79 @@ class Subsession(BaseSubsession):
     """Subsession for Quota."""
 
     def before_session_starts(self):
-        """Parse information config."""
-        if 'quotas' in self.session.config:
-            self.session.vars['quotas'] = self.session.config['quotas']
+        """
+        Parse information config.
+
+        Store it in session vars. In the first view of the app,
+        we will use it to initialize control data for quota monitoring.
+        """
+        if 'language_code' in self.session.config:
+            self.session.vars['language_code'] = self.session.config['language_code']
+
+        if 'quota_redirects' in self.session.config:
+            self.session.vars['redirects'] = self.session.config['quota_redirects']
+
+        if 'quota_total_population' in self.session.config:
+            self.session.vars['total_population'] = (
+                self.session.config['quota_total_population']
+            )
+
+        if 'quota_income_groups' in self.session.config:
+            self.session.vars['income_groups'] = (
+                self.session.config['quota_income_groups']
+            )
+
+        if 'quota_gender_age_groups' in self.session.config:
+            self.session.vars['gender_age_groups'] = (
+                self.session.config['quota_gender_age_groups']
+            )
 
 
 class Group(BaseGroup):
     """Group for Quota."""
 
-    quotas = models.CharField(blank=True, null=True)
-    current = models.CharField(blank=True, null=True, default=0)
+    total_population = models.CharField(blank=True, null=True)
+    gender_age_groups = models.CharField(blank=True, null=True)
+    income_groups = models.CharField(blank=True, null=True)
+
     initialized = models.BooleanField(default=False)
 
-    def init_quotas(self, data):
-        """Initialize quota count by serializing entry data."""
+    def init_quotas(self, total_population, income_groups, gender_age_groups):
+        """Initialize quota count by serializing control data."""
         if self.initialized is False:
-            self.quotas = json.dumps(data)
+            self.save_quota_set('total_population', total_population)
+            self.save_quota_set('income_groups', income_groups)
+            self.save_quota_set('gender_age_groups', gender_age_groups)
             self.initialized = True
 
-    def get_quotas(self, key=None):
+    def get_quotas(self, search_in=None):
         """
         Return deserialized quotas.
 
         If a key was passed and found in them, return the related value.
         """
-        if self.quotas is None:
-            self.init_quotas(self.session.vars['quotas'])
+        # Initialize data on the very first call.
+        if self.initialized is False:
+            self.init_quotas(
+                self.session.vars['total_population'],
+                self.session.vars['income_groups'],
+                self.session.vars['gender_age_groups']
+            )
 
-        quotas = json.loads(self.quotas)
-        if key:
-            for quota in quotas:
-                if key in quota:
-                    return quota
-        return quotas
+        # Deserialize data.
+        total_population = json.loads(self.total_population)
+        income_groups = json.loads(self.income_groups)
+        gender_age_groups = json.loads(self.gender_age_groups)
+
+        return {
+            'total_population': total_population,
+            'income_groups': income_groups,
+            'gender_age_groups': gender_age_groups
+        }
+
+    def save_quota_set(self, fieldname, data):
+        """Save serialized data to relevant field."""
+        setattr(self, fieldname, json.dumps(data))
 
     def set_quotas(self, key, value):
         """Update the quota count."""
