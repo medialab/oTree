@@ -26,37 +26,37 @@
       var incomeQuota = getIncome(labelData);
       var isQuotaFull = false;
 
+      console.log(quotaData)
+
       // Test quotas.
       // Increment if test passes. Mark if test fails.
+
+
       testQuota('gender_age_groups', genderAgeQuota, quotaData, totalPopulation)
       testQuota('income_groups', incomeQuota, quotaData, totalPopulation);
 
       if (!isQuotaFull) {
-        console.log('All good')
-        redirect('quota_full', gmiRedirections);
+        // Populate with data (maybe updated) to store for the next round/player.
+        $('#income_groups').val(JSON.stringify(quotaData.income_groups));
+        $('#gender_age_groups').val(JSON.stringify(quotaData.gender_age_groups));
         redirect('next');
       } else {
-        console.log('Quota full (' + name + ' exceeded) -- redirecting...')
+        console.log('Quota full -- redirecting...')
         redirect('quota_full', gmiRedirections);
       }
-
-      // Populate with data (maybe updated) to store for the next round/player.
-      $('#income_groups').val(JSON.stringify(quotaData.income_groups));
-      $('#gender_age_groups').val(JSON.stringify(quotaData.gender_age_groups));
-
-      console.log(quotaData);
 
       function testQuota(name, key, base, population) {
         if (Math.round(base[name][key].currently) < Math.round(base[name][key].expected)) {
           incrementQuota(name, key, base, population)
+          console.log('incrementing ' + name)
         } else {
           isQuotaFull = true;
         }
       }
 
       function incrementQuota(name, key, data, population) {
-        var oneUserAsPercent = population * (1 / 100);
-        data[name][key].currently = oneUserAsPercent;
+        data[name][key].currently = (+data[name][key].currently + 1);
+        console.log(data[name][key], data[name][key].currently)
       }
 
       function getLabelData(data) {
@@ -94,7 +94,8 @@
 
       function redirect(type, gmiRedirections) {
         if (type === 'next') {
-          $('form').submit();
+          $('#form').submit();
+          return;
         }
 
         if (gmiRedirections && gmiRedirections.hasOwnProperty(type)) {
@@ -119,6 +120,4 @@
       }
     })
   </script>
-
-  <button class="btn btn-primary">Next</button>
 {% endblock %}

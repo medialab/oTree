@@ -6,21 +6,11 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 import json
+import jsonfield
 # from otree.common import Currency
 
 doc = """
 Quota calculator screening the user passing the experiments.
-
-Settings for the experiment should have `quotas` field such as:
-
-'quotas': [
-    {'age=XX&gender=XX&sc=XXX&sn=XX': 1}
-]
-
-The `quotas` field is an array filled with dictionnaries,
-where each key is a string that can be parsed to extract
-the variables for this quota (similar to GET variables),
-and the value is the actual number of slots for the quota.
 """
 
 
@@ -43,10 +33,14 @@ class Subsession(BaseSubsession):
         we will use it to initialize control data for quota monitoring.
         """
         if 'language_code' in self.session.config:
-            self.session.vars['language_code'] = self.session.config['language_code']
+            self.session.vars['language_code'] = (
+                self.session.config['language_code']
+            )
 
         if 'quota_redirects' in self.session.config:
-            self.session.vars['redirects'] = self.session.config['quota_redirects']
+            self.session.vars['redirects'] = (
+                self.session.config['quota_redirects']
+            )
 
         if 'quota_total_population' in self.session.config:
             self.session.vars['total_population'] = (
@@ -67,9 +61,9 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
     """Group for Quota."""
 
-    total_population = models.CharField(blank=True, null=True)
-    gender_age_groups = models.CharField(blank=True, null=True)
-    income_groups = models.CharField(blank=True, null=True)
+    total_population = jsonfield.JSONField(blank=True, null=True)
+    gender_age_groups = jsonfield.JSONField(blank=True, null=True)
+    income_groups = jsonfield.JSONField(blank=True, null=True)
 
     initialized = models.BooleanField(default=False)
 
@@ -81,7 +75,7 @@ class Group(BaseGroup):
             self.save_quota_set('gender_age_groups', gender_age_groups)
             self.initialized = True
 
-    def get_quotas(self, search_in=None):
+    def get_quotas(self):
         """
         Return deserialized quotas.
 
@@ -96,14 +90,27 @@ class Group(BaseGroup):
             )
 
         # Deserialize data.
-        total_population = json.loads(self.total_population)
-        income_groups = json.loads(self.income_groups)
-        gender_age_groups = json.loads(self.gender_age_groups)
+        total_population = self.total_population
+        income_groups = self.income_groups
+        gender_age_groups = self.gender_age_groups
+
+        # First use json.dumps to ensure payload is a string,
+        # Then return proper json content using json.loads
+        if type(total_population) is dict:
+            total_population = json.dumps(total_population)
+
+        if type(income_groups) is dict:
+            income_groups = json.dumps(income_groups)
+
+        if type(gender_age_groups) is dict:
+            gender_age_groups = json.dumps(gender_age_groups)
+
+        print(json.loads(total_population))
 
         return {
-            'total_population': total_population,
-            'income_groups': income_groups,
-            'gender_age_groups': gender_age_groups
+            'total_population': json.loads(total_population),
+            'income_groups': json.loads(income_groups),
+            'gender_age_groups': json.loads(gender_age_groups)
         }
 
     def save_quota_set(self, fieldname, data):
