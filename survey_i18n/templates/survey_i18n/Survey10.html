@@ -14,15 +14,12 @@
 
   <div class="form-group" required>
     <label class="control-label" for="id__10_main_ways_income">
-      {% trans "What are all the ways that you got income in the last 12 months ending today? <br/>Please choose the three most relevant options. <br/><br/>Please do not count loans as income." %}
+      {% trans "What are all the ways that you <u>as an individual</u> got income in the last 12 months ending today? <br/>Please choose the three most relevant options. <br/><br/>Please do not count loans as income." %}
     </label>
     <div class="controls">
       <input required="required" type="hidden" id="id__10_main_ways_income" name="_10_main_ways_income">
       <div class="checkbox">
         <label><input type="checkbox" name="_10_main_ways_income" value="Salaries and wages">{% trans "Salaries and wages" %}</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="_10_main_ways_income" value="Self-employment or business">{% trans "Self-employment or business" %}</label>
       </div>
       <div class="checkbox">
         <label><input type="checkbox" name="_10_main_ways_income" value="Profit from self-employment or business">{% trans "Profit from self-employment or business" %}</label>
@@ -50,19 +47,16 @@
 
   <hr>
 
-  <p>{% trans "Now think about the income of your household. This can be just you, or the collective income of your family, your parents, or whoever you share your income and expenditures with." %}</p>
+  <p><em>{% trans "Now think about the income of your household. This can be just you, or the collective income of your family, your parents, or whoever you share your income and expenditures with." %}</em></p>
 
   <div class="form-group" required>
     <label class="control-label" for="id__10_household_income">
-      {% trans "What are the main ways that your household received income in the last 12 months? <br/>Please choose the three most relevant options. <br/><br/>Please do not count loans as income." %}
+      {% trans "What are the main ways that <u>your household</u> received income in the last 12 months? <br/>Please choose the three most relevant options. <br/><br/>Please do not count loans as income." %}
     </label>
     <div class="controls">
       <input required="required" type="hidden" id="id__10_household_income" name="_10_household_income">
       <div class="checkbox">
         <label><input type="checkbox" name="_10_household_income" value="Salaries and wages">{% trans "Salaries and wages" %}</label>
-      </div>
-      <div class="checkbox">
-        <label><input type="checkbox" name="_10_household_income" value="Self-employment or business">{% trans "Self-employment or business" %}</label>
       </div>
       <div class="checkbox">
         <label><input type="checkbox" name="_10_household_income" value="Profit from self-employment or business">{% trans "Profit from self-employment or business" %}</label>

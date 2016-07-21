@@ -8,6 +8,16 @@
     font-weight: normal;
   }
   .control-label {font-weight: bold}
+
+  .field-_09_people_only_have_the_best_intentions ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 13px;
+  }
+
+  .controls ul li label {
+    color: #357EBD;
+  }
 </style>
   <br/><br/><br/><br/><br/>
   <p>
@@ -16,7 +26,7 @@
       {% formfield player._09_do_you_work_in_the %}
       <hr>
   </p>
-  <p>How well does the following statement describe you as a person?</p>
+  <p><strong>How well does the following statement describe you as a person?</strong></p>
   <p>{% formfield player._09_people_only_have_the_best_intentions %}</p>
 
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>

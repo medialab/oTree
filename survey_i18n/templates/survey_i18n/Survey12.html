@@ -24,6 +24,15 @@
         sec = moment(endTime).diff(startTime) / 1000;
 
     $('#timer').val(sec);
+
+    $('.btn').click(function (e) {
+      e.preventDefault();
+      var $input = $('#id__12_final_comments');
+      if ($input.val() === '') {
+        $input.val('-');
+      }
+      $('form').submit();
+    });
   });
 </script>
 {% endblock %}

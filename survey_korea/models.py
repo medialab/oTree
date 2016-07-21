@@ -219,14 +219,6 @@ I am willing to return it."),
     )
 
     _04_thank_you_gift = models.CharField(
-        verbose_name=_(u"You are in an area you are not familiar with, and \
-    you realize that you lost your way. You ask a stranger for directions. \
-    The stranger offers to take you to your destination. Helping you costs \
-    the stranger about 20.000 Won in total. However, the stranger says he or \
-    she does not want any money from you. You have 6 presents with you. \
-    The cheapest present costs 5.000 Won, the most expensive one costs \
-    30.000 Won. Do you give one of the presents to the stranger as a \
-    “thank-you”-gift? If so, which present do you give to the stranger?"),
         choices=(
             ('no present', _(u'no present')),
             ('the present worth 5.000 Won', _(u'the present worth 5.000 Won')),

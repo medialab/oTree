@@ -109,7 +109,7 @@ who is fully prepared to take risks or do you try to avoid taking risks?"),
     )
 
     _02_treats_you_unfairly = models.CharField(
-        verbose_name=_(u'How willing are you to someone who treats you \
+        verbose_name=_(u'How willing are you to punish someone who treats you \
 unfairly, even if there may be costs for you?'),
         choices=(
             ('0', _(u"0 - Completely unwilling to do so")),
@@ -779,9 +779,6 @@ regional or local government administration')),
             ('Public sector, other', _(u'Public sector, other')),
             ('Private (for profit) sector', _(u'Private (for profit) sector')),
             ('Not for profit sector', _(u'Not for profit sector')),
-            ('Other', _(u'Other')),
-            ("Don't know", _(u"Don't know")),
-            ("I prefer not to answer", _(u"I prefer not to answer")),
             ("Not applicable", _(u"Not applicable"))
         ),
         widget=widgets.RadioSelect()

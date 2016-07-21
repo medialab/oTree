@@ -11,9 +11,19 @@
   }
 
   .control-label {font-weight: bold}
+
+  #id__07_how_many_people_adults {
+    float: left;
+    margin-right: 10px;
+  }
+
+  #id__07_how_many_people_children {
+    float: left;
+    margin-right: 10px;
+  }
 </style>
   <br/>
-  <p>{% trans "We will now ask you questions about your personal situation. All data is anonymous and will not be shared with a third party." %}</p>
+  <p><em>{% trans "We will now ask you questions about your personal situation. All data is anonymous and will not be shared with a third party." %}</em></p>
   <p>
       {% formfield player._07_what_is_your_date_of_birth %}
       <hr>
@@ -53,8 +63,8 @@
       </div>
 
       <hr>
-      {% formfield player._07_how_many_people_adults %} {% trans "adults (18 years or older)" %}
-      {% formfield player._07_how_many_people_children with label=' (continued)' %} {% trans "children (younger than 18 years)" %}
+      {% formfield player._07_how_many_people_adults %} {% trans "Adults (18 years or older)" %}
+      {% formfield player._07_how_many_people_children with label='' %} {% trans "Children (younger than 18 years)" %}
       <hr>
       {% formfield player._07_which_country_were_you_born %}
       <hr>

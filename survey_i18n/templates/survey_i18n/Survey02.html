@@ -25,9 +25,11 @@
   </style>
   <br/><br/><br/><br/><br/>
   <p>
-      {% formfield player._02_treats_you_unfairly %}
+      <p><strong>How willing are you to punish someone who treats <em><u>you</u></em> unfairly, even if there may be costs for you?</strong></p>
+      {% formfield player._02_treats_you_unfairly with label='' %}
       <hr/>
-      {% formfield player._02_treats_others_unfairly %}
+      <p><strong>How willing are you to punish someone who treats <em><u>others</u></em> unfairly, even if there may be costs for you?</strong></p>
+      {% formfield player._02_treats_others_unfairly with label='' %}
       <hr/>
       {% formfield player._02_give_to_good_causes %}
 

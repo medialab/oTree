@@ -1,6 +1,6 @@
 # This is an exemple config for SESSION_CONFIGS when you
 # want to create an experiment using quota from GMI.
-total = 100
+total = 10
 
 config = {
     'name': 'quota',
