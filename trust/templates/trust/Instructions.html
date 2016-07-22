@@ -10,7 +10,11 @@
 <p><strong>{% trans "These are the rules of the task:" %}</strong></p>
 <ul>
   <li>{% trans "At the beginning of the task, both participants receive 10 euros." %}</li>
-  <li>{% trans "Participant A has the option to transfer none, part or all of his or her 10 euros to Participant B." %}</li>
+  {% if lang == 'fr' %}
+    <li>{% trans "Participant A has the option to transfer none, part or all of his or her 10 euros to Participant B." %}</li>
+  {% elif lang == 'kr' %}
+    <li>{% trans "Participant A has the option to transfer none, part or all of his or her 12.000 Won to Participant B." %}</li>
+  {% endif %}
   <li>{% trans "Whatever amount Participant A sends is multiplied by 3." %}</li>
   <li>{% trans "Participant B, after receiving the transfer of Participant A, has to decide how much, if any, money he or she want to send back to Participant A." %}</li>
 </ul>

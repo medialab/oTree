@@ -4,6 +4,7 @@ from __future__ import division
 from . import models
 from ._builtin import Page
 from .models import Constants
+from django.utils.translation import ugettext_lazy as _
 
 
 def vars_for_all_templates(self):
@@ -44,8 +45,8 @@ class Introduction(Page):
 
     def vars_for_template(self):
         return {
-            'fr': {'amount': '10 euros'},
-            'kr': {'amount': '10.000 Won'},
+            'fr': {'amount': _(u'10 euros')},
+            'kr': {'amount': _(u'12.000 Won')},
         }
 
 
@@ -57,8 +58,8 @@ class Offer(Page):
 
     def vars_for_template(self):
         return {
-            'fr': {'amount': '10 euros'},
-            'kr': {'amount': '10.000 Won'},
+            'fr': {'amount': _(u'10 euros')},
+            'kr': {'amount': _(u'12.000 Won')},
         }
 
 

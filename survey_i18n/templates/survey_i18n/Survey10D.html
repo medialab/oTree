@@ -15,15 +15,15 @@
   <br/><br/><br/><br/><br/>
   <p>
     <div class="form-group required">
-    <label class="control-label" for="id__10D_income">Just to confirm, which of these income bands corresponds best to the income of your <u>entire household</u> (the people you share your income and expenditures with). Remember, we are asking for the income of your <u>household</u>, after taxes have been deducted.</label>
+    <label class="control-label" for="id__10D_income">{% trans "Just to confirm, which of these income bands corresponds best to the income of your <u>entire household</u> (the people you share your income and expenditures with). Remember, we are asking for the income of your <u>household</u>, after taxes have been deducted." %}</label>
       <div class="controls field-_10D_income">
           <ul>
-            <li><label for="id__10D_income_1"><input type="radio" id="id__10D_income_1" value="0 to {{value_a}} euros per year" name="_10D_income" required=""> 0 to {{value_a}} euros per year</label></li>
-            <li><label for="id__10D_income_2"><input type="radio" id="id__10D_income_2" value="{{value_a}} to {{value_b}}" name="_10D_income" required=""> {{value_a}} to {{value_b}} euros per year</label></li>
-            <li><label for="id__10D_income_3"><input type="radio" id="id__10D_income_3" value="{{value_b}} to {{value_c}}" name="_10D_income" required=""> {{value_b}} to {{value_c}} euros per year</label></li>
-            <li><label for="id__10D_income_4"><input type="radio" id="id__10D_income_4" value="{{value_c}} to {{value_d}}" name="_10D_income" required=""> {{value_c}} to {{value_d}} euros per year</label></li>
-            <li><label for="id__10D_income_5"><input type="radio" id="id__10D_income_5" value="{{value_d}} euro or more per year" name="_10D_income" required=""> {{value_d}} euros or more per year</label></li>
-            <li><label for="id__10D_income_6"><input type="radio" id="id__10D_income_6" value="{{value_d}} euro or more per year" name="_10D_income" required=""> Don't know</label></li>
+            <li><label for="id__10D_income_1"><input type="radio" id="id__10D_income_1" value="0 to {{value_a}} euros per year" name="_10D_income" required=""> {% trans "0 to" %} {{value_a}} {% trans "euros per year" %}</label></li>
+            <li><label for="id__10D_income_2"><input type="radio" id="id__10D_income_2" value="{{value_a}} to {{value_b}}" name="_10D_income" required=""> {{value_a}} to {{value_b}} {% trans "euros per year" %}</label></li>
+            <li><label for="id__10D_income_3"><input type="radio" id="id__10D_income_3" value="{{value_b}} to {{value_c}}" name="_10D_income" required=""> {{value_b}} to {{value_c}} {% trans "euros per year" %}</label></li>
+            <li><label for="id__10D_income_4"><input type="radio" id="id__10D_income_4" value="{{value_c}} to {{value_d}}" name="_10D_income" required=""> {{value_c}} to {{value_d}} {% trans "euros per year" %}</label></li>
+            <li><label for="id__10D_income_5"><input type="radio" id="id__10D_income_5" value="{{value_d}} euro or more per year" name="_10D_income" required=""> {{value_d}} {% trans "euros or more per year" %}</label></li>
+            <li><label for="id__10D_income_6"><input type="radio" id="id__10D_income_6" value="{{value_d}} euro or more per year" name="_10D_income" required=""> {% trans "Don't know" %}</label></li>
           </ul>
       </div><!--- .controls -->
     </div>

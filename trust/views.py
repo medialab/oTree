@@ -72,7 +72,7 @@ class Send(Page):
             },
             'kr': {
                 'amount_allocated': Constants.amount_allocated,
-                'sent_amount_label': _(u'Please enter a number from 0 to 10.000')
+                'sent_amount_label': _(u'Please enter a number from 0 to 12.000')
             }
         }
 
@@ -143,34 +143,34 @@ class SendBack(Page):
                     u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
                 ),
                 'sent_back_amount_1_label': _(
-                    u'If Participant A sends you 1.000 Won (you receive 1.000 Won × 3 = 3.000 Won)'
+                    u'If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)'
                 ),
                 'sent_back_amount_2_label': _(
-                    u'If Participant A sends you 2 Won (you receive 2.000 Won × 3 = 6.000 Won)'
+                    u'If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)'
                 ),
                 'sent_back_amount_3_label': _(
-                    u'If Participant A sends you 3.000 Won (you receive 3.000 Won × 3 = 9.000 Won)'
+                    u'If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)'
                 ),
                 'sent_back_amount_4_label': _(
-                    u'If Participant A sends you 4.000 Won (you receive 4.000 Won × 3 = 12.000 Won)'
+                    u'If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)'
                 ),
                 'sent_back_amount_5_label': _(
-                    u'If Participant A sends you 5.000 Won (you receive 5.000 Won × 3 = 15.000 Won)'
-                ),
-                'sent_back_amount_6_label': _(
                     u'If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)'
                 ),
+                'sent_back_amount_6_label': _(
+                    u'If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)'
+                ),
                 'sent_back_amount_7_label': _(
-                    u'If Participant A sends you 7.000 Won (you receive 7.000 Won × 3 = 21.000 Won)'
+                    u'If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)'
                 ),
                 'sent_back_amount_8_label': _(
-                    u'If Participant A sends you 8.000 Won (you receive 8.000 Won × 3 = 24.000 Won)'
+                    u'If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)'
                 ),
                 'sent_back_amount_9_label': _(
-                    u'If Participant A sends you 9.000 Won (you receive 9.000 Won × 3 = 27.000 Won)'
+                    u'If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 Won)'
                 ),
                 'sent_back_amount_10_label': _(
-                    u'If Participant A sends you 10.000 Won (you receive 10.000 Won ×3 = 30.000 Won)'
+                    u'If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 Won)'
                 ),
             }
         }

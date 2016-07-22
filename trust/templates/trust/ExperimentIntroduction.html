@@ -23,10 +23,16 @@
     {% trans "This amount will depend on the strategic decisions you make together with the other participants during the study’s tasks. At the end of the study, one of the several tasks you have completed will be randomly selected." %}<br/>
     <strong>{% trans "The amount of money you will receive will correspond to your earnings in this selected task." %}</strong>
   </p>
-  <p>{% trans "You will receive your money at the end of the study via [PAYMENT METHOD]." %}</p>
+  <p>{% trans "You will receive your points via the usual system." %}</p>
+  <p>{% trans "You will receive your additional money at the end of the study via HAPPY MONEY." %}</p>
 
   <h3>{% trans "Data protection" %}</h3>
-  <p>{% trans "The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only." %}</p>
+
+  {% if lang == 'fr' %}
+    <p>{% trans "The data gathered in this study is subject to European privacy protocols, under the supervision of the European Research Council. We will use it for research purposes only." %}</p>
+  {% else %}
+    <p>{% trans "The data gathered in this study is subject to strict privacy protocols. We will use it for research purposes only." %}</p>
+  {% endif %}
 
   <button class="btn btn-primary pull-right">{% trans "Begin" %}</button>
 {% endblock %}
