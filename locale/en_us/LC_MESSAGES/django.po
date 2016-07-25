@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-22 16:15+0200\n"
+"POT-Creation-Date: 2016-07-25 11:45+0200\n"
 "PO-Revision-Date: 2016-04-13 15:49+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -210,11 +210,159 @@ msgstr ""
 msgid "next"
 msgstr ""
 
+#: earnings/templates/earnings/Display.html:9
 #: earnings/templates/earnings/Earnings.html:7
 #: survey/templates/survey/EndGame.html:9
 #: survey_i18n/templates/survey_i18n/EndGame.html:9
 #: survey_korea/templates/survey_korea/EndGame.html:9
 msgid "Thank you very much for your participation in this study!"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:10
+#: earnings/templates/earnings/Display.html:20
+#: earnings/templates/earnings/Display.html:25
+msgid "euros."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:12
+#: earnings/templates/earnings/Display.html:22
+msgid ""
+"You were selected to receive your reward based on your earnings in Task One."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:13
+msgid "As Player A, you decided to transfer"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:13
+#: earnings/templates/earnings/Display.html:18
+msgid "euros to player B."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:14
+#: earnings/templates/earnings/Display.html:19
+msgid "Following, player B returned"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:14
+msgid "to you."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:15
+#: earnings/templates/earnings/Display.html:25
+msgid "Therefore, your total payoff for this task is"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:19
+msgid "euros to you."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:23
+msgid "As Player B, you received"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:23
+msgid "euros from player A."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:24
+msgid "You decided to transfer"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:24
+msgid "euros back to player A."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:27
+msgid ""
+"You were selected to receive your reward based on your earnings in Task Two."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:28
+msgid "In this task, you invested"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:28
+msgid "into the joint project. The contributions of the other players were:"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:31
+#: earnings/templates/earnings/Display.html:32
+#: earnings/templates/earnings/Display.html:33
+#: earnings/templates/earnings/Display.html:37
+#: earnings/templates/earnings/Display.html:42
+msgid "euros"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:36
+msgid "Collectively, you invested"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:36
+msgid ""
+". Your earnings from the joint project after the multiplication factor are"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:37
+#: earnings/templates/earnings/Display.html:42
+msgid "In total, your payoff for this task is"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:39
+msgid ""
+"You were selected to receive your reward based on your earnings in Task "
+"Three."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:40
+msgid "In this task, you decided to transfer"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:40
+msgid "to player B"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:41
+msgid "Your remaining endowment after the transfer is"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:44
+msgid ""
+"Out of your earnings, you have the option to donate an amount of your choice "
+"to UNICEF, who work with children and mothers in developing countries."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:45
+msgid ""
+"You can find further information about their work here. Please enter the "
+"amount you wish to donate to UNICEF:"
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:49
+#: survey_i18n/templates/survey_i18n/EndGame.html:49
+#: survey_korea/templates/survey_korea/EndGame.html:49
+msgid "(Should you not wish to donate anything at this point, please enter 0)."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:50
+#: survey_i18n/templates/survey_i18n/EndGame.html:50
+#: survey_korea/templates/survey_korea/EndGame.html:50
+msgid ""
+"Once again, thank you very much for participating. You will now be "
+"redirected in order to collect your reward."
+msgstr ""
+
+#: earnings/templates/earnings/Display.html:52
+#: survey/templates/survey/EndGame.html:21
+#: survey_i18n/templates/survey_i18n/EndGame.html:52
+#: survey_korea/templates/survey_korea/EndGame.html:52
+msgid "Finish study"
 msgstr ""
 
 #: earnings/templates/earnings/Earnings.html:8
@@ -2522,12 +2670,6 @@ msgstr ""
 msgid "If you do not wish to donate anything, enter 0."
 msgstr ""
 
-#: survey/templates/survey/EndGame.html:21
-#: survey_i18n/templates/survey_i18n/EndGame.html:52
-#: survey_korea/templates/survey_korea/EndGame.html:52
-msgid "Finish study"
-msgstr ""
-
 #: survey/templates/survey/Survey03.html:27
 #: survey_i18n/templates/survey_i18n/Survey04B.html:27
 msgid "Could you tell us for each of these groups how much you trust them?"
@@ -2967,18 +3109,6 @@ msgstr ""
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as {{payoff_amount}} euros."
-msgstr ""
-
-#: survey_i18n/templates/survey_i18n/EndGame.html:49
-#: survey_korea/templates/survey_korea/EndGame.html:49
-msgid "(Should you not wish to donate anything at this point, please enter 0)."
-msgstr ""
-
-#: survey_i18n/templates/survey_i18n/EndGame.html:50
-#: survey_korea/templates/survey_korea/EndGame.html:50
-msgid ""
-"Once again, thank you very much for participating. You will now be "
-"redirected in order to collect your reward."
 msgstr ""
 
 #: survey_i18n/templates/survey_i18n/Survey02.html:28
