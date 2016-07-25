@@ -1,0 +1,67 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+{% load i18n %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<input id="timer" type="hidden" name="total_time" value="" />
+<br/><br/><br/><br/><br/>
+<h3>{% trans "Thank you very much for your participation in this study!" %}</h3>
+<p>{% trans "After being matched with the other players, your earnings have been calculated as" %} {{payoff}} {% trans "euros." %}</p>
+
+{% if chosen_game == 'trust' and role == 'A' %}
+  <p>{% trans "You were selected to receive your reward based on your earnings in Task One." %} <br>
+  {% trans "As Player A, you decided to transfer" %} {{trust_game_player_a_transfer}} {% trans "euros to player B." %} <br>
+  {% trans "Following, player B returned" %} {{trust_game_player_b_transfer}} {% trans "to you." %} <br>
+  {% trans "Therefore, your total payoff for this task is" %} {{payoff}}.</p>
+
+{% elif chosen_game == 'trust' and role == 'B' %}
+  <p>{% trans "You were selected to receive your reward based on your earnings in Task One." %}
+  {% trans "As Player B, you received" %} {{trust_game_player_a_transfer}} {% trans "euros from player A." %}<br>
+  {% trans "You decided to transfer" %} {{trust_game_player_b_transfer}} {% trans "euros back to player A." %}<br>
+  {% trans "Therefore, your total payoff for this task is" %} {{payoff}} {% trans "euros." %}</p>
+
+{% elif chosen_game == 'public_goods' %}
+  <p>{% trans "You were selected to receive your reward based on your earnings in Task Two." %} <br>
+  {% trans "In this task, you invested" %} {{payoff}} {% trans "into the joint project. The contributions of the other players were:" %}</p>
+
+  <ul>
+    <li>{{pg_player_b_transfer}} {% trans "euros" %}</li>
+    <li>{{pg_player_c_transfer}} {% trans "euros" %}</li>
+    <li>{{pg_player_d_transfer}} {% trans "euros" %}</li>
+  </ul>
+
+  <p>{% trans "Collectively, you invested" %} {{pg_amount}} {% trans ". Your earnings from the joint project after the multiplication factor are" %} {{pg_multiplied_amount}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{payoff}} {% trans "euros" %}.</p>
+
+{% elif chosen_game == 'dictator' %}
+  <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
+  {% trans "In this task, you decided to transfer" %} {{dictator_player_a_transfer}} {% trans "to player B" %}. <br>
+  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_remaning}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{payoff}} {% trans "euros" %}. </p>
+
+<p>{% trans "Out of your earnings, you have the option to donate an amount of your choice to UNICEF, who work with children and mothers in developing countries." %} <br>
+{% trans "You can find further information about their work here. Please enter the amount you wish to donate to UNICEF:" %}</p>
+
+{% formfield player.donation %}
+
+<p>{% trans "(Should you not wish to donate anything at this point, please enter 0)." %}</p>
+<p>{% trans "Once again, thank you very much for participating. You will now be redirected in order to collect your reward." %}</p>
+
+<p><button class="btn btn-primary">{% trans "Finish study" %}</button></p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<input id="timer" type="hidden" name="total_time" value="" />
+
+<script type="text/javascript">
+  $(function() {
+    var startTime = '{{start_time}}',
+        endTime = new Date(),
+        sec = moment(endTime).diff(startTime) / 1000;
+
+    $('#timer').val(sec);
+  });
+</script>
+
+
+{% endblock %}

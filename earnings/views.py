@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from . import models
 from ._builtin import Page
-# from .models import Constants
+from public_goods.models import Constants as Public_goods_const
 
 
 class Calculate(Page):
@@ -24,7 +24,18 @@ class Earnings(Page):
     def vars_for_template(self):
         """Variable in template."""
         return {
-            'payoff': self.player.payoff
+            'payoff': self.player.payoff,
+            'role': self.player.calculation_from_role,
+            'chosen_game': self.player.calculation_from_game,
+            'trust_game_player_a_transfer': '',
+            'trust_game_player_b_transfer': '',
+            'pg_player_b_transfer': '',
+            'pg_player_c_transfer': '',
+            'pg_player_d_transfer': '',
+            'pg_amount': '',
+            'pg_multiplied_amount': Public_goods_const.efficiency_factor,
+            'dictator_player_a_transfer': '',
+            'dictator_player_a_remaning': '',
         }
 
 

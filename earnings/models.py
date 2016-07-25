@@ -70,31 +70,44 @@ class Group(BaseGroup):
         Save key variables and results in the model.
         """
         # Choose (and save reference in DB) a game.
-        chosen_game = self.chose_game(Constants.eligible_games)
+        chosen_game = self.choose_game(Constants.eligible_games)
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
         payoff = None
 
         if chosen_game is 'dictator':
-            payoff, matched_id, role = self.payoff_dictator(player)
+            (
+                payoff, matched_id, role,
+                player.dictator_player_a_transfer,
+                player.dictator_player_a_remaning
+            ) = self.payoff_dictator(player)
             player.calculation_from_game = 'dictator'
             player.calculation_from_matched_player_id = matched_id
             player.calculation_from_role = role
         elif chosen_game is 'public_goods':
-            payoff, matched_ids = self.payoff_public_goods(player)
+            (
+                payoff, matched_ids,
+                player.pg_player_b_transfer,
+                player.pg_player_c_transfer,
+                player.pg_player_d_transfer
+            ) = self.payoff_public_goods(player)
             player.calculation_from_game = 'public_goods'
             player.calculation_from_matched_player_id = matched_ids
             player.calculation_from_role = 'N/A'
         elif chosen_game is 'trust':
-            payoff, matched_id, role = self.payoff_trust(player)
+            (
+                payoff, matched_id, role,
+                player.trust_game_player_a_transfer,
+                player.trust_game_player_b_transfer
+            ) = self.payoff_trust(player)
             player.calculation_from_game = 'trust'
             player.calculation_from_matched_player_id = matched_id
             player.calculation_from_role = role
 
         return payoff
 
-    def chose_game(self, games):
+    def choose_game(self, games):
         """Choose an eligible game at random."""
         return random.choice(games)
 
@@ -105,6 +118,9 @@ class Group(BaseGroup):
         with_role = None
 
         base_money = Constants.allocated_amount
+
+        trust_game_player_a_transfer = None
+        trust_game_player_b_transfer = None
 
         # Get the occurence of this player when she played 'Trust'.
         for p in player.participant.get_players():
@@ -117,6 +133,10 @@ class Group(BaseGroup):
                         p, given_by_player_a
                     )
                     payoff = base_money - given_by_player_a + given_by_player_b
+
+                    trust_game_player_a_transfer = given_by_player_a
+                    trust_game_player_b_transfer = given_by_player_b
+
                 # If her role was B.
                 else:
                     with_role = 'B'
@@ -127,9 +147,16 @@ class Group(BaseGroup):
                     payoff = base_money + (
                         given_by_player_a * Trust_const.multiplication_factor
                     ) - given_by_player_b
+
+                    trust_game_player_a_transfer = given_by_player_a
+                    trust_game_player_b_transfer = given_by_player_b
                 break
 
-        return [payoff, matched_id, with_role]
+        return [
+            payoff, matched_id, with_role,
+            trust_game_player_a_transfer,
+            trust_game_player_b_transfer
+        ]
 
     def payoff_dictator(self, player):
         """Calculate and return payoff for Trust game."""
@@ -137,6 +164,9 @@ class Group(BaseGroup):
         matched_id = None
 
         base_money = Constants.allocated_amount
+
+        player_a_transfer = None
+        player_b_transfer = None
 
         # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
@@ -147,15 +177,21 @@ class Group(BaseGroup):
                 # If her role has been determined as A...
                 # Basically we lose money we gave away.
                 if role == 'A':
+                    player_a_transfer = p.given
                     payoff = base_money - p.given
                     matched_id = 'N/A'
                 # If her role has been determined as B...
                 # We receive the money the chosen "Player A" has given away.
                 else:
                     payoff, matched_id = self.strat_dictator(p)
+                    player_b_transfer = payoff
                 break
 
-        return [payoff, matched_id, role]
+        return [
+            payoff, matched_id, role,
+            player_a_transfer,
+            player_b_transfer
+        ]
 
     def payoff_public_goods(self, player):
         """Calculate and return payoff for Public Goods game."""
@@ -167,14 +203,22 @@ class Group(BaseGroup):
         for p in player.participant.get_players():
             if p._meta.app_label == 'public_goods':
                 # Get joint project sum and matching players' IDs.
-                joint_sum, matched_ids = self.strat_public_goods(p)
+                (
+                    joint_sum, matched_ids, other_players_gave
+                ) = self.strat_public_goods(p)
                 p_gave = p.contribution
                 payoff = (base_money - p_gave) + (
                     (joint_sum * Public_goods_const.efficiency_factor) / 4
                 )
                 break
 
-        return [payoff, matched_ids]
+        return [
+            payoff,
+            matched_ids,
+            other_players_gave[0],
+            other_players_gave[1],
+            other_players_gave[2]
+        ]
 
     def strat_trust_a(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
@@ -351,7 +395,7 @@ class Group(BaseGroup):
 
         joint_sum.append(player.contribution)
 
-        return [sum(joint_sum), matched_ids]
+        return [sum(joint_sum), matched_ids, joint_sum]
 
 
 class Player(BasePlayer):
@@ -370,6 +414,19 @@ class Player(BasePlayer):
 
     # ID of matched player for calculations, if any.
     calculation_from_matched_player_id = models.CharField(max_length=50)
+
+    # Store possible data from transfers if chosen game is Trust.
+    trust_game_player_a_transfer = models.CharField(blank=True, null=True)
+    trust_game_player_b_transfer = models.CharField(blank=True, null=True)
+
+    # Store possible data from transfers if chosen game is Public Goods.
+    pg_player_b_transfer = models.CharField(blank=True, null=True)
+    pg_player_c_transfer = models.CharField(blank=True, null=True)
+    pg_player_d_transfer = models.CharField(blank=True, null=True)
+
+    # Store possible data from transfers if chosen game is Dictator.
+    dictator_player_a_transfer = models.CharField(blank=True, null=True)
+    dictator_player_a_remaning = models.CharField(blank=True, null=True)
 
     def calculate_payoff(self):
         """
