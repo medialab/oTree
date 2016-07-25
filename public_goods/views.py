@@ -31,7 +31,7 @@ class Simulation(Page):
     """Simulation for Public Goods."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'kr': 10000}
+        max = {'fr': 10, 'ko': 10000}
         return {
             'max': max[self.session.vars['lang']]
         }
@@ -54,7 +54,7 @@ class Contribute(Page):
     def vars_for_template(self):
         return {
             'fr': {'amount': _(u'10 euros')},
-            'kr': {'amount': _(u'10.000 Won')},
+            'ko': {'amount': _(u'10.000 Won')},
         }
 
 
@@ -103,7 +103,7 @@ class ContributeBack(Page):
                 'contribution_back_10_label': _(u'If on average, each of the other \
     group members contributes 10 euros:'),
             },
-            'kr': {
+            'ko': {
                 'contribution_back_0_label': _(u'If on average, each of the other \
     group members contributes 0 euro:'),
                 'contribution_back_1_label': _(u'If on average, each of the other \

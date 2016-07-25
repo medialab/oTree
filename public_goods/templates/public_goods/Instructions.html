@@ -11,16 +11,16 @@
 <p>{% trans "These are the rules:" %}</p>
 <ul>
 
-  {% if lang == 'fr' %}
-    <li>{% trans "At the beginning, each group member has 10 euros." %}</li>
-  {% elif lang == 'kr' %}
+  {% if lang == 'ko' %}
     <li>{% trans "At the beginning, each group member has 12.000 Won." %}</li>
+  {% else %}
+    <li>{% trans "At the beginning, each group member has 10 euros." %}</li>
   {% endif %}
 
-  {% if lang == 'fr' %}
-    <li>{% trans "Every group member has to choose how much of these 10 euros he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
-  {% elif lang == 'kr' %}
+  {% if lang == 'ko' %}
     <li>{% trans "Every group member has to choose how much of these 12.000 Won he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
+  {% else %}
+    <li>{% trans "Every group member has to choose how much of these 10 euros he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
   {% endif %}
 
   <li>{% trans "The total amount invested into the joint project is <strong>multiplied by " %}{{Constants.efficiency_factor}}.</strong></li>

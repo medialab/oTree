@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-12 14:51+0200\n"
+"POT-Creation-Date: 2016-07-22 16:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgstr ""
 #: dictator/templates/dictator/EndGame.html:11
 #: dictator/templates/dictator/Simulation.html:51
 #: iat/templates/iat/Instructions.html:37
-#: public_goods/templates/public_goods/Contribute.html:12
+#: public_goods/templates/public_goods/Contribute.html:18
 #: public_goods/templates/public_goods/ContributeBack.html:24
 #: public_goods/templates/public_goods/DecisionInstructions.html:11
 #: public_goods/templates/public_goods/EndGame.html:13
@@ -39,30 +39,29 @@ msgstr ""
 #: survey/templates/survey/Survey09.html:58
 #: survey/templates/survey/Survey10.html:18
 #: survey/templates/survey/Survey11.html:25
-#: survey_france/templates/survey_france/Survey01.html:35
-#: survey_france/templates/survey_france/Survey02.html:35
-#: survey_france/templates/survey_france/Survey02A.html:30
-#: survey_france/templates/survey_france/Survey03.html:31
-#: survey_france/templates/survey_france/Survey04.html:22
-#: survey_france/templates/survey_france/Survey04A.html:22
-#: survey_france/templates/survey_france/Survey04B.html:25
-#: survey_france/templates/survey_france/Survey04C.html:24
-#: survey_france/templates/survey_france/Survey05.html:45
-#: survey_france/templates/survey_france/Survey06.html:40
-#: survey_france/templates/survey_france/Survey07.html:65
-#: survey_france/templates/survey_france/Survey08.html:18
-#: survey_france/templates/survey_france/Survey09.html:21
-#: survey_france/templates/survey_france/Survey10.html:122
-#: survey_france/templates/survey_france/Survey10A.html:17
-#: survey_france/templates/survey_france/Survey10B.html:16
-#: survey_france/templates/survey_france/Survey10C.html:16
-#: survey_france/templates/survey_france/Survey10D.html:16
-#: survey_france/templates/survey_france/Survey10E.html:17
-#: survey_france/templates/survey_france/Survey10F.html:16
-#: survey_france/templates/survey_france/Survey10G.html:16
-#: survey_france/templates/survey_france/Survey10H.html:16
-#: survey_france/templates/survey_france/Survey11.html:26
-#: survey_france/templates/survey_france/Survey12.html:17
+#: survey_i18n/templates/survey_i18n/Survey01.html:35
+#: survey_i18n/templates/survey_i18n/Survey02.html:37
+#: survey_i18n/templates/survey_i18n/Survey02A.html:38
+#: survey_i18n/templates/survey_i18n/Survey03.html:32
+#: survey_i18n/templates/survey_i18n/Survey04.html:37
+#: survey_i18n/templates/survey_i18n/Survey04A.html:38
+#: survey_i18n/templates/survey_i18n/Survey04B.html:36
+#: survey_i18n/templates/survey_i18n/Survey04C.html:33
+#: survey_i18n/templates/survey_i18n/Survey05.html:45
+#: survey_i18n/templates/survey_i18n/Survey06.html:40
+#: survey_i18n/templates/survey_i18n/Survey07.html:76
+#: survey_i18n/templates/survey_i18n/Survey08.html:31
+#: survey_i18n/templates/survey_i18n/Survey09.html:32
+#: survey_i18n/templates/survey_i18n/Survey10.html:118
+#: survey_i18n/templates/survey_i18n/Survey10A.html:28
+#: survey_i18n/templates/survey_i18n/Survey10B.html:42
+#: survey_i18n/templates/survey_i18n/Survey10C.html:39
+#: survey_i18n/templates/survey_i18n/Survey10D.html:32
+#: survey_i18n/templates/survey_i18n/Survey10E.html:17
+#: survey_i18n/templates/survey_i18n/Survey10F.html:27
+#: survey_i18n/templates/survey_i18n/Survey10G.html:61
+#: survey_i18n/templates/survey_i18n/Survey11.html:25
+#: survey_i18n/templates/survey_i18n/Survey12.html:19
 #: survey_korea/templates/survey_korea/Survey01.html:35
 #: survey_korea/templates/survey_korea/Survey02.html:35
 #: survey_korea/templates/survey_korea/Survey02A.html:30
@@ -89,8 +88,8 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey12.html:17
 #: trust/templates/trust/EndGame.html:11
 #: trust/templates/trust/GamesIntroduction.html:21
-#: trust/templates/trust/Send.html:15 trust/templates/trust/SendBack.html:25
-#: trust/templates/trust/Simulation.html:160
+#: trust/templates/trust/Send.html:21 trust/templates/trust/SendBack.html:29
+#: trust/templates/trust/Simulation.html:166
 msgid "Next"
 msgstr ""
 
@@ -148,7 +147,7 @@ msgid ""
 msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:6
-msgid "Task 3: Simulation"
+msgid "Task Three: Simulation"
 msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:8
@@ -164,15 +163,23 @@ msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:48
 #: public_goods/templates/public_goods/Simulation.html:93
-#: trust/templates/trust/Simulation.html:143
+#: trust/templates/trust/Simulation.html:149
 msgid "Amount sent by Participant A"
 msgstr ""
 
 #: dictator/templates/dictator/Simulation.html:50
 #: public_goods/templates/public_goods/Simulation.html:113
-#: trust/templates/trust/Simulation.html:145
-#: trust/templates/trust/Simulation.html:153
+#: trust/templates/trust/Simulation.html:151
+#: trust/templates/trust/Simulation.html:159
 msgid "Send"
+msgstr ""
+
+#: dictator/views.py:48 dictator/views.py:61 public_goods/views.py:56
+msgid "10 euros"
+msgstr ""
+
+#: dictator/views.py:49 dictator/views.py:62
+msgid "12.000 Won"
 msgstr ""
 
 #: earnings/templates/earnings/Calculate.html:7
@@ -181,7 +188,7 @@ msgstr ""
 
 #: earnings/templates/earnings/Earnings.html:7
 #: survey/templates/survey/EndGame.html:9
-#: survey_france/templates/survey_france/EndGame.html:9
+#: survey_i18n/templates/survey_i18n/EndGame.html:9
 #: survey_korea/templates/survey_korea/EndGame.html:9
 msgid "Thank you very much for your participation in this study!"
 msgstr ""
@@ -307,1243 +314,1191 @@ msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:3
 msgid ""
-"Put your middle or index fingers on the <strong>E</strong> and <strong>I</"
-"strong> keys of your keyboard."
+"Put your middle or index fingers on the <strong style='color:pink'>E</"
+"strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard "
+"<br/>(or button <strong style='color:pink'>LEFT</strong> and <strong "
+"style='color:turquoise'>RIGHT</strong> if you're on a mobile device). <br/"
+">In this part of the study, words representing categories will appear one-by-"
+"one in the middle of the screen.</p><p>The labels at the top will tell you "
+"which words go with each key.</p><p>When the item belongs to a category on "
+"the <strong style='color:pink'>left</strong>, press the <strong style='color:"
+"pink'>E</strong> key; when the item belongs to a category on the <strong "
+"style='color:turquoise'>right</strong>, press the <strong style='color:"
+"turquoise'>I</strong> key (or touch <strong style='color:pink'>LEFT</strong> "
+"and <strong style='color:turquoise'>RIGHT</strong> buttons on a mobile "
+"device). Each word has an easy correct classification and belongs to only "
+"one category. If you make an error, an <strong style='color:red'>X</strong> "
+"will appear – fix the error by hitting the other key.</p><p>A few rules to "
+"remember:</p><p>Keep your fingers on the <strong style='color:pink'>E</"
+"strong> and <strong style='color:turquoise'>I</strong> keys to enable rapid "
+"response.<br/>The test gives no results if you go slow. Please try to go as "
+"fast as possible<br/>Expect to make a few mistakes because of going fast. "
+"That's OK.<br/>For best results, avoid distractions and stay focused.</"
+"p><h3>Press any button (or touch anywhere) to begin.</h3>"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:4
 msgid ""
-"Items representing the categories at the top will appear one-by-one in the "
-"middle of the screen."
+"Put your middle or index fingers on the <strong style='color:pink'>E</"
+"strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard."
+"<br/>Words representing the categories at the top will appear one-by-one in "
+"the middle of the screen.<br/>When the item belongs to a category on the "
+"left, press the <strong style='color:pink'>E</strong> key (or the <strong "
+"style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the "
+"item belongs to a category on the right, press the <strong style='color:"
+"turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</"
+"strong> button on a mobile device).<br/>Words belong to only one category. "
+"If you make an error, an <span style=\\"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:5
 msgid ""
-"When the item belongs to a category on the left, press the <strong>E</"
-"strong> key."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:6
-msgid ""
-"When the item belongs to a category on the right, press the <strong>I</"
-"strong> key."
+"<strong>See above, the categories have changed.</strong> The words for "
+"sorting have changed as well.<br/>The rules, however, are the same.<br/>When "
+"the words belongs to a category on the left, press the <strong style='color:"
+"pink'>E</strong> key.<br/>When the item belongs to a category on the right, "
+"press the <strong style='color:turquoise'>I</strong> key. Words belong to "
+"only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press "
+"any button (or touch anywhere) to begin.</h3><br/>"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:7
-msgid ""
-"Items belong to only one category. If you make an error, an <span style=\\"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:8
-msgid ""
-"This is a timed sorting task. <strong>FO AS FAST AS YOU CAN</strong> while "
-"making as few mistakes as possible."
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:9
-msgid ""
-"Going too slow or making too many errors will result in an uninterpretable "
-"score."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:10
-#: iat/templates/iat/TranslationWords.html:17
-msgid "Press the <strong>space bar</strong> to begin."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:12
-msgid ""
-"<strong>See above, the categories have changed.</strong> The items for "
-"sorting have changed as well."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:13
-msgid "The rules, however, are the same."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:14
-msgid ""
-"When the items belongs to a category on the left, press the <strong>E</"
-"strong> key."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:15
-msgid ""
-"When the item belongs to a category on the right, press the I key. Items "
-"belong to only one category."
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:16
-msgid "<strong>GO AS FAST AS YOU CAN.</strong>"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:19
-#: iat/templates/iat/TranslationWords.html:21
 msgid "Trustworthy --- Untrustworthy --- Truthful"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:20
-#: iat/templates/iat/TranslationWords.html:36
+#: iat/templates/iat/TranslationWords.html:8
+#: iat/templates/iat/TranslationWords.html:17
+#: iat/templates/iat/TranslationWords.html:24
 msgid "Trustworthy --- Untrustworthy --- Moral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:22
-#: iat/templates/iat/TranslationWords.html:26
+#: iat/templates/iat/TranslationWords.html:10
+#: iat/templates/iat/TranslationWords.html:14
+#: iat/templates/iat/TranslationWords.html:23
 msgid "Trustworthy --- Untrustworthy --- Lying"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:23
+#: iat/templates/iat/TranslationWords.html:11
 msgid "Trustworthy --- Untrustworthy --- Transparent"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:24
+#: iat/templates/iat/TranslationWords.html:12
+#: iat/templates/iat/TranslationWords.html:19
 msgid "Trustworthy --- Untrustworthy --- Corrupt"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:25
-#: iat/templates/iat/TranslationWords.html:34
+#: iat/templates/iat/TranslationWords.html:13
+#: iat/templates/iat/TranslationWords.html:22
 msgid "Trustworthy --- Untrustworthy --- Immoral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:27
-#: iat/templates/iat/TranslationWords.html:30
+#: iat/templates/iat/TranslationWords.html:15
+#: iat/templates/iat/TranslationWords.html:18
 msgid "Trustworthy --- Untrustworthy --- Inefficient"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:28
+#: iat/templates/iat/TranslationWords.html:16
 msgid "Trustworthy --- Untrustworthy --- Capable"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:29
-msgid "Trustworthy --- Untrustworthy --- Skillful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:31
-#: iat/templates/iat/TranslationWords.html:35
-msgid "Trustworthy --- Untrustworthy --- Unskilled"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:32
+#: iat/templates/iat/TranslationWords.html:20
 msgid "Trustworthy --- Untrustworthy --- Inexperienced"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:33
+#: iat/templates/iat/TranslationWords.html:21
 msgid "Trustworthy --- Untrustworthy --- Proficient"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:38
-#: iat/templates/iat/TranslationWords.html:45
+#: iat/templates/iat/TranslationWords.html:26
+#: iat/templates/iat/TranslationWords.html:27
 msgid "Trustworthy or Government --- Untrustworthy --- Constitution"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:39
-#: iat/templates/iat/TranslationWords.html:53
-#: iat/templates/iat/TranslationWords.html:72
+#: iat/templates/iat/TranslationWords.html:28
+#: iat/templates/iat/TranslationWords.html:29
+#: iat/templates/iat/TranslationWords.html:30
 msgid "Trustworthy or Government --- Untrustworthy --- Regulation"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:40
-#: iat/templates/iat/TranslationWords.html:49
+#: iat/templates/iat/TranslationWords.html:31
+#: iat/templates/iat/TranslationWords.html:32
 msgid "Trustworthy or Government --- Untrustworthy --- State"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:41
-#: iat/templates/iat/TranslationWords.html:52
-#: iat/templates/iat/TranslationWords.html:68
+#: iat/templates/iat/TranslationWords.html:33
+#: iat/templates/iat/TranslationWords.html:34
+#: iat/templates/iat/TranslationWords.html:35
 msgid "Trustworthy or Government --- Untrustworthy --- Civil servants"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:42
-#: iat/templates/iat/TranslationWords.html:64
-#: iat/templates/iat/TranslationWords.html:83
-msgid "Trustworthy or Government --- Untrustworthy --- Moral"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:43
-#: iat/templates/iat/TranslationWords.html:61
-#: iat/templates/iat/TranslationWords.html:81
-msgid "Trustworthy or Government --- Untrustworthy --- Truthful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:44
-#: iat/templates/iat/TranslationWords.html:67
+#: iat/templates/iat/TranslationWords.html:36
+#: iat/templates/iat/TranslationWords.html:37
+#: iat/templates/iat/TranslationWords.html:38
 msgid "Trustworthy or Government --- Untrustworthy --- Public administration"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:39
+#: iat/templates/iat/TranslationWords.html:40
+msgid "Trustworthy or Government --- Untrustworthy --- Politicians"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:41
+#: iat/templates/iat/TranslationWords.html:42
+#: iat/templates/iat/TranslationWords.html:43
+msgid "Trustworthy or Government --- Untrustworthy --- Moral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:44
+#: iat/templates/iat/TranslationWords.html:45
 #: iat/templates/iat/TranslationWords.html:46
-#: iat/templates/iat/TranslationWords.html:69
-#: iat/templates/iat/TranslationWords.html:76
-msgid "Trustworthy or Government --- Untrustworthy --- Inefficient"
+msgid "Trustworthy or Government --- Untrustworthy --- Truthful"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:47
-#: iat/templates/iat/TranslationWords.html:55
-msgid "Trustworthy or Government --- Untrustworthy --- Proficient"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:48
-#: iat/templates/iat/TranslationWords.html:58
-msgid "Trustworthy or Government --- Untrustworthy --- Skillful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:50
-#: iat/templates/iat/TranslationWords.html:63
-#: iat/templates/iat/TranslationWords.html:75
-#: iat/templates/iat/TranslationWords.html:84
-msgid "Trustworthy or Government --- Untrustworthy --- Immoral"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:51
-#: iat/templates/iat/TranslationWords.html:62
+#: iat/templates/iat/TranslationWords.html:49
 msgid "Trustworthy or Government --- Untrustworthy --- Capable"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:50
+#: iat/templates/iat/TranslationWords.html:51
+msgid "Trustworthy or Government --- Untrustworthy --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:52
+#: iat/templates/iat/TranslationWords.html:53
 #: iat/templates/iat/TranslationWords.html:54
-#: iat/templates/iat/TranslationWords.html:66
 msgid "Trustworthy or Government --- Untrustworthy --- Transparent"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:56
-#: iat/templates/iat/TranslationWords.html:70
-#: iat/templates/iat/TranslationWords.html:79
-msgid "Trustworthy or Government --- Untrustworthy --- Unskilled"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:57
-#: iat/templates/iat/TranslationWords.html:73
-#: iat/templates/iat/TranslationWords.html:77
-#: iat/templates/iat/TranslationWords.html:82
-msgid "Trustworthy or Government --- Untrustworthy --- Lying"
-msgstr ""
-
+#: iat/templates/iat/TranslationWords.html:58
 #: iat/templates/iat/TranslationWords.html:59
-#: iat/templates/iat/TranslationWords.html:65
-#: iat/templates/iat/TranslationWords.html:80
-msgid "Trustworthy or Government --- Untrustworthy --- Inexperienced"
+msgid "Trustworthy or Government --- Untrustworthy --- Inefficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:60
-#: iat/templates/iat/TranslationWords.html:74
-#: iat/templates/iat/TranslationWords.html:78
+#: iat/templates/iat/TranslationWords.html:61
+#: iat/templates/iat/TranslationWords.html:62
+#: iat/templates/iat/TranslationWords.html:63
+msgid "Trustworthy or Government --- Untrustworthy --- Immoral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:64
+#: iat/templates/iat/TranslationWords.html:65
+#: iat/templates/iat/TranslationWords.html:66
+#: iat/templates/iat/TranslationWords.html:67
 msgid "Trustworthy or Government --- Untrustworthy --- Corrupt"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:68
+#: iat/templates/iat/TranslationWords.html:69
+#: iat/templates/iat/TranslationWords.html:70
 #: iat/templates/iat/TranslationWords.html:71
-msgid "Trustworthy or Government --- Untrustworthy --- Politicians"
+msgid "Trustworthy or Government --- Untrustworthy --- Inexperienced"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:72
+#: iat/templates/iat/TranslationWords.html:73
+#: iat/templates/iat/TranslationWords.html:74
+#: iat/templates/iat/TranslationWords.html:75
+#: iat/templates/iat/TranslationWords.html:76
+msgid "Trustworthy or Government --- Untrustworthy --- Lying"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:78
+#: iat/templates/iat/TranslationWords.html:79
+#: iat/templates/iat/TranslationWords.html:80
+msgid "Trustworthy --- Untrustworthy or Government --- Constitution"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:81
+#: iat/templates/iat/TranslationWords.html:82
+msgid "Trustworthy --- Untrustworthy or Government --- Regulation"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:83
+#: iat/templates/iat/TranslationWords.html:84
+msgid "Trustworthy --- Untrustworthy or Government --- State"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:85
 #: iat/templates/iat/TranslationWords.html:86
-#: iat/templates/iat/TranslationWords.html:116
-msgid "Trustworthy --- Untrustworthy orGovernment --- Unskilled"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:87
-#: iat/templates/iat/TranslationWords.html:106
-#: iat/templates/iat/TranslationWords.html:120
-msgid "Trustworthy --- Untrustworthy orGovernment --- Truthful"
+msgid "Trustworthy --- Untrustworthy or Government --- Civil servants"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:88
-#: iat/templates/iat/TranslationWords.html:104
-#: iat/templates/iat/TranslationWords.html:115
-msgid "Trustworthy --- Untrustworthy orGovernment --- Capable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:89
-#: iat/templates/iat/TranslationWords.html:100
-msgid "Trustworthy --- Untrustworthy orGovernment --- Public administration"
+msgid "Trustworthy --- Untrustworthy or Government --- Public administration"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:90
-#: iat/templates/iat/TranslationWords.html:107
-#: iat/templates/iat/TranslationWords.html:119
-#: iat/templates/iat/TranslationWords.html:125
-msgid "Trustworthy --- Untrustworthy orGovernment --- Proficient"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:91
-#: iat/templates/iat/TranslationWords.html:111
-#: iat/templates/iat/TranslationWords.html:122
-#: iat/templates/iat/TranslationWords.html:129
-msgid "Trustworthy --- Untrustworthy orGovernment --- Transparent"
+msgid "Trustworthy --- Untrustworthy or Government --- Politicians"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:92
-#: iat/templates/iat/TranslationWords.html:105
-#: iat/templates/iat/TranslationWords.html:133
-msgid "Trustworthy --- Untrustworthy orGovernment --- Civil servants"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:93
-#: iat/templates/iat/TranslationWords.html:103
-#: iat/templates/iat/TranslationWords.html:117
-msgid "Trustworthy --- Untrustworthy orGovernment --- Skillful"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:94
-#: iat/templates/iat/TranslationWords.html:126
-msgid "Trustworthy --- Untrustworthy orGovernment --- Inefficient"
+msgid "Trustworthy --- Untrustworthy or Government --- Inefficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:95
-#: iat/templates/iat/TranslationWords.html:124
-#: iat/templates/iat/TranslationWords.html:127
-msgid "Trustworthy --- Untrustworthy orGovernment --- Regulation"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:96
-#: iat/templates/iat/TranslationWords.html:123
-msgid "Trustworthy --- Untrustworthy orGovernment --- Immoral"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:97
-#: iat/templates/iat/TranslationWords.html:118
-#: iat/templates/iat/TranslationWords.html:130
-msgid "Trustworthy --- Untrustworthy orGovernment --- Lying"
+msgid "Trustworthy --- Untrustworthy or Government --- Immoral"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:98
-#: iat/templates/iat/TranslationWords.html:110
-#: iat/templates/iat/TranslationWords.html:131
-msgid "Trustworthy --- Untrustworthy orGovernment --- State"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:99
-#: iat/templates/iat/TranslationWords.html:114
-#: iat/templates/iat/TranslationWords.html:128
-msgid "Trustworthy --- Untrustworthy orGovernment --- Constitution"
+#: iat/templates/iat/TranslationWords.html:100
+msgid "Trustworthy --- Untrustworthy or Government --- Lying"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:101
-#: iat/templates/iat/TranslationWords.html:108
-#: iat/templates/iat/TranslationWords.html:113
-msgid "Trustworthy --- Untrustworthy orGovernment --- Moral"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:102
-#: iat/templates/iat/TranslationWords.html:112
-#: iat/templates/iat/TranslationWords.html:132
-msgid "Trustworthy --- Untrustworthy orGovernment --- Corrupt"
+#: iat/templates/iat/TranslationWords.html:103
+msgid "Trustworthy --- Untrustworthy or Government --- Corrupt"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:104
+#: iat/templates/iat/TranslationWords.html:105
+msgid "Trustworthy --- Untrustworthy or Government --- Inexperienced"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:107
+#: iat/templates/iat/TranslationWords.html:108
 #: iat/templates/iat/TranslationWords.html:109
+#: iat/templates/iat/TranslationWords.html:110
+#: iat/templates/iat/TranslationWords.html:111
+msgid "Trustworthy --- Untrustworthy or Government --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:112
+#: iat/templates/iat/TranslationWords.html:113
+#: iat/templates/iat/TranslationWords.html:114
+#: iat/templates/iat/TranslationWords.html:115
+msgid "Trustworthy --- Untrustworthy or Government --- Capable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:116
+#: iat/templates/iat/TranslationWords.html:117
+#: iat/templates/iat/TranslationWords.html:118
+#: iat/templates/iat/TranslationWords.html:119
+msgid "Trustworthy --- Untrustworthy or Government --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:120
 #: iat/templates/iat/TranslationWords.html:121
-msgid "Trustworthy --- Untrustworthy orGovernment --- Inexperienced"
+#: iat/templates/iat/TranslationWords.html:122
+#: iat/templates/iat/TranslationWords.html:123
+msgid "Trustworthy --- Untrustworthy or Government --- Transparent"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:135
-#: iat/templates/iat/TranslationWords.html:163
-#: iat/templates/iat/TranslationWords.html:176
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
+#: iat/templates/iat/TranslationWords.html:124
+#: iat/templates/iat/TranslationWords.html:125
+#: iat/templates/iat/TranslationWords.html:126
+#: iat/templates/iat/TranslationWords.html:127
+msgid "Trustworthy --- Untrustworthy or Government --- Moral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:136
-#: iat/templates/iat/TranslationWords.html:144
-#: iat/templates/iat/TranslationWords.html:153
+#: iat/templates/iat/TranslationWords.html:129
+#: iat/templates/iat/TranslationWords.html:130
+#: iat/templates/iat/TranslationWords.html:131
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lawyer"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:137
-#: iat/templates/iat/TranslationWords.html:162
+#: iat/templates/iat/TranslationWords.html:132
+#: iat/templates/iat/TranslationWords.html:133
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Prosecutor"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:138
-#: iat/templates/iat/TranslationWords.html:151
+#: iat/templates/iat/TranslationWords.html:134
+#: iat/templates/iat/TranslationWords.html:135
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Supreme Court"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:139
-#: iat/templates/iat/TranslationWords.html:150
+#: iat/templates/iat/TranslationWords.html:136
+#: iat/templates/iat/TranslationWords.html:137
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Court"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:140
-#: iat/templates/iat/TranslationWords.html:143
+#: iat/templates/iat/TranslationWords.html:138
+#: iat/templates/iat/TranslationWords.html:139
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Justice department"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:140
 #: iat/templates/iat/TranslationWords.html:141
-#: iat/templates/iat/TranslationWords.html:167
-#: iat/templates/iat/TranslationWords.html:172
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:142
-#: iat/templates/iat/TranslationWords.html:155
-#: iat/templates/iat/TranslationWords.html:179
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:145
-#: iat/templates/iat/TranslationWords.html:160
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:146
-#: iat/templates/iat/TranslationWords.html:157
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:147
-#: iat/templates/iat/TranslationWords.html:170
-#: iat/templates/iat/TranslationWords.html:175
-#: iat/templates/iat/TranslationWords.html:182
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:148
-#: iat/templates/iat/TranslationWords.html:152
-#: iat/templates/iat/TranslationWords.html:168
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Judge"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:143
+#: iat/templates/iat/TranslationWords.html:144
+#: iat/templates/iat/TranslationWords.html:145
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:146
+#: iat/templates/iat/TranslationWords.html:147
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:148
 #: iat/templates/iat/TranslationWords.html:149
-#: iat/templates/iat/TranslationWords.html:166
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Skillful"
+#: iat/templates/iat/TranslationWords.html:150
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:151
+#: iat/templates/iat/TranslationWords.html:152
+#: iat/templates/iat/TranslationWords.html:153
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:154
-#: iat/templates/iat/TranslationWords.html:165
+#: iat/templates/iat/TranslationWords.html:155
+#: iat/templates/iat/TranslationWords.html:156
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Moral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:156
-#: iat/templates/iat/TranslationWords.html:173
-#: iat/templates/iat/TranslationWords.html:174
-msgid "Trustworthy or Judicial System --- Untrustworthy --- Unskilled"
+#: iat/templates/iat/TranslationWords.html:158
+#: iat/templates/iat/TranslationWords.html:159
+#: iat/templates/iat/TranslationWords.html:160
+#: iat/templates/iat/TranslationWords.html:161
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:158
+#: iat/templates/iat/TranslationWords.html:162
+#: iat/templates/iat/TranslationWords.html:163
 #: iat/templates/iat/TranslationWords.html:164
-#: iat/templates/iat/TranslationWords.html:177
-#: iat/templates/iat/TranslationWords.html:181
+#: iat/templates/iat/TranslationWords.html:165
+#: iat/templates/iat/TranslationWords.html:166
+msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:167
+#: iat/templates/iat/TranslationWords.html:168
+#: iat/templates/iat/TranslationWords.html:169
+#: iat/templates/iat/TranslationWords.html:170
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Immoral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:159
 #: iat/templates/iat/TranslationWords.html:171
-#: iat/templates/iat/TranslationWords.html:178
+#: iat/templates/iat/TranslationWords.html:172
+#: iat/templates/iat/TranslationWords.html:173
+#: iat/templates/iat/TranslationWords.html:174
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inexperienced"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:161
-#: iat/templates/iat/TranslationWords.html:169
-#: iat/templates/iat/TranslationWords.html:180
+#: iat/templates/iat/TranslationWords.html:175
+#: iat/templates/iat/TranslationWords.html:176
+#: iat/templates/iat/TranslationWords.html:177
+#: iat/templates/iat/TranslationWords.html:178
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inefficient"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:180
+#: iat/templates/iat/TranslationWords.html:181
+#: iat/templates/iat/TranslationWords.html:182
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Judge"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:183
 #: iat/templates/iat/TranslationWords.html:184
-#: iat/templates/iat/TranslationWords.html:199
-#: iat/templates/iat/TranslationWords.html:213
-#: iat/templates/iat/TranslationWords.html:231
-msgid "Trustworthy or Judicial System --- Moral"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Court"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:185
-#: iat/templates/iat/TranslationWords.html:194
-#: iat/templates/iat/TranslationWords.html:205
-msgid "Trustworthy or Judicial System --- Judge"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:186
-#: iat/templates/iat/TranslationWords.html:203
-#: iat/templates/iat/TranslationWords.html:214
-msgid "Trustworthy or Judicial System --- Court"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Justice department"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:187
-#: iat/templates/iat/TranslationWords.html:212
-msgid "Trustworthy or Judicial System --- Justice department"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:188
-#: iat/templates/iat/TranslationWords.html:208
-#: iat/templates/iat/TranslationWords.html:223
-msgid "Trustworthy or Judicial System --- Proficient"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Supreme Court"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:189
-#: iat/templates/iat/TranslationWords.html:210
-#: iat/templates/iat/TranslationWords.html:229
-msgid "Trustworthy or Judicial System --- Lawyer"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:190
-#: iat/templates/iat/TranslationWords.html:225
-msgid "Trustworthy or Judicial System --- Inefficient"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:191
-msgid "Trustworthy or Judicial System --- Supreme Court"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Lawyer"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:192
-#: iat/templates/iat/TranslationWords.html:207
-#: iat/templates/iat/TranslationWords.html:211
-msgid "Trustworthy or Judicial System --- Capable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:193
-#: iat/templates/iat/TranslationWords.html:202
-#: iat/templates/iat/TranslationWords.html:221
-msgid "Trustworthy or Judicial System --- Truthful"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Prosecuter"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:194
 #: iat/templates/iat/TranslationWords.html:195
-#: iat/templates/iat/TranslationWords.html:209
-#: iat/templates/iat/TranslationWords.html:215
-msgid "Trustworthy or Judicial System --- Skillful"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:196
-#: iat/templates/iat/TranslationWords.html:217
-msgid "Trustworthy or Judicial System --- Immoral"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Inefficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:197
-#: iat/templates/iat/TranslationWords.html:222
-msgid "Trustworthy or Judicial System --- Inexperienced"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:198
-#: iat/templates/iat/TranslationWords.html:206
-#: iat/templates/iat/TranslationWords.html:219
-#: iat/templates/iat/TranslationWords.html:227
-msgid "Trustworthy or Judicial System --- Transparent"
+#: iat/templates/iat/TranslationWords.html:199
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Lying"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:200
-#: iat/templates/iat/TranslationWords.html:226
-#: iat/templates/iat/TranslationWords.html:228
-msgid "Trustworthy or Judicial System --- Lying"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:201
-#: iat/templates/iat/TranslationWords.html:220
-msgid "Trustworthy or Judicial System --- Unskilled"
+#: iat/templates/iat/TranslationWords.html:202
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Immoral"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:203
 #: iat/templates/iat/TranslationWords.html:204
-#: iat/templates/iat/TranslationWords.html:224
-msgid "Trustworthy or Judicial System --- Prosecutor"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Inexperienced"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:205
+#: iat/templates/iat/TranslationWords.html:206
+#: iat/templates/iat/TranslationWords.html:207
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Corrupt"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:209
+#: iat/templates/iat/TranslationWords.html:210
+#: iat/templates/iat/TranslationWords.html:211
+#: iat/templates/iat/TranslationWords.html:212
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Moral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:213
+#: iat/templates/iat/TranslationWords.html:214
+#: iat/templates/iat/TranslationWords.html:215
 #: iat/templates/iat/TranslationWords.html:216
-#: iat/templates/iat/TranslationWords.html:218
-#: iat/templates/iat/TranslationWords.html:230
-msgid "Trustworthy or Judicial System --- Corrupt"
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Proficient"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:217
+#: iat/templates/iat/TranslationWords.html:218
+#: iat/templates/iat/TranslationWords.html:219
+#: iat/templates/iat/TranslationWords.html:220
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Capable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:221
+#: iat/templates/iat/TranslationWords.html:222
+#: iat/templates/iat/TranslationWords.html:223
+#: iat/templates/iat/TranslationWords.html:224
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:225
+#: iat/templates/iat/TranslationWords.html:226
+#: iat/templates/iat/TranslationWords.html:227
+#: iat/templates/iat/TranslationWords.html:228
+msgid "Trustworthy --- Untrustworthy or Judicial System --- Transparent"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:231
+#: iat/templates/iat/TranslationWords.html:232
 #: iat/templates/iat/TranslationWords.html:233
-#: iat/templates/iat/TranslationWords.html:246
-#: iat/templates/iat/TranslationWords.html:258
 msgid "Trustworthy or Media --- Untrustworthy --- News"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:234
-#: iat/templates/iat/TranslationWords.html:264
-msgid "Trustworthy or Media --- Untrustworthy --- Transparent"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:235
-#: iat/templates/iat/TranslationWords.html:256
-#: iat/templates/iat/TranslationWords.html:275
-msgid "Trustworthy or Media --- Untrustworthy --- Capable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:236
-#: iat/templates/iat/TranslationWords.html:242
-#: iat/templates/iat/TranslationWords.html:272
 msgid "Trustworthy or Media --- Untrustworthy --- Reporter"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:237
-#: iat/templates/iat/TranslationWords.html:247
-#: iat/templates/iat/TranslationWords.html:278
+#: iat/templates/iat/TranslationWords.html:238
+#: iat/templates/iat/TranslationWords.html:239
 msgid "Trustworthy or Media --- Untrustworthy --- Newspaper"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:238
-#: iat/templates/iat/TranslationWords.html:268
-#: iat/templates/iat/TranslationWords.html:270
-msgid "Trustworthy or Media --- Untrustworthy --- Inefficient"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:239
-#: iat/templates/iat/TranslationWords.html:244
-#: iat/templates/iat/TranslationWords.html:279
+#: iat/templates/iat/TranslationWords.html:240
+#: iat/templates/iat/TranslationWords.html:241
+#: iat/templates/iat/TranslationWords.html:242
 msgid "Trustworthy or Media --- Untrustworthy --- Journalist"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:240
 #: iat/templates/iat/TranslationWords.html:243
+#: iat/templates/iat/TranslationWords.html:244
 msgid "Trustworthy or Media --- Untrustworthy --- Headline"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:241
-#: iat/templates/iat/TranslationWords.html:260
-msgid "Trustworthy or Media --- Untrustworthy --- Truthful"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:245
-#: iat/templates/iat/TranslationWords.html:257
-#: iat/templates/iat/TranslationWords.html:267
-msgid "Trustworthy or Media --- Untrustworthy --- Skillful"
+#: iat/templates/iat/TranslationWords.html:246
+#: iat/templates/iat/TranslationWords.html:247
+msgid "Trustworthy or Media --- Untrustworthy --- Transparent"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:248
-#: iat/templates/iat/TranslationWords.html:265
-#: iat/templates/iat/TranslationWords.html:276
-msgid "Trustworthy or Media --- Untrustworthy --- Corrupt"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:249
-#: iat/templates/iat/TranslationWords.html:263
-msgid "Trustworthy or Media --- Untrustworthy --- Proficient"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:250
-#: iat/templates/iat/TranslationWords.html:255
-msgid "Trustworthy or Media --- Untrustworthy --- Moral"
+msgid "Trustworthy or Media --- Untrustworthy --- Capable"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:251
-#: iat/templates/iat/TranslationWords.html:262
-#: iat/templates/iat/TranslationWords.html:271
-#: iat/templates/iat/TranslationWords.html:280
-msgid "Trustworthy or Media --- Untrustworthy --- Unskilled"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:252
-#: iat/templates/iat/TranslationWords.html:261
-#: iat/templates/iat/TranslationWords.html:274
-msgid "Trustworthy or Media --- Untrustworthy --- Inexperienced"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:253
-#: iat/templates/iat/TranslationWords.html:266
-#: iat/templates/iat/TranslationWords.html:273
-msgid "Trustworthy or Media --- Untrustworthy --- Immoral"
+msgid "Trustworthy or Media --- Untrustworthy --- Truthful"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:254
-#: iat/templates/iat/TranslationWords.html:259
+#: iat/templates/iat/TranslationWords.html:255
+#: iat/templates/iat/TranslationWords.html:256
+msgid "Trustworthy or Media --- Untrustworthy --- Moral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:257
+#: iat/templates/iat/TranslationWords.html:258
+msgid "Trustworthy or Media --- Untrustworthy --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:260
+#: iat/templates/iat/TranslationWords.html:261
+#: iat/templates/iat/TranslationWords.html:262
+#: iat/templates/iat/TranslationWords.html:263
+msgid "Trustworthy or Media --- Untrustworthy --- Inefficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:264
+#: iat/templates/iat/TranslationWords.html:265
+#: iat/templates/iat/TranslationWords.html:266
+#: iat/templates/iat/TranslationWords.html:267
+msgid "Trustworthy or Media --- Untrustworthy --- Corrupt"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:268
 #: iat/templates/iat/TranslationWords.html:269
+#: iat/templates/iat/TranslationWords.html:270
+#: iat/templates/iat/TranslationWords.html:271
+msgid "Trustworthy or Media --- Untrustworthy --- Inexperienced"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:272
+#: iat/templates/iat/TranslationWords.html:273
+#: iat/templates/iat/TranslationWords.html:274
+#: iat/templates/iat/TranslationWords.html:275
+msgid "Trustworthy or Media --- Untrustworthy --- Immoral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:276
 #: iat/templates/iat/TranslationWords.html:277
+#: iat/templates/iat/TranslationWords.html:278
+#: iat/templates/iat/TranslationWords.html:279
+#: iat/templates/iat/TranslationWords.html:280
 msgid "Trustworthy or Media --- Untrustworthy --- Lying"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:282
-#: iat/templates/iat/TranslationWords.html:291
-#: iat/templates/iat/TranslationWords.html:329
+#: iat/templates/iat/TranslationWords.html:283
+#: iat/templates/iat/TranslationWords.html:284
+#: iat/templates/iat/TranslationWords.html:285
 msgid "Trustworthy --- Untrustworthy or Media --- Newspaper"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:283
-#: iat/templates/iat/TranslationWords.html:296
-#: iat/templates/iat/TranslationWords.html:314
+#: iat/templates/iat/TranslationWords.html:286
+#: iat/templates/iat/TranslationWords.html:287
+#: iat/templates/iat/TranslationWords.html:288
 msgid "Trustworthy --- Untrustworthy or Media --- Reporter"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:284
-#: iat/templates/iat/TranslationWords.html:302
-#: iat/templates/iat/TranslationWords.html:321
-msgid "Trustworthy --- Untrustworthy or Media --- Transparent"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:285
-#: iat/templates/iat/TranslationWords.html:292
-#: iat/templates/iat/TranslationWords.html:324
+#: iat/templates/iat/TranslationWords.html:289
+#: iat/templates/iat/TranslationWords.html:290
+#: iat/templates/iat/TranslationWords.html:291
 msgid "Trustworthy --- Untrustworthy or Media --- Journalist"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:286
-#: iat/templates/iat/TranslationWords.html:295
-#: iat/templates/iat/TranslationWords.html:309
+#: iat/templates/iat/TranslationWords.html:292
+#: iat/templates/iat/TranslationWords.html:293
+#: iat/templates/iat/TranslationWords.html:294
 msgid "Trustworthy --- Untrustworthy or Media --- News"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:287
-#: iat/templates/iat/TranslationWords.html:305
-#: iat/templates/iat/TranslationWords.html:316
-msgid "Trustworthy --- Untrustworthy or Media --- Truthful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:288
-#: iat/templates/iat/TranslationWords.html:319
-msgid "Trustworthy --- Untrustworthy or Media --- Unskilled"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:289
-#: iat/templates/iat/TranslationWords.html:317
-msgid "Trustworthy --- Untrustworthy or Media --- Corrupt"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:290
-#: iat/templates/iat/TranslationWords.html:294
+#: iat/templates/iat/TranslationWords.html:295
+#: iat/templates/iat/TranslationWords.html:296
 msgid "Trustworthy --- Untrustworthy or Media --- Headline"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:293
-#: iat/templates/iat/TranslationWords.html:310
-#: iat/templates/iat/TranslationWords.html:322
-msgid "Trustworthy --- Untrustworthy or Media --- Moral"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:297
-#: iat/templates/iat/TranslationWords.html:303
-#: iat/templates/iat/TranslationWords.html:311
-#: iat/templates/iat/TranslationWords.html:326
-msgid "Trustworthy --- Untrustworthy or Media --- Capable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:298
-#: iat/templates/iat/TranslationWords.html:313
-msgid "Trustworthy --- Untrustworthy or Media --- Inefficient"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:299
-#: iat/templates/iat/TranslationWords.html:301
-#: iat/templates/iat/TranslationWords.html:323
-#: iat/templates/iat/TranslationWords.html:328
-msgid "Trustworthy --- Untrustworthy or Media --- Proficient"
+msgid "Trustworthy --- Untrustworthy or Media --- Corrupt"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:300
-#: iat/templates/iat/TranslationWords.html:307
-#: iat/templates/iat/TranslationWords.html:325
-msgid "Trustworthy --- Untrustworthy or Media --- Skillful"
+#: iat/templates/iat/TranslationWords.html:301
+#: iat/templates/iat/TranslationWords.html:302
+msgid "Trustworthy --- Untrustworthy or Media --- Inefficient"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:303
 #: iat/templates/iat/TranslationWords.html:304
-#: iat/templates/iat/TranslationWords.html:312
+#: iat/templates/iat/TranslationWords.html:305
 msgid "Trustworthy --- Untrustworthy or Media --- Lying"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:306
-#: iat/templates/iat/TranslationWords.html:318
-#: iat/templates/iat/TranslationWords.html:327
+#: iat/templates/iat/TranslationWords.html:307
 msgid "Trustworthy --- Untrustworthy or Media --- Inexperienced"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:308
-#: iat/templates/iat/TranslationWords.html:315
-#: iat/templates/iat/TranslationWords.html:320
+#: iat/templates/iat/TranslationWords.html:309
+#: iat/templates/iat/TranslationWords.html:310
 msgid "Trustworthy --- Untrustworthy or Media --- Immoral"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:312
+#: iat/templates/iat/TranslationWords.html:313
+#: iat/templates/iat/TranslationWords.html:314
+#: iat/templates/iat/TranslationWords.html:315
+#: iat/templates/iat/TranslationWords.html:316
+msgid "Trustworthy --- Untrustworthy or Media --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:317
+#: iat/templates/iat/TranslationWords.html:318
+#: iat/templates/iat/TranslationWords.html:319
+#: iat/templates/iat/TranslationWords.html:320
+msgid "Trustworthy --- Untrustworthy or Media --- Transparent"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:321
+#: iat/templates/iat/TranslationWords.html:322
+#: iat/templates/iat/TranslationWords.html:323
+#: iat/templates/iat/TranslationWords.html:324
+msgid "Trustworthy --- Untrustworthy or Media --- Capable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:325
+#: iat/templates/iat/TranslationWords.html:326
+#: iat/templates/iat/TranslationWords.html:327
+#: iat/templates/iat/TranslationWords.html:328
+msgid "Trustworthy --- Untrustworthy or Media --- Moral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:329
+#: iat/templates/iat/TranslationWords.html:330
 #: iat/templates/iat/TranslationWords.html:331
-#: iat/templates/iat/TranslationWords.html:333
-msgid "Competent --- Incompetent --- Capable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:332
-#: iat/templates/iat/TranslationWords.html:348
-msgid "Competent --- Incompetent --- Skillful"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:334
-#: iat/templates/iat/TranslationWords.html:338
-msgid "Competent --- Incompetent --- Inefficient"
+msgid "Trustworthy --- Untrustworthy or Media --- Proficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:335
-msgid "Competent --- Incompetent --- Proficient"
+#: iat/templates/iat/TranslationWords.html:337
+msgid "Competent --- Incompetent --- Capable"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:336
-msgid "Competent --- Incompetent --- Unskilled"
+#: iat/templates/iat/TranslationWords.html:352
+msgid "Competent --- Incompetent --- Skilful"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:337
-#: iat/templates/iat/TranslationWords.html:346
-msgid "Competent --- Incompetent --- Inexperienced"
+#: iat/templates/iat/TranslationWords.html:338
+#: iat/templates/iat/TranslationWords.html:342
+msgid "Competent --- Incompetent --- Inefficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:339
-#: iat/templates/iat/TranslationWords.html:342
-msgid "Competent --- Incompetent --- Useless"
+msgid "Competent --- Incompetent --- Proficient"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:340
-msgid "Competent --- Incompetent --- Smart"
+msgid "Competent --- Incompetent --- Unskilled"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:341
-msgid "Competent --- Incompetent --- Reliable"
+#: iat/templates/iat/TranslationWords.html:350
+msgid "Competent --- Incompetent --- Inexperienced"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:343
-#: iat/templates/iat/TranslationWords.html:347
-msgid "Competent --- Incompetent --- Powerless"
+#: iat/templates/iat/TranslationWords.html:346
+msgid "Competent --- Incompetent --- Useless"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:344
-msgid "Competent --- Incompetent --- Weak"
+msgid "Competent --- Incompetent --- Smart"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:345
+msgid "Competent --- Incompetent --- Reliable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:347
+#: iat/templates/iat/TranslationWords.html:351
+msgid "Competent --- Incompetent --- Powerless"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:348
+msgid "Competent --- Incompetent --- Weak"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:349
 msgid "Competent --- Incompetent --- Bright"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:350
-#: iat/templates/iat/TranslationWords.html:357
+#: iat/templates/iat/TranslationWords.html:354
+#: iat/templates/iat/TranslationWords.html:355
 msgid "Competent or Government --- Incompetent --- Constitution"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:351
-#: iat/templates/iat/TranslationWords.html:366
-#: iat/templates/iat/TranslationWords.html:385
+#: iat/templates/iat/TranslationWords.html:356
+#: iat/templates/iat/TranslationWords.html:357
+#: iat/templates/iat/TranslationWords.html:358
 msgid "Competent or Government --- Incompetent --- Regulation"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:352
-#: iat/templates/iat/TranslationWords.html:362
+#: iat/templates/iat/TranslationWords.html:359
+#: iat/templates/iat/TranslationWords.html:360
 msgid "Competent or Government --- Incompetent --- State"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:353
+#: iat/templates/iat/TranslationWords.html:361
+#: iat/templates/iat/TranslationWords.html:362
+#: iat/templates/iat/TranslationWords.html:363
+msgid "Competent or Government --- Incompetent --- Civil Servants"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:364
 #: iat/templates/iat/TranslationWords.html:365
-#: iat/templates/iat/TranslationWords.html:381
-msgid "Competent or Government --- Incompetent --- Civil servants"
+msgid "Competent or Government --- Incompetent --- Public Administration"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:354
-#: iat/templates/iat/TranslationWords.html:377
-#: iat/templates/iat/TranslationWords.html:396
-msgid "Competent or Government --- Incompetent --- Skillful"
+#: iat/templates/iat/TranslationWords.html:366
+#: iat/templates/iat/TranslationWords.html:367
+msgid "Competent or Government --- Incompetent --- Politicians"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:355
-#: iat/templates/iat/TranslationWords.html:374
-#: iat/templates/iat/TranslationWords.html:394
+#: iat/templates/iat/TranslationWords.html:368
+#: iat/templates/iat/TranslationWords.html:369
+#: iat/templates/iat/TranslationWords.html:370
+msgid "Competent or Government --- Incompetent --- Skilful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:371
+#: iat/templates/iat/TranslationWords.html:372
+#: iat/templates/iat/TranslationWords.html:373
 msgid "Competent or Government --- Incompetent --- Capable"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:356
-#: iat/templates/iat/TranslationWords.html:358
-#: iat/templates/iat/TranslationWords.html:380
-msgid "Competent or Government --- Incompetent --- Public administration"
+#: iat/templates/iat/TranslationWords.html:374
+#: iat/templates/iat/TranslationWords.html:375
+msgid "Competent or Government --- Incompetent --- Bright"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:359
-#: iat/templates/iat/TranslationWords.html:382
+#: iat/templates/iat/TranslationWords.html:376
+#: iat/templates/iat/TranslationWords.html:377
+msgid "Competent or Government --- Incompetent --- Reliable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:378
+#: iat/templates/iat/TranslationWords.html:379
+msgid "Competent or Government --- Incompetent --- Smart"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:380
+#: iat/templates/iat/TranslationWords.html:381
+msgid "Competent or Government --- Incompetent --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:383
+#: iat/templates/iat/TranslationWords.html:384
+#: iat/templates/iat/TranslationWords.html:385
+#: iat/templates/iat/TranslationWords.html:386
+msgid "Competent or Government --- Incompetent --- Inexperienced"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:387
+#: iat/templates/iat/TranslationWords.html:388
 #: iat/templates/iat/TranslationWords.html:389
 msgid "Competent or Government --- Incompetent --- Useless"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:360
-#: iat/templates/iat/TranslationWords.html:368
-msgid "Competent or Government --- Incompetent --- Bright"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:361
-#: iat/templates/iat/TranslationWords.html:371
-msgid "Competent or Government --- Incompetent --- Reliable"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:363
-#: iat/templates/iat/TranslationWords.html:376
-#: iat/templates/iat/TranslationWords.html:388
-#: iat/templates/iat/TranslationWords.html:397
-msgid "Competent or Government --- Incompetent --- Inexperienced"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:364
-#: iat/templates/iat/TranslationWords.html:375
-msgid "Competent or Government --- Incompetent --- Smart"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:367
-#: iat/templates/iat/TranslationWords.html:379
-msgid "Competent or Government --- Incompetent --- Proficient"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:369
-#: iat/templates/iat/TranslationWords.html:383
+#: iat/templates/iat/TranslationWords.html:390
+#: iat/templates/iat/TranslationWords.html:391
 #: iat/templates/iat/TranslationWords.html:392
 msgid "Competent or Government --- Incompetent --- Powerless"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:370
-#: iat/templates/iat/TranslationWords.html:386
-#: iat/templates/iat/TranslationWords.html:390
+#: iat/templates/iat/TranslationWords.html:393
+#: iat/templates/iat/TranslationWords.html:394
 #: iat/templates/iat/TranslationWords.html:395
+#: iat/templates/iat/TranslationWords.html:396
 msgid "Competent or Government --- Incompetent --- Inefficient"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:372
-#: iat/templates/iat/TranslationWords.html:378
-#: iat/templates/iat/TranslationWords.html:393
+#: iat/templates/iat/TranslationWords.html:397
+#: iat/templates/iat/TranslationWords.html:398
+#: iat/templates/iat/TranslationWords.html:399
+#: iat/templates/iat/TranslationWords.html:400
 msgid "Competent or Government --- Incompetent --- Weak"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:373
-#: iat/templates/iat/TranslationWords.html:387
-#: iat/templates/iat/TranslationWords.html:391
+#: iat/templates/iat/TranslationWords.html:401
+#: iat/templates/iat/TranslationWords.html:402
+#: iat/templates/iat/TranslationWords.html:403
 msgid "Competent or Government --- Incompetent --- Unskilled"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:384
-msgid "Competent or Government --- Incompetent --- Politicians"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:399
-#: iat/templates/iat/TranslationWords.html:429
-msgid "Competent --- Incompetent or Government --- Powerless"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:400
-#: iat/templates/iat/TranslationWords.html:419
-#: iat/templates/iat/TranslationWords.html:433
-msgid "Competent --- Incompetent or Government --- Capable"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:401
-#: iat/templates/iat/TranslationWords.html:417
-#: iat/templates/iat/TranslationWords.html:428
-msgid "Competent --- Incompetent or Government --- Smart"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:402
-#: iat/templates/iat/TranslationWords.html:413
-msgid "Competent --- Incompetent or Government --- Public administration"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:403
-#: iat/templates/iat/TranslationWords.html:420
-#: iat/templates/iat/TranslationWords.html:432
-#: iat/templates/iat/TranslationWords.html:438
-msgid "Competent --- Incompetent or Government --- Bright"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:404
-#: iat/templates/iat/TranslationWords.html:424
-#: iat/templates/iat/TranslationWords.html:435
-#: iat/templates/iat/TranslationWords.html:442
-msgid "Competent --- Incompetent or Government --- Proficient"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:405
-#: iat/templates/iat/TranslationWords.html:418
-#: iat/templates/iat/TranslationWords.html:446
-msgid "Competent --- Incompetent or Government --- Civil servants"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:406
-#: iat/templates/iat/TranslationWords.html:416
-#: iat/templates/iat/TranslationWords.html:430
-msgid "Competent --- Incompetent or Government --- Reliable"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:407
-#: iat/templates/iat/TranslationWords.html:439
-msgid "Competent --- Incompetent or Government --- Useless"
+msgid "Competent --- Incompetent or Government --- Public Administration"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:408
-#: iat/templates/iat/TranslationWords.html:437
-#: iat/templates/iat/TranslationWords.html:440
-msgid "Competent --- Incompetent or Government --- Regulation"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:409
-#: iat/templates/iat/TranslationWords.html:436
-msgid "Competent --- Incompetent or Government --- Inexperienced"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:410
-#: iat/templates/iat/TranslationWords.html:431
-#: iat/templates/iat/TranslationWords.html:443
-msgid "Competent --- Incompetent or Government --- Inefficient"
+msgid "Competent --- Incompetent or Government --- Civil Servants"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:411
-#: iat/templates/iat/TranslationWords.html:423
-#: iat/templates/iat/TranslationWords.html:444
-msgid "Competent --- Incompetent or Government --- State"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:412
-#: iat/templates/iat/TranslationWords.html:427
-#: iat/templates/iat/TranslationWords.html:441
-msgid "Competent --- Incompetent or Government --- Constitution"
+#: iat/templates/iat/TranslationWords.html:413
+msgid "Competent --- Incompetent or Government --- Regulation"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:414
-#: iat/templates/iat/TranslationWords.html:421
-#: iat/templates/iat/TranslationWords.html:426
-msgid "Competent --- Incompetent or Government --- Skillful"
+#: iat/templates/iat/TranslationWords.html:415
+#: iat/templates/iat/TranslationWords.html:416
+msgid "Competent --- Incompetent or Government --- State"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:415
-#: iat/templates/iat/TranslationWords.html:425
-#: iat/templates/iat/TranslationWords.html:445
-msgid "Competent --- Incompetent or Government --- Unskilled"
+#: iat/templates/iat/TranslationWords.html:417
+#: iat/templates/iat/TranslationWords.html:418
+#: iat/templates/iat/TranslationWords.html:419
+msgid "Competent --- Incompetent or Government --- Constitution"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:420
+#: iat/templates/iat/TranslationWords.html:421
+msgid "Competent --- Incompetent or Government --- Inexperienced"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:422
-#: iat/templates/iat/TranslationWords.html:434
+#: iat/templates/iat/TranslationWords.html:423
+#: iat/templates/iat/TranslationWords.html:424
+msgid "Competent --- Incompetent or Government --- Inefficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:425
+#: iat/templates/iat/TranslationWords.html:426
+msgid "Competent --- Incompetent or Government --- Powerless"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:427
+#: iat/templates/iat/TranslationWords.html:428
+msgid "Competent --- Incompetent or Government --- Useless"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:429
+#: iat/templates/iat/TranslationWords.html:430
+#: iat/templates/iat/TranslationWords.html:431
+msgid "Competent --- Incompetent or Government --- Unskilled"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:432
+#: iat/templates/iat/TranslationWords.html:433
 msgid "Competent --- Incompetent or Government --- Weak"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:435
+#: iat/templates/iat/TranslationWords.html:436
+#: iat/templates/iat/TranslationWords.html:437
+#: iat/templates/iat/TranslationWords.html:438
+msgid "Competent --- Incompetent or Government --- Proficient"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:439
+#: iat/templates/iat/TranslationWords.html:440
+#: iat/templates/iat/TranslationWords.html:441
+#: iat/templates/iat/TranslationWords.html:442
+msgid "Competent --- Incompetent or Government --- Reliable"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:443
+#: iat/templates/iat/TranslationWords.html:444
+#: iat/templates/iat/TranslationWords.html:445
+msgid "Competent --- Incompetent or Government --- Smart"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:446
+#: iat/templates/iat/TranslationWords.html:447
 #: iat/templates/iat/TranslationWords.html:448
-#: iat/templates/iat/TranslationWords.html:450
-msgid "Honest --- Dishonest --- Truthful"
+msgid "Competent --- Incompetent or Government --- Capable"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:449
-#: iat/templates/iat/TranslationWords.html:465
-msgid "Honest --- Dishonest --- Moral"
-msgstr ""
-
+#: iat/templates/iat/TranslationWords.html:450
 #: iat/templates/iat/TranslationWords.html:451
-#: iat/templates/iat/TranslationWords.html:455
-msgid "Honest --- Dishonest --- Lying"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:452
-msgid "Honest --- Dishonest --- Transparent"
+msgid "Competent --- Incompetent or Government --- Bright"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:453
-msgid "Honest --- Dishonest --- Corrupt"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:454
-#: iat/templates/iat/TranslationWords.html:463
-msgid "Honest --- Dishonest --- Immoral"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:456
-#: iat/templates/iat/TranslationWords.html:459
-msgid "Honest --- Dishonest --- Unfair"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:457
-msgid "Honest --- Dishonest --- Open"
+#: iat/templates/iat/TranslationWords.html:455
+msgid "Competent --- Incompetent or Government --- Skilful"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:458
-msgid "Honest --- Dishonest --- Credible"
+#: iat/templates/iat/TranslationWords.html:460
+msgid "Honest --- Dishonest --- Truthful"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:460
-#: iat/templates/iat/TranslationWords.html:464
-msgid "Honest --- Dishonest --- Unscupulous"
+#: iat/templates/iat/TranslationWords.html:459
+#: iat/templates/iat/TranslationWords.html:475
+msgid "Honest --- Dishonest --- Moral"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:461
-msgid "Honest --- Dishonest --- Illegitimate"
+#: iat/templates/iat/TranslationWords.html:465
+msgid "Honest --- Dishonest --- Lying"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:462
-msgid "Honest --- Dishonest --- Fair"
+msgid "Honest --- Dishonest --- Transparent"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:463
+msgid "Honest --- Dishonest --- Corrupt"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:464
+#: iat/templates/iat/TranslationWords.html:473
+msgid "Honest --- Dishonest --- Immoral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:466
+#: iat/templates/iat/TranslationWords.html:469
+msgid "Honest --- Dishonest --- Unfair"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:467
-#: iat/templates/iat/TranslationWords.html:482
-#: iat/templates/iat/TranslationWords.html:495
-#: iat/templates/iat/TranslationWords.html:508
-msgid "Honest or Government --- Dishonest --- Corrupt"
+msgid "Honest --- Dishonest --- Open"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:468
-#: iat/templates/iat/TranslationWords.html:476
-#: iat/templates/iat/TranslationWords.html:485
-msgid "Honest or Government --- Dishonest --- Regulation"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:469
-#: iat/templates/iat/TranslationWords.html:494
-msgid "Honest or Government --- Dishonest --- Constitution"
+msgid "Honest --- Dishonest --- Credible"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:470
-#: iat/templates/iat/TranslationWords.html:483
-msgid "Honest or Government --- Dishonest --- State"
+#: iat/templates/iat/TranslationWords.html:474
+msgid "Honest --- Dishonest --- Unscupulous"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:471
-msgid "Honest or Government --- Dishonest --- Public administration"
+msgid "Honest --- Dishonest --- Illegitimate"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:472
-#: iat/templates/iat/TranslationWords.html:475
-msgid "Honest or Government --- Dishonest --- Civil servants"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:473
-#: iat/templates/iat/TranslationWords.html:499
-#: iat/templates/iat/TranslationWords.html:504
-msgid "Honest or Government --- Dishonest --- Transparent"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:474
-#: iat/templates/iat/TranslationWords.html:511
-msgid "Honest or Government --- Dishonest --- Fair"
+msgid "Honest --- Dishonest --- Fair"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:477
-#: iat/templates/iat/TranslationWords.html:492
-msgid "Honest or Government --- Dishonest --- Truthful"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:478
-#: iat/templates/iat/TranslationWords.html:489
-msgid "Honest or Government --- Dishonest --- Open"
+msgid "Honest or Government --- Dishonest --- Constitution"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:479
-#: iat/templates/iat/TranslationWords.html:502
-#: iat/templates/iat/TranslationWords.html:507
-#: iat/templates/iat/TranslationWords.html:514
-msgid "Honest or Government --- Dishonest --- Lying"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:480
-#: iat/templates/iat/TranslationWords.html:484
-#: iat/templates/iat/TranslationWords.html:500
-msgid "Honest or Government --- Dishonest --- Politicians"
+msgid "Honest or Government --- Dishonest --- State"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:481
+#: iat/templates/iat/TranslationWords.html:482
+msgid "Honest or Government --- Dishonest --- Public administration"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:483
+#: iat/templates/iat/TranslationWords.html:484
+msgid "Honest or Government --- Dishonest --- Civil servants"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:485
+#: iat/templates/iat/TranslationWords.html:486
+msgid "Honest or Government --- Dishonest --- Politicians"
+msgstr ""
+
 #: iat/templates/iat/TranslationWords.html:487
+#: iat/templates/iat/TranslationWords.html:488
+msgid "Honest or Government --- Dishonest --- Court"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:489
+#: iat/templates/iat/TranslationWords.html:490
+#: iat/templates/iat/TranslationWords.html:491
+msgid "Honest or Government --- Dishonest --- Transparent"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:492
+#: iat/templates/iat/TranslationWords.html:493
+msgid "Honest or Government --- Dishonest --- Fair"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:494
+#: iat/templates/iat/TranslationWords.html:495
+msgid "Honest or Government --- Dishonest --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:496
+#: iat/templates/iat/TranslationWords.html:497
+msgid "Honest or Government --- Dishonest --- Open"
+msgstr ""
+
 #: iat/templates/iat/TranslationWords.html:498
+#: iat/templates/iat/TranslationWords.html:499
+#: iat/templates/iat/TranslationWords.html:500
 msgid "Honest or Government --- Dishonest --- Credible"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:486
-#: iat/templates/iat/TranslationWords.html:497
+#: iat/templates/iat/TranslationWords.html:501
+#: iat/templates/iat/TranslationWords.html:502
 msgid "Honest or Government --- Dishonest --- Moral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:488
+#: iat/templates/iat/TranslationWords.html:504
 #: iat/templates/iat/TranslationWords.html:505
 #: iat/templates/iat/TranslationWords.html:506
-msgid "Honest or Government --- Dishonest --- Unscupulous"
-msgstr ""
-
-#: iat/templates/iat/TranslationWords.html:490
-#: iat/templates/iat/TranslationWords.html:496
-#: iat/templates/iat/TranslationWords.html:509
-#: iat/templates/iat/TranslationWords.html:513
+#: iat/templates/iat/TranslationWords.html:507
 msgid "Honest or Government --- Dishonest --- Immoral"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:491
-#: iat/templates/iat/TranslationWords.html:503
+#: iat/templates/iat/TranslationWords.html:508
+#: iat/templates/iat/TranslationWords.html:509
 #: iat/templates/iat/TranslationWords.html:510
-msgid "Honest or Government --- Dishonest --- Illegitimate"
+#: iat/templates/iat/TranslationWords.html:511
+msgid "Honest or Government --- Dishonest --- Corrupt"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:493
-#: iat/templates/iat/TranslationWords.html:501
 #: iat/templates/iat/TranslationWords.html:512
-msgid "Honest or Government --- Dishonest --- Unfair"
+#: iat/templates/iat/TranslationWords.html:513
+#: iat/templates/iat/TranslationWords.html:514
+msgid "Honest or Government --- Dishonest --- Unscrupulous"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:515
 #: iat/templates/iat/TranslationWords.html:516
-#: iat/templates/iat/TranslationWords.html:531
-#: iat/templates/iat/TranslationWords.html:545
-#: iat/templates/iat/TranslationWords.html:563
-msgid "Honest --- Dishonest or Government --- Moral"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:517
-#: iat/templates/iat/TranslationWords.html:526
-#: iat/templates/iat/TranslationWords.html:537
-msgid "Honest --- Dishonest or Government --- Politicians"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:518
-#: iat/templates/iat/TranslationWords.html:535
-#: iat/templates/iat/TranslationWords.html:546
-msgid "Honest --- Dishonest or Government --- Public administration"
+msgid "Honest or Government --- Dishonest --- Lying"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:519
-#: iat/templates/iat/TranslationWords.html:544
-msgid "Honest --- Dishonest or Government --- Civil servants"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:520
-#: iat/templates/iat/TranslationWords.html:540
-#: iat/templates/iat/TranslationWords.html:555
-msgid "Honest --- Dishonest or Government --- Fair"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:521
-#: iat/templates/iat/TranslationWords.html:542
-#: iat/templates/iat/TranslationWords.html:561
-msgid "Honest --- Dishonest or Government --- Regulation"
+msgid "Honest or Government --- Dishonest --- Illegitimate"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:522
-#: iat/templates/iat/TranslationWords.html:557
-msgid "Honest --- Dishonest or Government --- Unfair"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:523
-msgid "Honest --- Dishonest or Government --- State"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:524
-#: iat/templates/iat/TranslationWords.html:539
-#: iat/templates/iat/TranslationWords.html:543
-msgid "Honest --- Dishonest or Government --- Open"
+msgid "Honest or Government --- Dishonest --- Unfair"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:525
-#: iat/templates/iat/TranslationWords.html:534
-#: iat/templates/iat/TranslationWords.html:553
-msgid "Honest --- Dishonest or Government --- Truthful"
-msgstr ""
-
+#: iat/templates/iat/TranslationWords.html:526
 #: iat/templates/iat/TranslationWords.html:527
-#: iat/templates/iat/TranslationWords.html:541
-#: iat/templates/iat/TranslationWords.html:547
-msgid "Honest --- Dishonest or Government --- Credible"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:528
-#: iat/templates/iat/TranslationWords.html:549
-msgid "Honest --- Dishonest or Government --- Immoral"
+msgid "Honest --- Dishonest or Government --- Public administration"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:529
-#: iat/templates/iat/TranslationWords.html:554
-msgid "Honest --- Dishonest or Government --- Illegitimate"
-msgstr ""
-
 #: iat/templates/iat/TranslationWords.html:530
-#: iat/templates/iat/TranslationWords.html:538
-#: iat/templates/iat/TranslationWords.html:551
-#: iat/templates/iat/TranslationWords.html:559
-msgid "Honest --- Dishonest or Government --- Transparent"
+msgid "Honest --- Dishonest or Government --- Civil Servants"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:531
 #: iat/templates/iat/TranslationWords.html:532
-#: iat/templates/iat/TranslationWords.html:558
-#: iat/templates/iat/TranslationWords.html:560
-msgid "Honest --- Dishonest or Government --- Lying"
+msgid "Honest --- Dishonest or Government --- Politicians"
 msgstr ""
 
 #: iat/templates/iat/TranslationWords.html:533
-#: iat/templates/iat/TranslationWords.html:552
-msgid "Honest --- Dishonest or Government --- Unscupulous"
+#: iat/templates/iat/TranslationWords.html:534
+msgid "Honest --- Dishonest or Government --- State"
 msgstr ""
 
+#: iat/templates/iat/TranslationWords.html:535
 #: iat/templates/iat/TranslationWords.html:536
-#: iat/templates/iat/TranslationWords.html:556
 msgid "Honest --- Dishonest or Government --- Constitution"
 msgstr ""
 
-#: iat/templates/iat/TranslationWords.html:548
-#: iat/templates/iat/TranslationWords.html:550
-#: iat/templates/iat/TranslationWords.html:562
+#: iat/templates/iat/TranslationWords.html:537
+#: iat/templates/iat/TranslationWords.html:538
+#: iat/templates/iat/TranslationWords.html:539
+msgid "Honest --- Dishonest or Government --- Regulation"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:540
+#: iat/templates/iat/TranslationWords.html:541
+msgid "Honest --- Dishonest or Government --- Unfair"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:542
+#: iat/templates/iat/TranslationWords.html:543
+#: iat/templates/iat/TranslationWords.html:544
 msgid "Honest --- Dishonest or Government --- Corrupt"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:545
+#: iat/templates/iat/TranslationWords.html:546
+msgid "Honest --- Dishonest or Government --- Immoral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:547
+#: iat/templates/iat/TranslationWords.html:548
+msgid "Honest --- Dishonest or Government --- Illegitimate"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:549
+#: iat/templates/iat/TranslationWords.html:550
+#: iat/templates/iat/TranslationWords.html:551
+msgid "Honest --- Dishonest or Government --- Lying"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:552
+#: iat/templates/iat/TranslationWords.html:553
+msgid "Honest --- Dishonest or Government --- Unscrupulous"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:555
+#: iat/templates/iat/TranslationWords.html:556
+#: iat/templates/iat/TranslationWords.html:557
+#: iat/templates/iat/TranslationWords.html:558
+msgid "Honest --- Dishonest or Government --- Moral"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:559
+#: iat/templates/iat/TranslationWords.html:560
+#: iat/templates/iat/TranslationWords.html:561
+msgid "Honest --- Dishonest or Government --- Fair"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:562
+#: iat/templates/iat/TranslationWords.html:563
+#: iat/templates/iat/TranslationWords.html:564
+msgid "Honest --- Dishonest or Government --- Open"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:565
+#: iat/templates/iat/TranslationWords.html:566
+#: iat/templates/iat/TranslationWords.html:567
+#: iat/templates/iat/TranslationWords.html:568
+msgid "Honest --- Dishonest or Government --- Truthful"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:569
+#: iat/templates/iat/TranslationWords.html:570
+#: iat/templates/iat/TranslationWords.html:571
+msgid "Honest --- Dishonest or Government --- Credible"
+msgstr ""
+
+#: iat/templates/iat/TranslationWords.html:572
+#: iat/templates/iat/TranslationWords.html:573
+#: iat/templates/iat/TranslationWords.html:574
+#: iat/templates/iat/TranslationWords.html:575
+msgid "Honest --- Dishonest or Government --- Transparent"
 msgstr ""
 
 #: public_goods/templates/public_goods/Contribute.html:6
@@ -1557,7 +1512,14 @@ msgid ""
 "“Next” button, you cannot return to this screen."
 msgstr ""
 
-#: public_goods/templates/public_goods/Contribute.html:8
+#: public_goods/templates/public_goods/Contribute.html:10
+msgid ""
+"You have 12.000 Won in your possession. You may choose to keep this money, "
+"or choose to invest it in the joint project. <strong>How much do you want to "
+"invest into the joint project?</strong>"
+msgstr ""
+
+#: public_goods/templates/public_goods/Contribute.html:12
 msgid ""
 "You have 10 euros in your possession. You may choose to keep this money, or "
 "choose to invest it in the joint project. <strong>How much do you want to "
@@ -1629,23 +1591,34 @@ msgid ""
 "interacted with in the previous task. However, they all live in the France."
 msgstr ""
 
-#: public_goods/templates/public_goods/Instructions.html:13
+#: public_goods/templates/public_goods/Instructions.html:15
+msgid "At the beginning, each group member has 12.000 Won."
+msgstr ""
+
+#: public_goods/templates/public_goods/Instructions.html:17
 msgid "At the beginning, each group member has 10 euros."
 msgstr ""
 
-#: public_goods/templates/public_goods/Instructions.html:14
+#: public_goods/templates/public_goods/Instructions.html:21
+msgid ""
+"Every group member has to choose how much of these 12.000 Won he or she "
+"wants to keep and how much he or she wants to transfer into a <strong>joint "
+"project</strong>."
+msgstr ""
+
+#: public_goods/templates/public_goods/Instructions.html:23
 msgid ""
 "Every group member has to choose how much of these 10 euros he or she wants "
 "to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
 
-#: public_goods/templates/public_goods/Instructions.html:15
+#: public_goods/templates/public_goods/Instructions.html:26
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
 msgstr ""
 
-#: public_goods/templates/public_goods/Instructions.html:16
+#: public_goods/templates/public_goods/Instructions.html:27
 msgid ""
 "At the end, the money in the joint project will be re-divided and "
 "<strong>split equally between all 4 group members</strong> (including "
@@ -1664,12 +1637,13 @@ msgid ""
 msgstr ""
 
 #: public_goods/templates/public_goods/Simulation.html:88
-#: trust/templates/trust/Simulation.html:135
+#: survey_i18n/views.py:61 survey_i18n/views.py:283 survey_i18n/views.py:312
+#: trust/templates/trust/Simulation.html:141
 msgid "€"
 msgstr ""
 
 #: public_goods/templates/public_goods/Simulation.html:98
-#: trust/templates/trust/Simulation.html:151
+#: trust/templates/trust/Simulation.html:157
 msgid "Amount sent by Participant B"
 msgstr ""
 
@@ -1681,118 +1655,114 @@ msgstr ""
 msgid "Amount sent by Participant D"
 msgstr ""
 
-#: public_goods/views.py:52
-msgid "10 euros"
-msgstr ""
-
-#: public_goods/views.py:53
+#: public_goods/views.py:57
 msgid "10.000 Won"
 msgstr ""
 
-#: public_goods/views.py:79 public_goods/views.py:103
+#: public_goods/views.py:83 public_goods/views.py:107
 msgid "If on average, each of the other     group members contributes 0 euro:"
 msgstr ""
 
-#: public_goods/views.py:81
+#: public_goods/views.py:85
 msgid "If on average, each of the other     group members contributes 1 euro:"
 msgstr ""
 
-#: public_goods/views.py:83
+#: public_goods/views.py:87
 msgid "If on average, each of the other     group members contributes 2 euros:"
 msgstr ""
 
-#: public_goods/views.py:85
+#: public_goods/views.py:89
 msgid "If on average, each of the other     group members contributes 3 euros:"
 msgstr ""
 
-#: public_goods/views.py:87
+#: public_goods/views.py:91
 msgid "If on average, each of the other     group members contributes 4 euros:"
 msgstr ""
 
-#: public_goods/views.py:89
+#: public_goods/views.py:93
 msgid "If on average, each of the other     group members contributes 5 euros:"
 msgstr ""
 
-#: public_goods/views.py:91
+#: public_goods/views.py:95
 msgid "If on average, each of the other     group members contributes 6 euros:"
 msgstr ""
 
-#: public_goods/views.py:93
+#: public_goods/views.py:97
 msgid "If on average, each of the other     group members contributes 7 euros:"
 msgstr ""
 
-#: public_goods/views.py:95
+#: public_goods/views.py:99
 msgid "If on average, each of the other     group members contributes 8 euros:"
 msgstr ""
 
-#: public_goods/views.py:97
+#: public_goods/views.py:101
 msgid "If on average, each of the other     group members contributes 9 euros:"
 msgstr ""
 
-#: public_goods/views.py:99
+#: public_goods/views.py:103
 msgid ""
 "If on average, each of the other     group members contributes 10 euros:"
 msgstr ""
 
-#: public_goods/views.py:105
-msgid ""
-"If on average, each of the other     group members contributes 1.000 Won:"
-msgstr ""
-
-#: public_goods/views.py:107
-msgid ""
-"If on average, each of the other     group members contributes 2.000 Won:"
-msgstr ""
-
 #: public_goods/views.py:109
 msgid ""
-"If on average, each of the other     group members contributes 3.000 Won:"
+"If on average, each of the other     group members contributes 1.200 Won:"
 msgstr ""
 
 #: public_goods/views.py:111
 msgid ""
-"If on average, each of the other     group members contributes 4.000 Won:"
+"If on average, each of the other     group members contributes 2.400 Won:"
 msgstr ""
 
 #: public_goods/views.py:113
 msgid ""
-"If on average, each of the other     group members contributes 5.000 Won:"
+"If on average, each of the other     group members contributes 3.600 Won:"
 msgstr ""
 
 #: public_goods/views.py:115
 msgid ""
-"If on average, each of the other     group members contributes 6.000 Won:"
+"If on average, each of the other     group members contributes 4.800 Won:"
 msgstr ""
 
 #: public_goods/views.py:117
 msgid ""
-"If on average, each of the other     group members contributes 7.000 Won:"
+"If on average, each of the other     group members contributes 6.00 Won:"
 msgstr ""
 
 #: public_goods/views.py:119
 msgid ""
-"If on average, each of the other     group members contributes 8.000 Won:"
+"If on average, each of the other     group members contributes 7.200 Won:"
 msgstr ""
 
 #: public_goods/views.py:121
 msgid ""
-"If on average, each of the other     group members contributes 9.000 Won:"
+"If on average, each of the other     group members contributes 8.400 Won:"
 msgstr ""
 
 #: public_goods/views.py:123
 msgid ""
-"If on average, each of the other     group members contributes 10.000 Won:"
+"If on average, each of the other     group members contributes 9.600 Won:"
 msgstr ""
 
-#: survey/models.py:44 survey_france/models.py:45 survey_korea/models.py:45
+#: public_goods/views.py:125
+msgid ""
+"If on average, each of the other     group members contributes 10.800 Won:"
+msgstr ""
+
+#: public_goods/views.py:127
+msgid ""
+"If on average, each of the other     group members contributes 12.000 Won:"
+msgstr ""
+
+#: survey/models.py:44 survey_i18n/models.py:49 survey_korea/models.py:45
 msgid "Overall, how satisfied are you with life as a whole these days?"
 msgstr ""
 
-#: survey/models.py:47 survey_france/models.py:48 survey_korea/models.py:48
+#: survey/models.py:47 survey_i18n/models.py:52 survey_korea/models.py:48
 msgid "0 - Not at all satisfied"
 msgstr ""
 
-#: survey/models.py:57 survey_france/models.py:58 survey_korea/models.py:58
+#: survey/models.py:57 survey_i18n/models.py:62 survey_korea/models.py:58
 msgid "10 - Completely satisfied"
 msgstr ""
 
@@ -1807,65 +1777,66 @@ msgstr ""
 #: survey/models.py:585 survey/models.py:622 survey/models.py:663
 #: survey/models.py:678 survey/models.py:692 survey/models.py:705
 #: survey/templates/survey/Survey07.html:50
-#: survey/templates/survey/Survey09.html:49 survey_france/models.py:59
-#: survey_france/models.py:80 survey_france/models.py:101
-#: survey_france/models.py:122 survey_france/models.py:143
-#: survey_france/models.py:164 survey_france/models.py:194
-#: survey_france/models.py:215 survey_france/models.py:258
-#: survey_france/models.py:279 survey_france/models.py:301
-#: survey_france/models.py:321 survey_france/models.py:341
-#: survey_france/models.py:361 survey_france/models.py:381
-#: survey_france/models.py:401 survey_france/models.py:421
-#: survey_france/models.py:434 survey_france/models.py:466
-#: survey_france/models.py:486 survey_france/models.py:506
-#: survey_france/models.py:526 survey_france/models.py:546
-#: survey_france/models.py:566 survey_france/models.py:586
-#: survey_france/models.py:607 survey_france/models.py:627
-#: survey_france/models.py:648 survey_france/models.py:668
-#: survey_france/models.py:689 survey_france/models.py:803
-#: survey_france/models.py:825 survey_france/models.py:921
-#: survey_france/models.py:941 survey_france/models.py:954
-#: survey_france/models.py:967
-#: survey_france/templates/survey_france/Survey10.html:46
-#: survey_france/templates/survey_france/Survey10.html:84
-#: survey_korea/models.py:59 survey_korea/models.py:80
+#: survey/templates/survey/Survey09.html:49 survey_i18n/models.py:63
+#: survey_i18n/models.py:84 survey_i18n/models.py:105 survey_i18n/models.py:126
+#: survey_i18n/models.py:147 survey_i18n/models.py:168
+#: survey_i18n/models.py:195 survey_i18n/models.py:216
+#: survey_i18n/models.py:239 survey_i18n/models.py:260
+#: survey_i18n/models.py:282 survey_i18n/models.py:302
+#: survey_i18n/models.py:322 survey_i18n/models.py:342
+#: survey_i18n/models.py:362 survey_i18n/models.py:382
+#: survey_i18n/models.py:402 survey_i18n/models.py:415
+#: survey_i18n/models.py:447 survey_i18n/models.py:467
+#: survey_i18n/models.py:487 survey_i18n/models.py:507
+#: survey_i18n/models.py:527 survey_i18n/models.py:547
+#: survey_i18n/models.py:567 survey_i18n/models.py:588
+#: survey_i18n/models.py:608 survey_i18n/models.py:629
+#: survey_i18n/models.py:649 survey_i18n/models.py:670
+#: survey_i18n/models.py:802 survey_i18n/models.py:828
+#: survey_i18n/models.py:848 survey_i18n/models.py:861
+#: survey_i18n/models.py:874 survey_i18n/templates/survey_i18n/Survey10.html:43
+#: survey_i18n/templates/survey_i18n/Survey10.html:80
+#: survey_i18n/templates/survey_i18n/Survey10B.html:26
+#: survey_i18n/templates/survey_i18n/Survey10B.html:35
+#: survey_i18n/templates/survey_i18n/Survey10D.html:26 survey_i18n/views.py:289
+#: survey_i18n/views.py:318 survey_korea/models.py:59 survey_korea/models.py:80
 #: survey_korea/models.py:101 survey_korea/models.py:122
 #: survey_korea/models.py:143 survey_korea/models.py:164
 #: survey_korea/models.py:194 survey_korea/models.py:215
-#: survey_korea/models.py:258 survey_korea/models.py:279
-#: survey_korea/models.py:301 survey_korea/models.py:321
-#: survey_korea/models.py:341 survey_korea/models.py:361
-#: survey_korea/models.py:381 survey_korea/models.py:401
-#: survey_korea/models.py:421 survey_korea/models.py:434
-#: survey_korea/models.py:466 survey_korea/models.py:486
-#: survey_korea/models.py:506 survey_korea/models.py:526
-#: survey_korea/models.py:546 survey_korea/models.py:566
-#: survey_korea/models.py:586 survey_korea/models.py:607
-#: survey_korea/models.py:627 survey_korea/models.py:648
-#: survey_korea/models.py:668 survey_korea/models.py:689
-#: survey_korea/models.py:803 survey_korea/models.py:825
-#: survey_korea/models.py:923 survey_korea/models.py:943
-#: survey_korea/models.py:956 survey_korea/models.py:969
+#: survey_korea/models.py:250 survey_korea/models.py:271
+#: survey_korea/models.py:293 survey_korea/models.py:313
+#: survey_korea/models.py:333 survey_korea/models.py:353
+#: survey_korea/models.py:373 survey_korea/models.py:393
+#: survey_korea/models.py:413 survey_korea/models.py:426
+#: survey_korea/models.py:458 survey_korea/models.py:478
+#: survey_korea/models.py:498 survey_korea/models.py:518
+#: survey_korea/models.py:538 survey_korea/models.py:558
+#: survey_korea/models.py:578 survey_korea/models.py:599
+#: survey_korea/models.py:619 survey_korea/models.py:640
+#: survey_korea/models.py:660 survey_korea/models.py:681
+#: survey_korea/models.py:795 survey_korea/models.py:817
+#: survey_korea/models.py:915 survey_korea/models.py:935
+#: survey_korea/models.py:948 survey_korea/models.py:961
 #: survey_korea/templates/survey_korea/Survey10.html:46
 #: survey_korea/templates/survey_korea/Survey10.html:84
 msgid "Don't know"
 msgstr ""
 
-#: survey/models.py:65 survey_france/models.py:66 survey_korea/models.py:66
+#: survey/models.py:65 survey_i18n/models.py:70 survey_korea/models.py:66
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
 "you can't be too careful in dealing with people?"
 msgstr ""
 
-#: survey/models.py:68 survey_france/models.py:69 survey_korea/models.py:69
+#: survey/models.py:68 survey_i18n/models.py:73 survey_korea/models.py:69
 msgid "0 -You can't be too careful"
 msgstr ""
 
-#: survey/models.py:78 survey_france/models.py:79 survey_korea/models.py:79
+#: survey/models.py:78 survey_i18n/models.py:83 survey_korea/models.py:79
 msgid "10 - Most people can be trusted"
 msgstr ""
 
-#: survey/models.py:86 survey_france/models.py:87 survey_korea/models.py:87
+#: survey/models.py:86 survey_i18n/models.py:91 survey_korea/models.py:87
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
 "take risks or do you try to avoid taking risks?"
@@ -1889,7 +1860,7 @@ msgstr ""
 msgid "0 - People are only looking out for themselves"
 msgstr ""
 
-#: survey/models.py:120 survey_france/models.py:257 survey_korea/models.py:257
+#: survey/models.py:120 survey_i18n/models.py:238 survey_korea/models.py:249
 msgid "10 - People mostly try to help each other"
 msgstr ""
 
@@ -1899,15 +1870,15 @@ msgid ""
 "chance, or would they try to be fair?"
 msgstr ""
 
-#: survey/models.py:131 survey_france/models.py:268 survey_korea/models.py:268
+#: survey/models.py:131 survey_i18n/models.py:249 survey_korea/models.py:260
 msgid "0 - Most people would try to take advantage of me"
 msgstr ""
 
-#: survey/models.py:141 survey_france/models.py:278 survey_korea/models.py:278
+#: survey/models.py:141 survey_i18n/models.py:259 survey_korea/models.py:270
 msgid "10 - Most people would try to be fair"
 msgstr ""
 
-#: survey/models.py:149
+#: survey/models.py:149 survey_i18n/templates/survey_i18n/Survey04A.html:34
 msgid "Receiving social allowances to which you are not entitled."
 msgstr ""
 
@@ -1926,36 +1897,36 @@ msgstr ""
 #: survey/models.py:172 survey/models.py:192 survey/models.py:212
 #: survey/models.py:232 survey/models.py:252 survey/models.py:272
 #: survey/models.py:318 survey/models.py:338 survey/models.py:358
-#: survey_france/models.py:310 survey_france/models.py:330
-#: survey_france/models.py:350 survey_france/models.py:370
-#: survey_france/models.py:390 survey_france/models.py:410
-#: survey_france/models.py:475 survey_france/models.py:495
-#: survey_france/models.py:515 survey_france/models.py:535
-#: survey_france/models.py:555 survey_france/models.py:575
-#: survey_korea/models.py:310 survey_korea/models.py:330
-#: survey_korea/models.py:350 survey_korea/models.py:370
-#: survey_korea/models.py:390 survey_korea/models.py:410
-#: survey_korea/models.py:475 survey_korea/models.py:495
-#: survey_korea/models.py:515 survey_korea/models.py:535
-#: survey_korea/models.py:555 survey_korea/models.py:575
+#: survey_i18n/models.py:291 survey_i18n/models.py:311
+#: survey_i18n/models.py:331 survey_i18n/models.py:351
+#: survey_i18n/models.py:371 survey_i18n/models.py:391
+#: survey_i18n/models.py:456 survey_i18n/models.py:476
+#: survey_i18n/models.py:496 survey_i18n/models.py:516
+#: survey_i18n/models.py:536 survey_i18n/models.py:556
+#: survey_korea/models.py:302 survey_korea/models.py:322
+#: survey_korea/models.py:342 survey_korea/models.py:362
+#: survey_korea/models.py:382 survey_korea/models.py:402
+#: survey_korea/models.py:467 survey_korea/models.py:487
+#: survey_korea/models.py:507 survey_korea/models.py:527
+#: survey_korea/models.py:547 survey_korea/models.py:567
 msgid "0 - I don't trust them at all"
 msgstr ""
 
 #: survey/models.py:182 survey/models.py:202 survey/models.py:222
 #: survey/models.py:242 survey/models.py:262 survey/models.py:282
 #: survey/models.py:328 survey/models.py:348 survey/models.py:368
-#: survey_france/models.py:320 survey_france/models.py:340
-#: survey_france/models.py:360 survey_france/models.py:380
-#: survey_france/models.py:400 survey_france/models.py:420
-#: survey_france/models.py:485 survey_france/models.py:505
-#: survey_france/models.py:525 survey_france/models.py:545
-#: survey_france/models.py:565 survey_france/models.py:585
-#: survey_korea/models.py:320 survey_korea/models.py:340
-#: survey_korea/models.py:360 survey_korea/models.py:380
-#: survey_korea/models.py:400 survey_korea/models.py:420
-#: survey_korea/models.py:485 survey_korea/models.py:505
-#: survey_korea/models.py:525 survey_korea/models.py:545
-#: survey_korea/models.py:565 survey_korea/models.py:585
+#: survey_i18n/models.py:301 survey_i18n/models.py:321
+#: survey_i18n/models.py:341 survey_i18n/models.py:361
+#: survey_i18n/models.py:381 survey_i18n/models.py:401
+#: survey_i18n/models.py:466 survey_i18n/models.py:486
+#: survey_i18n/models.py:506 survey_i18n/models.py:526
+#: survey_i18n/models.py:546 survey_i18n/models.py:566
+#: survey_korea/models.py:312 survey_korea/models.py:332
+#: survey_korea/models.py:352 survey_korea/models.py:372
+#: survey_korea/models.py:392 survey_korea/models.py:412
+#: survey_korea/models.py:477 survey_korea/models.py:497
+#: survey_korea/models.py:517 survey_korea/models.py:537
+#: survey_korea/models.py:557 survey_korea/models.py:577
 msgid "10 - I fully trust them"
 msgstr ""
 
@@ -1979,7 +1950,7 @@ msgstr ""
 msgid "People of another nationality."
 msgstr ""
 
-#: survey/models.py:290 survey_france/models.py:428 survey_korea/models.py:428
+#: survey/models.py:290 survey_i18n/models.py:409 survey_korea/models.py:420
 msgid ""
 "If you lost a wallet or a purse that contained items of great value to you, "
 "and it was found by a stranger, do you think it would be returned with its "
@@ -1987,26 +1958,26 @@ msgid ""
 msgstr ""
 
 #: survey/models.py:294 survey/models.py:306 survey/models.py:714
-#: survey_france/models.py:432 survey_france/models.py:444
-#: survey_france/models.py:919 survey_france/models.py:1001
-#: survey_korea/models.py:432 survey_korea/models.py:444
-#: survey_korea/models.py:921 survey_korea/models.py:1003
+#: survey_i18n/models.py:413 survey_i18n/models.py:425
+#: survey_i18n/models.py:826 survey_i18n/models.py:908
+#: survey_korea/models.py:424 survey_korea/models.py:436
+#: survey_korea/models.py:913 survey_korea/models.py:995
 msgid "Yes"
 msgstr ""
 
 #: survey/models.py:295 survey/models.py:307 survey/models.py:715
-#: survey_france/models.py:433 survey_france/models.py:445
-#: survey_france/models.py:920 survey_france/models.py:1002
-#: survey_korea/models.py:433 survey_korea/models.py:445
-#: survey_korea/models.py:922 survey_korea/models.py:1004
+#: survey_i18n/models.py:414 survey_i18n/models.py:426
+#: survey_i18n/models.py:827 survey_i18n/models.py:909
+#: survey_korea/models.py:425 survey_korea/models.py:437
+#: survey_korea/models.py:914 survey_korea/models.py:996
 msgid "No"
 msgstr ""
 
-#: survey/models.py:303 survey_france/models.py:441 survey_korea/models.py:441
+#: survey/models.py:303 survey_i18n/models.py:422 survey_korea/models.py:433
 msgid "Did you vote in the last national election?"
 msgstr ""
 
-#: survey/models.py:308 survey_france/models.py:446 survey_korea/models.py:446
+#: survey/models.py:308 survey_i18n/models.py:427 survey_korea/models.py:438
 msgid "I could not vote"
 msgstr ""
 
@@ -2022,76 +1993,75 @@ msgstr ""
 msgid "The media."
 msgstr ""
 
-#: survey/models.py:376 survey_france/models.py:593 survey_korea/models.py:593
+#: survey/models.py:376 survey_i18n/models.py:574 survey_korea/models.py:585
 msgid "Public institutions deliver public services in the best possible way."
 msgstr ""
 
 #: survey/models.py:379 survey/models.py:399 survey/models.py:420
-#: survey/models.py:440 survey/models.py:461 survey_france/models.py:596
-#: survey_france/models.py:616 survey_france/models.py:637
-#: survey_france/models.py:657 survey_france/models.py:678
-#: survey_korea/models.py:596 survey_korea/models.py:616
-#: survey_korea/models.py:637 survey_korea/models.py:657
-#: survey_korea/models.py:678
+#: survey/models.py:440 survey/models.py:461 survey_i18n/models.py:577
+#: survey_i18n/models.py:597 survey_i18n/models.py:618
+#: survey_i18n/models.py:638 survey_i18n/models.py:659
+#: survey_korea/models.py:588 survey_korea/models.py:608
+#: survey_korea/models.py:629 survey_korea/models.py:649
+#: survey_korea/models.py:670
 msgid "0 - I don't agree at all"
 msgstr ""
 
 #: survey/models.py:389 survey/models.py:409 survey/models.py:430
-#: survey/models.py:450 survey/models.py:471 survey_france/models.py:606
-#: survey_france/models.py:626 survey_france/models.py:647
-#: survey_france/models.py:667 survey_france/models.py:688
-#: survey_korea/models.py:606 survey_korea/models.py:626
-#: survey_korea/models.py:647 survey_korea/models.py:667
-#: survey_korea/models.py:688
+#: survey/models.py:450 survey/models.py:471 survey_i18n/models.py:587
+#: survey_i18n/models.py:607 survey_i18n/models.py:628
+#: survey_i18n/models.py:648 survey_i18n/models.py:669
+#: survey_korea/models.py:598 survey_korea/models.py:618
+#: survey_korea/models.py:639 survey_korea/models.py:659
+#: survey_korea/models.py:680
 msgid "10 - I fully agree"
 msgstr ""
 
-#: survey/models.py:397 survey_france/models.py:614 survey_korea/models.py:614
+#: survey/models.py:397 survey_i18n/models.py:595 survey_korea/models.py:606
 msgid "Public institutions pursue long term objectives."
 msgstr ""
 
-#: survey/models.py:417 survey_france/models.py:634 survey_korea/models.py:634
+#: survey/models.py:417 survey_i18n/models.py:615 survey_korea/models.py:626
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption."
 msgstr ""
 
-#: survey/models.py:438 survey_france/models.py:655 survey_korea/models.py:655
+#: survey/models.py:438 survey_i18n/models.py:636 survey_korea/models.py:647
 msgid "Public institutions are transparent."
 msgstr ""
 
-#: survey/models.py:458 survey_france/models.py:675 survey_korea/models.py:675
+#: survey/models.py:458 survey_i18n/models.py:656 survey_korea/models.py:667
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
 "race, age or economic condition equally."
 msgstr ""
 
-#: survey/models.py:479 survey_france/models.py:696 survey_korea/models.py:696
+#: survey/models.py:479 survey_i18n/models.py:677 survey_korea/models.py:688
 msgid "What is your date of birth?"
 msgstr ""
 
-#: survey/models.py:485 survey_france/models.py:702 survey_korea/models.py:702
+#: survey/models.py:485 survey_i18n/models.py:683 survey_korea/models.py:694
 msgid "Male"
 msgstr ""
 
-#: survey/models.py:485 survey_france/models.py:702 survey_korea/models.py:702
+#: survey/models.py:485 survey_i18n/models.py:683 survey_korea/models.py:694
 msgid "Female"
 msgstr ""
 
 #: survey/models.py:485 survey/models.py:557 survey/models.py:571
-#: survey/models.py:635 survey/models.py:727 survey_france/models.py:702
-#: survey_france/models.py:802 survey_france/models.py:1014
-#: survey_france/models.py:1025 survey_korea/models.py:702
-#: survey_korea/models.py:802 survey_korea/models.py:1016
-#: survey_korea/models.py:1027
+#: survey/models.py:635 survey/models.py:727 survey_i18n/models.py:683
+#: survey_i18n/models.py:921 survey_i18n/models.py:932
+#: survey_korea/models.py:694 survey_korea/models.py:794
+#: survey_korea/models.py:1008 survey_korea/models.py:1019
 msgid "Other"
 msgstr ""
 
-#: survey/models.py:486 survey_france/models.py:703 survey_korea/models.py:703
+#: survey/models.py:486 survey_i18n/models.py:684 survey_korea/models.py:695
 msgid "What is your gender?"
 msgstr ""
 
-#: survey/models.py:508 survey_france/models.py:736 survey_korea/models.py:736
+#: survey/models.py:508 survey_i18n/models.py:717 survey_korea/models.py:728
 msgid "In which country were you born?"
 msgstr ""
 
@@ -2099,55 +2069,56 @@ msgstr ""
 msgid "In what year did you arrive in the US?"
 msgstr ""
 
-#: survey/models.py:513 survey_france/models.py:741 survey_korea/models.py:741
+#: survey/models.py:513 survey_i18n/models.py:721 survey_korea/models.py:733
 msgid "I was born here"
 msgstr ""
 
-#: survey/models.py:520 survey_france/models.py:765 survey_korea/models.py:765
+#: survey/models.py:520 survey_i18n/models.py:745
+#: survey_i18n/templates/survey_i18n/Survey08.html:15
+#: survey_korea/models.py:757
 msgid "What is the highest level of education that you have completed?"
 msgstr ""
 
-#: survey/models.py:523 survey_korea/models.py:768
+#: survey/models.py:523 survey_i18n/views.py:237 survey_korea/models.py:760
 msgid "Less than high school"
 msgstr ""
 
-#: survey/models.py:524 survey_korea/models.py:769
+#: survey/models.py:524 survey_i18n/views.py:238 survey_korea/models.py:761
 msgid "High school"
 msgstr ""
 
-#: survey/models.py:525 survey_korea/models.py:770
+#: survey/models.py:525 survey_i18n/views.py:239 survey_korea/models.py:762
 msgid "Some college"
 msgstr ""
 
-#: survey/models.py:527 survey_korea/models.py:772
+#: survey/models.py:527 survey_i18n/views.py:240 survey_korea/models.py:764
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
 msgstr ""
 
-#: survey/models.py:529 survey_korea/models.py:774
+#: survey/models.py:529 survey_i18n/views.py:241 survey_korea/models.py:766
 msgid "Undergraduate degree (e.g. BA, BS)"
 msgstr ""
 
-#: survey/models.py:531 survey_korea/models.py:776
+#: survey/models.py:531 survey_i18n/views.py:242 survey_korea/models.py:768
 msgid "Post-graduate degree"
 msgstr ""
 
 #: survey/models.py:533 survey/models.py:558 survey/models.py:573
-#: survey/models.py:623 survey/models.py:636 survey_france/models.py:804
-#: survey_korea/models.py:804
+#: survey/models.py:623 survey/models.py:636 survey_korea/models.py:796
 msgid "I prefer not to answer"
 msgstr ""
 
-#: survey/models.py:539 survey_france/models.py:782 survey_korea/models.py:782
+#: survey/models.py:539 survey_i18n/models.py:762 survey_korea/models.py:774
 msgid "Which of these best describes your situation?"
 msgstr ""
 
-#: survey/models.py:541 survey_france/models.py:784 survey_korea/models.py:784
+#: survey/models.py:541 survey_i18n/models.py:764 survey_korea/models.py:776
 msgid "At work as an employee"
 msgstr ""
 
-#: survey/models.py:542 survey_france/models.py:785 survey_korea/models.py:785
+#: survey/models.py:542 survey_i18n/models.py:765 survey_korea/models.py:777
 msgid "Employer/self-employed"
 msgstr ""
 
@@ -2183,27 +2154,27 @@ msgstr ""
 msgid "In education (at school, university, etc) / student"
 msgstr ""
 
-#: survey/models.py:564 survey_france/models.py:795 survey_korea/models.py:795
+#: survey/models.py:564 survey_i18n/models.py:775 survey_korea/models.py:787
 msgid "Do you work in the...?"
 msgstr ""
 
-#: survey/models.py:566 survey_france/models.py:797 survey_korea/models.py:797
+#: survey/models.py:566 survey_i18n/models.py:777 survey_korea/models.py:789
 msgid "Central, regional or local government administration"
 msgstr ""
 
-#: survey/models.py:568 survey_france/models.py:799 survey_korea/models.py:799
+#: survey/models.py:568 survey_i18n/models.py:779 survey_korea/models.py:791
 msgid "Public sector, other"
 msgstr ""
 
-#: survey/models.py:569 survey_france/models.py:800 survey_korea/models.py:800
+#: survey/models.py:569 survey_i18n/models.py:780 survey_korea/models.py:792
 msgid "Private (for profit) sector"
 msgstr ""
 
-#: survey/models.py:570 survey_france/models.py:801 survey_korea/models.py:801
+#: survey/models.py:570 survey_i18n/models.py:781 survey_korea/models.py:793
 msgid "Not for profit sector"
 msgstr ""
 
-#: survey/models.py:574 survey_france/models.py:805 survey_korea/models.py:805
+#: survey/models.py:574 survey_i18n/models.py:782 survey_korea/models.py:797
 msgid "Not applicable"
 msgstr ""
 
@@ -2287,33 +2258,33 @@ msgstr ""
 msgid "Jewish"
 msgstr ""
 
-#: survey/models.py:656 survey_france/models.py:947 survey_korea/models.py:949
+#: survey/models.py:656 survey_i18n/models.py:854 survey_korea/models.py:941
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
 msgstr ""
 
-#: survey/models.py:659 survey/models.py:674 survey_france/models.py:950
-#: survey_france/models.py:963 survey_korea/models.py:952
-#: survey_korea/models.py:965
+#: survey/models.py:659 survey/models.py:674 survey_i18n/models.py:857
+#: survey_i18n/models.py:870 survey_korea/models.py:944
+#: survey_korea/models.py:957
 msgid "No trust at all"
 msgstr ""
 
-#: survey/models.py:660 survey/models.py:675 survey_france/models.py:951
-#: survey_france/models.py:964 survey_korea/models.py:953
-#: survey_korea/models.py:966
+#: survey/models.py:660 survey/models.py:675 survey_i18n/models.py:858
+#: survey_i18n/models.py:871 survey_korea/models.py:945
+#: survey_korea/models.py:958
 msgid "Little trust"
 msgstr ""
 
-#: survey/models.py:661 survey/models.py:676 survey_france/models.py:952
-#: survey_france/models.py:965 survey_korea/models.py:954
-#: survey_korea/models.py:967
+#: survey/models.py:661 survey/models.py:676 survey_i18n/models.py:859
+#: survey_i18n/models.py:872 survey_korea/models.py:946
+#: survey_korea/models.py:959
 msgid "Quite a bit of trust"
 msgstr ""
 
-#: survey/models.py:662 survey/models.py:677 survey_france/models.py:953
-#: survey_france/models.py:966 survey_korea/models.py:955
-#: survey_korea/models.py:968
+#: survey/models.py:662 survey/models.py:677 survey_i18n/models.py:860
+#: survey_i18n/models.py:873 survey_korea/models.py:947
+#: survey_korea/models.py:960
 msgid "A lot of trust"
 msgstr ""
 
@@ -2330,73 +2301,68 @@ msgid ""
 "associated with each of the 3 sections?"
 msgstr ""
 
-#: survey/models.py:687 survey_france/models.py:976 survey_korea/models.py:978
+#: survey/models.py:687 survey_i18n/models.py:883 survey_korea/models.py:970
 msgid "With very little care"
 msgstr ""
 
-#: survey/models.py:688 survey_france/models.py:977 survey_korea/models.py:979
+#: survey/models.py:688 survey_i18n/models.py:884 survey_korea/models.py:971
 msgid "With little care"
 msgstr ""
 
-#: survey/models.py:689 survey_france/models.py:978 survey_korea/models.py:980
+#: survey/models.py:689 survey_i18n/models.py:885 survey_korea/models.py:972
 msgid "With care"
 msgstr ""
 
-#: survey/models.py:690 survey_france/models.py:979 survey_korea/models.py:981
+#: survey/models.py:690 survey_i18n/models.py:886 survey_korea/models.py:973
 msgid "With a lot of care"
 msgstr ""
 
-#: survey/models.py:691 survey_france/models.py:980 survey_korea/models.py:982
+#: survey/models.py:691 survey_i18n/models.py:887 survey_korea/models.py:974
 msgid "With extreme care"
 msgstr ""
 
-#: survey/models.py:698 survey_france/models.py:986 survey_korea/models.py:988
+#: survey/models.py:698 survey_i18n/models.py:893 survey_korea/models.py:980
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr ""
 
-#: survey/models.py:701 survey_france/models.py:989 survey_korea/models.py:991
+#: survey/models.py:701 survey_i18n/models.py:896 survey_korea/models.py:983
 msgid "Not calm at all"
 msgstr ""
 
-#: survey/models.py:702 survey_france/models.py:990 survey_korea/models.py:992
+#: survey/models.py:702 survey_i18n/models.py:897 survey_korea/models.py:984
 msgid "Not very calm"
 msgstr ""
 
-#: survey/models.py:703 survey_france/models.py:991 survey_korea/models.py:993
+#: survey/models.py:703 survey_i18n/models.py:898 survey_korea/models.py:985
 msgid "Fairly calm"
 msgstr ""
 
-#: survey/models.py:704 survey_france/models.py:992 survey_korea/models.py:994
+#: survey/models.py:704 survey_i18n/models.py:899 survey_korea/models.py:986
 msgid "Very calm"
 msgstr ""
 
-#: survey/models.py:711 survey_france/models.py:998 survey_korea/models.py:1000
+#: survey/models.py:711 survey_i18n/models.py:905 survey_korea/models.py:992
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
 msgstr ""
 
-#: survey/models.py:721 survey_france/models.py:1008
-#: survey_korea/models.py:1010
+#: survey/models.py:721 survey_i18n/models.py:915 survey_korea/models.py:1002
 msgid "Which device did you take this study on?"
 msgstr ""
 
-#: survey/models.py:723 survey_france/models.py:1010
-#: survey_korea/models.py:1012
+#: survey/models.py:723 survey_i18n/models.py:917 survey_korea/models.py:1004
 msgid "Desktop"
 msgstr ""
 
-#: survey/models.py:724 survey_france/models.py:1011
-#: survey_korea/models.py:1013
+#: survey/models.py:724 survey_i18n/models.py:918 survey_korea/models.py:1005
 msgid "Laptop (non-touchscreen)"
 msgstr ""
 
-#: survey/models.py:725 survey_france/models.py:1012
-#: survey_korea/models.py:1014
+#: survey/models.py:725 survey_i18n/models.py:919 survey_korea/models.py:1006
 msgid "Laptop (touchscreen)"
 msgstr ""
 
-#: survey/models.py:726 survey_france/models.py:1013
-#: survey_korea/models.py:1015
+#: survey/models.py:726 survey_i18n/models.py:920 survey_korea/models.py:1007
 msgid "Tablet"
 msgstr ""
 
@@ -2423,12 +2389,13 @@ msgid "If you do not wish to donate anything, enter 0."
 msgstr ""
 
 #: survey/templates/survey/EndGame.html:21
-#: survey_france/templates/survey_france/EndGame.html:52
+#: survey_i18n/templates/survey_i18n/EndGame.html:52
 #: survey_korea/templates/survey_korea/EndGame.html:52
 msgid "Finish study"
 msgstr ""
 
 #: survey/templates/survey/Survey03.html:27
+#: survey_i18n/templates/survey_i18n/Survey04B.html:27
 msgid "Could you tell us for each of these groups how much you trust them?"
 msgstr ""
 
@@ -2438,7 +2405,6 @@ msgid ""
 msgstr ""
 
 #: survey/templates/survey/Survey05.html:29
-#: survey_france/templates/survey_france/Survey05.html:29
 #: survey_korea/templates/survey_korea/Survey05.html:29
 msgid ""
 "How much trust do you have in the following to act in the best interest of "
@@ -2446,13 +2412,12 @@ msgid ""
 msgstr ""
 
 #: survey/templates/survey/Survey06.html:27
-#: survey_france/templates/survey_france/Survey06.html:27
+#: survey_i18n/templates/survey_i18n/Survey06.html:27
 #: survey_korea/templates/survey_korea/Survey06.html:27
 msgid "Do you agree with the following statements?"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:16
-#: survey_france/templates/survey_france/Survey07.html:16
 #: survey_korea/templates/survey_korea/Survey07.html:16
 msgid ""
 "We will now ask you questions about your personal situation. Remember, all "
@@ -2460,7 +2425,7 @@ msgid ""
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:24
-#: survey_france/templates/survey_france/Survey07.html:24
+#: survey_i18n/templates/survey_i18n/Survey07.html:34
 #: survey_korea/templates/survey_korea/Survey07.html:24
 msgid ""
 "Click on all options below to show all the people who live in the same "
@@ -2468,43 +2433,43 @@ msgid ""
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:29
-#: survey_france/templates/survey_france/Survey07.html:29
+#: survey_i18n/templates/survey_i18n/Survey07.html:39
 #: survey_korea/templates/survey_korea/Survey07.html:29
 msgid "My legal husband or wife"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:32
-#: survey_france/templates/survey_france/Survey07.html:32
+#: survey_i18n/templates/survey_i18n/Survey07.html:42
 #: survey_korea/templates/survey_korea/Survey07.html:32
 msgid "My civil union partner"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:35
-#: survey_france/templates/survey_france/Survey07.html:35
+#: survey_i18n/templates/survey_i18n/Survey07.html:45
 #: survey_korea/templates/survey_korea/Survey07.html:35
 msgid "My de-facto partner, boyfriend or girlfriend"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:38
-#: survey_france/templates/survey_france/Survey07.html:38
+#: survey_i18n/templates/survey_i18n/Survey07.html:48
 #: survey_korea/templates/survey_korea/Survey07.html:38
 msgid "My mother and/or father"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:41
-#: survey_france/templates/survey_france/Survey07.html:41
+#: survey_i18n/templates/survey_i18n/Survey07.html:51
 #: survey_korea/templates/survey_korea/Survey07.html:41
 msgid "My children"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:44
-#: survey_france/templates/survey_france/Survey07.html:44
+#: survey_i18n/templates/survey_i18n/Survey07.html:54
 #: survey_korea/templates/survey_korea/Survey07.html:44
 msgid "My brothers and/or sisters"
 msgstr ""
 
 #: survey/templates/survey/Survey07.html:47
-#: survey_france/templates/survey_france/Survey07.html:47
+#: survey_i18n/templates/survey_i18n/Survey07.html:57
 #: survey_korea/templates/survey_korea/Survey07.html:47
 msgid "My flatmates"
 msgstr ""
@@ -2526,16 +2491,14 @@ msgid "Wages, salary, commissions, bonuses etc paid by employer"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:28
-#: survey_france/templates/survey_france/Survey10.html:25
-#: survey_france/templates/survey_france/Survey10.html:63
 #: survey_korea/templates/survey_korea/Survey10.html:25
 #: survey_korea/templates/survey_korea/Survey10.html:63
 msgid "Self-employment or business"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:31
-#: survey_france/templates/survey_france/Survey10.html:31
-#: survey_france/templates/survey_france/Survey10.html:69
+#: survey_i18n/templates/survey_i18n/Survey10.html:28
+#: survey_i18n/templates/survey_i18n/Survey10.html:65
 #: survey_korea/templates/survey_korea/Survey10.html:31
 #: survey_korea/templates/survey_korea/Survey10.html:69
 msgid "Interest, dividends, rent, other investments"
@@ -2546,327 +2509,735 @@ msgid "Regular payments from a workplace accident insurer"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:37
-#: survey_france/templates/survey_france/Survey10.html:34
-#: survey_france/templates/survey_france/Survey10.html:72
+#: survey_i18n/templates/survey_i18n/Survey10.html:31
+#: survey_i18n/templates/survey_i18n/Survey10.html:68
 #: survey_korea/templates/survey_korea/Survey10.html:34
 #: survey_korea/templates/survey_korea/Survey10.html:72
 msgid "Pension"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:40
-#: survey_france/templates/survey_france/Survey10.html:37
-#: survey_france/templates/survey_france/Survey10.html:75
+#: survey_i18n/templates/survey_i18n/Survey10.html:34
+#: survey_i18n/templates/survey_i18n/Survey10.html:71
 #: survey_korea/templates/survey_korea/Survey10.html:37
 #: survey_korea/templates/survey_korea/Survey10.html:75
 msgid "Social insurance payments, state benefits"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:43
-#: survey_france/templates/survey_france/Survey10.html:40
-#: survey_france/templates/survey_france/Survey10.html:78
+#: survey_i18n/templates/survey_i18n/Survey10.html:37
+#: survey_i18n/templates/survey_i18n/Survey10.html:74
 #: survey_korea/templates/survey_korea/Survey10.html:40
 #: survey_korea/templates/survey_korea/Survey10.html:78
 msgid "Other sources of income"
 msgstr ""
 
 #: survey/templates/survey/Survey09.html:46
-#: survey_france/templates/survey_france/Survey10.html:43
-#: survey_france/templates/survey_france/Survey10.html:81
+#: survey_i18n/templates/survey_i18n/Survey10.html:40
+#: survey_i18n/templates/survey_i18n/Survey10.html:77
 #: survey_korea/templates/survey_korea/Survey10.html:43
 #: survey_korea/templates/survey_korea/Survey10.html:81
 msgid "No source of income during that time"
 msgstr ""
 
 #: survey/templates/survey/Survey11.html:17
-#: survey_france/templates/survey_france/Survey11.html:17
+#: survey_i18n/templates/survey_i18n/Survey11.html:16
 #: survey_korea/templates/survey_korea/Survey11.html:17
 msgid ""
 "For information purposes, could you tell us to what extent you trusted the "
 "following two statements when you made your decisions:"
 msgstr ""
 
-#: survey_france/models.py:90 survey_korea/models.py:90
+#: survey_i18n/models.py:94 survey_korea/models.py:90
 msgid "0 - Completely unwilling to take risks"
 msgstr ""
 
-#: survey_france/models.py:100 survey_korea/models.py:100
+#: survey_i18n/models.py:104 survey_korea/models.py:100
 msgid "10 - Very willing to take risks"
 msgstr ""
 
-#: survey_france/models.py:108 survey_korea/models.py:108
+#: survey_i18n/models.py:112
 msgid ""
-"How willing are you to someone who treats you unfairly, even if there may be "
-"costs for you?"
+"How willing are you to punish someone who treats you unfairly, even if there "
+"may be costs for you?"
 msgstr ""
 
-#: survey_france/models.py:111 survey_france/models.py:132
-#: survey_france/models.py:153 survey_korea/models.py:111
+#: survey_i18n/models.py:115 survey_i18n/models.py:136
+#: survey_i18n/models.py:157 survey_korea/models.py:111
 #: survey_korea/models.py:132 survey_korea/models.py:153
 msgid "0 - Completely unwilling to do so"
 msgstr ""
 
-#: survey_france/models.py:121 survey_france/models.py:142
-#: survey_france/models.py:163 survey_korea/models.py:121
+#: survey_i18n/models.py:125 survey_i18n/models.py:146
+#: survey_i18n/models.py:167 survey_korea/models.py:121
 #: survey_korea/models.py:142 survey_korea/models.py:163
 msgid "10 - Very willing to do so"
 msgstr ""
 
-#: survey_france/models.py:129 survey_korea/models.py:129
+#: survey_i18n/models.py:133 survey_korea/models.py:129
 msgid ""
 "How willing are you to punish someone who treats others unfairly, even if "
 "there may be costs for you?"
 msgstr ""
 
-#: survey_france/models.py:150 survey_korea/models.py:150
+#: survey_i18n/models.py:154 survey_korea/models.py:150
 msgid ""
 "How willing are you to give to good causes without expecting anything in "
 "return? "
 msgstr ""
 
-#: survey_france/models.py:171
+#: survey_i18n/models.py:181 survey_korea/models.py:180
+msgid "When someone does me a favour I am willing to return it."
+msgstr ""
+
+#: survey_i18n/models.py:184 survey_i18n/models.py:205
+#: survey_i18n/models.py:436 survey_i18n/models.py:791
+#: survey_korea/models.py:183 survey_korea/models.py:204
+#: survey_korea/models.py:447 survey_korea/models.py:806
+#: survey_korea/models.py:924
+msgid "0 - Does not describe me at all"
+msgstr ""
+
+#: survey_i18n/models.py:194 survey_i18n/models.py:215
+#: survey_i18n/models.py:446 survey_i18n/models.py:801
+#: survey_korea/models.py:193 survey_korea/models.py:214
+#: survey_korea/models.py:457 survey_korea/models.py:816
+#: survey_korea/models.py:934
+msgid "10 - Describes me perfectly"
+msgstr ""
+
+#: survey_i18n/models.py:202 survey_korea/models.py:201
+msgid ""
+"If I am treated very unjustly, I will take revenge     at the first "
+"occasion, even if there is a cost to do so."
+msgstr ""
+
+#: survey_i18n/models.py:225 survey_korea/models.py:236
+msgid ""
+"Would you say that most of the time people are only     looking out for "
+"themselves or that they mostly try to help each other?"
+msgstr ""
+
+#: survey_i18n/models.py:228 survey_korea/models.py:239
+msgid "0 - People are only looking out for themselves "
+msgstr ""
+
+#: survey_i18n/models.py:246 survey_korea/models.py:257
+msgid ""
+"Do you think most people would try to take advantage     of you if they got "
+"a chance, or would they try to be fair?"
+msgstr ""
+
+#: survey_i18n/models.py:267
+msgid ""
+"Can you tell us whether you think the following     action can always be "
+"justified, never be justified, or something in     between"
+msgstr ""
+
+#: survey_i18n/models.py:271 survey_korea/models.py:282
+msgid "0 - This action is never wrong"
+msgstr ""
+
+#: survey_i18n/models.py:281 survey_korea/models.py:292
+msgid "10 - This action is always wrong"
+msgstr ""
+
+#: survey_i18n/models.py:289 survey_korea/models.py:300
+msgid "Your family:"
+msgstr ""
+
+#: survey_i18n/models.py:309 survey_korea/models.py:320
+msgid "People in your neighbourhood:"
+msgstr ""
+
+#: survey_i18n/models.py:329 survey_korea/models.py:340
+msgid "People you know personally:"
+msgstr ""
+
+#: survey_i18n/models.py:349 survey_korea/models.py:360
+msgid "People you meet for the first time:"
+msgstr ""
+
+#: survey_i18n/models.py:369 survey_korea/models.py:380
+msgid "People of another religion:"
+msgstr ""
+
+#: survey_i18n/models.py:389 survey_korea/models.py:400
+msgid "People of another nationality:"
+msgstr ""
+
+#: survey_i18n/models.py:434 survey_korea/models.py:445
+msgid "I am good at math."
+msgstr ""
+
+#: survey_i18n/models.py:454 survey_korea/models.py:465
+msgid "Your government:"
+msgstr ""
+
+#: survey_i18n/models.py:474 survey_korea/models.py:485
+msgid "The parliament:"
+msgstr ""
+
+#: survey_i18n/models.py:494 survey_korea/models.py:505
+msgid "The judicial system:"
+msgstr ""
+
+#: survey_i18n/models.py:514 survey_korea/models.py:525
+msgid "The media:"
+msgstr ""
+
+#: survey_i18n/models.py:534 survey_korea/models.py:545
+msgid "Financial Institutions (e.g. banks):"
+msgstr ""
+
+#: survey_i18n/models.py:554 survey_korea/models.py:565
+msgid "The police:"
+msgstr ""
+
+#: survey_i18n/models.py:693 survey_korea/models.py:704
+msgid "How many people live in your household (including yourself)?"
+msgstr ""
+
+#: survey_i18n/models.py:728 survey_korea/models.py:740
+msgid "Do you live in a:"
+msgstr ""
+
+#: survey_i18n/models.py:730 survey_korea/models.py:742
+msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:732 survey_korea/models.py:744
+msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:734 survey_korea/models.py:746
+msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:736 survey_korea/models.py:748
+msgid "Town (50.000 to 200.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:737 survey_korea/models.py:749
+msgid "Village (Less than 50.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:738 survey_korea/models.py:750
+msgid "Rural area"
+msgstr ""
+
+#: survey_i18n/models.py:748 survey_i18n/views.py:228
+msgid "Aucun diplôme"
+msgstr ""
+
+#: survey_i18n/models.py:749 survey_i18n/views.py:229
+msgid "Brevet des collèges"
+msgstr ""
+
+#: survey_i18n/models.py:750 survey_i18n/views.py:230
+msgid "CAP BEP ou équivalent"
+msgstr ""
+
+#: survey_i18n/models.py:751 survey_i18n/views.py:231
+msgid "Baccalauréat"
+msgstr ""
+
+#: survey_i18n/models.py:752 survey_i18n/views.py:232
+msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
+msgstr ""
+
+#: survey_i18n/models.py:754 survey_i18n/views.py:233
+msgid "Licence (Bac + 3)"
+msgstr ""
+
+#: survey_i18n/models.py:755 survey_i18n/views.py:234
+msgid "Master (Bac + 5) ou Doctorat"
+msgstr ""
+
+#: survey_i18n/models.py:766 survey_korea/models.py:778
+msgid "Unemployed"
+msgstr ""
+
+#: survey_i18n/models.py:768 survey_korea/models.py:780
+msgid ""
+"Outside the labour force (e.g. homemaker, student, retired, unable to work)"
+msgstr ""
+
+#: survey_i18n/models.py:788 survey_korea/models.py:803
+msgid ""
+"As long as I am not convinced otherwise, I assume that people have only the "
+"best intentions."
+msgstr ""
+
+#: survey_i18n/models.py:813 survey_korea/models.py:862
+msgid ""
+"Just to confirm, which of these income bands corresponds best to your "
+"personal income? Remember, we are asking for your individual income, after "
+"taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/models.py:823 survey_korea/models.py:910
+msgid "Did you or your household save any money in the previous year?"
+msgstr ""
+
+#: survey_i18n/models.py:834
+#: survey_i18n/templates/survey_i18n/Survey10G.html:39
+#: survey_korea/models.py:921
+msgid "How important would you say religion is in your own life?"
+msgstr ""
+
+#: survey_i18n/models.py:837
+msgid "0 - Not important at all"
+msgstr ""
+
+#: survey_i18n/models.py:847
+msgid "10 - Very important"
+msgstr ""
+
+#: survey_i18n/models.py:867 survey_korea/models.py:954
+msgid ""
+"My final earnings will be calculated according to the rules stated in the "
+"description of the study and will be paid to me."
+msgstr ""
+
+#: survey_i18n/models.py:880 survey_korea/models.py:967
+msgid ""
+"At the end of this study, how would you say that you read the descriptions "
+"associated with each of the sections?"
+msgstr ""
+
+#: survey_i18n/models.py:927 survey_korea/models.py:1014
+msgid "Which browser did you take this survey on?"
+msgstr ""
+
+#: survey_i18n/models.py:929 survey_korea/models.py:1016
+msgid "Google Chrome"
+msgstr ""
+
+#: survey_i18n/models.py:930 survey_korea/models.py:1017
+msgid "Firefox"
+msgstr ""
+
+#: survey_i18n/models.py:931 survey_korea/models.py:1018
+msgid "Internet Explorer"
+msgstr ""
+
+#: survey_i18n/models.py:938 survey_korea/models.py:1025
+msgid ""
+"If you have any comments about your experience taking this survey, with "
+"regard to the functionality of the platform, or the content of the tasks and "
+"questions, please provide us with relevant feedback:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/EndGame.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as {{payoff_amount}} euros."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/EndGame.html:49
+#: survey_korea/templates/survey_korea/EndGame.html:49
+msgid "(Should you not wish to donate anything at this point, please enter 0)."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/EndGame.html:50
+#: survey_korea/templates/survey_korea/EndGame.html:50
+msgid ""
+"Once again, thank you very much for participating. You will now be "
+"redirected in order to collect your reward."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey02.html:28
+msgid ""
+"How willing are you to punish someone who treats <em><u>you</u></em> "
+"unfairly, even if there may be costs for you?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey02.html:31
+msgid ""
+"How willing are you to punish someone who treats <em><u>others</u></em> "
+"unfairly, even if there may be costs for you?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04.html:18
+msgid "Please think about what you would do in the following situation:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04.html:22
+msgid ""
+"You are in an area you are not familiar with, and you realize that you lost "
+"your way. You ask a stranger for directions. The stranger offers to take you "
+"to your destination. Helping you costs the stranger about 20 Euro in total. "
+"However, the stranger says he or she does not want any money from you. You "
+"have 6 presents with you. The cheapest present costs 5 euros, the most "
+"expensive one costs 30 euros. Do you give one of the presents to the "
+"stranger as a “thank-you”-gift? If so, which present do you give to the "
+"stranger?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04A.html:33
+msgid ""
+"Can you tell us whether you think the following action is always wrong, "
+"never wrong, or something in between:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey05.html:29
+msgid ""
+"How much trust do you have in the following institutions to act in the best "
+"interest of society?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:26
+msgid ""
+"We will now ask you questions about your personal situation. All data is "
+"anonymous and will not be shared with a third party."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:60
+#: survey_korea/templates/survey_korea/Survey07.html:50
+msgid "Alone"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:66
+msgid "Adults (18 years or older)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:67
+msgid "Children (younger than 18 years)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey09.html:29
+msgid "How well does the following statement describe you as a person?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:17
+msgid ""
+"What are all the ways that you <u>as an individual</u> got income in the "
+"last 12 months ending today? <br/>Please choose the three most relevant "
+"options. <br/><br/>Please do not count loans as income."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:22
+#: survey_i18n/templates/survey_i18n/Survey10.html:59
+#: survey_korea/templates/survey_korea/Survey10.html:22
+#: survey_korea/templates/survey_korea/Survey10.html:60
+msgid "Salaries and wages"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:25
+#: survey_i18n/templates/survey_i18n/Survey10.html:62
+#: survey_korea/templates/survey_korea/Survey10.html:28
+#: survey_korea/templates/survey_korea/Survey10.html:66
+msgid "Profit from self-employment or business"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:50
+msgid ""
+"Now think about the income of your household. This can be just you, or the "
+"collective income of your family, your parents, or whoever you share your "
+"income and expenditures with."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:54
+msgid ""
+"What are the main ways that <u>your household</u> received income in the "
+"last 12 months? <br/>Please choose the three most relevant options. <br/><br/"
+">Please do not count loans as income."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10A.html:13
+msgid ""
+"In the last 12 months, what was your total income, the income that you "
+"received <u>as an individual</u>, after taxes have been deducted? (Income "
+"can come from any of the sources mentioned in the previous question.)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:17
+msgid ""
+"Just to confirm, which of these income bands corresponds best to <u>your "
+"personal</u> income? Remember, we are asking for <u>your individual</u> "
+"income, after taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:21
+#: survey_korea/models.py:866
+msgid "0 to 13.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:22
+msgid "13.000.000 to 20.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:23
+msgid "20.000.000 to 25.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:24
+msgid "25.000.000 to 34.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:25
+msgid "34.000.000 Won or more per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:30
+msgid "0 to 15.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:31
+msgid "15.000 to 20.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:32
+msgid "20.000 to 25.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:33
+msgid "25.000 to 32.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:34
+msgid "32.000 euro per year or more"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10C.html:23
+msgid ""
+"In the last 12 months, what was the total income of <u>your household</u>, "
+"after taxes have been deducted? (Income can come from any of the sources "
+"mentioned in the previous question.)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10C.html:30
+msgid "per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:18
+msgid ""
+"Just to confirm, which of these income bands corresponds best to the income "
+"of your <u>entire household</u> (the people you share your income and "
+"expenditures with). Remember, we are asking for the income of your "
+"<u>household</u>, after taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:21
+msgid "0 to"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:21
+#: survey_i18n/templates/survey_i18n/Survey10D.html:22
+#: survey_i18n/templates/survey_i18n/Survey10D.html:23
+#: survey_i18n/templates/survey_i18n/Survey10D.html:24
+msgid "euros per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:25
+msgid "euros or more per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:23
+msgid "Are you:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:26
+msgid " Buddhist"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:27
+msgid " Protestant"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:28
+msgid " Catholic"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:29
+msgid " Confucian"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:30
+msgid " Won Buddhist"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:31
+msgid " Other"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:32
+msgid " Not religious"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:33
+msgid " I don’t know"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:42
+msgid " 0 - Not important at all"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:43
+msgid " 1"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:44
+msgid " 2"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:45
+msgid " 3"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:46
+msgid " 4"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:47
+msgid " 5"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:48
+msgid " 6"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:49
+msgid " 7"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:50
+msgid " 8"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:51
+msgid " 9"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:52
+msgid " 10 - Very important"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.html:53
+msgid " Don't know"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey11.html:15
+msgid "This is the last screen, you're almost done!"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey12.html:14
+msgid ""
+"This is the very last screen, in the following screen we will show you your "
+"earnings!"
+msgstr ""
+
+#: survey_i18n/views.py:50
 msgid ""
 "Imagine the following situation: you won 1000 euros in a lottery. "
 "Considering your current situation, how much would you donate to a good "
 "cause?"
 msgstr ""
 
-#: survey_france/models.py:180 survey_korea/models.py:180
-msgid "When someone does me a favour I am willing to return it."
-msgstr ""
-
-#: survey_france/models.py:183 survey_france/models.py:204
-#: survey_france/models.py:455 survey_france/models.py:814
-#: survey_france/models.py:930 survey_korea/models.py:183
-#: survey_korea/models.py:204 survey_korea/models.py:455
-#: survey_korea/models.py:814 survey_korea/models.py:932
-msgid "0 - Does not describe me at all"
-msgstr ""
-
-#: survey_france/models.py:193 survey_france/models.py:214
-#: survey_france/models.py:465 survey_france/models.py:824
-#: survey_france/models.py:940 survey_korea/models.py:193
-#: survey_korea/models.py:214 survey_korea/models.py:465
-#: survey_korea/models.py:824 survey_korea/models.py:942
-msgid "10 - Describes me perfectly"
-msgstr ""
-
-#: survey_france/models.py:201 survey_korea/models.py:201
+#: survey_i18n/views.py:53 survey_korea/models.py:171
 msgid ""
-"If I am treated very unjustly, I will take revenge     at the first "
-"occasion, even if there is a cost to do so."
+"Imagine the following situation: you won 1000 Won in a lottery. Considering "
+"your current situation, how much would you donate to a good cause?"
 msgstr ""
 
-#: survey_france/models.py:222
-msgid ""
-"You are in an area you are not familiar with, and     you realize that you "
-"lost your way. You ask a stranger for directions.     The stranger offers to "
-"take you to your destination. Helping you costs     the stranger about 20 "
-"Euro in total. However, the stranger says he or     she does not want any "
-"money from you. You have 6 presents with you.     The cheapest present costs "
-"5 euros, the most expensive one costs 30 euros.     Do you give one of the "
-"presents to the stranger as a “thank-you”-gift?     If so, which present do "
-"you give to the stranger?"
+#: survey_i18n/views.py:65 survey_i18n/views.py:284 survey_i18n/views.py:313
+msgid "Won"
 msgstr ""
 
-#: survey_france/models.py:231 survey_korea/models.py:231
+#: survey_i18n/views.py:96 survey_i18n/views.py:105 survey_korea/models.py:223
 msgid "no present"
 msgstr ""
 
-#: survey_france/models.py:232
+#: survey_i18n/views.py:97
 msgid "the present worth 5 euros"
 msgstr ""
 
-#: survey_france/models.py:233
+#: survey_i18n/views.py:98
 msgid "the present worth 10 euros"
 msgstr ""
 
-#: survey_france/models.py:234
+#: survey_i18n/views.py:99
 msgid "the present worth 15 euros"
 msgstr ""
 
-#: survey_france/models.py:235
+#: survey_i18n/views.py:100
 msgid "the present worth 20 euros"
 msgstr ""
 
-#: survey_france/models.py:236
+#: survey_i18n/views.py:101
 msgid "the present worth 25 euros"
 msgstr ""
 
-#: survey_france/models.py:237
+#: survey_i18n/views.py:102
 msgid "the present worth 30 euros"
 msgstr ""
 
-#: survey_france/models.py:244 survey_korea/models.py:244
+#: survey_i18n/views.py:106 survey_korea/models.py:224
+msgid "the present worth 5.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:107 survey_korea/models.py:225
+msgid "the present worth 10.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:108 survey_korea/models.py:226
+msgid "the present worth 15.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:109 survey_korea/models.py:227
+msgid "the present worth 20.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:110 survey_korea/models.py:228
+msgid "the present worth 25.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:111 survey_korea/models.py:229
+msgid "the present worth 30.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:170
+#: survey_korea/templates/survey_korea/Survey05.html:27
 msgid ""
-"Would you say that most of the time people are only     looking out for "
-"themselves or that they mostly try to help each other?"
+"When answering the following questions, please think about French "
+"institutions."
 msgstr ""
 
-#: survey_france/models.py:247 survey_korea/models.py:247
-msgid "0 - People are only looking out for themselves "
-msgstr ""
-
-#: survey_france/models.py:265 survey_korea/models.py:265
+#: survey_i18n/views.py:171
 msgid ""
-"Do you think most people would try to take advantage     of you if they got "
-"a chance, or would they try to be fair?"
+"When answering the following questions, please think about Korean "
+"institutions."
 msgstr ""
 
-#: survey_france/models.py:286 survey_korea/models.py:286
+#: survey_i18n/views.py:208
+msgid "In what year did you arrive in France?"
+msgstr ""
+
+#: survey_i18n/views.py:209 survey_korea/models.py:732
+msgid "In what year did you arrive in Korea?"
+msgstr ""
+
+#: survey_korea/models.py:108
+msgid ""
+"How willing are you to someone who treats you unfairly, even if there may be "
+"costs for you?"
+msgstr ""
+
+#: survey_korea/models.py:278
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between:"
 msgstr ""
 
-#: survey_france/models.py:290 survey_korea/models.py:290
-msgid "0 - This action is never wrong"
-msgstr ""
-
-#: survey_france/models.py:300 survey_korea/models.py:300
-msgid "10 - This action is always wrong"
-msgstr ""
-
-#: survey_france/models.py:308 survey_korea/models.py:308
-msgid "Your family:"
-msgstr ""
-
-#: survey_france/models.py:328 survey_korea/models.py:328
-msgid "People in your neighbourhood:"
-msgstr ""
-
-#: survey_france/models.py:348 survey_korea/models.py:348
-msgid "People you know personally:"
-msgstr ""
-
-#: survey_france/models.py:368 survey_korea/models.py:368
-msgid "People you meet for the first time:"
-msgstr ""
-
-#: survey_france/models.py:388 survey_korea/models.py:388
-msgid "People of another religion:"
-msgstr ""
-
-#: survey_france/models.py:408 survey_korea/models.py:408
-msgid "People of another nationality:"
-msgstr ""
-
-#: survey_france/models.py:453 survey_korea/models.py:453
-msgid "I am good at math."
-msgstr ""
-
-#: survey_france/models.py:473 survey_korea/models.py:473
-msgid "Your government:"
-msgstr ""
-
-#: survey_france/models.py:493 survey_korea/models.py:493
-msgid "The parliament:"
-msgstr ""
-
-#: survey_france/models.py:513 survey_korea/models.py:513
-msgid "The judicial system:"
-msgstr ""
-
-#: survey_france/models.py:533 survey_korea/models.py:533
-msgid "The media:"
-msgstr ""
-
-#: survey_france/models.py:553 survey_korea/models.py:553
-msgid "Financial Institutions (e.g. banks):"
-msgstr ""
-
-#: survey_france/models.py:573 survey_korea/models.py:573
-msgid "The police:"
-msgstr ""
-
-#: survey_france/models.py:712 survey_korea/models.py:712
-msgid "How many people live in your household (including yourself)?"
-msgstr ""
-
-#: survey_france/models.py:740
-msgid "In what year did you arrive in France?"
-msgstr ""
-
-#: survey_france/models.py:748 survey_korea/models.py:748
-msgid "Do you live in a:"
-msgstr ""
-
-#: survey_france/models.py:750 survey_korea/models.py:750
-msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
-msgstr ""
-
-#: survey_france/models.py:752 survey_korea/models.py:752
-msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
-msgstr ""
-
-#: survey_france/models.py:754 survey_korea/models.py:754
-msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
-msgstr ""
-
-#: survey_france/models.py:756 survey_korea/models.py:756
-msgid "Town (50.000 to 200.000 inhabitants)"
-msgstr ""
-
-#: survey_france/models.py:757 survey_korea/models.py:757
-msgid "Village (Less than 50.000 inhabitants)"
-msgstr ""
-
-#: survey_france/models.py:758 survey_korea/models.py:758
-msgid "Rural area"
-msgstr ""
-
-#: survey_france/models.py:768
-msgid "Aucun diplôme"
-msgstr ""
-
-#: survey_france/models.py:769
-msgid "Brevet des collèges"
-msgstr ""
-
-#: survey_france/models.py:770
-msgid "CAP BEP ou équivalent"
-msgstr ""
-
-#: survey_france/models.py:771
-msgid "Baccalauréat"
-msgstr ""
-
-#: survey_france/models.py:772
-msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
-msgstr ""
-
-#: survey_france/models.py:774
-msgid "Licence (Bac + 3)"
-msgstr ""
-
-#: survey_france/models.py:775
-msgid "Master (Bac + 5) ou Doctorat"
-msgstr ""
-
-#: survey_france/models.py:786 survey_korea/models.py:786
-msgid "Unemployed"
-msgstr ""
-
-#: survey_france/models.py:788 survey_korea/models.py:788
-msgid ""
-"Outside the labour force (e.g. homemaker, student, retired, unable to work)"
-msgstr ""
-
-#: survey_france/models.py:811 survey_korea/models.py:811
-msgid ""
-"As long as I am not convinced otherwise, I assume that people have only the "
-"best intentions."
-msgstr ""
-
-#: survey_france/models.py:834 survey_france/models.py:887
-#: survey_korea/models.py:834 survey_korea/models.py:889
+#: survey_korea/models.py:826 survey_korea/models.py:881
 msgid ""
 "In the last 12 months, what was the total income of your household after "
 "taxes have been deducted? (Income can come from any of the sources mentioned "
 "in the previous question.)"
 msgstr ""
 
-#: survey_france/models.py:840 survey_france/models.py:893
-#: survey_korea/models.py:840 survey_korea/models.py:895
+#: survey_korea/models.py:832 survey_korea/models.py:887
 msgid ""
 "Just to confirm, which of these income bands corresponds best to the income "
 "of your entire household (the people you share your income and expenditures "
@@ -2874,122 +3245,42 @@ msgid ""
 "have been deducted."
 msgstr ""
 
-#: survey_france/models.py:845
-msgid "0 to [15.000 x sqrt (household size)] euros per year"
+#: survey_korea/models.py:837 survey_korea/models.py:892
+msgid "0 to [13.000.000 x sqrt (household size)] Won per year"
 msgstr ""
 
-#: survey_france/models.py:848
-msgid "[15.000 x sqrt (household size)] to [20.000 x sqrt (household size)]"
+#: survey_korea/models.py:840
+msgid ""
+"[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household size)]"
 msgstr ""
 
-#: survey_france/models.py:851
-msgid "[20.000 x sqrt (household size)] to [25.000 x sqrt (household size)]"
+#: survey_korea/models.py:843
+msgid ""
+"[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household size)]"
 msgstr ""
 
-#: survey_france/models.py:854
-msgid "[25.000 x sqrt (household size)] to [32.000 x sqrt (household size)]"
+#: survey_korea/models.py:846
+msgid ""
+"[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household size)]"
 msgstr ""
 
-#: survey_france/models.py:856
-msgid "[32.000 x sqrt (household size)] euro or more per year]"
+#: survey_korea/models.py:848
+msgid "[34.000.000 x sqrt (household size)] Won or more per year]"
 msgstr ""
 
-#: survey_france/models.py:863 survey_korea/models.py:863
+#: survey_korea/models.py:855
 msgid ""
 "In the last 12 months, what was your total income, the income that you "
 "received as an individual, after taxes have been deducted? (Income can come "
 "from any of the sources mentioned in the previous question.)"
 msgstr ""
 
-#: survey_france/models.py:870 survey_korea/models.py:870
-msgid ""
-"Just to confirm, which of these income bands corresponds best to your "
-"personal income? Remember, we are asking for your individual income, after "
-"taxes have been deducted."
-msgstr ""
-
-#: survey_france/models.py:874
-msgid "0 to 15.000 euro per year"
-msgstr ""
-
-#: survey_france/models.py:898
-msgid "0 to [15.000 x sqrt (household size)] euro per year"
-msgstr ""
-
-#: survey_france/models.py:916 survey_korea/models.py:918
-msgid "Did you or your household save any money in the previous year?"
-msgstr ""
-
-#: survey_france/models.py:927 survey_korea/models.py:929
-msgid "How important would you say religion is in your own life?"
-msgstr ""
-
-#: survey_france/models.py:960 survey_korea/models.py:962
-msgid ""
-"My final earnings will be calculated according to the rules stated in the "
-"description of the study and will be paid to me."
-msgstr ""
-
-#: survey_france/models.py:973 survey_korea/models.py:975
-msgid ""
-"At the end of this study, how would you say that you read the descriptions "
-"associated with each of the sections?"
-msgstr ""
-
-#: survey_france/models.py:1020 survey_korea/models.py:1022
-msgid "Which browser did you take this survey on?"
-msgstr ""
-
-#: survey_france/models.py:1022 survey_korea/models.py:1024
-msgid "Google Chrome"
-msgstr ""
-
-#: survey_france/models.py:1023 survey_korea/models.py:1025
-msgid "Firefox"
-msgstr ""
-
-#: survey_france/models.py:1024 survey_korea/models.py:1026
-msgid "Internet Explorer"
-msgstr ""
-
-#: survey_france/models.py:1031 survey_korea/models.py:1033
-msgid ""
-"If you have any comments about your experience taking this survey, with "
-"regard to the functionality of the platform, or the content of the tasks and "
-"questions, please provide us with relevant feedback:"
-msgstr ""
-
-#: survey_france/templates/survey_france/EndGame.html:10
+#: survey_korea/templates/survey_korea/EndGame.html:10
 msgid ""
 "After being matched with the other players, your earnings have been "
-"calculated as {{payoff_amount}} euros."
+"calculated as {{payoff_amount}} Won."
 msgstr ""
 
-#: survey_france/templates/survey_france/EndGame.html:49
-#: survey_korea/templates/survey_korea/EndGame.html:49
-msgid "(Should you not wish to donate anything at this point, please enter 0)."
-msgstr ""
-
-#: survey_france/templates/survey_france/EndGame.html:50
-#: survey_korea/templates/survey_korea/EndGame.html:50
-msgid ""
-"Once again, thank you very much for participating. You will now be "
-"redirected in order to collect your reward."
-msgstr ""
-
-#: survey_france/templates/survey_france/Survey05.html:27
-#: survey_korea/templates/survey_korea/Survey05.html:27
-msgid ""
-"When answering the following questions, please think about French "
-"institutions."
-msgstr ""
-
-#: survey_france/templates/survey_france/Survey07.html:50
-#: survey_korea/templates/survey_korea/Survey07.html:50
-msgid "Alone"
-msgstr ""
-
-#: survey_france/templates/survey_france/Survey10.html:17
 #: survey_korea/templates/survey_korea/Survey10.html:17
 msgid ""
 "What are all the ways that you got income in the last 12 months ending "
@@ -2997,105 +3288,11 @@ msgid ""
 "do not count loans as income."
 msgstr ""
 
-#: survey_france/templates/survey_france/Survey10.html:22
-#: survey_france/templates/survey_france/Survey10.html:60
-#: survey_korea/templates/survey_korea/Survey10.html:22
-#: survey_korea/templates/survey_korea/Survey10.html:60
-msgid "Salaries and wages"
-msgstr ""
-
-#: survey_france/templates/survey_france/Survey10.html:28
-#: survey_france/templates/survey_france/Survey10.html:66
-#: survey_korea/templates/survey_korea/Survey10.html:28
-#: survey_korea/templates/survey_korea/Survey10.html:66
-msgid "Profit from self-employment or business"
-msgstr ""
-
-#: survey_france/templates/survey_france/Survey10.html:55
 #: survey_korea/templates/survey_korea/Survey10.html:55
 msgid ""
 "What are the main ways that your household received income in the last 12 "
 "months? <br/>Please choose the three most relevant options. <br/><br/>Please "
 "do not count loans as income."
-msgstr ""
-
-#: survey_korea/models.py:171
-msgid ""
-"Imagine the following situation: you won 1000 Won in a lottery. Considering "
-"your current situation, how much would you donate to a good cause?"
-msgstr ""
-
-#: survey_korea/models.py:222
-msgid ""
-"You are in an area you are not familiar with, and     you realize that you "
-"lost your way. You ask a stranger for directions.     The stranger offers to "
-"take you to your destination. Helping you costs     the stranger about "
-"20.000 Won in total. However, the stranger says he or     she does not want "
-"any money from you. You have 6 presents with you.     The cheapest present "
-"costs 5.000 Won, the most expensive one costs     30.000 Won. Do you give "
-"one of the presents to the stranger as a     “thank-you”-gift? If so, which "
-"present do you give to the stranger?"
-msgstr ""
-
-#: survey_korea/models.py:232
-msgid "the present worth 5.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:233
-msgid "the present worth 10.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:234
-msgid "the present worth 15.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:235
-msgid "the present worth 20.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:236
-msgid "the present worth 25.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:237
-msgid "the present worth 30.000 Won"
-msgstr ""
-
-#: survey_korea/models.py:740
-msgid "In what year did you arrive in Korea?"
-msgstr ""
-
-#: survey_korea/models.py:845 survey_korea/models.py:900
-msgid "0 to [13.000.000 x sqrt (household size)] Won per year"
-msgstr ""
-
-#: survey_korea/models.py:848
-msgid ""
-"[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household size)]"
-msgstr ""
-
-#: survey_korea/models.py:851
-msgid ""
-"[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household size)]"
-msgstr ""
-
-#: survey_korea/models.py:854
-msgid ""
-"[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household size)]"
-msgstr ""
-
-#: survey_korea/models.py:856
-msgid "[34.000.000 x sqrt (household size)] Won or more per year]"
-msgstr ""
-
-#: survey_korea/models.py:874
-msgid "0 to 13.000.000 Won per year"
-msgstr ""
-
-#: survey_korea/templates/survey_korea/EndGame.html:10
-msgid ""
-"After being matched with the other players, your earnings have been "
-"calculated as {{payoff_amount}} Won."
 msgstr ""
 
 #: trust/templates/trust/EndGame.html:9
@@ -3189,22 +3386,33 @@ msgid ""
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:26
-msgid ""
-"You will receive your money at the end of the study via [PAYMENT METHOD]."
+msgid "You will receive your points via the usual system."
 msgstr ""
 
-#: trust/templates/trust/ExperimentIntroduction.html:28
-msgid "Data protection"
+#: trust/templates/trust/ExperimentIntroduction.html:27
+msgid ""
+"You will receive your additional money at the end of the study via HAPPY "
+"MONEY."
 msgstr ""
 
 #: trust/templates/trust/ExperimentIntroduction.html:29
+msgid "Data protection"
+msgstr ""
+
+#: trust/templates/trust/ExperimentIntroduction.html:32
 msgid ""
 "The data gathered in this study is subject to European privacy protocols, "
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
 
-#: trust/templates/trust/ExperimentIntroduction.html:31
+#: trust/templates/trust/ExperimentIntroduction.html:34
+msgid ""
+"The data gathered in this study is subject to strict privacy protocols. We "
+"will use it for research purposes only."
+msgstr ""
+
+#: trust/templates/trust/ExperimentIntroduction.html:37
 msgid "Begin"
 msgstr ""
 
@@ -3221,8 +3429,7 @@ msgstr ""
 #: trust/templates/trust/GamesIntroduction.html:9
 msgid ""
 "At the beginning of each task, you will be grouped with other study "
-"participants, who are respondents from [country name (France: “France”; "
-"Korea: “Korea”)] like you."
+"participants, who are respondents from France like you."
 msgstr ""
 
 #: trust/templates/trust/GamesIntroduction.html:10
@@ -3274,28 +3481,34 @@ msgstr ""
 msgid "At the beginning of the task, both participants receive 10 euros."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:13
+#: trust/templates/trust/Instructions.html:15
+msgid ""
+"Participant A has the option to transfer none, part or all of his or her "
+"12.000 Won to Participant B."
+msgstr ""
+
+#: trust/templates/trust/Instructions.html:17
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her 10 "
 "euros to Participant B."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:14
+#: trust/templates/trust/Instructions.html:20
 msgid "Whatever amount Participant A sends is multiplied by 3."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:15
+#: trust/templates/trust/Instructions.html:21
 msgid ""
 "Participant B, after receiving the transfer of Participant A, has to decide "
 "how much, if any, money he or she want to send back to Participant A."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:17
+#: trust/templates/trust/Instructions.html:23
 msgid "Your role (A or B) will be revealed at the beginning of the task."
 msgstr ""
 
 #: trust/templates/trust/Send.html:7
-msgid "Task 0: Real task"
+msgid "Task One: Real task"
 msgstr ""
 
 #: trust/templates/trust/Send.html:9
@@ -3304,7 +3517,13 @@ msgid ""
 "“Next” button, you cannot return to this screen."
 msgstr ""
 
-#: trust/templates/trust/Send.html:11
+#: trust/templates/trust/Send.html:13
+msgid ""
+"You have 12.000 Won in your possession. <strong>How much do you want to send "
+"to Participant B?</strong>"
+msgstr ""
+
+#: trust/templates/trust/Send.html:15
 msgid ""
 "You have 10 euros in your possession. <strong>How much do you want to send "
 "to Participant B?</strong>"
@@ -3318,14 +3537,14 @@ msgstr ""
 msgid "You were selected to be in the role of <strong>Participant B</strong>."
 msgstr ""
 
-#: trust/templates/trust/SendBack.html:11
-msgid "You already have 10 euros in your possession."
-msgstr ""
-
-#: trust/templates/trust/SendBack.html:12
+#: trust/templates/trust/SendBack.html:13
 msgid ""
 "If Participant A sends you any of the amounts listed in the table below, "
 "<strong>how much money do you want to send back to Participant A</strong>?"
+msgstr ""
+
+#: trust/templates/trust/SendBack.html:15
+msgid "You already have 10 euros in your possession."
 msgstr ""
 
 #: trust/templates/trust/Simulation.html:6
@@ -3350,113 +3569,114 @@ msgid ""
 "calculator."
 msgstr ""
 
-#: trust/templates/trust/Simulation.html:158
+#: trust/templates/trust/Simulation.html:164
 msgid "Reset to zero"
 msgstr ""
 
-#: trust/views.py:61
+#: trust/views.py:71
 msgid "Please enter a number from 0 to 10"
 msgstr ""
 
-#: trust/views.py:65
-msgid "Please enter a number from 0 to 10.000"
+#: trust/views.py:75
+msgid "Please enter a number from 0 to 12.000"
 msgstr ""
 
-#: trust/views.py:97
+#: trust/views.py:107
 msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
 msgstr ""
 
-#: trust/views.py:100
+#: trust/views.py:110
 msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
 msgstr ""
 
-#: trust/views.py:103
+#: trust/views.py:113
 msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
 msgstr ""
 
-#: trust/views.py:106
+#: trust/views.py:116
 msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
 msgstr ""
 
-#: trust/views.py:109
+#: trust/views.py:119
 msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
 msgstr ""
 
-#: trust/views.py:112
+#: trust/views.py:122
 msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
 msgstr ""
 
-#: trust/views.py:115
+#: trust/views.py:125
 msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
 msgstr ""
 
-#: trust/views.py:118
+#: trust/views.py:128
 msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
 msgstr ""
 
-#: trust/views.py:121
+#: trust/views.py:131
 msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
 msgstr ""
 
-#: trust/views.py:124
+#: trust/views.py:134
 msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
 msgstr ""
 
-#: trust/views.py:127
+#: trust/views.py:137
 msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
 msgstr ""
 
-#: trust/views.py:133
+#: trust/views.py:143
 msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
 msgstr ""
 
-#: trust/views.py:136
+#: trust/views.py:146
 msgid ""
-"If Participant A sends you 1.000 Won (you receive 1.000 Won × 3 = 3.000 Won)"
+"If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)"
 msgstr ""
 
-#: trust/views.py:139
+#: trust/views.py:149
 msgid ""
-"If Participant A sends you 2 Won (you receive 2.000 Won × 3 = 6.000 Won)"
+"If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)"
 msgstr ""
 
-#: trust/views.py:142
+#: trust/views.py:152
 msgid ""
-"If Participant A sends you 3.000 Won (you receive 3.000 Won × 3 = 9.000 Won)"
+"If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
 msgstr ""
 
-#: trust/views.py:145
+#: trust/views.py:155
 msgid ""
-"If Participant A sends you 4.000 Won (you receive 4.000 Won × 3 = 12.000 Won)"
+"If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
 msgstr ""
 
-#: trust/views.py:148
-msgid ""
-"If Participant A sends you 5.000 Won (you receive 5.000 Won × 3 = 15.000 Won)"
-msgstr ""
-
-#: trust/views.py:151
+#: trust/views.py:158
 msgid ""
 "If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
 msgstr ""
 
-#: trust/views.py:154
+#: trust/views.py:161
 msgid ""
-"If Participant A sends you 7.000 Won (you receive 7.000 Won × 3 = 21.000 Won)"
+"If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)"
 msgstr ""
 
-#: trust/views.py:157
+#: trust/views.py:164
 msgid ""
-"If Participant A sends you 8.000 Won (you receive 8.000 Won × 3 = 24.000 Won)"
+"If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)"
 msgstr ""
 
-#: trust/views.py:160
+#: trust/views.py:167
 msgid ""
-"If Participant A sends you 9.000 Won (you receive 9.000 Won × 3 = 27.000 Won)"
+"If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)"
 msgstr ""
 
-#: trust/views.py:163
+#: trust/views.py:170
 msgid ""
-"If Participant A sends you 10.000 Won (you receive 10.000 Won ×3 = 30.000 "
+"If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 "
+"Won)"
+msgstr ""
+
+#: trust/views.py:173
+msgid ""
+"If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 "
 "Won)"
 msgstr ""

@@ -51,7 +51,7 @@ class Simulation(Page):
     template_name = 'trust/Simulation.html'
 
     def vars_for_template(self):
-        max = {'fr': 10, 'kr': 10000}
+        max = {'fr': 10, 'ko': 10000}
         return {
             'max': max[self.session.vars['lang']]
         }
@@ -70,7 +70,7 @@ class Send(Page):
                 'amount_allocated': Constants.amount_allocated,
                 'sent_amount_label': _(u'Please enter a number from 0 to 10')
             },
-            'kr': {
+            'ko': {
                 'amount_allocated': Constants.amount_allocated,
                 'sent_amount_label': _(u'Please enter a number from 0 to 12.000')
             }
@@ -138,7 +138,7 @@ class SendBack(Page):
                 ),
             },
 
-            'kr': {
+            'ko': {
                 'sent_back_amount_0_label': _(
                     u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
                 ),

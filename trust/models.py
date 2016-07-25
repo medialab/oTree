@@ -50,10 +50,9 @@ class Subsession(BaseSubsession):
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
         if 'language_code' in self.session.config:
-            # self.session.vars['lang'] = (
-            #     self.session.config['language_code'][3:]
-            # )
-            self.session.vars['lang'] = 'fr'
+            self.session.vars['lang'] = (
+                self.session.config['language_code'][3:]
+            )
 
 
 class Group(BaseGroup):

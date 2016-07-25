@@ -50,7 +50,7 @@ class Survey02A(Page):
             'fr': _(u'Imagine the following situation: you won 1000 euros \
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?'),
-            'kr': _(u'Imagine the following situation: you won 1000 Won \
+            'ko': _(u'Imagine the following situation: you won 1000 Won \
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?')
         }
@@ -60,7 +60,7 @@ to a good cause?')
                 'max': 1000,
                 'currency': _(u'€')
             },
-            'kr': {
+            'ko': {
                 'max': 1000000,
                 'currency': _(u'Won')
             }
@@ -101,7 +101,7 @@ class Survey04(Page):
                 'present_25': _(u'the present worth 25 euros'),
                 'present_30': _(u'the present worth 30 euros'),
             },
-            'kr': {
+            'ko': {
                 'present_00': _(u'no present'),
                 'present_05': _(u'the present worth 5.000 Won'),
                 'present_10': _(u'the present worth 10.000 Won'),
@@ -168,7 +168,7 @@ class Survey05(Page):
     def vars_for_template(self):
         instructions = {
             'fr': _(u'When answering the following questions, please think about French institutions.'),
-            'kr': _(u'When answering the following questions, please think about Korean institutions.'),
+            'ko': _(u'When answering the following questions, please think about Korean institutions.'),
         }
         return {
             'instructions': instructions[self.session.vars['lang']]
@@ -206,7 +206,7 @@ class Survey07(Page):
     def vars_for_template(self):
         label_what_year = {
             'fr': _(u'In what year did you arrive in France?'),
-            'kr': _(u'In what year did you arrive in Korea?'),
+            'ko': _(u'In what year did you arrive in Korea?'),
         }
 
         return {
@@ -233,7 +233,7 @@ class Survey08(Page):
                 'f06': _(u'Licence (Bac + 3)'),
                 'f07': _(u'Master (Bac + 5) ou Doctorat')
             },
-            'kr': {
+            'ko': {
                 'f01': _(u'Less than high school'),
                 'f02': _(u'High school'),
                 'f03': _(u'Some college'),
@@ -281,7 +281,7 @@ class Survey10A(Page):
     def vars_for_template(self):
         currency = {
             'fr': _(u'€'),
-            'kr': _(u'Won')
+            'ko': _(u'Won')
         }
 
         return {
@@ -310,7 +310,7 @@ class Survey10C(Page):
     def vars_for_template(self):
         currency = {
             'fr': _(u'€'),
-            'kr': _(u'Won')
+            'ko': _(u'Won')
         }
 
         return {
@@ -328,6 +328,7 @@ class Survey10D(Page):
     ]
 
     def vars_for_template(self):
+        round_to = 1000
         values = {
             'fr': {
                 'A': 15000,
@@ -335,7 +336,7 @@ class Survey10D(Page):
                 'C': 25000,
                 'D': 32000
             },
-            'kr': {
+            'ko': {
                 'A': 13000000,
                 'B': 20000000,
                 'C': 25000000,
@@ -351,10 +352,10 @@ class Survey10D(Page):
         value_d = int(values[self.session.vars['lang']]['D'] * household_size)
         return {
             'household_size': household_size,
-            'value_a': value_a,
-            'value_b': value_b,
-            'value_c': value_c,
-            'value_d': value_d
+            'value_a': round((value_a) / round_to) * round_to,
+            'value_b': round((value_b) / round_to) * round_to,
+            'value_c': round((value_c) / round_to) * round_to,
+            'value_d': round((value_d) / round_to) * round_to
         }
 
 
@@ -363,15 +364,7 @@ class Survey10G(Page):
 
     form_model = models.Player
     form_fields = [
-        '_10G_income'
-    ]
-
-
-class Survey10H(Page):
-    """Page 10 of survey."""
-
-    form_model = models.Player
-    form_fields = [
+        '_10G_income',
         '_10H_income'
     ]
 
@@ -431,7 +424,6 @@ page_sequence = [
     Survey10C,
     Survey10D,
     Survey10G,
-    Survey10H,
     Survey11,
     Survey12,
 ]
