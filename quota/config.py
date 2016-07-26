@@ -57,34 +57,34 @@ config = {
     # Catching 'gender' and 'age' GET variables from GMI.
     # TODO: Recompose name using variable names when known.
     'quota_gender_age_groups': {
-        'm_18_24': {
+        '1_18_24': {
             'percentage': 7, 'expected': total * (7 / 100), 'currently': 0
         },
-        'm_25_34': {
+        '1_25_34': {
             'percentage': 10, 'expected': total * (10 / 100), 'currently': 0
         },
-        'm_35_44': {
+        '1_35_44': {
             'percentage': 11, 'expected': total * (11 / 100), 'currently': 0
         },
-        'm_45_54': {
+        '1_45_54': {
             'percentage': 11, 'expected': total * (11 / 100), 'currently': 0
         },
-        'm_55_64': {
+        '1_55_64': {
             'percentage': 11, 'expected': total * (11 / 100), 'currently': 0
         },
-        'f_18_24': {
+        '2_18_24': {
             'percentage': 12, 'expected': total * (12 / 100), 'currently': 0
         },
-        'f_25_34': {
+        '2_25_34': {
             'percentage': 7, 'expected': total * (7 / 100), 'currently': 0
         },
-        'f_35_44': {
+        '2_35_44': {
             'percentage': 10, 'expected': total * (10 / 100), 'currently': 0
         },
-        'f_45_54': {
+        '2_45_54': {
             'percentage': 11, 'expected': total * (11 / 100), 'currently': 0
         },
-        'f_55_64': {
+        '2_55_64': {
             'percentage': 11, 'expected': total * (11 / 100), 'currently': 0
         },
     }
