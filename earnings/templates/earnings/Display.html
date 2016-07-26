@@ -37,7 +37,7 @@
 {% elif chosen_game == 'dictator' and role == 'A' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
   {% trans "In this task, you decided to transfer" %} {{dictator_player_a_transfer}} {% trans "to player B" %}. <br>
-  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_remaning}}. <br>
+  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_remaining}}. <br>
   {% trans "In total, your payoff for this task is" %} {{payoff}} {% trans "euros" %}. </p>
 
 {% elif chosen_game == 'dictator' and role == 'B' %}
@@ -68,6 +68,19 @@
         sec = moment(endTime).diff(startTime) / 1000;
 
     $('#timer').val(sec);
+
+    $('btn').click(function (e) {
+      e.preventDefault();
+
+      var fragment = '{{label}}'.split('|').filter(function (f) {
+        if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1) {
+          return f;
+        }
+      }).join('&');
+
+      var url = '{{redirect}}' + '&' + fragment + '&lang=' + extractLang('{{language_code}}');
+      window.location.href = url;
+    });
   });
 </script>
 

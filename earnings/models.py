@@ -59,6 +59,16 @@ class Subsession(BaseSubsession):
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
 
+        if 'language_code' in self.session.config:
+            self.session.vars['language_code'] = (
+                self.session.config['language_code']
+            )
+
+        if 'quota_redirects' in self.session.config:
+            self.session.vars['redirect'] = (
+                self.session.config['quota_redirects']['complete']
+            )
+
 
 class Group(BaseGroup):
     """Group model."""
@@ -80,7 +90,7 @@ class Group(BaseGroup):
             (
                 payoff, matched_id, role,
                 player.dictator_player_a_transfer,
-                player.dictator_player_a_remaning
+                player.dictator_player_a_remaining
             ) = self.payoff_dictator(player)
             player.calculation_from_game = 'dictator'
             player.calculation_from_matched_player_id = matched_id
@@ -90,7 +100,8 @@ class Group(BaseGroup):
                 payoff, matched_ids,
                 player.pg_player_b_transfer,
                 player.pg_player_c_transfer,
-                player.pg_player_d_transfer
+                player.pg_player_d_transfer,
+                player.pg_joint_sum
             ) = self.payoff_public_goods(player)
             player.calculation_from_game = 'public_goods'
             player.calculation_from_matched_player_id = matched_ids
@@ -217,7 +228,8 @@ class Group(BaseGroup):
             matched_ids,
             other_players_gave[0],
             other_players_gave[1],
-            other_players_gave[2]
+            other_players_gave[2],
+            joint_sum
         ]
 
     def strat_trust_a(self, player_a, player_a_gave):
@@ -426,7 +438,7 @@ class Player(BasePlayer):
 
     # Store possible data from transfers if chosen game is Dictator.
     dictator_player_a_transfer = models.CharField(blank=True, null=True)
-    dictator_player_a_remaning = models.CharField(blank=True, null=True)
+    dictator_player_a_remaining = models.CharField(blank=True, null=True)
 
     def calculate_payoff(self):
         """
