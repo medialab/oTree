@@ -7,14 +7,28 @@
     "answer_time_limit": 5
   },
 
+  "pauses": {
+    "message": [
+      {
+        "en-us": "<p>Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard <br/>(or button <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> if you're on a mobile device). <br/>In this part of the study, words representing categories will appear one-by-one in the middle of the screen.</p><p>The labels at the top will tell you which words go with each key.</p><p>When the item belongs to a category on the <strong style='color:pink'>left</strong>, press the <strong style='color:pink'>E</strong> key; when the item belongs to a category on the <strong style='color:turquoise'>right</strong>, press the <strong style='color:turquoise'>I</strong> key (or touch <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> buttons on a mobile device). Each word has an easy correct classification and belongs to only one category. If you make an error, an <strong style='color:red'>X</strong> will appear – fix the error by hitting the other key.</p><p>A few rules to remember:</p><p>Keep your fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys to enable rapid response.<br/>The test gives no results if you go slow. Please try to go as fast as possible<br/>Expect to make a few mistakes because of going fast. That's OK.<br/>For best results, avoid distractions and stay focused.</p><h3>Press any button (or touch anywhere) to begin.</h3>",
+        "fr-fr": "<p>Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard <br/>(or button <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> if you're on a mobile device). <br/>In this part of the study, words representing categories will appear one-by-one in the middle of the screen.</p><p>The labels at the top will tell you which words go with each key.</p><p>When the item belongs to a category on the <strong style='color:pink'>left</strong>, press the <strong style='color:pink'>E</strong> key; when the item belongs to a category on the <strong style='color:turquoise'>right</strong>, press the <strong style='color:turquoise'>I</strong> key (or touch <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> buttons on a mobile device). Each word has an easy correct classification and belongs to only one category. If you make an error, an <strong style='color:red'>X</strong> will appear – fix the error by hitting the other key.</p><p>A few rules to remember:</p><p>Keep your fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys to enable rapid response.<br/>The test gives no results if you go slow. Please try to go as fast as possible<br/>Expect to make a few mistakes because of going fast. That's OK.<br/>For best results, avoid distractions and stay focused.</p><h3>Press any button (or touch anywhere) to begin.</h3>",
+        "ko-kr": "<p>Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard <br/>(or button <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> if you're on a mobile device). <br/>In this part of the study, words representing categories will appear one-by-one in the middle of the screen.</p><p>The labels at the top will tell you which words go with each key.</p><p>When the item belongs to a category on the <strong style='color:pink'>left</strong>, press the <strong style='color:pink'>E</strong> key; when the item belongs to a category on the <strong style='color:turquoise'>right</strong>, press the <strong style='color:turquoise'>I</strong> key (or touch <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> buttons on a mobile device). Each word has an easy correct classification and belongs to only one category. If you make an error, an <strong style='color:red'>X</strong> will appear – fix the error by hitting the other key.</p><p>A few rules to remember:</p><p>Keep your fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys to enable rapid response.<br/>The test gives no results if you go slow. Please try to go as fast as possible<br/>Expect to make a few mistakes because of going fast. That's OK.<br/>For best results, avoid distractions and stay focused.</p><h3>Press any button (or touch anywhere) to begin.</h3>"
+      },
+      {
+        "en-us": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>",
+        "fr-fr": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>",
+        "ko-kr": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>"
+      },
+      {
+        "en-us": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>",
+        "fr-fr": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>",
+        "ko-kr": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
+      }
+    ]
+  },
+
   "trials": {
     "A": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy", "right": "Untrustworthy"},
-          "text": "<p>Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard <br/>(or button <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> if you're on a mobile device). <br/>In this part of the study, words representing categories will appear one-by-one in the middle of the screen.</p><p>The labels at the top will tell you which words go with each key.</p><p>When the item belongs to a category on the <strong style='color:pink'>left</strong>, press the <strong style='color:pink'>E</strong> key; when the item belongs to a category on the <strong style='color:turquoise'>right</strong>, press the <strong style='color:turquoise'>I</strong> key (or touch <strong style='color:pink'>LEFT</strong> and <strong style='color:turquoise'>RIGHT</strong> buttons on a mobile device). Each word has an easy correct classification and belongs to only one category. If you make an error, an <strong style='color:red'>X</strong> will appear – fix the error by hitting the other key.</p><p>A few rules to remember:</p><p>Keep your fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys to enable rapid response.<br/>The test gives no results if you go slow. Please try to go as fast as possible<br/>Expect to make a few mistakes because of going fast. That's OK.<br/>For best results, avoid distractions and stay focused.</p><h3>Press any button (or touch anywhere) to begin.</h3>"
-        }
-      },
       "name": "Trustworthy / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "Truthful", "fr-fr": "", "kr-ko": ""}},
@@ -38,12 +52,6 @@
       ]
     },
     "B": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Government", "right": "Untrustworthy"},
-          "text": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>"
-        }
-      },
       "name": "Trustworthy or Government / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Government", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "Constitution", "fr-fr": "", "kr-ko": ""}},
@@ -100,12 +108,6 @@
       ]
     },
     "C": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Government"},
-          "text": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
-        }
-      },
       "name": "Trustworthy / Untrustworthy or Government",
       "displayed": [
         {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Government", "correct": "right", "showing": {"en-us": "Constitution", "fr-fr": "", "kr-ko": ""}},
@@ -161,12 +163,6 @@
       ]
     },
     "D": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy"},
-          "text": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>"
-        }
-      },
       "name": "Trustworthy or Judicial System / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "Lawyer", "fr-fr": "", "kr-ko": ""}},
@@ -222,12 +218,6 @@
       ]
     },
     "E": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Judicial System"},
-          "text": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
-        }
-      },
       "name": "Trustworthy / Untrustworthy or Judicial System",
       "displayed": [
         {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Judicial System", "correct": "right", "showing": {"en-us": "Judge", "fr-fr": "", "kr-ko": ""}},
@@ -261,12 +251,6 @@
       ]
     },
     "F": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Media", "right": "Untrustworthy"},
-          "text": "Put your middle or index fingers on the <strong style='color:pink'>E</strong> and <strong style='color:turquoise'>I</strong> keys of your keyboard.<br/>Words representing the categories at the top will appear one-by-one in the middle of the screen.<br/>When the item belongs to a category on the left, press the <strong style='color:pink'>E</strong> key (or the <strong style='color:pink'>LEFT</strong> button on a mobile device).<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key (or the <strong style='color:turquoise'>RIGHT</strong> button on a mobile device).<br/>Words belong to only one category. If you make an error, an <span style=\"color:red\">X</span> will appear - fix the error by hitting the other key.<br/>This is a timed sorting task. <strong>GO AS FAST AS YOU CAN</strong> while making as few mistakes as possible.<br/>Going too slow or making too many errors will result in an uninterpretable score.<br/><h3>Press any button (or touch anywhere) to begin.</h3>"
-        }
-      },
       "name": "Trustworthy or Media / Untrustworthy",
       "displayed": [
         {"left": "Trustworthy<br /><span style=\"color:white\">or</span><br />Media", "right": "Untrustworthy", "correct": "left", "showing": {"en-us": "News", "fr-fr": "", "kr-ko": ""}},
@@ -322,12 +306,6 @@
       ]
     },
     "G": {
-      "message": {
-        "en-us": {
-          "words": {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Media"},
-          "text": "<strong>See above, the categories have changed.</strong> The words for sorting have changed as well.<br/>The rules, however, are the same.<br/>When the words belongs to a category on the left, press the <strong style='color:pink'>E</strong> key.<br/>When the item belongs to a category on the right, press the <strong style='color:turquoise'>I</strong> key. Words belong to only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press any button (or touch anywhere) to begin.</h3><br/>"
-        }
-      },
       "name": "Trustworthy / Untrustworthy or Media",
       "displayed": [
         {"left": "Trustworthy", "right": "Untrustworthy<br /><span style=\"color:white\">or</span><br />Media", "correct": "right", "showing": {"en-us": "Newspaper", "fr-fr": "", "kr-ko": ""}},

@@ -52,7 +52,8 @@ $(function(window, undefined) {
     var keyCodeLeft = null,
         keyCodeRight = null,
         answerTimeLimit = null,
-        leftAndRightKeys = {};
+        leftAndRightKeys = {},
+        pauseScreens = [];
 
     /**
      * Update text on UI - left and right category, stimuli word.
@@ -243,6 +244,7 @@ $(function(window, undefined) {
       keyCodeLeft = dataStore.config.keycodes.left;
       keyCodeRight = dataStore.config.keycodes.right;
       answerTimeLimit = dataStore.config.answer_time_limit;
+      pauseScreens = dataStore.pauses;
       leftAndRightKeys[keyCodeLeft] = 'left';
       leftAndRightKeys[keyCodeRight] = 'right';
     }
