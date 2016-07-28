@@ -57,19 +57,28 @@ $(function(window, undefined) {
 
     /**
      * Update text on UI - left and right category, stimuli word.
-     * Deal differenly if the data set is a pause message.
+     * Deal differenly if the data set is a pause message: display message
+     * and framing words grabbed for the *next* incoming trial.
      *
-     * @param  {Object} data Trial data.
+     * @param  {Object} data         Trial data.
+     * @param  {Object} queue        The entire payload of trials.
+     * @param  {int}    trialIndex   Index of currently shown trial/screen.
      * @return {void}
      */
-    function updateUIText(data) {
+    function updateUIText(data, queue, trialIndex) {
       if (!data.hasOwnProperty('message')) {
         hidePauseMessage();
         $uiCategoryLeft.html(data.left);
         $uiCategoryRight.html(data.right);
         $uiStimuli.html(data.stimuli);
       } else {
-        showPauseMessage(data.message[lang].text, data.message[lang].words);
+        showPauseMessage(
+          data.message[lang],
+          {
+            'left': queue[trialIndex+1].left,
+            'right': queue[trialIndex+1].right,
+          }
+        );
       }
     }
 
@@ -197,8 +206,6 @@ $(function(window, undefined) {
         reordered = reordered.concat(shuffleTrialPairs(order).push(tail));
       }
 
-      console.log(reordered)
-
       return reordered;
     }
 
@@ -214,15 +221,26 @@ $(function(window, undefined) {
       var resultTrials = [],
           id = 0;
 
+      // Boolean switch: starts truthy and gets toggled when we place
+      // a pause screen before a new set of trials.
+      // Gets toggled back to falsy when we get the inverted order.
+      var toggleOrderFlag = true;
+
+      // Push opening pause screen in.
+      resultTrials.push({message: pauseScreens.message[0]});
+
       // Randomize orders of set of trials,
       // then arrange the trials based on given order.
-      randomizeTrialsSets(order).forEach(function(character) {
-        // Queue in pause messages, if any.
-        if (data.trials[character].hasOwnProperty('message')) {
-          resultTrials.push({message: data.trials[character].message});
-        }
+      randomizeTrialsSets(order).forEach(function(character, i) {
+        shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
+          // Skip the first round, then on each new round,
+          // push in a relevant pause screen before actual trials.
+          if (i > 0 && j === 0) {
+            var k = toggleOrderFlag ? 1 : 2;
+            toggleOrderFlag = !toggleOrderFlag;
+            resultTrials.push({message: pauseScreens.message[k]});
+          }
 
-        shuffleArray(data.trials[character].displayed).forEach(function(displayed) {
           resultTrials.push({
             id: id,
             correctCategory: capitalize(displayed[displayed.correct]),
@@ -240,7 +258,7 @@ $(function(window, undefined) {
       return resultTrials;
     }
 
-    function setKeyCodesAndTimeLimitFromConfig(dataStore) {
+    function setConfiguration(dataStore) {
       keyCodeLeft = dataStore.config.keycodes.left;
       keyCodeRight = dataStore.config.keycodes.right;
       answerTimeLimit = dataStore.config.answer_time_limit;
@@ -259,7 +277,7 @@ $(function(window, undefined) {
      * @return {Object} A promise resolving with the results payload.
      */
     function loadBlocks(dataStore, order, lang) {
-      setKeyCodesAndTimeLimitFromConfig(dataStore);
+      setConfiguration(dataStore);
 
       var deferred = $.Deferred();
 
@@ -472,12 +490,13 @@ $(function(window, undefined) {
        * Show the specified trial by updating the UI to display its attribute
        * and returning the promise encapsulating the process of running it.
        *
-       * @param  {Object} trial The trial to display.
+       * @param  {Object} trial        The trial to display.
+       * @param  {int}    trialIndex   Index of currently shown trial/screen.
        * @return {Object} Promise.
        */
-      var showTrial = function(trial) {
-        console.log(trial);
-        updateUIText(trial);
+      var showTrial = function(trial, trialIndex) {
+        // console.log(trial);
+        updateUIText(trial, queue, trialIndex);
         return waitForAnswer(trial);
       };
 
@@ -488,7 +507,7 @@ $(function(window, undefined) {
         if (trialIndex < totalNumOfTrials) {
           currentTrialIndex++;
 
-          return showTrial(queue[trialIndex])
+          return showTrial(queue[trialIndex], trialIndex)
             .then(function() {
               return loadTrial(currentTrialIndex);
             });
