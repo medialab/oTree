@@ -66,3 +66,7 @@ input {
     left: 50%;
     margin-left: -300px;
 }
+
+.btn.btn-primary {
+    margin-bottom: 1em;
+}

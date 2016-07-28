@@ -741,22 +741,7 @@ area (500.000 to 1,5 million inhabitants)")),
         initial=None
     )
 
-    _08_highest_level_of_education_that_you_have_completed = models.CharField(
-        verbose_name=_(u'What is the highest level of education that \
-you have completed?'),
-        choices=(
-            ('Aucun diplôme', _(u'Aucun diplôme')),
-            ('Brevet des collèges', _(u'Brevet des collèges')),
-            ('CAP BEP ou équivalent', _(u'CAP BEP ou équivalent')),
-            ('Baccalauréat', _(u'Baccalauréat')),
-            ('Diplômé du supérieur court (BTS, DUT, etc.)', _(u'Diplômé du \
-supérieur court (BTS, DUT, etc.)')),
-            ('Licence (Bac + 3)', _(u'Licence (Bac + 3)')),
-            ("Master (Bac + 5) ou Doctorat", _(u"Master (Bac + 5) ou \
-Doctorat")),
-        ),
-        widget=widgets.RadioSelect()
-    )
+    _08_highest_level_of_education_that_you_have_completed = models.CharField()
 
     _09_which_of_these_best_describes_your_situation = models.CharField(
         verbose_name=_(u'Which of these best describes your situation?'),

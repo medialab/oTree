@@ -44,7 +44,11 @@ class Display(Page):
             'dictator_player_a_remaining': (
                 self.player.dictator_player_a_remaining
             ),
-            'redirect': self.session.vars['redirect_complete'],
+            'redirect': (
+                'redirects' in self.session.vars and
+                self.session.vars['redirects']['complete'] or
+                'http://sciences-po.fr'
+            ),
             'label': self.participant.label,
             'language_code': self.session.vars['language_code'],
         }
