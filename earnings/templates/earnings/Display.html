@@ -7,75 +7,54 @@
 <input id="timer" type="hidden" name="total_time" value="" />
 <br/><br/><br/><br/><br/>
 <h3>{% trans "Thank you very much for your participation in this study!" %}</h3>
-<p>{% trans "After being matched with the other players, your earnings have been calculated as" %}
-{{payoff}}
-{% trans "euros." %}</p>
+<p>{% trans "After being matched with the other players, your earnings have been calculated as" %} {{payoff}} {% trans "euros." %}</p>
 
 {% if chosen_game == 'trust' and role == 'A' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task One." %} <br>
-  {% trans "As Player A, you decided to transfer" %}
-  {{trust_game_player_a_transfer}}
+  {% trans "As Player A, you decided to transfer" %} {{trust_game_player_a_transfer}}
   {% trans "euros to player B." %} <br>
-  {% trans "Following, player B returned" %}
-  {{trust_game_player_b_transfer}}
+  {% trans "Following, player B returned" %} {{trust_game_player_b_transfer}}
   {% trans "to you." %} <br>
-  {% trans "Therefore, your total payoff for this task is" %}
-  {{payoff}}.</p>
+  {% trans "Therefore, your total payoff for this task is" %} {{payoff}}.</p>
 
 {% elif chosen_game == 'trust' and role == 'B' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task One." %}
-  {% trans "As Player B, you received" %}
-  {{trust_game_player_a_transfer}}
+  {% trans "As Player B, you received" %} {{trust_game_player_a_transfer}}
   {% trans "euros from player A." %}<br>
-  {% trans "You decided to transfer" %}
-  {{trust_game_player_b_transfer}}
+  {% trans "You decided to transfer" %} {{trust_game_player_b_transfer}}
   {% trans "euros back to player A." %}<br>
-  {% trans "Therefore, your total payoff for this task is" %}
-  {{payoff}}
+  {% trans "Therefore, your total payoff for this task is" %} {{payoff}}
   {% trans "euros." %}</p>
 
 {% elif chosen_game == 'public_goods' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Two." %} <br>
-  {% trans "In this task, you invested" %}
-  {{payoff}}
+  {% trans "In this task, you invested" %} {{payoff}}
   {% trans "into the joint project. The contributions of the other players were:" %}</p>
 
   <ul>
-    <li>{{pg_player_b_transfer}}
-    {% trans "euros" %}</li>
-    <li>{{pg_player_c_transfer}}
-    {% trans "euros" %}</li>
-    <li>{{pg_player_d_transfer}}
-    {% trans "euros" %}</li>
+    <li>{{pg_player_b_transfer}} {% trans "euros" %}</li>
+    <li>{{pg_player_c_transfer}} {% trans "euros" %}</li>
+    <li>{{pg_player_d_transfer}} {% trans "euros" %}</li>
   </ul>
 
-  <p>{% trans "Collectively, you invested" %}
-  {{pg_amount}}
-  {% trans ". Your earnings from the joint project after the multiplication factor are" %}
-  {{pg_multiplied_amount}}. <br>
-  {% trans "In total, your payoff for this task is" %}
-  {{payoff}}
+  <p>{% trans "Collectively, you invested" %} {{pg_amount}}
+  {% trans ". Your earnings from the joint project after the multiplication factor are" %} {{pg_multiplied_amount}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{payoff}}
   {% trans "euros" %}.</p>
 
 {% elif chosen_game == 'dictator' and role == 'A' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
-  {% trans "In this task, you decided to transfer" %}
-  {{dictator_player_a_transfer}}
+  {% trans "In this task, you decided to transfer" %} {{dictator_player_a_transfer}}
   {% trans "to player B" %}. <br>
-  {% trans "Your remaining endowment after the transfer is" %}
-  {{dictator_player_a_remaining}}. <br>
-  {% trans "In total, your payoff for this task is" %}
-  {{payoff}}
+  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_remaining}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{payoff}}
   {% trans "euros" %}. </p>
 
 {% elif chosen_game == 'dictator' and role == 'B' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
   {% trans "In this task, you were selected to be Player B" %}. <br>
-  {% trans "In this task, the Player A you were matched with decided to transfer you " %}
-  {{dictator_player_a_transfer}}. <br>
-  {% trans "In total, your payoff for this task is" %}
-  {{payoff}}
-  {% trans "euros" %}. </p>
+  {% trans "In this task, the Player A you were matched with decided to transfer you " %} {{dictator_player_a_transfer}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{payoff}} {% trans "euros" %}. </p>
 
 {% endif %}
 

@@ -432,6 +432,7 @@ class Player(BasePlayer):
     trust_game_player_b_transfer = models.CharField(blank=True, null=True)
 
     # Store possible data from transfers if chosen game is Public Goods.
+    pg_joint_sum = models.CharField(blank=True, null=True)
     pg_player_b_transfer = models.CharField(blank=True, null=True)
     pg_player_c_transfer = models.CharField(blank=True, null=True)
     pg_player_d_transfer = models.CharField(blank=True, null=True)
