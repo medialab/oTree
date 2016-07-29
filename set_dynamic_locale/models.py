@@ -5,6 +5,7 @@ from __future__ import division
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from django.utils.translation import activate, get_language
+import otree
 # </standard imports>
 
 author = 'Davy Peter Braun <davy.braun@sciencespo.fr>'
@@ -33,6 +34,15 @@ class Subsession(BaseSubsession):
         else:
             self.session.vars['lang'] = 'en-us'
         print(get_language()[:2])
+
+        if self.session.vars['lang'] == 'en-us':
+            otree.settings.REAL_WORLD_CURRENCY_CODE = 'USD'
+        elif self.session.vars['lang'] == 'fr-fr':
+            otree.settings.REAL_WORLD_CURRENCY_CODE = 'EUR'
+        elif self.session.vars['lang'] == 'ko-kr':
+            otree.settings.REAL_WORLD_CURRENCY_CODE = 'KRW'
+        else:
+            otree.settings.REAL_WORLD_CURRENCY_CODE = 'EUR'
 
 
 class Group(BaseGroup):
