@@ -18,7 +18,7 @@
 
       <div class="form-group required">
 
-      {% if lang == 'fr' %}
+
 
         <label class="control-label" for="id__10H_income">{% trans "How important would you say religion is in your own life?" %}</label>
         <div class="controls field-_10H_income">
@@ -38,7 +38,7 @@
           </ul>
         </div><!--- .controls -->
 
-        {% else %}
+        {% if lang != 'fr' %}
 
         <label class="control-label" for="id__10H_income">{% trans "Are you:" %}</label>
         <div class="controls  field-_10H_income">
@@ -54,7 +54,11 @@
           </ul>
         </div><!--- .controls -->
 
-      {% endif %}
+        {% else %}
+
+        <input type="hidden" id="id__10H_income_0" value="N/A" name="_10H_income" required="">
+
+        {% endif %}
       </div>
   </p>
 
