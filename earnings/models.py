@@ -80,7 +80,8 @@ class Group(BaseGroup):
         Save key variables and results in the model.
         """
         # Choose (and save reference in DB) a game.
-        chosen_game = self.choose_game(Constants.eligible_games)
+        # chosen_game = self.choose_game(Constants.eligible_games)
+        chosen_game = 'public_goods'
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
@@ -99,6 +100,7 @@ class Group(BaseGroup):
         elif chosen_game is 'public_goods':
             (
                 payoff, matched_ids,
+                player.pg_player_a_transfer,
                 player.pg_player_b_transfer,
                 player.pg_player_c_transfer,
                 player.pg_player_d_transfer,
@@ -209,6 +211,7 @@ class Group(BaseGroup):
 
     def payoff_public_goods(self, player):
         """Calculate and return payoff for Public Goods game."""
+        my_contrib = None
         payoff = None
         joint_sum = None
         base_money = Constants.allocated_amount
@@ -220,8 +223,8 @@ class Group(BaseGroup):
                 (
                     joint_sum, matched_ids, other_players_gave
                 ) = self.strat_public_goods(p)
-                p_gave = p.contribution
-                payoff = (base_money - p_gave) + (
+                my_contrib = p.contribution
+                payoff = (base_money - my_contrib) + (
                     (joint_sum * Public_goods_const.efficiency_factor) / 4
                 )
                 break
@@ -229,6 +232,7 @@ class Group(BaseGroup):
         return [
             payoff,
             matched_ids,
+            my_contrib,
             other_players_gave[0],
             other_players_gave[1],
             other_players_gave[2],
@@ -436,6 +440,7 @@ class Player(BasePlayer):
 
     # Store possible data from transfers if chosen game is Public Goods.
     pg_joint_sum = models.CharField(blank=True, null=True)
+    pg_player_a_transfer = models.CharField(blank=True, null=True)
     pg_player_b_transfer = models.CharField(blank=True, null=True)
     pg_player_c_transfer = models.CharField(blank=True, null=True)
     pg_player_d_transfer = models.CharField(blank=True, null=True)

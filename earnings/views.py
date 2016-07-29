@@ -46,11 +46,15 @@ class Display(Page):
             'trust_game_player_b_transfer': (
                 self.player.trust_game_player_b_transfer
             ),
+            'pg_player_a_transfer': self.player.pg_player_a_transfer,
             'pg_player_b_transfer': self.player.pg_player_b_transfer,
             'pg_player_c_transfer': self.player.pg_player_c_transfer,
             'pg_player_d_transfer': self.player.pg_player_d_transfer,
             'pg_amount': self.player.pg_joint_sum,
-            'pg_multiplied_amount': Public_goods_const.efficiency_factor,
+            'pg_multiplied_amount': round(
+                float(Public_goods_const.efficiency_factor) *
+                float(self.player.pg_joint_sum[1:]), 1
+            ),
             'dictator_player_a_transfer': (
                 self.player.dictator_player_a_transfer
             ),
