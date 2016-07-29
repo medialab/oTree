@@ -39,8 +39,7 @@
 
   <p>{% trans "Collectively, you invested" %} {{pg_amount}}
   {% trans ". Your earnings from the joint project after the multiplication factor are" %} {{pg_multiplied_amount}}. <br>
-  {% trans "In total, your payoff for this task is" %} {{payoff}}
-  {% trans "euros" %}.</p>
+  {% trans "In total, your payoff for this task is" %} {{payoff}}.</p>
 
 {% elif chosen_game == 'dictator' and role == 'A' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
