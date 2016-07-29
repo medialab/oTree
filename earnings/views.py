@@ -54,8 +54,8 @@ class Display(Page):
                 self.player.dictator_player_a_remaining
             ),
             'dictator_player_a_payoff': c(
-                self.get_dictator_base_money() -
-                self.get_dictator_player_a_transfer()
+                # self.get_dictator_base_money() -
+                10 - self.get_dictator_player_a_transfer()
             ),
             'redirect': (
                 'redirects' in self.session.vars and
