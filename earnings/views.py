@@ -22,6 +22,14 @@ class Display(Page):
     form_model = models.Player
     form_fields = ['donation']
 
+    def get_dictator_player_a_transfer(self):
+        return float(self.player.dictator_player_a_transfer)
+
+    def get_dictator_base_money(self):
+        if type(self.player.dictator_base_money) is str:
+            return float(self.player.dictator_base_money[1:].strip())
+        return float(self.player.dictator_base_money)
+
     def vars_for_template(self):
         """Variable in template."""
         return {
@@ -46,8 +54,8 @@ class Display(Page):
                 self.player.dictator_player_a_remaining
             ),
             'dictator_player_a_payoff': c(
-                float(self.player.dictator_base_money[1:]) -
-                float(self.player.dictator_player_a_transfer[1:])
+                self.get_dictator_base_money() -
+                self.get_dictator_player_a_transfer()
             ),
             'redirect': (
                 'redirects' in self.session.vars and
