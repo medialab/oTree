@@ -29,13 +29,4 @@
     </div>
   </div>
   <p><button class="btn btn-primary">{% trans "Next" %}</button></p>
-
-  {% for field in form %}
-    <div class="fieldWrapper">
-        {{ field.label_tag }} // {{ field.errors }}
-         {% if field.help_text %}
-          <p class="help">{{ field.help_text|safe }}</p>
-          {% endif %}
-      </div>
-  {% endfor %}
 {% endblock %}

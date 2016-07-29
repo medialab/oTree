@@ -46,15 +46,14 @@
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
   {% trans "In this task, you decided to transfer" %} {{dictator_player_a_transfer}}
   {% trans "to player B" %}. <br>
-  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_remaining}}. <br>
-  {% trans "In total, your payoff for this task is" %} {{payoff}}
-  {% trans "euros" %}. </p>
+  {% trans "Your remaining endowment after the transfer is" %} {{dictator_player_a_payoff}}. <br>
+  {% trans "In total, your payoff for this task is" %} {{dictator_player_a_payoff}}.</p>
 
 {% elif chosen_game == 'dictator' and role == 'B' %}
   <p>{% trans "You were selected to receive your reward based on your earnings in Task Three."%} <br>
   {% trans "In this task, you were selected to be Player B" %}. <br>
   {% trans "In this task, the Player A you were matched with decided to transfer you " %} {{dictator_player_a_transfer}}. <br>
-  {% trans "In total, your payoff for this task is" %} {{payoff}} {% trans "euros" %}. </p>
+  {% trans "In total, your payoff for this task is" %} {{dictator_player_a_transfer}} {% trans "euros" %}. </p>
 
 {% endif %}
 

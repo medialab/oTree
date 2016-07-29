@@ -31,7 +31,7 @@ class Simulation(Page):
     """Simulation for Public Goods."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'us': 10, 'ko': 10000}
+        max = {'fr': 10, 'en': 10, 'ko': 10000}
         return {
             'max': max[self.session.vars['lang']]
         }

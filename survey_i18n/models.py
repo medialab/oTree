@@ -27,9 +27,12 @@ class Subsession(BaseSubsession):
     """Subsession for Survey."""
 
     def before_session_starts(self):
-        if 'language_code' in self.session.config:
+        if (
+            'language_code' in self.session.config and
+            'lang' not in self.session.vars
+        ):
             self.session.vars['lang'] = (
-                self.session.config['language_code'][3:]
+                self.session.config['language_code'][:2]
             )
 
 
@@ -815,25 +818,7 @@ previous year?'),
         widget=widgets.RadioSelect()
     )
 
-    _10H_income = models.CharField(
-        verbose_name=_(u'How important would you say religion is in your \
-own life?'),
-        choices=(
-            ('0', _(u"0 - Not important at all")),
-            ('1', '1'),
-            ('2', '2'),
-            ('3', '3'),
-            ('4', '4'),
-            ('5', '5'),
-            ('6', '6'),
-            ('7', '7'),
-            ('8', '8'),
-            ('9', '9'),
-            ('10', _(u'10 - Very important')),
-            ("Don't know", _(u"Don't know")),
-        ),
-        widget=widgets.RadioSelect()
-    )
+    _10H_income = models.CharField()
 
     _11_other_participants_are_real_persons = models.CharField(
         verbose_name=_(u'The other participants in the first tasks are real \

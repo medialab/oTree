@@ -3,6 +3,7 @@
 from . import models
 from ._builtin import Page
 from public_goods.models import Constants as Public_goods_const
+from otree.common import Currency as c
 
 
 class Calculate(Page):
@@ -39,10 +40,14 @@ class Display(Page):
             'pg_amount': self.player.pg_joint_sum,
             'pg_multiplied_amount': Public_goods_const.efficiency_factor,
             'dictator_player_a_transfer': (
-                self.player.trust_game_player_a_transfer
+                self.player.dictator_player_a_transfer
             ),
             'dictator_player_a_remaining': (
                 self.player.dictator_player_a_remaining
+            ),
+            'dictator_player_a_payoff': c(
+                float(self.player.dictator_base_money[1:]) -
+                float(self.player.dictator_player_a_transfer[1:])
             ),
             'redirect': (
                 'redirects' in self.session.vars and

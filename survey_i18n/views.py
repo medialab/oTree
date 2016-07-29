@@ -50,7 +50,7 @@ class Survey02A(Page):
             'fr': _(u'Imagine the following situation: you won 1000 euros \
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?'),
-            'us': _(u'Imagine the following situation: you won $1000 \
+            'en': _(u'Imagine the following situation: you won $1000 \
 in a lottery. Considering your current situation, how much would you donate \
 to a good cause?'),
             'ko': _(u'Imagine the following situation: you won 1000 Won \
@@ -63,7 +63,7 @@ to a good cause?')
                 'max': 1000,
                 'currency': _(u'€')
             },
-            'us': {
+            'en': {
                 'max': 1000,
                 'currency': _(u'$')
             },
@@ -108,7 +108,7 @@ class Survey04(Page):
                 'present_25': _(u'the present worth 25 euros'),
                 'present_30': _(u'the present worth 30 euros'),
             },
-            'us': {
+            'en': {
                 'present_00': _(u'no present'),
                 'present_05': _(u'the present worth $5'),
                 'present_10': _(u'the present worth $10'),
@@ -184,7 +184,7 @@ class Survey05(Page):
     def vars_for_template(self):
         instructions = {
             'fr': _(u'When answering the following questions, please think about French institutions.'),
-            'us': _(u'When answering the following questions, please think about the US institutions.'),
+            'en': _(u'When answering the following questions, please think about the US institutions.'),
             'ko': _(u'When answering the following questions, please think about Korean institutions.'),
         }
         return {
@@ -223,7 +223,7 @@ class Survey07(Page):
     def vars_for_template(self):
         label_what_year = {
             'fr': _(u'In what year did you arrive in France?'),
-            'us': _(u'In what year did you arrive in the US?'),
+            'en': _(u'In what year did you arrive in the US?'),
             'ko': _(u'In what year did you arrive in Korea?'),
         }
 
@@ -260,7 +260,7 @@ class Survey08(Page):
                 'f06': _(u'Post-graduate degree'),
                 'f07': ''
             },
-            'us': {
+            'en': {
                 'f01': _(u'Less than high school'),
                 'f02': _(u'High school'),
                 'f03': _(u'Some college'),
@@ -309,7 +309,7 @@ class Survey10A(Page):
     def vars_for_template(self):
         currency = {
             'fr': _(u'€'),
-            'us': _(u'$'),
+            'en': _(u'$'),
             'ko': _(u'Won')
         }
 
@@ -339,7 +339,7 @@ class Survey10C(Page):
     def vars_for_template(self):
         currency = {
             'fr': _(u'€'),
-            'us': _(u'$'),
+            'en': _(u'$'),
             'ko': _(u'Won')
         }
 
@@ -366,7 +366,7 @@ class Survey10D(Page):
                 'C': 25000,
                 'D': 32000
             },
-            'us': {
+            'en': {
                 'A': 15000,
                 'B': 20000,
                 'C': 25000,

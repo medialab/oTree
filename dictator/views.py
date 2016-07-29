@@ -30,7 +30,7 @@ class Simulation(Page):
     """Simulation page."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'us': 10, 'ko': 10000}
+        max = {'fr': 10, 'en': 10, 'ko': 10000}
         return {
             'max': max[self.session.vars['lang']]
         }
@@ -46,7 +46,7 @@ class Introduction(Page):
     def vars_for_template(self):
         return {
             'fr': {'amount': _(u'10 euros')},
-            'us': {'amount': _(u'$10')},
+            'en': {'amount': _(u'$10')},
             'ko': {'amount': _(u'12.000 Won')},
         }
 
@@ -60,7 +60,7 @@ class Offer(Page):
     def vars_for_template(self):
         return {
             'fr': {'amount': _(u'10 euros')},
-            'us': {'amount': _(u'$10')},
+            'en': {'amount': _(u'$10')},
             'ko': {'amount': _(u'12.000 Won')},
         }
 

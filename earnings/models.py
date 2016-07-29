@@ -90,7 +90,8 @@ class Group(BaseGroup):
             (
                 payoff, matched_id, role,
                 player.dictator_player_a_transfer,
-                player.dictator_player_a_remaining
+                player.dictator_player_a_remaining,
+                player.dictator_base_money
             ) = self.payoff_dictator(player)
             player.calculation_from_game = 'dictator'
             player.calculation_from_matched_player_id = matched_id
@@ -195,13 +196,15 @@ class Group(BaseGroup):
                 # We receive the money the chosen "Player A" has given away.
                 else:
                     payoff, matched_id = self.strat_dictator(p)
-                    player_b_transfer = payoff
+                    player_a_transfer = payoff
+                    player_b_transfer = 0
                 break
 
         return [
             payoff, matched_id, role,
             player_a_transfer,
-            player_b_transfer
+            player_b_transfer,
+            base_money
         ]
 
     def payoff_public_goods(self, player):
@@ -440,6 +443,7 @@ class Player(BasePlayer):
     # Store possible data from transfers if chosen game is Dictator.
     dictator_player_a_transfer = models.CharField(blank=True, null=True)
     dictator_player_a_remaining = models.CharField(blank=True, null=True)
+    dictator_base_money = models.CharField(blank=True, null=True)
 
     def calculate_payoff(self):
         """
