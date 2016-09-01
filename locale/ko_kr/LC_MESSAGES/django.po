@@ -3,19 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-25 11:45+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2016-07-22 16:15+0200\n"
+"PO-Revision-Date: 2016-08-17 21:26+0900\n"
+"Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Bookmarks: -1,18,147,276,406,536,-1,-1,-1,-1\n"
 
 #: _templates/global/Introduction.html:7 _templates/global/Question.html:27
 #: _templates/global/Simulation.html:7
@@ -91,300 +92,165 @@ msgstr ""
 #: trust/templates/trust/Send.html:21 trust/templates/trust/SendBack.html:29
 #: trust/templates/trust/Simulation.html:166
 msgid "Next"
-msgstr ""
+msgstr "다음"
 
 #: dictator/templates/dictator/Instructions.html:8
 msgid "Task Three: Introduction"
-msgstr ""
+msgstr "과제 3: 소개"
 
 #: dictator/templates/dictator/Instructions.html:10
 msgid ""
 "This last task involves <strong>two participants</strong> – Participant A "
 "and Participant B."
-msgstr ""
+msgstr "이번 마지막 과제는 두 명의 참가자와 함께합니다 - 참가자 A와 참가자 B."
 
 #: dictator/templates/dictator/Instructions.html:11
 msgid ""
 "Remember, the other participant is different from the ones you interacted "
 "with in the previous two tasks."
 msgstr ""
+"다른 참가자는 이전 두 과제에서 함께했던 참가자와는 다른 사람임을 기억하십시"
+"오."
 
 #: dictator/templates/dictator/Instructions.html:12
 #: public_goods/templates/public_goods/Instructions.html:11
 msgid "These are the rules:"
-msgstr ""
+msgstr "규칙은 다음과 같습니다:"
 
 #: dictator/templates/dictator/Instructions.html:19
 msgid ""
 "Your role (Participant A or Participant B) is revealed to you at the "
 "beginning of the task."
-msgstr ""
+msgstr "당신의 역할(참가자 A 또는 참가자 B)은 과제를 시작할 때 제시됩니다."
 
 #: dictator/templates/dictator/Instructions.html:20
 msgid ""
 "Because this task is simple, there will be no simulator to test out "
 "different choices."
 msgstr ""
+"이 과제는 간단하기 때문에, 여러 선택지들을 시도해 볼 예행연습이 없습니다."
 
 #: dictator/templates/dictator/Offer.html:6
 msgid "Task Three: Real Decision"
-msgstr ""
+msgstr "과제 3: 본 결정 "
 
 #: dictator/templates/dictator/Offer.html:7
 msgid ""
 "This is the real third task. Once you have made your decision and clicked "
 "the “Next” button, you cannot return to this screen."
 msgstr ""
+"이 것이 세번째 본 과제 입니다. 일단 결정을 내리고 \"다음\"버튼을 누른 후에"
+"는, 다시 이 화면으로 돌아올 수 없습니다."
 
 #: dictator/templates/dictator/Offer.html:8 trust/templates/trust/Send.html:10
 msgid "You were selected to be in the role of <strong>Participant A</strong>."
-msgstr ""
+msgstr "당신의 역할은 참가자 A 입니다."
 
 #: dictator/templates/dictator/Offer.html:9
 msgid ""
 "You have {{amount}} in your possession. <strong>How much do you want to "
 "transfer to Participant B?</strong>"
 msgstr ""
+"당신은 {{양}} 만큼의 소유가 있습니다. 그 중 참가자 B에게 얼마나 많은 양을 보"
+"내시겠습니까?"
 
 #: dictator/templates/dictator/Simulation.html:6
 msgid "Task Three: Simulation"
-msgstr ""
+msgstr "과제 3: 시뮬레이션"
 
 #: dictator/templates/dictator/Simulation.html:8
 msgid ""
 "If you wish, you can use this test screen to play with different choices of "
 "Participant A, to understand the task better."
 msgstr ""
+"과제에 대한 이해를 높이기 위하여 참가자 A의 선택지에 대한 본 테스트 화면을 이"
+"용하셔도 좋습니다."
 
 #: dictator/templates/dictator/Simulation.html:9
 #: public_goods/templates/public_goods/Simulation.html:9
 msgid "Whenever you are ready to proceed to the real task, click next."
-msgstr ""
+msgstr "본 과제로 넘어갈 준비가 되면 언제든지 '다음'을 클릭해주세요."
 
 #: dictator/templates/dictator/Simulation.html:48
 #: public_goods/templates/public_goods/Simulation.html:93
 #: trust/templates/trust/Simulation.html:149
 msgid "Amount sent by Participant A"
-msgstr ""
+msgstr "참가자 A가 보낸 양"
 
 #: dictator/templates/dictator/Simulation.html:50
 #: public_goods/templates/public_goods/Simulation.html:113
 #: trust/templates/trust/Simulation.html:151
 #: trust/templates/trust/Simulation.html:159
 msgid "Send"
-msgstr ""
+msgstr "보내기"
 
 #: dictator/views.py:48 dictator/views.py:61 public_goods/views.py:56
 msgid "10 euros"
-msgstr ""
+msgstr "10원 "
 
 #: dictator/views.py:49 dictator/views.py:62
 msgid "12.000 Won"
-msgstr ""
+msgstr "12.000원"
 
 #: earnings/templates/earnings/Calculate.html:7
 msgid "next"
-msgstr ""
+msgstr "다음"
 
-#: earnings/templates/earnings/Display.html:9
 #: earnings/templates/earnings/Earnings.html:7
 #: survey/templates/survey/EndGame.html:9
 #: survey_i18n/templates/survey_i18n/EndGame.html:9
 #: survey_korea/templates/survey_korea/EndGame.html:9
 msgid "Thank you very much for your participation in this study!"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:10
-msgid ""
-"After being matched with the other players, your earnings have been "
-"calculated as"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:10
-#: earnings/templates/earnings/Display.html:20
-#: earnings/templates/earnings/Display.html:25
-msgid "euros."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:12
-#: earnings/templates/earnings/Display.html:22
-msgid ""
-"You were selected to receive your reward based on your earnings in Task One."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:13
-msgid "As Player A, you decided to transfer"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:13
-#: earnings/templates/earnings/Display.html:18
-msgid "euros to player B."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:14
-#: earnings/templates/earnings/Display.html:19
-msgid "Following, player B returned"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:14
-msgid "to you."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:15
-#: earnings/templates/earnings/Display.html:25
-msgid "Therefore, your total payoff for this task is"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:19
-msgid "euros to you."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:23
-msgid "As Player B, you received"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:23
-msgid "euros from player A."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:24
-msgid "You decided to transfer"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:24
-msgid "euros back to player A."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:27
-msgid ""
-"You were selected to receive your reward based on your earnings in Task Two."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:28
-msgid "In this task, you invested"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:28
-msgid "into the joint project. The contributions of the other players were:"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:31
-#: earnings/templates/earnings/Display.html:32
-#: earnings/templates/earnings/Display.html:33
-#: earnings/templates/earnings/Display.html:37
-#: earnings/templates/earnings/Display.html:42
-msgid "euros"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:36
-msgid "Collectively, you invested"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:36
-msgid ""
-". Your earnings from the joint project after the multiplication factor are"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:37
-#: earnings/templates/earnings/Display.html:42
-msgid "In total, your payoff for this task is"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:39
-msgid ""
-"You were selected to receive your reward based on your earnings in Task "
-"Three."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:40
-msgid "In this task, you decided to transfer"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:40
-msgid "to player B"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:41
-msgid "Your remaining endowment after the transfer is"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:44
-msgid ""
-"Out of your earnings, you have the option to donate an amount of your choice "
-"to UNICEF, who work with children and mothers in developing countries."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:45
-msgid ""
-"You can find further information about their work here. Please enter the "
-"amount you wish to donate to UNICEF:"
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:49
-#: survey_i18n/templates/survey_i18n/EndGame.html:49
-#: survey_korea/templates/survey_korea/EndGame.html:49
-msgid "(Should you not wish to donate anything at this point, please enter 0)."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:50
-#: survey_i18n/templates/survey_i18n/EndGame.html:50
-#: survey_korea/templates/survey_korea/EndGame.html:50
-msgid ""
-"Once again, thank you very much for participating. You will now be "
-"redirected in order to collect your reward."
-msgstr ""
-
-#: earnings/templates/earnings/Display.html:52
-#: survey/templates/survey/EndGame.html:21
-#: survey_i18n/templates/survey_i18n/EndGame.html:52
-#: survey_korea/templates/survey_korea/EndGame.html:52
-msgid "Finish study"
-msgstr ""
+msgstr "본 연구에 참여해 주셔서 대단히 감사드립니다!"
 
 #: earnings/templates/earnings/Earnings.html:8
 #: survey/templates/survey/EndGame.html:10
 msgid "Your survey responses have been correctly recorded. "
-msgstr ""
+msgstr "여러분의 답변이 성공적으로 저장되었습니다."
 
 #: earnings/templates/earnings/Earnings.html:10
 #: survey/templates/survey/EndGame.html:12
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as "
-msgstr ""
+msgstr "여러분의 보상은, 다른 참가자들의 수행 결과에 따라 결정됩니다."
 
 #: earnings/templates/earnings/Earnings.html:11
 msgid "This money will be added to your HIT reward as a bonus."
-msgstr ""
+msgstr "이 수입은 HIT 보상에 보너스로 추가됩니다."
 
 #: earnings/templates/earnings/Earnings.html:13
 #: survey/templates/survey/EndGame.html:20
 msgid "Once again, thank you very much for participating."
-msgstr ""
+msgstr "다시 한번, 참여해 주셔서 대단히 감사합니다."
 
 #: iat/templates/iat/EndGame.html:12
 msgid "Congratulations!"
-msgstr ""
+msgstr "축하드립니다!"
 
 #: iat/templates/iat/EndGame.html:13
 msgid ""
 "You have now completed the sorting task. We will now move on to the last "
 "part of the study, where you are asked a few questions about yourself."
 msgstr ""
+"이제 분류 작업을 완료했습니다. 이제 당신에 대하여 묻는 문항이 있는, 본 과제"
+"의 마지막 부분으로 이동합니다."
 
 #: iat/templates/iat/EndGame.html:18
 msgid "Thank you for completing the survey!"
-msgstr ""
+msgstr "설문을 완료해 주셔서 감사합니다!"
 
 #: iat/templates/iat/EndGame.html:19
 msgid ""
 "Please enter the following code into the Mturk interface: <strong>2064921</"
 "strong>."
 msgstr ""
+"Mturk 인터페이스에 다음의 코드를 입력하여 주시기 바랍니다: <strong>2064921</"
+"strong>."
 
 #: iat/templates/iat/Instructions.html:9
 msgid "Words Task"
-msgstr ""
+msgstr "단어 분류 과제"
 
 #: iat/templates/iat/Instructions.html:12
 msgid ""
@@ -393,6 +259,9 @@ msgid ""
 "categories will appear one-by-one in the middle of the screen. Two labels at "
 "the top will tell you which words go with each key."
 msgstr ""
+"양손의 중지 혹은 검지 손가락을 각각 <strong>E</strong>와 <strong>I</strong>"
+"키 위에 올려주세요. 이번 과제는, 특정 범주와 관련된 낱말들이 화면 가운데에 하"
+"나씩 나타날 것입니다. 단어들을 분류할 두 범주가 화면 상단에 나타납니다."
 
 #: iat/templates/iat/Instructions.html:13
 msgid ""
@@ -402,15 +271,21 @@ msgid ""
 "easy correct classification and belongs to only one category. If you make an "
 "error, an X will appear – fix the error by hitting the other key."
 msgstr ""
+"화면에 등장하는 단어가 <strong>왼쪽</strong>범주에 속하면, <strong>E</strong>"
+"를 눌러주시고,<strong>오른쪽</strong> 범주에 속하면 <strong>I</strong> 를 눌"
+"러주세요. 단어를 분류하는 작업은 전혀 어렵지 않고, 각 단어들은 오직 한 범주에"
+"만 속합니다. 잘못 분류하셨을 경우에는 X 표시가 나타납니다. X표시가 나타날 "
+"때, 선택하신 것의 반대 범주에 해당하는 키를 눌러 정정해주세요."
 
 #: iat/templates/iat/Instructions.html:14
 #: iat/templates/iat/Instructions.html:27
 msgid "A few rules to remember:"
-msgstr ""
+msgstr "규칙은 다음과 같습니다:"
 
 #: iat/templates/iat/Instructions.html:16
 msgid "Keep your index fingers on the E and I keys to enable rapid response."
 msgstr ""
+"양손의 검지 손가락을 E와 I 키 위에 올려두시면, 빠르게 반응할 수 있습니다."
 
 #: iat/templates/iat/Instructions.html:17
 #: iat/templates/iat/Instructions.html:30
@@ -418,20 +293,22 @@ msgid ""
 "The test gives no results if you go slow. Please try to go as fast as "
 "possible."
 msgstr ""
+"만약, 느리게 반응하실 경우 결과가 나타나지 않으므로 가능한 빠른 속도로 반응해"
+"주세요."
 
 #: iat/templates/iat/Instructions.html:18
 #: iat/templates/iat/Instructions.html:31
 msgid "Expect to make a few mistakes because of going fast. That's OK."
-msgstr ""
+msgstr "빠른 반응으로 인한 실수가 있을 수 있지만, 큰 문제가 되지 않습니다."
 
 #: iat/templates/iat/Instructions.html:19
 #: iat/templates/iat/Instructions.html:32
 msgid "For best results, avoid distractions and stay focused."
-msgstr ""
+msgstr "최상의 결과를 얻기 위해, 주의를 집중해 주세요."
 
 #: iat/templates/iat/Instructions.html:21
 msgid "Press the space bar to begin."
-msgstr ""
+msgstr "시작하시려면 스페이스바를 눌러주세요."
 
 #: iat/templates/iat/Instructions.html:25
 msgid ""
@@ -440,6 +317,9 @@ msgid ""
 "representing categories will appear one-by-one in the middle of the screen. "
 "Two labels at the top will tell you which words go with each key."
 msgstr ""
+"양손의 중지 혹은 검지 손가락을 각각 <strong>E</strong>와 <strong>I</strong>"
+"키 위에 올려주세요. 이번 과제는 특정 범주와 관련된 낱말들이 화면 가운데에 하"
+"나씩 나타날 것입니다. 단어들을 분류할 두 범주가 화면 상단에 나타납니다."
 
 #: iat/templates/iat/Instructions.html:26
 msgid ""
@@ -449,16 +329,22 @@ msgid ""
 "has an easy correct classification and belongs to only one category. If you "
 "make an error, an X will appear – fix the error by hitting the other key."
 msgstr ""
+"화면에 등장하는 단어가 <strong>왼쪽</strong>범주에 속하면, <strong>E</strong>"
+"를 눌러주시고,<strong>오른쪽</strong> 범주에 속하면 <strong>I</strong> 를 눌"
+"러주세요. 단어를 분류하는 것은 전혀 어렵지 않으며, 각 단어들은 오직 한 범주에"
+"만 속합니다. 잘못 분류하셨을 경우에는 X 표시가 나타납니다. X표시가 나타날 "
+"때, 선택하신 것의 반대 범주에 해당하는 키를 눌러 정정해주세요."
 
 #: iat/templates/iat/Instructions.html:29
 msgid ""
 "Keep your index fingers on the LEFT and RIGHT buttons to enable rapid "
 "response."
 msgstr ""
+"양손의 검지 손가락을 E와 I 키 위에 올려두시면, 빠르게 반응할 수 있습니다."
 
 #: iat/templates/iat/Instructions.html:34
 msgid "Tap the NEXT button to begin."
-msgstr ""
+msgstr "시작하시려면 NEXT 버튼을 터치해주세요."
 
 #: iat/templates/iat/TranslationWords.html:3
 msgid ""
@@ -484,6 +370,26 @@ msgid ""
 "That's OK.<br/>For best results, avoid distractions and stay focused.</"
 "p><h3>Press any button (or touch anywhere) to begin.</h3>"
 msgstr ""
+"양손의 중지 혹은 검지 손가락을 각각 <strong style='color:pink'>E</strong>와 "
+"<strong style='color:turquoise'>I</strong> 키에 (만약 모바일 기계를 통해 이"
+"번 과제에 참가하시는 경우에는 버튼 <strong style='color:pink'>LEFT</strong> "
+"와 <strong style='color:turquoise'>RIGHT</strong>에) 놓아주세요. <br/>이번 과"
+"제에서는 특정 범주와 관련된 낱말들이 화면 가운데에 하나씩 나타날 것입니다. </"
+"p><p>화면 상단에는 단어들을 분류할 두 범주를 보여드립니다. </p><p>화면에 등장"
+"하는 단어가 <strong style='color:pink'>왼쪽</strong>범주에 속하면, <strong "
+"style='color:pink'>E</strong> 를 눌러주시고,<strong style='color:turquoise'>"
+"오른쪽</strong> 범주에 속하면 <strong style='color:turquoise'>I</strong> 를 "
+"눌러주세요(혹은 <strong style='color:pink'>LEFT</strong>와 <strong "
+"style='color:turquoise'>RIGHT</strong> 버튼을 터치해주세요). 단어를 분류하는 "
+"것은 전혀 어렵지 않으며, 각 단어들은 오직 한 범주에만 속합니다. 잘못 분류하셨"
+"을 경우에는 <strong style='color:red'>X</strong>표시가 나타납니다. X표시가 나"
+"타날 때, 선택하신 것의 반대 범주에 해당하는 키를 눌러 정정해주세요. </p><p>규"
+"칙은 다음과 같습니다:</p><p>양손의 손가락을 <strong style='color:pink'>E</"
+"strong> 와 <strong style='color:turquoise'>I</strong> 위에 올려 두시면 빠르"
+"게 응답 할 수 있습니다. <br/>만약 느리게 응답할 경우 결과가 나오지 않으니 가"
+"능한 빠른 속도로 반응해주세요.<br/> 빠른 반응으로 인한 실수가 있을 수 있지"
+"만, 큰 문제가 되지 않습니다. <br/>최상의 결과를 얻기 위해, 주의를 집중해주세"
+"요. </p><h3> 시작 버튼을 눌러주세요(아무곳이나 터치해 주세요).</h3>"
 
 #: iat/templates/iat/TranslationWords.html:4
 msgid ""
@@ -498,6 +404,17 @@ msgid ""
 "strong> button on a mobile device).<br/>Words belong to only one category. "
 "If you make an error, an <span style=\\"
 msgstr ""
+"양손의 검지 손가락을 각각 <strong style='color:pink'>E</strong>와 <strong "
+"style='color:turquoise'>I</strong> 키 위에 올려주세요. <br/>각 범주에 속하는 "
+"단어들이 하나씩 화면 중간에 나타날 것입니다.\n"
+"<br/>화면에 등장하는 단어가 왼쪽 범주에 속하면, <strong style='color:"
+"pink'>E</strong> (모바일 기계로 참여할 경우, <strong style='color:"
+"pink'>LEFT</strong>)를 눌러주시고 ,오른쪽 범주에 속하면 <strong style='color:"
+"turquoise'>I</strong> (모바일 기계로 참여할 경우, <strong style='color:"
+"turquoise'>RIGHT</strong>)를 눌러주세요. <br/>각 단어들은 오직 한 범주에만 속"
+"하며, 잘못 분류하셨을 경우에는 <strong style='color:red'>X</strong>표시가 나"
+"타납니다. X표시가 나타날 때, 선택하셨던 것의 반대 범주에 해당하는 키를 눌러 "
+"정정해주세요."
 
 #: iat/templates/iat/TranslationWords.html:5
 msgid ""
@@ -509,144 +426,153 @@ msgid ""
 "only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press "
 "any button (or touch anywhere) to begin.</h3><br/>"
 msgstr ""
+"<strong>위의 화면과 같이 범주의 위치가 바뀌었습니다.</strong> 각 범주에 분류"
+"할 단어들 또한 바뀌었습니다.<br/> 분류하시는 방법은 앞서 하신 과제의 방법과 "
+"동일합니다.<br/>화면에 등장하는 단어가 왼쪽 범주에 속하면, <strong "
+"style='color:pink'>E</strong> 를 눌러주시고 <strong style='color:turquoise'>"
+"오른쪽</strong> 범주에 속하면 <strong style='color:turquoise'>I</strong> 를 "
+"눌러주세요.\n"
+"각 단어들은 오직 한 범주에만 속합니다. <br/><strong>가능한 빨리 반응해 주세"
+"요.</strong><br/><h3> 시작하시려면 아무 버튼이나 눌러주세요 (혹은 아무곳이나 "
+"터치해주세요).</h3><br/>"
 
 #: iat/templates/iat/TranslationWords.html:7
 #: iat/templates/iat/TranslationWords.html:9
 msgid "Trustworthy --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수없는 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:8
 #: iat/templates/iat/TranslationWords.html:17
 #: iat/templates/iat/TranslationWords.html:24
 msgid "Trustworthy --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수없는 ---도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:10
 #: iat/templates/iat/TranslationWords.html:14
 #: iat/templates/iat/TranslationWords.html:23
 msgid "Trustworthy --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:11
 msgid "Trustworthy --- Untrustworthy --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---투명한"
 
 #: iat/templates/iat/TranslationWords.html:12
 #: iat/templates/iat/TranslationWords.html:19
 msgid "Trustworthy --- Untrustworthy --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---타락한"
 
 #: iat/templates/iat/TranslationWords.html:13
 #: iat/templates/iat/TranslationWords.html:22
 msgid "Trustworthy --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:15
 #: iat/templates/iat/TranslationWords.html:18
 msgid "Trustworthy --- Untrustworthy --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:16
 msgid "Trustworthy --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---가능한"
 
 #: iat/templates/iat/TranslationWords.html:20
 msgid "Trustworthy --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:21
 msgid "Trustworthy --- Untrustworthy --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 ---능숙한"
 
 #: iat/templates/iat/TranslationWords.html:26
 #: iat/templates/iat/TranslationWords.html:27
 msgid "Trustworthy or Government --- Untrustworthy --- Constitution"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:28
 #: iat/templates/iat/TranslationWords.html:29
 #: iat/templates/iat/TranslationWords.html:30
 msgid "Trustworthy or Government --- Untrustworthy --- Regulation"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 규칙"
 
 #: iat/templates/iat/TranslationWords.html:31
 #: iat/templates/iat/TranslationWords.html:32
 msgid "Trustworthy or Government --- Untrustworthy --- State"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 국가"
 
 #: iat/templates/iat/TranslationWords.html:33
 #: iat/templates/iat/TranslationWords.html:34
 #: iat/templates/iat/TranslationWords.html:35
 msgid "Trustworthy or Government --- Untrustworthy --- Civil servants"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:36
 #: iat/templates/iat/TranslationWords.html:37
 #: iat/templates/iat/TranslationWords.html:38
 msgid "Trustworthy or Government --- Untrustworthy --- Public administration"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 공공 행정"
 
 #: iat/templates/iat/TranslationWords.html:39
 #: iat/templates/iat/TranslationWords.html:40
 msgid "Trustworthy or Government --- Untrustworthy --- Politicians"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 정치인"
 
 #: iat/templates/iat/TranslationWords.html:41
 #: iat/templates/iat/TranslationWords.html:42
 #: iat/templates/iat/TranslationWords.html:43
 msgid "Trustworthy or Government --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:44
 #: iat/templates/iat/TranslationWords.html:45
 #: iat/templates/iat/TranslationWords.html:46
 msgid "Trustworthy or Government --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:47
 #: iat/templates/iat/TranslationWords.html:48
 #: iat/templates/iat/TranslationWords.html:49
 msgid "Trustworthy or Government --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:50
 #: iat/templates/iat/TranslationWords.html:51
 msgid "Trustworthy or Government --- Untrustworthy --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:52
 #: iat/templates/iat/TranslationWords.html:53
 #: iat/templates/iat/TranslationWords.html:54
 msgid "Trustworthy or Government --- Untrustworthy --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:56
 #: iat/templates/iat/TranslationWords.html:57
 #: iat/templates/iat/TranslationWords.html:58
 #: iat/templates/iat/TranslationWords.html:59
 msgid "Trustworthy or Government --- Untrustworthy --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:60
 #: iat/templates/iat/TranslationWords.html:61
 #: iat/templates/iat/TranslationWords.html:62
 #: iat/templates/iat/TranslationWords.html:63
 msgid "Trustworthy or Government --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:64
 #: iat/templates/iat/TranslationWords.html:65
 #: iat/templates/iat/TranslationWords.html:66
 #: iat/templates/iat/TranslationWords.html:67
 msgid "Trustworthy or Government --- Untrustworthy --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:68
 #: iat/templates/iat/TranslationWords.html:69
 #: iat/templates/iat/TranslationWords.html:70
 #: iat/templates/iat/TranslationWords.html:71
 msgid "Trustworthy or Government --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:72
 #: iat/templates/iat/TranslationWords.html:73
@@ -654,68 +580,68 @@ msgstr ""
 #: iat/templates/iat/TranslationWords.html:75
 #: iat/templates/iat/TranslationWords.html:76
 msgid "Trustworthy or Government --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 정부 --- 신뢰 할 수 없는 --- 거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:78
 #: iat/templates/iat/TranslationWords.html:79
 #: iat/templates/iat/TranslationWords.html:80
 msgid "Trustworthy --- Untrustworthy or Government --- Constitution"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:81
 #: iat/templates/iat/TranslationWords.html:82
 msgid "Trustworthy --- Untrustworthy or Government --- Regulation"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 규칙"
 
 #: iat/templates/iat/TranslationWords.html:83
 #: iat/templates/iat/TranslationWords.html:84
 msgid "Trustworthy --- Untrustworthy or Government --- State"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 나라"
 
 #: iat/templates/iat/TranslationWords.html:85
 #: iat/templates/iat/TranslationWords.html:86
 #: iat/templates/iat/TranslationWords.html:87
 msgid "Trustworthy --- Untrustworthy or Government --- Civil servants"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:88
 #: iat/templates/iat/TranslationWords.html:89
 msgid "Trustworthy --- Untrustworthy or Government --- Public administration"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 ---  행정"
 
 #: iat/templates/iat/TranslationWords.html:90
 #: iat/templates/iat/TranslationWords.html:91
 msgid "Trustworthy --- Untrustworthy or Government --- Politicians"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 정치인"
 
 #: iat/templates/iat/TranslationWords.html:92
 #: iat/templates/iat/TranslationWords.html:93
 #: iat/templates/iat/TranslationWords.html:94
 msgid "Trustworthy --- Untrustworthy or Government --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:95
 #: iat/templates/iat/TranslationWords.html:96
 #: iat/templates/iat/TranslationWords.html:97
 msgid "Trustworthy --- Untrustworthy or Government --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:98
 #: iat/templates/iat/TranslationWords.html:99
 #: iat/templates/iat/TranslationWords.html:100
 msgid "Trustworthy --- Untrustworthy or Government --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 거짓말 하는"
 
 #: iat/templates/iat/TranslationWords.html:101
 #: iat/templates/iat/TranslationWords.html:102
 #: iat/templates/iat/TranslationWords.html:103
 msgid "Trustworthy --- Untrustworthy or Government --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:104
 #: iat/templates/iat/TranslationWords.html:105
 msgid "Trustworthy --- Untrustworthy or Government --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:107
 #: iat/templates/iat/TranslationWords.html:108
@@ -723,103 +649,103 @@ msgstr ""
 #: iat/templates/iat/TranslationWords.html:110
 #: iat/templates/iat/TranslationWords.html:111
 msgid "Trustworthy --- Untrustworthy or Government --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:112
 #: iat/templates/iat/TranslationWords.html:113
 #: iat/templates/iat/TranslationWords.html:114
 #: iat/templates/iat/TranslationWords.html:115
 msgid "Trustworthy --- Untrustworthy or Government --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:116
 #: iat/templates/iat/TranslationWords.html:117
 #: iat/templates/iat/TranslationWords.html:118
 #: iat/templates/iat/TranslationWords.html:119
 msgid "Trustworthy --- Untrustworthy or Government --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 ---  능숙한"
 
 #: iat/templates/iat/TranslationWords.html:120
 #: iat/templates/iat/TranslationWords.html:121
 #: iat/templates/iat/TranslationWords.html:122
 #: iat/templates/iat/TranslationWords.html:123
 msgid "Trustworthy --- Untrustworthy or Government --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:124
 #: iat/templates/iat/TranslationWords.html:125
 #: iat/templates/iat/TranslationWords.html:126
 #: iat/templates/iat/TranslationWords.html:127
 msgid "Trustworthy --- Untrustworthy or Government --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 정부 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:129
 #: iat/templates/iat/TranslationWords.html:130
 #: iat/templates/iat/TranslationWords.html:131
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lawyer"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 --- 변호사"
 
 #: iat/templates/iat/TranslationWords.html:132
 #: iat/templates/iat/TranslationWords.html:133
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Prosecutor"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  검사"
 
 #: iat/templates/iat/TranslationWords.html:134
 #: iat/templates/iat/TranslationWords.html:135
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Supreme Court"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  대법원"
 
 #: iat/templates/iat/TranslationWords.html:136
 #: iat/templates/iat/TranslationWords.html:137
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Court"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  재판소"
 
 #: iat/templates/iat/TranslationWords.html:138
 #: iat/templates/iat/TranslationWords.html:139
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Justice department"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  법무부"
 
 #: iat/templates/iat/TranslationWords.html:140
 #: iat/templates/iat/TranslationWords.html:141
 #: iat/templates/iat/TranslationWords.html:142
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Judge"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  판사"
 
 #: iat/templates/iat/TranslationWords.html:143
 #: iat/templates/iat/TranslationWords.html:144
 #: iat/templates/iat/TranslationWords.html:145
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  투명한"
 
 #: iat/templates/iat/TranslationWords.html:146
 #: iat/templates/iat/TranslationWords.html:147
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  능숙한"
 
 #: iat/templates/iat/TranslationWords.html:148
 #: iat/templates/iat/TranslationWords.html:149
 #: iat/templates/iat/TranslationWords.html:150
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  진실한"
 
 #: iat/templates/iat/TranslationWords.html:151
 #: iat/templates/iat/TranslationWords.html:152
 #: iat/templates/iat/TranslationWords.html:153
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  가능한"
 
 #: iat/templates/iat/TranslationWords.html:154
 #: iat/templates/iat/TranslationWords.html:155
 #: iat/templates/iat/TranslationWords.html:156
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:158
 #: iat/templates/iat/TranslationWords.html:159
 #: iat/templates/iat/TranslationWords.html:160
 #: iat/templates/iat/TranslationWords.html:161
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  타락한"
 
 #: iat/templates/iat/TranslationWords.html:162
 #: iat/templates/iat/TranslationWords.html:163
@@ -827,210 +753,210 @@ msgstr ""
 #: iat/templates/iat/TranslationWords.html:165
 #: iat/templates/iat/TranslationWords.html:166
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:167
 #: iat/templates/iat/TranslationWords.html:168
 #: iat/templates/iat/TranslationWords.html:169
 #: iat/templates/iat/TranslationWords.html:170
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:171
 #: iat/templates/iat/TranslationWords.html:172
 #: iat/templates/iat/TranslationWords.html:173
 #: iat/templates/iat/TranslationWords.html:174
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:175
 #: iat/templates/iat/TranslationWords.html:176
 #: iat/templates/iat/TranslationWords.html:177
 #: iat/templates/iat/TranslationWords.html:178
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 재판제도 --- 신뢰 할 수 없는 ---  비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:180
 #: iat/templates/iat/TranslationWords.html:181
 #: iat/templates/iat/TranslationWords.html:182
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Judge"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 판사"
 
 #: iat/templates/iat/TranslationWords.html:183
 #: iat/templates/iat/TranslationWords.html:184
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Court"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  재판소"
 
 #: iat/templates/iat/TranslationWords.html:185
 #: iat/templates/iat/TranslationWords.html:186
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Justice department"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 법무부"
 
 #: iat/templates/iat/TranslationWords.html:187
 #: iat/templates/iat/TranslationWords.html:188
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Supreme Court"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  대법원"
 
 #: iat/templates/iat/TranslationWords.html:189
 #: iat/templates/iat/TranslationWords.html:190
 #: iat/templates/iat/TranslationWords.html:191
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lawyer"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  변호사"
 
 #: iat/templates/iat/TranslationWords.html:192
 #: iat/templates/iat/TranslationWords.html:193
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Prosecuter"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  검사"
 
 #: iat/templates/iat/TranslationWords.html:194
 #: iat/templates/iat/TranslationWords.html:195
 #: iat/templates/iat/TranslationWords.html:196
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:197
 #: iat/templates/iat/TranslationWords.html:198
 #: iat/templates/iat/TranslationWords.html:199
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:200
 #: iat/templates/iat/TranslationWords.html:201
 #: iat/templates/iat/TranslationWords.html:202
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:203
 #: iat/templates/iat/TranslationWords.html:204
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:205
 #: iat/templates/iat/TranslationWords.html:206
 #: iat/templates/iat/TranslationWords.html:207
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:209
 #: iat/templates/iat/TranslationWords.html:210
 #: iat/templates/iat/TranslationWords.html:211
 #: iat/templates/iat/TranslationWords.html:212
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:213
 #: iat/templates/iat/TranslationWords.html:214
 #: iat/templates/iat/TranslationWords.html:215
 #: iat/templates/iat/TranslationWords.html:216
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:217
 #: iat/templates/iat/TranslationWords.html:218
 #: iat/templates/iat/TranslationWords.html:219
 #: iat/templates/iat/TranslationWords.html:220
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  가능한"
 
 #: iat/templates/iat/TranslationWords.html:221
 #: iat/templates/iat/TranslationWords.html:222
 #: iat/templates/iat/TranslationWords.html:223
 #: iat/templates/iat/TranslationWords.html:224
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:225
 #: iat/templates/iat/TranslationWords.html:226
 #: iat/templates/iat/TranslationWords.html:227
 #: iat/templates/iat/TranslationWords.html:228
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 재판제도 ---  투명한"
 
 #: iat/templates/iat/TranslationWords.html:231
 #: iat/templates/iat/TranslationWords.html:232
 #: iat/templates/iat/TranslationWords.html:233
 msgid "Trustworthy or Media --- Untrustworthy --- News"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 뉴스"
 
 #: iat/templates/iat/TranslationWords.html:234
 #: iat/templates/iat/TranslationWords.html:235
 #: iat/templates/iat/TranslationWords.html:236
 msgid "Trustworthy or Media --- Untrustworthy --- Reporter"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 리포터"
 
 #: iat/templates/iat/TranslationWords.html:237
 #: iat/templates/iat/TranslationWords.html:238
 #: iat/templates/iat/TranslationWords.html:239
 msgid "Trustworthy or Media --- Untrustworthy --- Newspaper"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 ---  신문"
 
 #: iat/templates/iat/TranslationWords.html:240
 #: iat/templates/iat/TranslationWords.html:241
 #: iat/templates/iat/TranslationWords.html:242
 msgid "Trustworthy or Media --- Untrustworthy --- Journalist"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 기자"
 
 #: iat/templates/iat/TranslationWords.html:243
 #: iat/templates/iat/TranslationWords.html:244
 msgid "Trustworthy or Media --- Untrustworthy --- Headline"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 표제"
 
 #: iat/templates/iat/TranslationWords.html:245
 #: iat/templates/iat/TranslationWords.html:246
 #: iat/templates/iat/TranslationWords.html:247
 msgid "Trustworthy or Media --- Untrustworthy --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:248
 #: iat/templates/iat/TranslationWords.html:249
 #: iat/templates/iat/TranslationWords.html:250
 msgid "Trustworthy or Media --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:251
 #: iat/templates/iat/TranslationWords.html:252
 #: iat/templates/iat/TranslationWords.html:253
 msgid "Trustworthy or Media --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:254
 #: iat/templates/iat/TranslationWords.html:255
 #: iat/templates/iat/TranslationWords.html:256
 msgid "Trustworthy or Media --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:257
 #: iat/templates/iat/TranslationWords.html:258
 msgid "Trustworthy or Media --- Untrustworthy --- Proficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:260
 #: iat/templates/iat/TranslationWords.html:261
 #: iat/templates/iat/TranslationWords.html:262
 #: iat/templates/iat/TranslationWords.html:263
 msgid "Trustworthy or Media --- Untrustworthy --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:264
 #: iat/templates/iat/TranslationWords.html:265
 #: iat/templates/iat/TranslationWords.html:266
 #: iat/templates/iat/TranslationWords.html:267
 msgid "Trustworthy or Media --- Untrustworthy --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:268
 #: iat/templates/iat/TranslationWords.html:269
 #: iat/templates/iat/TranslationWords.html:270
 #: iat/templates/iat/TranslationWords.html:271
 msgid "Trustworthy or Media --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:272
 #: iat/templates/iat/TranslationWords.html:273
 #: iat/templates/iat/TranslationWords.html:274
 #: iat/templates/iat/TranslationWords.html:275
 msgid "Trustworthy or Media --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:276
 #: iat/templates/iat/TranslationWords.html:277
@@ -1038,65 +964,65 @@ msgstr ""
 #: iat/templates/iat/TranslationWords.html:279
 #: iat/templates/iat/TranslationWords.html:280
 msgid "Trustworthy or Media --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 또는 미디어 --- 신뢰 할 수 없는 --- 거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:283
 #: iat/templates/iat/TranslationWords.html:284
 #: iat/templates/iat/TranslationWords.html:285
 msgid "Trustworthy --- Untrustworthy or Media --- Newspaper"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 신문"
 
 #: iat/templates/iat/TranslationWords.html:286
 #: iat/templates/iat/TranslationWords.html:287
 #: iat/templates/iat/TranslationWords.html:288
 msgid "Trustworthy --- Untrustworthy or Media --- Reporter"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 리포터"
 
 #: iat/templates/iat/TranslationWords.html:289
 #: iat/templates/iat/TranslationWords.html:290
 #: iat/templates/iat/TranslationWords.html:291
 msgid "Trustworthy --- Untrustworthy or Media --- Journalist"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 기자"
 
 #: iat/templates/iat/TranslationWords.html:292
 #: iat/templates/iat/TranslationWords.html:293
 #: iat/templates/iat/TranslationWords.html:294
 msgid "Trustworthy --- Untrustworthy or Media --- News"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 뉴스"
 
 #: iat/templates/iat/TranslationWords.html:295
 #: iat/templates/iat/TranslationWords.html:296
 msgid "Trustworthy --- Untrustworthy or Media --- Headline"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 헤드라인"
 
 #: iat/templates/iat/TranslationWords.html:297
 #: iat/templates/iat/TranslationWords.html:298
 #: iat/templates/iat/TranslationWords.html:299
 msgid "Trustworthy --- Untrustworthy or Media --- Corrupt"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:300
 #: iat/templates/iat/TranslationWords.html:301
 #: iat/templates/iat/TranslationWords.html:302
 msgid "Trustworthy --- Untrustworthy or Media --- Inefficient"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:303
 #: iat/templates/iat/TranslationWords.html:304
 #: iat/templates/iat/TranslationWords.html:305
 msgid "Trustworthy --- Untrustworthy or Media --- Lying"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 거짓말하는"
 
 #: iat/templates/iat/TranslationWords.html:306
 #: iat/templates/iat/TranslationWords.html:307
 msgid "Trustworthy --- Untrustworthy or Media --- Inexperienced"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:308
 #: iat/templates/iat/TranslationWords.html:309
 #: iat/templates/iat/TranslationWords.html:310
 msgid "Trustworthy --- Untrustworthy or Media --- Immoral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:312
 #: iat/templates/iat/TranslationWords.html:313
@@ -1104,554 +1030,554 @@ msgstr ""
 #: iat/templates/iat/TranslationWords.html:315
 #: iat/templates/iat/TranslationWords.html:316
 msgid "Trustworthy --- Untrustworthy or Media --- Truthful"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:317
 #: iat/templates/iat/TranslationWords.html:318
 #: iat/templates/iat/TranslationWords.html:319
 #: iat/templates/iat/TranslationWords.html:320
 msgid "Trustworthy --- Untrustworthy or Media --- Transparent"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:321
 #: iat/templates/iat/TranslationWords.html:322
 #: iat/templates/iat/TranslationWords.html:323
 #: iat/templates/iat/TranslationWords.html:324
 msgid "Trustworthy --- Untrustworthy or Media --- Capable"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:325
 #: iat/templates/iat/TranslationWords.html:326
 #: iat/templates/iat/TranslationWords.html:327
 #: iat/templates/iat/TranslationWords.html:328
 msgid "Trustworthy --- Untrustworthy or Media --- Moral"
-msgstr ""
+msgstr "신뢰 할 수 있는 --- 신뢰 할 수 없는 또는 미디어 --- 도덕적인 "
 
 #: iat/templates/iat/TranslationWords.html:329
 #: iat/templates/iat/TranslationWords.html:330
 #: iat/templates/iat/TranslationWords.html:331
 #: iat/templates/iat/TranslationWords.html:332
 msgid "Trustworthy --- Untrustworthy or Media --- Proficient"
-msgstr ""
+msgstr "신뢰할 수 있는 --- 신뢰할 수 없는 또는 미디어 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:335
 #: iat/templates/iat/TranslationWords.html:337
 msgid "Competent --- Incompetent --- Capable"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 가능한 "
 
 #: iat/templates/iat/TranslationWords.html:336
 #: iat/templates/iat/TranslationWords.html:352
 msgid "Competent --- Incompetent --- Skilful"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:338
 #: iat/templates/iat/TranslationWords.html:342
 msgid "Competent --- Incompetent --- Inefficient"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:339
 msgid "Competent --- Incompetent --- Proficient"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:340
 msgid "Competent --- Incompetent --- Unskilled"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 능숙하지 않은"
 
 #: iat/templates/iat/TranslationWords.html:341
 #: iat/templates/iat/TranslationWords.html:350
 msgid "Competent --- Incompetent --- Inexperienced"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:343
 #: iat/templates/iat/TranslationWords.html:346
 msgid "Competent --- Incompetent --- Useless"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 쓸모 없는"
 
 #: iat/templates/iat/TranslationWords.html:344
 msgid "Competent --- Incompetent --- Smart"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 똑똑한"
 
 #: iat/templates/iat/TranslationWords.html:345
 msgid "Competent --- Incompetent --- Reliable"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 믿을 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:347
 #: iat/templates/iat/TranslationWords.html:351
 msgid "Competent --- Incompetent --- Powerless"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 무력한"
 
 #: iat/templates/iat/TranslationWords.html:348
 msgid "Competent --- Incompetent --- Weak"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 약한"
 
 #: iat/templates/iat/TranslationWords.html:349
 msgid "Competent --- Incompetent --- Bright"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 --- 밝은"
 
 #: iat/templates/iat/TranslationWords.html:354
 #: iat/templates/iat/TranslationWords.html:355
 msgid "Competent or Government --- Incompetent --- Constitution"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:356
 #: iat/templates/iat/TranslationWords.html:357
 #: iat/templates/iat/TranslationWords.html:358
 msgid "Competent or Government --- Incompetent --- Regulation"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 규칙"
 
 #: iat/templates/iat/TranslationWords.html:359
 #: iat/templates/iat/TranslationWords.html:360
 msgid "Competent or Government --- Incompetent --- State"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 국가"
 
 #: iat/templates/iat/TranslationWords.html:361
 #: iat/templates/iat/TranslationWords.html:362
 #: iat/templates/iat/TranslationWords.html:363
 msgid "Competent or Government --- Incompetent --- Civil Servants"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:364
 #: iat/templates/iat/TranslationWords.html:365
 msgid "Competent or Government --- Incompetent --- Public Administration"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 공공 행정"
 
 #: iat/templates/iat/TranslationWords.html:366
 #: iat/templates/iat/TranslationWords.html:367
 msgid "Competent or Government --- Incompetent --- Politicians"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 정치인"
 
 #: iat/templates/iat/TranslationWords.html:368
 #: iat/templates/iat/TranslationWords.html:369
 #: iat/templates/iat/TranslationWords.html:370
 msgid "Competent or Government --- Incompetent --- Skilful"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:371
 #: iat/templates/iat/TranslationWords.html:372
 #: iat/templates/iat/TranslationWords.html:373
 msgid "Competent or Government --- Incompetent --- Capable"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:374
 #: iat/templates/iat/TranslationWords.html:375
 msgid "Competent or Government --- Incompetent --- Bright"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 밝은"
 
 #: iat/templates/iat/TranslationWords.html:376
 #: iat/templates/iat/TranslationWords.html:377
 msgid "Competent or Government --- Incompetent --- Reliable"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 믿을 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:378
 #: iat/templates/iat/TranslationWords.html:379
 msgid "Competent or Government --- Incompetent --- Smart"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 똑똑한"
 
 #: iat/templates/iat/TranslationWords.html:380
 #: iat/templates/iat/TranslationWords.html:381
 msgid "Competent or Government --- Incompetent --- Proficient"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:383
 #: iat/templates/iat/TranslationWords.html:384
 #: iat/templates/iat/TranslationWords.html:385
 #: iat/templates/iat/TranslationWords.html:386
 msgid "Competent or Government --- Incompetent --- Inexperienced"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:387
 #: iat/templates/iat/TranslationWords.html:388
 #: iat/templates/iat/TranslationWords.html:389
 msgid "Competent or Government --- Incompetent --- Useless"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 쓸모 없는"
 
 #: iat/templates/iat/TranslationWords.html:390
 #: iat/templates/iat/TranslationWords.html:391
 #: iat/templates/iat/TranslationWords.html:392
 msgid "Competent or Government --- Incompetent --- Powerless"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 무력한"
 
 #: iat/templates/iat/TranslationWords.html:393
 #: iat/templates/iat/TranslationWords.html:394
 #: iat/templates/iat/TranslationWords.html:395
 #: iat/templates/iat/TranslationWords.html:396
 msgid "Competent or Government --- Incompetent --- Inefficient"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:397
 #: iat/templates/iat/TranslationWords.html:398
 #: iat/templates/iat/TranslationWords.html:399
 #: iat/templates/iat/TranslationWords.html:400
 msgid "Competent or Government --- Incompetent --- Weak"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 약한"
 
 #: iat/templates/iat/TranslationWords.html:401
 #: iat/templates/iat/TranslationWords.html:402
 #: iat/templates/iat/TranslationWords.html:403
 msgid "Competent or Government --- Incompetent --- Unskilled"
-msgstr ""
+msgstr "능력 있는 또는 정부 --- 능력 없는 --- 능숙하지 않은"
 
 #: iat/templates/iat/TranslationWords.html:406
 #: iat/templates/iat/TranslationWords.html:407
 msgid "Competent --- Incompetent or Government --- Public Administration"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 공공 행정"
 
 #: iat/templates/iat/TranslationWords.html:408
 #: iat/templates/iat/TranslationWords.html:409
 #: iat/templates/iat/TranslationWords.html:410
 msgid "Competent --- Incompetent or Government --- Civil Servants"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:411
 #: iat/templates/iat/TranslationWords.html:412
 #: iat/templates/iat/TranslationWords.html:413
 msgid "Competent --- Incompetent or Government --- Regulation"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 규칙"
 
 #: iat/templates/iat/TranslationWords.html:414
 #: iat/templates/iat/TranslationWords.html:415
 #: iat/templates/iat/TranslationWords.html:416
 msgid "Competent --- Incompetent or Government --- State"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 국가"
 
 #: iat/templates/iat/TranslationWords.html:417
 #: iat/templates/iat/TranslationWords.html:418
 #: iat/templates/iat/TranslationWords.html:419
 msgid "Competent --- Incompetent or Government --- Constitution"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:420
 #: iat/templates/iat/TranslationWords.html:421
 msgid "Competent --- Incompetent or Government --- Inexperienced"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 미숙한"
 
 #: iat/templates/iat/TranslationWords.html:422
 #: iat/templates/iat/TranslationWords.html:423
 #: iat/templates/iat/TranslationWords.html:424
 msgid "Competent --- Incompetent or Government --- Inefficient"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 비효율적인"
 
 #: iat/templates/iat/TranslationWords.html:425
 #: iat/templates/iat/TranslationWords.html:426
 msgid "Competent --- Incompetent or Government --- Powerless"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 무력한"
 
 #: iat/templates/iat/TranslationWords.html:427
 #: iat/templates/iat/TranslationWords.html:428
 msgid "Competent --- Incompetent or Government --- Useless"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 쓸모 없는"
 
 #: iat/templates/iat/TranslationWords.html:429
 #: iat/templates/iat/TranslationWords.html:430
 #: iat/templates/iat/TranslationWords.html:431
 msgid "Competent --- Incompetent or Government --- Unskilled"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 능숙하지 않은"
 
 #: iat/templates/iat/TranslationWords.html:432
 #: iat/templates/iat/TranslationWords.html:433
 msgid "Competent --- Incompetent or Government --- Weak"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 약한"
 
 #: iat/templates/iat/TranslationWords.html:435
 #: iat/templates/iat/TranslationWords.html:436
 #: iat/templates/iat/TranslationWords.html:437
 #: iat/templates/iat/TranslationWords.html:438
 msgid "Competent --- Incompetent or Government --- Proficient"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:439
 #: iat/templates/iat/TranslationWords.html:440
 #: iat/templates/iat/TranslationWords.html:441
 #: iat/templates/iat/TranslationWords.html:442
 msgid "Competent --- Incompetent or Government --- Reliable"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 믿을 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:443
 #: iat/templates/iat/TranslationWords.html:444
 #: iat/templates/iat/TranslationWords.html:445
 msgid "Competent --- Incompetent or Government --- Smart"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 똑똑한"
 
 #: iat/templates/iat/TranslationWords.html:446
 #: iat/templates/iat/TranslationWords.html:447
 #: iat/templates/iat/TranslationWords.html:448
 msgid "Competent --- Incompetent or Government --- Capable"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 가능한"
 
 #: iat/templates/iat/TranslationWords.html:449
 #: iat/templates/iat/TranslationWords.html:450
 #: iat/templates/iat/TranslationWords.html:451
 #: iat/templates/iat/TranslationWords.html:452
 msgid "Competent --- Incompetent or Government --- Bright"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 밝은"
 
 #: iat/templates/iat/TranslationWords.html:453
 #: iat/templates/iat/TranslationWords.html:454
 #: iat/templates/iat/TranslationWords.html:455
 msgid "Competent --- Incompetent or Government --- Skilful"
-msgstr ""
+msgstr "능력 있는 --- 능력 없는 또는 정부 --- 능숙한"
 
 #: iat/templates/iat/TranslationWords.html:458
 #: iat/templates/iat/TranslationWords.html:460
 msgid "Honest --- Dishonest --- Truthful"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:459
 #: iat/templates/iat/TranslationWords.html:475
 msgid "Honest --- Dishonest --- Moral"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:461
 #: iat/templates/iat/TranslationWords.html:465
 msgid "Honest --- Dishonest --- Lying"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 거짓말 하는"
 
 #: iat/templates/iat/TranslationWords.html:462
 msgid "Honest --- Dishonest --- Transparent"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:463
 msgid "Honest --- Dishonest --- Corrupt"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:464
 #: iat/templates/iat/TranslationWords.html:473
 msgid "Honest --- Dishonest --- Immoral"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 비도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:466
 #: iat/templates/iat/TranslationWords.html:469
 msgid "Honest --- Dishonest --- Unfair"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 불공정한"
 
 #: iat/templates/iat/TranslationWords.html:467
 msgid "Honest --- Dishonest --- Open"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 개방적인"
 
 #: iat/templates/iat/TranslationWords.html:468
 msgid "Honest --- Dishonest --- Credible"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 신뢰할 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:470
 #: iat/templates/iat/TranslationWords.html:474
 msgid "Honest --- Dishonest --- Unscupulous"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:471
 msgid "Honest --- Dishonest --- Illegitimate"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 불법의"
 
 #: iat/templates/iat/TranslationWords.html:472
 msgid "Honest --- Dishonest --- Fair"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 --- 공정한"
 
 #: iat/templates/iat/TranslationWords.html:477
 #: iat/templates/iat/TranslationWords.html:478
 msgid "Honest or Government --- Dishonest --- Constitution"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:479
 #: iat/templates/iat/TranslationWords.html:480
 msgid "Honest or Government --- Dishonest --- State"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 국가"
 
 #: iat/templates/iat/TranslationWords.html:481
 #: iat/templates/iat/TranslationWords.html:482
 msgid "Honest or Government --- Dishonest --- Public administration"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 공공 행정"
 
 #: iat/templates/iat/TranslationWords.html:483
 #: iat/templates/iat/TranslationWords.html:484
 msgid "Honest or Government --- Dishonest --- Civil servants"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:485
 #: iat/templates/iat/TranslationWords.html:486
 msgid "Honest or Government --- Dishonest --- Politicians"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 정치인"
 
 #: iat/templates/iat/TranslationWords.html:487
 #: iat/templates/iat/TranslationWords.html:488
 msgid "Honest or Government --- Dishonest --- Court"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 재판소"
 
 #: iat/templates/iat/TranslationWords.html:489
 #: iat/templates/iat/TranslationWords.html:490
 #: iat/templates/iat/TranslationWords.html:491
 msgid "Honest or Government --- Dishonest --- Transparent"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 투명한"
 
 #: iat/templates/iat/TranslationWords.html:492
 #: iat/templates/iat/TranslationWords.html:493
 msgid "Honest or Government --- Dishonest --- Fair"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 공정한"
 
 #: iat/templates/iat/TranslationWords.html:494
 #: iat/templates/iat/TranslationWords.html:495
 msgid "Honest or Government --- Dishonest --- Truthful"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:496
 #: iat/templates/iat/TranslationWords.html:497
 msgid "Honest or Government --- Dishonest --- Open"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 개방적인"
 
 #: iat/templates/iat/TranslationWords.html:498
 #: iat/templates/iat/TranslationWords.html:499
 #: iat/templates/iat/TranslationWords.html:500
 msgid "Honest or Government --- Dishonest --- Credible"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 신뢰할 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:501
 #: iat/templates/iat/TranslationWords.html:502
 msgid "Honest or Government --- Dishonest --- Moral"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:504
 #: iat/templates/iat/TranslationWords.html:505
 #: iat/templates/iat/TranslationWords.html:506
 #: iat/templates/iat/TranslationWords.html:507
 msgid "Honest or Government --- Dishonest --- Immoral"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 비도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:508
 #: iat/templates/iat/TranslationWords.html:509
 #: iat/templates/iat/TranslationWords.html:510
 #: iat/templates/iat/TranslationWords.html:511
 msgid "Honest or Government --- Dishonest --- Corrupt"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:512
 #: iat/templates/iat/TranslationWords.html:513
 #: iat/templates/iat/TranslationWords.html:514
 msgid "Honest or Government --- Dishonest --- Unscrupulous"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:515
 #: iat/templates/iat/TranslationWords.html:516
 #: iat/templates/iat/TranslationWords.html:517
 #: iat/templates/iat/TranslationWords.html:518
 msgid "Honest or Government --- Dishonest --- Lying"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 거짓말 하는"
 
 #: iat/templates/iat/TranslationWords.html:519
 #: iat/templates/iat/TranslationWords.html:520
 #: iat/templates/iat/TranslationWords.html:521
 msgid "Honest or Government --- Dishonest --- Illegitimate"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 불법의"
 
 #: iat/templates/iat/TranslationWords.html:522
 #: iat/templates/iat/TranslationWords.html:523
 #: iat/templates/iat/TranslationWords.html:524
 msgid "Honest or Government --- Dishonest --- Unfair"
-msgstr ""
+msgstr "정직한 또는 정부 --- 정직하지 못한 --- 불공정한"
 
 #: iat/templates/iat/TranslationWords.html:526
 #: iat/templates/iat/TranslationWords.html:527
 #: iat/templates/iat/TranslationWords.html:528
 msgid "Honest --- Dishonest or Government --- Public administration"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 공공 행정"
 
 #: iat/templates/iat/TranslationWords.html:529
 #: iat/templates/iat/TranslationWords.html:530
 msgid "Honest --- Dishonest or Government --- Civil Servants"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 공무원"
 
 #: iat/templates/iat/TranslationWords.html:531
 #: iat/templates/iat/TranslationWords.html:532
 msgid "Honest --- Dishonest or Government --- Politicians"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 정치인"
 
 #: iat/templates/iat/TranslationWords.html:533
 #: iat/templates/iat/TranslationWords.html:534
 msgid "Honest --- Dishonest or Government --- State"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 국가"
 
 #: iat/templates/iat/TranslationWords.html:535
 #: iat/templates/iat/TranslationWords.html:536
 msgid "Honest --- Dishonest or Government --- Constitution"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 헌법"
 
 #: iat/templates/iat/TranslationWords.html:537
 #: iat/templates/iat/TranslationWords.html:538
 #: iat/templates/iat/TranslationWords.html:539
 msgid "Honest --- Dishonest or Government --- Regulation"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 규칙"
 
 #: iat/templates/iat/TranslationWords.html:540
 #: iat/templates/iat/TranslationWords.html:541
 msgid "Honest --- Dishonest or Government --- Unfair"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 불공정한"
 
 #: iat/templates/iat/TranslationWords.html:542
 #: iat/templates/iat/TranslationWords.html:543
 #: iat/templates/iat/TranslationWords.html:544
 msgid "Honest --- Dishonest or Government --- Corrupt"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 타락한"
 
 #: iat/templates/iat/TranslationWords.html:545
 #: iat/templates/iat/TranslationWords.html:546
 msgid "Honest --- Dishonest or Government --- Immoral"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 비도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:547
 #: iat/templates/iat/TranslationWords.html:548
 msgid "Honest --- Dishonest or Government --- Illegitimate"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 불법의"
 
 #: iat/templates/iat/TranslationWords.html:549
 #: iat/templates/iat/TranslationWords.html:550
 #: iat/templates/iat/TranslationWords.html:551
 msgid "Honest --- Dishonest or Government --- Lying"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 거짓말 하는"
 
 #: iat/templates/iat/TranslationWords.html:552
 #: iat/templates/iat/TranslationWords.html:553
 msgid "Honest --- Dishonest or Government --- Unscrupulous"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 부도덕한"
 
 #: iat/templates/iat/TranslationWords.html:555
 #: iat/templates/iat/TranslationWords.html:556
 #: iat/templates/iat/TranslationWords.html:557
 #: iat/templates/iat/TranslationWords.html:558
 msgid "Honest --- Dishonest or Government --- Moral"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 도덕적인"
 
 #: iat/templates/iat/TranslationWords.html:559
 #: iat/templates/iat/TranslationWords.html:560
 #: iat/templates/iat/TranslationWords.html:561
 msgid "Honest --- Dishonest or Government --- Fair"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 공정한"
 
 #: iat/templates/iat/TranslationWords.html:562
 #: iat/templates/iat/TranslationWords.html:563
 #: iat/templates/iat/TranslationWords.html:564
 msgid "Honest --- Dishonest or Government --- Open"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 개방적인"
 
 #: iat/templates/iat/TranslationWords.html:565
 #: iat/templates/iat/TranslationWords.html:566
 #: iat/templates/iat/TranslationWords.html:567
 #: iat/templates/iat/TranslationWords.html:568
 msgid "Honest --- Dishonest or Government --- Truthful"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 진실한"
 
 #: iat/templates/iat/TranslationWords.html:569
 #: iat/templates/iat/TranslationWords.html:570
 #: iat/templates/iat/TranslationWords.html:571
 msgid "Honest --- Dishonest or Government --- Credible"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 신뢰할 수 있는"
 
 #: iat/templates/iat/TranslationWords.html:572
 #: iat/templates/iat/TranslationWords.html:573
 #: iat/templates/iat/TranslationWords.html:574
 #: iat/templates/iat/TranslationWords.html:575
 msgid "Honest --- Dishonest or Government --- Transparent"
-msgstr ""
+msgstr "정직한 --- 정직하지 못한 또는 정부 --- 투명한"
 
 #: public_goods/templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Decision"
-msgstr ""
+msgstr "과제 2: 본 결정"
 
 #: public_goods/templates/public_goods/Contribute.html:7
 #: trust/templates/trust/SendBack.html:9
@@ -1659,6 +1585,8 @@ msgid ""
 "Now the real task starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
+"이제 본 과제가 시작됩니다. 금액을 정하고 \"Next\" 버튼을 클릭하면 다시 이 화"
+"면으로 돌아올 수 없습니다."
 
 #: public_goods/templates/public_goods/Contribute.html:10
 msgid ""
@@ -1666,6 +1594,8 @@ msgid ""
 "or choose to invest it in the joint project. <strong>How much do you want to "
 "invest into the joint project?</strong>"
 msgstr ""
+"당신에게 12.000원이 있습니다. 당신은 그 돈을 보관하기로 결정하거나, 혹은 공"
+"동 프로젝트에 투자하기로 결정할 수 있습니다."
 
 #: public_goods/templates/public_goods/Contribute.html:12
 msgid ""
@@ -1673,79 +1603,98 @@ msgid ""
 "choose to invest it in the joint project. <strong>How much do you want to "
 "invest into the joint project?</strong>"
 msgstr ""
+"당신에게 10원이 있습니다. 당신은 그 돈을 보유하기로 결정하거나, 혹은 공동 프"
+"로젝트에 투자하기로 결정할 수 있습니다. 당신은 얼만큼의 금액을 공동 프로젝트"
+"에 투자하시겠습니까?"
 
 #: public_goods/templates/public_goods/ContributeBack.html:8
 msgid "Task Two: Real decision continued"
-msgstr ""
+msgstr "과제 2: 본 결정 계속"
 
 #: public_goods/templates/public_goods/ContributeBack.html:9
 msgid ""
 "Now imagine that this time, you find out how much money the other three "
 "members of your group are transferring into the joint pot."
 msgstr ""
+"이제 당신은 당신을 제외한 나머지 3명의 참가자들이 공동 프로젝트 투자함에 넣"
+"은 금액의 액수를 알게 되었다고 상상해보십시오."
 
 #: public_goods/templates/public_goods/ContributeBack.html:10
 msgid ""
 "All of your choices below can impact how much money you will receive at the "
 "end of the study."
 msgstr ""
+"이후 당신의 선택은 이 실험이 끝났을 때 당신이 받게될 금액에 영향을 줄 수 있습"
+"니다."
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:6
 msgid ""
 "On the next page, you decide how much of your {{amount}} you want to "
 "transfer to the common project."
 msgstr ""
+"다음 페이지에서, 당신이 얼마나 많은 {{양}}의 금액을 공동 프로젝트에 투자하고 "
+"싶은지 결정하십시오."
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:7
 msgid "You will be asked to do it in two different situations:"
-msgstr ""
+msgstr "당신은 두 가지 다른 상황 가운데서 결정하게 될 것입니다:"
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:8
 msgid ""
 "In the first step, you simply decide how much of your {{amount}} you want to "
 "put into the common project."
 msgstr ""
+"첫 번째로, 당신이 얼마나 많은 {{양}}의 금액을 공동 프로젝트에 투자하고 싶은"
+"지 결정하십시오."
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:9
 msgid ""
 "In the second step, you have the opportunity to decide upon your "
 "contribution based on the contribution of other group members."
 msgstr ""
+"그 다음으로, 다른 참가자들의 기여도에 근거하여 당신의 기여도를 결정할 수 있"
+"는 기회가 있습니다."
 
 #: public_goods/templates/public_goods/EndGame.html:11
 #: trust/templates/trust/EndGame.html:8
 msgid "Thank you very much for entering your choice."
-msgstr ""
+msgstr "응답하여 주셔서 감사합니다."
 
 #: public_goods/templates/public_goods/EndGame.html:12
 msgid ""
 "We have recorded your decision. Again, your payoff will depend on the "
 "actions of the other players. Now, please proceed to the third task."
 msgstr ""
+"당신의 결정이 모두 저장되었습니다. 다시 말씀드리지만, 당신의 보상은 다른 참가"
+"자들의 수행결과에 따라 결정될 것입니다. 이제 세 번째 과제로 넘어가 주십시오."
 
 #: public_goods/templates/public_goods/Instructions.html:8
 msgid "Task Two: Introduction"
-msgstr ""
+msgstr "과제 2: 소개"
 
 #: public_goods/templates/public_goods/Instructions.html:9
 msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
 msgstr ""
+"두 번째 과제에서는 4명의 참가자들(당신과 3명의 다른 참가자들)이 한 팀으로 구"
+"성됩니다."
 
 #: public_goods/templates/public_goods/Instructions.html:10
 msgid ""
 "Remember, the participants in this group are different from the person you "
 "interacted with in the previous task. However, they all live in the France."
 msgstr ""
+"이 그룹의 참가자들은 당신이 이전 과제에서 함께했던 참가자들과는 다른 사람들"
+"로 구성되어 있지만, 모두 한국에 거주하는 사람들입니다."
 
 #: public_goods/templates/public_goods/Instructions.html:15
 msgid "At the beginning, each group member has 12.000 Won."
-msgstr ""
+msgstr "과제가 시작할 때, 각 참가자들에게 12.000원씩 지급됩니다."
 
 #: public_goods/templates/public_goods/Instructions.html:17
 msgid "At the beginning, each group member has 10 euros."
-msgstr ""
+msgstr "과제가 시작할 때, 각 참가자들에게 10원씩 지급됩니다."
 
 #: public_goods/templates/public_goods/Instructions.html:21
 msgid ""
@@ -1753,6 +1702,8 @@ msgid ""
 "wants to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
+"각 참가자들은 12.000원 중 본인이 계속 보유하고 있을 금액과 공공 프로젝트를 위"
+"해 투자할 금액을 정해야 합니다."
 
 #: public_goods/templates/public_goods/Instructions.html:23
 msgid ""
@@ -1760,11 +1711,13 @@ msgid ""
 "to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
+"각 참가자들은 10원 중 본인이 계속 보유하고 있을 금액과 공공 프로젝트를 위해 "
+"투자할 금액을 정해야 합니다."
 
 #: public_goods/templates/public_goods/Instructions.html:26
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
-msgstr ""
+msgstr "공공 프로젝트에 투자된 총액은 {양} 배 만큼 곱해져 산출됩니다."
 
 #: public_goods/templates/public_goods/Instructions.html:27
 msgid ""
@@ -1772,10 +1725,12 @@ msgid ""
 "<strong>split equally between all 4 group members</strong> (including "
 "yourself)."
 msgstr ""
+"최종적으로, 공동 프로젝트에 투자된 금액은 당신을 포함하여 4명의 참가자들에게 "
+"공평하게 나누어 지급될 것입니다."
 
 #: public_goods/templates/public_goods/Simulation.html:6
 msgid "Task Two: Test Simulation"
-msgstr ""
+msgstr "과제 2: 시험 시뮬레이션"
 
 #: public_goods/templates/public_goods/Simulation.html:8
 msgid ""
@@ -1783,136 +1738,138 @@ msgid ""
 "rules better. You can use the test screen below to play with the different "
 "choices of the four participants."
 msgstr ""
+"이 것은 본 과제가 아니며, 이해를 돕기 위한 시뮬레이션 입니다. 본 화면을 통해 "
+"네 명의 참가자들과 함께 할 수 있는 여러 가지 선택들을 연습해보셔도 좋습니다."
 
 #: public_goods/templates/public_goods/Simulation.html:88
 #: survey_i18n/views.py:61 survey_i18n/views.py:283 survey_i18n/views.py:312
 #: trust/templates/trust/Simulation.html:141
 msgid "€"
-msgstr ""
+msgstr "유로"
 
 #: public_goods/templates/public_goods/Simulation.html:98
 #: trust/templates/trust/Simulation.html:157
 msgid "Amount sent by Participant B"
-msgstr ""
+msgstr "참가자 B가 보낸 금액"
 
 #: public_goods/templates/public_goods/Simulation.html:103
 msgid "Amount sent by Participant C"
-msgstr ""
+msgstr "참가자 C가 보낸 금액"
 
 #: public_goods/templates/public_goods/Simulation.html:108
 msgid "Amount sent by Participant D"
-msgstr ""
+msgstr "참가자 D가 보낸 금액"
 
 #: public_goods/views.py:57
 msgid "10.000 Won"
-msgstr ""
+msgstr "10.000원"
 
 #: public_goods/views.py:83 public_goods/views.py:107
 msgid "If on average, each of the other     group members contributes 0 euro:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 0원씩 투자했다면:"
 
 #: public_goods/views.py:85
 msgid "If on average, each of the other     group members contributes 1 euro:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 1원씩 투자했다면:"
 
 #: public_goods/views.py:87
 msgid "If on average, each of the other     group members contributes 2 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 2원씩 투자했다면:"
 
 #: public_goods/views.py:89
 msgid "If on average, each of the other     group members contributes 3 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 3원씩 투자했다면:"
 
 #: public_goods/views.py:91
 msgid "If on average, each of the other     group members contributes 4 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 4원씩 투자했다면:"
 
 #: public_goods/views.py:93
 msgid "If on average, each of the other     group members contributes 5 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 5원씩 투자했다면:"
 
 #: public_goods/views.py:95
 msgid "If on average, each of the other     group members contributes 6 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 6원씩 투자했다면:"
 
 #: public_goods/views.py:97
 msgid "If on average, each of the other     group members contributes 7 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 7원씩 투자했다면:"
 
 #: public_goods/views.py:99
 msgid "If on average, each of the other     group members contributes 8 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 8원씩 투자했다면:"
 
 #: public_goods/views.py:101
 msgid "If on average, each of the other     group members contributes 9 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 9원씩 투자했다면:"
 
 #: public_goods/views.py:103
 msgid ""
 "If on average, each of the other     group members contributes 10 euros:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 10원씩 투자했다면:"
 
 #: public_goods/views.py:109
 msgid ""
 "If on average, each of the other     group members contributes 1.200 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 1200원씩 투자했다면:"
 
 #: public_goods/views.py:111
 msgid ""
 "If on average, each of the other     group members contributes 2.400 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 2.400원씩 투자했다면:"
 
 #: public_goods/views.py:113
 msgid ""
 "If on average, each of the other     group members contributes 3.600 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 3.600원씩 투자했다면:"
 
 #: public_goods/views.py:115
 msgid ""
 "If on average, each of the other     group members contributes 4.800 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 4.800원씩 투자했다면:"
 
 #: public_goods/views.py:117
 msgid ""
 "If on average, each of the other     group members contributes 6.00 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 6.00원씩 투자했다면:"
 
 #: public_goods/views.py:119
 msgid ""
 "If on average, each of the other     group members contributes 7.200 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 7.200원씩 투자했다면:"
 
 #: public_goods/views.py:121
 msgid ""
 "If on average, each of the other     group members contributes 8.400 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 8.400원씩 투자했다면:"
 
 #: public_goods/views.py:123
 msgid ""
 "If on average, each of the other     group members contributes 9.600 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 9.600원씩 투자했다면:"
 
 #: public_goods/views.py:125
 msgid ""
 "If on average, each of the other     group members contributes 10.800 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 10.800원씩 투자했다면:"
 
 #: public_goods/views.py:127
 msgid ""
 "If on average, each of the other     group members contributes 12.000 Won:"
-msgstr ""
+msgstr "평균적으로, 다른 팀원들이 12.000원씩 투자했다면:"
 
 #: survey/models.py:44 survey_i18n/models.py:49 survey_korea/models.py:45
 msgid "Overall, how satisfied are you with life as a whole these days?"
-msgstr ""
+msgstr "대체적으로, 당신은 삶의 전반에 대하여 얼마나 만족하십니까?"
 
 #: survey/models.py:47 survey_i18n/models.py:52 survey_korea/models.py:48
 msgid "0 - Not at all satisfied"
-msgstr ""
+msgstr "0 - 전혀 만족스럽지 않다 "
 
 #: survey/models.py:57 survey_i18n/models.py:62 survey_korea/models.py:58
 msgid "10 - Completely satisfied"
-msgstr ""
+msgstr "10 - 매우 만족스럽다"
 
 #: survey/models.py:58 survey/models.py:79 survey/models.py:100
 #: survey/models.py:121 survey/models.py:142 survey/models.py:163
@@ -1968,79 +1925,85 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:46
 #: survey_korea/templates/survey_korea/Survey10.html:84
 msgid "Don't know"
-msgstr ""
+msgstr "모르겠다 "
 
 #: survey/models.py:65 survey_i18n/models.py:70 survey_korea/models.py:66
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
 "you can't be too careful in dealing with people?"
 msgstr ""
+"일반적으로, 당신은 다른 사람들을 신뢰하는 편입니까? 혹은 경계하는 편입니까?"
 
 #: survey/models.py:68 survey_i18n/models.py:73 survey_korea/models.py:69
 msgid "0 -You can't be too careful"
-msgstr ""
+msgstr "0 - 매우 경계한다"
 
 #: survey/models.py:78 survey_i18n/models.py:83 survey_korea/models.py:79
 msgid "10 - Most people can be trusted"
-msgstr ""
+msgstr "10 - 대부분의 사람들을 신뢰한다"
 
 #: survey/models.py:86 survey_i18n/models.py:91 survey_korea/models.py:87
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
 "take risks or do you try to avoid taking risks?"
 msgstr ""
+"당신은 일반적으로 위험을 감수하는 편입니까 혹은 위험을 피하는 편입니까?"
 
 #: survey/models.py:89
 msgid "0 - Generally unwilling to take risks"
-msgstr ""
+msgstr "0 - 일반적으로 위험을 피하는 편이다 "
 
 #: survey/models.py:99
 msgid "10 - Fully prepared to take risks"
-msgstr ""
+msgstr "10 - 전적으로 위험을 감수하는 편이다 "
 
 #: survey/models.py:107
 msgid ""
 "Would you say that most of the time people are only looking out for "
 "themselves or that they mostly try to help each other?"
 msgstr ""
+"당신은 사람들이 오직 자신의 이익만 챙기는 편이라 생각하십니까 혹은 서로 도우"
+"려 노력하는 편이라 생각하십니까?"
 
 #: survey/models.py:110
 msgid "0 - People are only looking out for themselves"
-msgstr ""
+msgstr "0 - 사람들은 오직 자신의 이익만을 생각한다 "
 
 #: survey/models.py:120 survey_i18n/models.py:238 survey_korea/models.py:249
 msgid "10 - People mostly try to help each other"
-msgstr ""
+msgstr "10 -사람들은 주로 서로를 도우려 노력한다  "
 
 #: survey/models.py:128
 msgid ""
 "Do you think most people would try to take advantage of you if they got a "
 "chance, or would they try to be fair?"
 msgstr ""
+"당신은 대부분의 사람들이 기회가 있다면, 당신을 이용하려 한다고 생각하십니까 "
+"혹은 공정하려 노력한다고 생각하십니까?"
 
 #: survey/models.py:131 survey_i18n/models.py:249 survey_korea/models.py:260
 msgid "0 - Most people would try to take advantage of me"
-msgstr ""
+msgstr "0 - 대부분 나를 이용하려 한다 "
 
 #: survey/models.py:141 survey_i18n/models.py:259 survey_korea/models.py:270
 msgid "10 - Most people would try to be fair"
-msgstr ""
+msgstr "10 - 대부분 공정하려 노력한다 "
 
 #: survey/models.py:149 survey_i18n/templates/survey_i18n/Survey04A.html:34
 msgid "Receiving social allowances to which you are not entitled."
-msgstr ""
+msgstr "당신이 받을 자격이 없는 사회적 수당을 받는 것. "
 
 #: survey/models.py:152
 msgid "0 - This action is never justifiable"
-msgstr ""
+msgstr "0 - 이 행동은 절대 정당화 될 수 없다 "
 
 #: survey/models.py:162
 msgid "10 - This action is always justifiable"
-msgstr ""
+msgstr "10 - 이 행동은 언제나 정당화 될 수 있다 "
 
 #: survey/models.py:170
 msgid "Your family."
-msgstr ""
+msgstr "당신의 가족."
 
 #: survey/models.py:172 survey/models.py:192 survey/models.py:212
 #: survey/models.py:232 survey/models.py:252 survey/models.py:272
@@ -2058,7 +2021,7 @@ msgstr ""
 #: survey_korea/models.py:507 survey_korea/models.py:527
 #: survey_korea/models.py:547 survey_korea/models.py:567
 msgid "0 - I don't trust them at all"
-msgstr ""
+msgstr "0 - 전혀 신뢰할 수 없다 "
 
 #: survey/models.py:182 survey/models.py:202 survey/models.py:222
 #: survey/models.py:242 survey/models.py:262 survey/models.py:282
@@ -2076,27 +2039,27 @@ msgstr ""
 #: survey_korea/models.py:517 survey_korea/models.py:537
 #: survey_korea/models.py:557 survey_korea/models.py:577
 msgid "10 - I fully trust them"
-msgstr ""
+msgstr "10 - 매우 신뢰한다 "
 
 #: survey/models.py:190
 msgid "People in your neighborhood."
-msgstr ""
+msgstr "이웃."
 
 #: survey/models.py:210
 msgid "People you know personally."
-msgstr ""
+msgstr "지인."
 
 #: survey/models.py:230
 msgid "People you meet for the first time."
-msgstr ""
+msgstr "처음 만난 사람."
 
 #: survey/models.py:250
 msgid "People of another religion."
-msgstr ""
+msgstr "다른 종교를 가진 사람."
 
 #: survey/models.py:270
 msgid "People of another nationality."
-msgstr ""
+msgstr "다른 나라 사람."
 
 #: survey/models.py:290 survey_i18n/models.py:409 survey_korea/models.py:420
 msgid ""
@@ -2104,6 +2067,9 @@ msgid ""
 "and it was found by a stranger, do you think it would be returned with its "
 "contents, or not?"
 msgstr ""
+"당신이 모르는 누군가가, 당신의 소중한 물건이 담긴 지갑 혹은 가방을 우연히 발"
+"견한다면, 내용물과 함께 그대로 지갑 혹은 가방을 돌려받아야 한다고 생각하십니"
+"까?"
 
 #: survey/models.py:294 survey/models.py:306 survey/models.py:714
 #: survey_i18n/models.py:413 survey_i18n/models.py:425
@@ -2111,7 +2077,7 @@ msgstr ""
 #: survey_korea/models.py:424 survey_korea/models.py:436
 #: survey_korea/models.py:913 survey_korea/models.py:995
 msgid "Yes"
-msgstr ""
+msgstr "예 "
 
 #: survey/models.py:295 survey/models.py:307 survey/models.py:715
 #: survey_i18n/models.py:414 survey_i18n/models.py:426
@@ -2119,31 +2085,31 @@ msgstr ""
 #: survey_korea/models.py:425 survey_korea/models.py:437
 #: survey_korea/models.py:914 survey_korea/models.py:996
 msgid "No"
-msgstr ""
+msgstr "아니오 "
 
 #: survey/models.py:303 survey_i18n/models.py:422 survey_korea/models.py:433
 msgid "Did you vote in the last national election?"
-msgstr ""
+msgstr "당신은 지난 총선에서 투표에 참여했습니까? "
 
 #: survey/models.py:308 survey_i18n/models.py:427 survey_korea/models.py:438
 msgid "I could not vote"
-msgstr ""
+msgstr "투표하지 않았다 "
 
 #: survey/models.py:316
 msgid "Your government."
-msgstr ""
+msgstr "당신의 정부."
 
 #: survey/models.py:336
 msgid "The judicial system."
-msgstr ""
+msgstr "사법제도. "
 
 #: survey/models.py:356
 msgid "The media."
-msgstr ""
+msgstr "대중 매체. "
 
 #: survey/models.py:376 survey_i18n/models.py:574 survey_korea/models.py:585
 msgid "Public institutions deliver public services in the best possible way."
-msgstr ""
+msgstr "공공기관은 최선의 방법으로 공공업무를 수행한다."
 
 #: survey/models.py:379 survey/models.py:399 survey/models.py:420
 #: survey/models.py:440 survey/models.py:461 survey_i18n/models.py:577
@@ -2153,7 +2119,7 @@ msgstr ""
 #: survey_korea/models.py:629 survey_korea/models.py:649
 #: survey_korea/models.py:670
 msgid "0 - I don't agree at all"
-msgstr ""
+msgstr "0 - 전혀 동의하지 않는다 "
 
 #: survey/models.py:389 survey/models.py:409 survey/models.py:430
 #: survey/models.py:450 survey/models.py:471 survey_i18n/models.py:587
@@ -2163,39 +2129,41 @@ msgstr ""
 #: survey_korea/models.py:639 survey_korea/models.py:659
 #: survey_korea/models.py:680
 msgid "10 - I fully agree"
-msgstr ""
+msgstr "10 - 전적으로 동의한다 "
 
 #: survey/models.py:397 survey_i18n/models.py:595 survey_korea/models.py:606
 msgid "Public institutions pursue long term objectives."
-msgstr ""
+msgstr "공공기관은 장기적 목표를 추구한다. "
 
 #: survey/models.py:417 survey_i18n/models.py:615 survey_korea/models.py:626
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption."
-msgstr ""
+msgstr "공공기관의 직원들은 부패를 막기 위한 도덕적 기준에 따라 행동한다. "
 
 #: survey/models.py:438 survey_i18n/models.py:636 survey_korea/models.py:647
 msgid "Public institutions are transparent."
-msgstr ""
+msgstr "공공기관은 투명하다."
 
 #: survey/models.py:458 survey_i18n/models.py:656 survey_korea/models.py:667
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
 "race, age or economic condition equally."
 msgstr ""
+"공공기관은 성별, 인종, 나이 또는 경제적 지위에 상관없이 모든 시민을 동등하게 "
+"대한다. "
 
 #: survey/models.py:479 survey_i18n/models.py:677 survey_korea/models.py:688
 msgid "What is your date of birth?"
-msgstr ""
+msgstr "당신의 생년월일은 언제입니까?"
 
 #: survey/models.py:485 survey_i18n/models.py:683 survey_korea/models.py:694
 msgid "Male"
-msgstr ""
+msgstr "남성"
 
 #: survey/models.py:485 survey_i18n/models.py:683 survey_korea/models.py:694
 msgid "Female"
-msgstr ""
+msgstr "여성 "
 
 #: survey/models.py:485 survey/models.py:557 survey/models.py:571
 #: survey/models.py:635 survey/models.py:727 survey_i18n/models.py:683
@@ -2203,238 +2171,242 @@ msgstr ""
 #: survey_korea/models.py:694 survey_korea/models.py:794
 #: survey_korea/models.py:1008 survey_korea/models.py:1019
 msgid "Other"
-msgstr ""
+msgstr "그 외 "
 
 #: survey/models.py:486 survey_i18n/models.py:684 survey_korea/models.py:695
 msgid "What is your gender?"
-msgstr ""
+msgstr "당신의 성별은 무엇입니까?"
 
 #: survey/models.py:508 survey_i18n/models.py:717 survey_korea/models.py:728
 msgid "In which country were you born?"
-msgstr ""
+msgstr "출생 국가는 어디입니까? "
 
 #: survey/models.py:512
 msgid "In what year did you arrive in the US?"
-msgstr ""
+msgstr "한국에는 몇 년도에 오셨습니까?"
 
 #: survey/models.py:513 survey_i18n/models.py:721 survey_korea/models.py:733
 msgid "I was born here"
-msgstr ""
+msgstr "나는 이곳에서 태어났다 "
 
 #: survey/models.py:520 survey_i18n/models.py:745
 #: survey_i18n/templates/survey_i18n/Survey08.html:15
 #: survey_korea/models.py:757
 msgid "What is the highest level of education that you have completed?"
-msgstr ""
+msgstr "당신의 최종학력은 무엇입니까?"
 
 #: survey/models.py:523 survey_i18n/views.py:237 survey_korea/models.py:760
 msgid "Less than high school"
-msgstr ""
+msgstr "고졸 이하 "
 
 #: survey/models.py:524 survey_i18n/views.py:238 survey_korea/models.py:761
 msgid "High school"
-msgstr ""
+msgstr "고졸"
 
 #: survey/models.py:525 survey_i18n/views.py:239 survey_korea/models.py:762
 msgid "Some college"
-msgstr ""
+msgstr "2년제 전문대졸 "
 
 #: survey/models.py:527 survey_i18n/views.py:240 survey_korea/models.py:764
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
-msgstr ""
+msgstr "대학을 제외한 기타 전문 교육 기관 졸"
 
 #: survey/models.py:529 survey_i18n/views.py:241 survey_korea/models.py:766
 msgid "Undergraduate degree (e.g. BA, BS)"
-msgstr ""
+msgstr "4년제 대학 졸"
 
 #: survey/models.py:531 survey_i18n/views.py:242 survey_korea/models.py:768
 msgid "Post-graduate degree"
-msgstr ""
+msgstr "대학원 졸"
 
 #: survey/models.py:533 survey/models.py:558 survey/models.py:573
 #: survey/models.py:623 survey/models.py:636 survey_korea/models.py:796
 msgid "I prefer not to answer"
-msgstr ""
+msgstr "응답 없음."
 
 #: survey/models.py:539 survey_i18n/models.py:762 survey_korea/models.py:774
 msgid "Which of these best describes your situation?"
-msgstr ""
+msgstr "현재 귀하의 상황을 가장 잘 설명하는 보기는 무엇입니까?"
 
 #: survey/models.py:541 survey_i18n/models.py:764 survey_korea/models.py:776
 msgid "At work as an employee"
-msgstr ""
+msgstr "직장인(회사원)이다"
 
 #: survey/models.py:542 survey_i18n/models.py:765 survey_korea/models.py:777
 msgid "Employer/self-employed"
-msgstr ""
+msgstr "고용주/개인 사업자이다"
 
 #: survey/models.py:543
 msgid "Employed, on child-care leave or other leave"
-msgstr ""
+msgstr "육아 휴직 및 기타 휴직 중인 직장인이다"
 
 #: survey/models.py:545
 msgid "At work as relative assisting on family farm or business"
-msgstr ""
+msgstr "가족 사업을 돕고 있다 "
 
 #: survey/models.py:547
 msgid "Unemployed less than 12 months"
-msgstr ""
+msgstr "실직한지 1년이 지나지 않았다 "
 
 #: survey/models.py:550
 msgid "Unemployed 12 months or more"
-msgstr ""
+msgstr "실직한지 1년이상 지났다"
 
 #: survey/models.py:551
 msgid "Unable to work due to long-term illness or disability"
-msgstr ""
+msgstr "장기간 앓고 있는 질병(또는 장애)으로 인해 일을 할 수 없다 "
 
 #: survey/models.py:553
 msgid "Retired"
-msgstr ""
+msgstr "은퇴했다 "
 
 #: survey/models.py:554
 msgid "Full-time homemaker"
-msgstr ""
+msgstr "전업 주부이다 "
 
 #: survey/models.py:555
 msgid "In education (at school, university, etc) / student"
-msgstr ""
+msgstr "교육 과정(학교, 대학 등) 중에 있다 / 학생"
 
 #: survey/models.py:564 survey_i18n/models.py:775 survey_korea/models.py:787
 msgid "Do you work in the...?"
-msgstr ""
+msgstr "귀하가 근무 중인 기관은...? "
 
 #: survey/models.py:566 survey_i18n/models.py:777 survey_korea/models.py:789
 msgid "Central, regional or local government administration"
-msgstr ""
+msgstr "중앙, 지방 또는 지역 정부 행정 기관"
 
 #: survey/models.py:568 survey_i18n/models.py:779 survey_korea/models.py:791
 msgid "Public sector, other"
-msgstr ""
+msgstr "공공 기관"
 
 #: survey/models.py:569 survey_i18n/models.py:780 survey_korea/models.py:792
 msgid "Private (for profit) sector"
-msgstr ""
+msgstr "사설 (영리) 기관"
 
 #: survey/models.py:570 survey_i18n/models.py:781 survey_korea/models.py:793
 msgid "Not for profit sector"
-msgstr ""
+msgstr "비영리 기관"
 
 #: survey/models.py:574 survey_i18n/models.py:782 survey_korea/models.py:797
 msgid "Not applicable"
-msgstr ""
+msgstr "해당 없음"
 
 #: survey/models.py:580
 msgid ""
 "Generally speaking, would you say that most people can be trusted or that "
 "you need to be very careful in dealing with people?"
-msgstr ""
+msgstr "일반적으로, 당신은 다른 사람들을 신뢰하십니까 혹은 경계하십니까? "
 
 #: survey/models.py:583
 msgid "Most people can be trusted"
-msgstr ""
+msgstr "대부분의 사람들은 신뢰할 만하다 "
 
 #: survey/models.py:584
 msgid "Need to be vary careful"
-msgstr ""
+msgstr "대부분의 사람들은 경계할 필요가 있다 "
 
 #: survey/models.py:607
 msgid ""
 "In the last 12 months what was your personal total income, before tax or "
 "anything else was taken out, and before any social benefit was added?"
 msgstr ""
+"지난 12개월 동안 당신의 개인적인 수입 중, 세금을 납부하기 전, 그리고 그외 어"
+"떤 사회적 지원을 받기 이전의 총 소득은 얼마입니까?"
 
 #: survey/models.py:611
 msgid "Loss"
-msgstr ""
+msgstr "소득 적자 "
 
 #: survey/models.py:612
 msgid "Zero income"
-msgstr ""
+msgstr "소득 없음 "
 
 #: survey/models.py:613
 msgid "$1 to $6,000"
-msgstr ""
+msgstr "1원 이상 6천 원 미만"
 
 #: survey/models.py:614
 msgid "$6,000 to $12,000"
-msgstr ""
+msgstr "6천 원 이상 1만 2천원 미마"
 
 #: survey/models.py:615
 msgid "$12,001 to $24,000"
-msgstr ""
+msgstr "1만 2천 1원 이상 2만 4천원 미만"
 
 #: survey/models.py:616
 msgid "$24,001 to $36,000"
-msgstr ""
+msgstr "2만 4천 1원 이상 3만 6천원 미만"
 
 #: survey/models.py:617
 msgid "$36,001 to $48,000"
-msgstr ""
+msgstr "3만 6천 1원 이상 4만 8천원 미만"
 
 #: survey/models.py:618
 msgid "$48,001 to $60,000"
-msgstr ""
+msgstr "4만 8천 1원 이상 6만원 미만"
 
 #: survey/models.py:619
 msgid "$60,001 to $90,000"
-msgstr ""
+msgstr "6만 1원 이상 9만원 미만"
 
 #: survey/models.py:620
 msgid "$90,001 to $120,000"
-msgstr ""
+msgstr "9만 1원 이상 12만원 미만"
 
 #: survey/models.py:621
 msgid "$120,001 or more"
-msgstr ""
+msgstr "12만 1원 이상"
 
 #: survey/models.py:631
 msgid "Christian - Roman Catholic"
-msgstr ""
+msgstr "기독교 - 로마 카톨릭"
 
 #: survey/models.py:632
 msgid "Christian - Protestant"
-msgstr ""
+msgstr "기독교 - 개신교"
 
 #: survey/models.py:633
 msgid "Muslim"
-msgstr ""
+msgstr "이슬람교"
 
 #: survey/models.py:634
 msgid "Jewish"
-msgstr ""
+msgstr "유대교"
 
 #: survey/models.py:656 survey_i18n/models.py:854 survey_korea/models.py:941
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
 msgstr ""
+"나와 함께 첫 번째 과제를 수행한 다른 참가자들은 실제로 나와 같은 실험에 참가"
+"한 사람들이다."
 
 #: survey/models.py:659 survey/models.py:674 survey_i18n/models.py:857
 #: survey_i18n/models.py:870 survey_korea/models.py:944
 #: survey_korea/models.py:957
 msgid "No trust at all"
-msgstr ""
+msgstr "전혀 믿지 않는다 "
 
 #: survey/models.py:660 survey/models.py:675 survey_i18n/models.py:858
 #: survey_i18n/models.py:871 survey_korea/models.py:945
 #: survey_korea/models.py:958
 msgid "Little trust"
-msgstr ""
+msgstr "거의 믿지 않는다 "
 
 #: survey/models.py:661 survey/models.py:676 survey_i18n/models.py:859
 #: survey_i18n/models.py:872 survey_korea/models.py:946
 #: survey_korea/models.py:959
 msgid "Quite a bit of trust"
-msgstr ""
+msgstr "꽤 믿는다 "
 
 #: survey/models.py:662 survey/models.py:677 survey_i18n/models.py:860
 #: survey_i18n/models.py:873 survey_korea/models.py:947
 #: survey_korea/models.py:960
 msgid "A lot of trust"
-msgstr ""
+msgstr "아주 확실히 믿는다 "
 
 #: survey/models.py:669
 msgid ""
@@ -2442,83 +2414,89 @@ msgid ""
 "the description of the study and will be paid to me (or donated if I choose "
 "not to keep the at the end of the study)."
 msgstr ""
+"나의 최종 보상은 앞에서 명시된 대로 원칙에 따라 원화로 계산될 것이고 실험이 "
+"끝난 후 내게 지급될 것이다 (혹은 선택에 따라 기부될 것이다)."
 
 #: survey/models.py:684
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the 3 sections?"
 msgstr ""
+"본 연구를 마무리하는 시점에서, 당신은 각 3개 섹션의 지시문을 얼마나 주의 깊"
+"게 읽으셨습니까?"
 
 #: survey/models.py:687 survey_i18n/models.py:883 survey_korea/models.py:970
 msgid "With very little care"
-msgstr ""
+msgstr "전혀 주의 깊게 읽지 않았다"
 
 #: survey/models.py:688 survey_i18n/models.py:884 survey_korea/models.py:971
 msgid "With little care"
-msgstr ""
+msgstr "주의 깊게 읽지 않았다"
 
 #: survey/models.py:689 survey_i18n/models.py:885 survey_korea/models.py:972
 msgid "With care"
-msgstr ""
+msgstr "주의 깊게 읽었다"
 
 #: survey/models.py:690 survey_i18n/models.py:886 survey_korea/models.py:973
 msgid "With a lot of care"
-msgstr ""
+msgstr "꽤 주의 깊게 읽었다"
 
 #: survey/models.py:691 survey_i18n/models.py:887 survey_korea/models.py:974
 msgid "With extreme care"
-msgstr ""
+msgstr "매우 주의 깊게 읽었다"
 
 #: survey/models.py:698 survey_i18n/models.py:893 survey_korea/models.py:980
 msgid "Were you in a calm environment when you answered the questions?"
-msgstr ""
+msgstr "당신은 얼마나 차분한 상태에서 문항들에 응답하셨습니까?"
 
 #: survey/models.py:701 survey_i18n/models.py:896 survey_korea/models.py:983
 msgid "Not calm at all"
-msgstr ""
+msgstr "전혀 차분하지 않았다 "
 
 #: survey/models.py:702 survey_i18n/models.py:897 survey_korea/models.py:984
 msgid "Not very calm"
-msgstr ""
+msgstr "별로 차분하지 않았다 "
 
 #: survey/models.py:703 survey_i18n/models.py:898 survey_korea/models.py:985
 msgid "Fairly calm"
-msgstr ""
+msgstr "꽤 차분했다 "
 
 #: survey/models.py:704 survey_i18n/models.py:899 survey_korea/models.py:986
 msgid "Very calm"
-msgstr ""
+msgstr "매우 차분했다 "
 
 #: survey/models.py:711 survey_i18n/models.py:905 survey_korea/models.py:992
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
-msgstr ""
+msgstr "당신은 본 실험과 비슷한 연구에 참여한 적이 있으십니까?"
 
 #: survey/models.py:721 survey_i18n/models.py:915 survey_korea/models.py:1002
 msgid "Which device did you take this study on?"
-msgstr ""
+msgstr "어떤 기기를 사용하여 본 실험에 참가하셨습니까?"
 
 #: survey/models.py:723 survey_i18n/models.py:917 survey_korea/models.py:1004
 msgid "Desktop"
-msgstr ""
+msgstr "데스크톱 컴퓨터"
 
 #: survey/models.py:724 survey_i18n/models.py:918 survey_korea/models.py:1005
 msgid "Laptop (non-touchscreen)"
-msgstr ""
+msgstr "노트북 (터치스크린이 아닌 형태)"
 
 #: survey/models.py:725 survey_i18n/models.py:919 survey_korea/models.py:1006
 msgid "Laptop (touchscreen)"
-msgstr ""
+msgstr "노트북 (터치스크린)"
 
 #: survey/models.py:726 survey_i18n/models.py:920 survey_korea/models.py:1007
 msgid "Tablet"
-msgstr ""
+msgstr "태블릿"
 
 #: survey/templates/survey/EndGame.html:13
 msgid ""
 "This money will be paid to you via Paypal – you will receive an email with "
 "more information on how to proceed shortly."
 msgstr ""
+"보상 금액은 페이팔을 통해 지급됩니다 - 빠른 시일 내에 금액 지급 방법에 관한 "
+"추가적 정보를 이메일로 받으시게 됩니다."
 
 #: survey/templates/survey/EndGame.html:15
 msgid ""
@@ -2527,24 +2505,34 @@ msgid ""
 "to children and mothers in developing countries. You can find more "
 "information <a href='http://www.unicef.org' target='_blank'>here</a>."
 msgstr ""
+"추가적으로, 여러분은 선택에 따라 보상의 전액을 기부하지 않으실 수 있고, 일부 "
+"혹은 전부를 유니세프에 기부하실 수 있습니다. 유니세프는 개발 도상국의 아이들"
+"과 어머니들에게 인도적 도움을 전달하고 있습니다. <a href='http://www.unicef."
+"org' target='_blank'>here</a>를 클릭하시면 더 많은 정보를 얻으실 수 있습니다."
 
 #: survey/templates/survey/EndGame.html:17
 msgid "Please enter the amount you wish to donate to UNICEF: "
-msgstr ""
+msgstr "유니세프에 기부하고자 하는 만큼의 액수를 적어주세요:"
 
 #: survey/templates/survey/EndGame.html:18
 msgid "If you do not wish to donate anything, enter 0."
-msgstr ""
+msgstr "기부를 원하지 않으신다면, 0을 적어주세요."
+
+#: survey/templates/survey/EndGame.html:21
+#: survey_i18n/templates/survey_i18n/EndGame.html:52
+#: survey_korea/templates/survey_korea/EndGame.html:52
+msgid "Finish study"
+msgstr "실험종료"
 
 #: survey/templates/survey/Survey03.html:27
 #: survey_i18n/templates/survey_i18n/Survey04B.html:27
 msgid "Could you tell us for each of these groups how much you trust them?"
-msgstr ""
+msgstr "당신은 이 각자의 그룹들을 얼마나 신뢰하십니까?"
 
 #: survey/templates/survey/Survey05.html:27
 msgid ""
 "When answering the following questions, please think about US institutions."
-msgstr ""
+msgstr "다음의 질문들에 응답하실 때, 미국 제도에 관해 생각해 주십시오."
 
 #: survey/templates/survey/Survey05.html:29
 #: survey_korea/templates/survey_korea/Survey05.html:29
@@ -2552,12 +2540,14 @@ msgid ""
 "How much trust do you have in the following to act in the best interest of "
 "society?"
 msgstr ""
+"당신은 사회의 최대 이익을 위한 활동을 하는 다음의 ~에 대해 얼마나 신뢰하십니"
+"까?"
 
 #: survey/templates/survey/Survey06.html:27
 #: survey_i18n/templates/survey_i18n/Survey06.html:27
 #: survey_korea/templates/survey_korea/Survey06.html:27
 msgid "Do you agree with the following statements?"
-msgstr ""
+msgstr "당신은 다음의 서술문에 대하여 동의하십니까?"
 
 #: survey/templates/survey/Survey07.html:16
 #: survey_korea/templates/survey_korea/Survey07.html:16
@@ -2565,6 +2555,8 @@ msgid ""
 "We will now ask you questions about your personal situation. Remember, all "
 "data is anonymous."
 msgstr ""
+"지금부터 당신의 개인적인 상황에 대하여 질문하려고 합니다. 모든 데이터는 익명"
+"으로 처리됩니다."
 
 #: survey/templates/survey/Survey07.html:24
 #: survey_i18n/templates/survey_i18n/Survey07.html:34
@@ -2573,53 +2565,55 @@ msgid ""
 "Click on all options below to show all the people who live in the same "
 "household as you. <br/>You can choose as many as you need."
 msgstr ""
+"아래의 보기 중 현재 한 집에서 귀하와 함께 살고 있는 사람을 모두 골라 주세요. "
+"<br/>필요한만큼 선택하실 수 있습니다."
 
 #: survey/templates/survey/Survey07.html:29
 #: survey_i18n/templates/survey_i18n/Survey07.html:39
 #: survey_korea/templates/survey_korea/Survey07.html:29
 msgid "My legal husband or wife"
-msgstr ""
+msgstr "법적 남편 또는 아내"
 
 #: survey/templates/survey/Survey07.html:32
 #: survey_i18n/templates/survey_i18n/Survey07.html:42
 #: survey_korea/templates/survey_korea/Survey07.html:32
 msgid "My civil union partner"
-msgstr ""
+msgstr "동성 파트너"
 
 #: survey/templates/survey/Survey07.html:35
 #: survey_i18n/templates/survey_i18n/Survey07.html:45
 #: survey_korea/templates/survey_korea/Survey07.html:35
 msgid "My de-facto partner, boyfriend or girlfriend"
-msgstr ""
+msgstr "연애 중인 이성친구"
 
 #: survey/templates/survey/Survey07.html:38
 #: survey_i18n/templates/survey_i18n/Survey07.html:48
 #: survey_korea/templates/survey_korea/Survey07.html:38
 msgid "My mother and/or father"
-msgstr ""
+msgstr "부모님"
 
 #: survey/templates/survey/Survey07.html:41
 #: survey_i18n/templates/survey_i18n/Survey07.html:51
 #: survey_korea/templates/survey_korea/Survey07.html:41
 msgid "My children"
-msgstr ""
+msgstr "자녀"
 
 #: survey/templates/survey/Survey07.html:44
 #: survey_i18n/templates/survey_i18n/Survey07.html:54
 #: survey_korea/templates/survey_korea/Survey07.html:44
 msgid "My brothers and/or sisters"
-msgstr ""
+msgstr "형제 자매"
 
 #: survey/templates/survey/Survey07.html:47
 #: survey_i18n/templates/survey_i18n/Survey07.html:57
 #: survey_korea/templates/survey_korea/Survey07.html:47
 msgid "My flatmates"
-msgstr ""
+msgstr "룸메이트"
 
 #: survey/templates/survey/Survey07.html:53
 #: survey/templates/survey/Survey09.html:52
 msgid "I don't want to answer"
-msgstr ""
+msgstr "답변을 원치 않습니다."
 
 #: survey/templates/survey/Survey09.html:20
 msgid ""
@@ -2627,16 +2621,18 @@ msgid ""
 "today? You can choose as many as you need. <br/>Please do not count loans as "
 "income."
 msgstr ""
+"지난 1년간 귀하의 수입원에는 어떤 것들이 있습니까? 해당하는 것을 모두 골라주"
+"세요.<br/>단, 대출은 수입에 포함되지 않습니다."
 
 #: survey/templates/survey/Survey09.html:25
 msgid "Wages, salary, commissions, bonuses etc paid by employer"
-msgstr ""
+msgstr "직장으로부터 받은 급여, 월급, 수수료, 보너스 등"
 
 #: survey/templates/survey/Survey09.html:28
 #: survey_korea/templates/survey_korea/Survey10.html:25
 #: survey_korea/templates/survey_korea/Survey10.html:63
 msgid "Self-employment or business"
-msgstr ""
+msgstr "개인 사업으로부터 얻은 수익"
 
 #: survey/templates/survey/Survey09.html:31
 #: survey_i18n/templates/survey_i18n/Survey10.html:28
@@ -2644,11 +2640,11 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:31
 #: survey_korea/templates/survey_korea/Survey10.html:69
 msgid "Interest, dividends, rent, other investments"
-msgstr ""
+msgstr "이자, 배당금, 전/월세, 기타 투자 수익금"
 
 #: survey/templates/survey/Survey09.html:34
 msgid "Regular payments from a workplace accident insurer"
-msgstr ""
+msgstr "정기적으로 들어오는 산재보험금"
 
 #: survey/templates/survey/Survey09.html:37
 #: survey_i18n/templates/survey_i18n/Survey10.html:31
@@ -2656,7 +2652,7 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:34
 #: survey_korea/templates/survey_korea/Survey10.html:72
 msgid "Pension"
-msgstr ""
+msgstr "연금"
 
 #: survey/templates/survey/Survey09.html:40
 #: survey_i18n/templates/survey_i18n/Survey10.html:34
@@ -2664,7 +2660,7 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:37
 #: survey_korea/templates/survey_korea/Survey10.html:75
 msgid "Social insurance payments, state benefits"
-msgstr ""
+msgstr "사회 보험금, 국가 보조금"
 
 #: survey/templates/survey/Survey09.html:43
 #: survey_i18n/templates/survey_i18n/Survey10.html:37
@@ -2672,7 +2668,7 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:40
 #: survey_korea/templates/survey_korea/Survey10.html:78
 msgid "Other sources of income"
-msgstr ""
+msgstr "기타 수입원"
 
 #: survey/templates/survey/Survey09.html:46
 #: survey_i18n/templates/survey_i18n/Survey10.html:40
@@ -2680,7 +2676,7 @@ msgstr ""
 #: survey_korea/templates/survey_korea/Survey10.html:43
 #: survey_korea/templates/survey_korea/Survey10.html:81
 msgid "No source of income during that time"
-msgstr ""
+msgstr "해당 기간 내에 수입원 없음"
 
 #: survey/templates/survey/Survey11.html:17
 #: survey_i18n/templates/survey_i18n/Survey11.html:16
@@ -2689,48 +2685,54 @@ msgid ""
 "For information purposes, could you tell us to what extent you trusted the "
 "following two statements when you made your decisions:"
 msgstr ""
+"당신이 의사결정을 내릴 때 다음 두 개의 서술문에 대하여 얼마나 신뢰하는지 응답"
+"하여 주십시오:"
 
 #: survey_i18n/models.py:94 survey_korea/models.py:90
 msgid "0 - Completely unwilling to take risks"
-msgstr ""
+msgstr "0 - 전혀 위험을 감수하고 싶지 않다"
 
 #: survey_i18n/models.py:104 survey_korea/models.py:100
 msgid "10 - Very willing to take risks"
-msgstr ""
+msgstr "10 - 기꺼이 위험을 감수할 것이다"
 
 #: survey_i18n/models.py:112
 msgid ""
 "How willing are you to punish someone who treats you unfairly, even if there "
 "may be costs for you?"
 msgstr ""
+"당신은 대가를 지불하고서라도 당신에 대하여 불공평하게 대하는 사람을 처벌할 의"
+"향이 있으십니까?"
 
 #: survey_i18n/models.py:115 survey_i18n/models.py:136
 #: survey_i18n/models.py:157 survey_korea/models.py:111
 #: survey_korea/models.py:132 survey_korea/models.py:153
 msgid "0 - Completely unwilling to do so"
-msgstr ""
+msgstr "0 - 그럴 의향이 전혀 없다"
 
 #: survey_i18n/models.py:125 survey_i18n/models.py:146
 #: survey_i18n/models.py:167 survey_korea/models.py:121
 #: survey_korea/models.py:142 survey_korea/models.py:163
 msgid "10 - Very willing to do so"
-msgstr ""
+msgstr "10 - 매우 그럴 의향이 있다"
 
 #: survey_i18n/models.py:133 survey_korea/models.py:129
 msgid ""
 "How willing are you to punish someone who treats others unfairly, even if "
 "there may be costs for you?"
 msgstr ""
+"대가를 지불하고서라도 타인에 대하여 불공평하게 대하는 사람을 처벌할 의향이 있"
+"으십니까?"
 
 #: survey_i18n/models.py:154 survey_korea/models.py:150
 msgid ""
 "How willing are you to give to good causes without expecting anything in "
 "return? "
-msgstr ""
+msgstr "보답을 바라지 않고 좋은 일에 ~를 제공할 의향이 있으십니까?"
 
 #: survey_i18n/models.py:181 survey_korea/models.py:180
 msgid "When someone does me a favour I am willing to return it."
-msgstr ""
+msgstr "누군가가 나의 부탁을 들어 준다면, 나는 보답할 의향이 있다."
 
 #: survey_i18n/models.py:184 survey_i18n/models.py:205
 #: survey_i18n/models.py:436 survey_i18n/models.py:791
@@ -2738,7 +2740,7 @@ msgstr ""
 #: survey_korea/models.py:447 survey_korea/models.py:806
 #: survey_korea/models.py:924
 msgid "0 - Does not describe me at all"
-msgstr ""
+msgstr "0 - 나를 전혀 묘사하고 있지 않다."
 
 #: survey_i18n/models.py:194 survey_i18n/models.py:215
 #: survey_i18n/models.py:446 survey_i18n/models.py:801
@@ -2746,170 +2748,178 @@ msgstr ""
 #: survey_korea/models.py:457 survey_korea/models.py:816
 #: survey_korea/models.py:934
 msgid "10 - Describes me perfectly"
-msgstr ""
+msgstr "10 - 나를 완벽하게 묘사하고 있다."
 
 #: survey_i18n/models.py:202 survey_korea/models.py:201
 msgid ""
 "If I am treated very unjustly, I will take revenge     at the first "
 "occasion, even if there is a cost to do so."
 msgstr ""
+"만약 내가 부당하게 대우받는다면 나는 대가를 지불하고서라도 곧바로 보복할 것이"
+"다."
 
 #: survey_i18n/models.py:225 survey_korea/models.py:236
 msgid ""
 "Would you say that most of the time people are only     looking out for "
 "themselves or that they mostly try to help each other?"
 msgstr ""
+"당신은 대부분의 사람들이 자신만을 챙기는 편이라 생각하십니까 혹은 서로 돕는 "
+"편이라 생각하십니까?"
 
 #: survey_i18n/models.py:228 survey_korea/models.py:239
 msgid "0 - People are only looking out for themselves "
-msgstr ""
+msgstr "0 - 사람들은 오직 자신만을 챙긴다"
 
 #: survey_i18n/models.py:246 survey_korea/models.py:257
 msgid ""
 "Do you think most people would try to take advantage     of you if they got "
 "a chance, or would they try to be fair?"
 msgstr ""
+"대부분의 사람들은 기회가 생길 때 당신을 이용하려 한다고 생각하십니까 혹은 공"
+"정하다고 생각하십니까?"
 
 #: survey_i18n/models.py:267
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between"
 msgstr ""
+"다음의 행동이 항상 정당화 될 수 있는지, 절대 정당화될 수 없는지, 혹은 양측 모"
+"두 어느정도 가능한지에 대하여 응답해주세요:"
 
 #: survey_i18n/models.py:271 survey_korea/models.py:282
 msgid "0 - This action is never wrong"
-msgstr ""
+msgstr "0 - 이 행동은 절대 잘못되지 않았다"
 
 #: survey_i18n/models.py:281 survey_korea/models.py:292
 msgid "10 - This action is always wrong"
-msgstr ""
+msgstr "10 - 이 행동은 언제나 잘못되었다"
 
 #: survey_i18n/models.py:289 survey_korea/models.py:300
 msgid "Your family:"
-msgstr ""
+msgstr "가족:"
 
 #: survey_i18n/models.py:309 survey_korea/models.py:320
 msgid "People in your neighbourhood:"
-msgstr ""
+msgstr "이웃 사람:"
 
 #: survey_i18n/models.py:329 survey_korea/models.py:340
 msgid "People you know personally:"
-msgstr ""
+msgstr "지인:"
 
 #: survey_i18n/models.py:349 survey_korea/models.py:360
 msgid "People you meet for the first time:"
-msgstr ""
+msgstr "처음 만난 사람:"
 
 #: survey_i18n/models.py:369 survey_korea/models.py:380
 msgid "People of another religion:"
-msgstr ""
+msgstr "다른 종교를 가진 사람:"
 
 #: survey_i18n/models.py:389 survey_korea/models.py:400
 msgid "People of another nationality:"
-msgstr ""
+msgstr "다른 나라의 사람:"
 
 #: survey_i18n/models.py:434 survey_korea/models.py:445
 msgid "I am good at math."
-msgstr ""
+msgstr "나는 수학을 잘한다."
 
 #: survey_i18n/models.py:454 survey_korea/models.py:465
 msgid "Your government:"
-msgstr ""
+msgstr "당신의 정부:"
 
 #: survey_i18n/models.py:474 survey_korea/models.py:485
 msgid "The parliament:"
-msgstr ""
+msgstr "국회:"
 
 #: survey_i18n/models.py:494 survey_korea/models.py:505
 msgid "The judicial system:"
-msgstr ""
+msgstr "사법 제도:"
 
 #: survey_i18n/models.py:514 survey_korea/models.py:525
 msgid "The media:"
-msgstr ""
+msgstr "미디어:"
 
 #: survey_i18n/models.py:534 survey_korea/models.py:545
 msgid "Financial Institutions (e.g. banks):"
-msgstr ""
+msgstr "금융 기관 (예시. 은행):"
 
 #: survey_i18n/models.py:554 survey_korea/models.py:565
 msgid "The police:"
-msgstr ""
+msgstr "경찰:"
 
 #: survey_i18n/models.py:693 survey_korea/models.py:704
 msgid "How many people live in your household (including yourself)?"
-msgstr ""
+msgstr "당신을 포함하여 가정 구성원은 몇 명입니까?"
 
 #: survey_i18n/models.py:728 survey_korea/models.py:740
 msgid "Do you live in a:"
-msgstr ""
+msgstr "당신이 사는 곳은:"
 
 #: survey_i18n/models.py:730 survey_korea/models.py:742
 msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
-msgstr ""
+msgstr "큰 대도시권 (거주자 1백 5십만명 이상)"
 
 #: survey_i18n/models.py:732 survey_korea/models.py:744
 msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
-msgstr ""
+msgstr "중간 크기의 대도시권 (거주자 5십만명 이상 1백 5십만명 미만)"
 
 #: survey_i18n/models.py:734 survey_korea/models.py:746
 msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
-msgstr ""
+msgstr "작은 대도시권 (거주자 2십만명 이상 5십만명 미만)"
 
 #: survey_i18n/models.py:736 survey_korea/models.py:748
 msgid "Town (50.000 to 200.000 inhabitants)"
-msgstr ""
+msgstr "소도시 (거주자 5만명 이상 2십만명 미만)"
 
 #: survey_i18n/models.py:737 survey_korea/models.py:749
 msgid "Village (Less than 50.000 inhabitants)"
-msgstr ""
+msgstr "마을 (거주자 5만명 미만)"
 
 #: survey_i18n/models.py:738 survey_korea/models.py:750
 msgid "Rural area"
-msgstr ""
+msgstr "시골 지역"
 
 #: survey_i18n/models.py:748 survey_i18n/views.py:228
 msgid "Aucun diplôme"
-msgstr ""
+msgstr "학력 없음"
 
 #: survey_i18n/models.py:749 survey_i18n/views.py:229
 msgid "Brevet des collèges"
-msgstr ""
+msgstr "중등 교육"
 
 #: survey_i18n/models.py:750 survey_i18n/views.py:230
 msgid "CAP BEP ou équivalent"
-msgstr ""
+msgstr "직업 자격증, 직업교육 수료증 혹은 동등한 자격"
 
 #: survey_i18n/models.py:751 survey_i18n/views.py:231
 msgid "Baccalauréat"
-msgstr ""
+msgstr "대학입학자격시험"
 
 #: survey_i18n/models.py:752 survey_i18n/views.py:232
 msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
-msgstr ""
+msgstr "전문학교 수료증 (전문 기술 자격증, 기술전문대학 수료증 등)"
 
 #: survey_i18n/models.py:754 survey_i18n/views.py:233
 msgid "Licence (Bac + 3)"
-msgstr ""
+msgstr "자격증 (대학입학자격 시험 +3)"
 
 #: survey_i18n/models.py:755 survey_i18n/views.py:234
 msgid "Master (Bac + 5) ou Doctorat"
-msgstr ""
+msgstr "석사 (대학입학자격 시험 +5) 또는 박사"
 
 #: survey_i18n/models.py:766 survey_korea/models.py:778
 msgid "Unemployed"
-msgstr ""
+msgstr "실직자"
 
 #: survey_i18n/models.py:768 survey_korea/models.py:780
 msgid ""
 "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
-msgstr ""
+msgstr "노동력 없음 (예. 주부, 학생, 은퇴한 사람, 일할 수 없는 사람)"
 
 #: survey_i18n/models.py:788 survey_korea/models.py:803
 msgid ""
 "As long as I am not convinced otherwise, I assume that people have only the "
 "best intentions."
-msgstr ""
+msgstr "내가 납득하는 한, 나는 사람들이 가장 좋은 의도만을 가진다고 생각한다."
 
 #: survey_i18n/models.py:813 survey_korea/models.py:862
 msgid ""
@@ -2917,52 +2927,56 @@ msgid ""
 "personal income? Remember, we are asking for your individual income, after "
 "taxes have been deducted."
 msgstr ""
+"다시 한번 확인드리면, 어느 수준의 소득이 세금을 제한 후 당신 개인 수입에 해당"
+"합니까? 반드시, 세후 개인소득으로 말씀하여 주십시오."
 
 #: survey_i18n/models.py:823 survey_korea/models.py:910
 msgid "Did you or your household save any money in the previous year?"
-msgstr ""
+msgstr "당신 혹은 당신 가정은 작년에 저축하신 경험이 있으십니까?"
 
 #: survey_i18n/models.py:834
 #: survey_i18n/templates/survey_i18n/Survey10G.html:39
 #: survey_korea/models.py:921
 msgid "How important would you say religion is in your own life?"
-msgstr ""
+msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
 
 #: survey_i18n/models.py:837
 msgid "0 - Not important at all"
-msgstr ""
+msgstr "0 - 전혀 중요하지 않다"
 
 #: survey_i18n/models.py:847
 msgid "10 - Very important"
-msgstr ""
+msgstr "10 - 매우 중요하다"
 
 #: survey_i18n/models.py:867 survey_korea/models.py:954
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
 msgstr ""
+"나의 최종 보상은 앞에서 명시한 대로 원칙에 따라 유로로 계산될 것이며, 실험이 "
+"끝나면 지급 될 것이다"
 
 #: survey_i18n/models.py:880 survey_korea/models.py:967
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
-msgstr ""
+msgstr "실험 후반부에, 각 섹션과 연관된 설명들을 어떻게 읽으셨습니까?"
 
 #: survey_i18n/models.py:927 survey_korea/models.py:1014
 msgid "Which browser did you take this survey on?"
-msgstr ""
+msgstr "본 실험에서 사용하신 브라우저는 어떤 것입니까?"
 
 #: survey_i18n/models.py:929 survey_korea/models.py:1016
 msgid "Google Chrome"
-msgstr ""
+msgstr "구글 크롬"
 
 #: survey_i18n/models.py:930 survey_korea/models.py:1017
 msgid "Firefox"
-msgstr ""
+msgstr "파이어폭스"
 
 #: survey_i18n/models.py:931 survey_korea/models.py:1018
 msgid "Internet Explorer"
-msgstr ""
+msgstr "인터넷 익스플로러"
 
 #: survey_i18n/models.py:938 survey_korea/models.py:1025
 msgid ""
@@ -2970,28 +2984,50 @@ msgid ""
 "regard to the functionality of the platform, or the content of the tasks and "
 "questions, please provide us with relevant feedback:"
 msgstr ""
+"본 설문을 하시는 중에, 플랫폼의 기능이나 과제와 질문의 내용에 관하여 의견이 "
+"있으시다면, 적절한 피드백을 부탁드립니다."
 
 #: survey_i18n/templates/survey_i18n/EndGame.html:10
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as {{payoff_amount}} euros."
 msgstr ""
+"다른 참가자들의 결과와 대조한 후, 당신의 보상은 {{지불 총액}}원으로 계산됩니"
+"다."
+
+#: survey_i18n/templates/survey_i18n/EndGame.html:49
+#: survey_korea/templates/survey_korea/EndGame.html:49
+msgid "(Should you not wish to donate anything at this point, please enter 0)."
+msgstr "(이 시점에서 기부를 원하지 않으면, 0을 입력해주십시오)."
+
+#: survey_i18n/templates/survey_i18n/EndGame.html:50
+#: survey_korea/templates/survey_korea/EndGame.html:50
+msgid ""
+"Once again, thank you very much for participating. You will now be "
+"redirected in order to collect your reward."
+msgstr ""
+"다시 한번, 당신의 참여에 매우 감사드립니다. 이제 보상을 받는 페이지로 안내해 "
+"드리겠습니다."
 
 #: survey_i18n/templates/survey_i18n/Survey02.html:28
 msgid ""
 "How willing are you to punish someone who treats <em><u>you</u></em> "
 "unfairly, even if there may be costs for you?"
 msgstr ""
+"당신은 대가를 지불하고서라도 당신에 대하여 불공평하게 대하는 사람을 처벌할 의"
+"향이 있으십니까?"
 
 #: survey_i18n/templates/survey_i18n/Survey02.html:31
 msgid ""
 "How willing are you to punish someone who treats <em><u>others</u></em> "
 "unfairly, even if there may be costs for you?"
 msgstr ""
+"당신은 대가를 지불하고서라도 타인에 대하여 불공평하게 대하는 사람을 처벌할 의"
+"향이 있으십니까?"
 
 #: survey_i18n/templates/survey_i18n/Survey04.html:18
 msgid "Please think about what you would do in the following situation:"
-msgstr ""
+msgstr "다음의 상황에서 당신은 어떻게 행동할지 생각해주십시오:"
 
 #: survey_i18n/templates/survey_i18n/Survey04.html:22
 msgid ""
@@ -3004,41 +3040,53 @@ msgid ""
 "stranger as a “thank-you”-gift? If so, which present do you give to the "
 "stranger?"
 msgstr ""
+"당신은 낯선 장소에 있으며, 길을 잃은 것같습니다. 당신은 낯선 이에게 길을 물어"
+"봅니다. 그 낯선 이는 당신을 목적지까지 데려다 주려 합니다. 당신을 도와주는 댓"
+"가로 낯선 이에게 총 20원을 지불해야하지만, 그 낯선 이는 당신에게 어떠한 돈도 "
+"받기를 원하지 않습니다. 당신은 6가지의 선물을 가지고 있습니다. 가장 싼 선물"
+"은 5원이고, 가장 비싼 것은 30원입니다. 당신은 그 낯선 이에게 이 중 하나의 선"
+"물을 \"감사의 선물\"로 주시겠습니까? 만약 준다면, 어떤 선물을 주시겠습니까?"
 
 #: survey_i18n/templates/survey_i18n/Survey04A.html:33
 msgid ""
 "Can you tell us whether you think the following action is always wrong, "
 "never wrong, or something in between:"
 msgstr ""
+"다음의 행동이 매우 잘못되었는지, 전혀 잘못되지 않았는지, 혹은 양측 모두 어느"
+"정도 가능한지에 대하여 응답하여 주십시오."
 
 #: survey_i18n/templates/survey_i18n/Survey05.html:29
 msgid ""
 "How much trust do you have in the following institutions to act in the best "
 "interest of society?"
 msgstr ""
+"당신은 사회의 최대 이익을 위한 활동을 하는 다음의 기관들에 대해 얼마나 신뢰하"
+"십니까?"
 
 #: survey_i18n/templates/survey_i18n/Survey07.html:26
 msgid ""
 "We will now ask you questions about your personal situation. All data is "
 "anonymous and will not be shared with a third party."
 msgstr ""
+"지금부터 당신의 개인적인 상황에 대하여 질문하려고 합니다. 모든 데이터는 익명"
+"으로 처리될 것이며 제 3자에게 공유되지 않을 것입니다."
 
 #: survey_i18n/templates/survey_i18n/Survey07.html:60
 #: survey_korea/templates/survey_korea/Survey07.html:50
 msgid "Alone"
-msgstr ""
+msgstr "혼자"
 
 #: survey_i18n/templates/survey_i18n/Survey07.html:66
 msgid "Adults (18 years or older)"
-msgstr ""
+msgstr "성인 (18세 이상)"
 
 #: survey_i18n/templates/survey_i18n/Survey07.html:67
 msgid "Children (younger than 18 years)"
-msgstr ""
+msgstr "아이들 (18세 미만)"
 
 #: survey_i18n/templates/survey_i18n/Survey09.html:29
 msgid "How well does the following statement describe you as a person?"
-msgstr ""
+msgstr "다음의 서술문이 얼마나 당신을 잘 설명하고 있습니까? "
 
 #: survey_i18n/templates/survey_i18n/Survey10.html:17
 msgid ""
@@ -3046,20 +3094,22 @@ msgid ""
 "last 12 months ending today? <br/>Please choose the three most relevant "
 "options. <br/><br/>Please do not count loans as income."
 msgstr ""
+"지난 1년간 귀하의 개인 수입원에는 어떤 것들이 있습니까? <br/>가장 적합한 세가"
+"지를 골라주세요.<br/>단, 대출은 수입에 포함되지 않습니다."
 
 #: survey_i18n/templates/survey_i18n/Survey10.html:22
 #: survey_i18n/templates/survey_i18n/Survey10.html:59
 #: survey_korea/templates/survey_korea/Survey10.html:22
 #: survey_korea/templates/survey_korea/Survey10.html:60
 msgid "Salaries and wages"
-msgstr ""
+msgstr "급여와 임금"
 
 #: survey_i18n/templates/survey_i18n/Survey10.html:25
 #: survey_i18n/templates/survey_i18n/Survey10.html:62
 #: survey_korea/templates/survey_korea/Survey10.html:28
 #: survey_korea/templates/survey_korea/Survey10.html:66
 msgid "Profit from self-employment or business"
-msgstr ""
+msgstr "자영업 또는 개인 사업으로부터의 이익"
 
 #: survey_i18n/templates/survey_i18n/Survey10.html:50
 msgid ""
@@ -3067,6 +3117,9 @@ msgid ""
 "collective income of your family, your parents, or whoever you share your "
 "income and expenditures with."
 msgstr ""
+"자, 이제 당신의 가정의 수입에 대하여 생각하여 주십시오. 가정의 수입이란 자기 "
+"자신, 또는 당신 가족의 공동 수입, 당신의 부모님, 또는 당신의 수입과 경비를 공"
+"유하는 사람의 수입을 모두 포함합니다."
 
 #: survey_i18n/templates/survey_i18n/Survey10.html:54
 msgid ""
@@ -3074,6 +3127,8 @@ msgid ""
 "last 12 months? <br/>Please choose the three most relevant options. <br/><br/"
 ">Please do not count loans as income."
 msgstr ""
+"지난 1년간 귀하 가정의 주요 수입원에는 어떤 것들이 있습니까? <br/>가장 적합"
+"한 세가지를 골라주세요.<br/>단, 대출은 수입에 포함되지 않습니다."
 
 #: survey_i18n/templates/survey_i18n/Survey10A.html:13
 msgid ""
@@ -3081,6 +3136,8 @@ msgid ""
 "received <u>as an individual</u>, after taxes have been deducted? (Income "
 "can come from any of the sources mentioned in the previous question.)"
 msgstr ""
+"지난 1년간, 당신의 세후 개인 연수입은 얼마입니까?(수입은 이전의 질문에서 언급"
+"했던 모든 수입원에서 비롯된 것들을 포함합니다.)"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:17
 msgid ""
@@ -3088,47 +3145,49 @@ msgid ""
 "personal</u> income? Remember, we are asking for <u>your individual</u> "
 "income, after taxes have been deducted."
 msgstr ""
+"다시 한번 확인드리면, 어느 수준의 소득이 세금을 제한 후 당신 개인 수입에 해당"
+"합니까? 반드시, 세후 개인소득으로 말씀하여 주십시오."
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:21
 #: survey_korea/models.py:866
 msgid "0 to 13.000.000 Won per year"
-msgstr ""
+msgstr "연간 0 에서 13.000.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:22
 msgid "13.000.000 to 20.000.000 Won per year"
-msgstr ""
+msgstr "연간 13.000.000 에서 20.000.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:23
 msgid "20.000.000 to 25.000.000 Won per year"
-msgstr ""
+msgstr "연간 20.000.000 에서 25.000.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:24
 msgid "25.000.000 to 34.000.000 Won per year"
-msgstr ""
+msgstr "연간 25.000.000 에서 34.000.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:25
 msgid "34.000.000 Won or more per year"
-msgstr ""
+msgstr "연간 34.000.000 원 또는 그 이상"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:30
 msgid "0 to 15.000 euro per year"
-msgstr ""
+msgstr "연간 0 에서 15.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:31
 msgid "15.000 to 20.000 euro per year"
-msgstr ""
+msgstr "연간 15.000 에서 20.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:32
 msgid "20.000 to 25.000 euro per year"
-msgstr ""
+msgstr "연간 20.000 에서 25.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:33
 msgid "25.000 to 32.000 euro per year"
-msgstr ""
+msgstr "연간 25.000 에서 32.000 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10B.html:34
 msgid "32.000 euro per year or more"
-msgstr ""
+msgstr "연간 32.000 원 또는 그 이상"
 
 #: survey_i18n/templates/survey_i18n/Survey10C.html:23
 msgid ""
@@ -3136,10 +3195,12 @@ msgid ""
 "after taxes have been deducted? (Income can come from any of the sources "
 "mentioned in the previous question.)"
 msgstr ""
+"지난 1년간 당신의 가정의 세후 수입 총액은 얼마입니까?(수입은 이전의 질문에서 "
+"언급했던 모든 수입원에서 비롯된 것들을 포함합니다.)"
 
 #: survey_i18n/templates/survey_i18n/Survey10C.html:30
 msgid "per year"
-msgstr ""
+msgstr "1년 당"
 
 #: survey_i18n/templates/survey_i18n/Survey10D.html:18
 msgid ""
@@ -3148,115 +3209,120 @@ msgid ""
 "expenditures with). Remember, we are asking for the income of your "
 "<u>household</u>, after taxes have been deducted."
 msgstr ""
+"다시 한번 확인드리면, 어느 수준의 소득이 세금을 제한 후 당신 가정(당신의 수입"
+"과 지출을 공유하는 사람들을 말함)의 수입에 해당합니까? 반드시, 세후 소득으로 "
+"말씀하여 주십시오."
 
 #: survey_i18n/templates/survey_i18n/Survey10D.html:21
 msgid "0 to"
-msgstr ""
+msgstr "0 부터"
 
 #: survey_i18n/templates/survey_i18n/Survey10D.html:21
 #: survey_i18n/templates/survey_i18n/Survey10D.html:22
 #: survey_i18n/templates/survey_i18n/Survey10D.html:23
 #: survey_i18n/templates/survey_i18n/Survey10D.html:24
 msgid "euros per year"
-msgstr ""
+msgstr "1년 당 원"
 
 #: survey_i18n/templates/survey_i18n/Survey10D.html:25
 msgid "euros or more per year"
-msgstr ""
+msgstr "1년 당 원 또는 그 이상"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:23
 msgid "Are you:"
-msgstr ""
+msgstr "귀하의 종교를 표시해주세요."
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:26
 msgid " Buddhist"
-msgstr ""
+msgstr "불교"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:27
 msgid " Protestant"
-msgstr ""
+msgstr "개신교"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:28
 msgid " Catholic"
-msgstr ""
+msgstr "카톨릭"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:29
 msgid " Confucian"
-msgstr ""
+msgstr "유교"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:30
 msgid " Won Buddhist"
-msgstr ""
+msgstr "원불교"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:31
 msgid " Other"
-msgstr ""
+msgstr "그 외"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:32
 msgid " Not religious"
-msgstr ""
+msgstr "무교"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:33
 msgid " I don’t know"
-msgstr ""
+msgstr "잘 모르겠다"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:42
 msgid " 0 - Not important at all"
-msgstr ""
+msgstr "0 - 전혀 중요하지 않다"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:43
 msgid " 1"
-msgstr ""
+msgstr "1"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:44
 msgid " 2"
-msgstr ""
+msgstr "2"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:45
 msgid " 3"
-msgstr ""
+msgstr "3"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:46
 msgid " 4"
-msgstr ""
+msgstr "4"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:47
 msgid " 5"
-msgstr ""
+msgstr "5"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:48
 msgid " 6"
-msgstr ""
+msgstr "6"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:49
 msgid " 7"
-msgstr ""
+msgstr "7"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:50
 msgid " 8"
-msgstr ""
+msgstr "8"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:51
 msgid " 9"
-msgstr ""
+msgstr "9"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:52
 msgid " 10 - Very important"
-msgstr ""
+msgstr "10 - 매우 중요하다"
 
 #: survey_i18n/templates/survey_i18n/Survey10G.html:53
 msgid " Don't know"
-msgstr ""
+msgstr "잘 모르겠다"
 
 #: survey_i18n/templates/survey_i18n/Survey11.html:15
 msgid "This is the last screen, you're almost done!"
-msgstr ""
+msgstr "이제 마지막 부분입니다. 실험이 거의 끝나갑니다!"
 
 #: survey_i18n/templates/survey_i18n/Survey12.html:14
 msgid ""
 "This is the very last screen, in the following screen we will show you your "
 "earnings!"
 msgstr ""
+"다음은 본 실험의 맨 마지막 화면입니다. 다음 화면에서 당신의 보상에 대해 안내"
+"드리겠습니다!"
 
 #: survey_i18n/views.py:50
 msgid ""
@@ -3264,101 +3330,109 @@ msgid ""
 "Considering your current situation, how much would you donate to a good "
 "cause?"
 msgstr ""
+"다음의 상황을 상상해보십시오: 복권에서 1000원이 당첨되었습니다. 당신의 현재 "
+"상황을 고려했을 때, 얼마나 많은 금액을 기부 하시겠습니까?"
 
 #: survey_i18n/views.py:53 survey_korea/models.py:171
 msgid ""
 "Imagine the following situation: you won 1000 Won in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
 msgstr ""
+"다음의 상황을 상상해보십시오: 복권에서 1000원이 당첨되었습니다. 당신의 현재 "
+"상황을 고려했을 때, 얼마나 많은 금액을 기부 하시겠습니까?"
 
 #: survey_i18n/views.py:65 survey_i18n/views.py:284 survey_i18n/views.py:313
 msgid "Won"
-msgstr ""
+msgstr "원"
 
 #: survey_i18n/views.py:96 survey_i18n/views.py:105 survey_korea/models.py:223
 msgid "no present"
-msgstr ""
+msgstr "기부하지 않겠다"
 
 #: survey_i18n/views.py:97
 msgid "the present worth 5 euros"
-msgstr ""
+msgstr "5원 상당의 선물"
 
 #: survey_i18n/views.py:98
 msgid "the present worth 10 euros"
-msgstr ""
+msgstr "10원 상당의 선물"
 
 #: survey_i18n/views.py:99
 msgid "the present worth 15 euros"
-msgstr ""
+msgstr "15원 상당의 선물"
 
 #: survey_i18n/views.py:100
 msgid "the present worth 20 euros"
-msgstr ""
+msgstr "20원 상당의 선물"
 
 #: survey_i18n/views.py:101
 msgid "the present worth 25 euros"
-msgstr ""
+msgstr "25원 상당의 선물"
 
 #: survey_i18n/views.py:102
 msgid "the present worth 30 euros"
-msgstr ""
+msgstr "30원 상당의 선물"
 
 #: survey_i18n/views.py:106 survey_korea/models.py:224
 msgid "the present worth 5.000 Won"
-msgstr ""
+msgstr "5.000원 상당의 선물"
 
 #: survey_i18n/views.py:107 survey_korea/models.py:225
 msgid "the present worth 10.000 Won"
-msgstr ""
+msgstr "10.000원 상당의 선물"
 
 #: survey_i18n/views.py:108 survey_korea/models.py:226
 msgid "the present worth 15.000 Won"
-msgstr ""
+msgstr "15.000원 상당의 선물"
 
 #: survey_i18n/views.py:109 survey_korea/models.py:227
 msgid "the present worth 20.000 Won"
-msgstr ""
+msgstr "20.000원 상당의 선물"
 
 #: survey_i18n/views.py:110 survey_korea/models.py:228
 msgid "the present worth 25.000 Won"
-msgstr ""
+msgstr "25.000원 상당의 선물"
 
 #: survey_i18n/views.py:111 survey_korea/models.py:229
 msgid "the present worth 30.000 Won"
-msgstr ""
+msgstr "30.000원 상당의 선물"
 
 #: survey_i18n/views.py:170
 #: survey_korea/templates/survey_korea/Survey05.html:27
 msgid ""
 "When answering the following questions, please think about French "
 "institutions."
-msgstr ""
+msgstr "다음 질문에 응답할 때, 프랑스 제도에 관해 생각해보십시오."
 
 #: survey_i18n/views.py:171
 msgid ""
 "When answering the following questions, please think about Korean "
 "institutions."
-msgstr ""
+msgstr "다음 질문에 응답할 때, 한국의 제도에 관해 생각해보십시오."
 
 #: survey_i18n/views.py:208
 msgid "In what year did you arrive in France?"
-msgstr ""
+msgstr "당신은 몇 년도에 프랑스에 오셨습니까?"
 
 #: survey_i18n/views.py:209 survey_korea/models.py:732
 msgid "In what year did you arrive in Korea?"
-msgstr ""
+msgstr "당신은 몇 년도에 한국에 오셨습니까?"
 
 #: survey_korea/models.py:108
 msgid ""
 "How willing are you to someone who treats you unfairly, even if there may be "
 "costs for you?"
 msgstr ""
+"당신은 대가를 지불하고서라도 당신에 대하여 불공평하게 대하는 사람을 ~~할 의향"
+"이 있으십니까?"
 
 #: survey_korea/models.py:278
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between:"
 msgstr ""
+"다음의 행동이 항상 정당화 될 수 있는지, 절대 정당화될 수 없는지, 혹은 양측 모"
+"두 어느정도 가능한지에 대하여 응답해주세요:"
 
 #: survey_korea/models.py:826 survey_korea/models.py:881
 msgid ""
@@ -3366,6 +3440,8 @@ msgid ""
 "taxes have been deducted? (Income can come from any of the sources mentioned "
 "in the previous question.)"
 msgstr ""
+"지난 1년간 당신의 가정의 세후 수입 총액은 얼마입니까?(수입은 이전의 질문에서 "
+"언급했던 모든 수입원에서 비롯된 것들을 포함합니다.)"
 
 #: survey_korea/models.py:832 survey_korea/models.py:887
 msgid ""
@@ -3374,29 +3450,32 @@ msgid ""
 "with). Remember, we are asking for the income of your household, after taxes "
 "have been deducted."
 msgstr ""
+"다시 한번 확인드리면, 어느 수준의 소득이 세금을 제한 후 당신 가정(당신의 수입"
+"과 지출을 공유하는 사람들을 말함)의 수입에 해당합니까? 반드시, 세후 소득으로 "
+"말씀하여 주십시오."
 
 #: survey_korea/models.py:837 survey_korea/models.py:892
 msgid "0 to [13.000.000 x sqrt (household size)] Won per year"
-msgstr ""
+msgstr "연간 0에서 [13.000.000 x 제곱근(가구 규모)] 원 "
 
 #: survey_korea/models.py:840
 msgid ""
 "[13.000.000 x sqrt (household size)] to [20.000.000 x sqrt (household size)]"
-msgstr ""
+msgstr "[13.000.000 x 제곱근(가구규모)] 에서 [20.000.000 x 제곱근(가구규모)]"
 
 #: survey_korea/models.py:843
 msgid ""
 "[20.000.000 x sqrt (household size)] to [25.000.000 x sqrt (household size)]"
-msgstr ""
+msgstr "[20.000.000 x 제곱근(가구규모)] 에서 [25.000.000 x 제곱근(가구규모)]"
 
 #: survey_korea/models.py:846
 msgid ""
 "[25.000.000 x sqrt (household size)] to [34.000.000 x sqrt (household size)]"
-msgstr ""
+msgstr "[25.000.000 x 제곱근(가구규모)] 에서 [34.000.000 x 제곱근(가구규모)]"
 
 #: survey_korea/models.py:848
 msgid "[34.000.000 x sqrt (household size)] Won or more per year]"
-msgstr ""
+msgstr "연간 [34.000.000 x 제곱근(가구규모)] 원 혹은 그 이상"
 
 #: survey_korea/models.py:855
 msgid ""
@@ -3404,12 +3483,15 @@ msgid ""
 "received as an individual, after taxes have been deducted? (Income can come "
 "from any of the sources mentioned in the previous question.)"
 msgstr ""
+"지난 1년간, 당신의 세후 개인 연수입은 얼마입니까?(수입은 이전의 질문에서 언급"
+"했던 모든 수입원에서 비롯된 것들을 포함합니다.)"
 
 #: survey_korea/templates/survey_korea/EndGame.html:10
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as {{payoff_amount}} Won."
 msgstr ""
+"다른 참가자들의 결과에 따라, 여러분의 보상은 {{지불금액}}원으로 산출됩니다."
 
 #: survey_korea/templates/survey_korea/Survey10.html:17
 msgid ""
@@ -3417,6 +3499,8 @@ msgid ""
 "today? <br/>Please choose the three most relevant options. <br/><br/>Please "
 "do not count loans as income."
 msgstr ""
+"지난 1년간 귀하의 수입원에는 어떤 것들이 있습니까? <br/>가장 적합한 세가지를 "
+"골라주세요.<br/>단, 대출은 수입에 포함되지 않습니다."
 
 #: survey_korea/templates/survey_korea/Survey10.html:55
 msgid ""
@@ -3424,30 +3508,35 @@ msgid ""
 "months? <br/>Please choose the three most relevant options. <br/><br/>Please "
 "do not count loans as income."
 msgstr ""
+"지난 1년간 귀하 가정의 주요 수입원에는 어떤 것들이 있습니까? <br/>가장 적합"
+"한 세가지를 골라주세요.<br/>단, 대출은 수입에 포함되지 않습니다."
 
 #: trust/templates/trust/EndGame.html:9
 msgid ""
 "We have recorded your decision. Your payoff for this task will depend on the "
 "action of your partner in this task, Participant B."
 msgstr ""
+"귀하의 응답을 모두 저장하였습니다. 당신의 보상은 참가자 B의 수행결과에 따라 "
+"결정될 것입니다."
 
 #: trust/templates/trust/EndGame.html:10
 msgid "Now, please proceed to the second task."
-msgstr ""
+msgstr "이제 두번째 과제를 진행해주십시오."
 
 #: trust/templates/trust/ExperimentIntroduction.html:7
 msgid "Welcome!"
-msgstr ""
+msgstr "환영합니다!"
 
 #: trust/templates/trust/ExperimentIntroduction.html:8
 msgid ""
 "Sciences Po Paris invites you to participate in a quick online study on "
 "decision-making."
 msgstr ""
+"파리정치대학에서 진행중인 의사결정에 관한 짧은 온라인 연구에 참여해주십시오."
 
 #: trust/templates/trust/ExperimentIntroduction.html:11
 msgid "Study information"
-msgstr ""
+msgstr "연구 정보"
 
 #: trust/templates/trust/ExperimentIntroduction.html:12
 msgid ""
@@ -3456,26 +3545,34 @@ msgid ""
 "with different choices? How do we feel about the people and institutions "
 "around us?"
 msgstr ""
+"본 연구의 목적은 인간이 어떻게 행동하는지 - 특별히 어떻게 의사결정을 하는지-"
+"에 대하여 알아보는 것입니다. 선택에 있어 사람이 어떻게 서로 상호작용 하는지, "
+"어떻게 우리 주변에 있는 사람들과 기관들에 대하여 생각하는지에 대하여 알아보고"
+"자 합니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:13
 msgid "To find this out, you will be participating in different exercises:"
-msgstr ""
+msgstr "이것을 알아보기 위해, 당신은 여러가지 과제를 수행하게 됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:14
 msgid ""
 "In the first part, you will participate in three simple tasks, in anonymous "
 "interaction with one or more other people."
 msgstr ""
+"첫번째 섹션에서, 당신은 한명 이상의 익명의 사람들과 함께 세가지 간단한 과제"
+"를 수행하게 됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:15
 msgid "In the second part, you are going to sort different sets of words."
-msgstr ""
+msgstr "두번째 섹션에서, 여러 가지 단어들을 분류하는 작업을 수행하게 됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:16
 msgid ""
 "In the third part, we ask you to answer a few questions about yourself and "
 "your opinions."
 msgstr ""
+"세번째 섹션에서는, 당신과 당신의 생각에 관한 몇가지 질문에 응답해 주시면 됩니"
+"다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:17
 msgid ""
@@ -3484,22 +3581,28 @@ msgid ""
 "period of inactivity. For best results, minimize distractions and close "
 "other programs."
 msgstr ""
+"전체 연구는 약 25분 간 진행됩니다. 실험을 시작한 후에는 모든 과제를 끝마칠 때"
+"까지 휴식을 취할 수 없습니다. 최상의 결과를 얻기 위해, 집중을 방해하는 모든 "
+"것들을 중단해주시고, 실행 중인 다른 프로그램을 종료해주십시오."
 
 #: trust/templates/trust/ExperimentIntroduction.html:18
 msgid ""
 "If you are having trouble accessing the platform, we advise you to switch to "
 "Google Chrome instead."
 msgstr ""
+"본 플랫폼 접속에 문제가 발생하면, 구글 크롬을 사용하실 것을 권장합니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:20
 msgid "Payment"
-msgstr ""
+msgstr "보상"
 
 #: trust/templates/trust/ExperimentIntroduction.html:21
 msgid ""
 "By participating in the study’s tasks, you can earn an additional amount of "
 "up to 40 euro."
 msgstr ""
+"이 연구과제에 참여함으로써, 최대 40원을 얻을 수 있는 기회가 추가적으로 주어집"
+"니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:23
 msgid ""
@@ -3507,27 +3610,30 @@ msgid ""
 "the other participants during the study’s tasks. At the end of the study, "
 "one of the several tasks you have completed will be randomly selected."
 msgstr ""
+"이 금액은 본 연구 과제를 수행하는 동안 다른 참가자들과 함께 할 전략적 의사결"
+"정에 따라 달라질 수 있습니다. 실험이 종료되면, 당신이 완료한 여러 과제 중 하"
+"나가 무선으로 선정될 것입니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:24
 #: trust/templates/trust/GamesIntroduction.html:18
 msgid ""
 "The amount of money you will receive will correspond to your earnings in "
 "this selected task."
-msgstr ""
+msgstr "선택된 과제에서 획득한 금액에 상응하는 보상을 지급받게 될 것입니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:26
 msgid "You will receive your points via the usual system."
-msgstr ""
+msgstr "당신은 usual 시스템을 통해 포인트를 획득합니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:27
 msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
-msgstr ""
+msgstr "연구가 모두 끝나면 해피 머니를 통해 추가 금액을 수령하게 됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:29
 msgid "Data protection"
-msgstr ""
+msgstr "데이터 보호"
 
 #: trust/templates/trust/ExperimentIntroduction.html:32
 msgid ""
@@ -3535,32 +3641,40 @@ msgid ""
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
+"본 실험에서 수집된 데이터는 유럽 개인정보 보호 조약에 따라 유럽 연구 의회에 "
+"의해 안전하게 보호됩니다. 수집된 데이터는 오직 연구 목적으로만 사용됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:34
 msgid ""
 "The data gathered in this study is subject to strict privacy protocols. We "
 "will use it for research purposes only."
 msgstr ""
+"본 연구에서 수집된 데이터는 엄격한 개인 정보 보호 프로토콜에 적용을 받아 보관"
+"됩니다. 수집된 데이터는 오직 연구 목적으로만 사용됩니다."
 
 #: trust/templates/trust/ExperimentIntroduction.html:37
 msgid "Begin"
-msgstr ""
+msgstr "시작"
 
 #: trust/templates/trust/GamesIntroduction.html:6
 msgid "Section One: Tasks"
-msgstr ""
+msgstr "섹션 1 : 과제"
 
 #: trust/templates/trust/GamesIntroduction.html:8
 msgid ""
 "We will start by giving you three tasks. This is the part of the study that "
 "will allow you to earn additional money."
 msgstr ""
+"세 가지 과제를 제시해 드립니다. 이 과제를 통해 당신은 추가적인 보상을 획득할 "
+"수 있습니다."
 
 #: trust/templates/trust/GamesIntroduction.html:9
 msgid ""
 "At the beginning of each task, you will be grouped with other study "
 "participants, who are respondents from France like you."
 msgstr ""
+"과제 시작에 앞서, 당신은 한국의 다른 참가자들과 함께 팀을 구성하게 될 것입니"
+"다."
 
 #: trust/templates/trust/GamesIntroduction.html:10
 msgid ""
@@ -3570,31 +3684,39 @@ msgid ""
 "moment – we will record your and their answers and will match you at the end "
 "of the study."
 msgstr ""
+"<strong>각 과제마다 여러분은 다른 참가자들과 팀을 재구성하게 됩니다:</"
+"strong> 단, 같은 사람과 한번 이상 함께 팀을 구성할 수는 없습니다. 다른 참가자"
+"들이 현재 실시간으로 온라인 상에 동시 접속해 있지 않을 수 있습니다 - 연구가 "
+"모두 끝나면 당신의 응답은 다른 참가자들의 응답과 대조될 것입니다."
 
 #: trust/templates/trust/GamesIntroduction.html:12
 msgid "How will your earnings be calculated?"
-msgstr ""
+msgstr "보상은 어떻게 계산이 되나요?"
 
 #: trust/templates/trust/GamesIntroduction.html:14
 msgid ""
 "Your earnings in each task will depend on your and the other participants’ "
 "strategic decisions."
 msgstr ""
+"각 과제에 대한 보상은 여러분의 과제수행 결과와, 같은 팀에 속한 다른 참가자의 "
+"결과에 따라 결정됩니다."
 
 #: trust/templates/trust/GamesIntroduction.html:15
 msgid ""
 "Your answers in each task will be matched with those of other participants."
-msgstr ""
+msgstr "각 과제에서 당신의 응답은 다른 참가자들의 응답과 대조될 것입니다."
 
 #: trust/templates/trust/GamesIntroduction.html:17
 msgid ""
 "At the end of the study, one of the three tasks you have completed will be "
 "randomly selected."
 msgstr ""
+"모든 실험이 끝나면, 세 개의 과제 중 한 개의 과제가 무선적으로 선택될 것입니"
+"다."
 
 #: trust/templates/trust/Instructions.html:7
 msgid "Task One: Introduction"
-msgstr ""
+msgstr "과제 1 : 소개"
 
 #: trust/templates/trust/Instructions.html:9
 msgid ""
@@ -3602,211 +3724,263 @@ msgid ""
 "and Participant B. As mentioned before, this other participant also lives in "
 "France."
 msgstr ""
+"첫번째 과제에서, <strong>두 명의 참가자가 등장합니다</strong>: 참가자 A와 B. "
+"앞서 언급한 것처럼, 다른 참가자 또한 한국에 거주하고 있습니다."
 
 #: trust/templates/trust/Instructions.html:10
 msgid "These are the rules of the task:"
-msgstr ""
+msgstr "과제의 규칙은 다음과 같습니다:"
 
 #: trust/templates/trust/Instructions.html:12
 msgid "At the beginning of the task, both participants receive 10 euros."
-msgstr ""
+msgstr "과제가 시작되면, 두 참가자는 각각 10원을 받게 됩니다."
 
 #: trust/templates/trust/Instructions.html:15
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her "
 "12.000 Won to Participant B."
 msgstr ""
+"참가자A는 그(녀)가 받은 12.000원의 일부, 혹은 전체를 참가자 B에게 줄 수 있으"
+"며, 전혀 주지 않을 수도 있습니다."
 
 #: trust/templates/trust/Instructions.html:17
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her 10 "
 "euros to Participant B."
 msgstr ""
+"참가자A는 그(녀)가 받은 10원의 일부, 혹은 전체를 참가자 B에게 줄 수 있으며, "
+"전혀 주지 않을 수도 있습니다."
 
 #: trust/templates/trust/Instructions.html:20
 msgid "Whatever amount Participant A sends is multiplied by 3."
-msgstr ""
+msgstr "참가자 A가 준 금액은 3배가 됩니다."
 
 #: trust/templates/trust/Instructions.html:21
 msgid ""
 "Participant B, after receiving the transfer of Participant A, has to decide "
 "how much, if any, money he or she want to send back to Participant A."
 msgstr ""
+"참가자 B는 받은 금액 중, 참가자 A에게 다시 돌려주고 싶은 만큼의 액수를 정해"
+"야 합니다."
 
 #: trust/templates/trust/Instructions.html:23
 msgid "Your role (A or B) will be revealed at the beginning of the task."
-msgstr ""
+msgstr "과제를 시작할 때, 여러분의 역할(참가자 A 혹은 B)이 주어집니다."
 
 #: trust/templates/trust/Send.html:7
 msgid "Task One: Real task"
-msgstr ""
+msgstr "과제 1 : 본 과제"
 
 #: trust/templates/trust/Send.html:9
 msgid ""
 "Now the real task 1 starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
+"이제 첫번째 본 과제가 시작됩니다. 금액을 정하고 \"Next\" 버튼을 누르면 다시 "
+"이 화면으로 돌아올 수 없습니다."
 
 #: trust/templates/trust/Send.html:13
 msgid ""
 "You have 12.000 Won in your possession. <strong>How much do you want to send "
 "to Participant B?</strong>"
 msgstr ""
+"당신에게 12000원이 있습니다. <Strong>참가자B에게 얼마를 보내시겠습니까?</"
+"strong>"
 
 #: trust/templates/trust/Send.html:15
 msgid ""
 "You have 10 euros in your possession. <strong>How much do you want to send "
 "to Participant B?</strong>"
 msgstr ""
+"당신에게 10원이 있습니다. <Strong>참가자B에게 얼마를 보내시겠습니까?</strong>"
 
 #: trust/templates/trust/SendBack.html:7
 msgid "Task One: Real decision"
-msgstr ""
+msgstr "과제 1 : 본 결정"
 
 #: trust/templates/trust/SendBack.html:10
 msgid "You were selected to be in the role of <strong>Participant B</strong>."
-msgstr ""
+msgstr "당신에게 참가자B의 역할이 주어졌습니다."
 
 #: trust/templates/trust/SendBack.html:13
 msgid ""
 "If Participant A sends you any of the amounts listed in the table below, "
 "<strong>how much money do you want to send back to Participant A</strong>?"
 msgstr ""
+"참가자A가 아래와 같은 금액을 당신에게 주었다면, 당신은 다시 참가자 A에게 얼만"
+"큼의 금액을 보내시겠습니까?"
 
 #: trust/templates/trust/SendBack.html:15
 msgid "You already have 10 euros in your possession."
-msgstr ""
+msgstr "당신에게 이미 10원이 있습니다."
 
 #: trust/templates/trust/Simulation.html:6
 msgid "Task One: Test Simulation"
-msgstr ""
+msgstr "과제 1: 과제 시뮬레이션"
 
 #: trust/templates/trust/Simulation.html:8
 msgid ""
 "This is not the real task yet, but a simulation to help you understand the "
 "rules better."
 msgstr ""
+"이는 본 과제가 아니라 당신이 규칙을 더 잘 이해할 수 있도록 도와줄 시뮬레이션"
+"입니다."
 
 #: trust/templates/trust/Simulation.html:9
 msgid ""
 "You can use the test screen below to play with the different choices of the "
 "two participants."
 msgstr ""
+"본 화면을 통해 두 명의 참가자들과 함께 할 수 있는 여러 가지 선택들을 연습해보"
+"셔도 좋습니다."
 
 #: trust/templates/trust/Simulation.html:10
 msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
-msgstr ""
+msgstr "각 과제 사이에, \"초기화\" 버튼을 눌러 계산기를 재설정하십시오."
 
 #: trust/templates/trust/Simulation.html:164
 msgid "Reset to zero"
-msgstr ""
+msgstr "초기화"
 
 #: trust/views.py:71
 msgid "Please enter a number from 0 to 10"
-msgstr ""
+msgstr "0에서 10까지 숫자를 입력해 주세요."
 
 #: trust/views.py:75
 msgid "Please enter a number from 0 to 12.000"
-msgstr ""
+msgstr "0에서 12.000까지 숫자를 입력해 주세요."
 
 #: trust/views.py:107
 msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
 msgstr ""
+"만약 참가자 A가 당신에게 0원을 준다면 (당신은 0원 x 3 = 0원을 받게 됩니다)"
 
 #: trust/views.py:110
 msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
 msgstr ""
+"만약 참가자 A가 당신에게 1원을 준다면 (당신은 1원 x 3 = 3원을 받게 됩니다)"
 
 #: trust/views.py:113
 msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
 msgstr ""
+"만약 참가자 A가 당신에게 2원을 준다면 (당신은 2원 x 3 = 6원을 받게 됩니다)"
 
 #: trust/views.py:116
 msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
 msgstr ""
+"만약 참가자 A가 당신에게 3원을 준다면 (당신은 3원 x 3 = 9원을 받게 됩니다)"
 
 #: trust/views.py:119
 msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
 msgstr ""
+"만약 참가자 A가 당신에게 4원을 준다면 (당신은 4원 x 3 = 12원을 받게 됩니다)"
 
 #: trust/views.py:122
 msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
 msgstr ""
+"만약 참가자 A가 당신에게 5원을 준다면 (당신은 5원 x 3 = 15원을 받게 됩니다)"
 
 #: trust/views.py:125
 msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
 msgstr ""
+"만약 참가자 A가 당신에게 6원을 준다면 (당신은 6원 x 3 = 18원을 받게 됩니다)"
 
 #: trust/views.py:128
 msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
 msgstr ""
+"만약 참가자 A가 당신에게 7원을 준다면 (당신은 7원 x 3 = 21원을 받게 됩니다)"
 
 #: trust/views.py:131
 msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
 msgstr ""
+"만약 참가자 A가 당신에게 8원을 준다면 (당신은 8원 x 3 = 24원을 받게 됩니다)"
 
 #: trust/views.py:134
 msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
 msgstr ""
+"만약 참가자 A가 당신에게 9원을 준다면 (당신은 9원x 3 = 27원을 받게 됩니다)"
 
 #: trust/views.py:137
 msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
 msgstr ""
+"만약 참가자 A가 당신에게 10원을 준다면 (당신은 10원x 3 = 30원을 받게 됩니다)"
 
 #: trust/views.py:143
 msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
 msgstr ""
+"만약 참가자 A분이 당신에게 0원을 준다면 (당신은 0원 x 3 = 0원을 받을 것입니"
+"다.)"
 
 #: trust/views.py:146
 msgid ""
 "If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 1200원을 준다면 (당신은 1200원 x 3 = 3600원을 받게 "
+"됩니다)"
 
 #: trust/views.py:149
 msgid ""
 "If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 2400원을 준다면 (당신은 2400원 x 3 = 7200원을 받게 "
+"됩니다)"
 
 #: trust/views.py:152
 msgid ""
 "If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 2400원을 준다면 (당신은 3600원 x 3 = 10800원을 받게 "
+"됩니다)"
 
 #: trust/views.py:155
 msgid ""
 "If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 4800원을 준다면 (당신은 4800원 x 3 = 14,400원을 받"
+"게 됩니다)"
 
 #: trust/views.py:158
 msgid ""
 "If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 6000원을 준다면 (당신은 6000원 x 3 = 18000원을 받게 "
+"됩니다)"
 
 #: trust/views.py:161
 msgid ""
 "If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 7200원을 준다면 (당신은 7200원 x 3 = 21.600원을 받"
+"게 됩니다)"
 
 #: trust/views.py:164
 msgid ""
 "If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 8400원을 준다면 (당신은 8400원 x 3 = 25.200원을 받"
+"게 됩니다)"
 
 #: trust/views.py:167
 msgid ""
 "If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 9.600원을 준다면 (당신은 9600 x 3 = 28.800원을 받게 "
+"됩니다)"
 
 #: trust/views.py:170
 msgid ""
 "If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 "
 "Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 10.800원을 준다면 (당신은 10.800원 x 3 = 32.400원을 "
+"받게 됩니다)"
 
 #: trust/views.py:173
 msgid ""
 "If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 "
 "Won)"
 msgstr ""
+"만약 참가자 A가 당신에게 12.000원을 준다면 (당신은 12.000원 x 3 = 36.000원을 "
+"받게 됩니다)"
