@@ -135,7 +135,7 @@ $(function(window, undefined) {
      * @return {string} Capitalized string.
      */
     function capitalize(str) {
-      return str[0].toUpperCase() + str.slice(1);
+      return str.length > 0 ? str[0].toUpperCase() + str.slice(1) : str;
     }
 
     /**
@@ -243,10 +243,10 @@ $(function(window, undefined) {
 
           resultTrials.push({
             id: id,
-            correctCategory: capitalize(displayed[displayed.correct]),
+            correctCategory: capitalize(displayed[displayed.correct][lang]),
             stimuli: displayed.showing[lang],
-            left: capitalize(displayed.left),
-            right: capitalize(displayed.right),
+            left: capitalize(displayed.left[lang]),
+            right: capitalize(displayed.right[lang]),
             correctPosition: displayed.correct,
             blockName: displayed.name
           });
