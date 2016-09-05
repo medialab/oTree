@@ -54,6 +54,7 @@ class Contribute(Page):
     def vars_for_template(self):
         return {
             'fr': {'amount': _(u'10 euros')},
+            'en': {'amount': _(u'10 euros')},
             'ko': {'amount': _(u'10.000 Won')},
         }
 
@@ -78,55 +79,139 @@ class ContributeBack(Page):
 
     def vars_for_template(self):
         """Return variables available for template."""
-        return {
-            'fr': {
-                'contribution_back_0_label': _(u'If on average, each of the other \
+        contribution_back_0_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 0 euro:'),
-                'contribution_back_1_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 0 euro:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 0 Won:')
+        }
+
+        contribution_back_1_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 1 euro:'),
-                'contribution_back_2_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 1 euro:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 1.200 Won Won:')
+        }
+
+        contribution_back_2_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 2 euros:'),
-                'contribution_back_3_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 2 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 2.400 Won:')
+        }
+
+        contribution_back_3_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 3 euros:'),
-                'contribution_back_4_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 3 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 3.600 Won:')
+        }
+
+        contribution_back_4_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 4 euros:'),
-                'contribution_back_5_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 4 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 4.800 Won:')
+        }
+
+        contribution_back_5_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 5 euros:'),
-                'contribution_back_6_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 5 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 6.000 Won:')
+        }
+
+        contribution_back_6_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 6 euros:'),
-                'contribution_back_7_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 6 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 7.200 Won:')
+        }
+
+        contribution_back_7_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 7 euros:'),
-                'contribution_back_8_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 7 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 8.400 Won:')
+        }
+
+        contribution_back_8_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 8 euros:'),
-                'contribution_back_9_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 8 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 9.600 Won:')
+        }
+
+        contribution_back_9_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 9 euros:'),
-                'contribution_back_10_label': _(u'If on average, each of the other \
+            'en': _(u'If on average, each of the other \
+    group members contributes 9 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 10.800 Won:')
+        }
+
+        contribution_back_10_label = {
+            'fr': _(u'If on average, each of the other \
     group members contributes 10 euros:'),
-            },
-            'ko': {
-                'contribution_back_0_label': _(u'If on average, each of the other \
-    group members contributes 0 euro:'),
-                'contribution_back_1_label': _(u'If on average, each of the other \
-    group members contributes 1.200 Won:'),
-                'contribution_back_2_label': _(u'If on average, each of the other \
-    group members contributes 2.400 Won:'),
-                'contribution_back_3_label': _(u'If on average, each of the other \
-    group members contributes 3.600 Won:'),
-                'contribution_back_4_label': _(u'If on average, each of the other \
-    group members contributes 4.800 Won:'),
-                'contribution_back_5_label': _(u'If on average, each of the other \
-    group members contributes 6.00 Won:'),
-                'contribution_back_6_label': _(u'If on average, each of the other \
-    group members contributes 7.200 Won:'),
-                'contribution_back_7_label': _(u'If on average, each of the other \
-    group members contributes 8.400 Won:'),
-                'contribution_back_8_label': _(u'If on average, each of the other \
-    group members contributes 9.600 Won:'),
-                'contribution_back_9_label': _(u'If on average, each of the other \
-    group members contributes 10.800 Won:'),
-                'contribution_back_10_label': _(u'If on average, each of the other \
-    group members contributes 12.000 Won:'),
-            }
+            'en': _(u'If on average, each of the other \
+    group members contributes 10 euros:'),
+            'ko': _(u'If on average, each of the other \
+    group members contributes 12.000 Won:')
+        }
+
+        return {
+            'contribution_back_0_label': contribution_back_0_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_1_label': contribution_back_1_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_2_label': contribution_back_2_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_3_label': contribution_back_3_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_4_label': contribution_back_4_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_5_label': contribution_back_5_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_6_label': contribution_back_6_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_7_label': contribution_back_7_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_8_label': contribution_back_8_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_9_label': contribution_back_9_label[
+                self.session.vars['lang']
+            ],
+            'contribution_back_10_label': contribution_back_10_label[
+                self.session.vars['lang']
+            ],
         }
 
 
