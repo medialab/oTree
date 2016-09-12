@@ -27,4 +27,4 @@ class Entry(Page):
     form_model = models.Group
 
 
-page_sequence = [Init, Entry]
+page_sequence = [Init]

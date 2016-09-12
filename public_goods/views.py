@@ -9,6 +9,13 @@ from .models import Constants
 from django.utils.translation import ugettext_lazy as _
 
 
+def vars_for_all_templates(self):
+    """Provide global template variables."""
+    return {
+        'lang': self.session.vars['lang']
+    }
+
+
 class Introduction(Page):
     """Introduction for Public Goods."""
 
@@ -31,9 +38,11 @@ class Simulation(Page):
     """Simulation for Public Goods."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'en': 10, 'ko': 10000}
+        max = {'fr': 10, 'en': 10, 'ko': 12000}
+        step = {'fr': 1, 'en': 1, 'ko': 1000}
         return {
-            'max': max[self.session.vars['lang']]
+            'max': max[self.session.vars['lang']],
+            'step': step[self.session.vars['lang']]
         }
 
 
@@ -52,10 +61,13 @@ class Contribute(Page):
     timeout_submission = {'contribution': Currency(Constants.endowment / 2)}
 
     def vars_for_template(self):
+        amount = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'ko': _(u'12.000 Won')
+        }
         return {
-            'fr': {'amount': _(u'10 euros')},
-            'en': {'amount': _(u'10 euros')},
-            'ko': {'amount': _(u'10.000 Won')},
+            'amount': amount[self.session.vars['lang']]
         }
 
 

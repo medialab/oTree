@@ -36,26 +36,36 @@ class Subsession(BaseSubsession):
             self.session.vars['language_code'] = (
                 self.session.config['language_code']
             )
+        else:
+            self.session.vars['language_code'] = {}
 
         if 'quota_redirects' in self.session.config:
             self.session.vars['redirects'] = (
                 self.session.config['quota_redirects']
             )
+        else:
+            self.session.vars['redirects'] = {}
 
         if 'quota_total_population' in self.session.config:
             self.session.vars['total_population'] = (
                 self.session.config['quota_total_population']
             )
+        else:
+            self.session.vars['total_population'] = {}
 
-        if 'quota_income_groups' in self.session.config:
-            self.session.vars['income_groups'] = (
-                self.session.config['quota_income_groups']
-            )
+        # if 'quota_income_groups' in self.session.config:
+        #     self.session.vars['income_groups'] = (
+        #         self.session.config['quota_income_groups']
+        #     )
+        # else:
+        #     self.session.vars['income_groups'] = {}
 
         if 'quota_gender_age_groups' in self.session.config:
             self.session.vars['gender_age_groups'] = (
                 self.session.config['quota_gender_age_groups']
             )
+        else:
+            self.session.vars['gender_age_groups'] = {}
 
 
 class Group(BaseGroup):
@@ -67,11 +77,11 @@ class Group(BaseGroup):
 
     initialized = models.BooleanField(default=False)
 
-    def init_quotas(self, total_population, income_groups, gender_age_groups):
+    def init_quotas(self, total_population, gender_age_groups):
         """Initialize quota count by serializing control data."""
         if self.initialized is False:
             self.save_quota_set('total_population', total_population)
-            self.save_quota_set('income_groups', income_groups)
+            # self.save_quota_set('income_groups', income_groups)
             self.save_quota_set('gender_age_groups', gender_age_groups)
             self.initialized = True
 
@@ -85,13 +95,13 @@ class Group(BaseGroup):
         if self.initialized is False:
             self.init_quotas(
                 self.session.vars['total_population'],
-                self.session.vars['income_groups'],
+                #self.session.vars['income_groups'],
                 self.session.vars['gender_age_groups']
             )
 
         # Deserialize data.
         total_population = self.total_population
-        income_groups = self.income_groups
+        # income_groups = self.income_groups
         gender_age_groups = self.gender_age_groups
 
         # First use json.dumps to ensure payload is a string,
@@ -99,17 +109,15 @@ class Group(BaseGroup):
         if type(total_population) is dict:
             total_population = json.dumps(total_population)
 
-        if type(income_groups) is dict:
-            income_groups = json.dumps(income_groups)
+        # if type(income_groups) is dict:
+        #     income_groups = json.dumps(income_groups)
 
         if type(gender_age_groups) is dict:
             gender_age_groups = json.dumps(gender_age_groups)
 
-        print(json.loads(total_population))
-
         return {
             'total_population': json.loads(total_population),
-            'income_groups': json.loads(income_groups),
+            # 'income_groups': json.loads(income_groups),
             'gender_age_groups': json.loads(gender_age_groups)
         }
 

@@ -41,12 +41,17 @@ $(function() { init() });
 <div class="container">
   <canvas id="canvas" width="600" height="480"
           style="background-color:#CCD1DB"
-          class="col-sm-8 col-md-8 col-lg-6">
+          class="col-sm-8 col-md-8 col-lg-6"
+          data-currency="{% trans '€' %}"
+          data-min="0"
+          data-max="{{max}}"
+          data-locale="{{lang}}"
+  >
   </canvas>
   <div class="form commands">
     <div class="col-sm-2 col-md-2 col-lg-3 form-group">
       <label for="amount">{% trans "Amount sent by Participant A" %}</label>
-      <input class="form-control" type="number" id="amount" min="0" max="{{max}}" placeholder="0">
+      <input class="form-control" type="number" id="amount" min="0" max="{{max}}" step="{{step}}" placeholder="0">
       <a class="btn btn-default col-sm-4 col-md-4 col-lg-4" id="send">{% trans "Send" %}</a>
       <button class="btn btn-primary col-sm-offset-2 col-sm-4 col-md-4 col-lg-4" id="next">{% trans "Next" %}</button>
     </div>

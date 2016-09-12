@@ -139,10 +139,11 @@ $(function() { init() });
           style="background-color:#CCD1DB"
           class="col-sm-8 col-md-8 col-lg-6"
           data-currency="{% trans '€' %}"
-          data-amount1="10"
-          data-amount1="10"
-          data-participants-label-a="Participant A"
-          data-participants-label-b="Participant B">
+          data-start-amount="{{max}}"
+          data-participants-label-a="{% trans 'Participant A' %}"
+          data-participants-label-b="{% trans 'Participant B' %}"
+          data-locale="{{lang}}"
+  >
   </canvas>
   <div class="form commands hide">
     <div class="col-sm-2 col-md-2 col-lg-3 form-group">

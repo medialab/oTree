@@ -11,7 +11,8 @@ def vars_for_all_templates(self):
     """Return variables accessible for all templates."""
     return {
         'instructions': 'dictator/Instructions.html',
-        'constants': Constants
+        'constants': Constants,
+        'lang': self.session.vars['lang']
     }
 
 
@@ -30,9 +31,11 @@ class Simulation(Page):
     """Simulation page."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'en': 10, 'ko': 10000}
+        max = {'fr': 10, 'en': 10, 'ko': 12000}
+        step = {'fr': 1, 'en': 1, 'ko': 1000}
         return {
-            'max': max[self.session.vars['lang']]
+            'max': max[self.session.vars['lang']],
+            'step': step[self.session.vars['lang']]
         }
 
 
@@ -44,10 +47,13 @@ class Introduction(Page):
     form_fields = ['total_time']
 
     def vars_for_template(self):
+        amount = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'ko': _(u'12.000 Won')
+        }
         return {
-            'fr': {'amount': _(u'10 euros')},
-            'en': {'amount': _(u'$10')},
-            'ko': {'amount': _(u'12.000 Won')},
+            'amount': amount[self.session.vars['lang']]
         }
 
 
@@ -58,10 +64,13 @@ class Offer(Page):
     form_fields = ['given']
 
     def vars_for_template(self):
+        amount = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'ko': _(u'12.000 Won')
+        }
         return {
-            'fr': {'amount': _(u'10 euros')},
-            'en': {'amount': _(u'$10')},
-            'ko': {'amount': _(u'12.000 Won')},
+            'amount': amount[self.session.vars['lang']]
         }
 
 
