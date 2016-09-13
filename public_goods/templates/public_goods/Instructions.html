@@ -1,34 +1,29 @@
-{% extends "global/Instructions.html" %}
-{% load i18n %}
-{% load staticfiles otree_tags %}
+{% load otree_tags staticfiles %}
 
-{% block instructions %}
-<input id="timer" type="hidden" name="total_time" value="">
+<div class="instructions well well-lg">
 
-<h1 style="color:#008068">{% trans "Task Two: Introduction" %}</h1>
-<p>{% trans "In the second task, groups of <strong>4 participants</strong> (yourself and 3 other people) are formed" %}</p>
-<p>{% trans "Remember, the participants in this group are different from the person you interacted with in the previous task. However, they all live in the France." %}</p>
-<p>{% trans "These are the rules:" %}</p>
-<ul>
+    <h3 class="panel-sub-heading">
+        Instructions
+    </h3>
 
-  {% if lang == 'ko' %}
-    <li>{% trans "At the beginning, each group member has 12.000 Won." %}</li>
-  {% else %}
-    <li>{% trans "At the beginning, each group member has 10 euros." %}</li>
-  {% endif %}
+    <p>
+        In this study, you will be in a randomly formed group
+        of {{ Constants.players_per_group }} participants. Each participant in
+        the group is given {{ Constants.endowment }}. The group
+        has the opportunity to undertake a joint project. Each participant in
+        the group decides how much she or he is going to contribute to
+        the project. Contribution could be any integer from 0
+        to {{ Constants.endowment }}.
+    </p>
+    <p>
+        The earnings from the project are calculated as follows: The
+        contributions of all {{ Constants.players_per_group }} participants are
+        added up, the total contribution
+        is multiplied by a factor of {{ Constants.efficiency_factor }}, and the
+        resulting amount is the total earnings from the project, which is
+        evenly split among all {{ Constants.players_per_group }}
+        participants. Your payoff equals your earnings from the project, plus
+        the amount you did not contribute.
+    </p>
+</div>
 
-  {% if lang == 'ko' %}
-    <li>{% trans "Every group member has to choose how much of these 12.000 Won he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
-  {% else %}
-    <li>{% trans "Every group member has to choose how much of these 10 euros he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>." %}</li>
-  {% endif %}
-
-  <li>{% trans "The total amount invested into the joint project is <strong>multiplied by " %}{{Constants.efficiency_factor}}.</strong></li>
-  <li>{% trans "At the end, the money in the joint project will be re-divided and <strong>split equally between all 4 group members</strong> (including yourself)." %}</li>
-</ul>
-
-<script>
-$('#timer').val(new Date());
-</script>
-
-{% endblock %}

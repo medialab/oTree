@@ -1,32 +1,16 @@
-# -*- coding: utf-8 -*-
-"""Test bot for Dictator game."""
-
-from __future__ import division
-import random
+from otree.api import Currency as c, currency_range
+from . import views
 from ._builtin import Bot
 from .models import Constants
-from . import views
-
+import random
 
 class PlayerBot(Bot):
-    """Test bot."""
-
     def play_round(self):
-        """Test a game round."""
-        # start game
-        self.submit(views.Introduction)
-        self.submit(views.Question1, {'training_participant1_payoff': 1,
-                                      'training_participant2_payoff': 2})
-        self.submit(views.Feedback1)
+        yield (views.Introduction)
 
-        # dictator
         if self.player.id_in_group == 1:
-            self.submit(views.Offer, {"kept": random.randrange(100)})
-
-        self.submit(views.Results)
-
-    def validate_play(self):
-        """Make assertions."""
-        # basic assertions
-        assert (Constants.allocated_amount == 100)
-        assert (Constants.players_per_group == 2)
+            yield (views.Offer, {"kept": c(99)})
+            assert self.player.payoff == c(99)
+        else:
+            assert self.player.payoff == c(1)
+        yield (views.Results)

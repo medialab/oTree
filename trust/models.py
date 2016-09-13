@@ -1,29 +1,16 @@
 # -*- coding: utf-8 -*-
 """Models for trust game."""
-
-# <standard imports>
-from __future__ import division
-from otree.db import models
-from otree.constants import BaseConstants
-from otree.models import BaseSubsession, BaseGroup, BasePlayer
-from otree.common import Currency
-# </standard imports>
-
+from otree.api import (
+    models, BaseConstants, BaseSubsession, BaseGroup, BasePlayer, Currency
+)
 
 doc = """
 This is a standard 2-player trust game where the amount sent by player 1 gets
 tripled. The trust game was first proposed by
-<a href="http://econweb.ucsd.edu/~jandreon/Econ264/papers/ \
-Berg%20et%20al%20GEB%201995.pdf" target="_blank">
+<a href="http://econweb.ucsd.edu/~jandreon/Econ264/papers/Berg%20et%20al%20GEB%201995.pdf" target="_blank">
     Berg, Dickhaut, and McCabe (1995)
 </a>.
 """
-
-
-source_code = "https://github.com/oTree-org/oTree/tree/master/trust"
-bibliography = ()
-links = {}
-keywords = ("Trust Game",)
 
 
 class Constants(BaseConstants):
@@ -33,13 +20,11 @@ class Constants(BaseConstants):
     players_per_group = None
     num_rounds = 1
 
+    instructions_template = 'trust/Instructions.html'
+
     # Initial amount allocated to each player
     amount_allocated = Currency(10)
     multiplication_factor = 3
-    bonus = Currency(10)
-
-    training_answer_x_correct = Currency(130)
-    training_answer_y_correct = Currency(10)
 
 
 class Subsession(BaseSubsession):

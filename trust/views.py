@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Views for Trust game."""
 
-from __future__ import division
 from ._builtin import Page
 from . import models
 from .models import Constants
@@ -51,6 +50,7 @@ class Simulation(Page):
     template_name = 'trust/Simulation.html'
 
     def vars_for_template(self):
+        """Get vars for template."""
         max = {'fr': 10, 'en': 10, 'ko': 12000}
         step = {'fr': 1, 'en': 1, 'ko': 1000}
         return {
@@ -236,17 +236,39 @@ class SendBack(Page):
         }
 
         return {
-            'sent_back_amount_0_label': sent_back_amount_0_label[self.session.vars['lang']],
-            'sent_back_amount_1_label': sent_back_amount_1_label[self.session.vars['lang']],
-            'sent_back_amount_2_label': sent_back_amount_2_label[self.session.vars['lang']],
-            'sent_back_amount_3_label': sent_back_amount_3_label[self.session.vars['lang']],
-            'sent_back_amount_4_label': sent_back_amount_4_label[self.session.vars['lang']],
-            'sent_back_amount_5_label': sent_back_amount_5_label[self.session.vars['lang']],
-            'sent_back_amount_6_label': sent_back_amount_6_label[self.session.vars['lang']],
-            'sent_back_amount_7_label': sent_back_amount_7_label[self.session.vars['lang']],
-            'sent_back_amount_8_label': sent_back_amount_8_label[self.session.vars['lang']],
-            'sent_back_amount_9_label': sent_back_amount_9_label[self.session.vars['lang']],
-            'sent_back_amount_10_label': sent_back_amount_10_label[self.session.vars['lang']]
+            'sent_back_amount_0_label': (
+                sent_back_amount_0_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_1_label': (
+                sent_back_amount_1_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_2_label': (
+                sent_back_amount_2_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_3_label': (
+                sent_back_amount_3_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_4_label': (
+                sent_back_amount_4_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_5_label': (
+                sent_back_amount_5_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_6_label': (
+                sent_back_amount_6_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_7_label': (
+                sent_back_amount_7_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_8_label': (
+                sent_back_amount_8_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_9_label': (
+                sent_back_amount_9_label[self.session.vars['lang']]
+            ),
+            'sent_back_amount_10_label': (
+                sent_back_amount_10_label[self.session.vars['lang']]
+            )
         }
 
     def is_displayed(self):

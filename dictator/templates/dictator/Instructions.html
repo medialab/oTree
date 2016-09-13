@@ -1,26 +1,20 @@
-{% extends "global/Instructions.html" %}
-{% load i18n %}
-{% load staticfiles otree_tags %}
+{% load otree_tags staticfiles %}
 
-{% block instructions %}
-<input id="timer" type="hidden" name="total_time" value="">
+<div class="instructions well well-lg">
 
-<h1 style="color:#800080">{% trans "Task Three: Introduction" %}</h1>
-<hr/>
-<p>{% trans "This last task involves <strong>two participants</strong> – Participant A and Participant B." %}</p>
-<p>{% trans "Remember, the other participant is different from the ones you interacted with in the previous two tasks." %}</p>
-<p>{% trans "These are the rules:" %}</p>
-<ul>
-  <li>At the beginning, Participant A receives {{amount}}.</li>
-  <li>Participant B does not receive any money — he or she has {{amount}}.</li>
-  <li>Participant A must now decide if he or she wants to transfer any of his or her {{amount}} to Participant B.</li>
-  <li>This transfer is not multiplied by any number and Participant B cannot transfer any amount back to Participant A.</li>
-</ul>
-<p><strong>{% trans "Your role (Participant A or Participant B) is revealed to you at the beginning of the task." %}</strong></p>
-<p><strong>{% trans "Because this task is simple, there will be no simulator to test out different choices." %}</strong></p>
+    <h3 class="panel-sub-heading">
+        Instructions
+    </h3>
 
-<script>
-$('#timer').val(new Date());
-</script>
-
-{% endblock %}
+    <p>
+        You will be paired randomly and anonymously with another participant.
+        In this study, one of you will be Participant 1 and the other
+        Participant 2. Prior to making a decision, you will learn your role,
+        which will be randomly assigned.
+    </p>
+    <p>
+        There are {{ Constants.endowment }} to split. Participant 1 will
+        decide how many points she or he will retain. Then the rest will go to
+        Participant 2.
+    </p>
+</div>

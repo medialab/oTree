@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-13 15:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/earnings/Calculate.html:7
+msgid "next"
+msgstr ""
+
+#: templates/earnings/Display.html:9 templates/earnings/Earnings.html:7
+msgid "Thank you very much for your participation in this study!"
+msgstr ""
+
+#: templates/earnings/Display.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as"
+msgstr ""
+
+#: templates/earnings/Display.html:10 templates/earnings/Display.html.py:27
+msgid "euros."
+msgstr ""
+
+#: templates/earnings/Display.html:13 templates/earnings/Display.html.py:21
+msgid ""
+"You were selected to receive your reward based on your earnings in Task One."
+msgstr ""
+
+#: templates/earnings/Display.html:14
+msgid "As Player A, you decided to transfer"
+msgstr ""
+
+#: templates/earnings/Display.html:15
+msgid "euros to player B."
+msgstr ""
+
+#: templates/earnings/Display.html:16
+msgid "Following, player B returned"
+msgstr ""
+
+#: templates/earnings/Display.html:17
+msgid "to you."
+msgstr ""
+
+#: templates/earnings/Display.html:18 templates/earnings/Display.html.py:26
+msgid "Therefore, your total payoff for this task is"
+msgstr ""
+
+#: templates/earnings/Display.html:22
+msgid "As Player B, you received"
+msgstr ""
+
+#: templates/earnings/Display.html:23
+msgid "euros from player A."
+msgstr ""
+
+#: templates/earnings/Display.html:24
+msgid "You decided to transfer"
+msgstr ""
+
+#: templates/earnings/Display.html:25
+msgid "euros back to player A."
+msgstr ""
+
+#: templates/earnings/Display.html:30
+msgid ""
+"You were selected to receive your reward based on your earnings in Task Two."
+msgstr ""
+
+#: templates/earnings/Display.html:31
+msgid "In this task, you invested"
+msgstr ""
+
+#: templates/earnings/Display.html:32
+msgid "into the joint project. The contributions of the other players were:"
+msgstr ""
+
+#: templates/earnings/Display.html:35 templates/earnings/Display.html.py:36
+#: templates/earnings/Display.html:37 templates/earnings/Display.html.py:55
+msgid "euros"
+msgstr ""
+
+#: templates/earnings/Display.html:40
+msgid "Collectively, you invested"
+msgstr ""
+
+#: templates/earnings/Display.html:41
+msgid ""
+". Your earnings from the joint project after the multiplication factor are"
+msgstr ""
+
+#: templates/earnings/Display.html:42 templates/earnings/Display.html.py:49
+#: templates/earnings/Display.html:55
+msgid "In total, your payoff for this task is"
+msgstr ""
+
+#: templates/earnings/Display.html:45 templates/earnings/Display.html.py:52
+msgid ""
+"You were selected to receive your reward based on your earnings in Task "
+"Three."
+msgstr ""
+
+#: templates/earnings/Display.html:46
+msgid "In this task, you decided to transfer"
+msgstr ""
+
+#: templates/earnings/Display.html:47
+msgid "to player B"
+msgstr ""
+
+#: templates/earnings/Display.html:48
+msgid "Your remaining endowment after the transfer is"
+msgstr ""
+
+#: templates/earnings/Display.html:53
+msgid "In this task, you were selected to be Player B"
+msgstr ""
+
+#: templates/earnings/Display.html:54
+msgid ""
+"In this task, the Player A you were matched with decided to transfer you "
+msgstr ""
+
+#: templates/earnings/Display.html:59
+msgid ""
+"Out of your earnings, you have the option to donate an amount of your choice "
+"to UNICEF, who work with children and mothers in developing countries."
+msgstr ""
+
+#: templates/earnings/Display.html:60
+msgid ""
+"You can find further information about their work here. Please enter the "
+"amount you wish to donate to UNICEF:"
+msgstr ""
+
+#: templates/earnings/Display.html:64
+msgid "(Should you not wish to donate anything at this point, please enter 0)."
+msgstr ""
+
+#: templates/earnings/Display.html:65
+msgid ""
+"Once again, thank you very much for participating. You will now be "
+"redirected in order to collect your reward."
+msgstr ""
+
+#: templates/earnings/Display.html:67
+msgid "Finish study"
+msgstr ""
+
+#: templates/earnings/Earnings.html:8
+msgid "Your survey responses have been correctly recorded. "
+msgstr ""
+
+#: templates/earnings/Earnings.html:10
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as "
+msgstr ""
+
+#: templates/earnings/Earnings.html:11
+msgid "This money will be added to your HIT reward as a bonus."
+msgstr ""
+
+#: templates/earnings/Earnings.html:13
+msgid "Once again, thank you very much for participating."
+msgstr ""
