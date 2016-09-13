@@ -1,6 +1,7 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtFilters = {}; 
 
 // library properties:
 lib.properties = {
@@ -8,11 +9,23 @@ lib.properties = {
 	height: 480,
 	fps: 30,
 	color: "#CCD1DB",
+	opacity: 1.00,
+	webfonts: {},
 	manifest: []
 };
 
 
 
+lib.ssMetadata = [];
+
+
+lib.webfontAvailable = function(family) { 
+	lib.properties.webfonts[family] = true;
+	var txtFilters = lib.webFontTxtFilters && lib.webFontTxtFilters[family] || [];
+	for(var f = 0; f < txtFilters.length; ++f) {
+		txtFilters[f].updateCache();
+	}
+};
 // symbols:
 
 
@@ -25,7 +38,7 @@ lib.properties = {
 	this.label.name = "label";
 	this.label.lineHeight = 20;
 	this.label.lineWidth = 160;
-	this.label.setTransform(20.9,4.9,0.714,0.847,0,-0.3,32.2);
+	this.label.setTransform(22.2,7.4,0.714,0.847,0,-0.3,32.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -42,7 +55,7 @@ p.nominalBounds = new cjs.Rectangle(21,5,99.2,97.6);
 	this.label.textAlign = "center";
 	this.label.lineHeight = 49;
 	this.label.lineWidth = 100;
-	this.label.setTransform(-6.4,-10.9);
+	this.label.setTransform(-4.4,-8.9);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1091,7 +1104,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 30;
-	this.label.setTransform(36.6,29.8);
+	this.label.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1114,7 +1127,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 30;
-	this.label.setTransform(36.6,29.8);
+	this.label.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1137,7 +1150,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 30;
-	this.label.setTransform(36.6,29.8);
+	this.label.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1216,11 +1229,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		 Assumes there is only on canvas in the page.
 		 */
 		 
+		var startAmount = 10;
+		var multiplier = 3;
 		var labelA = 'participant A';
 		var labelB = 'participant B';
 		var multiplier = 3;
-		var amount1 = amount2 = 10;
 		var currency = '€';
+		var locale = 'fr-fr';
 		
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
@@ -1228,29 +1243,30 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				labelA = canvas.getAttribute('data-participants-label-a') || labelA;
 				labelB = canvas.getAttribute('data-participants-label-b') || labelB;
 				multiplier = canvas.getAttribute('data-multiplier') || multiplier;
-				amount1 = +canvas.getAttribute('data-amount1') || amount1;
-				amount2 = +canvas.getAttribute('data-amount2') || amount2;
+				startAmount = canvas.getAttribute('data-start-amount') || startAmount;
 				currency = canvas.getAttribute('data-currency') || currency;
+				locale = canvas.getAttribute('data-locale') || locale;
 			}
 		}
 		
+		
 		this.charLabel1.label.text = labelA;
 		this.charLabel2.label.text = labelB;
-		this.bubble1.label.text = amount1.toString() + currency;
-		this.bubble2.label.text = amount2.toString() + currency;
+		this.bubble1.label.text = startAmount.toString() + currency;
+		this.bubble2.label.text = startAmount.toString() + currency;
 	}
 	this.frame_54 = function() {
 		if (window) {
 			/**
 			 * Define/get default values.
 			 */
-			var startAmount = 10;
+			var startAmount = 12000;
 			var multiplier = 3;
 			var labelA = 'participant A';
 			var labelB = 'participant B';
 			var multiplier = 3;
-			var amount1 = amount2 = 10;
 			var currency = '€';
+			var locale = 'fr-fr';
 		
 			if (document) {
 				var canvas = document.getElementsByTagName('canvas')[0];
@@ -1258,10 +1274,18 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					labelA = canvas.getAttribute('data-participants-label-a') || labelA;
 					labelB = canvas.getAttribute('data-participants-label-b') || labelB;
 					multiplier = canvas.getAttribute('data-multiplier') || multiplier;
-					amount1 = +canvas.getAttribute('data-amount-1') || amount1;
-					amount2 = +canvas.getAttribute('data-amount-2') || amount2;
+					startAmount = canvas.getAttribute('data-start-amount') || startAmount;
 					currency = canvas.getAttribute('data-currency') || currency;
+					locale = canvas.getAttribute('data-locale') || locale;
 				}
+			}
+			
+			var unit = locale === 'ko' ? 1000 : 1;
+			
+			function setMoneyText(money) {
+				money = locale === 'ko' ? money * 1000 : money;
+				console.log(money);
+				return currency + money.toString();
 			}
 			
 			function createDollar(color) {
@@ -1276,6 +1300,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 						dollar = new lib.dollarGrey;
 						break;
 				}
+				
 				return dollar;
 			}
 		
@@ -1289,6 +1314,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				
 				this.cart1.bubble.alpha = 0;
 				this.cart2.bubble.alpha = 0;
+				
+				if (locale === 'ko') {
+					this.cart1.bubble.label.font = "18px 'Gotham Medium'";
+					this.cart2.bubble.label.font = "18px 'Gotham Medium'";
+					console.log(this.cart1.bubble);
+				}
 		
 				var carts = [{
 					money: 0,
@@ -1311,7 +1342,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					
 					cart.instance.addChild(dollar);
 					cart.stack.push(dollar);
-					cart.money++;
+					cart.money += unit;
 					
 					cart.instance.bubble.alpha = 1;
 					cart.instance.bubble.label.text = currency + cart.money.toString();
@@ -1324,7 +1355,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					if (cart.stack.length > 0) {
 						var removable = cart.stack.pop();
 						cart.instance.removeChild(removable);
-						cart.money--;
+						cart.money -= unit;
 						cart.instance.bubble.label.text = currency + cart.money.toString();
 						return true;
 					}
@@ -1343,7 +1374,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				}
 				
 				var batchAdd = function (cartIndex, amount, color) {
-					for (var i = 0; i < amount; i++) {
+					for (var i = 0; i < amount; i += unit) {
 						increment(cartIndex, color);
 					}
 				}
@@ -1407,13 +1438,18 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					instance: this.stack2,
 					stack: []
 				}];
+				
+				if (locale === 'ko') {
+					this.bubble1.label.font = "18px 'Gotham Medium'";
+					this.bubble2.label.font = "18px 'Gotham Medium'";
+				}
 		
 				var increment = function (i, moneyColor, force) {
 					var p = players[i];
 					p.money++;
 		
 					var bubble = i === 0 ? this.bubble1 : this.bubble2;
-					bubble.label.text = currency + p.money.toString();
+					bubble.label.text = setMoneyText(p.money.toString());
 						
 					var dollar = createDollar(moneyColor);
 					dollar.x = X_OFFSET;
@@ -1429,7 +1465,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					if (p.money - 1 >= 0) {
 						p.money--;
 						var bubble = i === 0 ? this.bubble1 : this.bubble2;
-						bubble.label.text = currency + p.money.toString();
+						bubble.label.text = setMoneyText(p.money.toString());
 						
 						var removable = p.stack.pop();
 						p.instance.removeChild(removable);
@@ -1446,7 +1482,8 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					
 					for (var i = 0; i < players.length; i++) {
 						var colors = ['green', 'orange'];
-						while (players[i].stack.length < startAmount) {
+						var max = locale === 'ko' ? startAmount / 1000 : startAmount;
+						while (players[i].stack.length < max) {
 							increment(i, colors[i]);
 						}
 					}
@@ -1519,12 +1556,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				
 				var dispatchFinalGains = function () {
 					var giveToPlayer1 = carts.removeAll(1);
-					for (var i = 0; i < giveToPlayer1; i++) {
+					for (var i = 0; i < giveToPlayer1; i += unit) {
 						players.increment(0, 'grey');
 					}
 					
 					var giveToPlayer2 = carts.removeAll(0);
-					for (var j = 0; j < giveToPlayer2; j++) {
+					for (var j = 0; j < giveToPlayer2; j += unit) {
 						players.increment(1, 'grey', true);
 					}
 				}
@@ -1639,6 +1676,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.bubble2.alpha = 0;
 
 	this.timeline.addTween(cjs.Tween.get(this.bubble2).wait(77).to({alpha:1},0).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:413.8,y:100.2},7).wait(170).to({regX:38.6,regY:42,scaleX:0.09,scaleY:0.07,x:432.8,y:117.3},5,cjs.Ease.get(1)).to({_off:true},1).wait(150));
+
+	// dollar stack (orange)
+	this.stack2 = new lib.dollarStackOrange();
+	this.stack2.setTransform(422.7,180.9,1,1,0,0,0,12.1,17.4);
+	this.stack2._off = true;
+
+	this.timeline.addTween(cjs.Tween.get(this.stack2).wait(82).to({_off:false},0).wait(328));
 
 	// char labels
 	this.charLabel2 = new lib.participantLabel();
@@ -1816,13 +1860,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.cart1._off = true;
 
 	this.timeline.addTween(cjs.Tween.get(this.cart1).wait(74).to({_off:false},0).to({regX:30.8,scaleX:0.87,scaleY:0.87,x:162.9,alpha:1},5,cjs.Ease.get(1)).wait(10).to({x:286.9,y:282.8},30,cjs.Ease.get(1)).wait(35).to({mode:"synched",startPosition:0},0).to({x:465.9,y:201.8},35,cjs.Ease.get(1)).wait(110).to({scaleX:1,scaleY:1},0).to({scaleX:0.87,scaleY:0.87,x:524.4,y:238.6},10,cjs.Ease.get(1)).wait(5).to({startPosition:0},0).to({x:226.4,y:376.6},10,cjs.Ease.get(1)).wait(5).to({startPosition:0},0).to({x:164.2,y:337.1},10,cjs.Ease.get(1)).wait(71));
-
-	// dollar stack (orange)
-	this.stack2 = new lib.dollarStackOrange();
-	this.stack2.setTransform(422.7,180.9,1,1,0,0,0,12.1,17.4);
-	this.stack2._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.stack2).wait(82).to({_off:false},0).wait(328));
 
 	// char 2
 	this.instance_22 = new lib.character("synched",0);

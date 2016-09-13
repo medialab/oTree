@@ -31,8 +31,8 @@ class Subsession(BaseSubsession):
                 self.session.config['language_code'][:2]
             )
             activate(self.session.config['language_code'])
-        # else:
-        #     self.session.vars['lang'] = 'en-us'
+        else:
+            self.session.vars['lang'] = 'en-us'
         print('set_dynamic_locale language code: ', get_language())
 
         if self.session.vars['lang'] == 'en-us':

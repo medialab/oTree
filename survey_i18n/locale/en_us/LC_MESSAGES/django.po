@@ -1,0 +1,1145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-12 17:06+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: survey_i18n/models.py:52
+msgid "Overall, how satisfied are you with life as a whole these days?"
+msgstr ""
+
+#: survey_i18n/models.py:55
+msgid "0 - Not at all satisfied"
+msgstr ""
+
+#: survey_i18n/models.py:65
+msgid "10 - Completely satisfied"
+msgstr ""
+
+#: survey_i18n/models.py:66 survey_i18n/models.py:87 survey_i18n/models.py:108
+#: survey_i18n/models.py:129 survey_i18n/models.py:150
+#: survey_i18n/models.py:171 survey_i18n/models.py:198
+#: survey_i18n/models.py:219 survey_i18n/models.py:242
+#: survey_i18n/models.py:263 survey_i18n/models.py:285
+#: survey_i18n/models.py:305 survey_i18n/models.py:325
+#: survey_i18n/models.py:345 survey_i18n/models.py:365
+#: survey_i18n/models.py:385 survey_i18n/models.py:405
+#: survey_i18n/models.py:418 survey_i18n/models.py:450
+#: survey_i18n/models.py:470 survey_i18n/models.py:490
+#: survey_i18n/models.py:510 survey_i18n/models.py:530
+#: survey_i18n/models.py:550 survey_i18n/models.py:570
+#: survey_i18n/models.py:591 survey_i18n/models.py:611
+#: survey_i18n/models.py:632 survey_i18n/models.py:652
+#: survey_i18n/models.py:673 survey_i18n/models.py:790
+#: survey_i18n/models.py:823 survey_i18n/models.py:836
+#: survey_i18n/templates/survey_i18n/Survey10.html:43
+#: survey_i18n/templates/survey_i18n/Survey10.html:80
+#: survey_i18n/templates/survey_i18n/Survey10B.html:26
+#: survey_i18n/templates/survey_i18n/Survey10B.html:35
+#: survey_i18n/templates/survey_i18n/Survey10D.html:26 survey_i18n/views.py:318
+#: survey_i18n/views.py:348
+msgid "Don't know"
+msgstr ""
+
+#: survey_i18n/models.py:73
+msgid ""
+"Generally speaking, would you say that most people can be trusted, or that "
+"you can't be too careful in dealing with people?"
+msgstr ""
+
+#: survey_i18n/models.py:76
+msgid "0 -You can't be too careful"
+msgstr ""
+
+#: survey_i18n/models.py:86
+msgid "10 - Most people can be trusted"
+msgstr ""
+
+#: survey_i18n/models.py:94
+msgid ""
+"How do you see yourself: are you generally a person who is fully prepared to "
+"take risks or do you try to avoid taking risks?"
+msgstr ""
+
+#: survey_i18n/models.py:97
+msgid "0 - Completely unwilling to take risks"
+msgstr ""
+
+#: survey_i18n/models.py:107
+msgid "10 - Very willing to take risks"
+msgstr ""
+
+#: survey_i18n/models.py:115
+msgid ""
+"How willing are you to punish someone who treats you unfairly, even if there "
+"may be costs for you?"
+msgstr ""
+
+#: survey_i18n/models.py:118 survey_i18n/models.py:139
+#: survey_i18n/models.py:160
+msgid "0 - Completely unwilling to do so"
+msgstr ""
+
+#: survey_i18n/models.py:128 survey_i18n/models.py:149
+#: survey_i18n/models.py:170
+msgid "10 - Very willing to do so"
+msgstr ""
+
+#: survey_i18n/models.py:136
+msgid ""
+"How willing are you to punish someone who treats others unfairly, even if "
+"there may be costs for you?"
+msgstr ""
+
+#: survey_i18n/models.py:157
+msgid ""
+"How willing are you to give to good causes without expecting anything in "
+"return? "
+msgstr ""
+
+#: survey_i18n/models.py:184
+msgid "When someone does me a favour I am willing to return it."
+msgstr ""
+
+#: survey_i18n/models.py:187 survey_i18n/models.py:208
+#: survey_i18n/models.py:439 survey_i18n/models.py:779
+msgid "0 - Does not describe me at all"
+msgstr ""
+
+#: survey_i18n/models.py:197 survey_i18n/models.py:218
+#: survey_i18n/models.py:449 survey_i18n/models.py:789
+msgid "10 - Describes me perfectly"
+msgstr ""
+
+#: survey_i18n/models.py:205
+msgid ""
+"If I am treated very unjustly, I will take revenge     at the first "
+"occasion, even if there is a cost to do so."
+msgstr ""
+
+#: survey_i18n/models.py:228
+msgid ""
+"Would you say that most of the time people are only     looking out for "
+"themselves or that they mostly try to help each other?"
+msgstr ""
+
+#: survey_i18n/models.py:231
+msgid "0 - People are only looking out for themselves "
+msgstr ""
+
+#: survey_i18n/models.py:241
+msgid "10 - People mostly try to help each other"
+msgstr ""
+
+#: survey_i18n/models.py:249
+msgid ""
+"Do you think most people would try to take advantage     of you if they got "
+"a chance, or would they try to be fair?"
+msgstr ""
+
+#: survey_i18n/models.py:252
+msgid "0 - Most people would try to take advantage of me"
+msgstr ""
+
+#: survey_i18n/models.py:262
+msgid "10 - Most people would try to be fair"
+msgstr ""
+
+#: survey_i18n/models.py:270
+msgid ""
+"Can you tell us whether you think the following     action can always be "
+"justified, never be justified, or something in     between"
+msgstr ""
+
+#: survey_i18n/models.py:274
+msgid "0 - This action is never wrong"
+msgstr ""
+
+#: survey_i18n/models.py:284
+msgid "10 - This action is always wrong"
+msgstr ""
+
+#: survey_i18n/models.py:292
+msgid "Your family:"
+msgstr ""
+
+#: survey_i18n/models.py:294 survey_i18n/models.py:314
+#: survey_i18n/models.py:334 survey_i18n/models.py:354
+#: survey_i18n/models.py:374 survey_i18n/models.py:394
+#: survey_i18n/models.py:459 survey_i18n/models.py:479
+#: survey_i18n/models.py:499 survey_i18n/models.py:519
+#: survey_i18n/models.py:539 survey_i18n/models.py:559
+msgid "0 - I don't trust them at all"
+msgstr ""
+
+#: survey_i18n/models.py:304 survey_i18n/models.py:324
+#: survey_i18n/models.py:344 survey_i18n/models.py:364
+#: survey_i18n/models.py:384 survey_i18n/models.py:404
+#: survey_i18n/models.py:469 survey_i18n/models.py:489
+#: survey_i18n/models.py:509 survey_i18n/models.py:529
+#: survey_i18n/models.py:549 survey_i18n/models.py:569
+msgid "10 - I fully trust them"
+msgstr ""
+
+#: survey_i18n/models.py:312
+msgid "People in your neighbourhood:"
+msgstr ""
+
+#: survey_i18n/models.py:332
+msgid "People you know personally:"
+msgstr ""
+
+#: survey_i18n/models.py:352
+msgid "People you meet for the first time:"
+msgstr ""
+
+#: survey_i18n/models.py:372
+msgid "People of another religion:"
+msgstr ""
+
+#: survey_i18n/models.py:392
+msgid "People of another nationality:"
+msgstr ""
+
+#: survey_i18n/models.py:412
+msgid ""
+"If you lost a wallet or a purse that contained items of great value to you, "
+"and it was found by a stranger, do you think it would be returned with its "
+"contents, or not?"
+msgstr ""
+
+#: survey_i18n/models.py:416 survey_i18n/models.py:428
+#: survey_i18n/models.py:870
+msgid "Yes"
+msgstr ""
+
+#: survey_i18n/models.py:417 survey_i18n/models.py:429
+#: survey_i18n/models.py:871
+msgid "No"
+msgstr ""
+
+#: survey_i18n/models.py:425
+msgid "Did you vote in the last national election?"
+msgstr ""
+
+#: survey_i18n/models.py:430
+msgid "I could not vote"
+msgstr ""
+
+#: survey_i18n/models.py:437
+msgid "I am good at math."
+msgstr ""
+
+#: survey_i18n/models.py:457
+msgid "Your government:"
+msgstr ""
+
+#: survey_i18n/models.py:477
+msgid "The parliament:"
+msgstr ""
+
+#: survey_i18n/models.py:497
+msgid "The judicial system:"
+msgstr ""
+
+#: survey_i18n/models.py:517
+msgid "The media:"
+msgstr ""
+
+#: survey_i18n/models.py:537
+msgid "Financial Institutions (e.g. banks):"
+msgstr ""
+
+#: survey_i18n/models.py:557
+msgid "The police:"
+msgstr ""
+
+#: survey_i18n/models.py:577
+msgid "Public institutions deliver public services in the best possible way."
+msgstr ""
+
+#: survey_i18n/models.py:580 survey_i18n/models.py:600
+#: survey_i18n/models.py:621 survey_i18n/models.py:641
+#: survey_i18n/models.py:662
+msgid "0 - I don't agree at all"
+msgstr ""
+
+#: survey_i18n/models.py:590 survey_i18n/models.py:610
+#: survey_i18n/models.py:631 survey_i18n/models.py:651
+#: survey_i18n/models.py:672
+msgid "10 - I fully agree"
+msgstr ""
+
+#: survey_i18n/models.py:598
+msgid "Public institutions pursue long term objectives."
+msgstr ""
+
+#: survey_i18n/models.py:618
+msgid ""
+"People working in public institutions behave according to ethical standards "
+"aimed at avoiding corruption."
+msgstr ""
+
+#: survey_i18n/models.py:639
+msgid "Public institutions are transparent."
+msgstr ""
+
+#: survey_i18n/models.py:659
+msgid ""
+"Public institutions treat all citizens fairly regardless of their gender, "
+"race, age or economic condition equally."
+msgstr ""
+
+#: survey_i18n/models.py:680
+msgid "What is your date of birth?"
+msgstr ""
+
+#: survey_i18n/models.py:686
+msgid "Male"
+msgstr ""
+
+#: survey_i18n/models.py:686
+msgid "Female"
+msgstr ""
+
+#: survey_i18n/models.py:686 survey_i18n/models.py:883
+#: survey_i18n/models.py:894
+msgid "Other"
+msgstr ""
+
+#: survey_i18n/models.py:687
+msgid "What is your gender?"
+msgstr ""
+
+#: survey_i18n/models.py:696
+msgid "How many people live in your household (including yourself)?"
+msgstr ""
+
+#: survey_i18n/models.py:720
+msgid "In which country were you born?"
+msgstr ""
+
+#: survey_i18n/models.py:724
+msgid "I was born here"
+msgstr ""
+
+#: survey_i18n/models.py:731
+msgid "Do you live in a:"
+msgstr ""
+
+#: survey_i18n/models.py:733
+msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:735
+msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:737
+msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:739
+msgid "Town (50.000 to 200.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:740
+msgid "Village (Less than 50.000 inhabitants)"
+msgstr ""
+
+#: survey_i18n/models.py:741
+msgid "Rural area"
+msgstr ""
+
+#: survey_i18n/models.py:750
+msgid "Which of these best describes your situation?"
+msgstr ""
+
+#: survey_i18n/models.py:752
+msgid "At work as an employee"
+msgstr ""
+
+#: survey_i18n/models.py:753
+msgid "Employer/self-employed"
+msgstr ""
+
+#: survey_i18n/models.py:754
+msgid "Unemployed"
+msgstr ""
+
+#: survey_i18n/models.py:756
+msgid ""
+"Outside the labour force (e.g. homemaker, student, retired, unable to work)"
+msgstr ""
+
+#: survey_i18n/models.py:763
+msgid "Do you work in the...?"
+msgstr ""
+
+#: survey_i18n/models.py:765
+msgid "Central, regional or local government administration"
+msgstr ""
+
+#: survey_i18n/models.py:767
+msgid "Public sector, other"
+msgstr ""
+
+#: survey_i18n/models.py:768
+msgid "Private (for profit) sector"
+msgstr ""
+
+#: survey_i18n/models.py:769
+msgid "Not for profit sector"
+msgstr ""
+
+#: survey_i18n/models.py:770
+msgid "Not applicable"
+msgstr ""
+
+#: survey_i18n/models.py:776
+msgid ""
+"As long as I am not convinced otherwise, I assume that people have only the "
+"best intentions."
+msgstr ""
+
+#: survey_i18n/models.py:801
+msgid ""
+"Just to confirm, which of these income bands corresponds best to your "
+"personal income? Remember, we are asking for your individual income, after "
+"taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/models.py:816
+msgid ""
+"The other participants in the first tasks are real persons who participated "
+"in the same study."
+msgstr ""
+
+#: survey_i18n/models.py:819 survey_i18n/models.py:832
+msgid "No trust at all"
+msgstr ""
+
+#: survey_i18n/models.py:820 survey_i18n/models.py:833
+msgid "Little trust"
+msgstr ""
+
+#: survey_i18n/models.py:821 survey_i18n/models.py:834
+msgid "Quite a bit of trust"
+msgstr ""
+
+#: survey_i18n/models.py:822 survey_i18n/models.py:835
+msgid "A lot of trust"
+msgstr ""
+
+#: survey_i18n/models.py:829
+msgid ""
+"My final earnings will be calculated according to the rules stated in the "
+"description of the study and will be paid to me."
+msgstr ""
+
+#: survey_i18n/models.py:842
+msgid ""
+"At the end of this study, how would you say that you read the descriptions "
+"associated with each of the sections?"
+msgstr ""
+
+#: survey_i18n/models.py:845
+msgid "With very little care"
+msgstr ""
+
+#: survey_i18n/models.py:846
+msgid "With little care"
+msgstr ""
+
+#: survey_i18n/models.py:847
+msgid "With care"
+msgstr ""
+
+#: survey_i18n/models.py:848
+msgid "With a lot of care"
+msgstr ""
+
+#: survey_i18n/models.py:849
+msgid "With extreme care"
+msgstr ""
+
+#: survey_i18n/models.py:855
+msgid "Were you in a calm environment when you answered the questions?"
+msgstr ""
+
+#: survey_i18n/models.py:858
+msgid "Not calm at all"
+msgstr ""
+
+#: survey_i18n/models.py:859
+msgid "Not very calm"
+msgstr ""
+
+#: survey_i18n/models.py:860
+msgid "Fairly calm"
+msgstr ""
+
+#: survey_i18n/models.py:861
+msgid "Very calm"
+msgstr ""
+
+#: survey_i18n/models.py:867
+msgid ""
+"Have you ever participated in another study that seemed close to this one?"
+msgstr ""
+
+#: survey_i18n/models.py:877
+msgid "Which device did you take this study on?"
+msgstr ""
+
+#: survey_i18n/models.py:879
+msgid "Desktop"
+msgstr ""
+
+#: survey_i18n/models.py:880
+msgid "Laptop (non-touchscreen)"
+msgstr ""
+
+#: survey_i18n/models.py:881
+msgid "Laptop (touchscreen)"
+msgstr ""
+
+#: survey_i18n/models.py:882
+msgid "Tablet"
+msgstr ""
+
+#: survey_i18n/models.py:889
+msgid "Which browser did you take this survey on?"
+msgstr ""
+
+#: survey_i18n/models.py:891
+msgid "Google Chrome"
+msgstr ""
+
+#: survey_i18n/models.py:892
+msgid "Firefox"
+msgstr ""
+
+#: survey_i18n/models.py:893
+msgid "Internet Explorer"
+msgstr ""
+
+#: survey_i18n/models.py:900
+msgid ""
+"If you have any comments about your experience taking this survey, with "
+"regard to the functionality of the platform, or the content of the tasks and "
+"questions, please provide us with relevant feedback:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey01.html:35
+#: survey_i18n/templates/survey_i18n/Survey02.html:37
+#: survey_i18n/templates/survey_i18n/Survey02A.html:38
+#: survey_i18n/templates/survey_i18n/Survey03.html:32
+#: survey_i18n/templates/survey_i18n/Survey04.html:37
+#: survey_i18n/templates/survey_i18n/Survey04A.html:38
+#: survey_i18n/templates/survey_i18n/Survey04B.html:36
+#: survey_i18n/templates/survey_i18n/Survey04C.html:33
+#: survey_i18n/templates/survey_i18n/Survey05.html:45
+#: survey_i18n/templates/survey_i18n/Survey06.html:40
+#: survey_i18n/templates/survey_i18n/Survey07.html:76
+#: survey_i18n/templates/survey_i18n/Survey08.html:31
+#: survey_i18n/templates/survey_i18n/Survey09.html:32
+#: survey_i18n/templates/survey_i18n/Survey10.html:118
+#: survey_i18n/templates/survey_i18n/Survey10A.html:28
+#: survey_i18n/templates/survey_i18n/Survey10B.html:42
+#: survey_i18n/templates/survey_i18n/Survey10C.html:39
+#: survey_i18n/templates/survey_i18n/Survey10D.html:32
+#: survey_i18n/templates/survey_i18n/Survey10E.html:17
+#: survey_i18n/templates/survey_i18n/Survey10F.html:27
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:65
+#: survey_i18n/templates/survey_i18n/Survey10G.html:64
+#: survey_i18n/templates/survey_i18n/Survey11.html:25
+#: survey_i18n/templates/survey_i18n/Survey12.html:19
+msgid "Next"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey02.html:28
+msgid ""
+"How willing are you to punish someone who treats <em><u>you</u></em> "
+"unfairly, even if there may be costs for you?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey02.html:31
+msgid ""
+"How willing are you to punish someone who treats <em><u>others</u></em> "
+"unfairly, even if there may be costs for you?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04.html:18
+msgid "Please think about what you would do in the following situation:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04.html:22
+msgid ""
+"You are in an area you are not familiar with, and you realize that you lost "
+"your way. You ask a stranger for directions. The stranger offers to take you "
+"to your destination. Helping you costs the stranger about 20 Euro in total. "
+"However, the stranger says he or she does not want any money from you. You "
+"have 6 presents with you. The cheapest present costs 5 euros, the most "
+"expensive one costs 30 euros. Do you give one of the presents to the "
+"stranger as a “thank-you”-gift? If so, which present do you give to the "
+"stranger?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04A.html:33
+msgid ""
+"Can you tell us whether you think the following action is always wrong, "
+"never wrong, or something in between:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04A.html:34
+msgid "Receiving social allowances to which you are not entitled."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey04B.html:27
+msgid "Could you tell us for each of these groups how much you trust them?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey05.html:29
+msgid ""
+"How much trust do you have in the following institutions to act in the best "
+"interest of society?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey06.html:27
+msgid "Do you agree with the following statements?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:26
+msgid ""
+"We will now ask you questions about your personal situation. All data is "
+"anonymous and will not be shared with a third party."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:34
+msgid ""
+"Click on all options below to show all the people who live in the same "
+"household as you. <br/>You can choose as many as you need."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:39
+msgid "My legal husband or wife"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:42
+msgid "My civil union partner"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:45
+msgid "My de-facto partner, boyfriend or girlfriend"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:48
+msgid "My mother and/or father"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:51
+msgid "My children"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:54
+msgid "My brothers and/or sisters"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:57
+msgid "My flatmates"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:60
+msgid "Alone"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:66
+msgid "Adults (18 years or older)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey07.html:67
+msgid "Children (younger than 18 years)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey08.html:15
+msgid "What is the highest level of education that you have completed?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey09.html:29
+msgid "How well does the following statement describe you as a person?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:17
+msgid ""
+"What are all the ways that you <u>as an individual</u> got income in the "
+"last 12 months ending today? <br/>Please choose the three most relevant "
+"options. <br/><br/>Please do not count loans as income."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:22
+#: survey_i18n/templates/survey_i18n/Survey10.html:59
+msgid "Salaries and wages"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:25
+#: survey_i18n/templates/survey_i18n/Survey10.html:62
+msgid "Profit from self-employment or business"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:28
+#: survey_i18n/templates/survey_i18n/Survey10.html:65
+msgid "Interest, dividends, rent, other investments"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:31
+#: survey_i18n/templates/survey_i18n/Survey10.html:68
+msgid "Pension"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:34
+#: survey_i18n/templates/survey_i18n/Survey10.html:71
+msgid "Social insurance payments, state benefits"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:37
+#: survey_i18n/templates/survey_i18n/Survey10.html:74
+msgid "Other sources of income"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:40
+#: survey_i18n/templates/survey_i18n/Survey10.html:77
+msgid "No source of income during that time"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:50
+msgid ""
+"Now think about the income of your household. This can be just you, or the "
+"collective income of your family, your parents, or whoever you share your "
+"income and expenditures with."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10.html:54
+msgid ""
+"What are the main ways that <u>your household</u> received income in the "
+"last 12 months? <br/>Please choose the three most relevant options. <br/><br/"
+">Please do not count loans as income."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10A.html:13
+msgid ""
+"In the last 12 months, what was your total income, the income that you "
+"received <u>as an individual</u>, after taxes have been deducted? (Income "
+"can come from any of the sources mentioned in the previous question.)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:17
+msgid ""
+"Just to confirm, which of these income bands corresponds best to <u>your "
+"personal</u> income? Remember, we are asking for <u>your individual</u> "
+"income, after taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:21
+msgid "0 to 13.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:22
+msgid "13.000.000 to 20.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:23
+msgid "20.000.000 to 25.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:24
+msgid "25.000.000 to 34.000.000 Won per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:25
+msgid "34.000.000 Won or more per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:30
+msgid "0 to 15.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:31
+msgid "15.000 to 20.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:32
+msgid "20.000 to 25.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:33
+msgid "25.000 to 32.000 euro per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10B.html:34
+msgid "32.000 euro per year or more"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10C.html:23
+msgid ""
+"In the last 12 months, what was the total income of <u>your household</u>, "
+"after taxes have been deducted? (Income can come from any of the sources "
+"mentioned in the previous question.)"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10C.html:30
+msgid "per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:18
+msgid ""
+"Just to confirm, which of these income bands corresponds best to the income "
+"of your <u>entire household</u> (the people you share your income and "
+"expenditures with). Remember, we are asking for the income of your "
+"<u>household</u>, after taxes have been deducted."
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:21
+msgid "0 to"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:21
+#: survey_i18n/templates/survey_i18n/Survey10D.html:22
+#: survey_i18n/templates/survey_i18n/Survey10D.html:23
+#: survey_i18n/templates/survey_i18n/Survey10D.html:24
+msgid "euros per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10D.html:25
+msgid "euros or more per year"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:23
+#: survey_i18n/templates/survey_i18n/Survey10G.html:21
+msgid "How important would you say religion is in your own life?"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:26
+#: survey_i18n/templates/survey_i18n/Survey10G.html:24
+msgid " 0 - Not important at all"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:27
+#: survey_i18n/templates/survey_i18n/Survey10G.html:25
+msgid " 1"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:28
+#: survey_i18n/templates/survey_i18n/Survey10G.html:26
+msgid " 2"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:29
+#: survey_i18n/templates/survey_i18n/Survey10G.html:27
+msgid " 3"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:30
+#: survey_i18n/templates/survey_i18n/Survey10G.html:28
+msgid " 4"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:31
+#: survey_i18n/templates/survey_i18n/Survey10G.html:29
+msgid " 5"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:32
+#: survey_i18n/templates/survey_i18n/Survey10G.html:30
+msgid " 6"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:33
+#: survey_i18n/templates/survey_i18n/Survey10G.html:31
+msgid " 7"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:34
+#: survey_i18n/templates/survey_i18n/Survey10G.html:32
+msgid " 8"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:35
+#: survey_i18n/templates/survey_i18n/Survey10G.html:33
+msgid " 9"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:36
+#: survey_i18n/templates/survey_i18n/Survey10G.html:34
+msgid " 10 - Very important"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:37
+#: survey_i18n/templates/survey_i18n/Survey10G.html:35
+msgid " Don't know"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:43
+#: survey_i18n/templates/survey_i18n/Survey10G.html:41
+msgid "Are you:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:46
+#: survey_i18n/templates/survey_i18n/Survey10G.html:44
+msgid " Buddhist"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:47
+#: survey_i18n/templates/survey_i18n/Survey10G.html:45
+msgid " Protestant"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:48
+#: survey_i18n/templates/survey_i18n/Survey10G.html:46
+msgid " Catholic"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:49
+#: survey_i18n/templates/survey_i18n/Survey10G.html:47
+msgid " Confucian"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:50
+#: survey_i18n/templates/survey_i18n/Survey10G.html:48
+msgid " Won Buddhist"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:51
+#: survey_i18n/templates/survey_i18n/Survey10G.html:49
+msgid " Other"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:52
+#: survey_i18n/templates/survey_i18n/Survey10G.html:50
+msgid " Not religious"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:53
+#: survey_i18n/templates/survey_i18n/Survey10G.html:51
+msgid " I don’t know"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey11.html:15
+msgid "This is the last screen, you're almost done!"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey11.html:16
+msgid ""
+"For information purposes, could you tell us to what extent you trusted the "
+"following two statements when you made your decisions:"
+msgstr ""
+
+#: survey_i18n/templates/survey_i18n/Survey12.html:14
+msgid ""
+"This is the very last screen, in the following screen we will show you your "
+"earnings!"
+msgstr ""
+
+#: survey_i18n/views.py:50
+msgid ""
+"Imagine the following situation: you won 1000 euros in a lottery. "
+"Considering your current situation, how much would you donate to a good "
+"cause?"
+msgstr ""
+
+#: survey_i18n/views.py:53
+msgid ""
+"Imagine the following situation: you won $1000 in a lottery. Considering "
+"your current situation, how much would you donate to a good cause?"
+msgstr ""
+
+#: survey_i18n/views.py:56
+msgid ""
+"Imagine the following situation: you won 1000 Won in a lottery. Considering "
+"your current situation, how much would you donate to a good cause?"
+msgstr ""
+
+#: survey_i18n/views.py:64 survey_i18n/views.py:311 survey_i18n/views.py:341
+msgid "€"
+msgstr ""
+
+#: survey_i18n/views.py:68 survey_i18n/views.py:312 survey_i18n/views.py:342
+msgid "$"
+msgstr ""
+
+#: survey_i18n/views.py:72 survey_i18n/views.py:313 survey_i18n/views.py:343
+msgid "Won"
+msgstr ""
+
+#: survey_i18n/views.py:103 survey_i18n/views.py:112 survey_i18n/views.py:121
+msgid "no present"
+msgstr ""
+
+#: survey_i18n/views.py:104
+msgid "the present worth 5 euros"
+msgstr ""
+
+#: survey_i18n/views.py:105
+msgid "the present worth 10 euros"
+msgstr ""
+
+#: survey_i18n/views.py:106
+msgid "the present worth 15 euros"
+msgstr ""
+
+#: survey_i18n/views.py:107
+msgid "the present worth 20 euros"
+msgstr ""
+
+#: survey_i18n/views.py:108
+msgid "the present worth 25 euros"
+msgstr ""
+
+#: survey_i18n/views.py:109
+msgid "the present worth 30 euros"
+msgstr ""
+
+#: survey_i18n/views.py:113
+msgid "the present worth $5"
+msgstr ""
+
+#: survey_i18n/views.py:114
+msgid "the present worth $10"
+msgstr ""
+
+#: survey_i18n/views.py:115
+msgid "the present worth $15"
+msgstr ""
+
+#: survey_i18n/views.py:116
+msgid "the present worth $20"
+msgstr ""
+
+#: survey_i18n/views.py:117
+msgid "the present worth $25"
+msgstr ""
+
+#: survey_i18n/views.py:118
+msgid "the present worth $30"
+msgstr ""
+
+#: survey_i18n/views.py:122
+msgid "the present worth 5.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:123
+msgid "the present worth 10.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:124
+msgid "the present worth 15.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:125
+msgid "the present worth 20.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:126
+msgid "the present worth 25.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:127
+msgid "the present worth 30.000 Won"
+msgstr ""
+
+#: survey_i18n/views.py:186
+msgid ""
+"When answering the following questions, please think about French "
+"institutions."
+msgstr ""
+
+#: survey_i18n/views.py:187
+msgid ""
+"When answering the following questions, please think about the US "
+"institutions."
+msgstr ""
+
+#: survey_i18n/views.py:188
+msgid ""
+"When answering the following questions, please think about Korean "
+"institutions."
+msgstr ""
+
+#: survey_i18n/views.py:225
+msgid "In what year did you arrive in France?"
+msgstr ""
+
+#: survey_i18n/views.py:226
+msgid "In what year did you arrive in the US?"
+msgstr ""
+
+#: survey_i18n/views.py:227
+msgid "In what year did you arrive in Korea?"
+msgstr ""
+
+#: survey_i18n/views.py:246
+msgid "Aucun diplôme"
+msgstr ""
+
+#: survey_i18n/views.py:247
+msgid "Brevet des collèges"
+msgstr ""
+
+#: survey_i18n/views.py:248
+msgid "CAP BEP ou équivalent"
+msgstr ""
+
+#: survey_i18n/views.py:249
+msgid "Baccalauréat"
+msgstr ""
+
+#: survey_i18n/views.py:250
+msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
+msgstr ""
+
+#: survey_i18n/views.py:251
+msgid "Licence (Bac + 3)"
+msgstr ""
+
+#: survey_i18n/views.py:252
+msgid "Master (Bac + 5) ou Doctorat"
+msgstr ""
+
+#: survey_i18n/views.py:255 survey_i18n/views.py:264
+msgid "Less than high school"
+msgstr ""
+
+#: survey_i18n/views.py:256 survey_i18n/views.py:265
+msgid "High school"
+msgstr ""
+
+#: survey_i18n/views.py:257 survey_i18n/views.py:266
+msgid "Some college"
+msgstr ""
+
+#: survey_i18n/views.py:258 survey_i18n/views.py:267
+msgid ""
+"Diploma, trades certificate or other post school qualification other than "
+"university"
+msgstr ""
+
+#: survey_i18n/views.py:259 survey_i18n/views.py:268
+msgid "Undergraduate degree (e.g. BA, BS)"
+msgstr ""
+
+#: survey_i18n/views.py:260 survey_i18n/views.py:269
+msgid "Post-graduate degree"
+msgstr ""

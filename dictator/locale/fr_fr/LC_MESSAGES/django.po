@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-12 17:06+0200\n"
+"PO-Revision-Date: 2016-09-06 17:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: dictator/templates/dictator/EndGame.html:11
+#: dictator/templates/dictator/Offer.html:13
+#: dictator/templates/dictator/Simulation.html:56
+msgid "Next"
+msgstr "Suivant"
+
+#: dictator/templates/dictator/Instructions.html:8
+msgid "Task Three: Introduction"
+msgstr "Tâche 3 : Introduction"
+
+#: dictator/templates/dictator/Instructions.html:10
+msgid ""
+"This last task involves <strong>two participants</strong> – Participant A "
+"and Participant B."
+msgstr ""
+"Cette dernière tâche implique <strong>deux participants</strong> – "
+"Participant A et Participant B."
+
+#: dictator/templates/dictator/Instructions.html:11
+msgid ""
+"Remember, the other participant is different from the ones you interacted "
+"with in the previous two tasks."
+msgstr ""
+"Rappel : l’autre participant est différent de ceux avec lesquels vous avez "
+"interagi dans les deux tâches précédentes."
+
+#: dictator/templates/dictator/Instructions.html:12
+msgid "These are the rules:"
+msgstr "Voici les consignes :"
+
+#: dictator/templates/dictator/Instructions.html:19
+msgid ""
+"Your role (Participant A or Participant B) is revealed to you at the "
+"beginning of the task."
+msgstr ""
+"Votre rôle (Participant A ou Participant B) vous sera précisé au début de la "
+"tâche."
+
+#: dictator/templates/dictator/Instructions.html:20
+msgid ""
+"Because this task is simple, there will be no simulator to test out "
+"different choices."
+msgstr ""
+"Comme cette tâche est simple, il n'y aura pas de simulation pour tester "
+"différents choix."
+
+#: dictator/templates/dictator/Offer.html:6
+msgid "Task Three: Real Decision"
+msgstr "Tâche 3 : Décision réelle"
+
+#: dictator/templates/dictator/Offer.html:7
+msgid ""
+"This is the real third task. Once you have made your decision and clicked "
+"the “Next” button, you cannot return to this screen."
+msgstr ""
+"Il s'agit de la véritable tâche 3. Une fois que vous avez pris votre "
+"décision et cliqué sur le bouton « Suivant », vous ne pouvez pas revenir à "
+"cet écran."
+
+#: dictator/templates/dictator/Offer.html:8
+msgid "You were selected to be in the role of <strong>Participant A</strong>."
+msgstr ""
+"Vous avez été sélectionné(e) pour être dans le rôle du <strong>Participant "
+"A</strong>."
+
+#: dictator/templates/dictator/Offer.html:9
+#, python-format
+msgid "You have %(amount)s in your possession."
+msgstr "Vous disposez de %(amount)s euros. "
+
+#: dictator/templates/dictator/Offer.html:9
+msgid "How much do you want to transfer to Participant B?"
+msgstr "Combien voulez-vous transférer au Participant B ?"
+
+#: dictator/templates/dictator/Simulation.html:6
+msgid "Task Three: Simulation"
+msgstr "Simulation de la Tâche 3"
+
+#: dictator/templates/dictator/Simulation.html:8
+msgid ""
+"If you wish, you can use this test screen to play with different choices of "
+"Participant A, to understand the task better."
+msgstr ""
+"Si vous le souhaitez, vous pouvez utiliser cet écran de test pour jouer avec "
+"différents choix possibles du Participant A, afin de mieux comprendre la "
+"tâche."
+
+#: dictator/templates/dictator/Simulation.html:9
+msgid "Whenever you are ready to proceed to the real task, click next."
+msgstr ""
+"Dès que vous êtes prêt(e) à commencer la tâche réelle, cliquez sur \"suivant"
+"\"."
+
+#: dictator/templates/dictator/Simulation.html:45
+msgid "€"
+msgstr ""
+
+#: dictator/templates/dictator/Simulation.html:53
+msgid "Amount sent by Participant A"
+msgstr "Montant envoyé par le Participant A"
+
+#: dictator/templates/dictator/Simulation.html:55
+msgid "Send"
+msgstr "Envoyer"
+
+#: dictator/views.py:51 dictator/views.py:68
+msgid "10 euros"
+msgstr "10 euros"
+
+#: dictator/views.py:52 dictator/views.py:69
+msgid "$10"
+msgstr ""
+
+#: dictator/views.py:53 dictator/views.py:70
+msgid "12.000 Won"
+msgstr ""

@@ -1,6 +1,7 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtFilters = {}; 
 
 // library properties:
 lib.properties = {
@@ -8,11 +9,23 @@ lib.properties = {
 	height: 480,
 	fps: 30,
 	color: "#CCD1DB",
+	opacity: 1.00,
+	webfonts: {},
 	manifest: []
 };
 
 
 
+lib.ssMetadata = [];
+
+
+lib.webfontAvailable = function(family) { 
+	lib.properties.webfonts[family] = true;
+	var txtFilters = lib.webFontTxtFilters && lib.webFontTxtFilters[family] || [];
+	for(var f = 0; f < txtFilters.length; ++f) {
+		txtFilters[f].updateCache();
+	}
+};
 // symbols:
 
 
@@ -65,7 +78,7 @@ p.nominalBounds = new cjs.Rectangle(-59.3,-75.8,118.7,151.8);
 	this.label.name = "label";
 	this.label.lineHeight = 13;
 	this.label.lineWidth = 98;
-	this.label.setTransform(17.1,0,1,1.213,0,66.7,32.2);
+	this.label.setTransform(16.6,2,1,1.213,0,66.7,32.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1006,7 +1019,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 30;
-	this.label.setTransform(36.6,29.8);
+	this.label.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
 
@@ -1029,7 +1042,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 	this.estimation.name = "estimation";
 	this.estimation.textAlign = "center";
 	this.estimation.lineHeight = 30;
-	this.estimation.setTransform(36.6,29.8);
+	this.estimation.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.estimation).wait(1));
 
@@ -1052,7 +1065,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,76.7,83.8);
 	this.estimation.name = "estimation";
 	this.estimation.textAlign = "center";
 	this.estimation.lineHeight = 30;
-	this.estimation.setTransform(36.6,29.8);
+	this.estimation.setTransform(38.6,31.8);
 
 	this.timeline.addTween(cjs.Tween.get(this.estimation).wait(1));
 
@@ -1158,15 +1171,24 @@ p.nominalBounds = new cjs.Rectangle(0,-77.5,61.7,113.1);
 		 
 		var self = this;
 		var min = 0;
-		var max = 10;
+		var max = 10000;
 		var currency = '€';
+		var locale = 'fr';
+		
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
 			if (canvas) {
-				min = canvas.dataset.estimationMin || min;
-				max = canvas.dataset.estimationMax || max;
-				currency = canvas.dataset.estimationCurrency || currency;
+				min = canvas.getAttribute('data-min') || min;
+				max = canvas.getAttribute('data-max') || max;
+				currency = canvas.getAttribute('data-currency') || currency;
+				locale = canvas.getAttribute('data-locale') || locale;
 			}
+		}
+		
+		if (locale === 'ko') {
+			this.bubbleLeft.estimation.font = "18px 'Gotham Medium'";
+			this.bubbleRight.estimation.font = "18px 'Gotham Medium'";
+			this.cart.bubble.label.font = "18px 'Gotham Medium'";
 		}
 		
 		this.bubbleLeft.estimation.text = currency + max.toString();
@@ -1176,21 +1198,25 @@ p.nominalBounds = new cjs.Rectangle(0,-77.5,61.7,113.1);
 		this.cart.bubble.label.text = currency + '0';
 		
 		var givenAmount = 0;
+		var unit = locale === 'ko' ? 1000 : 1;
 		
 		window.DICTATOR = (function () {
 			
 			var putMoney = function (amount) {
+				console.log('putMoney', amount);
 				if (amount >= min && amount <= max) {
+					console.log(amount);
 					self.bubbleLeft.estimation.text = currency + (max - amount).toString();
 					self.cart.bubble.label.text = currency + amount.toString();
-					
-					givenAmount = max - amount;
+					givenAmount = amount;
+					// givenAmount = max - amount;
 				}
 			};
 			
 			var send = function () {
 				self.gotoAndPlay('send');
 				setTimeout(function () {
+					console.log(givenAmount);
 					self.bubbleRight.estimation.text = currency + givenAmount.toString();
 				}, 4500);
 			};
