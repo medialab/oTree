@@ -126,7 +126,7 @@ SESSION_CONFIGS = [
         ),
         'num_demo_participants': total_gmi,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1a',
@@ -142,7 +142,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1a',
@@ -158,7 +158,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1b',
@@ -174,7 +174,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2a',
@@ -190,7 +190,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2b',
@@ -206,7 +206,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1a',
@@ -222,7 +222,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1b',
@@ -238,7 +238,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2a',
@@ -254,7 +254,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2b',
@@ -270,7 +270,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1a',
@@ -286,7 +286,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1b',
@@ -302,7 +302,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2a',
@@ -318,7 +318,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2b',
@@ -334,7 +334,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1a',
@@ -350,7 +350,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1b',
@@ -366,7 +366,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2a',
@@ -382,7 +382,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2b',
@@ -398,7 +398,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path A1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1a',
@@ -414,7 +414,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path A1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A1b',
@@ -430,7 +430,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path A2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2a',
@@ -446,7 +446,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path A2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'A2b',
@@ -462,7 +462,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path B1a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1a',
@@ -478,7 +478,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path B1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B1b',
@@ -494,7 +494,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path B2a',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2a',
@@ -510,7 +510,7 @@ SESSION_CONFIGS = [
         'display_name': 'TRUSTLAB | Sept 2016 | EN | path B2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'set_dynamic_locale', 'quota', 'trust', 'public_goods',
+            'quota', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'earnings'
         ],
         'treatment': 'B2b',
