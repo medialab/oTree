@@ -30,7 +30,7 @@ class Display(Page):
     def get_dictator_base_money(self):
         if self.player.dictator_base_money:
             if type(self.player.dictator_base_money) is str:
-                return float(self.player.dictator_base_money[1:].strip())
+                return float(self.player.dictator_base_money.strip())
             return float(self.player.dictator_base_money)
         return 0
 
@@ -41,27 +41,27 @@ class Display(Page):
             'role': self.player.calculation_from_role,
             'chosen_game': self.player.calculation_from_game,
             'trust_game_player_a_transfer': (
-                self.player.trust_game_player_a_transfer
+                (self.player.trust_game_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
             ),
             'trust_game_player_b_transfer': (
-                self.player.trust_game_player_b_transfer
+                (self.player.trust_game_player_b_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
             ),
-            'pg_player_a_transfer': self.player.pg_player_a_transfer,
-            'pg_player_b_transfer': self.player.pg_player_b_transfer,
-            'pg_player_c_transfer': self.player.pg_player_c_transfer,
-            'pg_player_d_transfer': self.player.pg_player_d_transfer,
-            'pg_amount': self.player.pg_joint_sum,
+            'pg_player_a_transfer': (self.player.pg_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
+            'pg_player_b_transfer': (self.player.pg_player_b_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
+            'pg_player_c_transfer': (self.player.pg_player_c_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
+            'pg_player_d_transfer': (self.player.pg_player_d_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
+            'pg_amount': (self.player.pg_joint_sum or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
             'pg_multiplied_amount': round(
                 float(Public_goods_const.efficiency_factor) *
-                float(self.player.pg_joint_sum[1:]), 1
+                float((self.player.pg_joint_sum or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')), 1
             ),
             'dictator_player_a_transfer': (
-                self.player.dictator_player_a_transfer
+                (self.player.dictator_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
             ),
             'dictator_player_a_remaining': (
-                self.player.dictator_player_a_remaining
+                (self.player.dictator_player_a_remaining or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
             ),
-            'dictator_player_a_payoff': c(
+            'dictator_player_a_payoff': (
                 self.get_dictator_base_money() -
                 self.get_dictator_player_a_transfer()
             ),

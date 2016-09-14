@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 17:06+0200\n"
-"PO-Revision-Date: 2016-09-09 11:13+0200\n"
+"PO-Revision-Date: 2016-09-14 15:31+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: survey_i18n/models.py:52
 msgid "Overall, how satisfied are you with life as a whole these days?"
@@ -198,7 +198,7 @@ msgstr "10 - Cette action est toujours mauvaise"
 
 #: survey_i18n/models.py:292
 msgid "Your family:"
-msgstr "Votre famille : "
+msgstr "Votre famille"
 
 #: survey_i18n/models.py:294 survey_i18n/models.py:314
 #: survey_i18n/models.py:334 survey_i18n/models.py:354

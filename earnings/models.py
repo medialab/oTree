@@ -146,7 +146,7 @@ class Group(BaseGroup):
                     given_by_player_b, matched_id = self.strat_trust_a(
                         p, given_by_player_a
                     )
-                    payoff = base_money - given_by_player_a + given_by_player_b
+                    payoff = (base_money - given_by_player_a + given_by_player_b)
 
                     trust_game_player_a_transfer = given_by_player_a
                     trust_game_player_b_transfer = given_by_player_b

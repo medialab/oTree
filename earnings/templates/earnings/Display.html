@@ -5,6 +5,12 @@
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <input id="timer" type="hidden" name="total_time" value="" />
+<style>
+label {
+  visibility: hidden;
+}
+</style>
+
 <br/><br/><br/><br/><br/>
 <h3>{% trans "Thank you very much for your participation in this study!" %}</h3>
 <p>{% trans "After being matched with the other players, your earnings have been calculated as" %} {{payoff}} {% trans "euros." %}</p>
