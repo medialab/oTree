@@ -1,17 +1,14 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load otree_tags %}
 
-{% block title %}Your Decision{% endblock %}
-
 {% block content %}
+<h1 style="color:#800080">{% trans "Task Three: Real Decision" %}</h1>
+<p>{% trans "This is the real third task. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
+<p>{% trans "You were selected to be in the role of <strong>Participant A</strong>." %}</p>
+<p>{% blocktrans %}You have {{amount}} in your possession.{% endblocktrans %} <strong>{% trans "How much do you want to transfer to Participant B?" %}</strong> </p>
 <p>
-You are <strong>Participant 1</strong>. Now please decide how many points you will keep for yourself.
+{% formfield player.given %}
 </p>
-
-{% formfield group.kept %}
-
-{% next_button %}
-
-    {% include Constants.instructions_template %}
-
+<p><button class="btn btn-primary">{% trans "Next" %}</button></p>
 {% endblock %}

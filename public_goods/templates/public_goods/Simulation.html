@@ -1,0 +1,123 @@
+{% extends "global/Simulation.html" %}
+{% load i18n %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+<h1 style="color:#008068">{% trans "Task Two: Test Simulation" %}</h1>
+<hr/>
+<p>{% trans "This is not the real task yet, but a simulation to help you understand the rules better. You can use the test screen below to play with the different choices of the four participants." %}</p>
+<p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
+
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "public_goods/public_goods_simulation.js" %}"></script>
+<style>.page-header{display: none}</style>
+<script>
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.public_good_simulation();
+
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+
+  var $amountA = $('#amountA'),
+      $amountB = $('#amountB'),
+      $amountC = $('#amountC'),
+      $amountD = $('#amountD'),
+      MIN = 0,
+      MAX = 10;
+
+  $amountA.change(function (e) {
+    e.preventDefault();
+    window.PG.giveMoney(0, e.target.value);
+  });
+
+  $amountB.change(function (e) {
+    e.preventDefault();
+    window.PG.giveMoney(1, +e.target.value);
+  });
+
+  $amountC.change(function (e) {
+    e.preventDefault();
+    window.PG.giveMoney(2, +e.target.value);
+  });
+
+  $amountD.change(function (e) {
+    e.preventDefault();
+    window.PG.giveMoney(3, +e.target.value);
+  });
+
+  $('#send').click(function (e) {
+    e.preventDefault();
+
+    if (($amountA.val() === '' || $amountA.val() === null) ||
+        ($amountB.val() === '' || $amountB.val() === null) ||
+        ($amountC.val() === '' || $amountC.val() === null) ||
+        ($amountD.val() === '' || $amountD.val() === null) ||
+        ($amountA.val() < 0 || $amountA.val() > 10) ||
+        ($amountB.val() < 0 || $amountB.val() > 10) ||
+        ($amountC.val() < 0 || $amountC.val() > 10) ||
+        ($amountD.val() < 0 || $amountD.val() > 10)) {
+      $('.error').removeClass('hide');
+      return;
+    }
+
+    $('.error').addClass('hide');
+
+    $amountA.val('');
+    $amountB.val('');
+    $amountC.val('');
+    $amountD.val('');
+    window.PG.send();
+  });
+}
+
+$(function() { init() });
+</script>
+
+<div class="container">
+  <canvas id="canvas" width="600" height="480"
+          style="background-color:#CCD1DB"
+          class="col-sm-8 col-md-8 col-lg-6"
+          data-min="0"
+          data-max="{{max}}"
+          data-currency="{% trans '€' %}"
+          data-multiplier="{{Constants.efficiency_factor}}"
+          data-locale="{{lang}}"
+  >
+  </canvas>
+  <div class="form commands">
+    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
+      <label for="amount">{% trans "Amount sent by Participant A" %}</label>
+      <input class="form-control" type="number" id="amountA" min="0" max="{{max}}" step="{{step}}">
+    </div>
+
+    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
+      <label for="amount">{% trans "Amount sent by Participant B" %}</label>
+      <input class="form-control" type="number" id="amountB" min="0" max="{{max}}" step="{{step}}">
+    </div>
+
+    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
+      <label for="amount">{% trans "Amount sent by Participant C" %}</label>
+      <input class="form-control" type="number" id="amountC" min="0" max="{{max}}" step="{{step}}">
+    </div>
+
+    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
+      <label for="amount">{% trans "Amount sent by Participant D" %}</label>
+      <input class="form-control" type="number" id="amountD" min="0" max="{{max}}" step="{{step}}">
+    </div>
+
+    <div class="col-sm-3 col-md-3 col-lg-3 col-sm-offset-6 col-md-offset-6 col-lg-offset-6 form-group">
+      <a class="btn btn-default col-sm-12 col-md-12 col-lg-12" style="top: -35px;" id="send">{% trans "Send" %}</a><br/><br/>
+      <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" style="top: -35px;" id="next">{% trans "Next" %}</button>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

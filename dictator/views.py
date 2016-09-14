@@ -1,45 +1,82 @@
+# -*- coding: utf-8 -*-
+"""Views for Dictator game."""
+from __future__ import division
 from . import models
-from ._builtin import Page, WaitPage
+from ._builtin import Page
 from .models import Constants
+from django.utils.translation import ugettext_lazy as _
+
+
+def vars_for_all_templates(self):
+    """Return variables accessible for all templates."""
+    return {
+        'instructions': 'dictator/Instructions.html',
+        'constants': Constants,
+        'lang': self.session.vars['lang']
+    }
+
+
+class EndGame(Page):
+    """End game page."""
+
+    form_model = models.Player
+    form_fields = ['total_time']
+
+    def vars_for_template(self):
+        """Make data available in template."""
+        return {'start_time': self.player.total_time}
+
+
+class Simulation(Page):
+    """Simulation page."""
+
+    def vars_for_template(self):
+        max = {'fr': 10, 'en': 10, 'ko': 12000}
+        step = {'fr': 1, 'en': 1, 'ko': 1000}
+        return {
+            'max': max[self.session.vars['lang']],
+            'step': step[self.session.vars['lang']]
+        }
 
 
 class Introduction(Page):
-    pass
+    """Introduction page."""
+
+    template_name = 'global/Introduction.html'
+    form_model = models.Player
+    form_fields = ['total_time']
+
+    def vars_for_template(self):
+        amount = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'ko': _(u'12.000 Won')
+        }
+        return {
+            'amount': amount[self.session.vars['lang']]
+        }
 
 
 class Offer(Page):
-    form_model = models.Group
-    form_fields = ['kept']
+    """Offer (participant A) page."""
 
-    def is_displayed(self):
-        return self.player.id_in_group == 1
-
-
-class ResultsWaitPage(WaitPage):
-    def after_all_players_arrive(self):
-        self.group.set_payoffs()
+    form_model = models.Player
+    form_fields = ['given']
 
     def vars_for_template(self):
-        if self.player.id_in_group == 2:
-            body_text = "You are participant 2. Waiting for participant 1 to decide."
-        else:
-            body_text = 'Please wait'
-        return {'body_text': body_text}
-
-
-class Results(Page):
-    def offer(self):
-        return Constants.endowment - self.group.kept
-
-    def vars_for_template(self):
+        amount = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'ko': _(u'12.000 Won')
+        }
         return {
-            'offer': Constants.endowment - self.group.kept,
+            'amount': amount[self.session.vars['lang']]
         }
 
 
 page_sequence = [
     Introduction,
+    # Simulation,
     Offer,
-    ResultsWaitPage,
-    Results
+    EndGame
 ]

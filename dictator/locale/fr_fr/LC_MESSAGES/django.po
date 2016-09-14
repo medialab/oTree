@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 17:06+0200\n"
-"PO-Revision-Date: 2016-09-06 17:00+0200\n"
+"PO-Revision-Date: 2016-09-14 15:07+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/dictator/EndGame.html:9
 msgid "Thank once again!"
-msgstr ""
+msgstr "Merci encore !"
 
 #: templates/dictator/EndGame.html:10
 msgid ""
@@ -27,6 +27,10 @@ msgid ""
 "choices. Let's go to the second section of the study, where you will be "
 "asked to sort a number of words and be timed while doing so."
 msgstr ""
+"Vous avez terminé toutes les tâches de cette section. Vos choix ont été "
+"enregistrés. Entamons maintenant la deuxième section de cette étude, durant "
+"laquelle il vous sera demandé de trier un certain nombre de mots pendant que "
+"nous vous chronométrons."
 
 #: dictator/templates/dictator/EndGame.html:11
 #: dictator/templates/dictator/Offer.html:13

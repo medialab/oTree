@@ -1,16 +1,21 @@
 {% extends "global/Base.html" %}
+{% load i18n %}
 {% load staticfiles otree_tags %}
 
-{% block title %}
-    Contribute
-{% endblock %}
-
 {% block content %}
+    <h1 style="color:#008068">{% trans "Task Two: Real Decision" %}</h1>
+    <p>{% trans "Now the real task starts. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
 
-    {% formfield player.contribution with label="How much will you contribute to the project (from 0 to 100)?" %}
+    {% if lang == 'ko' %}
+      <p>{% trans "You have 12.000 Won in your possession. You may choose to keep this money, or choose to invest it in the joint project. <strong>How much do you want to invest into the joint project?</strong>" %}</p>
+    {% else %}
+      <p>{% trans "You have 10 euros in your possession. You may choose to keep this money, or choose to invest it in the joint project. <strong>How much do you want to invest into the joint project?</strong>" %}</p>
+    {% endif %}
 
-    {% next_button %}
+    <hr/>
+    {% formfield player.contribution with label=contribution_label %}
 
-    {% include Constants.instructions_template %}
+    <button class="btn btn-primary pull-right">{% trans "Next" %}</button>
+
 
 {% endblock %}

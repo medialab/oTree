@@ -7,27 +7,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 16:42+0200\n"
-"PO-Revision-Date: 2016-09-11 23:23+0200\n"
+"POT-Creation-Date: 2016-09-12 17:06+0200\n"
+"PO-Revision-Date: 2016-09-07 11:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: public_goods/templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Decision"
-msgstr "과제 2: 실제 결정"
+msgstr ""
 
 #: public_goods/templates/public_goods/Contribute.html:7
 msgid ""
 "Now the real task starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
-"이제 실제 과제가 시작됩니다. 금액을 정하고 “다음” 버튼을 누른 후에는, 다시 "
-"이 화면으로 돌아올 수 없습니다."
 
 #: public_goods/templates/public_goods/Contribute.html:10
 msgid ""
@@ -35,9 +33,6 @@ msgid ""
 "or choose to invest it in the joint project. <strong>How much do you want to "
 "invest into the joint project?</strong>"
 msgstr ""
-"당신에게 12,000원이 있습니다. 당신은 그 돈을 그대로 보유하기로 결정하거나, 아"
-"니면 공동 과제에 투자하기로 결정할 수 있습니다. 얼마의 금액을 공동 과제에 투"
-"자하시겠습니까? "
 
 #: public_goods/templates/public_goods/Contribute.html:12
 msgid ""
@@ -51,98 +46,81 @@ msgstr ""
 #: public_goods/templates/public_goods/DecisionInstructions.html:11
 #: public_goods/templates/public_goods/EndGame.html:13
 #: public_goods/templates/public_goods/Introduction.html:8
-#: public_goods/templates/public_goods/Simulation.html:114
+#: public_goods/templates/public_goods/Simulation.html:116
 msgid "Next"
 msgstr "다음"
 
 #: public_goods/templates/public_goods/ContributeBack.html:8
 msgid "Task Two: Real decision continued"
-msgstr "과제 2: 실제 결정 진행"
+msgstr ""
 
 #: public_goods/templates/public_goods/ContributeBack.html:9
 msgid ""
 "Now imagine that this time, you find out how much money the other three "
 "members of your group are transferring into the joint pot."
 msgstr ""
-"이제 당신은 당신을 제외한 나머지 3명의 참가자들이 공동 과제 투자함에 넣은 금"
-"액의 액수를 알게 되었다고 상상해 주십시오."
 
 #: public_goods/templates/public_goods/ContributeBack.html:10
 msgid ""
 "All of your choices below can impact how much money you will receive at the "
 "end of the study."
 msgstr ""
-"관련된 모든 당신의 선택은, 과제 종료시 당신이 획득할 금액에 영향을 줄 수 있습"
-"니다. "
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:6
 msgid ""
 "On the next page, you decide how much of your {{amount}} you want to "
 "transfer to the common project."
 msgstr ""
-"다음 페이지에서, 당신이 얼마나 많은 {{양}}의 금액을 공동 과제에 투자하고 싶은"
-"지 결정해 주십시오."
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:7
 msgid "You will be asked to do it in two different situations:"
-msgstr "당신은 두 가지 다른 상황에서 결정을 내리시게 될 것입니다:"
+msgstr ""
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:8
 msgid ""
 "In the first step, you simply decide how much of your {{amount}} you want to "
 "put into the common project."
 msgstr ""
-"우선 당신이 얼마나 많은 {{양}}의 금액을 공동 과제에 투자하실 것인지 결정해 주"
-"십시오."
 
 #: public_goods/templates/public_goods/DecisionInstructions.html:9
 msgid ""
 "In the second step, you have the opportunity to decide upon your "
 "contribution based on the contribution of other group members."
 msgstr ""
-"다음으로 당신은 다른 참가자들의 기여도를 참고하여, 당신의 금액을 결정할 수 있"
-"습니다."
 
 #: public_goods/templates/public_goods/EndGame.html:11
 msgid "Thank you very much for entering your choice."
-msgstr "응답하여 주셔서 감사합니다."
+msgstr ""
 
 #: public_goods/templates/public_goods/EndGame.html:12
 msgid ""
 "We have recorded your decision. Again, your payoff will depend on the "
 "actions of the other players. Now, please proceed to the third task."
 msgstr ""
-"당신의 결정이 모두 저장되었습니다. 다시 말씀드리지만, 당신의 획득 금액은 다"
-"른 참가자들의 과제 수행 결과에 따라 결정될 것입니다. 이제 세 번째 과제로 넘어"
-"가 주십시오."
 
 #: public_goods/templates/public_goods/Instructions.html:8
 msgid "Task Two: Introduction"
-msgstr "과제 2: 안내"
+msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:9
 msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
 msgstr ""
-"두 번째 과제에서는 4명의 참가자들(당신과 3명의 다른 참가자들)이 한 팀으로 구"
-"성됩니다."
 
 #: public_goods/templates/public_goods/Instructions.html:10
 msgid ""
 "Remember, the participants in this group are different from the person you "
 "interacted with in the previous task. However, they all live in the France."
 msgstr ""
-"이 그룹의 참가자들은 당신이 이전 과제에서 함께 했던 참가자들과는 다른 사람들"
-"이지만, 모두 한국에 거주하는 사람들입니다."
 
 #: public_goods/templates/public_goods/Instructions.html:11
 msgid "These are the rules:"
-msgstr "규칙은 다음과 같습니다:"
+msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:15
 msgid "At the beginning, each group member has 12.000 Won."
-msgstr "과제 시작시, 각 참가자들은 12,000원씩을 가지고 있습니다."
+msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:17
 msgid "At the beginning, each group member has 10 euros."
@@ -154,8 +132,6 @@ msgid ""
 "wants to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
-"각 참가자들은 12,000원 중 본인이 보유할 금액과 공동 과제를 위해 투자할 금액"
-"을 정해야 합니다."
 
 #: public_goods/templates/public_goods/Instructions.html:23
 msgid ""
@@ -167,7 +143,7 @@ msgstr ""
 #: public_goods/templates/public_goods/Instructions.html:26
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
-msgstr "공동 과제에 투자된 총 금액은 {양} 배만큼 곱해져 산출됩니다."
+msgstr ""
 
 #: public_goods/templates/public_goods/Instructions.html:27
 msgid ""
@@ -175,12 +151,10 @@ msgid ""
 "<strong>split equally between all 4 group members</strong> (including "
 "yourself)."
 msgstr ""
-"최종적으로, 공동 과제에 투자된 금액은 당신을 포함하여 4명의 참가자들에게 똑같"
-"이 나누어져 지급될 것입니다."
 
 #: public_goods/templates/public_goods/Simulation.html:6
 msgid "Task Two: Test Simulation"
-msgstr "과제 2: 과제 시뮬레이션"
+msgstr ""
 
 #: public_goods/templates/public_goods/Simulation.html:8
 msgid ""
@@ -188,140 +162,142 @@ msgid ""
 "rules better. You can use the test screen below to play with the different "
 "choices of the four participants."
 msgstr ""
-"이것은 실제 과제가 아니며, 이해를 돕기 위한 시뮬레이션입니다. 본 화면을 통해 "
-"네 명의 참가자들과 함께 할 수 있는 여러 가지 선택들을 연습해 보셔도 좋습니다."
 
 #: public_goods/templates/public_goods/Simulation.html:9
 msgid "Whenever you are ready to proceed to the real task, click next."
-msgstr "실제 과제로 넘어가시려면 '다음'을 눌러 주십시오."
+msgstr ""
 
 #: public_goods/templates/public_goods/Simulation.html:88
 msgid "€"
 msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:93
+#: public_goods/templates/public_goods/Simulation.html:95
 msgid "Amount sent by Participant A"
-msgstr "참가자 A가 보낸 금액"
+msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:98
+#: public_goods/templates/public_goods/Simulation.html:100
 msgid "Amount sent by Participant B"
-msgstr "참가자 B가 보낸 금액"
+msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:103
+#: public_goods/templates/public_goods/Simulation.html:105
 msgid "Amount sent by Participant C"
-msgstr "참가자 C가 보낸 금액"
+msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:108
+#: public_goods/templates/public_goods/Simulation.html:110
 msgid "Amount sent by Participant D"
-msgstr "참가자 D가 보낸 금액"
+msgstr ""
 
-#: public_goods/templates/public_goods/Simulation.html:113
+#: public_goods/templates/public_goods/Simulation.html:115
 msgid "Send"
-msgstr "보내기"
+msgstr ""
 
-#: public_goods/views.py:56 public_goods/views.py:57
+#: public_goods/views.py:65
 msgid "10 euros"
 msgstr ""
 
-#: public_goods/views.py:58
-msgid "10.000 Won"
-msgstr "10,000원"
+#: public_goods/views.py:66
+msgid "$10"
+msgstr ""
 
-#: public_goods/views.py:83 public_goods/views.py:85
+#: public_goods/views.py:67
+msgid "12.000 Won"
+msgstr ""
+
+#: public_goods/views.py:95 public_goods/views.py:97
 msgid "If on average, each of the other     group members contributes 0 euro:"
 msgstr ""
 
-#: public_goods/views.py:87
+#: public_goods/views.py:99
 msgid "If on average, each of the other     group members contributes 0 Won:"
-msgstr "평균적으로, 다른 팀원들이 0원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:92 public_goods/views.py:94
+#: public_goods/views.py:104 public_goods/views.py:106
 msgid "If on average, each of the other     group members contributes 1 euro:"
 msgstr ""
 
-#: public_goods/views.py:96
+#: public_goods/views.py:108
 msgid ""
 "If on average, each of the other     group members contributes 1.200 Won Won:"
-msgstr "평균적으로, 다른 팀원들이 1,200원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:101 public_goods/views.py:103
+#: public_goods/views.py:113 public_goods/views.py:115
 msgid "If on average, each of the other     group members contributes 2 euros:"
 msgstr ""
 
-#: public_goods/views.py:105
+#: public_goods/views.py:117
 msgid ""
 "If on average, each of the other     group members contributes 2.400 Won:"
-msgstr "평균적으로, 다른 팀원들이 2,400원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:110 public_goods/views.py:112
+#: public_goods/views.py:122 public_goods/views.py:124
 msgid "If on average, each of the other     group members contributes 3 euros:"
 msgstr ""
 
-#: public_goods/views.py:114
+#: public_goods/views.py:126
 msgid ""
 "If on average, each of the other     group members contributes 3.600 Won:"
-msgstr "평균적으로, 다른 팀원들이 3,600원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:119 public_goods/views.py:121
+#: public_goods/views.py:131 public_goods/views.py:133
 msgid "If on average, each of the other     group members contributes 4 euros:"
 msgstr ""
 
-#: public_goods/views.py:123
+#: public_goods/views.py:135
 msgid ""
 "If on average, each of the other     group members contributes 4.800 Won:"
-msgstr "평균적으로, 다른 팀원들이 4,800원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:128 public_goods/views.py:130
+#: public_goods/views.py:140 public_goods/views.py:142
 msgid "If on average, each of the other     group members contributes 5 euros:"
 msgstr ""
 
-#: public_goods/views.py:132
+#: public_goods/views.py:144
 msgid ""
 "If on average, each of the other     group members contributes 6.000 Won:"
-msgstr "평균적으로, 다른 팀원들이 6,000원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:137 public_goods/views.py:139
+#: public_goods/views.py:149 public_goods/views.py:151
 msgid "If on average, each of the other     group members contributes 6 euros:"
 msgstr ""
 
-#: public_goods/views.py:141
+#: public_goods/views.py:153
 msgid ""
 "If on average, each of the other     group members contributes 7.200 Won:"
-msgstr "평균적으로, 다른 팀원들이 7,200원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:146 public_goods/views.py:148
+#: public_goods/views.py:158 public_goods/views.py:160
 msgid "If on average, each of the other     group members contributes 7 euros:"
 msgstr ""
 
-#: public_goods/views.py:150
+#: public_goods/views.py:162
 msgid ""
 "If on average, each of the other     group members contributes 8.400 Won:"
-msgstr "평균적으로, 다른 팀원들이 8,400원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:155 public_goods/views.py:157
+#: public_goods/views.py:167 public_goods/views.py:169
 msgid "If on average, each of the other     group members contributes 8 euros:"
 msgstr ""
 
-#: public_goods/views.py:159
+#: public_goods/views.py:171
 msgid ""
 "If on average, each of the other     group members contributes 9.600 Won:"
-msgstr "평균적으로, 다른 팀원들이 9,600원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:164 public_goods/views.py:166
+#: public_goods/views.py:176 public_goods/views.py:178
 msgid "If on average, each of the other     group members contributes 9 euros:"
 msgstr ""
 
-#: public_goods/views.py:168
+#: public_goods/views.py:180
 msgid ""
 "If on average, each of the other     group members contributes 10.800 Won:"
-msgstr "평균적으로, 다른 팀원들이 10,800원씩 투자했다면:"
+msgstr ""
 
-#: public_goods/views.py:173 public_goods/views.py:175
+#: public_goods/views.py:185 public_goods/views.py:187
 msgid ""
 "If on average, each of the other     group members contributes 10 euros:"
 msgstr ""
 
-#: public_goods/views.py:177
+#: public_goods/views.py:189
 msgid ""
 "If on average, each of the other     group members contributes 12.000 Won:"
-msgstr "평균적으로, 다른 팀원들이 12,000원씩 투자했다면:"
+msgstr ""

@@ -1,9 +1,11 @@
 # Don't change anything in this file.
 from .. import models
-import otree.api
-from otree.api import Currency as c, currency_range
+import otree.views
+import otree.test
+from otree.common import Currency as c, currency_range
 
-class Page(otree.api.Page):
+class Page(otree.views.Page):
+    z_models = models
 
     def z_autocomplete(self):
         self.subsession = models.Subsession()
@@ -12,15 +14,16 @@ class Page(otree.api.Page):
 
 
 
-class WaitPage(otree.api.WaitPage):
+class WaitPage(otree.views.WaitPage):
 
+    z_models = models
 
     def z_autocomplete(self):
         self.subsession = models.Subsession()
         self.group = models.Group()
 
 
-class Bot(otree.api.Bot):
+class Bot(otree.test.Bot):
 
     def z_autocomplete(self):
         self.subsession = models.Subsession()

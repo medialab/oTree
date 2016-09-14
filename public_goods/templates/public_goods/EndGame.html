@@ -1,0 +1,27 @@
+{% extends "global/Base.html" %}
+{% load i18n %}
+{% load staticfiles otree_tags %}
+
+
+{% block content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<input id="timer" type="hidden" name="total_time" value="" />
+
+<h1>{% trans "Thank you very much for entering your choice." %}</h1>
+<p>{% trans "We have recorded your decision. Again, your payoff will depend on the actions of the other players. Now, please proceed to the third task." %}</p>
+<p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+<script type="text/javascript">
+  $(function() {
+    var startTime = '{{start_time}}',
+        endTime = new Date(),
+        sec = moment(endTime).diff(startTime) / 1000;
+
+    $('#timer').val(sec);
+  });
+</script>
+
+
+
+{% endblock %}
