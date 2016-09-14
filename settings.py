@@ -63,6 +63,10 @@ AWS_ACCESS_KEY_ID = environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY')
 
 
+# e.g. en, de, fr, it, ja, zh-hans
+# see: https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code
+LANGUAGE_CODE = environ.get('OTREE_LANGUAGE_CODE', 'fr-fr')
+
 # e.g. EUR, CAD, GBP, CHF, CNY, JPY
 REAL_WORLD_CURRENCY_CODE = ''
 if LANGUAGE_CODE == 'fr-fr' or LANGUAGE_CODE == 'en-us':
@@ -71,11 +75,6 @@ elif LANGUAGE_CODE == 'ko-kr':
     REAL_WORLD_CURRENCY_CODE = 'KRW'
 
 USE_POINTS = False
-
-
-# e.g. en, de, fr, it, ja, zh-hans
-# see: https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code
-LANGUAGE_CODE = environ.get('OTREE_LANGUAGE_CODE', 'fr-fr')
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
