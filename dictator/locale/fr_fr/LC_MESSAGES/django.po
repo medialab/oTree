@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 17:06+0200\n"
-"PO-Revision-Date: 2016-09-14 15:07+0200\n"
+"PO-Revision-Date: 2016-09-14 17:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -61,6 +61,30 @@ msgstr ""
 #: dictator/templates/dictator/Instructions.html:12
 msgid "These are the rules:"
 msgstr "Voici les consignes :"
+
+#: templates/dictator/Instructions.html:14
+msgid "At the beginning, Participant A receives {{amount}}."
+msgstr "Au début, le Participant A reçoit {{amount}}"
+
+#: templates/dictator/Instructions.html:15
+msgid "Participant B does not receive any money — he or she has {{amount}}."
+msgstr "Le Participant B ne reçoit rien - il/elle dispose de {{amount}}."
+
+#: templates/dictator/Instructions.html:16
+msgid ""
+"Participant A must now decide if he or she wants to transfer any of his or "
+"her {{amount}} to Participant B."
+msgstr ""
+"Le Participant A doit maintenant décider si il/elle souhaite transférer 0, "
+"tout ou partie {{amount}} au Participant B."
+
+#: templates/dictator/Instructions.html:17
+msgid ""
+"This transfer is not multiplied by any number and Participant B cannot "
+"transfer any amount back to Participant A."
+msgstr ""
+"Le transfert n’est pas multiplié, et le Participant B ne peut pas transférer "
+"d’argent au Participant A."
 
 #: dictator/templates/dictator/Instructions.html:19
 msgid ""
