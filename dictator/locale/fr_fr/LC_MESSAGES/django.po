@@ -63,20 +63,20 @@ msgid "These are the rules:"
 msgstr "Voici les consignes :"
 
 #: templates/dictator/Instructions.html:14
-msgid "At the beginning, Participant A receives {{amount}}."
-msgstr "Au début, le Participant A reçoit {{amount}}"
+msgid "At the beginning, Participant A receives %(amount)s."
+msgstr "Au début, le Participant A reçoit %(amount)s"
 
 #: templates/dictator/Instructions.html:15
-msgid "Participant B does not receive any money — he or she has {{amount}}."
-msgstr "Le Participant B ne reçoit rien - il/elle dispose de {{amount}}."
+msgid "Participant B does not receive any money — he or she has %(amount)s."
+msgstr "Le Participant B ne reçoit rien - il/elle dispose de %(amount)s."
 
 #: templates/dictator/Instructions.html:16
 msgid ""
 "Participant A must now decide if he or she wants to transfer any of his or "
-"her {{amount}} to Participant B."
+"her %(amount)s to Participant B."
 msgstr ""
 "Le Participant A doit maintenant décider si il/elle souhaite transférer 0, "
-"tout ou partie {{amount}} au Participant B."
+"tout ou partie %(amount)s au Participant B."
 
 #: templates/dictator/Instructions.html:17
 msgid ""

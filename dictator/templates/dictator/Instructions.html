@@ -11,13 +11,13 @@
 <p>{% trans "Remember, the other participant is different from the ones you interacted with in the previous two tasks." %}</p>
 <p>{% trans "These are the rules:" %}</p>
 <ul>
-  <li>{% trans "At the beginning, Participant A receives {{amount}}." %}</li>
-  <li>{% trans "Participant B does not receive any money — he or she has {{amount}}." %}</li>
-  <li>{% trans "Participant A must now decide if he or she wants to transfer any of his or her {{amount}} to Participant B." %}</li>
-  <li>{% trans "This transfer is not multiplied by any number and Participant B cannot transfer any amount back to Participant A." %}</li>
+  <li>{% blocktrans trimmed %}At the beginning, Participant A receives {{amount}}.{% endblocktrans %}</li>
+  <li>{% blocktrans trimmed %}Participant B does not receive any money — he or she has {{amount}}.{% endblocktrans %}</li>
+  <li>{% blocktrans trimmed %}Participant A must now decide if he or she wants to transfer any of his or her {{amount}} to Participant B.{% endblocktrans %}</li>
+  <li>{% blocktrans trimmed %}This transfer is not multiplied by any number and Participant B cannot transfer any amount back to Participant A.{% endblocktrans %}</li>
 </ul>
-<p><strong>{% trans "Your role (Participant A or Participant B) is revealed to you at the beginning of the task." %}</strong></p>
-<p><strong>{% trans "Because this task is simple, there will be no simulator to test out different choices." %}</strong></p>
+<p><strong>{% blocktrans trimmed %}Your role (Participant A or Participant B) is revealed to you at the beginning of the task.{% endblocktrans %}</strong></p>
+<p><strong>{% blocktrans trimmed %}Because this task is simple, there will be no simulator to test out different choices.{% endblocktrans %}</strong></p>
 
 <script>
 $('#timer').val(new Date());
