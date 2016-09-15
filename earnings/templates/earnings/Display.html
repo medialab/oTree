@@ -81,9 +81,13 @@ label {
         endTime = new Date(),
         sec = moment(endTime).diff(startTime) / 1000;
 
+    function extractLang(lang) {
+      return lang.slice(0, 2);
+    }
+
     $('#timer').val(sec);
 
-    $('btn').click(function (e) {
+    $('button').click(function (e) {
       e.preventDefault();
 
       var fragment = '{{label}}'.split('|').filter(function (f) {
