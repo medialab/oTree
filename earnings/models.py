@@ -422,7 +422,9 @@ class Player(BasePlayer):
 
     # Field used when user chooses to donate to UNICEF.
     donation = models.DecimalField(
-        verbose_name='Please enter the amount you wish to donate to UNICEF'
+        verbose_name='Please enter the amount you wish to donate to UNICEF',
+        max_digits=5,
+        decimal_places=2
     )
 
     # Chosen game for earnings calculation.
