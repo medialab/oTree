@@ -696,7 +696,6 @@ regardless of their gender, race, age or economic condition equally.'),
         verbose_name=_(u'How many people live in your household \
 (including yourself)?'),
         choices=(
-            ('0', '0'),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),

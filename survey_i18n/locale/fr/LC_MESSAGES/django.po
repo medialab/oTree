@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 17:06+0200\n"
-"PO-Revision-Date: 2016-09-14 15:31+0200\n"
+"PO-Revision-Date: 2016-09-20 13:08+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -94,8 +94,9 @@ msgid ""
 "How willing are you to punish someone who treats you unfairly, even if there "
 "may be costs for you?"
 msgstr ""
-"Dans quelle mesure êtes-vous prêt(e) à punir quelqu'un qui vous traite de "
-"manière injuste, même si cela peut impliquer des coûts pour vous ?"
+"Dans quelle mesure êtes-vous prêt(e) à prendre une revanche sur quelqu'un "
+"qui vous traite de manière injuste, même si cela peut impliquer des coûts "
+"pour vous ?"
 
 #: survey_i18n/models.py:118 survey_i18n/models.py:139
 #: survey_i18n/models.py:160
@@ -543,7 +544,7 @@ msgstr "Assez calme"
 
 #: survey_i18n/models.py:861
 msgid "Very calm"
-msgstr "Pas très calme"
+msgstr "Très calme"
 
 #: survey_i18n/models.py:867
 msgid ""

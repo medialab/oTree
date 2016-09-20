@@ -421,7 +421,7 @@ class Player(BasePlayer):
     """Player model."""
 
     # Field used when user chooses to donate to UNICEF.
-    donation = models.IntegerField(
+    donation = models.DecimalField(
         verbose_name='Please enter the amount you wish to donate to UNICEF'
     )
 

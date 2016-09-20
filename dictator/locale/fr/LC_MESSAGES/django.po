@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-12 17:06+0200\n"
-"PO-Revision-Date: 2016-09-14 17:08+0200\n"
+"PO-Revision-Date: 2016-09-20 13:06+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -29,8 +29,7 @@ msgid ""
 msgstr ""
 "Vous avez terminé toutes les tâches de cette section. Vos choix ont été "
 "enregistrés. Entamons maintenant la deuxième section de cette étude, durant "
-"laquelle il vous sera demandé de trier un certain nombre de mots pendant que "
-"nous vous chronométrons."
+"laquelle il vous sera demandé de trier un certain nombre de mots."
 
 #: dictator/templates/dictator/EndGame.html:11
 #: dictator/templates/dictator/Offer.html:13
@@ -64,7 +63,7 @@ msgstr "Voici les consignes :"
 
 #: templates/dictator/Instructions.html:14
 msgid "At the beginning, Participant A receives %(amount)s."
-msgstr "Au début, le Participant A reçoit %(amount)s"
+msgstr "Au début, le Participant A reçoit %(amount)s."
 
 #: templates/dictator/Instructions.html:15
 msgid "Participant B does not receive any money — he or she has %(amount)s."
@@ -76,7 +75,7 @@ msgid ""
 "her %(amount)s to Participant B."
 msgstr ""
 "Le Participant A doit maintenant décider si il/elle souhaite transférer 0, "
-"tout ou partie %(amount)s au Participant B."
+"tout ou une partie de ses 10 euros au Participant B."
 
 #: templates/dictator/Instructions.html:17
 msgid ""
@@ -124,7 +123,7 @@ msgstr ""
 #: dictator/templates/dictator/Offer.html:9
 #, python-format
 msgid "You have %(amount)s in your possession."
-msgstr "Vous disposez de %(amount)s euros. "
+msgstr "Vous disposez de %(amount)s. "
 
 #: dictator/templates/dictator/Offer.html:9
 msgid "How much do you want to transfer to Participant B?"
