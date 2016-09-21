@@ -39,7 +39,8 @@ $(function(window, undefined) {
         $uiWrongAnswerCross = $('.wrong-answer'),
         $window = $(window),
         $pauseMessage = $('.pause-message'),
-        mightBeUsingTablet = false;
+        mightBeUsingTablet = false,
+        PAUSE_SCREEN_DELAY = 5000;
 
     var answerStore = {
       results: [],
@@ -72,8 +73,10 @@ $(function(window, undefined) {
         $uiCategoryRight.html(data.right);
         $uiStimuli.html(data.stimuli);
       } else {
+        console.log(data)
         showPauseMessage(
           data.message[lang],
+          data.cta,
           {
             'left': queue[trialIndex+1].left,
             'right': queue[trialIndex+1].right,
@@ -86,15 +89,20 @@ $(function(window, undefined) {
      * Show pause message screen.
      *
      * @param  {string} msg   Message to display.
+     * @param  {string} cta   CTA to display after reading time out.
      * @param  {Object} words The left/right words to display.
      * @return {void}
      */
-    function showPauseMessage(msg, words) {
+    function showPauseMessage(msg, cta, words) {
       $uiCategoryLeft.html(words.left);
       $uiCategoryRight.html(words.right);
       $uiStimuli.html('');
       $pauseMessage.html(msg);
       $pauseMessage.show();
+
+      setTimeout(function () {
+        $pauseMessage.html($pauseMessage.html() + cta)
+      }, PAUSE_SCREEN_DELAY)
     }
 
     /**
@@ -227,7 +235,10 @@ $(function(window, undefined) {
       var toggleOrderFlag = true;
 
       // Push opening pause screen in.
-      resultTrials.push({message: pauseScreens.message[0]});
+      resultTrials.push({
+        message: pauseScreens.message[0],
+        cta: pauseScreens.cta[lang]
+      });
 
       // Randomize orders of set of trials,
       // then arrange the trials based on given order.
@@ -238,7 +249,10 @@ $(function(window, undefined) {
           if (i > 0 && j === 0) {
             var k = toggleOrderFlag ? 1 : 2;
             toggleOrderFlag = !toggleOrderFlag;
-            resultTrials.push({message: pauseScreens.message[k]});
+            resultTrials.push({
+              message: pauseScreens.message[k],
+              cta: pauseScreens.cta[lang]
+            });
           }
 
           resultTrials.push({
@@ -337,14 +351,11 @@ $(function(window, undefined) {
         if (!trial.hasOwnProperty('message')) {
           timeLimitForAnswer = setTimeout(timeLimitHandler, answerTimeLimit * 1000);
           $window.on('keyup', keyUpHandler);
-          $window.off('keyup', passPauseScreen);
-          $window.off('click touchstart', passPauseScreen);
           $('.btn-left').on('click touchstart', leftBtnHandler);
           $('.btn-right').on('click touchstart', rightBtnHandler);
           timer.start();
         } else {
-          $window.on('click touchstart', passPauseScreen);
-          $window.on('keyup', passPauseScreen);
+          setWaitingPauseScreen()
         }
       }
 
@@ -353,17 +364,17 @@ $(function(window, undefined) {
        *
        * @return {Object|void}  Resolve promise.
        */
-      function passPauseScreen() {
+      function setWaitingPauseScreen() {
         dispose();
         setTimeout(function() {
-          function next() {
-            return deferred.resolve();
+          function next(e) {
             $window.off('keyup', next);
             $window.off('click touchstart', next);
+            return deferred.resolve();
           }
           $window.on('keyup', next);
           $window.on('click touchstart', next);
-        }, 5000);
+        }, PAUSE_SCREEN_DELAY);
       }
 
       /**
