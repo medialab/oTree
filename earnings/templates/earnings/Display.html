@@ -96,7 +96,7 @@ label {
         }
       }).join('&');
 
-      var url = '{{redirect}}' + '&' + fragment + '&lang=' + extractLang('{{language_code}}');
+      var url = '{{redirect}}' + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
       window.location.href = url;
     });
   });
