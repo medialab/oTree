@@ -26,9 +26,9 @@
       }
     ],
     "cta": {
-      "en-us": "<br/><h3>Press any button (or touch anywhere) to begin.</h3>",
-      "fr-fr": "<br/><h3>Appuyez sur n'importe quel bouton (ou touche) pour commencer.</h3>",
-      "ko-kr": "<br/><h3> 시작 버튼을 눌러주세요(아무곳이나 터치해 주세요).</h3>"
+      "en-us": "<h3>Press any button (or touch anywhere) to begin.</h3>",
+      "fr-fr": "<h3>Appuyez sur n'importe quel bouton (ou touche) pour commencer.</h3>",
+      "ko-kr": "<h3> 시작 버튼을 눌러주세요(아무곳이나 터치해 주세요).</h3>"
     }
   },
 
