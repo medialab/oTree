@@ -381,8 +381,9 @@ class Group(BaseGroup):
         for s in Session.objects.all():
             if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
                 for p in s.get_participants():
-                    public_goods_player = p.get_players()[1]
-                    add_player_if_eligible(public_goods_player)
+                    if len(p.get_players()) > 1:
+                        public_goods_player = p.get_players()[1]
+                        add_player_if_eligible(public_goods_player)
 
         fallback_players = []
         if len(other_players) >= Constants.min_other_players_for_pg:
