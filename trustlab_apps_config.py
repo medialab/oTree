@@ -1,7 +1,7 @@
 """Config stem for TRUSTLAB's experiments."""
 total_fr = 1500
 total_ko = 1500
-total_gmi = 100
+total_gmi = 20
 
 quota_redirects = {
     'complete': (
@@ -122,7 +122,7 @@ SESSION_CONFIGS = [
         'name': 'trustlab_2016_gmi',
         'display_name': (
             'TRUSTLAB | Sept 2016 | EN | GMI Quota Test Run ' +
-            '(100 participants max)'
+            '(20 participants max)'
         ),
         'num_demo_participants': total_gmi,
         'app_sequence': [
