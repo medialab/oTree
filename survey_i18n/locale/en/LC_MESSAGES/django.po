@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-23 16:24+0200\n"
+"POT-Creation-Date: 2016-09-23 16:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 #: models.py:385 models.py:405 models.py:418 models.py:450 models.py:470
 #: models.py:490 models.py:510 models.py:530 models.py:550 models.py:570
 #: models.py:591 models.py:611 models.py:632 models.py:652 models.py:673
-#: models.py:789 models.py:816 models.py:835 models.py:853 models.py:866
+#: models.py:789 models.py:814 models.py:833 models.py:851 models.py:864
 #: templates/survey_i18n/Survey10.html:43
 #: templates/survey_i18n/Survey10.html:80
 #: templates/survey_i18n/Survey10B.html:26
@@ -201,11 +201,11 @@ msgid ""
 "contents, or not?"
 msgstr ""
 
-#: models.py:416 models.py:428 models.py:814 models.py:900
+#: models.py:416 models.py:428 models.py:812 models.py:898
 msgid "Yes"
 msgstr ""
 
-#: models.py:417 models.py:429 models.py:815 models.py:901
+#: models.py:417 models.py:429 models.py:813 models.py:899
 msgid "No"
 msgstr ""
 
@@ -289,7 +289,7 @@ msgstr ""
 msgid "Female"
 msgstr ""
 
-#: models.py:686 models.py:913 models.py:924
+#: models.py:686 models.py:911 models.py:922
 msgid "Other"
 msgstr ""
 
@@ -395,138 +395,138 @@ msgid ""
 "taxes have been deducted."
 msgstr ""
 
-#: models.py:811
+#: models.py:810
 msgid "Did you or your household save any money in the previous year?"
 msgstr ""
 
-#: models.py:822 templates/survey_i18n/Survey10G.bk.html:23
+#: models.py:820 templates/survey_i18n/Survey10G.bk.html:23
 msgid "How important would you say religion is in your own life?"
 msgstr ""
 
-#: models.py:824
+#: models.py:822
 msgid "0 - Not important at all"
 msgstr ""
 
-#: models.py:834
+#: models.py:832
 msgid "10 - Very important"
 msgstr ""
 
-#: models.py:846
+#: models.py:844
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
 msgstr ""
 
-#: models.py:849 models.py:862
+#: models.py:847 models.py:860
 msgid "No trust at all"
 msgstr ""
 
-#: models.py:850 models.py:863
+#: models.py:848 models.py:861
 msgid "Little trust"
 msgstr ""
 
-#: models.py:851 models.py:864
+#: models.py:849 models.py:862
 msgid "Quite a bit of trust"
 msgstr ""
 
-#: models.py:852 models.py:865
+#: models.py:850 models.py:863
 msgid "A lot of trust"
 msgstr ""
 
-#: models.py:859
+#: models.py:857
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
 msgstr ""
 
-#: models.py:872
+#: models.py:870
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
 msgstr ""
 
-#: models.py:875
+#: models.py:873
 msgid "With very little care"
 msgstr ""
 
-#: models.py:876
+#: models.py:874
 msgid "With little care"
 msgstr ""
 
-#: models.py:877
+#: models.py:875
 msgid "With care"
 msgstr ""
 
-#: models.py:878
+#: models.py:876
 msgid "With a lot of care"
 msgstr ""
 
-#: models.py:879
+#: models.py:877
 msgid "With extreme care"
 msgstr ""
 
-#: models.py:885
+#: models.py:883
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr ""
 
-#: models.py:888
+#: models.py:886
 msgid "Not calm at all"
 msgstr ""
 
-#: models.py:889
+#: models.py:887
 msgid "Not very calm"
 msgstr ""
 
-#: models.py:890
+#: models.py:888
 msgid "Fairly calm"
 msgstr ""
 
-#: models.py:891
+#: models.py:889
 msgid "Very calm"
 msgstr ""
 
-#: models.py:897
+#: models.py:895
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
 msgstr ""
 
-#: models.py:907
+#: models.py:905
 msgid "Which device did you take this study on?"
 msgstr ""
 
-#: models.py:909
+#: models.py:907
 msgid "Desktop"
 msgstr ""
 
-#: models.py:910
+#: models.py:908
 msgid "Laptop (non-touchscreen)"
 msgstr ""
 
-#: models.py:911
+#: models.py:909
 msgid "Laptop (touchscreen)"
 msgstr ""
 
-#: models.py:912
+#: models.py:910
 msgid "Tablet"
 msgstr ""
 
-#: models.py:919
+#: models.py:917
 msgid "Which browser did you take this survey on?"
 msgstr ""
 
-#: models.py:921
+#: models.py:919
 msgid "Google Chrome"
 msgstr ""
 
-#: models.py:922
+#: models.py:920
 msgid "Firefox"
 msgstr ""
 
-#: models.py:923
+#: models.py:921
 msgid "Internet Explorer"
 msgstr ""
 
-#: models.py:930
+#: models.py:928
 msgid ""
 "If you have any comments about your experience taking this survey, with "
 "regard to the functionality of the platform, or the content of the tasks and "

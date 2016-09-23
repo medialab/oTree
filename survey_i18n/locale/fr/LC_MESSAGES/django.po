@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-23 16:24+0200\n"
+"POT-Creation-Date: 2016-09-23 16:32+0200\n"
 "PO-Revision-Date: 2016-09-23 15:11+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -37,7 +37,7 @@ msgstr "10 - Complètement satisfait"
 #: models.py:385 models.py:405 models.py:418 models.py:450 models.py:470
 #: models.py:490 models.py:510 models.py:530 models.py:550 models.py:570
 #: models.py:591 models.py:611 models.py:632 models.py:652 models.py:673
-#: models.py:789 models.py:816 models.py:835 models.py:853 models.py:866
+#: models.py:789 models.py:814 models.py:833 models.py:851 models.py:864
 #: templates/survey_i18n/Survey10.html:43
 #: templates/survey_i18n/Survey10.html:80
 #: templates/survey_i18n/Survey10B.html:26
@@ -230,11 +230,11 @@ msgstr ""
 "objets d'une grande valeur à vos yeux, et qu'il était retrouvé par un "
 "inconnu, pensez-vous qu'il vous serait retourné avec son contenu, ou pas ?"
 
-#: models.py:416 models.py:428 models.py:814 models.py:900
+#: models.py:416 models.py:428 models.py:812 models.py:898
 msgid "Yes"
 msgstr "Oui"
 
-#: models.py:417 models.py:429 models.py:815 models.py:901
+#: models.py:417 models.py:429 models.py:813 models.py:899
 msgid "No"
 msgstr "Non"
 
@@ -325,7 +325,7 @@ msgstr "Masculin"
 msgid "Female"
 msgstr "Féminin"
 
-#: models.py:686 models.py:913 models.py:924
+#: models.py:686 models.py:911 models.py:922
 msgid "Other"
 msgstr "Autre"
 
@@ -438,28 +438,28 @@ msgstr ""
 "mieux à votre revenu personnel? Rappelez-vous que nous vous demandons votre "
 "revenu individuel, après déduction des impôts."
 
-#: models.py:811
+#: models.py:810
 msgid "Did you or your household save any money in the previous year?"
 msgstr ""
 "Vous ou votre foyer a-t'il épargné de l'argent dans l'année précédente ?"
 
-#: models.py:822 templates/survey_i18n/Survey10G.bk.html:23
+#: models.py:820 templates/survey_i18n/Survey10G.bk.html:23
 msgid "How important would you say religion is in your own life?"
 msgstr "Quelle est l'importance de la religion dans votre vie ?"
 
-#: models.py:824
+#: models.py:822
 #, fuzzy
 #| msgid " 0 - Not important at all"
 msgid "0 - Not important at all"
 msgstr "0 - Pas du tout important"
 
-#: models.py:834
+#: models.py:832
 #, fuzzy
 #| msgid " 10 - Very important"
 msgid "10 - Very important"
 msgstr "10 - Très important"
 
-#: models.py:846
+#: models.py:844
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
@@ -467,23 +467,23 @@ msgstr ""
 "Les autres participants des premières tâches étaient de vraies personnes qui "
 "ont participé à la même étude."
 
-#: models.py:849 models.py:862
+#: models.py:847 models.py:860
 msgid "No trust at all"
 msgstr "Pas du tout confiance"
 
-#: models.py:850 models.py:863
+#: models.py:848 models.py:861
 msgid "Little trust"
 msgstr "Un peu confiance"
 
-#: models.py:851 models.py:864
+#: models.py:849 models.py:862
 msgid "Quite a bit of trust"
 msgstr "Assez confiance"
 
-#: models.py:852 models.py:865
+#: models.py:850 models.py:863
 msgid "A lot of trust"
 msgstr "Beaucoup confiance"
 
-#: models.py:859
+#: models.py:857
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
@@ -491,7 +491,7 @@ msgstr ""
 "Mes gains finaux seront calculés selon les règles précisées dans la "
 "description de l'étude et me seront payés."
 
-#: models.py:872
+#: models.py:870
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
@@ -499,93 +499,93 @@ msgstr ""
 "A la fin de cette étude, comment qualifierez-vous votre lecture des "
 "descriptifs associés à chacune des sections ?"
 
-#: models.py:875
+#: models.py:873
 msgid "With very little care"
 msgstr "Avec très peu d'attention"
 
-#: models.py:876
+#: models.py:874
 msgid "With little care"
 msgstr "Avec peu d'attention"
 
-#: models.py:877
+#: models.py:875
 msgid "With care"
 msgstr "Avec attention"
 
-#: models.py:878
+#: models.py:876
 msgid "With a lot of care"
 msgstr "Avec beaucoup d'attention"
 
-#: models.py:879
+#: models.py:877
 msgid "With extreme care"
 msgstr "Avec une extrême attention"
 
-#: models.py:885
+#: models.py:883
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr ""
 "Etiez-vous dans un environnement calme quand vous avez répondu aux "
 "questions ?"
 
-#: models.py:888
+#: models.py:886
 msgid "Not calm at all"
 msgstr "Pas du tout calme"
 
-#: models.py:889
+#: models.py:887
 msgid "Not very calm"
 msgstr "Pas très calme"
 
-#: models.py:890
+#: models.py:888
 msgid "Fairly calm"
 msgstr "Assez calme"
 
-#: models.py:891
+#: models.py:889
 msgid "Very calm"
 msgstr "Très calme"
 
-#: models.py:897
+#: models.py:895
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
 msgstr ""
 "Avez-vous déjà participé à une autre étude qui semblait similaire à celle-"
 "ci ?"
 
-#: models.py:907
+#: models.py:905
 msgid "Which device did you take this study on?"
 msgstr ""
 "Quel matériel informatique avez-vous utilisé pour participer à cette étude ?"
 
-#: models.py:909
+#: models.py:907
 msgid "Desktop"
 msgstr "Ordinateur fixe"
 
-#: models.py:910
+#: models.py:908
 msgid "Laptop (non-touchscreen)"
 msgstr "Ordinateur portable (non tactile)"
 
-#: models.py:911
+#: models.py:909
 msgid "Laptop (touchscreen)"
 msgstr "Ordinateur portable (tactile)"
 
-#: models.py:912
+#: models.py:910
 msgid "Tablet"
 msgstr "Tablette"
 
-#: models.py:919
+#: models.py:917
 msgid "Which browser did you take this survey on?"
 msgstr "Quel navigateur Internet avez-vous utilisé pour répondre à l'étude?"
 
-#: models.py:921
+#: models.py:919
 msgid "Google Chrome"
 msgstr "Google Chrome"
 
-#: models.py:922
+#: models.py:920
 msgid "Firefox"
 msgstr "Firefox"
 
-#: models.py:923
+#: models.py:921
 msgid "Internet Explorer"
 msgstr "Internet Explorer"
 
-#: models.py:930
+#: models.py:928
 msgid ""
 "If you have any comments about your experience taking this survey, with "
 "regard to the functionality of the platform, or the content of the tasks and "
