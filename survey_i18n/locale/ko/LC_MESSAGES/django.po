@@ -7,1189 +7,1197 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 16:42+0200\n"
+"POT-Creation-Date: 2016-09-23 16:24+0200\n"
 "PO-Revision-Date: 2016-09-11 23:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.9\n"
 
-#: survey_i18n/models.py:52
+#: models.py:52
 msgid "Overall, how satisfied are you with life as a whole these days?"
 msgstr "최근 당신은 당신의 삶의 대하여 전반적으로 얼마나 만족하십니까?"
 
-#: survey_i18n/models.py:55
+#: models.py:55
 msgid "0 - Not at all satisfied"
 msgstr "0 - 전혀 만족스럽지 않다 "
 
-#: survey_i18n/models.py:65
+#: models.py:65
 msgid "10 - Completely satisfied"
 msgstr "10 - 매우 만족스럽다"
 
-#: survey_i18n/models.py:66 survey_i18n/models.py:87 survey_i18n/models.py:108
-#: survey_i18n/models.py:129 survey_i18n/models.py:150 survey_i18n/models.py:171
-#: survey_i18n/models.py:198 survey_i18n/models.py:219 survey_i18n/models.py:242
-#: survey_i18n/models.py:263 survey_i18n/models.py:285 survey_i18n/models.py:305
-#: survey_i18n/models.py:325 survey_i18n/models.py:345 survey_i18n/models.py:365
-#: survey_i18n/models.py:385 survey_i18n/models.py:405 survey_i18n/models.py:418
-#: survey_i18n/models.py:450 survey_i18n/models.py:470 survey_i18n/models.py:490
-#: survey_i18n/models.py:510 survey_i18n/models.py:530 survey_i18n/models.py:550
-#: survey_i18n/models.py:570 survey_i18n/models.py:591 survey_i18n/models.py:611
-#: survey_i18n/models.py:632 survey_i18n/models.py:652 survey_i18n/models.py:673
-#: survey_i18n/models.py:790 survey_i18n/models.py:823 survey_i18n/models.py:836
-#: survey_i18n/templates/survey_i18n/Survey10.html:43
-#: survey_i18n/templates/survey_i18n/Survey10.html:80
-#: survey_i18n/templates/survey_i18n/Survey10B.html:26
-#: survey_i18n/templates/survey_i18n/Survey10B.html:35
-#: survey_i18n/templates/survey_i18n/Survey10D.html:26 survey_i18n/views.py:318
-#: survey_i18n/views.py:348
+#: models.py:66 models.py:87 models.py:108 models.py:129 models.py:150
+#: models.py:171 models.py:198 models.py:219 models.py:242 models.py:263
+#: models.py:285 models.py:305 models.py:325 models.py:345 models.py:365
+#: models.py:385 models.py:405 models.py:418 models.py:450 models.py:470
+#: models.py:490 models.py:510 models.py:530 models.py:550 models.py:570
+#: models.py:591 models.py:611 models.py:632 models.py:652 models.py:673
+#: models.py:789 models.py:816 models.py:835 models.py:853 models.py:866
+#: templates/survey_i18n/Survey10.html:43
+#: templates/survey_i18n/Survey10.html:80
+#: templates/survey_i18n/Survey10B.html:26
+#: templates/survey_i18n/Survey10B.html:35
+#: templates/survey_i18n/Survey10D.html:26 views.py:318 views.py:348
 msgid "Don't know"
 msgstr "모르겠다 "
 
-#: survey_i18n/models.py:73
+#: models.py:73
 msgid ""
-"Generally speaking, would you say that most people can be trusted, or that you "
-"can't be too careful in dealing with people?"
+"Generally speaking, would you say that most people can be trusted, or that "
+"you can't be too careful in dealing with people?"
 msgstr ""
-"일반적으로, 당신은 대부분의 다른 사람들을 신뢰할 만하다고 생각합니까? 혹은 항상 "
-"경계해야 한다고 생각합니까?"
+"일반적으로, 당신은 대부분의 다른 사람들을 신뢰할 만하다고 생각합니까? 혹은 항"
+"상 경계해야 한다고 생각합니까?"
 
-#: survey_i18n/models.py:76
+#: models.py:76
 msgid "0 -You can't be too careful"
 msgstr "0 - 항상 경계한다"
 
-#: survey_i18n/models.py:86
+#: models.py:86
 msgid "10 - Most people can be trusted"
 msgstr "10 - 대부분의 사람들을 신뢰한다"
 
-#: survey_i18n/models.py:94
+#: models.py:94
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
 "take risks or do you try to avoid taking risks?"
 msgstr ""
-"당신은 일반적으로 위험을 기꺼이 감수하는 편입니까? 혹은 위험을 피하는 편입니까?"
+"당신은 일반적으로 위험을 기꺼이 감수하는 편입니까? 혹은 위험을 피하는 편입니"
+"까?"
 
-#: survey_i18n/models.py:97
+#: models.py:97
 msgid "0 - Completely unwilling to take risks"
 msgstr "0 - 전혀 위험을 감수하고 싶지 않다"
 
-#: survey_i18n/models.py:107
+#: models.py:107
 msgid "10 - Very willing to take risks"
 msgstr "10 - 기꺼이 위험을 감수할 것이다"
 
-#: survey_i18n/models.py:115
+#: models.py:115
 msgid ""
-"How willing are you to punish someone who treats you unfairly, even if there may "
-"be costs for you?"
+"How willing are you to punish someone who treats you unfairly, even if there "
+"may be costs for you?"
 msgstr ""
-"당신은 대가를 지불하고서라도 당신을 불공평하게 대하는 사람을, 얼마나 처벌할 의향"
-"이 있으십니까?"
+"당신은 대가를 지불하고서라도 당신을 불공평하게 대하는 사람을, 얼마나 처벌할 "
+"의향이 있으십니까?"
 
-#: survey_i18n/models.py:118 survey_i18n/models.py:139 survey_i18n/models.py:160
+#: models.py:118 models.py:139 models.py:160
 msgid "0 - Completely unwilling to do so"
 msgstr "0 - 그럴 의향이 전혀 없다"
 
-#: survey_i18n/models.py:128 survey_i18n/models.py:149 survey_i18n/models.py:170
+#: models.py:128 models.py:149 models.py:170
 msgid "10 - Very willing to do so"
 msgstr "10 - 매우 그럴 의향이 있다"
 
-#: survey_i18n/models.py:136
+#: models.py:136
 msgid ""
-"How willing are you to punish someone who treats others unfairly, even if there "
-"may be costs for you?"
+"How willing are you to punish someone who treats others unfairly, even if "
+"there may be costs for you?"
 msgstr ""
-"당신은 대가를 지불하고서라도 다른 사람들을 불공평하게 대하는 사람을, 얼마나 처벌"
-"할 의향이 있으십니까?"
+"당신은 대가를 지불하고서라도 다른 사람들을 불공평하게 대하는 사람을, 얼마나 "
+"처벌할 의향이 있으십니까?"
 
-#: survey_i18n/models.py:157
+#: models.py:157
 msgid ""
-"How willing are you to give to good causes without expecting anything in return? "
+"How willing are you to give to good causes without expecting anything in "
+"return? "
 msgstr ""
-"당신은 보상으로 그 어떤 것도 바라지 않고 선의를 제공할 의향이 얼마나 있으십니까?"
+"당신은 보상으로 그 어떤 것도 바라지 않고 선의를 제공할 의향이 얼마나 있으십니"
+"까?"
 
-#: survey_i18n/models.py:184
+#: models.py:184
 msgid "When someone does me a favour I am willing to return it."
 msgstr "누군가가 나에게 호의를 베풀면, 나는 그에 보답할 의향이 있다."
 
-#: survey_i18n/models.py:187 survey_i18n/models.py:208 survey_i18n/models.py:439
-#: survey_i18n/models.py:779
+#: models.py:187 models.py:208 models.py:439 models.py:778
 msgid "0 - Does not describe me at all"
 msgstr "0 - 나는 전혀 그런 사람이 아니다."
 
-#: survey_i18n/models.py:197 survey_i18n/models.py:218 survey_i18n/models.py:449
-#: survey_i18n/models.py:789
+#: models.py:197 models.py:218 models.py:449 models.py:788
 msgid "10 - Describes me perfectly"
 msgstr "10 - 나는 완벽하게 그런 사람이다."
 
-#: survey_i18n/models.py:205
+#: models.py:205
 msgid ""
-"If I am treated very unjustly, I will take revenge     at the first occasion, "
-"even if there is a cost to do so."
+"If I am treated very unjustly, I will take revenge     at the first "
+"occasion, even if there is a cost to do so."
 msgstr ""
-"만약 내가 부당하게 대우받는다면, 나는 대가를 지불하고서라도 곧바로 보복할 것이다."
+"만약 내가 부당하게 대우받는다면, 나는 대가를 지불하고서라도 곧바로 보복할 것"
+"이다."
 
-#: survey_i18n/models.py:228
+#: models.py:228
 msgid ""
 "Would you say that most of the time people are only     looking out for "
 "themselves or that they mostly try to help each other?"
 msgstr ""
-"당신은 사람들이 오직 자신의 이익만 챙기는 편이라 생각하십니까? 혹은 대부분 서로 "
-"도우려 노력하는 편이라 생각하십니까?"
+"당신은 사람들이 오직 자신의 이익만 챙기는 편이라 생각하십니까? 혹은 대부분 서"
+"로 도우려 노력하는 편이라 생각하십니까?"
 
-#: survey_i18n/models.py:231
+#: models.py:231
 msgid "0 - People are only looking out for themselves "
 msgstr "0 - 사람들은 오직 자신의 이만을 챙긴다"
 
-#: survey_i18n/models.py:241
+#: models.py:241
 msgid "10 - People mostly try to help each other"
 msgstr "10 -사람들은 대부분 서로를 도우려 노력한다  "
 
-#: survey_i18n/models.py:249
+#: models.py:249
 msgid ""
-"Do you think most people would try to take advantage     of you if they got a "
-"chance, or would they try to be fair?"
+"Do you think most people would try to take advantage     of you if they got "
+"a chance, or would they try to be fair?"
 msgstr ""
-"당신은 대부분의 사람들이 기회가 있다면 당신을 이용하려 할 것이라 생각하십니까? 혹"
-"은 공정하려 노력할 것이라 생각하십니까?"
+"당신은 대부분의 사람들이 기회가 있다면 당신을 이용하려 할 것이라 생각하십니"
+"까? 혹은 공정하려 노력할 것이라 생각하십니까?"
 
-#: survey_i18n/models.py:252
+#: models.py:252
 msgid "0 - Most people would try to take advantage of me"
 msgstr "0 - 대부분 나를 이용하려 한다 "
 
-#: survey_i18n/models.py:262
+#: models.py:262
 msgid "10 - Most people would try to be fair"
 msgstr "10 - 대부분 공정하려 노력한다 "
 
-#: survey_i18n/models.py:270
+#: models.py:270
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between"
 msgstr ""
-"다음의 행동이 항상 정당화 될 수 있는지, 절대 정당화될 수 없는지, 혹은 양쪽 모두 "
-"어느 정도 가능한다고 생각하시는지에 대하여 응답해주세요:"
+"다음의 행동이 항상 정당화 될 수 있는지, 절대 정당화될 수 없는지, 혹은 양쪽 모"
+"두 어느 정도 가능한다고 생각하시는지에 대하여 응답해주세요:"
 
-#: survey_i18n/models.py:274
+#: models.py:274
 msgid "0 - This action is never wrong"
 msgstr "0 - 이 행동은 절대 잘못되지 않았다"
 
-#: survey_i18n/models.py:284
+#: models.py:284
 msgid "10 - This action is always wrong"
 msgstr "10 - 이 행동은 언제나 잘못되었다"
 
-#: survey_i18n/models.py:292
+#: models.py:292
 msgid "Your family:"
 msgstr "당신의 가족:"
 
-#: survey_i18n/models.py:294 survey_i18n/models.py:314 survey_i18n/models.py:334
-#: survey_i18n/models.py:354 survey_i18n/models.py:374 survey_i18n/models.py:394
-#: survey_i18n/models.py:459 survey_i18n/models.py:479 survey_i18n/models.py:499
-#: survey_i18n/models.py:519 survey_i18n/models.py:539 survey_i18n/models.py:559
+#: models.py:294 models.py:314 models.py:334 models.py:354 models.py:374
+#: models.py:394 models.py:459 models.py:479 models.py:499 models.py:519
+#: models.py:539 models.py:559
 msgid "0 - I don't trust them at all"
 msgstr "0 - 전혀 신뢰할 수 없다 "
 
-#: survey_i18n/models.py:304 survey_i18n/models.py:324 survey_i18n/models.py:344
-#: survey_i18n/models.py:364 survey_i18n/models.py:384 survey_i18n/models.py:404
-#: survey_i18n/models.py:469 survey_i18n/models.py:489 survey_i18n/models.py:509
-#: survey_i18n/models.py:529 survey_i18n/models.py:549 survey_i18n/models.py:569
+#: models.py:304 models.py:324 models.py:344 models.py:364 models.py:384
+#: models.py:404 models.py:469 models.py:489 models.py:509 models.py:529
+#: models.py:549 models.py:569
 msgid "10 - I fully trust them"
 msgstr "10 - 매우 신뢰한다 "
 
-#: survey_i18n/models.py:312
+#: models.py:312
 msgid "People in your neighbourhood:"
 msgstr "이웃:"
 
-#: survey_i18n/models.py:332
+#: models.py:332
 msgid "People you know personally:"
 msgstr "지인:"
 
-#: survey_i18n/models.py:352
+#: models.py:352
 msgid "People you meet for the first time:"
 msgstr "처음 만난 사람:"
 
-#: survey_i18n/models.py:372
+#: models.py:372
 msgid "People of another religion:"
 msgstr "다른 종교를 가진 사람"
 
-#: survey_i18n/models.py:392
+#: models.py:392
 msgid "People of another nationality:"
 msgstr "다른 국적 사람"
 
-#: survey_i18n/models.py:412
+#: models.py:412
 msgid ""
-"If you lost a wallet or a purse that contained items of great value to you, and "
-"it was found by a stranger, do you think it would be returned with its contents, "
-"or not?"
+"If you lost a wallet or a purse that contained items of great value to you, "
+"and it was found by a stranger, do you think it would be returned with its "
+"contents, or not?"
 msgstr ""
-"당신이 귀중품이 담긴 지갑을 잃어버렸을 때, 누군가가 그것을 발견한다고 가정합시"
-"다. 당신은 귀중품이 그대로 담긴 지갑을 찾을 수 있을 것이라 생각하십니까?"
+"당신이 귀중품이 담긴 지갑을 잃어버렸을 때, 누군가가 그것을 발견한다고 가정합"
+"시다. 당신은 귀중품이 그대로 담긴 지갑을 찾을 수 있을 것이라 생각하십니까?"
 
-#: survey_i18n/models.py:416 survey_i18n/models.py:428 survey_i18n/models.py:870
+#: models.py:416 models.py:428 models.py:814 models.py:900
 msgid "Yes"
 msgstr "예 "
 
-#: survey_i18n/models.py:417 survey_i18n/models.py:429 survey_i18n/models.py:871
+#: models.py:417 models.py:429 models.py:815 models.py:901
 msgid "No"
 msgstr "아니오 "
 
-#: survey_i18n/models.py:425
+#: models.py:425
 msgid "Did you vote in the last national election?"
 msgstr "당신은 지난 총선에서 투표를 하셨습니까?"
 
-#: survey_i18n/models.py:430
+#: models.py:430
 msgid "I could not vote"
 msgstr "투표하지 않았다 "
 
-#: survey_i18n/models.py:437
+#: models.py:437
 msgid "I am good at math."
 msgstr "나는 수학을 잘 한다."
 
-#: survey_i18n/models.py:457
+#: models.py:457
 msgid "Your government:"
 msgstr "당신의 정부:"
 
-#: survey_i18n/models.py:477
+#: models.py:477
 msgid "The parliament:"
 msgstr "국회:"
 
-#: survey_i18n/models.py:497
+#: models.py:497
 msgid "The judicial system:"
 msgstr "사법제도:"
 
-#: survey_i18n/models.py:517
+#: models.py:517
 msgid "The media:"
 msgstr "언론매체:"
 
-#: survey_i18n/models.py:537
+#: models.py:537
 msgid "Financial Institutions (e.g. banks):"
 msgstr "금융 기관 (예: 은행):"
 
-#: survey_i18n/models.py:557
+#: models.py:557
 msgid "The police:"
 msgstr "경찰:"
 
-#: survey_i18n/models.py:577
+#: models.py:577
 msgid "Public institutions deliver public services in the best possible way."
 msgstr "공공 기관들은 최선을 다해 가능한 방법으로 공공 서비스를 제공한다."
 
-#: survey_i18n/models.py:580 survey_i18n/models.py:600 survey_i18n/models.py:621
-#: survey_i18n/models.py:641 survey_i18n/models.py:662
+#: models.py:580 models.py:600 models.py:621 models.py:641 models.py:662
 msgid "0 - I don't agree at all"
 msgstr "0 - 전혀 동의하지 않는다 "
 
-#: survey_i18n/models.py:590 survey_i18n/models.py:610 survey_i18n/models.py:631
-#: survey_i18n/models.py:651 survey_i18n/models.py:672
+#: models.py:590 models.py:610 models.py:631 models.py:651 models.py:672
 msgid "10 - I fully agree"
 msgstr "10 - 전적으로 동의한다 "
 
-#: survey_i18n/models.py:598
+#: models.py:598
 msgid "Public institutions pursue long term objectives."
 msgstr "공공 기관들은 장기적인 업무 목표를 추구한다.  "
 
-#: survey_i18n/models.py:618
+#: models.py:618
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption."
 msgstr "공공 기관 근무자들은 부패를 막는 윤리적 기준에 따라서 행동한다. "
 
-#: survey_i18n/models.py:639
+#: models.py:639
 msgid "Public institutions are transparent."
 msgstr "공공 기관들은 투명하게 운영된다."
 
-#: survey_i18n/models.py:659
+#: models.py:659
 msgid ""
-"Public institutions treat all citizens fairly regardless of their gender, race, "
-"age or economic condition equally."
+"Public institutions treat all citizens fairly regardless of their gender, "
+"race, age or economic condition equally."
 msgstr ""
-"공공 기관들은 시민들의 성별, 인종, 나이 또는 경제적 지위와 관계 없이 모든 시민들"
-"을 공정하게 대우한다."
+"공공 기관들은 시민들의 성별, 인종, 나이 또는 경제적 지위와 관계 없이 모든 시"
+"민들을 공정하게 대우한다."
 
-#: survey_i18n/models.py:680
+#: models.py:680
 msgid "What is your date of birth?"
 msgstr "당신의 생년월일은 언제입니까?"
 
-#: survey_i18n/models.py:686
+#: models.py:686
 msgid "Male"
 msgstr "남성"
 
-#: survey_i18n/models.py:686
+#: models.py:686
 msgid "Female"
 msgstr "여성 "
 
-#: survey_i18n/models.py:686 survey_i18n/models.py:883 survey_i18n/models.py:894
+#: models.py:686 models.py:913 models.py:924
 msgid "Other"
 msgstr "그 외 "
 
-#: survey_i18n/models.py:687
+#: models.py:687
 msgid "What is your gender?"
 msgstr "당신의 성별은 무엇입니까?"
 
-#: survey_i18n/models.py:696
+#: models.py:696
 msgid "How many people live in your household (including yourself)?"
 msgstr "당신을 포함하여 당신과 함께 살고 있는 가족 구성원은 총 몇 명입니까?"
 
-#: survey_i18n/models.py:720
+#: models.py:719
 msgid "In which country were you born?"
 msgstr "출생 국가는 어디입니까? "
 
-#: survey_i18n/models.py:724
+#: models.py:723
 msgid "I was born here"
 msgstr "나는 이곳에서 태어났다 "
 
-#: survey_i18n/models.py:731
+#: models.py:730
 msgid "Do you live in a:"
 msgstr "당신이 사는 곳은:"
 
-#: survey_i18n/models.py:733
+#: models.py:732
 msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
 msgstr "광역 대도시권 (거주자 1백 5십만명 이상)"
 
-#: survey_i18n/models.py:735
+#: models.py:734
 msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
 msgstr "중간 크기의 대도시권 (거주자 5십만명 이상 - 1백 5십만명 미만)"
 
-#: survey_i18n/models.py:737
+#: models.py:736
 msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
 msgstr "작은 대도시권 (거주자 2십만명 이상 - 5십만명 미만)"
 
-#: survey_i18n/models.py:739
+#: models.py:738
 msgid "Town (50.000 to 200.000 inhabitants)"
 msgstr "소도시 (거주자 5만명 이상 - 2십만명 미만)"
 
-msgid "Did you or your household save any money in the previous year?"
-msgstr ""
-
-#: survey_i18n/models.py:740
+#: models.py:739
 msgid "Village (Less than 50.000 inhabitants)"
 msgstr "마을 (거주자 5만명 미만)"
 
-#: survey_i18n/models.py:741
+#: models.py:740
 msgid "Rural area"
 msgstr "시골 지역"
 
-#: survey_i18n/models.py:750
+#: models.py:749
 msgid "Which of these best describes your situation?"
 msgstr "현재 귀하의 상황을 가장 잘 설명하는 보기는 무엇입니까?"
 
-#: survey_i18n/models.py:752
+#: models.py:751
 msgid "At work as an employee"
 msgstr "직장인(회사원)이다"
 
-#: survey_i18n/models.py:753
+#: models.py:752
 msgid "Employer/self-employed"
 msgstr "고용주/개인 사업자이다"
 
-#: survey_i18n/models.py:754
+#: models.py:753
 msgid "Unemployed"
 msgstr "실직 상태이다"
 
-#: survey_i18n/models.py:756
-msgid "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
+#: models.py:755
+msgid ""
+"Outside the labour force (e.g. homemaker, student, retired, unable to work)"
 msgstr "노동 인구가 아니다. (예: 주부, 학생, 은퇴자, 일할 수 없는 상태)"
 
-#: survey_i18n/models.py:763
+#: models.py:762
 msgid "Do you work in the...?"
 msgstr "귀하의 근무지는? "
 
-#: survey_i18n/models.py:765
+#: models.py:764
 msgid "Central, regional or local government administration"
 msgstr "중앙, 지역 또는 지방 행정 부문 "
 
-#: survey_i18n/models.py:767
+#: models.py:766
 msgid "Public sector, other"
 msgstr "공공 부문 "
 
-#: survey_i18n/models.py:768
+#: models.py:767
 msgid "Private (for profit) sector"
 msgstr "영리 목적의 사기업 또는 사적 부문"
 
-#: survey_i18n/models.py:769
+#: models.py:768
 msgid "Not for profit sector"
 msgstr "비영리 부문"
 
-#: survey_i18n/models.py:770
+#: models.py:769
 msgid "Not applicable"
 msgstr "해당 없음"
 
-#: survey_i18n/models.py:776
+#: models.py:775
 msgid ""
-"As long as I am not convinced otherwise, I assume that people have only the best "
-"intentions."
+"As long as I am not convinced otherwise, I assume that people have only the "
+"best intentions."
 msgstr ""
-"내가 달리 설득되지 않는 한, 나는 일단 사람들이 항상 선한 의도만으로 행동한다고 생"
-"각한다."
+"내가 달리 설득되지 않는 한, 나는 일단 사람들이 항상 선한 의도만으로 행동한다"
+"고 생각한다."
 
-#: survey_i18n/models.py:801
+#: models.py:800
 msgid ""
-"Just to confirm, which of these income bands corresponds best to your personal "
-"income? Remember, we are asking for your individual income, after taxes have "
-"been deducted."
+"Just to confirm, which of these income bands corresponds best to your "
+"personal income? Remember, we are asking for your individual income, after "
+"taxes have been deducted."
 msgstr ""
-"다시 한 번 확인차, 당신의 개인 수입은 어느 소득 범위에 해당하는지 알려주십시오. "
-"반드시 세금을 제한 세후 소득으로 답변해 주시기 바랍니다."
+"다시 한 번 확인차, 당신의 개인 수입은 어느 소득 범위에 해당하는지 알려주십시"
+"오. 반드시 세금을 제한 세후 소득으로 답변해 주시기 바랍니다."
 
-#: survey_i18n/models.py:816
+#: models.py:811
+msgid "Did you or your household save any money in the previous year?"
+msgstr ""
+
+#: models.py:822 templates/survey_i18n/Survey10G.bk.html:23
+msgid "How important would you say religion is in your own life?"
+msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
+
+#: models.py:824
+#, fuzzy
+#| msgid " 0 - Not important at all"
+msgid "0 - Not important at all"
+msgstr "0 - 전혀 중요하지 않다"
+
+#: models.py:834
+#, fuzzy
+#| msgid " 10 - Very important"
+msgid "10 - Very important"
+msgstr "10 - 매우 중요하다"
+
+#: models.py:846
 msgid ""
-"The other participants in the first tasks are real persons who participated in "
-"the same study."
+"The other participants in the first tasks are real persons who participated "
+"in the same study."
 msgstr ""
-"첫 번째 과제를 수행한 다른 참가자들은 나와 같은 연구에 참가한 바로 그 사람들이다."
+"첫 번째 과제를 수행한 다른 참가자들은 나와 같은 연구에 참가한 바로 그 사람들"
+"이다."
 
-#: survey_i18n/models.py:819 survey_i18n/models.py:832
+#: models.py:849 models.py:862
 msgid "No trust at all"
 msgstr "전혀 믿지 않는다 "
 
-#: survey_i18n/models.py:820 survey_i18n/models.py:833
+#: models.py:850 models.py:863
 msgid "Little trust"
 msgstr "거의 믿지 않는다 "
 
-#: survey_i18n/models.py:821 survey_i18n/models.py:834
+#: models.py:851 models.py:864
 msgid "Quite a bit of trust"
 msgstr "꽤 믿는다 "
 
-#: survey_i18n/models.py:822 survey_i18n/models.py:835
+#: models.py:852 models.py:865
 msgid "A lot of trust"
 msgstr "확신한다."
 
-#: survey_i18n/models.py:829
+#: models.py:859
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
 msgstr ""
-"나의 최종 획득 금액은, 연구와 관련된 안내대로 원칙에 따라 계산될 것이며 나에게 실"
-"제로 지급될 것이다"
+"나의 최종 획득 금액은, 연구와 관련된 안내대로 원칙에 따라 계산될 것이며 나에"
+"게 실제로 지급될 것이다"
 
-#: survey_i18n/models.py:842
+#: models.py:872
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
 msgstr "각 섹션별로 제시된 설명들을 어떻게 읽으셨습니까?"
 
-#: survey_i18n/models.py:845
+#: models.py:875
 msgid "With very little care"
 msgstr "전혀 주의 깊게 읽지 않았다"
 
-#: survey_i18n/models.py:846
+#: models.py:876
 msgid "With little care"
 msgstr "주의 깊게 읽지 않았다"
 
-#: survey_i18n/models.py:847
+#: models.py:877
 msgid "With care"
 msgstr "주의 깊게 읽었다"
 
-#: survey_i18n/models.py:848
+#: models.py:878
 msgid "With a lot of care"
 msgstr "매우 주의 깊게 읽었다"
 
-#: survey_i18n/models.py:849
+#: models.py:879
 msgid "With extreme care"
 msgstr "최고로 주의 깊게 읽었다"
 
-#: survey_i18n/models.py:855
+#: models.py:885
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr "각 문항에 응답하실 떄, 당신은 조용한 환경에 계셨습니까?"
 
-#: survey_i18n/models.py:858
+#: models.py:888
 msgid "Not calm at all"
 msgstr "전혀 조용하지 않았다 "
 
-#: survey_i18n/models.py:859
+#: models.py:889
 msgid "Not very calm"
 msgstr "별로 조용하지 않았다 "
 
-#: survey_i18n/models.py:860
+#: models.py:890
 msgid "Fairly calm"
 msgstr "꽤 조용했다 "
 
-#: survey_i18n/models.py:861
+#: models.py:891
 msgid "Very calm"
 msgstr "매우 조용했다 "
 
-#: survey_i18n/models.py:867
-msgid "Have you ever participated in another study that seemed close to this one?"
+#: models.py:897
+msgid ""
+"Have you ever participated in another study that seemed close to this one?"
 msgstr "당신은 본 연구와 비슷한 연구에 참여한 적이 있으십니까?"
 
-#: survey_i18n/models.py:877
+#: models.py:907
 msgid "Which device did you take this study on?"
 msgstr "어떤 기기를 사용하여 본 연구에 참가하셨습니까?"
 
-#: survey_i18n/models.py:879
+#: models.py:909
 msgid "Desktop"
 msgstr "데스크톱 컴퓨터"
 
-#: survey_i18n/models.py:880
+#: models.py:910
 msgid "Laptop (non-touchscreen)"
 msgstr "노트북 (터치스크린이 아닌 형태)"
 
-#: survey_i18n/models.py:881
+#: models.py:911
 msgid "Laptop (touchscreen)"
 msgstr "노트북 (터치스크린)"
 
-#: survey_i18n/models.py:882
+#: models.py:912
 msgid "Tablet"
 msgstr "태블릿"
 
-#: survey_i18n/models.py:889
+#: models.py:919
 msgid "Which browser did you take this survey on?"
 msgstr "본 연구에 참여하실 때 사용하신 브라우저는 어떤 것입니까?"
 
-#: survey_i18n/models.py:891
+#: models.py:921
 msgid "Google Chrome"
 msgstr "구글 크롬"
 
-#: survey_i18n/models.py:892
+#: models.py:922
 msgid "Firefox"
 msgstr "파이어폭스"
 
-#: survey_i18n/models.py:893
+#: models.py:923
 msgid "Internet Explorer"
 msgstr "인터넷 익스플로러"
 
-#: survey_i18n/models.py:900
+#: models.py:930
 msgid ""
-"If you have any comments about your experience taking this survey, with regard "
-"to the functionality of the platform, or the content of the tasks and questions, "
-"please provide us with relevant feedback:"
+"If you have any comments about your experience taking this survey, with "
+"regard to the functionality of the platform, or the content of the tasks and "
+"questions, please provide us with relevant feedback:"
 msgstr ""
-"본 연구에 임하시는 동안 경험하신 플랫폼, 또는 주어진 과제와 질문의 내용에 관하여 "
-"의견이 있으시다면 피드백을 부탁 드립니다."
+"본 연구에 임하시는 동안 경험하신 플랫폼, 또는 주어진 과제와 질문의 내용에 관"
+"하여 의견이 있으시다면 피드백을 부탁 드립니다."
 
-#: survey_i18n/templates/survey_i18n/Survey01.html:35
-#: survey_i18n/templates/survey_i18n/Survey02.html:37
-#: survey_i18n/templates/survey_i18n/Survey02A.html:38
-#: survey_i18n/templates/survey_i18n/Survey03.html:32
-#: survey_i18n/templates/survey_i18n/Survey04.html:37
-#: survey_i18n/templates/survey_i18n/Survey04A.html:38
-#: survey_i18n/templates/survey_i18n/Survey04B.html:36
-#: survey_i18n/templates/survey_i18n/Survey04C.html:33
-#: survey_i18n/templates/survey_i18n/Survey05.html:45
-#: survey_i18n/templates/survey_i18n/Survey06.html:40
-#: survey_i18n/templates/survey_i18n/Survey07.html:76
-#: survey_i18n/templates/survey_i18n/Survey08.html:31
-#: survey_i18n/templates/survey_i18n/Survey09.html:32
-#: survey_i18n/templates/survey_i18n/Survey10.html:118
-#: survey_i18n/templates/survey_i18n/Survey10A.html:28
-#: survey_i18n/templates/survey_i18n/Survey10B.html:42
-#: survey_i18n/templates/survey_i18n/Survey10C.html:39
-#: survey_i18n/templates/survey_i18n/Survey10D.html:32
-#: survey_i18n/templates/survey_i18n/Survey10E.html:17
-#: survey_i18n/templates/survey_i18n/Survey10F.html:27
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:65
-#: survey_i18n/templates/survey_i18n/Survey10G.html:64
-#: survey_i18n/templates/survey_i18n/Survey11.html:25
-#: survey_i18n/templates/survey_i18n/Survey12.html:19
+#: templates/survey_i18n/Survey01.html:35
+#: templates/survey_i18n/Survey02.html:37
+#: templates/survey_i18n/Survey02A.html:38
+#: templates/survey_i18n/Survey03.html:32
+#: templates/survey_i18n/Survey04.html:37
+#: templates/survey_i18n/Survey04A.html:38
+#: templates/survey_i18n/Survey04B.html:36
+#: templates/survey_i18n/Survey04C.html:33
+#: templates/survey_i18n/Survey05.html:45
+#: templates/survey_i18n/Survey06.html:40
+#: templates/survey_i18n/Survey07.html:76
+#: templates/survey_i18n/Survey08.html:31
+#: templates/survey_i18n/Survey09.html:32
+#: templates/survey_i18n/Survey10.html:118
+#: templates/survey_i18n/Survey10A.html:28
+#: templates/survey_i18n/Survey10B.html:42
+#: templates/survey_i18n/Survey10C.html:39
+#: templates/survey_i18n/Survey10D.html:32
+#: templates/survey_i18n/Survey10E.html:17
+#: templates/survey_i18n/Survey10F.html:27
+#: templates/survey_i18n/Survey10G.bk.html:65
+#: templates/survey_i18n/Survey10G.html:49
+#: templates/survey_i18n/Survey11.html:25
+#: templates/survey_i18n/Survey12.html:19
 msgid "Next"
 msgstr "다음"
 
-#: survey_i18n/templates/survey_i18n/Survey02.html:28
+#: templates/survey_i18n/Survey02.html:28
 msgid ""
-"How willing are you to punish someone who treats <em><u>you</u></em> unfairly, "
-"even if there may be costs for you?"
+"How willing are you to punish someone who treats <em><u>you</u></em> "
+"unfairly, even if there may be costs for you?"
 msgstr ""
-"당신은 대가를 지불하고서라도 당신을 불공평하게 대하는 사람을 처벌할 의향이 있으십"
-"니까?"
+"당신은 대가를 지불하고서라도 당신을 불공평하게 대하는 사람을 처벌할 의향이 있"
+"으십니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey02.html:31
+#: templates/survey_i18n/Survey02.html:31
 msgid ""
 "How willing are you to punish someone who treats <em><u>others</u></em> "
 "unfairly, even if there may be costs for you?"
 msgstr ""
-"당신은 대가를 지불하고서라도 다른 사람을 불공평하게 대하는 사람을 처벌할 의향이 "
-"있으십니까?"
+"당신은 대가를 지불하고서라도 다른 사람을 불공평하게 대하는 사람을 처벌할 의향"
+"이 있으십니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey04.html:18
+#: templates/survey_i18n/Survey04.html:18
 msgid "Please think about what you would do in the following situation:"
 msgstr "다음의 상황에서 당신은 어떻게 행동하실지 생각해 주십시오:"
 
-#: survey_i18n/templates/survey_i18n/Survey04.html:22
+#: templates/survey_i18n/Survey04.html:22
 msgid ""
-"You are in an area you are not familiar with, and you realize that you lost your "
-"way. You ask a stranger for directions. The stranger offers to take you to your "
-"destination. Helping you costs the stranger about 20 Euro in total. However, the "
-"stranger says he or she does not want any money from you. You have 6 presents "
-"with you. The cheapest present costs 5 euros, the most expensive one costs 30 "
-"euros. Do you give one of the presents to the stranger as a “thank-you”-gift? If "
-"so, which present do you give to the stranger?"
+"You are in an area you are not familiar with, and you realize that you lost "
+"your way. You ask a stranger for directions. The stranger offers to take you "
+"to your destination. Helping you costs the stranger about 20 Euro in total. "
+"However, the stranger says he or she does not want any money from you. You "
+"have 6 presents with you. The cheapest present costs 5 euros, the most "
+"expensive one costs 30 euros. Do you give one of the presents to the "
+"stranger as a “thank-you”-gift? If so, which present do you give to the "
+"stranger?"
 msgstr ""
-"당신은 낯선 장소에 있으며, 길을 잃었다는 사실을 알게 됐습니다. 당신은 낯선 이에"
-"게 길을 물어봅니다. 그 낯선 이는 당신을 목적지까지 데려다 주겠다고 제안합니다. 당"
-"신은 낯선 이에게 당신을 도와주는 대가로 약 24,000원을 지불해야 하지만, 그 낯선 이"
-"는 당신에게 어떠한 돈도 받기를 원하지 않습니다. 당신은 6가지 종류의 선물을 가지"
-"고 있습니다. 가장 저렴한 선물은 6,000원이고, 가장 비싼 것은 36,000원입니다. 당신"
-"은 그 낯선 이에게 이 중 하나의 선물을 \"감사의 선물\"로 주시겠습니까? 만약 준다"
-"면, 어떤 선물을 주시겠습니까?"
+"당신은 낯선 장소에 있으며, 길을 잃었다는 사실을 알게 됐습니다. 당신은 낯선 이"
+"에게 길을 물어봅니다. 그 낯선 이는 당신을 목적지까지 데려다 주겠다고 제안합니"
+"다. 당신은 낯선 이에게 당신을 도와주는 대가로 약 24,000원을 지불해야 하지만, "
+"그 낯선 이는 당신에게 어떠한 돈도 받기를 원하지 않습니다. 당신은 6가지 종류"
+"의 선물을 가지고 있습니다. 가장 저렴한 선물은 6,000원이고, 가장 비싼 것은 "
+"36,000원입니다. 당신은 그 낯선 이에게 이 중 하나의 선물을 \"감사의 선물\"로 "
+"주시겠습니까? 만약 준다면, 어떤 선물을 주시겠습니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey04A.html:33
+#: templates/survey_i18n/Survey04A.html:33
 msgid ""
-"Can you tell us whether you think the following action is always wrong, never "
-"wrong, or something in between:"
+"Can you tell us whether you think the following action is always wrong, "
+"never wrong, or something in between:"
 msgstr ""
-"다음의 행동이 무조건 잘못되었는지, 전혀 잘못되지 않았는지, 혹은 양쪽 모두 어느 정"
-"도 가능한지에 대하여 응답하여 주십시오."
+"다음의 행동이 무조건 잘못되었는지, 전혀 잘못되지 않았는지, 혹은 양쪽 모두 어"
+"느 정도 가능한지에 대하여 응답하여 주십시오."
 
-#: survey_i18n/templates/survey_i18n/Survey04A.html:34
+#: templates/survey_i18n/Survey04A.html:34
 msgid "Receiving social allowances to which you are not entitled."
 msgstr "당신이 받을 자격이 없는 사회적 수당을 받는 것. "
 
-#: survey_i18n/templates/survey_i18n/Survey04B.html:27
+#: templates/survey_i18n/Survey04B.html:27
 msgid "Could you tell us for each of these groups how much you trust them?"
 msgstr "당신은 다음 각각의 그룹들을 얼마나 신뢰하십니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey05.html:29
+#: templates/survey_i18n/Survey04C.html:31
+#: templates/survey_i18n/Survey09.html:29
+msgid "How well does the following statement describe you as a person?"
+msgstr "다음의 서술문이 얼마나 당신을 잘 설명하고 있습니까? "
+
+#: templates/survey_i18n/Survey05.html:29
 msgid ""
 "How much trust do you have in the following institutions to act in the best "
 "interest of society?"
 msgstr ""
-"당신은 사회의 최대 이익을 위한 활동을 하는 다음의 기관들에 얼마나 신뢰하십니까?"
+"당신은 사회의 최대 이익을 위한 활동을 하는 다음의 기관들에 얼마나 신뢰하십니"
+"까?"
 
-#: survey_i18n/templates/survey_i18n/Survey06.html:27
+#: templates/survey_i18n/Survey06.html:27
 msgid "Do you agree with the following statements?"
 msgstr "당신은 다음의 서술문에 대하여 동의하십니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:26
+#: templates/survey_i18n/Survey07.html:26
 msgid ""
 "We will now ask you questions about your personal situation. All data is "
 "anonymous and will not be shared with a third party."
 msgstr ""
-"지금부터 당신의 개인적인 상황에 대하여 질문하려고 합니다. 모든 데이터는 익명으로 "
-"처리될 것이며 제 3자에게 공유되지 않을 것입니다."
+"지금부터 당신의 개인적인 상황에 대하여 질문하려고 합니다. 모든 데이터는 익명"
+"으로 처리될 것이며 제 3자에게 공유되지 않을 것입니다."
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:34
+#: templates/survey_i18n/Survey07.html:34
 msgid ""
-"Click on all options below to show all the people who live in the same household "
-"as you. <br/>You can choose as many as you need."
+"Click on all options below to show all the people who live in the same "
+"household as you. <br/>You can choose as many as you need."
 msgstr ""
-"아래의 보기 중 당신과 현재 함께 거주하고 있는 사람들을 모두 선택해 주십시오. <br/"
-"> 다수 선택도 가능합니다."
+"아래의 보기 중 당신과 현재 함께 거주하고 있는 사람들을 모두 선택해 주십시오. "
+"<br/> 다수 선택도 가능합니다."
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:39
+#: templates/survey_i18n/Survey07.html:39
 msgid "My legal husband or wife"
 msgstr "법적 남편 또는 아내"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:42
+#: templates/survey_i18n/Survey07.html:42
 msgid "My civil union partner"
 msgstr "사실혼 관계에 있는 파트너"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:45
+#: templates/survey_i18n/Survey07.html:45
 msgid "My de-facto partner, boyfriend or girlfriend"
 msgstr "남자친구 또는 여자친구"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:48
+#: templates/survey_i18n/Survey07.html:48
 msgid "My mother and/or father"
 msgstr "부모님"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:51
+#: templates/survey_i18n/Survey07.html:51
 msgid "My children"
 msgstr "자녀"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:54
+#: templates/survey_i18n/Survey07.html:54
 msgid "My brothers and/or sisters"
 msgstr "형제 자매"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:57
+#: templates/survey_i18n/Survey07.html:57
 msgid "My flatmates"
 msgstr "룸메이트"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:60
+#: templates/survey_i18n/Survey07.html:60
 msgid "Alone"
 msgstr "독신"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:66
+#: templates/survey_i18n/Survey07.html:66
 msgid "Adults (18 years or older)"
 msgstr "성인 (18세 이상)"
 
-#: survey_i18n/templates/survey_i18n/Survey07.html:67
+#: templates/survey_i18n/Survey07.html:67
 msgid "Children (younger than 18 years)"
 msgstr "청소년 또는 유아 (18세 미만)"
 
-#: survey_i18n/templates/survey_i18n/Survey08.html:15
+#: templates/survey_i18n/Survey08.html:15
 msgid "What is the highest level of education that you have completed?"
 msgstr "당신의 최종 학력은 무엇입니까?"
 
-#: survey_i18n/templates/survey_i18n/Survey09.html:29
-msgid "How well does the following statement describe you as a person?"
-msgstr "다음의 서술문이 얼마나 당신을 잘 설명하고 있습니까? "
-
-#: survey_i18n/templates/survey_i18n/Survey10.html:17
+#: templates/survey_i18n/Survey10.html:17
 msgid ""
-"What are all the ways that you <u>as an individual</u> got income in the last 12 "
-"months ending today? <br/>Please choose the three most relevant options. <br/"
-"><br/>Please do not count loans as income."
+"What are all the ways that you <u>as an individual</u> got income in the "
+"last 12 months ending today? <br/>Please choose the three most relevant "
+"options. <br/><br/>Please do not count loans as income."
 msgstr ""
-"지난 1년간 당신의 개인 소득원은 무엇입니까?  <br/>가장 적합한 세 가지를 선택해 주"
-"십시오.<br/>단, 대출은 수입에 포함되지 않습니다."
+"지난 1년간 당신의 개인 소득원은 무엇입니까?  <br/>가장 적합한 세 가지를 선택"
+"해 주십시오.<br/>단, 대출은 수입에 포함되지 않습니다."
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:22
-#: survey_i18n/templates/survey_i18n/Survey10.html:59
+#: templates/survey_i18n/Survey10.html:22
+#: templates/survey_i18n/Survey10.html:59
 msgid "Salaries and wages"
 msgstr "급여와 임금"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:25
-#: survey_i18n/templates/survey_i18n/Survey10.html:62
+#: templates/survey_i18n/Survey10.html:25
+#: templates/survey_i18n/Survey10.html:62
 msgid "Profit from self-employment or business"
 msgstr "자영업 또는 개인 사업으로부터의 이익"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:28
-#: survey_i18n/templates/survey_i18n/Survey10.html:65
+#: templates/survey_i18n/Survey10.html:28
+#: templates/survey_i18n/Survey10.html:65
 msgid "Interest, dividends, rent, other investments"
 msgstr "이자, 배당금, 전/월세, 기타 투자 수익금"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:31
-#: survey_i18n/templates/survey_i18n/Survey10.html:68
+#: templates/survey_i18n/Survey10.html:31
+#: templates/survey_i18n/Survey10.html:68
 msgid "Pension"
 msgstr "연금"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:34
-#: survey_i18n/templates/survey_i18n/Survey10.html:71
+#: templates/survey_i18n/Survey10.html:34
+#: templates/survey_i18n/Survey10.html:71
 msgid "Social insurance payments, state benefits"
 msgstr "사회 보험금, 국가 보조금"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:37
-#: survey_i18n/templates/survey_i18n/Survey10.html:74
+#: templates/survey_i18n/Survey10.html:37
+#: templates/survey_i18n/Survey10.html:74
 msgid "Other sources of income"
 msgstr "기타 수입원"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:40
-#: survey_i18n/templates/survey_i18n/Survey10.html:77
+#: templates/survey_i18n/Survey10.html:40
+#: templates/survey_i18n/Survey10.html:77
 msgid "No source of income during that time"
 msgstr "해당 기간 내에 수입원 없음"
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:50
+#: templates/survey_i18n/Survey10.html:50
 msgid ""
 "Now think about the income of your household. This can be just you, or the "
-"collective income of your family, your parents, or whoever you share your income "
-"and expenditures with."
+"collective income of your family, your parents, or whoever you share your "
+"income and expenditures with."
 msgstr ""
-"당신과 함께 거주하는 가족들의 소득에 대하여 생각하여 주십시오. 이에는 자기 자신, "
-"또는 당신 가족의 공동 수입, 당신의 부모님, 또는 당신의 소득과 지출을 공유하는 사"
-"람의 수입이 모두 포함됩니다."
+"당신과 함께 거주하는 가족들의 소득에 대하여 생각하여 주십시오. 이에는 자기 자"
+"신, 또는 당신 가족의 공동 수입, 당신의 부모님, 또는 당신의 소득과 지출을 공유"
+"하는 사람의 수입이 모두 포함됩니다."
 
-#: survey_i18n/templates/survey_i18n/Survey10.html:54
+#: templates/survey_i18n/Survey10.html:54
 msgid ""
-"What are the main ways that <u>your household</u> received income in the last 12 "
-"months? <br/>Please choose the three most relevant options. <br/><br/>Please do "
-"not count loans as income."
+"What are the main ways that <u>your household</u> received income in the "
+"last 12 months? <br/>Please choose the three most relevant options. <br/><br/"
+">Please do not count loans as income."
 msgstr ""
-"지난 1년간 당신과 함께 거주하고 있는 가족들의 주요 소득원에는 어떤 것들이 있습니"
-"까? <br/>가장 적합한 세 가지를 선택해 주십시오.<br/>단, 대출은 수입에 포함되지 않"
-"습니다."
+"지난 1년간 당신과 함께 거주하고 있는 가족들의 주요 소득원에는 어떤 것들이 있"
+"습니까? <br/>가장 적합한 세 가지를 선택해 주십시오.<br/>단, 대출은 수입에 포"
+"함되지 않습니다."
 
-#: survey_i18n/templates/survey_i18n/Survey10A.html:13
+#: templates/survey_i18n/Survey10A.html:13
 msgid ""
-"In the last 12 months, what was your total income, the income that you received "
-"<u>as an individual</u>, after taxes have been deducted? (Income can come from "
-"any of the sources mentioned in the previous question.)"
+"In the last 12 months, what was your total income, the income that you "
+"received <u>as an individual</u>, after taxes have been deducted? (Income "
+"can come from any of the sources mentioned in the previous question.)"
 msgstr ""
-"지난 1년 간 당신의 세후 개인 연소득은 얼마입니까? (소득은 이전의 질문에서 언급되"
-"었던 모든 소득원을 포함합니다.)"
+"지난 1년 간 당신의 세후 개인 연소득은 얼마입니까? (소득은 이전의 질문에서 언"
+"급되었던 모든 소득원을 포함합니다.)"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:17
+#: templates/survey_i18n/Survey10B.html:17
 msgid ""
 "Just to confirm, which of these income bands corresponds best to <u>your "
-"personal</u> income? Remember, we are asking for <u>your individual</u> income, "
-"after taxes have been deducted."
+"personal</u> income? Remember, we are asking for <u>your individual</u> "
+"income, after taxes have been deducted."
 msgstr ""
-"아래 소득 범위 중 어느 범위가 세금을 제한 당신 개인 소득에 해당합니까? 반드시 세"
-"후 개인 소득으로 응답하여 주십시오."
+"아래 소득 범위 중 어느 범위가 세금을 제한 당신 개인 소득에 해당합니까? 반드"
+"시 세후 개인 소득으로 응답하여 주십시오."
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:21
+#: templates/survey_i18n/Survey10B.html:21
 msgid "0 to 13.000.000 Won per year"
 msgstr "연간 0 - 13,000,000 원"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:22
+#: templates/survey_i18n/Survey10B.html:22
 msgid "13.000.000 to 20.000.000 Won per year"
 msgstr "연간 13,000,000 - 20,000,000 원"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:23
+#: templates/survey_i18n/Survey10B.html:23
 msgid "20.000.000 to 25.000.000 Won per year"
 msgstr "연간 20,000,000원 - 25,000,000 원"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:24
+#: templates/survey_i18n/Survey10B.html:24
 msgid "25.000.000 to 34.000.000 Won per year"
 msgstr "연간 25,000,000 원 - 34,000,000 원"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:25
+#: templates/survey_i18n/Survey10B.html:25
 msgid "34.000.000 Won or more per year"
 msgstr "연간 34,000,000 원 또는 그 이상"
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:30
+#: templates/survey_i18n/Survey10B.html:30
 msgid "0 to 15.000 euro per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:31
+#: templates/survey_i18n/Survey10B.html:31
 msgid "15.000 to 20.000 euro per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:32
+#: templates/survey_i18n/Survey10B.html:32
 msgid "20.000 to 25.000 euro per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:33
+#: templates/survey_i18n/Survey10B.html:33
 msgid "25.000 to 32.000 euro per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10B.html:34
+#: templates/survey_i18n/Survey10B.html:34
 msgid "32.000 euro per year or more"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10C.html:23
+#: templates/survey_i18n/Survey10C.html:23
 msgid ""
-"In the last 12 months, what was the total income of <u>your household</u>, after "
-"taxes have been deducted? (Income can come from any of the sources mentioned in "
-"the previous question.)"
+"In the last 12 months, what was the total income of <u>your household</u>, "
+"after taxes have been deducted? (Income can come from any of the sources "
+"mentioned in the previous question.)"
 msgstr ""
-"지난 1년간 당신과 함께 거주하는 가족들의 세후 소득 총액은 얼마입니까? (소득은 이"
-"전의 질문에서 언급되었던 모든 소득원을 포함합니다.)"
+"지난 1년간 당신과 함께 거주하는 가족들의 세후 소득 총액은 얼마입니까? (소득"
+"은 이전의 질문에서 언급되었던 모든 소득원을 포함합니다.)"
 
-#: survey_i18n/templates/survey_i18n/Survey10C.html:30
+#: templates/survey_i18n/Survey10C.html:30
 msgid "per year"
 msgstr "연"
 
-#: survey_i18n/templates/survey_i18n/Survey10D.html:18
+#: templates/survey_i18n/Survey10D.html:18
 msgid ""
-"Just to confirm, which of these income bands corresponds best to the income of "
-"your <u>entire household</u> (the people you share your income and expenditures "
-"with). Remember, we are asking for the income of your <u>household</u>, after "
-"taxes have been deducted."
+"Just to confirm, which of these income bands corresponds best to the income "
+"of your <u>entire household</u> (the people you share your income and "
+"expenditures with). Remember, we are asking for the income of your "
+"<u>household</u>, after taxes have been deducted."
 msgstr ""
-"아래 소득 범위 중 어느 범위가 당신과 함께 거주하는 가족들(당신과 소득과 지출을 공"
-"유하는 사람들) 의 세후 소득에 해당합니까? 반드시 세후 개인 소득으로 응답하여 주십"
-"시오."
+"아래 소득 범위 중 어느 범위가 당신과 함께 거주하는 가족들(당신과 소득과 지출"
+"을 공유하는 사람들) 의 세후 소득에 해당합니까? 반드시 세후 개인 소득으로 응답"
+"하여 주십시오."
 
-#: survey_i18n/templates/survey_i18n/Survey10D.html:21
+#: templates/survey_i18n/Survey10D.html:21
 msgid "0 to"
 msgstr "0 부터"
 
-#: survey_i18n/templates/survey_i18n/Survey10D.html:21
-#: survey_i18n/templates/survey_i18n/Survey10D.html:22
-#: survey_i18n/templates/survey_i18n/Survey10D.html:23
-#: survey_i18n/templates/survey_i18n/Survey10D.html:24
+#: templates/survey_i18n/Survey10D.html:21
+#: templates/survey_i18n/Survey10D.html:22
+#: templates/survey_i18n/Survey10D.html:23
+#: templates/survey_i18n/Survey10D.html:24
 msgid "euros per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10D.html:25
+#: templates/survey_i18n/Survey10D.html:25
 msgid "euros or more per year"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:23
-#: survey_i18n/templates/survey_i18n/Survey10G.html:21
-msgid "How important would you say religion is in your own life?"
-msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
-
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:26
-#: survey_i18n/templates/survey_i18n/Survey10G.html:24
+#: templates/survey_i18n/Survey10G.bk.html:26
 msgid " 0 - Not important at all"
 msgstr "0 - 전혀 중요하지 않다"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:27
-#: survey_i18n/templates/survey_i18n/Survey10G.html:25
+#: templates/survey_i18n/Survey10G.bk.html:27
 msgid " 1"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:28
-#: survey_i18n/templates/survey_i18n/Survey10G.html:26
+#: templates/survey_i18n/Survey10G.bk.html:28
 msgid " 2"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:29
-#: survey_i18n/templates/survey_i18n/Survey10G.html:27
+#: templates/survey_i18n/Survey10G.bk.html:29
 msgid " 3"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:30
-#: survey_i18n/templates/survey_i18n/Survey10G.html:28
+#: templates/survey_i18n/Survey10G.bk.html:30
 msgid " 4"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:31
-#: survey_i18n/templates/survey_i18n/Survey10G.html:29
+#: templates/survey_i18n/Survey10G.bk.html:31
 msgid " 5"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:32
-#: survey_i18n/templates/survey_i18n/Survey10G.html:30
+#: templates/survey_i18n/Survey10G.bk.html:32
 msgid " 6"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:33
-#: survey_i18n/templates/survey_i18n/Survey10G.html:31
+#: templates/survey_i18n/Survey10G.bk.html:33
 msgid " 7"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:34
-#: survey_i18n/templates/survey_i18n/Survey10G.html:32
+#: templates/survey_i18n/Survey10G.bk.html:34
 msgid " 8"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:35
-#: survey_i18n/templates/survey_i18n/Survey10G.html:33
+#: templates/survey_i18n/Survey10G.bk.html:35
 msgid " 9"
 msgstr ""
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:36
-#: survey_i18n/templates/survey_i18n/Survey10G.html:34
+#: templates/survey_i18n/Survey10G.bk.html:36
 msgid " 10 - Very important"
 msgstr "10 - 매우 중요하다"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:37
-#: survey_i18n/templates/survey_i18n/Survey10G.html:35
+#: templates/survey_i18n/Survey10G.bk.html:37
 msgid " Don't know"
 msgstr "잘 모르겠다"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:43
-#: survey_i18n/templates/survey_i18n/Survey10G.html:41
+#: templates/survey_i18n/Survey10G.bk.html:43
+#: templates/survey_i18n/Survey10G.html:26
 msgid "Are you:"
 msgstr "당신의 종교를 선택해 주십시오."
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:46
-#: survey_i18n/templates/survey_i18n/Survey10G.html:44
+#: templates/survey_i18n/Survey10G.bk.html:46
+#: templates/survey_i18n/Survey10G.html:29
 msgid " Buddhist"
 msgstr "불교"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:47
-#: survey_i18n/templates/survey_i18n/Survey10G.html:45
+#: templates/survey_i18n/Survey10G.bk.html:47
+#: templates/survey_i18n/Survey10G.html:30
 msgid " Protestant"
 msgstr "개신교"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:48
-#: survey_i18n/templates/survey_i18n/Survey10G.html:46
+#: templates/survey_i18n/Survey10G.bk.html:48
+#: templates/survey_i18n/Survey10G.html:31
 msgid " Catholic"
 msgstr "카톨릭"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:49
-#: survey_i18n/templates/survey_i18n/Survey10G.html:47
+#: templates/survey_i18n/Survey10G.bk.html:49
+#: templates/survey_i18n/Survey10G.html:32
 msgid " Confucian"
 msgstr "유교"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:50
-#: survey_i18n/templates/survey_i18n/Survey10G.html:48
+#: templates/survey_i18n/Survey10G.bk.html:50
+#: templates/survey_i18n/Survey10G.html:33
 msgid " Won Buddhist"
 msgstr "원불교"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:51
-#: survey_i18n/templates/survey_i18n/Survey10G.html:49
+#: templates/survey_i18n/Survey10G.bk.html:51
+#: templates/survey_i18n/Survey10G.html:34
 msgid " Other"
 msgstr "그 외"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:52
-#: survey_i18n/templates/survey_i18n/Survey10G.html:50
+#: templates/survey_i18n/Survey10G.bk.html:52
+#: templates/survey_i18n/Survey10G.html:35
 msgid " Not religious"
 msgstr "무교"
 
-#: survey_i18n/templates/survey_i18n/Survey10G.bk.html:53
-#: survey_i18n/templates/survey_i18n/Survey10G.html:51
+#: templates/survey_i18n/Survey10G.bk.html:53
+#: templates/survey_i18n/Survey10G.html:36
 msgid " I don’t know"
 msgstr "잘 모르겠다"
 
-#: survey_i18n/templates/survey_i18n/Survey11.html:15
+#: templates/survey_i18n/Survey11.html:15
 msgid "This is the last screen, you're almost done!"
 msgstr "이제 마지막 화면입니다. 과제가 거의 끝나갑니다!"
 
-#: survey_i18n/templates/survey_i18n/Survey11.html:16
+#: templates/survey_i18n/Survey11.html:16
 msgid ""
 "For information purposes, could you tell us to what extent you trusted the "
 "following two statements when you made your decisions:"
 msgstr ""
-"당신이 의사 결정을 내릴 때, 다음 두 개의 서술문에 대하여 얼마나 신뢰하는지 응답하"
-"여 주십시오:"
+"당신이 의사 결정을 내릴 때, 다음 두 개의 서술문에 대하여 얼마나 신뢰하는지 응"
+"답하여 주십시오:"
 
-#: survey_i18n/templates/survey_i18n/Survey12.html:14
+#: templates/survey_i18n/Survey12.html:14
 msgid ""
 "This is the very last screen, in the following screen we will show you your "
 "earnings!"
 msgstr ""
-"연구의 가장 마지막 화면입니다. 다음 화면에서, 당신이 획득한 금액을 알려드리겠습니"
-"다!"
+"연구의 가장 마지막 화면입니다. 다음 화면에서, 당신이 획득한 금액을 알려드리겠"
+"습니다!"
 
-#: survey_i18n/views.py:50
+#: views.py:50
 msgid ""
-"Imagine the following situation: you won 1000 euros in a lottery. Considering "
+"Imagine the following situation: you won 1000 euros in a lottery. "
+"Considering your current situation, how much would you donate to a good "
+"cause?"
+msgstr ""
+"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨"
+"습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
+
+#: views.py:53
+msgid ""
+"Imagine the following situation: you won $1000 in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
 msgstr ""
-"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨습니"
-"다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
-#: survey_i18n/views.py:53
+#: views.py:56
+#, fuzzy
+#| msgid ""
+#| "Imagine the following situation: you won 1.250.000 Won in a lottery. "
+#| "Considering your current situation, how much would you donate to a good "
+#| "cause?"
 msgid ""
-"Imagine the following situation: you won $1000 in a lottery. Considering your "
-"current situation, how much would you donate to a good cause?"
-msgstr ""
-
-#: survey_i18n/views.py:56
-msgid ""
-"Imagine the following situation: you won 1.250.000 Won in a lottery. Considering "
+"Imagine the following situation: you won 1000 Won in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
 msgstr ""
-"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,250,000원을 획득하셨습니"
-"다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
+"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,250,000원을 획득하셨"
+"습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
-#: survey_i18n/views.py:64 survey_i18n/views.py:311 survey_i18n/views.py:341
+#: views.py:64 views.py:311 views.py:341
 msgid "€"
 msgstr ""
 
-#: survey_i18n/views.py:68 survey_i18n/views.py:312 survey_i18n/views.py:342
+#: views.py:68 views.py:312 views.py:342
 msgid "$"
 msgstr ""
 
-#: survey_i18n/views.py:72 survey_i18n/views.py:313 survey_i18n/views.py:343
+#: views.py:72 views.py:313 views.py:343
 msgid "Won"
 msgstr "원"
 
-#: survey_i18n/views.py:103 survey_i18n/views.py:112 survey_i18n/views.py:121
+#: views.py:103 views.py:112 views.py:121
 msgid "no present"
 msgstr "기부하지 않겠다"
 
-#: survey_i18n/views.py:104
+#: views.py:104
 msgid "the present worth 5 euros"
 msgstr ""
 
-#: survey_i18n/views.py:105
+#: views.py:105
 msgid "the present worth 10 euros"
 msgstr ""
 
-#: survey_i18n/views.py:106
+#: views.py:106
 msgid "the present worth 15 euros"
 msgstr ""
 
-#: survey_i18n/views.py:107
+#: views.py:107
 msgid "the present worth 20 euros"
 msgstr ""
 
-#: survey_i18n/views.py:108
+#: views.py:108
 msgid "the present worth 25 euros"
 msgstr ""
 
-#: survey_i18n/views.py:109
+#: views.py:109
 msgid "the present worth 30 euros"
 msgstr ""
 
-#: survey_i18n/views.py:113
+#: views.py:113
 msgid "the present worth $5"
 msgstr ""
 
-#: survey_i18n/views.py:114
+#: views.py:114
 msgid "the present worth $10"
 msgstr ""
 
-#: survey_i18n/views.py:115
+#: views.py:115
 msgid "the present worth $15"
 msgstr ""
 
-#: survey_i18n/views.py:116
+#: views.py:116
 msgid "the present worth $20"
 msgstr ""
 
-#: survey_i18n/views.py:117
+#: views.py:117
 msgid "the present worth $25"
 msgstr ""
 
-#: survey_i18n/views.py:118
+#: views.py:118
 msgid "the present worth $30"
 msgstr ""
 
-#: survey_i18n/views.py:122
+#: views.py:122
 msgid "the present worth 5.000 Won"
 msgstr "5,000원 상당의 선물"
 
-#: survey_i18n/views.py:123
+#: views.py:123
 msgid "the present worth 10.000 Won"
 msgstr "10,000원 상당의 선물"
 
-#: survey_i18n/views.py:124
+#: views.py:124
 msgid "the present worth 15.000 Won"
 msgstr "15,000원 상당의 선물"
 
-#: survey_i18n/views.py:125
+#: views.py:125
 msgid "the present worth 20.000 Won"
 msgstr "20,000원 상당의 선물"
 
-#: survey_i18n/views.py:126
+#: views.py:126
 msgid "the present worth 25.000 Won"
 msgstr "25,000원 상당의 선물"
 
-#: survey_i18n/views.py:127
+#: views.py:127
 msgid "the present worth 30.000 Won"
 msgstr "30,000원 상당의 선물"
 
-#: survey_i18n/views.py:186
+#: views.py:186
 msgid ""
-"When answering the following questions, please think about French institutions."
+"When answering the following questions, please think about French "
+"institutions."
 msgstr "다음 질문에 응답하 때, 프랑스 제도에 관해 생각해 십시오."
 
-#: survey_i18n/views.py:187
+#: views.py:187
 msgid ""
-"When answering the following questions, please think about the US institutions."
+"When answering the following questions, please think about the US "
+"institutions."
 msgstr ""
 
-#: survey_i18n/views.py:188
+#: views.py:188
 msgid ""
-"When answering the following questions, please think about Korean institutions."
+"When answering the following questions, please think about Korean "
+"institutions."
 msgstr "다음 질문에 응답하실 때, 한국의 제도에 관해 생각해 십시오."
 
-#: survey_i18n/views.py:225
+#: views.py:225
 msgid "In what year did you arrive in France?"
 msgstr "당신은 몇 년도에 프랑스에 오셨습니까?"
 
-#: survey_i18n/views.py:226
+#: views.py:226
 msgid "In what year did you arrive in the US?"
 msgstr ""
 
-#: survey_i18n/views.py:227
+#: views.py:227
 msgid "In what year did you arrive in Korea?"
 msgstr "당신은 몇 년도에 한국에 오셨습니까?"
 
-#: survey_i18n/views.py:246
+#: views.py:246
 msgid "Aucun diplôme"
 msgstr ""
 
-#: survey_i18n/views.py:247
+#: views.py:247
 msgid "Brevet des collèges"
 msgstr ""
 
-#: survey_i18n/views.py:248
+#: views.py:248
 msgid "CAP BEP ou équivalent"
 msgstr ""
 
-#: survey_i18n/views.py:249
+#: views.py:249
 msgid "Baccalauréat"
 msgstr ""
 
-#: survey_i18n/views.py:250
+#: views.py:250
 msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
 msgstr ""
 
-#: survey_i18n/views.py:251
+#: views.py:251
 msgid "Licence (Bac + 3)"
 msgstr ""
 
-#: survey_i18n/views.py:252
+#: views.py:252
 msgid "Master (Bac + 5) ou Doctorat"
 msgstr ""
 
-#: survey_i18n/views.py:255 survey_i18n/views.py:264
+#: views.py:255 views.py:264
 msgid "Less than high school"
 msgstr "고졸 이하 "
 
-#: survey_i18n/views.py:256 survey_i18n/views.py:265
+#: views.py:256 views.py:265
 msgid "High school"
 msgstr "고졸"
 
-#: survey_i18n/views.py:257 survey_i18n/views.py:266
+#: views.py:257 views.py:266
 msgid "Some college"
 msgstr "2년제 전문대 졸업"
 
-#: survey_i18n/views.py:258 survey_i18n/views.py:267
+#: views.py:258 views.py:267
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
 msgstr "대학을 제외한 기타 전문 교육 기관 졸업"
 
-#: survey_i18n/views.py:259 survey_i18n/views.py:268
+#: views.py:259 views.py:268
 msgid "Undergraduate degree (e.g. BA, BS)"
 msgstr "4년제 대학 졸업"
 
-#: survey_i18n/views.py:260 survey_i18n/views.py:269
+#: views.py:260 views.py:269
 msgid "Post-graduate degree"
 msgstr "대학원 졸업"
