@@ -358,6 +358,9 @@ msgstr "작은 대도시권 (거주자 2십만명 이상 - 5십만명 미만)"
 msgid "Town (50.000 to 200.000 inhabitants)"
 msgstr "소도시 (거주자 5만명 이상 - 2십만명 미만)"
 
+msgid "Did you or your household save any money in the previous year?"
+msgstr ""
+
 #: survey_i18n/models.py:740
 msgid "Village (Less than 50.000 inhabitants)"
 msgstr "마을 (거주자 5만명 미만)"

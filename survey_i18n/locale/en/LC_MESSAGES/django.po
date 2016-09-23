@@ -104,6 +104,9 @@ msgid ""
 "there may be costs for you?"
 msgstr ""
 
+msgid "Did you or your household save any money in the previous year?"
+msgstr ""
+
 #: survey_i18n/models.py:157
 msgid ""
 "How willing are you to give to good causes without expecting anything in "

@@ -103,6 +103,9 @@ msgstr ""
 msgid "0 - Completely unwilling to do so"
 msgstr "0 - Pas du tout disposé(e) à le faire"
 
+msgid "Did you or your household save any money in the previous year?"
+msgstr "Votre foyer a-t'il épargner de l'argent dans l'année précédente ?"
+
 #: survey_i18n/models.py:128 survey_i18n/models.py:149
 #: survey_i18n/models.py:170
 msgid "10 - Very willing to do so"
