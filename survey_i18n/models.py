@@ -818,7 +818,26 @@ your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect()
     )
 
-    _10G_religion = models.CharField()
+    _10G_religion =  models.CharField(
+        verbose_name=_(u"How important would you say religion is in your own life?"),
+        choices=(
+            ('0', _(u"0 - Not important at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u'10 - Very important')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect(),
+        initial=None
+    )
+
     _10G_religion_B = models.CharField()
 
     _10H_income = models.CharField()

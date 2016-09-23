@@ -18,24 +18,8 @@
       <div class="form-group required">
 
         {% formfield player._10G_income %}
-
-        <label class="control-label" for="id__10G_religion">{% trans "How important would you say religion is in your own life?" %}</label>
-        <div class="controls  field-_10G_religion">
-          <ul>
-            <li><label for="id__10G_religion_1"><input type="radio" id="id__10G_religion_1" value="0" name="_10G_religion" required="">{% trans " 0 - Not important at all" %}</label></li>
-            <li><label for="id__10G_religion_2"><input type="radio" id="id__10G_religion_2" value="1" name="_10G_religion" required="">{% trans " 1" %}</label></li>
-            <li><label for="id__10G_religion_3"><input type="radio" id="id__10G_religion_3" value="2" name="_10G_religion" required="">{% trans " 2" %}</label></li>
-            <li><label for="id__10G_religion_4"><input type="radio" id="id__10G_religion_4" value="3" name="_10G_religion" required="">{% trans " 3" %}</label></li>
-            <li><label for="id__10G_religion_5"><input type="radio" id="id__10G_religion_5" value="4" name="_10G_religion" required="">{% trans " 4" %}</label></li>
-            <li><label for="id__10G_religion_6"><input type="radio" id="id__10G_religion_6" value="5" name="_10G_religion" required="">{% trans " 5" %}</label></li>
-            <li><label for="id__10G_religion_7"><input type="radio" id="id__10G_religion_7" value="6" name="_10G_religion" required="">{% trans " 6" %}</label></li>
-            <li><label for="id__10G_religion_8"><input type="radio" id="id__10G_religion_8" value="7" name="_10G_religion" required="">{% trans " 7" %}</label></li>
-            <li><label for="id__10G_religion_9"><input type="radio" id="id__10G_religion_9" value="8" name="_10G_religion" required="">{% trans " 8" %}</label></li>
-            <li><label for="id__10G_religion_10"><input type="radio" id="id__10G_religion_10" value="9" name="_10G_religion" required="">{% trans " 9" %}</label></li>
-            <li><label for="id__10G_religion_11"><input type="radio" id="id__10G_religion_11" value="10" name="_10G_religion" required="">{% trans " 10 - Very important" %}</label></li>
-            <li><label for="id__10G_religion_12"><input type="radio" id="id__10G_religion_12" value="Don't know" name="_10G_religion" required="">{% trans " Don't know" %}</label></li>
-          </ul>
-        </div><!--- .controls -->
+        
+        {% formfield player._10G_religion %}
 
         {% if lang != 'fr' %}
 
