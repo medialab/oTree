@@ -59,7 +59,7 @@ msgid "At the beginning, Participant A receives %(amount)s."
 msgstr ""
 
 #: templates/dictator/Instructions.html:15
-msgid "Participant B does not receive any money — he or she has %(amount)s."
+msgid "Participant B does not receive any money — he or she has 0."
 msgstr ""
 
 #: templates/dictator/Instructions.html:16

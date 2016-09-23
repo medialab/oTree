@@ -61,7 +61,7 @@ msgid "At the beginning, Participant A receives %(amount)s."
 msgstr "당신은 ~ 퍼센트(금액)을 보유하고 있습니다."
 
 #: templates/dictator/Instructions.html:15
-msgid "Participant B does not receive any money — he or she has %(amount)s."
+msgid "Participant B does not receive any money — he or she has 0."
 msgstr ""
 
 #: templates/dictator/Instructions.html:16
