@@ -119,6 +119,22 @@ quota_gender_age_groups_gmi = {
 
 SESSION_CONFIGS = [
     {
+        'name': 'survey_i18n',
+        'display_name': (
+            'Survey'
+        ),
+        'num_demo_participants': total_gmi,
+        'app_sequence': [
+            'survey_i18n'
+        ],
+        'treatment': 'A1a',
+        'language_code': 'fr-fr',
+        'payoff_group': 1,
+        'quota_redirects': quota_redirects,
+        'quota_total_population': total_gmi,
+        'quota_gender_age_groups': quota_gender_age_groups_gmi,
+    },
+    {
         'name': 'trustlab_2016_gmi',
         'display_name': (
             'TRUSTLAB | Sept 2016 | EN | GMI Quota Test Run ' +

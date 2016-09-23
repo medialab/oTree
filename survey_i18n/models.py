@@ -806,6 +806,18 @@ your individual income, after taxes have been deducted.'),
 
     _10D_income = models.CharField()
 
+    _10G_income = models.CharField(
+        verbose_name=_(
+            u'Did you or your household save any money in the previous year?'
+        ),
+        choices=(
+            ('Yes', _(u'Yes')),
+            ('No', _(u'No')),
+            ("Don't know", _(u"Don't know")),
+        ),
+        widget=widgets.RadioSelect()
+    )
+
     _10G_religion = models.CharField()
     _10G_religion_B = models.CharField()
 

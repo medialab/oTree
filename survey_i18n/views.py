@@ -401,7 +401,8 @@ class Survey10G(Page):
     form_model = models.Player
     form_fields = [
         '_10G_religion',
-        '_10G_religion_B'
+        '_10G_religion_B',
+        '_10G_income'
     ]
 
 
