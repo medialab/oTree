@@ -832,7 +832,7 @@ your individual income, after taxes have been deducted.'),
             ('10', _(u'10 - Very important')),
             ("Don't know", _(u"Don't know")),
         ),
-        widget=widgets.RadioSelect(),
+        widget=widgets.RadioSelectHorizontal(),
         initial=None
     )
 
