@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-23 17:07+0200\n"
-"PO-Revision-Date: 2016-09-26 10:32+0200\n"
+"PO-Revision-Date: 2016-09-26 10:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -448,14 +448,10 @@ msgid "How important would you say religion is in your own life?"
 msgstr "Quelle est l'importance de la religion dans votre vie ?"
 
 #: models.py:822
-#, fuzzy
-#| msgid " 0 - Not important at all"
 msgid "0 - Not important at all"
 msgstr "0 - Pas du tout important"
 
 #: models.py:832
-#, fuzzy
-#| msgid " 10 - Very important"
 msgid "10 - Very important"
 msgstr "10 - Très important"
 
