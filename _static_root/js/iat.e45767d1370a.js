@@ -195,42 +195,33 @@ $(function(window, undefined) {
     /**
      * Randomize set of trials.
      *
-     * @param  {order} order String of letters where each letter is attached to a set of trials.
+     * @param  {Sting} o  String of letters where each letter is attached to a set of trials.
      * @return {Array} Array of letters, randomized from the first order.
      */
-    function randomizeTrialsSets(order) {
+    function randomizeTrialsSets(o) {
       var reordered = [],
-          order = order.split(''),
-          beginTrial = null,
-          midTrial = null;
+          order = o.split('');
+
+      console.log('o', order)
 
       // First round is practice round. Leave it as is.
-      if (order[0] === 'A') {
-        beginTrial = order.shift();
-      }
-
-      if (order[order.length-1] === 'F') {
-        midTrial = order.splice(order.indexOf('D'), 1)[0]
-      }
-
+      if (order[0] === 'A') reordered.push(order.shift());
+      console.log('order', order)
 
       // If remaining letters form an even set, we can simply randomize each pairs.
       // If it's an odd pair, kick out the tail round, shuffle, then add it back.
-      reordered = reordered.concat(shuffleTrialPairs(order));
-      console.log('>>>midTrial', midTrial)
-      if (midTrial) {
-        if (reordered[1] === 'B' || reordered[1] === 'C') {
-          reordered.unshift(beginTrial)
-          reordered.splice(3, 0, midTrial)
-        } else {
-          reordered.unshift(midTrial)
-          reordered.splice(3, 0, beginTrial)
-        }
+      if (order.length % 2 === 0) {
+        reordered = reordered.concat(shuffleTrialPairs(order));
+        console.log('order', order)
+        debugger;
       } else {
-        reordered.unshift(beginTrial)
+        var tail = order.pop();
+        reordered = reordered.concat(shuffleTrialPairs(order).push(tail));
+        console.log('order', order)
+        debugger;
       }
-
-      console.log(reordered)
+      console.log('order', order)
+      console.log('reordered', reordered)
 
       return reordered;
     }
@@ -261,7 +252,8 @@ $(function(window, undefined) {
       // Randomize orders of set of trials,
       // then arrange the trials based on given order.
       randomizeTrialsSets(order).forEach(function(character, i) {
-        shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
+        console.log(data, character)
+        /*shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
           // Skip the first round, then on each new round,
           // push in a relevant pause screen before actual trials.
           if (i > 0 && j === 0) {
@@ -284,7 +276,7 @@ $(function(window, undefined) {
           });
 
           id++;
-        });
+        });*/
       });
 
       return resultTrials;

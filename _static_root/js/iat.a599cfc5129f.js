@@ -220,14 +220,14 @@ $(function(window, undefined) {
       console.log('>>>midTrial', midTrial)
       if (midTrial) {
         if (reordered[1] === 'B' || reordered[1] === 'C') {
-          reordered.unshift(beginTrial)
+          reordered.unshit(beginTrial)
           reordered.splice(3, 0, midTrial)
         } else {
-          reordered.unshift(midTrial)
+          reordered.unshit(midTrial)
           reordered.splice(3, 0, beginTrial)
         }
       } else {
-        reordered.unshift(beginTrial)
+        reordered.unshit(beginTrial)
       }
 
       console.log(reordered)
