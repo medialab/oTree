@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-23 17:07+0200\n"
-"PO-Revision-Date: 2016-09-23 17:11+0200\n"
+"PO-Revision-Date: 2016-09-26 10:32+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -441,7 +441,7 @@ msgstr ""
 #: models.py:810
 msgid "Did you or your household save any money in the previous year?"
 msgstr ""
-"Vous ou votre foyer a-t'il épargné de l'argent dans l'année précédente ?"
+"Vous ou votre foyer a-t-il épargné de l'argent dans l'année précédente ?"
 
 #: models.py:820 templates/survey_i18n/Survey10G.bk.html:23
 msgid "How important would you say religion is in your own life?"
