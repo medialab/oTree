@@ -38,8 +38,7 @@
         redirect('next');
       } else {
         console.log('Quota full -- redirecting...')
-        // redirect('quota_full', gmiRedirections);
-        redirect('next');
+        redirect('quota_full', gmiRedirections);
       }
 
       function testQuota(name, key, base, population) {
