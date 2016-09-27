@@ -171,7 +171,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_run01_A1a_fr',
-        'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1a',
+        'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1a or A1b',
         'num_demo_participants': 126,
         'app_sequence': [
             'quota', 'trust', 'public_goods',
@@ -203,7 +203,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_run01_A2a_fr',
-        'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2a',
+        'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2a or A2b',
         'num_demo_participants': 126,
         'app_sequence': [
             'quota', 'trust', 'public_goods',
@@ -235,7 +235,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_run01_B1a_fr',
-        'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1a',
+        'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1a or B1b',
         'num_demo_participants': 126,
         'app_sequence': [
             'quota', 'trust', 'public_goods',
@@ -267,7 +267,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_run01_B2a_fr',
-        'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2a',
+        'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2a or B2b',
         'num_demo_participants': 126,
         'app_sequence': [
             'quota', 'trust', 'public_goods',
