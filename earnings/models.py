@@ -85,7 +85,7 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.choose_game(Constants.eligible_games)
-        # chosen_game = 'public_goods'
+        chosen_game = 'public_goods'
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
@@ -278,7 +278,7 @@ class Group(BaseGroup):
                 player_b, 'sent_back_amount_' + str(int(player_a_gave))
             )
         else:
-            player_b = random.hoice(fallback_data['trust'])
+            player_b = random.choice(fallback_data['trust'])
             sent_back = player_b['sent_back_amount_' + str(int(player_a_gave))]
             matched_id = player_b['id']
 
@@ -367,6 +367,7 @@ class Group(BaseGroup):
         )
 
         # Pick a 3 players sample, using fallback if number is not met.
+        fallback_players = []
         if len(players) >= Constants.min_other_players_for_pg:
             players = random.sample(
                 players, Constants.min_other_players_for_pg
@@ -376,11 +377,11 @@ class Group(BaseGroup):
                 fallback_data['public_goods'],
                 Constants.min_other_players_for_pg - len(players)
             )
-            players += fallback_players
 
         # Get relevant data.
         joint_sum = (
-            [p.contribution for p in players] + [player.contribution]
+            [p.contribution for p in players] + [player.contribution] +
+            [p['contribution'] for p in fallback_players]
         )
         matched_ids = ','.join([str(p.id) for p in players])
 
