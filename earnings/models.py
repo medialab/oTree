@@ -8,8 +8,12 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer, Session
 from otree.common import Currency
-from public_goods.models import Constants as Public_goods_const
-from trust.models import Constants as Trust_const
+
+from public_goods.models import Constants as PublicGoodsConsts
+from public_goods import models as PublicGoodModels  # noqa
+from trust.models import Constants as TrustConsts
+from trust import models as TrustModels  # noqa
+from dictator import models as DictatorModels  # noqa
 
 doc = """
 This application calculates earnings for the Trustlab experiments,
@@ -146,7 +150,9 @@ class Group(BaseGroup):
                     given_by_player_b, matched_id = self.strat_trust_a(
                         p, given_by_player_a
                     )
-                    payoff = (base_money - given_by_player_a + given_by_player_b)
+                    payoff = (
+                        base_money - given_by_player_a + given_by_player_b
+                    )
 
                     trust_game_player_a_transfer = given_by_player_a
                     trust_game_player_b_transfer = given_by_player_b
@@ -159,7 +165,7 @@ class Group(BaseGroup):
                         p, 'sent_back_amount_' + str(int(given_by_player_a))
                     )
                     payoff = base_money + (
-                        given_by_player_a * Trust_const.multiplication_factor
+                        given_by_player_a * TrustConsts.multiplication_factor
                     ) - given_by_player_b
 
                     trust_game_player_a_transfer = given_by_player_a
@@ -225,7 +231,7 @@ class Group(BaseGroup):
                 ) = self.strat_public_goods(p)
                 my_contrib = p.contribution
                 payoff = (base_money - my_contrib) + (
-                    (joint_sum * Public_goods_const.efficiency_factor) / 4
+                    (joint_sum * PublicGoodsConsts.efficiency_factor) / 4
                 )
                 break
 
@@ -241,122 +247,100 @@ class Group(BaseGroup):
 
     def strat_trust_a(self, player_a, player_a_gave):
         """Select a player B for Trust and return related amount."""
-        # Payoff group for this session
-        pg = self.session.config['payoff_group']
+        # Get relevant session IDs.
+        sessions_ids = [
+            s.id for s in Session.objects.all()
+            if s.config['payoff_group'] == self.session.config['payoff_group']
+        ]
 
-        # In sessions from same payoff_group, find a random player B.
-        # If we wanted only players from this session:
-        # all_other_players = self.get_players()
-        other_players = []
+        # Extract eligible player, that is every player of Trust Game
+        # that is not the current user, and that has provided an answer
+        # for the `sent_back_amount` field matching the `sent` amount
+        # of the current user.
+        players = TrustModels.Player.objects.filter(
+            session__id__in=sessions_ids
+        ).exclude(
+            id=player_a.id
+        ).exclude(
+            sent_amount__isnull=True
+        )
+        players = [
+            p for p in players
+            if getattr(p, 'sent_back_amount_' + str(int(player_a_gave)))
+        ]
 
-        def add_player_if_eligible(player):
-            if player._meta.app_label == 'trust':
-                # Should never happen, but double check nonetheless.
-                if player is not player_a:
-                    if getattr(
-                        player, 'sent_back_amount_' + str(int(player_a_gave))
-                    ) is not None:
-                        other_players.append(player)
-
-        for s in Session.objects.all():
-            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                # `Participants` are all possible players.
-                for p in s.get_participants():
-                    # For each participant, get their occurence of Trust
-                    # game players and see if they are eligible.
-                    trust_player = p.get_players()[0]
-                    add_player_if_eligible(trust_player)
-
-        # Pick a random player B from eligible players and return money.
-        # Use fallback data if none available yet.
-        if len(other_players) >= Constants.min_other_players_for_trust:
-            player_b = random.choice(other_players)
-
-            # Store matched player's ID.
+        # Get relevant data from a chosen player.
+        # Revert to fallback players if none found.
+        if len(players) >= Constants.min_other_players_for_trust:
+            player_b = random.choice(players)
             matched_id = str(player_b.id)
             sent_back = getattr(
                 player_b, 'sent_back_amount_' + str(int(player_a_gave))
             )
         else:
-            u = random.choice(fallback_data['trust'])
-            sent_back = u[
-                'sent_back_amount_' + str(int(player_a_gave))
-            ]
-            matched_id = u['id']
+            player_b = random.hoice(fallback_data['trust'])
+            sent_back = player_b['sent_back_amount_' + str(int(player_a_gave))]
+            matched_id = player_b['id']
 
         return [sent_back, matched_id]
 
     def strat_trust_b(self, player_b):
         """Select a player B for Trust and return related amount."""
-        # Payoff group for this session
-        pg = self.session.config['payoff_group']
+        # Get relevant session IDs.
+        sessions_ids = [
+            s.id for s in Session.objects.all()
+            if s.config['payoff_group'] == self.session.config['payoff_group']
+        ]
 
-        # In sessions from same payoff_group, find a random player A.
-        # If we wanted only players from this session:
-        # all_other_players = self.get_players()
-        other_players = []
+        # Extract eligible player, that is every player of Trust Game
+        # that is not the current user.
+        players = TrustModels.Player.objects.filter(
+            session__id__in=sessions_ids
+        ).exclude(
+            id=player_b.id
+        ).exclude(
+            sent_back_amount_10__isnull=True
+        ).exclude(
+            sent_amount__isnull=True
+        )
 
-        def add_player_if_eligible(player):
-            if player._meta.app_label == 'trust':
-                # Should never happen, but double check nonetheless.
-                if player is not player_b and player.sent_amount is not None:
-                    other_players.append(player)
-
-        for s in Session.objects.all():
-            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                # `Participants` are all possible players.
-                for p in s.get_participants():
-                    # For each participant, get their occurence of Trust
-                    # game players and see if they are eligible.
-                    trust_player = p.get_players()[0]
-                    add_player_if_eligible(trust_player)
-
-        # Pick a random player A from eligible players and return money and
-        # store matched player's ID. Use fallback in case of lack of data.
-        if len(other_players) >= Constants.min_other_players_for_trust:
-            player_a = random.choice(other_players)
+        if len(players) >= Constants.min_other_players_for_trust:
+            player_a = random.choice(players)
             sent_amount = player_a.sent_amount
             matched_id = player_a.id
         else:
-            u = random.choice(fallback_data['trust'])
-            sent_amount = u['sent_amount']
-            matched_id = u['id']
+            player_a = random.choice(fallback_data['trust'])
+            sent_amount = player_a['sent_amount']
+            matched_id = player_a['id']
 
         return [sent_amount, matched_id]
 
     def strat_dictator(self, player):
         """Pick and return a given amount from another Dictator player."""
-        # Payoff group for this session
-        pg = self.session.config['payoff_group']
+        # Get relevant session IDs.
+        sessions_ids = [
+            s.id for s in Session.objects.all()
+            if s.config['payoff_group'] == self.session.config['payoff_group']
+        ]
 
-        # In sessions from same payoff_group, find a random player A.
-        # If we wanted only players from this session:
-        # all_other_players = self.get_players()
-        other_players = []
+        players = DictatorModels.Player.objects.filter(
+            session__id__in=sessions_ids
+        ).exclude(
+            id=player.id
+        ).exclude(
+            given__isnull=True
+        )
 
-        def add_player_if_eligible(p):
-            if p._meta.app_label == 'dictator' and p is not player:
-                if p.given is not None:
-                    other_players.append(p)
-
-        for s in Session.objects.all():
-            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                for p in s.get_participants():
-                    dictator_player = p.get_players()[2]
-                    add_player_if_eligible(dictator_player)
-
-        # Pick matching player, return money and matched player's ID.
-        # Use fallback data if there are not enough players.
-        if len(other_players) >= Constants.min_other_players_for_dictator:
-            matched = random.choice(other_players)
-            given = matched.given
-            id = str(matched.id)
+        if len(players) >= Constants.min_other_players_for_dictator:
+            matched_player = random.choice
+            given = matched_player.given
+            matched_id = str(matched_player.id)
         else:
-            u = random.choice(fallback_data['dictator'])
-            given = u['given']
-            id = u['id']
+            matched_player = random.choice(fallback_data['dictator'])
+            given = matched_player['given']
+            matched_id = matched_player['id']
 
-        return [given, id]
+        return [given, matched_id]
 
     def strat_public_goods(self, player):
         """
@@ -365,55 +349,40 @@ class Group(BaseGroup):
         It is the sum of their contributions related to 1st player's,
         plus 1st player's.
         """
-        # Payoff group for this session
-        pg = self.session.config['payoff_group']
+        # Get relevant session IDs.
+        sessions_ids = [
+            s.id for s in Session.objects.all()
+            if s.config['payoff_group'] == self.session.config['payoff_group']
+        ]
 
-        # In sessions from same payoff_group, find a random player A.
-        # If we wanted only players from this session:
-        # all_other_players = self.get_players()
-        other_players = []
-
-        def add_player_if_eligible(p):
-            if p._meta.app_label == 'public_goods' and p is not player:
-                if p.contribution is not None:
-                    other_players.append(p)
-
-        for s in Session.objects.all():
-            if 'payoff_group' in s.config and s.config['payoff_group'] is pg:
-                for p in s.get_participants():
-                    if len(p.get_players()) > 1:
-                        public_goods_player = p.get_players()[1]
-                        add_player_if_eligible(public_goods_player)
-
-        fallback_players = []
-        if len(other_players) >= Constants.min_other_players_for_pg:
-            # Shuffle and pick three.
-            other_players = random.sample(
-                other_players, Constants.min_other_players_for_pg
-            )
-        else:
-            # first players will miss existing players to be matched to
-            # let's use fallback data to add the missing results
-            nb_missing_players = (
-                Constants.min_other_players_for_pg - len(other_players)
-            )
-
-            fallback_players = random.sample(
-                fallback_data['public_goods'], nb_missing_players
-            )
-
-        # Return the sum of their contributions
-        # plus 1st player's contribution.
-        joint_sum = [p.contribution for p in other_players]
-        joint_sum += [p['contribution'] for p in fallback_players]
-
-        # IDs of matched players.
-        matched_ids = ','.join(
-            [str(u.id) for u in other_players] +
-            [u['id'] for u in fallback_players]
+        # Fetch all eligible players of the Dictator game,
+        # meaning they have completed it and are *not*
+        # the current user.
+        players = PublicGoodModels.Player.objects.filter(
+            session__id__in=sessions_ids
+        ).exclude(
+            id=player.id
+        ).exclude(
+            contribution_back_10__isnull=True
         )
 
-        joint_sum.append(player.contribution)
+        # Pick a 3 players sample, using fallback if number is not met.
+        if len(players) >= Constants.min_other_players_for_pg:
+            players = random.sample(
+                players, Constants.min_other_players_for_pg
+            )
+        else:
+            fallback_players = random.sample(
+                fallback_data['public_goods'],
+                Constants.min_other_players_for_pg - len(players)
+            )
+            players += fallback_players
+
+        # Get relevant data.
+        joint_sum = (
+            [p.contribution for p in players] + [player.contribution]
+        )
+        matched_ids = ','.join([str(p.id) for p in players])
 
         return [sum(joint_sum), matched_ids, joint_sum]
 
