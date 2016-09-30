@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 17:06+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,33 +28,33 @@ msgid ""
 "asked to sort a number of words and be timed while doing so."
 msgstr ""
 
-#: dictator/templates/dictator/EndGame.html:11
-#: dictator/templates/dictator/Offer.html:13
-#: dictator/templates/dictator/Simulation.html:56
+#: templates/dictator/EndGame.html:11 templates/dictator/Offer.html:13
+#: templates/dictator/Simulation.html:56
 msgid "Next"
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:8
+#: templates/dictator/Instructions.html:8
 msgid "Task Three: Introduction"
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:10
+#: templates/dictator/Instructions.html:10
 msgid ""
 "This last task involves <strong>two participants</strong> – Participant A "
 "and Participant B."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:11
+#: templates/dictator/Instructions.html:11
 msgid ""
 "Remember, the other participant is different from the ones you interacted "
 "with in the previous two tasks."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:12
+#: templates/dictator/Instructions.html:12
 msgid "These are the rules:"
 msgstr ""
 
 #: templates/dictator/Instructions.html:14
+#, python-format
 msgid "At the beginning, Participant A receives %(amount)s."
 msgstr ""
 
@@ -63,6 +63,7 @@ msgid "Participant B does not receive any money — he or she has 0."
 msgstr ""
 
 #: templates/dictator/Instructions.html:16
+#, python-format
 msgid ""
 "Participant A must now decide if he or she wants to transfer any of his or "
 "her %(amount)s to Participant B."
@@ -74,75 +75,75 @@ msgid ""
 "transfer any amount back to Participant A."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:19
+#: templates/dictator/Instructions.html:19
 msgid ""
 "Your role (Participant A or Participant B) is revealed to you at the "
 "beginning of the task."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:20
+#: templates/dictator/Instructions.html:20
 msgid ""
 "Because this task is simple, there will be no simulator to test out "
 "different choices."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:6
+#: templates/dictator/Offer.html:6
 msgid "Task Three: Real Decision"
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:7
+#: templates/dictator/Offer.html:7
 msgid ""
 "This is the real third task. Once you have made your decision and clicked "
 "the “Next” button, you cannot return to this screen."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:8
+#: templates/dictator/Offer.html:8
 msgid "You were selected to be in the role of <strong>Participant A</strong>."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:9
+#: templates/dictator/Offer.html:9
 #, python-format
 msgid "You have %(amount)s in your possession."
 msgstr ""
 
-#: dictator/templates/dictator/Offer.html:9
+#: templates/dictator/Offer.html:9
 msgid "How much do you want to transfer to Participant B?"
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:6
+#: templates/dictator/Simulation.html:6
 msgid "Task Three: Simulation"
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:8
+#: templates/dictator/Simulation.html:8
 msgid ""
 "If you wish, you can use this test screen to play with different choices of "
 "Participant A, to understand the task better."
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:9
+#: templates/dictator/Simulation.html:9
 msgid "Whenever you are ready to proceed to the real task, click next."
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:45
+#: templates/dictator/Simulation.html:45
 msgid "€"
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:53
+#: templates/dictator/Simulation.html:53
 msgid "Amount sent by Participant A"
 msgstr ""
 
-#: dictator/templates/dictator/Simulation.html:55
+#: templates/dictator/Simulation.html:55
 msgid "Send"
 msgstr ""
 
-#: dictator/views.py:51 dictator/views.py:68
+#: views.py:51 views.py:68
 msgid "10 euros"
 msgstr ""
 
-#: dictator/views.py:52 dictator/views.py:69
+#: views.py:52 views.py:69
 msgid "$10"
 msgstr ""
 
-#: dictator/views.py:53 dictator/views.py:70
+#: views.py:53 views.py:70
 msgid "12.000 Won"
 msgstr ""
