@@ -85,6 +85,7 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.choose_game(Constants.eligible_games)
+        chosen_game = 'public_goods'
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
@@ -256,13 +257,13 @@ class Group(BaseGroup):
         # that is not the current user, and that has provided an answer
         # for the `sent_back_amount` field matching the `sent` amount
         # of the current user.
-        players = TrustModels.Player.objects.filter(
+        players = list(TrustModels.Player.objects.filter(
             session__id__in=sessions_ids
         ).exclude(
             id=player_a.id
         ).exclude(
             sent_amount__isnull=True
-        )
+        ))
         players = [
             p for p in players
             if getattr(p, 'sent_back_amount_' + str(int(player_a_gave)))
@@ -293,7 +294,7 @@ class Group(BaseGroup):
 
         # Extract eligible player, that is every player of Trust Game
         # that is not the current user.
-        players = TrustModels.Player.objects.filter(
+        players = list(TrustModels.Player.objects.filter(
             session__id__in=sessions_ids
         ).exclude(
             id=player_b.id
@@ -301,7 +302,7 @@ class Group(BaseGroup):
             sent_back_amount_10__isnull=True
         ).exclude(
             sent_amount__isnull=True
-        )
+        ))
 
         if len(players) >= Constants.min_other_players_for_trust:
             player_a = random.choice(players)
@@ -322,13 +323,13 @@ class Group(BaseGroup):
             if s.config['payoff_group'] == self.session.config['payoff_group']
         ]
 
-        players = DictatorModels.Player.objects.filter(
+        players = list(DictatorModels.Player.objects.filter(
             session__id__in=sessions_ids
         ).exclude(
             id=player.id
         ).exclude(
             given__isnull=True
-        )
+        ))
 
         if len(players) >= Constants.min_other_players_for_dictator:
             matched_player = random.choice(players)
@@ -357,13 +358,13 @@ class Group(BaseGroup):
         # Fetch all eligible players of the Dictator game,
         # meaning they have completed it and are *not*
         # the current user.
-        players = PublicGoodModels.Player.objects.filter(
+        players = list(PublicGoodModels.Player.objects.filter(
             session__id__in=sessions_ids
         ).exclude(
             id=player.id
         ).exclude(
             contribution_back_10__isnull=True
-        )
+        ))
 
         # Pick a 3 players sample, using fallback if number is not met.
         fallback_players = []
