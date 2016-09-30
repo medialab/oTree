@@ -190,6 +190,7 @@ class Group(BaseGroup):
 
         # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
+        role = 'B'
 
         # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
@@ -332,7 +333,7 @@ class Group(BaseGroup):
         )
 
         if len(players) >= Constants.min_other_players_for_dictator:
-            matched_player = random.choice
+            matched_player = random.choice(players)
             given = matched_player.given
             matched_id = str(matched_player.id)
         else:
