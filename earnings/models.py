@@ -85,7 +85,6 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.choose_game(Constants.eligible_games)
-        chosen_game = 'dictator'
         player.calculation_from_game = chosen_game
 
         # Get payoff from game.
@@ -190,7 +189,6 @@ class Group(BaseGroup):
 
         # All players were player A, but we simulate gains for both roles.
         role = random.choice(['A', 'B'])
-        role = 'B'
 
         # Get the occurence of this player when she played 'Dictator'.
         for p in player.participant.get_players():
