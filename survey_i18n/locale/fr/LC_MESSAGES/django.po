@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-23 17:07+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
 "PO-Revision-Date: 2016-09-26 10:55+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -443,7 +443,7 @@ msgid "Did you or your household save any money in the previous year?"
 msgstr ""
 "Vous ou votre foyer a-t-il épargné de l'argent dans l'année précédente ?"
 
-#: models.py:820 templates/survey_i18n/Survey10G.bk.html:23
+#: models.py:820
 msgid "How important would you say religion is in your own life?"
 msgstr "Quelle est l'importance de la religion dans votre vie ?"
 
@@ -611,7 +611,6 @@ msgstr ""
 #: templates/survey_i18n/Survey10D.html:32
 #: templates/survey_i18n/Survey10E.html:17
 #: templates/survey_i18n/Survey10F.html:27
-#: templates/survey_i18n/Survey10G.bk.html:65
 #: templates/survey_i18n/Survey10G.html:49
 #: templates/survey_i18n/Survey11.html:25
 #: templates/survey_i18n/Survey12.html:19
@@ -930,95 +929,38 @@ msgstr "euros par an"
 msgid "euros or more per year"
 msgstr "euros ou plus par an"
 
-#: templates/survey_i18n/Survey10G.bk.html:26
-msgid " 0 - Not important at all"
-msgstr "0 - Pas du tout important"
-
-#: templates/survey_i18n/Survey10G.bk.html:27
-msgid " 1"
-msgstr "1"
-
-#: templates/survey_i18n/Survey10G.bk.html:28
-msgid " 2"
-msgstr "2"
-
-#: templates/survey_i18n/Survey10G.bk.html:29
-msgid " 3"
-msgstr "3"
-
-#: templates/survey_i18n/Survey10G.bk.html:30
-msgid " 4"
-msgstr "4"
-
-#: templates/survey_i18n/Survey10G.bk.html:31
-msgid " 5"
-msgstr "5"
-
-#: templates/survey_i18n/Survey10G.bk.html:32
-msgid " 6"
-msgstr "6"
-
-#: templates/survey_i18n/Survey10G.bk.html:33
-msgid " 7"
-msgstr "7"
-
-#: templates/survey_i18n/Survey10G.bk.html:34
-msgid " 8"
-msgstr "8"
-
-#: templates/survey_i18n/Survey10G.bk.html:35
-msgid " 9"
-msgstr "9"
-
-#: templates/survey_i18n/Survey10G.bk.html:36
-msgid " 10 - Very important"
-msgstr "10 - Très important"
-
-#: templates/survey_i18n/Survey10G.bk.html:37
-msgid " Don't know"
-msgstr " Ne sais pas"
-
-#: templates/survey_i18n/Survey10G.bk.html:43
 #: templates/survey_i18n/Survey10G.html:26
 msgid "Are you:"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:46
 #: templates/survey_i18n/Survey10G.html:29
 msgid " Buddhist"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:47
 #: templates/survey_i18n/Survey10G.html:30
 msgid " Protestant"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:48
 #: templates/survey_i18n/Survey10G.html:31
 msgid " Catholic"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:49
 #: templates/survey_i18n/Survey10G.html:32
 msgid " Confucian"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:50
 #: templates/survey_i18n/Survey10G.html:33
 msgid " Won Buddhist"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:51
 #: templates/survey_i18n/Survey10G.html:34
 msgid " Other"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:52
 #: templates/survey_i18n/Survey10G.html:35
 msgid " Not religious"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:53
 #: templates/survey_i18n/Survey10G.html:36
 msgid " I don’t know"
 msgstr ""
@@ -1239,3 +1181,39 @@ msgstr ""
 #: views.py:260 views.py:269
 msgid "Post-graduate degree"
 msgstr ""
+
+#~ msgid " 0 - Not important at all"
+#~ msgstr "0 - Pas du tout important"
+
+#~ msgid " 1"
+#~ msgstr "1"
+
+#~ msgid " 2"
+#~ msgstr "2"
+
+#~ msgid " 3"
+#~ msgstr "3"
+
+#~ msgid " 4"
+#~ msgstr "4"
+
+#~ msgid " 5"
+#~ msgstr "5"
+
+#~ msgid " 6"
+#~ msgstr "6"
+
+#~ msgid " 7"
+#~ msgstr "7"
+
+#~ msgid " 8"
+#~ msgstr "8"
+
+#~ msgid " 9"
+#~ msgstr "9"
+
+#~ msgid " 10 - Very important"
+#~ msgstr "10 - Très important"
+
+#~ msgid " Don't know"
+#~ msgstr " Ne sais pas"

@@ -7,21 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-06 16:42+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
 "PO-Revision-Date: 2016-09-11 23:31+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.9\n"
-"Language: ko\n"
 
-#: trust/templates/trust/EndGame.html:8
+#: templates/trust/EndGame.html:8
 msgid "Thank you very much for entering your choice."
 msgstr "응답하여 주셔서 감사합니다."
 
-#: trust/templates/trust/EndGame.html:9
+#: templates/trust/EndGame.html:9
 msgid ""
 "We have recorded your decision. Your payoff for this task will depend on the "
 "action of your partner in this task, Participant B."
@@ -29,22 +29,21 @@ msgstr ""
 "당신의 응답이 모두 저장되었습니다. 당신의 획득 금액은 당신과 함께 이 과제에 "
 "참가한 다른 사람들의 응답에 따라 결정될 것입니다."
 
-#: trust/templates/trust/EndGame.html:10
+#: templates/trust/EndGame.html:10
 msgid "Now, please proceed to the second task."
 msgstr "이제 두번째 과제를 진행하여 주십시오."
 
-#: trust/templates/trust/EndGame.html:11
-#: trust/templates/trust/GamesIntroduction.html:21
-#: trust/templates/trust/Send.html:21 trust/templates/trust/SendBack.html:29
-#: trust/templates/trust/Simulation.html:166
+#: templates/trust/EndGame.html:11 templates/trust/GamesIntroduction.html:21
+#: templates/trust/Send.html:21 templates/trust/SendBack.html:30
+#: templates/trust/Simulation.html:167
 msgid "Next"
 msgstr "다음"
 
-#: trust/templates/trust/ExperimentIntroduction.html:7
+#: templates/trust/ExperimentIntroduction.html:7
 msgid "Welcome!"
 msgstr "환영합니다!"
 
-#: trust/templates/trust/ExperimentIntroduction.html:8
+#: templates/trust/ExperimentIntroduction.html:8
 msgid ""
 "Sciences Po Paris invites you to participate in a quick online study on "
 "decision-making."
@@ -52,11 +51,11 @@ msgstr ""
 "파리정치대학에서 진행 중인 의사 결정에 관한 짧은 온라인 연구에 참여해 주십시"
 "오."
 
-#: trust/templates/trust/ExperimentIntroduction.html:11
+#: templates/trust/ExperimentIntroduction.html:11
 msgid "Study information"
 msgstr "연구 정보"
 
-#: trust/templates/trust/ExperimentIntroduction.html:12
+#: templates/trust/ExperimentIntroduction.html:12
 msgid ""
 "The aim of this study is to learn more about how we as human beings behave – "
 "how do we make decisions? How do we interact with one another when faced "
@@ -68,11 +67,11 @@ msgstr ""
 "과 상호작용하는지, 우리 주변의 사람들과 제도에 대해서는 어떻게 생각하는지에 "
 "대하여 알아보고자 합니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:13
+#: templates/trust/ExperimentIntroduction.html:13
 msgid "To find this out, you will be participating in different exercises:"
 msgstr "이를 알아보기 위해서 당신은 다양한 과제에 참여하게 됩니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:14
+#: templates/trust/ExperimentIntroduction.html:14
 msgid ""
 "In the first part, you will participate in three simple tasks, in anonymous "
 "interaction with one or more other people."
@@ -80,12 +79,12 @@ msgstr ""
 "첫번째 섹션에서 당신은 한 명 또는 다수의 사람들(익명)과 함께 간단한 세 가지 "
 "과제를 수행하게 됩니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:15
+#: templates/trust/ExperimentIntroduction.html:15
 msgid "In the second part, you are going to sort different sets of words."
 msgstr ""
 "두번째 섹션에서 당신은 여러 가지 단어들을 분류하는 작업을 수행하게 됩니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:16
+#: templates/trust/ExperimentIntroduction.html:16
 msgid ""
 "In the third part, we ask you to answer a few questions about yourself and "
 "your opinions."
@@ -93,7 +92,7 @@ msgstr ""
 "세번째 섹션에서는 당신 자신과 당신의 생각에 관한 몇 가지 질문에 답해주시면 됩"
 "니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:17
+#: templates/trust/ExperimentIntroduction.html:17
 msgid ""
 "The whole study should take you about 25 minutes. Note that <strong>you "
 "should complete this study in one sitting</strong>, without any extensive "
@@ -104,23 +103,23 @@ msgstr ""
 "칠 때까지 휴식을 취하실 수 없습니다. 최상의 결과를 얻기 위해 집중을 방해하는 "
 "모든 다른 작업들을 중단해주시고, 실행 중인 다른 프로그램도 종료해 주십시오."
 
-#: trust/templates/trust/ExperimentIntroduction.html:18
+#: templates/trust/ExperimentIntroduction.html:18
 msgid ""
 "If you are having trouble accessing the platform, we advise you to switch to "
 "Google Chrome instead."
 msgstr "본 플랫폼 접속에 문제가 있을 시, 구글 크롬 사용을 권장합니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:20
+#: templates/trust/ExperimentIntroduction.html:20
 msgid "Payment"
 msgstr "보상"
 
-#: trust/templates/trust/ExperimentIntroduction.html:21
+#: templates/trust/ExperimentIntroduction.html:21
 msgid ""
 "By participating in the study’s tasks, you can earn an additional amount of "
 "up to 40 euro."
 msgstr "이 작업에 참여하심으로써, 최대 48,000원도 획득하실 수 있습니다. "
 
-#: trust/templates/trust/ExperimentIntroduction.html:23
+#: templates/trust/ExperimentIntroduction.html:23
 msgid ""
 "This amount will depend on the strategic decisions you make together with "
 "the other participants during the study’s tasks. At the end of the study, "
@@ -130,8 +129,8 @@ msgstr ""
 "정을 내리시는지에 따라 달라집니다. 실험이 종료되면, 당신이 수행하신 여러 작업"
 "들 중 하나가 무작위로 선정될 것입니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:24
-#: trust/templates/trust/GamesIntroduction.html:18
+#: templates/trust/ExperimentIntroduction.html:24
+#: templates/trust/GamesIntroduction.html:18
 msgid ""
 "The amount of money you will receive will correspond to your earnings in "
 "this selected task."
@@ -139,11 +138,11 @@ msgstr ""
 "이렇게 무작위 선정된 작업 내에서 획득하신 금액이 당신이 실제 획득하게 되실 금"
 "액입니다. "
 
-#: trust/templates/trust/ExperimentIntroduction.html:26
+#: templates/trust/ExperimentIntroduction.html:26
 msgid "You will receive your points via the usual system."
 msgstr "당신은 usual 시스템을 통해 포인트를 획득합니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:27
+#: templates/trust/ExperimentIntroduction.html:27
 msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
@@ -151,11 +150,11 @@ msgstr ""
 "작업이 모두 끝나면 해피머니 상품권 수령을 통해, 추가 금액을 획득하시게 됩니"
 "다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:29
+#: templates/trust/ExperimentIntroduction.html:29
 msgid "Data protection"
 msgstr "데이터 보호"
 
-#: trust/templates/trust/ExperimentIntroduction.html:32
+#: templates/trust/ExperimentIntroduction.html:32
 msgid ""
 "The data gathered in this study is subject to European privacy protocols, "
 "under the supervision of the European Research Council. We will use it for "
@@ -164,7 +163,7 @@ msgstr ""
 "본 연구에서 활용된 데이터는 유럽리서치위원회의 감독 하에 유럽 개인정보 보호법"
 "에 의거하여 보호됩니다. 수집된 데이터는 오직 연구 목적으로만 사용됩니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:34
+#: templates/trust/ExperimentIntroduction.html:34
 msgid ""
 "The data gathered in this study is subject to strict privacy protocols. We "
 "will use it for research purposes only."
@@ -172,15 +171,15 @@ msgstr ""
 "본 연구에서 수집된 데이터는 엄격한 개인정보 보호법의 적용을 받습니다. 수집된 "
 "데이터는 오직 연구 목적으로만 사용됩니다."
 
-#: trust/templates/trust/ExperimentIntroduction.html:37
+#: templates/trust/ExperimentIntroduction.html:37
 msgid "Begin"
 msgstr "시작"
 
-#: trust/templates/trust/GamesIntroduction.html:6
+#: templates/trust/GamesIntroduction.html:6
 msgid "Section One: Tasks"
 msgstr "섹션 1 : 과제"
 
-#: trust/templates/trust/GamesIntroduction.html:8
+#: templates/trust/GamesIntroduction.html:8
 msgid ""
 "We will start by giving you three tasks. This is the part of the study that "
 "will allow you to earn additional money."
@@ -188,7 +187,7 @@ msgstr ""
 "세 가지 과제를 제시해 드립니다. 이 과제를 통해 당신은 추가적인 금액을 획득할 "
 "수 있습니다."
 
-#: trust/templates/trust/GamesIntroduction.html:9
+#: templates/trust/GamesIntroduction.html:9
 msgid ""
 "At the beginning of each task, you will be grouped with other study "
 "participants, who are respondents from France like you."
@@ -196,7 +195,7 @@ msgstr ""
 "과제 수행에 앞서, 당신은 한국에 있는 다른 참가자들과 함께 팀을 구성하게 됩니"
 "다."
 
-#: trust/templates/trust/GamesIntroduction.html:10
+#: templates/trust/GamesIntroduction.html:10
 msgid ""
 "<strong>In each task, the other participants you are grouped with will be "
 "different:</strong> the same person will never be in your group more than "
@@ -210,11 +209,11 @@ msgstr ""
 "습니다 - 과제 종료 시, 당신의 응답은 기록되어 다른 참가자들의 응답과 대조될 "
 "것입니다."
 
-#: trust/templates/trust/GamesIntroduction.html:12
+#: templates/trust/GamesIntroduction.html:12
 msgid "How will your earnings be calculated?"
 msgstr "획득할 수 있는 금액은 어떻게 계산이 되는지 알려드리겠습니다."
 
-#: trust/templates/trust/GamesIntroduction.html:14
+#: templates/trust/GamesIntroduction.html:14
 msgid ""
 "Your earnings in each task will depend on your and the other participants’ "
 "strategic decisions."
@@ -222,12 +221,12 @@ msgstr ""
 "각 작업에서 획득할 수 있는 금액은 팀 구성원들의 전략적 의사결정에 따라 결정됩"
 "니다. "
 
-#: trust/templates/trust/GamesIntroduction.html:15
+#: templates/trust/GamesIntroduction.html:15
 msgid ""
 "Your answers in each task will be matched with those of other participants."
 msgstr "각 작업마다 당신의 응답은 다른 참가자들의 응답과 대조될 것입니다."
 
-#: trust/templates/trust/GamesIntroduction.html:17
+#: templates/trust/GamesIntroduction.html:17
 msgid ""
 "At the end of the study, one of the three tasks you have completed will be "
 "randomly selected."
@@ -235,11 +234,11 @@ msgstr ""
 "모든 작업 종료 시, 수행하신 세 개의 과제 중 한 개의 과제가 무작위로 선정될 것"
 "입니다."
 
-#: trust/templates/trust/Instructions.html:7
+#: templates/trust/Instructions.html:7
 msgid "Task One: Introduction"
 msgstr "과제 1 : 안내"
 
-#: trust/templates/trust/Instructions.html:9
+#: templates/trust/Instructions.html:9
 msgid ""
 "In the first task, <strong>two people participate</strong>: Participant A "
 "and Participant B. As mentioned before, this other participant also lives in "
@@ -248,15 +247,15 @@ msgstr ""
 "첫번째 과제에서<strong>참가자는 두 명입니다.</strong>: 참가자 A와 B. 앞서 말"
 "씀드린 것처럼, 다른 참가자 또한 한국에 거주하고 있습니다."
 
-#: trust/templates/trust/Instructions.html:10
+#: templates/trust/Instructions.html:10
 msgid "These are the rules of the task:"
 msgstr "과제의 규칙은 다음과 같습니다:"
 
-#: trust/templates/trust/Instructions.html:12
+#: templates/trust/Instructions.html:12
 msgid "At the beginning of the task, both participants receive 10 euros."
 msgstr "과제가 시작되면, 두 참가자는 각각 12,000원을 받게 됩니다."
 
-#: trust/templates/trust/Instructions.html:15
+#: templates/trust/Instructions.html:15
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her "
 "12.000 Won to Participant B."
@@ -264,17 +263,17 @@ msgstr ""
 "참가자 A는 그(녀)가 받은 12,000원의 일부, 혹은 전체를 참가자 B에게 보낼 수 있"
 "으며, 전혀 보내지 않을 수도 있습니다."
 
-#: trust/templates/trust/Instructions.html:17
+#: templates/trust/Instructions.html:17
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her 10 "
 "euros to Participant B."
 msgstr ""
 
-#: trust/templates/trust/Instructions.html:20
+#: templates/trust/Instructions.html:20
 msgid "Whatever amount Participant A sends is multiplied by 3."
 msgstr "참가자 A가 보낸 금액은 3배가 됩니다."
 
-#: trust/templates/trust/Instructions.html:21
+#: templates/trust/Instructions.html:21
 msgid ""
 "Participant B, after receiving the transfer of Participant A, has to decide "
 "how much, if any, money he or she want to send back to Participant A."
@@ -282,15 +281,15 @@ msgstr ""
 "참가자 B는 참가자 A로부터 받은 금액 중, 참가자 A에게 다시 보내고 싶은 만큼의 "
 "액수를 정해야 합니다."
 
-#: trust/templates/trust/Instructions.html:23
+#: templates/trust/Instructions.html:23
 msgid "Your role (A or B) will be revealed at the beginning of the task."
 msgstr "과제를 시작할 때, 여러분의 역할(참가자 A 혹은 B)이 주어집니다."
 
-#: trust/templates/trust/Send.html:7
+#: templates/trust/Send.html:7
 msgid "Task One: Real task"
 msgstr "과제 1 : 실제 과제"
 
-#: trust/templates/trust/Send.html:9
+#: templates/trust/Send.html:9
 msgid ""
 "Now the real task 1 starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
@@ -298,11 +297,11 @@ msgstr ""
 "이제 첫번째 실제 과제가 시작됩니다. 금액을 정하고 “다음” 버튼을 누른 후에는, "
 "다시 이 화면으로 돌아올 수 없습니다."
 
-#: trust/templates/trust/Send.html:10
+#: templates/trust/Send.html:10
 msgid "You were selected to be in the role of <strong>Participant A</strong>."
 msgstr "당신에게 참가자 B의 역할이 주어졌습니다."
 
-#: trust/templates/trust/Send.html:13
+#: templates/trust/Send.html:13
 msgid ""
 "You have 12.000 Won in your possession. <strong>How much do you want to send "
 "to Participant B?</strong>"
@@ -310,17 +309,17 @@ msgstr ""
 "당신에게 12,000원이 있습니다. <Strong>참가자 B에게 얼마를 보내시겠습니까?</"
 "strong>"
 
-#: trust/templates/trust/Send.html:15
+#: templates/trust/Send.html:15
 msgid ""
 "You have 10 euros in your possession. <strong>How much do you want to send "
 "to Participant B?</strong>"
 msgstr ""
 
-#: trust/templates/trust/SendBack.html:7
+#: templates/trust/SendBack.html:7
 msgid "Task One: Real decision"
 msgstr "과제 1 : 실제 결정"
 
-#: trust/templates/trust/SendBack.html:9
+#: templates/trust/SendBack.html:9
 msgid ""
 "Now the real task starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
@@ -328,11 +327,11 @@ msgstr ""
 "이제 실제 과제가 시작됩니다. 금액을 정하고 “다음” 버튼을 누른 후에는, 다시 "
 "이 화면으로 돌아올 수 없습니다."
 
-#: trust/templates/trust/SendBack.html:10
+#: templates/trust/SendBack.html:10
 msgid "You were selected to be in the role of <strong>Participant B</strong>."
 msgstr "당신에게 참가자 B의 역할이 주어졌습니다."
 
-#: trust/templates/trust/SendBack.html:13
+#: templates/trust/SendBack.html:11
 msgid ""
 "If Participant A sends you any of the amounts listed in the table below, "
 "<strong>how much money do you want to send back to Participant A</strong>?"
@@ -340,15 +339,19 @@ msgstr ""
 "참가자 A가 아래와 같은 금액을 당신에게 보냈다면, 당신은 참가자 A에게 얼마의 "
 "금액을 다시 보내시겠습니까?"
 
-#: trust/templates/trust/SendBack.html:15
+#: templates/trust/SendBack.html:14
+msgid "You already have 12.000 Won in your possession."
+msgstr ""
+
+#: templates/trust/SendBack.html:16
 msgid "You already have 10 euros in your possession."
 msgstr ""
 
-#: trust/templates/trust/Simulation.html:6
+#: templates/trust/Simulation.html:6
 msgid "Task One: Test Simulation"
 msgstr "과제 1: 시뮬레이션"
 
-#: trust/templates/trust/Simulation.html:8
+#: templates/trust/Simulation.html:8
 msgid ""
 "This is not the real task yet, but a simulation to help you understand the "
 "rules better."
@@ -356,7 +359,7 @@ msgstr ""
 "이는 실제 과제가 아니라, 당신이 규칙을 더 잘 이해할 수 있도록 도와줄 시뮬레이"
 "션입니다."
 
-#: trust/templates/trust/Simulation.html:9
+#: templates/trust/Simulation.html:9
 msgid ""
 "You can use the test screen below to play with the different choices of the "
 "two participants."
@@ -364,149 +367,149 @@ msgstr ""
 "당신은 다음 시뮬레이션 화면을 통해, 두 참가자의 각기 다른 선택이 어떻게 실행"
 "되는지 연습해보실 수 있습니다."
 
-#: trust/templates/trust/Simulation.html:10
+#: templates/trust/Simulation.html:10
 msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
 msgstr ""
 "시뮬레이션을 실행하실 때, \"초기화\" 버튼을 누르시면 금액이 재설정됩니다."
 
-#: trust/templates/trust/Simulation.html:141
+#: templates/trust/Simulation.html:141
 msgid "€"
 msgstr ""
 
-#: trust/templates/trust/Simulation.html:149
+#: templates/trust/Simulation.html:143
+#, fuzzy
+#| msgid "Amount sent by Participant A"
+msgid "Participant A"
+msgstr "참가자 A가 보낸 금액"
+
+#: templates/trust/Simulation.html:144
+#, fuzzy
+#| msgid "Amount sent by Participant B"
+msgid "Participant B"
+msgstr "참가자 B가 보낸 금액"
+
+#: templates/trust/Simulation.html:150
 msgid "Amount sent by Participant A"
 msgstr "참가자 A가 보낸 금액"
 
-#: trust/templates/trust/Simulation.html:151
-#: trust/templates/trust/Simulation.html:159
+#: templates/trust/Simulation.html:152 templates/trust/Simulation.html:160
 msgid "Send"
 msgstr "보내기"
 
-#: trust/templates/trust/Simulation.html:157
+#: templates/trust/Simulation.html:158
 msgid "Amount sent by Participant B"
 msgstr "참가자 B가 보낸 금액"
 
-#: trust/templates/trust/Simulation.html:164
+#: templates/trust/Simulation.html:165
 msgid "Reset to zero"
 msgstr "초기화"
 
-#: trust/views.py:71
+#: views.py:71 views.py:72
 msgid "Please enter a number from 0 to 10"
 msgstr ""
 
-#: trust/views.py:75
+#: views.py:73
 msgid "Please enter a number from 0 to 12.000"
 msgstr "0에서 12,000까지 숫자를 입력해 주세요."
 
-#: trust/views.py:107
+#: views.py:108 views.py:111
 msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
 msgstr ""
 
-#: trust/views.py:110
-msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
-msgstr ""
-
-#: trust/views.py:113
-msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
-msgstr ""
-
-#: trust/views.py:116
-msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
-msgstr ""
-
-#: trust/views.py:119
-msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
-msgstr ""
-
-#: trust/views.py:122
-msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
-msgstr ""
-
-#: trust/views.py:125
-msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
-msgstr ""
-
-#: trust/views.py:128
-msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
-msgstr ""
-
-#: trust/views.py:131
-msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
-msgstr ""
-
-#: trust/views.py:134
-msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
-msgstr ""
-
-#: trust/views.py:137
-msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
-msgstr ""
-
-#: trust/views.py:143
+#: views.py:114 views.py:126
 msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 0원을 보낸다면 (당신은 0원 x 3 = 0원을 받을 것입니"
 "다.)"
 
-#: trust/views.py:146
-msgid ""
-"If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)"
+#: views.py:120 views.py:123
+msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
 msgstr ""
-"만약 참가자 A가 당신에게 1,200원을 보낸다면 (당신은 1,200원 x 3 = 3,600원을 "
-"받게 됩니다)"
 
-#: trust/views.py:149
+#: views.py:132 views.py:135
+msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
+msgstr ""
+
+#: views.py:138
 msgid ""
 "If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 2,400원을 보낸다면 (당신은 2,400원 x 3 = 7,200원을 "
 "받게 됩니다)"
 
-#: trust/views.py:152
+#: views.py:144 views.py:147
+msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
+msgstr ""
+
+#: views.py:150
 msgid ""
 "If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 2,400원을 보낸다면 (당신은 3,600원 x 3 = 10,800원을 "
 "받게 됩니다)"
 
-#: trust/views.py:155
+#: views.py:156 views.py:159
+msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
+msgstr ""
+
+#: views.py:162
 msgid ""
 "If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 4,800원을 보낸다면 (당신은 4,800원 x 3 = 14,400원을 "
 "받게 됩니다)"
 
-#: trust/views.py:158
+#: views.py:168 views.py:171
+msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
+msgstr ""
+
+#: views.py:174
 msgid ""
 "If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 6,000원을 보낸다면 (당신은 6,000원 x 3 = 18,000원을 "
 "받게 됩니다)"
 
-#: trust/views.py:161
+#: views.py:180 views.py:183
+msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
+msgstr ""
+
+#: views.py:186
 msgid ""
 "If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 7,200원을 보낸다면 (당신은 7,200원 x 3 = 21,600원을 "
 "받게 됩니다)"
 
-#: trust/views.py:164
+#: views.py:192 views.py:195
+msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
+msgstr ""
+
+#: views.py:198
 msgid ""
 "If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 8,400원을 보낸다면 (당신은 8,400원 x 3 = 25,200원을 "
 "받게 됩니다)"
 
-#: trust/views.py:167
+#: views.py:204 views.py:207
+msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
+msgstr ""
+
+#: views.py:210
 msgid ""
 "If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 9,600원을 보낸다면 (당신은 9,600 x 3 = 28,800원을 받"
 "게 됩니다)"
 
-#: trust/views.py:170
+#: views.py:216 views.py:219
+msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
+msgstr ""
+
+#: views.py:222
 msgid ""
 "If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 "
 "Won)"
@@ -514,10 +517,21 @@ msgstr ""
 "만약 참가자 A가 당신에게 10,800원을 보낸다면 (당신은 10,800원 x 3 = 32,400원"
 "을 받게 됩니다)"
 
-#: trust/views.py:173
+#: views.py:228 views.py:231
+msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
+msgstr ""
+
+#: views.py:234
 msgid ""
 "If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 "
 "Won)"
 msgstr ""
 "만약 참가자 A가 당신에게 12,000원을 보낸다면 (당신은 12,000원 x 3 = 36,000원"
 "을 받게 됩니다)"
+
+#~ msgid ""
+#~ "If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 "
+#~ "Won)"
+#~ msgstr ""
+#~ "만약 참가자 A가 당신에게 1,200원을 보낸다면 (당신은 1,200원 x 3 = 3,600원"
+#~ "을 받게 됩니다)"

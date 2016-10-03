@@ -200,18 +200,33 @@ $(function(window, undefined) {
      */
     function randomizeTrialsSets(order) {
       var reordered = [],
-          order = order.split('');
+          order = order.split(''),
+          beginTrial = null,
+          midTrial = null;
 
       // First round is practice round. Leave it as is.
-      if (order[0] === 'A') reordered.push(order.shift());
+      if (order[0] === 'A') {
+        beginTrial = order.shift();
+      }
+
+      if (order[order.length-1] === 'F') {
+        midTrial = order.splice(order.indexOf('D'), 1)[0]
+      }
+
 
       // If remaining letters form an even set, we can simply randomize each pairs.
       // If it's an odd pair, kick out the tail round, shuffle, then add it back.
-      if (order.length % 2 === 0) {
-        reordered = reordered.concat(shuffleTrialPairs(order));
+      reordered = reordered.concat(shuffleTrialPairs(order));
+      if (midTrial) {
+        if (reordered[1] === 'B' || reordered[1] === 'C') {
+          reordered.unshift(beginTrial)
+          reordered.splice(3, 0, midTrial)
+        } else {
+          reordered.unshift(midTrial)
+          reordered.splice(3, 0, beginTrial)
+        }
       } else {
-        var tail = order.pop();
-        reordered = reordered.concat(shuffleTrialPairs(order).push(tail));
+        reordered.unshift(beginTrial)
       }
 
       return reordered;

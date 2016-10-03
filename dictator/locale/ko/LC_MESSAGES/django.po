@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-12 17:06+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
 "PO-Revision-Date: 2016-09-14 17:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -28,23 +28,22 @@ msgid ""
 "asked to sort a number of words and be timed while doing so."
 msgstr ""
 
-#: dictator/templates/dictator/EndGame.html:11
-#: dictator/templates/dictator/Offer.html:13
-#: dictator/templates/dictator/Simulation.html:56
+#: templates/dictator/EndGame.html:11 templates/dictator/Offer.html:13
+#: templates/dictator/Simulation.html:56
 msgid "Next"
 msgstr "다음"
 
-#: dictator/templates/dictator/Instructions.html:8
+#: templates/dictator/Instructions.html:8
 msgid "Task Three: Introduction"
 msgstr "과제 3: 안내"
 
-#: dictator/templates/dictator/Instructions.html:10
+#: templates/dictator/Instructions.html:10
 msgid ""
 "This last task involves <strong>two participants</strong> – Participant A "
 "and Participant B."
 msgstr "마지막 과제는 참가자 A와 B, 두 사람이 함께 합니다. "
 
-#: dictator/templates/dictator/Instructions.html:11
+#: templates/dictator/Instructions.html:11
 msgid ""
 "Remember, the other participant is different from the ones you interacted "
 "with in the previous two tasks."
@@ -52,11 +51,13 @@ msgstr ""
 "이번 과제에서 당신과 함꼐 하는 참가자는, 이전 두 과제에서 함께 했던 참가자와"
 "는 다른 사람임을 유념해 주십시오. "
 
-#: dictator/templates/dictator/Instructions.html:12
+#: templates/dictator/Instructions.html:12
 msgid "These are the rules:"
 msgstr "규칙은 다음과 같습니다:"
 
 #: templates/dictator/Instructions.html:14
+#, fuzzy, python-format
+#| msgid "At the beginning, Participant A receives %(amount)s."
 msgid "At the beginning, Participant A receives %(amount)s."
 msgstr "당신은 ~ 퍼센트(금액)을 보유하고 있습니다."
 
@@ -65,6 +66,7 @@ msgid "Participant B does not receive any money — he or she has 0."
 msgstr ""
 
 #: templates/dictator/Instructions.html:16
+#, python-format
 msgid ""
 "Participant A must now decide if he or she wants to transfer any of his or "
 "her %(amount)s to Participant B."
@@ -76,13 +78,13 @@ msgid ""
 "transfer any amount back to Participant A."
 msgstr ""
 
-#: dictator/templates/dictator/Instructions.html:19
+#: templates/dictator/Instructions.html:19
 msgid ""
 "Your role (Participant A or Participant B) is revealed to you at the "
 "beginning of the task."
 msgstr "당신의 역할(참가자 A 또는 참가자 B)은 과제를 시작 시에 제시됩니다. "
 
-#: dictator/templates/dictator/Instructions.html:20
+#: templates/dictator/Instructions.html:20
 msgid ""
 "Because this task is simple, there will be no simulator to test out "
 "different choices."
@@ -90,11 +92,11 @@ msgstr ""
 "이 과제는 비교적 간단하기 때문에, 여러 선택지들을 연습해 볼 수 있는 시뮬레이"
 "션은 따로 없습니다. "
 
-#: dictator/templates/dictator/Offer.html:6
+#: templates/dictator/Offer.html:6
 msgid "Task Three: Real Decision"
 msgstr "과제 3: 실제 결정 "
 
-#: dictator/templates/dictator/Offer.html:7
+#: templates/dictator/Offer.html:7
 msgid ""
 "This is the real third task. Once you have made your decision and clicked "
 "the “Next” button, you cannot return to this screen."
@@ -102,24 +104,24 @@ msgstr ""
 "이것이 세번째 실제 과제 입니다. 일단 결정을 내리고 \"다음\" 버튼을 누른 후에"
 "는, 다시 이 화면으로 돌아올 수 없습니다."
 
-#: dictator/templates/dictator/Offer.html:8
+#: templates/dictator/Offer.html:8
 msgid "You were selected to be in the role of <strong>Participant A</strong>."
 msgstr "당신의 역할은 참가자 A 입니다."
 
-#: dictator/templates/dictator/Offer.html:9
+#: templates/dictator/Offer.html:9
 #, python-format
 msgid "You have %(amount)s in your possession."
 msgstr "당신은 ~ 퍼센트 %(amount)s 을 보유하고 있습니다."
 
-#: dictator/templates/dictator/Offer.html:9
+#: templates/dictator/Offer.html:9
 msgid "How much do you want to transfer to Participant B?"
 msgstr "당신은 참가자 B에게 얼마를 보내시겠습니까? "
 
-#: dictator/templates/dictator/Simulation.html:6
+#: templates/dictator/Simulation.html:6
 msgid "Task Three: Simulation"
 msgstr "과제 3: 시뮬레이션"
 
-#: dictator/templates/dictator/Simulation.html:8
+#: templates/dictator/Simulation.html:8
 msgid ""
 "If you wish, you can use this test screen to play with different choices of "
 "Participant A, to understand the task better."
@@ -127,30 +129,30 @@ msgstr ""
 "과제에 대한 이해를 높이기 위하여, 참가자 A의 선택지에 대한 본 테스트 화면을 "
 "이용하셔도 좋습니다."
 
-#: dictator/templates/dictator/Simulation.html:9
+#: templates/dictator/Simulation.html:9
 msgid "Whenever you are ready to proceed to the real task, click next."
 msgstr "실제 과제를 수행할 준비가 되셨다면, '다음' 버튼을 눌러주십시오. "
 
-#: dictator/templates/dictator/Simulation.html:45
+#: templates/dictator/Simulation.html:45
 msgid "€"
 msgstr "₩"
 
-#: dictator/templates/dictator/Simulation.html:53
+#: templates/dictator/Simulation.html:53
 msgid "Amount sent by Participant A"
 msgstr "참가자 A가 보낸 금액"
 
-#: dictator/templates/dictator/Simulation.html:55
+#: templates/dictator/Simulation.html:55
 msgid "Send"
 msgstr "보내기"
 
-#: dictator/views.py:51 dictator/views.py:68
+#: views.py:51 views.py:68
 msgid "10 euros"
 msgstr ""
 
-#: dictator/views.py:52 dictator/views.py:69
+#: views.py:52 views.py:69
 msgid "$10"
 msgstr ""
 
-#: dictator/views.py:53 dictator/views.py:70
+#: views.py:53 views.py:70
 msgid "12.000 Won"
 msgstr "12,000원"

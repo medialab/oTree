@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-23 17:07+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
 "PO-Revision-Date: 2016-09-11 23:29+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -425,7 +425,7 @@ msgstr ""
 msgid "Did you or your household save any money in the previous year?"
 msgstr ""
 
-#: models.py:820 templates/survey_i18n/Survey10G.bk.html:23
+#: models.py:820
 msgid "How important would you say religion is in your own life?"
 msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
 
@@ -589,7 +589,6 @@ msgstr ""
 #: templates/survey_i18n/Survey10D.html:32
 #: templates/survey_i18n/Survey10E.html:17
 #: templates/survey_i18n/Survey10F.html:27
-#: templates/survey_i18n/Survey10G.bk.html:65
 #: templates/survey_i18n/Survey10G.html:49
 #: templates/survey_i18n/Survey11.html:25
 #: templates/survey_i18n/Survey12.html:19
@@ -889,95 +888,38 @@ msgstr ""
 msgid "euros or more per year"
 msgstr ""
 
-#: templates/survey_i18n/Survey10G.bk.html:26
-msgid " 0 - Not important at all"
-msgstr "0 - 전혀 중요하지 않다"
-
-#: templates/survey_i18n/Survey10G.bk.html:27
-msgid " 1"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:28
-msgid " 2"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:29
-msgid " 3"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:30
-msgid " 4"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:31
-msgid " 5"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:32
-msgid " 6"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:33
-msgid " 7"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:34
-msgid " 8"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:35
-msgid " 9"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.bk.html:36
-msgid " 10 - Very important"
-msgstr "10 - 매우 중요하다"
-
-#: templates/survey_i18n/Survey10G.bk.html:37
-msgid " Don't know"
-msgstr "잘 모르겠다"
-
-#: templates/survey_i18n/Survey10G.bk.html:43
 #: templates/survey_i18n/Survey10G.html:26
 msgid "Are you:"
 msgstr "당신의 종교를 선택해 주십시오."
 
-#: templates/survey_i18n/Survey10G.bk.html:46
 #: templates/survey_i18n/Survey10G.html:29
 msgid " Buddhist"
 msgstr "불교"
 
-#: templates/survey_i18n/Survey10G.bk.html:47
 #: templates/survey_i18n/Survey10G.html:30
 msgid " Protestant"
 msgstr "개신교"
 
-#: templates/survey_i18n/Survey10G.bk.html:48
 #: templates/survey_i18n/Survey10G.html:31
 msgid " Catholic"
 msgstr "카톨릭"
 
-#: templates/survey_i18n/Survey10G.bk.html:49
 #: templates/survey_i18n/Survey10G.html:32
 msgid " Confucian"
 msgstr "유교"
 
-#: templates/survey_i18n/Survey10G.bk.html:50
 #: templates/survey_i18n/Survey10G.html:33
 msgid " Won Buddhist"
 msgstr "원불교"
 
-#: templates/survey_i18n/Survey10G.bk.html:51
 #: templates/survey_i18n/Survey10G.html:34
 msgid " Other"
 msgstr "그 외"
 
-#: templates/survey_i18n/Survey10G.bk.html:52
 #: templates/survey_i18n/Survey10G.html:35
 msgid " Not religious"
 msgstr "무교"
 
-#: templates/survey_i18n/Survey10G.bk.html:53
 #: templates/survey_i18n/Survey10G.html:36
 msgid " I don’t know"
 msgstr "잘 모르겠다"
@@ -1201,3 +1143,12 @@ msgstr "4년제 대학 졸업"
 #: views.py:260 views.py:269
 msgid "Post-graduate degree"
 msgstr "대학원 졸업"
+
+#~ msgid " 0 - Not important at all"
+#~ msgstr "0 - 전혀 중요하지 않다"
+
+#~ msgid " 10 - Very important"
+#~ msgstr "10 - 매우 중요하다"
+
+#~ msgid " Don't know"
+#~ msgstr "잘 모르겠다"

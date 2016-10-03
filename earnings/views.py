@@ -22,15 +22,24 @@ class Display(Page):
     form_model = models.Player
     form_fields = ['donation']
 
+    def cleanup_money(self, str_amount):
+        return str_amount.replace(
+            u'\xa0', u' '
+        ).strip().strip('€').strip('$').strip('₩').strip().replace(',', '.')
+
     def get_dictator_player_a_transfer(self):
         if self.player.dictator_player_a_transfer:
-            return float(self.player.dictator_player_a_transfer)
+            return float(
+                self.cleanup_money(self.player.dictator_player_a_transfer)
+            )
         return 0
 
     def get_dictator_base_money(self):
         if self.player.dictator_base_money:
             if type(self.player.dictator_base_money) is str:
-                return float(self.player.dictator_base_money.strip())
+                return float(
+                    self.cleanup_money(self.player.dictator_base_money)
+                )
             return float(self.player.dictator_base_money)
         return 0
 
@@ -53,7 +62,7 @@ class Display(Page):
             'pg_amount': (self.player.pg_joint_sum or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
             'pg_multiplied_amount': round(
                 float(Public_goods_const.efficiency_factor) *
-                float((self.player.pg_joint_sum or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')), 1
+                float(str(self.player.pg_joint_sum or '0').strip('€').strip('$').strip('₩').strip().replace(',', '.')), 1
             ),
             'dictator_player_a_transfer': (
                 (self.player.dictator_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
