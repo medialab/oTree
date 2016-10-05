@@ -1,0 +1,22 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+{% load i18n %}
+
+{% block content %}
+<script type="text/javascript">
+  $(function () {
+    function extractLang(lang) {
+      return lang.slice(0, 2);
+    }
+
+    var fragment = '{{label}}'.split('|').filter(function (f) {
+      if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
+        return f;
+      }
+    }).join('&');
+
+    var url = '{{redirect}}' + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
+    window.location.href = url;
+  });
+</script>
+{% endblock %}

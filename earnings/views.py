@@ -84,4 +84,22 @@ class Display(Page):
         }
 
 
-page_sequence = [Calculate, Display]
+class Redirect(Page):
+    """Redirect page."""
+
+    form_model = models.Player
+
+    def vars_for_template(self):
+        """Variable in template."""
+        return {
+            'redirect': (
+                'redirects' in self.session.vars and
+                self.session.vars['redirects']['complete'] or
+                'http://sciences-po.fr'
+            ),
+            'label': self.participant.label,
+            'language_code': self.session.vars['language_code'],
+        }
+
+
+page_sequence = [Calculate, Display, Redirect]
