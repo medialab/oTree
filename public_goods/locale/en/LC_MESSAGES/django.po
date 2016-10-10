@@ -3,19 +3,18 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2016-10-02 14:54+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Decision"
@@ -59,18 +58,25 @@ msgid ""
 "Now imagine that this time, you find out how much money the other three "
 "members of your group are transferring into the joint pot."
 msgstr ""
+"Now imagine that this time, you find out how much money the other three "
+"members of your group are transferring into the joint project."
 
 #: templates/public_goods/ContributeBack.html:10
 msgid ""
 "All of your choices below can impact how much money you will receive at the "
 "end of the study."
 msgstr ""
+"All of your choices below can impact how much money you will receive at the "
+"end of the study. <br>Please indicate now how much you would like to invest "
+"in the joint project. "
 
 #: templates/public_goods/DecisionInstructions.html:6
 msgid ""
 "On the next page, you decide how much of your {{amount}} you want to "
 "transfer to the common project."
 msgstr ""
+"On the next page, you decide how much of your {{amount}} you want to "
+"transfer to the joint project."
 
 #: templates/public_goods/DecisionInstructions.html:7
 msgid "You will be asked to do it in two different situations:"
@@ -81,6 +87,8 @@ msgid ""
 "In the first step, you simply decide how much of your {{amount}} you want to "
 "put into the common project."
 msgstr ""
+"In the first step, you simply decide how much of your {{amount}} you want to "
+"put into the joint project."
 
 #: templates/public_goods/DecisionInstructions.html:9
 msgid ""
