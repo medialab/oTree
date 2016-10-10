@@ -7,6 +7,7 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
+from django.utils.translation import get_language
 # </standard imports>
 
 
@@ -40,6 +41,8 @@ links = {
 
 
 keywords = ("Dictator Game", "Fairness", "Homo Economicus")
+
+allocated_amount = get_language()[:2] == 'fr' and 10 or 12000
 
 
 class Constants(BaseConstants):
@@ -84,7 +87,7 @@ class Player(BasePlayer):
 
     given = models.CurrencyField(
         doc="""Amount dictator decided to given""",
-        min=0, max=Constants.allocated_amount,
+        min=0, max=allocated_amount,
         verbose_name=''
     )
 

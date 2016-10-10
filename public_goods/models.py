@@ -7,6 +7,7 @@ from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
+from django.utils.translation import get_language
 # </standard imports>
 
 doc = """
@@ -29,6 +30,8 @@ links = {
 
 
 keywords = ("Public Goods",)
+
+allocated_amount = get_language()[:2] == 'fr' and 10 or 12000
 
 
 class Constants(BaseConstants):
@@ -79,52 +82,52 @@ class Player(BasePlayer):
     total_time = models.CharField(blank=True, null=True)
 
     contribution = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
         doc="""The amount contributed by the player""",
     )
 
     question = models.CurrencyField()
 
     contribution_back_0 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_1 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_2 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_3 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_4 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_5 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_6 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_7 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_8 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_9 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
 
     contribution_back_10 = models.CurrencyField(
-        min=0, max=Constants.endowment,
+        min=0, max=allocated_amount,
     )
