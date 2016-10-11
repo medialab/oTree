@@ -4,6 +4,7 @@
 # <standard imports>
 from __future__ import division
 from otree.db import models
+from os import environ
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 # </standard imports>
@@ -71,7 +72,7 @@ class Group(BaseGroup):
         return {
             'data': self.session.vars['data'],
             'order': self.session.vars['order'],
-            'language_code': self.session.config['language_code'],
+            'language_code': environ.get('OTREE_LANGUAGE_CODE', self.session.config['language_code']),
             'oecd_iat': self.session.vars['oecd_iat']
         }
 
