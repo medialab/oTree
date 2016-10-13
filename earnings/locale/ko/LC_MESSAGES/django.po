@@ -7,138 +7,146 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 14:45+0200\n"
+"POT-Creation-Date: 2016-09-06 16:42+0200\n"
 "PO-Revision-Date: 2016-09-11 22:59+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "X-Generator: Poedit 1.8.9\n"
 
-#: templates/earnings/Calculate.html:7
+#: earnings/templates/earnings/Calculate.html:7
 msgid "next"
 msgstr "다음"
 
-#: templates/earnings/Display.html:15 templates/earnings/Earnings.html:7
+#: earnings/templates/earnings/Display.html:9
+#: earnings/templates/earnings/Earnings.html:7
 msgid "Thank you very much for your participation in this study!"
 msgstr "연구에 참여해 주셔서 대단히 감사드립니다!"
 
-#: templates/earnings/Display.html:16
+#: earnings/templates/earnings/Display.html:10
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as"
 msgstr ""
 "당신과 함께 과제를 수행할 참가자들이 결정된 후, 당신이 획득하시는 금액은 "
 
-#: templates/earnings/Display.html:19 templates/earnings/Display.html.py:27
+#: earnings/templates/earnings/Display.html:10
+#: earnings/templates/earnings/Display.html:27
+msgid "euros."
+msgstr "~ 입니다."
+
+#: earnings/templates/earnings/Display.html:13
+#: earnings/templates/earnings/Display.html:21
 msgid ""
 "You were selected to receive your reward based on your earnings in Task One."
 msgstr "당신은 과제 1에서 획득한 금액을 받게 되셨습니다."
 
-#: templates/earnings/Display.html:20
+#: earnings/templates/earnings/Display.html:14
 msgid "As Player A, you decided to transfer"
 msgstr "참가자 A로서 당신은"
 
-#: templates/earnings/Display.html:21
+#: earnings/templates/earnings/Display.html:15
 msgid "euros to player B."
 msgstr "~ 원을 참가자 B에게 보내기로 결정하셨습니다."
 
-#: templates/earnings/Display.html:22
+#: earnings/templates/earnings/Display.html:16
 msgid "Following, player B returned"
 msgstr "이후, 참가자 B는"
 
-#: templates/earnings/Display.html:23
+#: earnings/templates/earnings/Display.html:17
 msgid "to you."
 msgstr "~ 를 당신에게 다시 보냈습니다."
 
-#: templates/earnings/Display.html:24 templates/earnings/Display.html.py:32
+#: earnings/templates/earnings/Display.html:18
+#: earnings/templates/earnings/Display.html:26
 msgid "Therefore, your total payoff for this task is"
 msgstr "따라서 동 과제에서 당신이 획득하신 총 금액은  ~ 입니다."
 
-#: templates/earnings/Display.html:28
+#: earnings/templates/earnings/Display.html:22
 msgid "As Player B, you received"
 msgstr "참가자 B로서 당신은"
 
-#: templates/earnings/Display.html:29
+#: earnings/templates/earnings/Display.html:23
 msgid "euros from player A."
 msgstr "참가자 A로부터 ~원을 받으셨습니다."
 
-#: templates/earnings/Display.html:30
+#: earnings/templates/earnings/Display.html:24
 msgid "You decided to transfer"
 msgstr "당신은"
 
-#: templates/earnings/Display.html:31
+#: earnings/templates/earnings/Display.html:25
 msgid "euros back to player A."
 msgstr "참가자 A에게 ~ 원을 다시 보내기로 결정하셨습니다."
 
-#: templates/earnings/Display.html:33
-msgid "euros."
-msgstr "~ 입니다."
-
-#: templates/earnings/Display.html:36
+#: earnings/templates/earnings/Display.html:30
 msgid ""
 "You were selected to receive your reward based on your earnings in Task Two."
 msgstr "당신은 과제 2에서 획득한 금액을 받게 되셨습니다."
 
-#: templates/earnings/Display.html:37
+#: earnings/templates/earnings/Display.html:31
 msgid "In this task, you invested"
 msgstr "이 과제에서 당신은"
 
-#: templates/earnings/Display.html:38
+#: earnings/templates/earnings/Display.html:32
 msgid "into the joint project. The contributions of the other players were:"
 msgstr "~ 를 공동 과제에 투자하셨습니다. 다른 참가자의 투자금액은 "
 
-#: templates/earnings/Display.html:41 templates/earnings/Display.html.py:42
-#: templates/earnings/Display.html:43 templates/earnings/Display.html.py:61
+#: earnings/templates/earnings/Display.html:35
+#: earnings/templates/earnings/Display.html:36
+#: earnings/templates/earnings/Display.html:37
+#: earnings/templates/earnings/Display.html:55
 msgid "euros"
 msgstr "~ 원입니다."
 
-#: templates/earnings/Display.html:46
+#: earnings/templates/earnings/Display.html:40
 msgid "Collectively, you invested"
 msgstr "따라서 당신은 총 ~ 을 투자하셨습니다."
 
-#: templates/earnings/Display.html:47
+#: earnings/templates/earnings/Display.html:41
 msgid ""
 ". Your earnings from the joint project after the multiplication factor are"
 msgstr "이 공동 과제에서 당신이 획득하신 금액은 배수를 감안하여, ~입니다."
 
-#: templates/earnings/Display.html:48 templates/earnings/Display.html.py:55
-#: templates/earnings/Display.html:61
+#: earnings/templates/earnings/Display.html:42
+#: earnings/templates/earnings/Display.html:49
+#: earnings/templates/earnings/Display.html:55
 msgid "In total, your payoff for this task is"
 msgstr "동 과제에서 당신이 획득하신 금액은 총 ~입니다."
 
-#: templates/earnings/Display.html:51 templates/earnings/Display.html.py:58
+#: earnings/templates/earnings/Display.html:45
+#: earnings/templates/earnings/Display.html:52
 msgid ""
 "You were selected to receive your reward based on your earnings in Task "
 "Three."
 msgstr "당신은 과제 3에서 획득한 금액을 받게 되셨습니다."
 
-#: templates/earnings/Display.html:52
+#: earnings/templates/earnings/Display.html:46
 msgid "In this task, you decided to transfer"
 msgstr "동 과제에서 당신은"
 
-#: templates/earnings/Display.html:53
+#: earnings/templates/earnings/Display.html:47
 msgid "to player B"
 msgstr "~ 를 참가자 B에게 보내기로 결정하셨습니다."
 
-#: templates/earnings/Display.html:54
+#: earnings/templates/earnings/Display.html:48
 msgid "Your remaining endowment after the transfer is"
 msgstr "돈을 보낸 후 당신의 보유 금액은 ~ 입니다."
 
-#: templates/earnings/Display.html:59
+#: earnings/templates/earnings/Display.html:53
 msgid "In this task, you were selected to be Player B"
 msgstr "동 과제에서 당신은 참가자 B로 선정되셨습니다."
 
-#: templates/earnings/Display.html:60
+#: earnings/templates/earnings/Display.html:54
 msgid ""
 "In this task, the Player A you were matched with decided to transfer you "
 msgstr ""
 "동 과제에서 당신과 함께 과제를 수행한 참가자 A는 당신에게 ~를 보내기로 결정했"
 "습니다."
 
-#: templates/earnings/Display.html:65
+#: earnings/templates/earnings/Display.html:59
 msgid ""
 "Out of your earnings, you have the option to donate an amount of your choice "
 "to UNICEF, who work with children and mothers in developing countries."
@@ -146,7 +154,7 @@ msgstr ""
 "당신은 획득하신 금액의 일부를 유니세프에 기부할 수 있습니다. 유니세프는 개발"
 "도상국에서 아동과 양육자를 위해 일하는 단체입니다."
 
-#: templates/earnings/Display.html:66
+#: earnings/templates/earnings/Display.html:60
 msgid ""
 "You can find further information about their work here. Please enter the "
 "amount you wish to donate to UNICEF:"
@@ -154,11 +162,11 @@ msgstr ""
 "유니세프의 활동에 관해서 더 자세한 사항은 여기서 보실 수 있습니다. 당신이 기"
 "부하실 금액을 입력해 주십시오."
 
-#: templates/earnings/Display.html:70
+#: earnings/templates/earnings/Display.html:64
 msgid "(Should you not wish to donate anything at this point, please enter 0)."
 msgstr "(만약 전혀 기부하시고 싶지 않으시다면, 0을 입력해 주십시오.)"
 
-#: templates/earnings/Display.html:71
+#: earnings/templates/earnings/Display.html:65
 msgid ""
 "Once again, thank you very much for participating. You will now be "
 "redirected in order to collect your reward."
@@ -166,25 +174,25 @@ msgstr ""
 "연구에 참여해 주셔서 다시 한 번 감사드립니다. 획득하신 금액을 수령하실 수 있"
 "도록 안내해 드리겠습니다."
 
-#: templates/earnings/Display.html:73
+#: earnings/templates/earnings/Display.html:67
 msgid "Finish study"
 msgstr "연구 종료"
 
-#: templates/earnings/Earnings.html:8
+#: earnings/templates/earnings/Earnings.html:8
 msgid "Your survey responses have been correctly recorded. "
 msgstr "답변이 올바르게 저장되었습니다."
 
-#: templates/earnings/Earnings.html:10
+#: earnings/templates/earnings/Earnings.html:10
 msgid ""
 "After being matched with the other players, your earnings have been "
 "calculated as "
 msgstr ""
 "당신과 함께 과제를 수행할 참가자들이 결정된 후, 당신이 획득하시는 금액은 "
 
-#: templates/earnings/Earnings.html:11
+#: earnings/templates/earnings/Earnings.html:11
 msgid "This money will be added to your HIT reward as a bonus."
 msgstr "동 금액은 보너스로 당신의 HIT 계정에 추가됩니다."
 
-#: templates/earnings/Earnings.html:13
+#: earnings/templates/earnings/Earnings.html:13
 msgid "Once again, thank you very much for participating."
 msgstr "연구에 참여해 주셔서 다시 한 번 감사드립니다."
