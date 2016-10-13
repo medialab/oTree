@@ -3,7 +3,7 @@
 
 from ._builtin import Page
 from . import models
-from .models import Constants
+from .models import amount_allocated
 from django.utils.translation import ugettext_lazy as _
 
 
@@ -41,7 +41,7 @@ class Introduction(Page):
 
     def vars_for_template(self):
         """Local variables for the template."""
-        return {'amount_allocated': Constants.amount_allocated}
+        return {'amount_allocated': amount_allocated}
 
 
 class Simulation(Page):
@@ -74,7 +74,7 @@ class Send(Page):
         }
 
         return {
-            'amount_allocated': Constants.amount_allocated,
+            'amount_allocated': amount_allocated,
             'sent_amount_label': sent_amount_label[self.session.vars['lang']]
         }
 
@@ -123,7 +123,7 @@ class SendBack(Page):
                 u'If Participant A sends you 1€ (you receive 1€ × 3 = 3€)'
             ),
             'ko': _(
-                u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
+                u'If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)'
             ),
         }
 

@@ -39,7 +39,7 @@ class Simulation(Page):
 
     def vars_for_template(self):
         max = {'fr': 10, 'en': 10, 'ko': 12000}
-        step = {'fr': 1, 'en': 1, 'ko': 1000}
+        step = {'fr': 1, 'en': 1, 'ko': 1}
         return {
             'max': max[self.session.vars['lang']],
             'step': step[self.session.vars['lang']]

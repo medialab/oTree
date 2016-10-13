@@ -553,6 +553,7 @@ $(function(window, undefined) {
      */
     return {
       begin: function(data, order, lang) {
+        console.log('lang', lang)
         return loadBlocks(data, order, lang);
       }
     }

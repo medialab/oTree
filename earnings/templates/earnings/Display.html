@@ -97,7 +97,15 @@ label {
       }).join('&');
 
       var url = '{{redirect}}' + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
-      window.location.href = url;
+      var csrf = $('input[name="csrfmiddlewaretoken"]').val();
+      var postTo = $('input[name="origin_url"]').val();
+      var donation = $('input[name="donation"]').val();
+
+      donation = '' ? 0 : donation;
+
+      $.post(postTo, {csrfmiddlewaretoken: csrf, origin_url: postTo, donation: donation,}, function (data) {
+        window.location.href = url;
+      });
     });
   });
 </script>
