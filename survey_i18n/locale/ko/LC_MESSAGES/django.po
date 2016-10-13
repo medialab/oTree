@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: 2016-09-11 23:29+0200\n"
+"PO-Revision-Date: 2016-10-13 16:19+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -430,16 +430,12 @@ msgid "How important would you say religion is in your own life?"
 msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
 
 #: models.py:822
-#, fuzzy
-#| msgid " 0 - Not important at all"
 msgid "0 - Not important at all"
-msgstr "0 - 전혀 중요하지 않다"
+msgstr "0 - 전혀 만족스럽지 않다 "
 
 #: models.py:832
-#, fuzzy
-#| msgid " 10 - Very important"
 msgid "10 - Very important"
-msgstr "10 - 매우 중요하다"
+msgstr "10 - 매우 그럴 의향이 있다"
 
 #: models.py:844
 msgid ""
@@ -960,16 +956,11 @@ msgid ""
 msgstr ""
 
 #: views.py:56
-#, fuzzy
-#| msgid ""
-#| "Imagine the following situation: you won 1.250.000 Won in a lottery. "
-#| "Considering your current situation, how much would you donate to a good "
-#| "cause?"
 msgid ""
 "Imagine the following situation: you won 1000 Won in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
 msgstr ""
-"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,250,000원을 획득하셨"
+"다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨"
 "습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
 #: views.py:64 views.py:311 views.py:341
