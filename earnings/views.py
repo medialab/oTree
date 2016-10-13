@@ -1,5 +1,6 @@
 """Models for Earnings."""
 # -*- coding: utf-8 -*-
+from os import environ
 from . import models
 from ._builtin import Page
 from public_goods.models import Constants as Public_goods_const
@@ -23,9 +24,22 @@ class Display(Page):
     form_fields = ['donation']
 
     def cleanup_money(self, str_amount):
-        return str_amount.replace(
+        m = str_amount.replace(
             u'\xa0', u' '
-        ).strip().strip('€').strip('$').strip('₩').strip().replace(',', '.')
+        ).strip().strip('€').strip('$').strip('₩').strip()
+
+        if environ.get(
+            'OTREE_LANGUAGE_CODE', self.session.config['language_code']
+        ) == 'ko-kr':
+            # For Korean, find commas before decimal part,
+            # and remove them.
+            m = m.replace(',', '')
+            print(m)
+            return m
+        else:
+            # For th rest (i.e. French) some commas might be used for decimal.
+            # Change them into expected dots.
+            return m.replace(',', '.')
 
     def get_dictator_player_a_transfer(self):
         if self.player.dictator_player_a_transfer:
@@ -50,25 +64,25 @@ class Display(Page):
             'role': self.player.calculation_from_role,
             'chosen_game': self.player.calculation_from_game,
             'trust_game_player_a_transfer': (
-                (self.player.trust_game_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
+                self.cleanup_money(self.player.trust_game_player_a_transfer or '')
             ),
             'trust_game_player_b_transfer': (
-                (self.player.trust_game_player_b_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
+                self.cleanup_money(self.player.trust_game_player_b_transfer or '')
             ),
-            'pg_player_a_transfer': (self.player.pg_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
-            'pg_player_b_transfer': (self.player.pg_player_b_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
-            'pg_player_c_transfer': (self.player.pg_player_c_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
-            'pg_player_d_transfer': (self.player.pg_player_d_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
-            'pg_amount': (self.player.pg_joint_sum or '').strip('€').strip('$').strip('₩').strip().replace(',', '.'),
+            'pg_player_a_transfer': self.cleanup_money(self.player.pg_player_a_transfer or ''),
+            'pg_player_b_transfer': self.cleanup_money(self.player.pg_player_b_transfer or ''),
+            'pg_player_c_transfer': self.cleanup_money(self.player.pg_player_c_transfer or ''),
+            'pg_player_d_transfer': self.cleanup_money(self.player.pg_player_d_transfer or ''),
+            'pg_amount': self.cleanup_money(self.player.pg_joint_sum or ''),
             'pg_multiplied_amount': round(
                 float(Public_goods_const.efficiency_factor) *
-                float(str(self.player.pg_joint_sum or '0').strip('€').strip('$').strip('₩').strip().replace(',', '.')), 1
+                float(str(self.cleanup_money(self.player.pg_joint_sum or '0')))
             ),
             'dictator_player_a_transfer': (
-                (self.player.dictator_player_a_transfer or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
+                self.cleanup_money(self.player.dictator_player_a_transfer or '')
             ),
             'dictator_player_a_remaining': (
-                (self.player.dictator_player_a_remaining or '').strip('€').strip('$').strip('₩').strip().replace(',', '.')
+                self.cleanup_money(self.player.dictator_player_a_remaining or '')
             ),
             'dictator_player_a_payoff': (
                 self.get_dictator_base_money() -
