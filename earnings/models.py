@@ -40,7 +40,12 @@ class Constants(BaseConstants):
     num_rounds = 1
 
     # List of games to pick from, from which the calculation will be based.
-    eligible_games = ['trust', 'dictator', 'public_goods']
+    eligible_games = ['dictator', 'public_goods']
+    # FIXME: Must find a way to use Trust in Korean.
+    if os.environ.get(
+        'OTREE_LANGUAGE_CODE', self.session.config['language_code']
+    ) != 'ko-kr':
+        eligible_games.append('trust')
 
     # Base money for all games.
     allocated_amount = Currency(10)
