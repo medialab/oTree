@@ -88,7 +88,6 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.choose_game(Constants.eligible_games)
-        chosen_game = 'public_goods'
 
         # Get payoff from game.
         payoff = None
