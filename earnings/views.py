@@ -27,7 +27,7 @@ class Display(Page):
     def str_to_money(self, s):
         """Transform string representing money into float numbers."""
         return parse_decimal(
-            s.strip('€').strip('$').strip('₩').strip(),
+            (s or '0').strip('€').strip('$').strip('₩').strip(),
             locale=environ.get(
                 'OTREE_LANGUAGE_CODE', self.session.config['language_code']
             )[:2]
@@ -40,10 +40,18 @@ class Display(Page):
             'role': self.player.calculation_from_role,
             'chosen_game': self.player.calculation_from_game,
             'trust_game_player_a_transfer': (
-                Currency(self.player.trust_game_player_a_transfer or 0.0)
+                Currency(
+                    self.str_to_money(
+                        self.player.trust_game_player_a_transfer or 0.0
+                    )
+                )
             ),
             'trust_game_player_b_transfer': (
-                Currency(self.player.trust_game_player_b_transfer or 0.0)
+                Currency(
+                    self.str_to_money(
+                        self.player.trust_game_player_b_transfer or 0.0
+                    )
+                )
             ),
             'pg_player_a_transfer': Currency(
                 self.str_to_money(self.player.pg_player_a_transfer) or 0.0
@@ -65,14 +73,21 @@ class Display(Page):
                 Currency(self.str_to_money(self.player.pg_joint_sum) or 0.0)
             ),
             'dictator_player_a_transfer': (
-                Currency(self.player.dictator_player_a_transfer or 0.0)
+                Currency(self.str_to_money(
+                    self.player.dictator_player_a_transfer
+                ) or 0.0)
             ),
             'dictator_player_a_remaining': (
-                Currency(self.player.dictator_player_a_remaining or 0.0)
+                Currency(self.str_to_money(
+                    self.player.dictator_player_a_remaining
+                ) or 0.0)
             ),
             'dictator_player_a_payoff': (
-                Currency(self.player.dictator_base_money or 0.0) -
-                Currency(self.player.dictator_player_a_transfer or 0.0)
+                Currency(self.str_to_money(
+                    self.player.dictator_base_money or 0.0)
+                ) - Currency(self.str_to_money(
+                    self.player.dictator_player_a_transfer
+                ) or 0.0)
             ),
             'redirect': (
                 'redirects' in self.session.vars and
