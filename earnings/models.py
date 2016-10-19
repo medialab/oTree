@@ -88,7 +88,7 @@ class Group(BaseGroup):
         """
         # Choose (and save reference in DB) a game.
         chosen_game = self.choose_game(Constants.eligible_games)
-        player.calculation_from_game = chosen_game
+        chosen_game = 'public_goods'
 
         # Get payoff from game.
         payoff = None
@@ -385,6 +385,11 @@ class Group(BaseGroup):
             [p.contribution for p in players] + [player.contribution] +
             [p['contribution'] for p in fallback_players]
         )
+        print('xxxxx')
+        print('[p.contribution for p in players]', [p.contribution for p in players])
+        print('[player.contribution]', [player.contribution])
+        print('[p["contribution"] for p in fallback_players', [p['contribution'] for p in fallback_players])
+        print('joint_sum',joint_sum)
         matched_ids = ','.join([str(p.id) for p in players])
 
         return [sum(joint_sum), matched_ids, joint_sum]
