@@ -42,7 +42,7 @@ links = {
 
 keywords = ("Dictator Game", "Fairness", "Homo Economicus")
 
-allocated_amount = get_language()[:2] == 'fr' and 10 or 12000
+allocated_amount = (get_language()[:2] == 'ko') and 12000 or 10
 
 
 class Constants(BaseConstants):
@@ -95,5 +95,3 @@ class Player(BasePlayer):
         verbose_name="Participant 1's payoff would be")
     training_participant2_payoff = models.CurrencyField(
         verbose_name="Participant 2's payoff would be")
-
-    total_time = models.CharField(blank=True, null=True)

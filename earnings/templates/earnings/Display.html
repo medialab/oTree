@@ -4,7 +4,6 @@
 
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
-<input id="timer" type="hidden" name="total_time" value="" />
 <style>
 label {
   visibility: hidden;
@@ -38,9 +37,9 @@ label {
   {% trans "into the joint project. The contributions of the other players were:" %}</p>
 
   <ul>
-    <li>{{pg_player_b_transfer}} {% trans "euros" %}</li>
-    <li>{{pg_player_c_transfer}} {% trans "euros" %}</li>
-    <li>{{pg_player_d_transfer}} {% trans "euros" %}</li>
+    <li>{{pg_player_b_transfer}}</li>
+    <li>{{pg_player_c_transfer}}</li>
+    <li>{{pg_player_d_transfer}}</li>
   </ul>
 
   <p>{% trans "Collectively, you invested" %} {{pg_amount}}
@@ -77,15 +76,11 @@ label {
 
 <script type="text/javascript">
   $(function() {
-    var startTime = '{{start_time}}',
-        endTime = new Date(),
-        sec = moment(endTime).diff(startTime) / 1000;
+
 
     function extractLang(lang) {
       return lang.slice(0, 2);
     }
-
-    $('#timer').val(sec);
 
     $('button').click(function (e) {
       e.preventDefault();

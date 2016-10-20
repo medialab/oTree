@@ -20,7 +20,7 @@
 <script type="text/javascript">
   $(function() {
     var startTime = '{{start_time}}',
-        endTime = new Date(),
+        endTime = new Date().getTime(),
         sec = moment(endTime).diff(startTime) / 1000;
 
     $('#timer').val(sec);
@@ -31,6 +31,8 @@
       if ($input.val() === '') {
         $input.val('-');
       }
+
+      console.log(startTime, endTime, sec)
       $('form').submit();
     });
   });

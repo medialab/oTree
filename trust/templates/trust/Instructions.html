@@ -3,7 +3,6 @@
 {% load staticfiles otree_tags %}
 
 {% block instructions %}
-<input id="timer" type="hidden" name="total_time" value="">
 <h1 style="color:#357EBD">{% trans "Task One: Introduction" %}</h1>
 <hr/>
 <p>{% trans "In the first task, <strong>two people participate</strong>: Participant A and Participant B. As mentioned before, this other participant also lives in France." %}</p>
@@ -21,7 +20,4 @@
   <li>{% trans "Participant B, after receiving the transfer of Participant A, has to decide how much, if any, money he or she want to send back to Participant A." %}</li>
 </ul>
 <p>{% trans "Your role (A or B) will be revealed at the beginning of the task." %}</p>
-<script>
-$('#timer').val(new Date());
-</script>
 {% endblock %}

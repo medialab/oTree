@@ -19,7 +19,6 @@ class Survey01(Page):
 
     form_model = models.Player
     form_fields = [
-        'total_time',
         '_01_how_satisfied_are_you_with_life_as_a_whole',
         '_01_would_you_say_that_most_people_can_be_trusted',
         '_01_are_you_a_person_fully_prepared_to_take_risks'

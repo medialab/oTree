@@ -23,7 +23,8 @@ class ExperimentIntroduction(Page):
     Assumes this is the first test.
     """
 
-    pass
+    form_model = models.Player
+    form_fields = ['total_time']
 
 
 class GamesIntroduction(Page):
@@ -36,8 +37,6 @@ class Introduction(Page):
     """Page introducing the Trust game."""
 
     template_name = 'global/Introduction.html'
-    form_model = models.Player
-    form_fields = ['total_time']
 
     def vars_for_template(self):
         """Local variables for the template."""
@@ -279,12 +278,7 @@ class SendBack(Page):
 class EndGame(Page):
     """End of the game."""
 
-    form_model = models.Player
-    form_fields = ['total_time']
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {'start_time': self.player.total_time}
+    pass
 
 
 page_sequence = [

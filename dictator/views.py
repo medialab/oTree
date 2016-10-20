@@ -20,11 +20,6 @@ class EndGame(Page):
     """End game page."""
 
     form_model = models.Player
-    form_fields = ['total_time']
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {'start_time': self.player.total_time}
 
 
 class Simulation(Page):
@@ -44,7 +39,6 @@ class Introduction(Page):
 
     template_name = 'global/Introduction.html'
     form_model = models.Player
-    form_fields = ['total_time']
 
     def vars_for_template(self):
         amount = {

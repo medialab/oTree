@@ -1,11 +1,11 @@
-# -*- coding: utf-8 -*-
+# -*- coding: utf8 -*-
 #!/usr/bin/env python
 """Exporter for IAT results."""
 
 import sys
-import ast
 import csv
 import json
+
 
 
 # Each user ends up being 3 CSVs: <id>_meta, <id>_results, <id>_errors.
@@ -100,7 +100,6 @@ with open(file_to_parse, 'r') as f:
 
                     # Second batch of data (actual IAT results): isolate it.
                     data = line[line.find('"') + 1:line.rfind('"')]
-                    print(data[0:20])
                     # data = data.replace('u\'', '\'')
 
                     try:

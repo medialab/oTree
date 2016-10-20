@@ -20,19 +20,16 @@ class Introduction(Page):
 
     template_name = 'global/Introduction.html'
     form_model = models.Player
-    form_fields = ['total_time']
 
 
 class EndGame(Page):
     """End of game page."""
 
     form_model = models.Player
-    form_fields = ['total_time']
 
     def vars_for_template(self):
         """Make data available in template."""
         return {
-            'start_time': self.player.total_time,
             'normal_render': self.group.treatment()[
                 'oecd_iat'
             ] is True and 'hide' or '',

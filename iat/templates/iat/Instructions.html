@@ -35,11 +35,8 @@
 </div>
 
 <button class="btn btn-primary hidden-sm hidden-md hidden-lg">{% trans "Next" %}</button>
-<input id="timer" type="hidden" name="total_time" value="" />
 <script type="text/javascript">
   $(function() {
-    $('#timer').val(new Date());
-
     $(document).keyup(function (e) {
       e.preventDefault();
       if (e.keyCode === 32) {
