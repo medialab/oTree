@@ -15,6 +15,12 @@ from django.utils.translation import ugettext_lazy as _
 from django_countries.fields import CountryField
 
 
+doc = """
+An internationalized version of the survey, with varying questions depending
+on the locale, and some elements based on previous answers.
+"""
+
+
 class Constants(BaseConstants):
     """Constants for Survey."""
 
