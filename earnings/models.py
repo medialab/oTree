@@ -14,6 +14,7 @@ from public_goods import models as PublicGoodModels  # noqa
 from trust.models import Constants as TrustConsts
 from trust import models as TrustModels  # noqa
 from dictator import models as DictatorModels  # noqa
+from django.utils.translation import get_language
 
 doc = """
 This application calculates earnings for the Trustlab experiments,
@@ -162,8 +163,8 @@ class Group(BaseGroup):
                 else:
                     with_role = 'B'
                     given_by_player_a, matched_id = self.strat_trust_b(p)
-                    given_by_player_b = getattr(
-                        p, 'sent_back_amount_' + str(int(given_by_player_a))
+                    given_by_player_b = self.trust_sent_back(
+                        p, given_by_player_a
                     )
                     payoff = base_money + (
                         given_by_player_a * TrustConsts.multiplication_factor
@@ -384,14 +385,57 @@ class Group(BaseGroup):
             [p.contribution for p in players] + [player.contribution] +
             [p['contribution'] for p in fallback_players]
         )
-        print('xxxxx')
-        print('[p.contribution for p in players]', [p.contribution for p in players])
-        print('[player.contribution]', [player.contribution])
-        print('[p["contribution"] for p in fallback_players', [p['contribution'] for p in fallback_players])
-        print('joint_sum',joint_sum)
         matched_ids = ','.join([str(p.id) for p in players])
 
         return [sum(joint_sum), matched_ids, joint_sum]
+
+    def trust_sent_back(self, player, given_by_player_a):
+        """
+        Return sent_back_amount from Trust game.
+
+        Works by crafting the name of a method in Trust Player,
+        based on which method returns the amount matching
+        the endowment of player A.
+        """
+        # String representation of relevant method in Trust Player model.
+        sent_back_amount = None
+
+        # Base endowment for Korea, roughly equals €1.
+        k = 1200
+
+        # If Player A sent 0, it's easy — 0.
+        # Otherwise, find it.
+        if given_by_player_a == 0:
+            sent_back_amount = 'sent_back_amount_0'
+        else:
+            if not sent_back_amount:
+                # Korean is complex because of the numbers used (higher than
+                # a simple 0 to 10 units). So we simplify it by finding within
+                # which ranges the endowment goes, each range then matching
+                # a method name.
+                if get_language()[:2] == 'ko':
+                    # Create a list of tuples representing ranges,
+                    # based on steps of 12000 Won just like the form
+                    # for Trust "send back" mentions.
+                    # Group those ranges in increasing order into a list
+                    # of 10 elements (each indices hence representing a range).
+                    r = [(k * i + 1, k + k * i) for i in range(0, 10)]
+
+                    # Test within which range the endowment fits.
+                    # i.e. (0, 12000) representing 0 <= n <= 1200.
+                    # If you get the index of this range and add 1
+                    # You get the desired output to use to create a proper
+                    # method name in Player matching the given money.
+                    i = list(
+                        map(lambda x: x[0] <= given_by_player_a <= x[1], r)
+                    ).index(True)
+                    sent_back_amount = 'sent_back_amount_' + str(i + 1)
+                else:
+                    sent_back_amount = (
+                        'sent_back_amount_' + str(given_by_player_a)
+                    )
+
+        return getattr(player, sent_back_amount)
 
 
 class Player(BasePlayer):
