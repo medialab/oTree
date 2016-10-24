@@ -3,7 +3,6 @@
 {% load staticfiles otree_tags %}
 
 {% block content %}
-  <input id="timer" type="hidden" name="total_time" value="">
   <h3>
   {% trans "Welcome!" %}<br/>
   {% trans "Sciences Po Paris invites you to participate in a quick online study on decision-making." %}
@@ -36,10 +35,4 @@
   {% endif %}
 
   <button class="btn btn-primary pull-right">{% trans "Begin" %}</button>
-
-  <script>
-  var t = new Date().getTime();
-  $('#timer').val(t);
-  console.log('Starting timer - ' + t)
-  </script>
 {% endblock %}

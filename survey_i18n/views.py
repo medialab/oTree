@@ -425,13 +425,8 @@ class Survey12(Page):
 
     form_model = models.Player
     form_fields = [
-        '_12_final_comments',
-        'total_time'
+        '_12_final_comments'
     ]
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {'start_time': self.player.total_time}
 
 
 class EndGame(Page):

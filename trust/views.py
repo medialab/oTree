@@ -23,8 +23,7 @@ class ExperimentIntroduction(Page):
     Assumes this is the first test.
     """
 
-    form_model = models.Player
-    form_fields = ['total_time']
+    pass
 
 
 class GamesIntroduction(Page):

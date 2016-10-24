@@ -51,7 +51,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for Survey."""
 
-    total_time = models.CharField(blank=True, null=True)
     donation = models.CharField(blank=True, null=True)
 
     _01_how_satisfied_are_you_with_life_as_a_whole = models.CharField(
