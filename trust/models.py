@@ -70,6 +70,8 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player model for Trust."""
 
+    total_time = models.CharField(blank=True, null=True)
+
     sent_amount = models.CurrencyField(
         doc="""Amount sent by P1""",
         min=Currency(0),

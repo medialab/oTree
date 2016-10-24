@@ -81,3 +81,4 @@ class Player(BasePlayer):
     """Player for IAT."""
 
     iat_results = jsonfield.JSONField()
+    total_time = models.CharField(blank=True, null=True)
