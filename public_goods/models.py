@@ -79,8 +79,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for Public Goods."""
 
-    total_time = models.CharField(blank=True, null=True)
-
     contribution = models.CurrencyField(
         min=0, max=allocated_amount,
         doc="""The amount contributed by the player""",

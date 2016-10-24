@@ -85,8 +85,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for Dictator game."""
 
-    total_time = models.CharField(blank=True, null=True)
-
     given = models.CurrencyField(
         doc="""Amount dictator decided to given""",
         min=0, max=allocated_amount,
