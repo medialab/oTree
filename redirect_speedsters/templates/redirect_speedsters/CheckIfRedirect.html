@@ -1,0 +1,26 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+
+<button class="btn btn-primary pull-right" style="display: none;"></button>
+
+<script type="text/javascript">
+  $(function() {
+    var startTime = {{global_time_start}},
+        endTime = {{global_time_stop}},
+        threshold = {{threshold}},
+        redirection = '{{speedsters_redirection}}'
+        isSpeedster = (endTime - startTime) > threshold;
+
+    if (isSpeedster) {
+      console.log('Participant is a speedster... redirecting.');
+      window.location.href = redirection;
+    } else {
+      console.log('Redirecting to Earnings page.')
+      $('form').submit();
+    }
+  });
+</script>
+
+{% endblock %}
