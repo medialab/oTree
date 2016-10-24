@@ -123,11 +123,12 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'timer_stop'
+            'timer_start', 'trust', 'timer_stop', 'redirect_speedsters'
         ],
         'treatment': 'A1a',
         'language_code': 'fr-fr',
         'payoff_group': 0,
+        'speedsters_threshold': 10 * 60,
         'quota_redirects': quota_redirects,
         'quota_total_population': total_fr,
         'quota_gender_age_groups': quota_gender_age_groups_fr,
