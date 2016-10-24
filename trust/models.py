@@ -13,6 +13,8 @@ tripled. The trust game was first proposed by
 </a>.
 """
 
+amount_allocated = get_language()[:2] == 'ko' and 12000 or 10
+
 
 def get_amount_allocated(base_fr_money):
     """
@@ -71,85 +73,73 @@ class Player(BasePlayer):
     sent_amount = models.CurrencyField(
         doc="""Amount sent by P1""",
         min=Currency(0),
-        max=get_amount_allocated(0),
-        step=1
+        max=get_amount_allocated(0)
     )
 
     sent_back_amount_0 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 0 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(0),
-        step=1
+        max=get_amount_allocated(0)
     )
 
     sent_back_amount_1 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 1 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(1),
-        step=1
+        max=get_amount_allocated(1)
     )
 
     sent_back_amount_2 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 2 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(2),
-        step=1
+        max=get_amount_allocated(2)
     )
 
     sent_back_amount_3 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 3 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(3),
-        step=1
+        max=get_amount_allocated(3)
     )
 
     sent_back_amount_4 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 4 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(4),
-        step=1
+        max=get_amount_allocated(4)
     )
 
     sent_back_amount_5 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 5 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(5),
-        step=1
+        max=get_amount_allocated(5)
     )
 
     sent_back_amount_6 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 6 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(6),
-        step=1
+        max=get_amount_allocated(6)
     )
 
     sent_back_amount_7 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 7 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(7),
-        step=1
+        max=get_amount_allocated(7)
     )
 
     sent_back_amount_8 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 8 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(8),
-        step=1
+        max=get_amount_allocated(8)
     )
 
     sent_back_amount_9 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 9 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(9),
-        step=1
+        max=get_amount_allocated(9)
     )
 
     sent_back_amount_10 = models.CurrencyField(
         doc="""Amount sent back by P2 for an contribution of 10 from P1""",
         min=Currency(0),
-        max=get_amount_allocated(10),
-        step=1
+        max=get_amount_allocated(10)
     )
 
     def role(self):
