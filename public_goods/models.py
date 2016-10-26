@@ -31,7 +31,7 @@ links = {
 
 keywords = ("Public Goods",)
 
-allocated_amount = get_language()[:2] == 'fr' and 10 or 12000
+allocated_amount = get_language()[:2] == 'ko' and 12000 or 10
 
 
 class Constants(BaseConstants):
