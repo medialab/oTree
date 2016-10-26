@@ -67,7 +67,7 @@ to a good cause?')
                 'currency': _(u'$')
             },
             'ko': {
-                'max': 1000000,
+                'max': 1200000,
                 'currency': _(u'Won')
             }
         }
