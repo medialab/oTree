@@ -1391,8 +1391,8 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		 Process
 		 -------
 		 Find if canvas in HTML shell page has the following data-attributes:
-		 - `data-estimation-min`
-		 - `data-estimation-max`
+		 - `data-min`
+		 - `data-max`
 		 - `data-currency`
 		 - `data-multipler`
 		 
@@ -1403,7 +1403,7 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		 */
 		 
 		var self = this;
-		var min = 1000;
+		var min = 0;
 		var max = 12000;
 		var currency = '€';
 		var multiplier = 1.6;
@@ -1421,12 +1421,8 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 				locale = canvas.getAttribute('data-locale') || locale;
 			}
 		}
-		
-		var unit = locale === 'ko' ? 1000 : 1;
 			
 		function setMoneyText(money) {
-			money = locale === 'ko' ? money * 1000 : money;
-			console.log(money);
 			return currency + money.toString();
 		}
 		
@@ -1443,11 +1439,11 @@ p.nominalBounds = new cjs.Rectangle(0,-53.2,103.9,88.8);
 		};
 		
 		if (locale === 'ko') {
-			this.bubble1.label.font = "18px 'Gotham Medium'";
-			this.bubble2.label.font = "18px 'Gotham Medium'";
-			this.bubble3.label.font = "18px 'Gotham Medium'";
-			this.bubble4.label.font = "18px 'Gotham Medium'";
-			this.cart.bubble.label.font = "18px 'Gotham Medium'";
+			this.bubble1.label.font = "16px 'Gotham Medium'";
+			this.bubble2.label.font = "16px 'Gotham Medium'";
+			this.bubble3.label.font = "16px 'Gotham Medium'";
+			this.bubble4.label.font = "16px 'Gotham Medium'";
+			this.cart.bubble.label.font = "16px 'Gotham Medium'";
 		}
 		
 		Player.prototype.giveMoney = function (amount) {
