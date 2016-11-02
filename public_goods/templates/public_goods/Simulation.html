@@ -29,7 +29,7 @@ function init() {
       $amountC = $('#amountC'),
       $amountD = $('#amountD'),
       MIN = 0,
-      MAX = 10;
+      MAX = {{max}};
 
   $amountA.change(function (e) {
     e.preventDefault();
@@ -58,10 +58,10 @@ function init() {
         ($amountB.val() === '' || $amountB.val() === null) ||
         ($amountC.val() === '' || $amountC.val() === null) ||
         ($amountD.val() === '' || $amountD.val() === null) ||
-        ($amountA.val() < 0 || $amountA.val() > 10) ||
-        ($amountB.val() < 0 || $amountB.val() > 10) ||
-        ($amountC.val() < 0 || $amountC.val() > 10) ||
-        ($amountD.val() < 0 || $amountD.val() > 10)) {
+        ($amountA.val() < 0 || $amountA.val() > MAX) ||
+        ($amountB.val() < 0 || $amountB.val() > MAX) ||
+        ($amountC.val() < 0 || $amountC.val() > MAX) ||
+        ($amountD.val() < 0 || $amountD.val() > MAX)) {
       $('.error').removeClass('hide');
       return;
     }
