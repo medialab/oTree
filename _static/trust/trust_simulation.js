@@ -1,7 +1,6 @@
 (function (lib, img, cjs, ss) {
 
 var p; // shortcut to reference prototypes
-lib.webFontTxtFilters = {}; 
 
 // library properties:
 lib.properties = {
@@ -10,7 +9,6 @@ lib.properties = {
 	fps: 30,
 	color: "#CCD1DB",
 	opacity: 1.00,
-	webfonts: {},
 	manifest: []
 };
 
@@ -19,13 +17,6 @@ lib.properties = {
 lib.ssMetadata = [];
 
 
-lib.webfontAvailable = function(family) { 
-	lib.properties.webfonts[family] = true;
-	var txtFilters = lib.webFontTxtFilters && lib.webFontTxtFilters[family] || [];
-	for(var f = 0; f < txtFilters.length; ++f) {
-		txtFilters[f].updateCache();
-	}
-};
 // symbols:
 
 
@@ -1212,61 +1203,16 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 
 	// timeline functions:
 	this.frame_34 = function() {
-		/*
-		 Process
-		 -------
-		 Find if canvas in HTML shell page has the following data-attributes:
-		 - `data-participants-label-a`
-		 - `data-participants-label-b`
-		 - `data-multiplier`
-		 - `data-amount1`
-		 - `data-amount2`
-		 - `data-currency`
-		 
-		 Use them as attributes in the animation if found.
-		 Use default attributes if not.
-		 
-		 Assumes there is only on canvas in the page.
-		 */
-		 
-		var startAmount = 10;
-		var multiplier = 3;
-		var labelA = 'participant A';
-		var labelB = 'participant B';
-		var multiplier = 3;
-		var currency = '€';
-		var locale = 'fr-fr';
-		
-		if (document) {
-			var canvas = document.getElementsByTagName('canvas')[0];
-			if (canvas) {
-				labelA = canvas.getAttribute('data-participants-label-a') || labelA;
-				labelB = canvas.getAttribute('data-participants-label-b') || labelB;
-				multiplier = canvas.getAttribute('data-multiplier') || multiplier;
-				startAmount = canvas.getAttribute('data-start-amount') || startAmount;
-				currency = canvas.getAttribute('data-currency') || currency;
-				locale = canvas.getAttribute('data-locale') || locale;
-			}
-		}
-		
-		
-		this.charLabel1.label.text = labelA;
-		this.charLabel2.label.text = labelB;
-		this.bubble1.label.text = startAmount.toString() + currency;
-		this.bubble2.label.text = startAmount.toString() + currency;
-	}
-	this.frame_54 = function() {
 		if (window) {
 			/**
 			 * Define/get default values.
 			 */
-			var startAmount = 12000;
+			var startAmount = 10;
 			var multiplier = 3;
 			var labelA = 'participant A';
 			var labelB = 'participant B';
-			var multiplier = 3;
 			var currency = '€';
-			var locale = 'fr-fr';
+			var locale = 'fr';
 		
 			if (document) {
 				var canvas = document.getElementsByTagName('canvas')[0];
@@ -1280,11 +1226,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				}
 			}
 			
-			var unit = locale === 'ko' ? 1000 : 1;
-			
 			function setMoneyText(money) {
-				money = locale === 'ko' ? money * 1000 : money;
-				console.log(money);
 				return currency + money.toString();
 			}
 			
@@ -1315,10 +1257,39 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				this.cart1.bubble.alpha = 0;
 				this.cart2.bubble.alpha = 0;
 				
+				var pushMoney = function(cart, dollar) {
+					cart.money++;
+					if (locale === 'ko') {
+						if (cart.money % 1000 === 0) {
+							cart.stack.push(dollar);
+							cart.instance.addChild(dollar);
+						}
+					} else {
+						cart.stack.push(dollar);
+						cart.instance.addChild(dollar);
+					}
+					cart.instance.bubble.alpha = 1;
+					cart.instance.bubble.label.text = currency + cart.money.toString();
+				}
+				
+				var popMoney = function(cart) {
+					if (cart.stack.length > 0) {
+						cart.money--;
+						cart.instance.bubble.label.text = currency + cart.money.toString();
+						if (locale === 'ko') {
+							if (cart.money % 1000 === 0) {
+								cart.instance.removeChild(cart.stack.pop());
+							}				
+						} else {
+							cart.instance.removeChild(cart.stack.pop());
+						}
+						return true;
+					}
+				}
+				
 				if (locale === 'ko') {
 					this.cart1.bubble.label.font = "18px 'Gotham Medium'";
 					this.cart2.bubble.label.font = "18px 'Gotham Medium'";
-					console.log(this.cart1.bubble);
 				}
 		
 				var carts = [{
@@ -1340,41 +1311,28 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					dollar.x = X_OFFSET;
 					dollar.y = Y_OFFSET - Z_OFFSET * cart.stack.length;
 					
-					cart.instance.addChild(dollar);
-					cart.stack.push(dollar);
-					cart.money += unit;
-					
-					cart.instance.bubble.alpha = 1;
-					cart.instance.bubble.label.text = currency + cart.money.toString();
-					
+					pushMoney(cart, dollar);
 					return this;
-				}
+				}.bind(this);
 				
 				var decrement = function (cartIndex) {
 					var cart = carts[cartIndex];
-					if (cart.stack.length > 0) {
-						var removable = cart.stack.pop();
-						cart.instance.removeChild(removable);
-						cart.money -= unit;
-						cart.instance.bubble.label.text = currency + cart.money.toString();
-						return true;
-					}
-					
-					return false;
-				}
+					popMoney(cart);
+					return this;
+				}.bind(this);
 				
 				var batchRemove = function (cartIndex) {
-					var iterate = true;
-					var totalSum = carts[cartIndex].money;
-					while (iterate) {
-						var dec = decrement(cartIndex);
-						iterate = dec;
+					var total = carts[cartIndex].money;
+					var i = total;
+					while (i > 0) {
+						decrement(cartIndex);
+						i--;
 					}
-					return totalSum
+					return total;
 				}
 				
 				var batchAdd = function (cartIndex, amount, color) {
-					for (var i = 0; i < amount; i += unit) {
+					for (var i = 0; i < amount; i++) {
 						increment(cartIndex, color);
 					}
 				}
@@ -1443,47 +1401,69 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					this.bubble1.label.font = "18px 'Gotham Medium'";
 					this.bubble2.label.font = "18px 'Gotham Medium'";
 				}
+				
+				var pushMoney = function(player, dollar, playerIndex) {
+					player.money++;
+					if (locale === 'ko') {
+						if (player.money % 1000 === 0) {
+							player.stack.push(dollar);
+							player.instance.addChild(dollar);
+						}
+					} else {
+						player.stack.push(dollar);
+						player.instance.addChild(dollar);
+					}
+					var bubble = playerIndex === 0 ? this.bubble1 : this.bubble2;
+					bubble.label.text = setMoneyText(player.money.toString());
+					return this;
+				}.bind(this);
+				
+				var popMoney = function(player, playerIndex) {
+					if (player.money > 0) {
+						player.money--;
+						
+						var bubble = playerIndex === 0 ? this.bubble1 : this.bubble2;
+						bubble.label.text = setMoneyText(player.money.toString());
+						
+						if (locale === 'ko') {
+							if (player.money % 1000 === 0) {
+								player.instance.removeChild(player.stack.pop());
+							}
+						} else {
+							player.instance.removeChild(player.stack.pop());
+						}
+					}
+					return this;
+				}.bind(this);
 		
 				var increment = function (i, moneyColor, force) {
 					var p = players[i];
-					p.money++;
-		
-					var bubble = i === 0 ? this.bubble1 : this.bubble2;
-					bubble.label.text = setMoneyText(p.money.toString());
 						
 					var dollar = createDollar(moneyColor);
 					dollar.x = X_OFFSET;
 					dollar.y = Y_OFFSET - Z_OFFSET * p.stack.length;
 					
-					p.instance.addChild(dollar);
-					p.stack.push(dollar);
+					pushMoney(p, dollar, i);
 					return this;
 				}.bind(this);
 		
 				var decrement = function (i) {
-					var p = players[i];
-					if (p.money - 1 >= 0) {
-						p.money--;
-						var bubble = i === 0 ? this.bubble1 : this.bubble2;
-						bubble.label.text = setMoneyText(p.money.toString());
-						
-						var removable = p.stack.pop();
-						p.instance.removeChild(removable);
-					}
+					popMoney(players[i], i);
 					return this;
 				}.bind(this);
 				
 				var reset = function () {
-					for (var i = 0; i < players.length; i++) {
-						while (players[i].stack.length > 0) {
-							decrement(i);
-						}
+					while (players[0].stack.length > 0) {
+						decrement(i);
+					}
+					
+					while (players[1].stack.length > 0) {
+						decrement(i);
 					}
 					
 					for (var i = 0; i < players.length; i++) {
 						var colors = ['green', 'orange'];
-						var max = locale === 'ko' ? startAmount / 1000 : startAmount;
-						while (players[i].stack.length < max) {
+						while (players[i].money < startAmount) {
 							increment(i, colors[i]);
 						}
 					}
@@ -1556,12 +1536,12 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 				
 				var dispatchFinalGains = function () {
 					var giveToPlayer1 = carts.removeAll(1);
-					for (var i = 0; i < giveToPlayer1; i += unit) {
+					for (var i = 0; i < giveToPlayer1; i++) {
 						players.increment(0, 'grey');
 					}
 					
 					var giveToPlayer2 = carts.removeAll(0);
-					for (var j = 0; j < giveToPlayer2; j += unit) {
+					for (var j = 0; j < giveToPlayer2; j++) {
 						players.increment(1, 'grey', true);
 					}
 				}
@@ -1638,7 +1618,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(20).call(this.frame_54).wait(30).call(this.frame_84).wait(39).call(this.frame_123).wait(68).call(this.frame_191).wait(43).call(this.frame_234).wait(105).call(this.frame_339).wait(70).call(this.frame_409).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(50).call(this.frame_84).wait(39).call(this.frame_123).wait(68).call(this.frame_191).wait(43).call(this.frame_234).wait(105).call(this.frame_339).wait(70).call(this.frame_409).wait(1));
 
 	// multiplier
 	this.bubbleMultiplier = new lib.multiplier();
