@@ -1015,7 +1015,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 	this.initialize(mode,startPosition,loop,{});
 
 	// Calque 2
-	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
+	this.label = new cjs.Text("", "32px 'Gotham Medium'", "#FFFFFF");
 	this.label.name = "label";
 	this.label.textAlign = "center";
 	this.label.lineHeight = 30;
@@ -1159,9 +1159,10 @@ p.nominalBounds = new cjs.Rectangle(0,-77.5,61.7,113.1);
 		 Process
 		 -------
 		 Find if canvas in HTML shell page has the following data-attributes:
-		 - `data-estimation-min`
-		 - `data-estimation-max`
-		 - `data-estimation-currency`
+		 - `data-min`
+		 - `data-max`
+		 - `data-currency`
+		 - `data-locale`
 		 
 		 Use them as attributes in the animation if found.
 		 Use default attributes if not.
@@ -1171,9 +1172,9 @@ p.nominalBounds = new cjs.Rectangle(0,-77.5,61.7,113.1);
 		 
 		var self = this;
 		var min = 0;
-		var max = 10000;
+		var max = 12000;
 		var currency = '€';
-		var locale = 'fr';
+		var locale = 'ko';
 		
 		if (document) {
 			var canvas = document.getElementsByTagName('canvas')[0];
@@ -1203,21 +1204,18 @@ p.nominalBounds = new cjs.Rectangle(0,-77.5,61.7,113.1);
 		window.DICTATOR = (function () {
 			
 			var putMoney = function (amount) {
-				console.log('putMoney', amount);
 				if (amount >= min && amount <= max) {
-					console.log(amount);
 					self.bubbleLeft.estimation.text = currency + (max - amount).toString();
 					self.cart.bubble.label.text = currency + amount.toString();
 					givenAmount = amount;
-					// givenAmount = max - amount;
 				}
 			};
 			
 			var send = function () {
 				self.gotoAndPlay('send');
 				setTimeout(function () {
-					console.log(givenAmount);
 					self.bubbleRight.estimation.text = currency + givenAmount.toString();
+					self.cart.bubble.label.text = currency + '0';
 				}, 4500);
 			};
 			
