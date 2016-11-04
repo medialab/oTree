@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-03 13:59+0200\n"
+"POT-Creation-Date: 2016-11-04 14:11+0100\n"
 "PO-Revision-Date: 2016-09-30 13:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,14 +21,18 @@ msgstr ""
 msgid "next"
 msgstr "Suivant"
 
-#: templates/earnings/Display.html:15 templates/earnings/Earnings.html:7
+#: templates/earnings/Display.html:14
 msgid "Thank you very much for your participation in this study!"
 msgstr "Merci beaucoup pour votre participation à l'étude!"
 
-#: templates/earnings/Display.html:16
+#: templates/earnings/Display.html:15
+#, fuzzy, python-format
+#| msgid ""
+#| "After being matched with the other players, your earnings have been "
+#| "calculated as "
 msgid ""
 "After being matched with the other players, your earnings have been "
-"calculated as"
+"calculated as %(payoff)s."
 msgstr ""
 "Après l'appariement avec les autres joueurs, vos gains ont été calculés comme"
 
@@ -40,81 +44,75 @@ msgstr ""
 "vos gains à la Tâche 1."
 
 #: templates/earnings/Display.html:20
-msgid "As Player A, you decided to transfer"
-msgstr "En tant que Joueur A, vous avez décidé de transférer "
+#, python-format
+msgid ""
+"As Player A, you decided to transfer %(trust_game_player_a_transfer)s euros "
+"to player B."
+msgstr ""
 
 #: templates/earnings/Display.html:21
-msgid "euros to player B."
-msgstr "euros au joueur B."
+#, python-format
+msgid "Following, player B returned %(trust_game_player_b_transfer)s to you."
+msgstr ""
 
 #: templates/earnings/Display.html:22
-msgid "Following, player B returned"
-msgstr "Dans un second temps, le joueur B a retourné"
-
-#: templates/earnings/Display.html:23
-msgid "to you."
-msgstr "à vous."
-
-#: templates/earnings/Display.html:24 templates/earnings/Display.html.py:32
-msgid "Therefore, your total payoff for this task is"
+#, fuzzy, python-format
+#| msgid "Therefore, your total payoff for this task is"
+msgid "Therefore, your total payoff for this task is %(payoff)s."
 msgstr "Par conséquent, votre gain total pour cette tâche est"
 
 #: templates/earnings/Display.html:28
-msgid "As Player B, you received"
-msgstr "En tant que Joueur B, vous avez reçu"
+#, python-format
+msgid ""
+"As Player B, you received %(trust_game_player_a_transfer)s euros from player "
+"A."
+msgstr ""
 
 #: templates/earnings/Display.html:29
-msgid "euros from player A."
-msgstr "euros de la part du joueur A."
+#, python-format
+msgid ""
+"You decided to transfer %(trust_game_player_b_transfer)s euros back to "
+"player A."
+msgstr ""
 
 #: templates/earnings/Display.html:30
-msgid "You decided to transfer"
-msgstr "En tant que Joueur A, vous avez décidé de transférer "
+#, fuzzy, python-format
+#| msgid "Therefore, your total payoff for this task is"
+msgid "Therefore, your total payoff for this task is %(payoff)s euros."
+msgstr "Par conséquent, votre gain total pour cette tâche est"
 
-#: templates/earnings/Display.html:31
-msgid "euros back to player A."
-msgstr "euros en retour au joueur A."
-
-#: templates/earnings/Display.html:33
-msgid "euros."
-msgstr "euros."
-
-#: templates/earnings/Display.html:36
+#: templates/earnings/Display.html:35
 msgid ""
 "You were selected to receive your reward based on your earnings in Task Two."
 msgstr ""
 "Vous avez été sélectionné(e) pour recevoir votre rétribution sur la base de "
 "vos gains à la tâche 2."
 
-#: templates/earnings/Display.html:37
-msgid "In this task, you invested"
-msgstr "Dans cette tâche, vous avez investi"
-
-#: templates/earnings/Display.html:38
-msgid "into the joint project. The contributions of the other players were:"
+#: templates/earnings/Display.html:36
+#, fuzzy, python-format
+#| msgid "into the joint project. The contributions of the other players were:"
+msgid ""
+"In this task, you invested %(pg_player_a_transfer)s into the joint project. "
+"The contributions of the other players were:"
 msgstr "dans le projet commun. Les contributions des autres joueurs étaient:"
 
-#: templates/earnings/Display.html:41 templates/earnings/Display.html.py:42
-#: templates/earnings/Display.html:43 templates/earnings/Display.html.py:61
-msgid "euros"
-msgstr "euros"
-
 #: templates/earnings/Display.html:46
-msgid "Collectively, you invested"
-msgstr "Collectivement, vous avez investi"
-
-#: templates/earnings/Display.html:47
+#, fuzzy, python-format
+#| msgid ""
+#| ". Your earnings from the joint project after the multiplication factor are"
 msgid ""
-". Your earnings from the joint project after the multiplication factor are"
+"Collectively, you invested %(pg_amount)s. Your earnings from the joint "
+"project after the multiplication factor are %(pg_multiplied_amount)s."
 msgstr ""
 ". Vos gains du projet commun après application du facteur multiplicateur sont"
 
-#: templates/earnings/Display.html:48 templates/earnings/Display.html.py:55
-#: templates/earnings/Display.html:61
-msgid "In total, your payoff for this task is"
+#: templates/earnings/Display.html:47
+#, fuzzy, python-format
+#| msgid "In total, your payoff for this task is"
+msgid "In total, your payoff for this task is\" %%} %(payoff)s."
 msgstr "Au total, votre gain pour cette tâche est"
 
-#: templates/earnings/Display.html:51 templates/earnings/Display.html.py:58
+#: templates/earnings/Display.html:52 templates/earnings/Display.html.py:60
 msgid ""
 "You were selected to receive your reward based on your earnings in Task "
 "Three."
@@ -122,30 +120,51 @@ msgstr ""
 "Vous avez été sélectionné(e) pour recevoir votre rétribution sur la base de "
 "vos gains à la Tâche 3."
 
-#: templates/earnings/Display.html:52
-msgid "In this task, you decided to transfer"
+#: templates/earnings/Display.html:53
+#, fuzzy, python-format
+#| msgid "In this task, you decided to transfer"
+msgid ""
+"In this task, you decided to transfer %(dictator_player_a_transfer)s to "
+"player B."
 msgstr "Dans cette tâche, vous avez décidé de transférer"
 
-#: templates/earnings/Display.html:53
-msgid "to player B"
-msgstr "au joueur B"
-
 #: templates/earnings/Display.html:54
-msgid "Your remaining endowment after the transfer is"
+#, fuzzy, python-format
+#| msgid "Your remaining endowment after the transfer is"
+msgid ""
+"Your remaining endowment after the transfer is %(dictator_player_a_payoff)s."
 msgstr "Votre dotation restante après le transfert est "
 
-#: templates/earnings/Display.html:59
-msgid "In this task, you were selected to be Player B"
+#: templates/earnings/Display.html:55
+#, fuzzy, python-format
+#| msgid "In total, your payoff for this task is"
+msgid "In total, your payoff for this task is %(dictator_player_a_payoff)s."
+msgstr "Au total, votre gain pour cette tâche est"
+
+#: templates/earnings/Display.html:61
+#, fuzzy
+#| msgid "In this task, you were selected to be Player B"
+msgid "In this task, you were selected to be Player B."
 msgstr "Dans cette tâche, vous avez été sélectionné comme étant le joueur B"
 
-#: templates/earnings/Display.html:60
+#: templates/earnings/Display.html:62
+#, fuzzy, python-format
+#| msgid ""
+#| "In this task, the Player A you were matched with decided to transfer you "
 msgid ""
 "In this task, the Player A you were matched with decided to transfer you "
+"%(dictator_player_a_transfer)s."
 msgstr ""
 "Dans cette tâche, le joueur A avec qui vous avez été apparié a décidé de "
 "vous transférer "
 
-#: templates/earnings/Display.html:65
+#: templates/earnings/Display.html:63
+#, fuzzy, python-format
+#| msgid "In total, your payoff for this task is"
+msgid "In total, your payoff for this task is %(dictator_global_a_transfer)s."
+msgstr "Au total, votre gain pour cette tâche est"
+
+#: templates/earnings/Display.html:69
 msgid ""
 "Out of your earnings, you have the option to donate an amount of your choice "
 "to UNICEF, who work with children and mothers in developing countries."
@@ -154,7 +173,7 @@ msgstr ""
 "de votre choix à l'UNICEF, qui œuvre en faveur des enfants et des mères dans "
 "les pays en développement."
 
-#: templates/earnings/Display.html:66
+#: templates/earnings/Display.html:70
 msgid ""
 "You can find further information about their work here. Please enter the "
 "amount you wish to donate to UNICEF:"
@@ -163,13 +182,13 @@ msgstr ""
 "\"http://www.unicef.org/french/\" target=\"_blank\" rel=\"noopener\">ici</"
 "a>. Entrez s'il vous plaît le montant que vous souhaitez donner à l'UNICEF:"
 
-#: templates/earnings/Display.html:70
+#: templates/earnings/Display.html:75
 msgid "(Should you not wish to donate anything at this point, please enter 0)."
 msgstr ""
 "(Dans le cas où vous ne souhaiteriez pas faire de don, entrez 0 s'il vous "
 "plaît)."
 
-#: templates/earnings/Display.html:71
+#: templates/earnings/Display.html:76
 msgid ""
 "Once again, thank you very much for participating. You will now be "
 "redirected in order to collect your reward."
@@ -177,27 +196,60 @@ msgstr ""
 "De nouveau, merci beaucoup pour votre participation. Vous allez maintenant "
 "être redirigé(e) afin d'obtenir votre rétribution."
 
-#: templates/earnings/Display.html:73
+#: templates/earnings/Display.html:78
 msgid "Finish study"
 msgstr "Finir l'étude"
 
-#: templates/earnings/Earnings.html:8
-msgid "Your survey responses have been correctly recorded. "
-msgstr "Vos réponses à l'étude ont bien été enregistrées."
+#~ msgid ""
+#~ "After being matched with the other players, your earnings have been "
+#~ "calculated as"
+#~ msgstr ""
+#~ "Après l'appariement avec les autres joueurs, vos gains ont été calculés "
+#~ "comme"
 
-#: templates/earnings/Earnings.html:10
-msgid ""
-"After being matched with the other players, your earnings have been "
-"calculated as "
-msgstr ""
-"Après l'appariement avec les autres joueurs, vos gains ont été calculés comme"
+#~ msgid "As Player A, you decided to transfer"
+#~ msgstr "En tant que Joueur A, vous avez décidé de transférer "
 
-#: templates/earnings/Earnings.html:11
-msgid "This money will be added to your HIT reward as a bonus."
-msgstr ""
+#~ msgid "euros to player B."
+#~ msgstr "euros au joueur B."
 
-#: templates/earnings/Earnings.html:13
-msgid "Once again, thank you very much for participating."
-msgstr ""
-"De nouveau, merci beaucoup pour votre participation. Vous allez maintenant "
-"être redirigé(e) afin d'obtenir votre rétribution."
+#~ msgid "Following, player B returned"
+#~ msgstr "Dans un second temps, le joueur B a retourné"
+
+#~ msgid "to you."
+#~ msgstr "à vous."
+
+#~ msgid "As Player B, you received"
+#~ msgstr "En tant que Joueur B, vous avez reçu"
+
+#~ msgid "euros from player A."
+#~ msgstr "euros de la part du joueur A."
+
+#~ msgid "You decided to transfer"
+#~ msgstr "En tant que Joueur A, vous avez décidé de transférer "
+
+#~ msgid "euros back to player A."
+#~ msgstr "euros en retour au joueur A."
+
+#~ msgid "euros."
+#~ msgstr "euros."
+
+#~ msgid "In this task, you invested"
+#~ msgstr "Dans cette tâche, vous avez investi"
+
+#~ msgid "euros"
+#~ msgstr "euros"
+
+#~ msgid "Collectively, you invested"
+#~ msgstr "Collectivement, vous avez investi"
+
+#~ msgid "to player B"
+#~ msgstr "au joueur B"
+
+#~ msgid "Your survey responses have been correctly recorded. "
+#~ msgstr "Vos réponses à l'étude ont bien été enregistrées."
+
+#~ msgid "Once again, thank you very much for participating."
+#~ msgstr ""
+#~ "De nouveau, merci beaucoup pour votre participation. Vous allez "
+#~ "maintenant être redirigé(e) afin d'obtenir votre rétribution."

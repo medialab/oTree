@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 16:02+0200\n"
+"POT-Creation-Date: 2016-11-04 14:12+0100\n"
 "PO-Revision-Date: 2016-09-20 17:00+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,7 +50,7 @@ msgstr ""
 #: templates/public_goods/Contribute.html:18
 #: templates/public_goods/ContributeBack.html:24
 #: templates/public_goods/DecisionInstructions.html:11
-#: templates/public_goods/EndGame.html:13
+#: templates/public_goods/EndGame.html:12
 #: templates/public_goods/Introduction.html:8
 #: templates/public_goods/Simulation.html:116
 msgid "Next"
@@ -107,11 +107,11 @@ msgstr ""
 "Dans la seconde étape, vous avez l’opportunité de décider de votre "
 "contribution, selon la contribution des autres membres."
 
-#: templates/public_goods/EndGame.html:11
+#: templates/public_goods/EndGame.html:10
 msgid "Thank you very much for entering your choice."
 msgstr "Merci beaucoup d'avoir indiqué votre choix."
 
-#: templates/public_goods/EndGame.html:12
+#: templates/public_goods/EndGame.html:11
 msgid ""
 "We have recorded your decision. Again, your payoff will depend on the "
 "actions of the other players. Now, please proceed to the third task."
@@ -120,11 +120,11 @@ msgstr ""
 "dépendra des actions des autres joueurs. Maintenant, continuez s'il vous "
 "plaît avec la troisième tâche."
 
-#: templates/public_goods/Instructions.html:8
+#: templates/public_goods/Instructions.html:6
 msgid "Task Two: Introduction"
 msgstr "Tâche 2 : Introduction"
 
-#: templates/public_goods/Instructions.html:9
+#: templates/public_goods/Instructions.html:7
 msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
@@ -132,7 +132,7 @@ msgstr ""
 "Dans la seconde tâche, des groupes de <strong>4 participants</strong> (vous-"
 "même et 3 autres personnes) sont constitués."
 
-#: templates/public_goods/Instructions.html:10
+#: templates/public_goods/Instructions.html:8
 msgid ""
 "Remember, the participants in this group are different from the person you "
 "interacted with in the previous task. However, they all live in the France."
@@ -141,26 +141,26 @@ msgstr ""
 "qui vous avez interagi lors de la tâche précédente. Cependant, ils vivent "
 "tous en France."
 
-#: templates/public_goods/Instructions.html:11
+#: templates/public_goods/Instructions.html:9
 msgid "These are the rules:"
 msgstr "Voici les consignes :"
 
-#: templates/public_goods/Instructions.html:15
+#: templates/public_goods/Instructions.html:13
 msgid "At the beginning, each group member has 12.000 Won."
 msgstr ""
 
-#: templates/public_goods/Instructions.html:17
+#: templates/public_goods/Instructions.html:15
 msgid "At the beginning, each group member has 10 euros."
 msgstr "Au début, chaque membre du groupe a 10 euros."
 
-#: templates/public_goods/Instructions.html:21
+#: templates/public_goods/Instructions.html:19
 msgid ""
 "Every group member has to choose how much of these 12.000 Won he or she "
 "wants to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
 
-#: templates/public_goods/Instructions.html:23
+#: templates/public_goods/Instructions.html:21
 msgid ""
 "Every group member has to choose how much of these 10 euros he or she wants "
 "to keep and how much he or she wants to transfer into a <strong>joint "
@@ -170,13 +170,17 @@ msgstr ""
 "garder et combien il ou elle souhaite allouer à un <strong>projet commun</"
 "strong>."
 
-#: templates/public_goods/Instructions.html:26
+#: templates/public_goods/Instructions.html:24
+#, fuzzy, python-format
+#| msgid ""
+#| "The total amount invested into the joint project is <strong>multiplied by "
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
+"%(Constants.efficiency_factor)s.</strong>"
 msgstr ""
 "Le montant total investi dans le projet commun est <strong>multipliée par "
 
-#: templates/public_goods/Instructions.html:27
+#: templates/public_goods/Instructions.html:25
 msgid ""
 "At the end, the money in the joint project will be re-divided and "
 "<strong>split equally between all 4 group members</strong> (including "
@@ -229,135 +233,135 @@ msgstr "Montant envoyé par le Participant D"
 msgid "Send"
 msgstr "Envoyer"
 
-#: views.py:65
+#: views.py:59
 msgid "10 euros"
 msgstr "10 euros"
 
-#: views.py:66
+#: views.py:60
 msgid "$10"
 msgstr ""
 
-#: views.py:67
+#: views.py:61
 msgid "12.000 Won"
 msgstr ""
 
-#: views.py:95 views.py:97
+#: views.py:89 views.py:91
 msgid "If on average, each of the other     group members contributes 0 euro:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "0 euro :"
 
-#: views.py:99
+#: views.py:93
 msgid "If on average, each of the other     group members contributes 0 Won:"
 msgstr ""
 
-#: views.py:104 views.py:106
+#: views.py:98 views.py:100
 msgid "If on average, each of the other     group members contributes 1 euro:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "1 euro :"
 
-#: views.py:108
+#: views.py:102
 msgid ""
 "If on average, each of the other     group members contributes 1.200 Won Won:"
 msgstr ""
 
-#: views.py:113 views.py:115
+#: views.py:107 views.py:109
 msgid "If on average, each of the other     group members contributes 2 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "2 euros :"
 
-#: views.py:117
+#: views.py:111
 msgid ""
 "If on average, each of the other     group members contributes 2.400 Won:"
 msgstr ""
 
-#: views.py:122 views.py:124
+#: views.py:116 views.py:118
 msgid "If on average, each of the other     group members contributes 3 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "3 euros :"
 
-#: views.py:126
+#: views.py:120
 msgid ""
 "If on average, each of the other     group members contributes 3.600 Won:"
 msgstr ""
 
-#: views.py:131 views.py:133
+#: views.py:125 views.py:127
 msgid "If on average, each of the other     group members contributes 4 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "4 euros :"
 
-#: views.py:135
+#: views.py:129
 msgid ""
 "If on average, each of the other     group members contributes 4.800 Won:"
 msgstr ""
 
-#: views.py:140 views.py:142
+#: views.py:134 views.py:136
 msgid "If on average, each of the other     group members contributes 5 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "5 euros :"
 
-#: views.py:144
+#: views.py:138
 msgid ""
 "If on average, each of the other     group members contributes 6.000 Won:"
 msgstr ""
 
-#: views.py:149 views.py:151
+#: views.py:143 views.py:145
 msgid "If on average, each of the other     group members contributes 6 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "6 euros :"
 
-#: views.py:153
+#: views.py:147
 msgid ""
 "If on average, each of the other     group members contributes 7.200 Won:"
 msgstr ""
 
-#: views.py:158 views.py:160
+#: views.py:152 views.py:154
 msgid "If on average, each of the other     group members contributes 7 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "7euros :"
 
-#: views.py:162
+#: views.py:156
 msgid ""
 "If on average, each of the other     group members contributes 8.400 Won:"
 msgstr ""
 
-#: views.py:167 views.py:169
+#: views.py:161 views.py:163
 msgid "If on average, each of the other     group members contributes 8 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "8 euros :"
 
-#: views.py:171
+#: views.py:165
 msgid ""
 "If on average, each of the other     group members contributes 9.600 Won:"
 msgstr ""
 
-#: views.py:176 views.py:178
+#: views.py:170 views.py:172
 msgid "If on average, each of the other     group members contributes 9 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "9 euros :"
 
-#: views.py:180
+#: views.py:174
 msgid ""
 "If on average, each of the other     group members contributes 10.800 Won:"
 msgstr ""
 
-#: views.py:185 views.py:187
+#: views.py:179 views.py:181
 msgid ""
 "If on average, each of the other     group members contributes 10 euros:"
 msgstr ""
 "Si, en moyenne, chacun des autres membres du groupe fait une contribution de "
 "10 euros :"
 
-#: views.py:189
+#: views.py:183
 msgid ""
 "If on average, each of the other     group members contributes 12.000 Won:"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 16:02+0200\n"
+"POT-Creation-Date: 2016-11-04 14:12+0100\n"
 "PO-Revision-Date: 2016-10-10 11:53+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -49,7 +49,7 @@ msgstr ""
 #: templates/public_goods/Contribute.html:18
 #: templates/public_goods/ContributeBack.html:24
 #: templates/public_goods/DecisionInstructions.html:11
-#: templates/public_goods/EndGame.html:13
+#: templates/public_goods/EndGame.html:12
 #: templates/public_goods/Introduction.html:8
 #: templates/public_goods/Simulation.html:116
 msgid "Next"
@@ -103,11 +103,11 @@ msgstr ""
 "다음으로 당신은 다른 참가자들의 기여도를 참고하여, 당신의 금액을 결정할 수 있"
 "습니다."
 
-#: templates/public_goods/EndGame.html:11
+#: templates/public_goods/EndGame.html:10
 msgid "Thank you very much for entering your choice."
 msgstr "응답하여 주셔서 감사합니다."
 
-#: templates/public_goods/EndGame.html:12
+#: templates/public_goods/EndGame.html:11
 msgid ""
 "We have recorded your decision. Again, your payoff will depend on the "
 "actions of the other players. Now, please proceed to the third task."
@@ -116,11 +116,11 @@ msgstr ""
 "른 참가자들의 과제 수행 결과에 따라 결정될 것입니다. 이제 세 번째 과제로 넘어"
 "가 주십시오."
 
-#: templates/public_goods/Instructions.html:8
+#: templates/public_goods/Instructions.html:6
 msgid "Task Two: Introduction"
 msgstr "과제 2: 안내"
 
-#: templates/public_goods/Instructions.html:9
+#: templates/public_goods/Instructions.html:7
 msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
@@ -128,7 +128,7 @@ msgstr ""
 "두 번째 과제에서는 4명의 참가자들(당신과 3명의 다른 참가자들)이 한 팀으로 구"
 "성됩니다."
 
-#: templates/public_goods/Instructions.html:10
+#: templates/public_goods/Instructions.html:8
 msgid ""
 "Remember, the participants in this group are different from the person you "
 "interacted with in the previous task. However, they all live in the France."
@@ -136,19 +136,19 @@ msgstr ""
 "이 그룹의 참가자들은 당신이 이전 과제에서 함께 했던 참가자들과는 다른 사람들"
 "이지만, 모두 한국에 거주하는 사람들입니다."
 
-#: templates/public_goods/Instructions.html:11
+#: templates/public_goods/Instructions.html:9
 msgid "These are the rules:"
 msgstr "규칙은 다음과 같습니다:"
 
-#: templates/public_goods/Instructions.html:15
+#: templates/public_goods/Instructions.html:13
 msgid "At the beginning, each group member has 12.000 Won."
 msgstr "과제 시작시, 각 참가자들은 12,000원씩을 가지고 있습니다."
 
-#: templates/public_goods/Instructions.html:17
+#: templates/public_goods/Instructions.html:15
 msgid "At the beginning, each group member has 10 euros."
 msgstr ""
 
-#: templates/public_goods/Instructions.html:21
+#: templates/public_goods/Instructions.html:19
 msgid ""
 "Every group member has to choose how much of these 12.000 Won he or she "
 "wants to keep and how much he or she wants to transfer into a <strong>joint "
@@ -157,19 +157,23 @@ msgstr ""
 "각 참가자들은 12,000원 중 본인이 보유할 금액과 공동 과제를 위해 투자할 금액"
 "을 정해야 합니다."
 
-#: templates/public_goods/Instructions.html:23
+#: templates/public_goods/Instructions.html:21
 msgid ""
 "Every group member has to choose how much of these 10 euros he or she wants "
 "to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
 
-#: templates/public_goods/Instructions.html:26
+#: templates/public_goods/Instructions.html:24
+#, fuzzy, python-format
+#| msgid ""
+#| "The total amount invested into the joint project is <strong>multiplied by "
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
+"%(Constants.efficiency_factor)s.</strong>"
 msgstr "공동 과제에 투자된 총 금액은 {양} 배만큼 곱해져 산출됩니다."
 
-#: templates/public_goods/Instructions.html:27
+#: templates/public_goods/Instructions.html:25
 msgid ""
 "At the end, the money in the joint project will be re-divided and "
 "<strong>split equally between all 4 group members</strong> (including "
@@ -219,113 +223,113 @@ msgstr "참가자 D가 보낸 금액"
 msgid "Send"
 msgstr "보내기"
 
-#: views.py:65
+#: views.py:59
 msgid "10 euros"
 msgstr ""
 
-#: views.py:66
+#: views.py:60
 msgid "$10"
 msgstr ""
 
-#: views.py:67
+#: views.py:61
 msgid "12.000 Won"
 msgstr "12,000원"
 
-#: views.py:95 views.py:97
+#: views.py:89 views.py:91
 msgid "If on average, each of the other     group members contributes 0 euro:"
 msgstr ""
 
-#: views.py:99
+#: views.py:93
 msgid "If on average, each of the other     group members contributes 0 Won:"
 msgstr "평균적으로, 다른 팀원들이 0원씩 투자했다면:"
 
-#: views.py:104 views.py:106
+#: views.py:98 views.py:100
 msgid "If on average, each of the other     group members contributes 1 euro:"
 msgstr ""
 
-#: views.py:108
+#: views.py:102
 msgid ""
 "If on average, each of the other     group members contributes 1.200 Won Won:"
 msgstr "평균적으로, 다른 팀원들이 1,200원씩 투자했다면:"
 
-#: views.py:113 views.py:115
+#: views.py:107 views.py:109
 msgid "If on average, each of the other     group members contributes 2 euros:"
 msgstr ""
 
-#: views.py:117
+#: views.py:111
 msgid ""
 "If on average, each of the other     group members contributes 2.400 Won:"
 msgstr "평균적으로, 다른 팀원들이 2,400원씩 투자했다면:"
 
-#: views.py:122 views.py:124
+#: views.py:116 views.py:118
 msgid "If on average, each of the other     group members contributes 3 euros:"
 msgstr ""
 
-#: views.py:126
+#: views.py:120
 msgid ""
 "If on average, each of the other     group members contributes 3.600 Won:"
 msgstr "평균적으로, 다른 팀원들이 3,600원씩 투자했다면:"
 
-#: views.py:131 views.py:133
+#: views.py:125 views.py:127
 msgid "If on average, each of the other     group members contributes 4 euros:"
 msgstr ""
 
-#: views.py:135
+#: views.py:129
 msgid ""
 "If on average, each of the other     group members contributes 4.800 Won:"
 msgstr "평균적으로, 다른 팀원들이 4,800원씩 투자했다면:"
 
-#: views.py:140 views.py:142
+#: views.py:134 views.py:136
 msgid "If on average, each of the other     group members contributes 5 euros:"
 msgstr ""
 
-#: views.py:144
+#: views.py:138
 msgid ""
 "If on average, each of the other     group members contributes 6.000 Won:"
 msgstr "평균적으로, 다른 팀원들이 6,000원씩 투자했다면:"
 
-#: views.py:149 views.py:151
+#: views.py:143 views.py:145
 msgid "If on average, each of the other     group members contributes 6 euros:"
 msgstr ""
 
-#: views.py:153
+#: views.py:147
 msgid ""
 "If on average, each of the other     group members contributes 7.200 Won:"
 msgstr "평균적으로, 다른 팀원들이 7,200원씩 투자했다면:"
 
-#: views.py:158 views.py:160
+#: views.py:152 views.py:154
 msgid "If on average, each of the other     group members contributes 7 euros:"
 msgstr ""
 
-#: views.py:162
+#: views.py:156
 msgid ""
 "If on average, each of the other     group members contributes 8.400 Won:"
 msgstr "평균적으로, 다른 팀원들이 8,400원씩 투자했다면:"
 
-#: views.py:167 views.py:169
+#: views.py:161 views.py:163
 msgid "If on average, each of the other     group members contributes 8 euros:"
 msgstr ""
 
-#: views.py:171
+#: views.py:165
 msgid ""
 "If on average, each of the other     group members contributes 9.600 Won:"
 msgstr "평균적으로, 다른 팀원들이 9,600원씩 투자했다면:"
 
-#: views.py:176 views.py:178
+#: views.py:170 views.py:172
 msgid "If on average, each of the other     group members contributes 9 euros:"
 msgstr ""
 
-#: views.py:180
+#: views.py:174
 msgid ""
 "If on average, each of the other     group members contributes 10.800 Won:"
 msgstr "평균적으로, 다른 팀원들이 10,800원씩 투자했다면:"
 
-#: views.py:185 views.py:187
+#: views.py:179 views.py:181
 msgid ""
 "If on average, each of the other     group members contributes 10 euros:"
 msgstr ""
 
-#: views.py:189
+#: views.py:183
 msgid ""
 "If on average, each of the other     group members contributes 12.000 Won:"
 msgstr "평균적으로, 다른 팀원들이 12,000원씩 투자했다면:"
