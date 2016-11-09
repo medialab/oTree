@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-04 14:12+0100\n"
-"PO-Revision-Date: 2016-10-10 11:53+0200\n"
+"PO-Revision-Date: 2016-11-09 14:21+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Decision"
@@ -45,6 +45,9 @@ msgid ""
 "choose to invest it in the joint project. <strong>How much do you want to "
 "invest into the joint project?</strong>"
 msgstr ""
+"당신에게 12,000원이 있습니다. 당신은 그 돈을 그대로 보유하기로 결정하거나, 아"
+"니면 공동 과제에 투자하기로 결정할 수 있습니다. 얼마의 금액을 공동 과제에 투"
+"자하시겠습니까? "
 
 #: templates/public_goods/Contribute.html:18
 #: templates/public_goods/ContributeBack.html:24
@@ -146,7 +149,7 @@ msgstr "과제 시작시, 각 참가자들은 12,000원씩을 가지고 있습�
 
 #: templates/public_goods/Instructions.html:15
 msgid "At the beginning, each group member has 10 euros."
-msgstr ""
+msgstr "과제 시작시, 각 참가자들은 12,000원씩을 가지고 있습니다."
 
 #: templates/public_goods/Instructions.html:19
 msgid ""
@@ -163,15 +166,17 @@ msgid ""
 "to keep and how much he or she wants to transfer into a <strong>joint "
 "project</strong>."
 msgstr ""
+"각 참가자들은 12,000원 중 본인이 보유할 금액과 공동 과제를 위해 투자할 금액"
+"을 정해야 합니다."
 
 #: templates/public_goods/Instructions.html:24
-#, fuzzy, python-format
-#| msgid ""
-#| "The total amount invested into the joint project is <strong>multiplied by "
+#, python-format
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
 "%(Constants.efficiency_factor)s.</strong>"
-msgstr "공동 과제에 투자된 총 금액은 {양} 배만큼 곱해져 산출됩니다."
+msgstr ""
+"공동 과제에 투자된 총 금액은 <strong>%(Constants.efficiency_factor)s 배만큼 "
+"곱해져 산출됩니다.</strong>"
 
 #: templates/public_goods/Instructions.html:25
 msgid ""

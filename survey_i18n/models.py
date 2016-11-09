@@ -10,6 +10,7 @@ from django.forms import extras
 from django.forms import widgets as django_widgets
 from datetime import date
 from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import get_language
 # </standard imports>
 
 from django_countries.fields import CountryField
@@ -20,6 +21,8 @@ An internationalized version of the survey, with varying questions depending
 on the locale, and some elements based on previous answers.
 """
 
+
+_02A_altruism_max = get_language()[:2] == 'ko' and 1200000 or 1000
 
 class Constants(BaseConstants):
     """Constants for Survey."""
@@ -182,7 +185,7 @@ expecting anything in return? '),
     _02A_altruism = models.CurrencyField(
         initial=0,
         min=0,
-        max=1000,
+        max=_02A_altruism_max,
     )
 
     _03_does_me_a_favor = models.CharField(
