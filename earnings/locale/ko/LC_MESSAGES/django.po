@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-04 14:11+0100\n"
-"PO-Revision-Date: 2016-11-09 14:17+0100\n"
+"PO-Revision-Date: 2016-11-14 11:46+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -139,8 +139,6 @@ msgstr ""
 "동 과제에서 당신이 획득하신 금액은 총 %(dictator_player_a_payoff)s 입니다."
 
 #: templates/earnings/Display.html:61
-#, fuzzy
-#| msgid "In this task, you were selected to be Player B"
 msgid "In this task, you were selected to be Player B."
 msgstr "동 과제에서 당신은 참가자 B로 선정되셨습니다."
 
