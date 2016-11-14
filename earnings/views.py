@@ -6,6 +6,7 @@ from ._builtin import Page
 from public_goods.models import Constants as Public_goods_const
 from otree.common import Currency
 from babel.numbers import parse_decimal
+from decimal import Decimal
 
 
 class Calculate(Page):
@@ -37,6 +38,7 @@ class Display(Page):
         """Variable in template."""
         return {
             'payoff': Currency(self.player.payoff),
+            'float_payoff': float(Decimal(Currency(self.player.payoff))),
             'role': self.player.calculation_from_role,
             'chosen_game': self.player.calculation_from_game,
             'trust_game_player_a_transfer': (
