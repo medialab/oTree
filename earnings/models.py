@@ -85,8 +85,7 @@ class Group(BaseGroup):
         Save key variables and results exists in the model.
         """
         # Choose (and save reference in DB) a game.
-        # chosen_game = self.choose_game(Constants.eligible_games)
-        chosen_game = 'dictator'
+        chosen_game = self.choose_game(Constants.eligible_games)
 
         # Get payoff from game.
         payoff = None
@@ -101,16 +100,6 @@ class Group(BaseGroup):
             player.calculation_from_game = 'dictator'
             player.calculation_from_matched_player_id = matched_id
             player.calculation_from_role = role
-
-            print('chosen game: dictator')
-            print('payoff', 'matched_id', 'role')
-            print(payoff, matched_id, role)
-            print('player.dictator_player_a_transfer')
-            print(player.dictator_player_a_transfer)
-            print('player.dictator_player_a_remaining')
-            print(player.dictator_player_a_remaining)
-            print('player.dictator_base_money')
-            print(player.dictator_base_money)
         elif chosen_game is 'public_goods':
             (
                 payoff, matched_ids,
