@@ -82,10 +82,11 @@ class Group(BaseGroup):
         """
         Calculate and return earnings for a player.
 
-        Save key variables and results in the model.
+        Save key variables and results exists in the model.
         """
         # Choose (and save reference in DB) a game.
-        chosen_game = self.choose_game(Constants.eligible_games)
+        # chosen_game = self.choose_game(Constants.eligible_games)
+        chosen_game = 'dictator'
 
         # Get payoff from game.
         payoff = None
@@ -100,6 +101,16 @@ class Group(BaseGroup):
             player.calculation_from_game = 'dictator'
             player.calculation_from_matched_player_id = matched_id
             player.calculation_from_role = role
+
+            print('chosen game: dictator')
+            print('payoff', 'matched_id', 'role')
+            print(payoff, matched_id, role)
+            print('player.dictator_player_a_transfer')
+            print(player.dictator_player_a_transfer)
+            print('player.dictator_player_a_remaining')
+            print(player.dictator_player_a_remaining)
+            print('player.dictator_base_money')
+            print(player.dictator_base_money)
         elif chosen_game is 'public_goods':
             (
                 payoff, matched_ids,
@@ -134,7 +145,7 @@ class Group(BaseGroup):
         matched_id = None
         with_role = None
 
-        base_money = Constants.allocated_amount
+        base_money = get_language()[:2] == 'ko' and 12000 or 10
 
         trust_game_player_a_transfer = None
         trust_game_player_b_transfer = None
@@ -182,7 +193,7 @@ class Group(BaseGroup):
         payoff = None
         matched_id = None
 
-        base_money = Constants.allocated_amount
+        base_money = get_language()[:2] == 'ko' and 12000 or 10
 
         player_a_transfer = None
         player_b_transfer = None
@@ -219,7 +230,7 @@ class Group(BaseGroup):
         my_contrib = None
         payoff = None
         joint_sum = None
-        base_money = Constants.allocated_amount
+        base_money = get_language()[:2] == 'ko' and 12000 or 10
 
         # Get the occurence of this player when she played 'Public Goods'.
         for p in player.participant.get_players():
