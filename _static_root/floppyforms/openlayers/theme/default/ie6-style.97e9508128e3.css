@@ -1,0 +1,10 @@
+.olControlZoomPanel div {
+    background-image: url("img/zoom-panel-NOALPHA.56e7770139d9.png");
+}
+.olControlPanPanel div {
+    background-image: url("img/pan-panel-NOALPHA.89d2ff519a28.png");
+}
+.olControlEditingToolbar {
+    width: 200px;
+}
+

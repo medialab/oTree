@@ -123,7 +123,7 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'trust', 'public_goods', 'dictator'
+            'trust', 'public_goods', 'dictator', 'earnings'
         ],
         'treatment': 'A1a',
         'language_code': 'ko-kr',
