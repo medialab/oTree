@@ -126,7 +126,7 @@ SESSION_CONFIGS = [
             'timer_start', 'trust', 'timer_stop', 'redirect_speedsters'
         ],
         'treatment': 'A1a',
-        'language_code': 'fr-fr',
+        'language_code': 'ko-kr',
         'payoff_group': 0,
         'speedsters_threshold': 10 * 60,
         'quota_redirects': quota_redirects,
