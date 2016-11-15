@@ -69,17 +69,16 @@ $(function(window, undefined) {
     function updateUIText(data, queue, trialIndex) {
       if (!data.hasOwnProperty('message')) {
         hidePauseMessage();
-        $uiCategoryLeft.html(data.left);
-        $uiCategoryRight.html(data.right);
-        $uiStimuli.html(data.stimuli);
+        $uiCategoryLeft.html(data._left);
+        $uiCategoryRight.html(data._right);
+        $uiStimuli.html(data._stimuli);
       } else {
-        console.log(data)
         showPauseMessage(
           data.message[lang],
           data.cta,
           {
-            'left': queue[trialIndex+1].left,
-            'right': queue[trialIndex+1].right,
+            'left': queue[trialIndex+1]._left,
+            'right': queue[trialIndex+1]._right
           }
         );
       }
@@ -272,12 +271,18 @@ $(function(window, undefined) {
 
           resultTrials.push({
             id: id,
-            correctCategory: capitalize(displayed[displayed.correct][lang]),
-            stimuli: displayed.showing[lang],
-            left: capitalize(displayed.left[lang]),
-            right: capitalize(displayed.right[lang]),
+
+            // Set of French data for data recovery and reconciliation purposes.
+            correctCategory: capitalize(displayed[displayed.correct]['fr-fr']),
+            stimuli: displayed.showing['fr-fr'],
+            left: capitalize(displayed.left['fr-fr']),
+            right: capitalize(displayed.right['fr-fr']),
             correctPosition: displayed.correct,
-            blockName: displayed.name
+
+            // Set of localized data to display to user.
+            _stimuli: displayed.showing[lang],
+            _left: capitalize(displayed.left[lang]),
+            _right: capitalize(displayed.right[lang])
           });
 
           id++;
@@ -336,8 +341,12 @@ $(function(window, undefined) {
      */
     function save(type, trial, timing, timedOut) {
       answerStore[type].push(
-        _.assign({}, trial, {timing: timing, timedOut: timedOut ? true : false}
-      ));
+        _.assign(
+          {},
+          {left: trial.left, right: trial.right, correctCategory: trial.correctCategory, stimuli: trial.stimuli},
+          {timing: timing, timedOut: timedOut ? true : false}
+        )
+      );
     }
 
     /**
@@ -349,6 +358,7 @@ $(function(window, undefined) {
      * @return {Object} Promise, resolved when trial is done.
      */
     function waitForAnswer(trial) {
+      console.log(trial)
       var deferred = $.Deferred();
       var timer = Timer;
       var keyPressed = null;
@@ -553,7 +563,7 @@ $(function(window, undefined) {
      */
     return {
       begin: function(data, order, lang) {
-        console.log('lang', lang)
+        console.log('IAT Starting — current locale is', lang);
         return loadBlocks(data, order, lang);
       }
     }
