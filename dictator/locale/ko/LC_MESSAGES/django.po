@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: 2016-10-14 11:19+0200\n"
+"PO-Revision-Date: 2016-11-15 13:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: templates/dictator/EndGame.html:9
 msgid "Thank once again!"
@@ -51,8 +51,8 @@ msgid ""
 "Remember, the other participant is different from the ones you interacted "
 "with in the previous two tasks."
 msgstr ""
-"이번 과제에서 당신과 함꼐 하는 참가자는, 이전 두 과제에서 함께 했던 참가자와"
-"는 다른 사람임을 유념해 주십시오. "
+"이번 과제에서 당신과 함께하는 참가자는, 이전 두 과제에서 했던 참과자들과는 "
+"다른 사람임을 유념해주십시오."
 
 #: templates/dictator/Instructions.html:12
 msgid "These are the rules:"
@@ -73,23 +73,21 @@ msgstr ""
 msgid ""
 "Participant A must now decide if he or she wants to transfer any of his or "
 "her %(amount)s to Participant B."
-msgstr ""
-" 참가자 A는 참가자 B에게 돈을 이체해줄지, 이체해준다면 얼마정도의 "
-"%(amount)s 를 줄지 결정해야합니다"
+msgstr "이체해준다면 %(amount)s 원 중에서 얼마 정도를 줄 지 결정해야 합니다."
 
 #: templates/dictator/Instructions.html:17
 msgid ""
 "This transfer is not multiplied by any number and Participant B cannot "
 "transfer any amount back to Participant A."
 msgstr ""
-"현재 계좌이체된 금액은 어떠한 수로도 더해지거나 추가되지 않은 액수이며, 참가"
-"자 B에게 주어진 금액은 참가자 A에게 주어질 수 없습니다"
+"참가자 B에게 주어진 금액은 어떠한 수로 더해지거나 추가되지 않은 액수이며, 참"
+"가자 B에게 주어진 금액은 참가자 A에게 주어질 수 없습니다."
 
 #: templates/dictator/Instructions.html:19
 msgid ""
 "Your role (Participant A or Participant B) is revealed to you at the "
 "beginning of the task."
-msgstr "당신의 역할(참가자 A 또는 참가자 B)은 과제를 시작 시에 제시됩니다. "
+msgstr "당신의 역할(참가자 A 또는 참가자 B)은 과제를 시작 시에 제시됩니다."
 
 #: templates/dictator/Instructions.html:20
 msgid ""
@@ -118,7 +116,7 @@ msgstr "당신의 역할은 참가자 A 입니다."
 #: templates/dictator/Offer.html:9
 #, python-format
 msgid "You have %(amount)s in your possession."
-msgstr "당신은 ~ 퍼센트 %(amount)s 을 보유하고 있습니다."
+msgstr "당신은 %(amount)s 을 보유하고 있습니다."
 
 #: templates/dictator/Offer.html:9
 msgid "How much do you want to transfer to Participant B?"

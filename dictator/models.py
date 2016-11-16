@@ -69,6 +69,13 @@ class Subsession(BaseSubsession):
         """
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
+        if (
+            'language_code' in self.session.config and
+            'lang' not in self.session.vars
+        ):
+            self.session.vars['lang'] = (
+                self.session.config['language_code'][:2]
+            )
 
 
 class Group(BaseGroup):
