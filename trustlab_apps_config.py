@@ -59,7 +59,7 @@ quota_gender_age_groups_ko = {
         'percentage': 11, 'expected': total_ko * (11 / 100), 'currently': 0
     },
     '1_35_44': {
-        'percentage': 11, 'expected': total_ko * (11 / 100), 'currently': 0
+        'percentage': 12, 'expected': total_ko * (11 / 100), 'currently': 0
     },
     '1_45_54': {
         'percentage': 12, 'expected': total_ko * (12 / 100), 'currently': 0
