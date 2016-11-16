@@ -85,7 +85,8 @@ class Group(BaseGroup):
         Save key variables and results exists in the model.
         """
         # Choose (and save reference in DB) a game.
-        chosen_game = self.choose_game(Constants.eligible_games)
+        # chosen_game = self.choose_game(Constants.eligible_games)
+        chosen_game = 'trust'
 
         # Get payoff from game.
         payoff = None
@@ -410,6 +411,7 @@ class Group(BaseGroup):
                 # a simple 0 to 10 units). So we simplify it by finding within
                 # which ranges the endowment goes, each range then matching
                 # a method name.
+                print(get_language()[:2])
                 if get_language()[:2] == 'ko':
                     # Create a list of tuples representing ranges,
                     # based on steps of 12000 Won just like the form
