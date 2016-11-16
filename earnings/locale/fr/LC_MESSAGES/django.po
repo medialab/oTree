@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 11:50+0100\n"
+"POT-Creation-Date: 2016-11-04 14:11+0100\n"
 "PO-Revision-Date: 2016-09-30 13:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -109,7 +109,7 @@ msgstr ""
 #: templates/earnings/Display.html:47
 #, fuzzy, python-format
 #| msgid "In total, your payoff for this task is"
-msgid "In total, your payoff for this task is %(payoff)s."
+msgid "In total, your payoff for this task is\" %%} %(payoff)s."
 msgstr "Au total, votre gain pour cette tâche est"
 
 #: templates/earnings/Display.html:52 templates/earnings/Display.html.py:60
