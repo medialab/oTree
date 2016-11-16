@@ -5,6 +5,7 @@ from ._builtin import Page
 from . import models
 from .models import amount_allocated
 from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import get_language
 
 
 def vars_for_all_templates(self):
@@ -12,7 +13,7 @@ def vars_for_all_templates(self):
     return {
         'instructions': 'trust/Instructions.html',
         'total_q': 1,
-        'lang': self.session.vars['lang']
+        'lang': get_language()[:2] or self.session.vars['lang']
     }
 
 
