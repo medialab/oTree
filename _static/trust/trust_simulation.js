@@ -89,7 +89,7 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.initialize(mode,startPosition,loop,{});
 
 	// Calque 1
-	this.label = new cjs.Text("participant B", "bold 20px 'Gotham Bold'");
+	this.label = new cjs.Text("participant A", "bold 20px 'Gotham Bold'");
 	this.label.name = "label";
 	this.label.lineHeight = 20;
 	this.label.lineWidth = 160;
@@ -1462,6 +1462,9 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 					this.bubble1.label.font = "18px 'Gotham Medium'";
 					this.bubble2.label.font = "18px 'Gotham Medium'";
 				}
+				
+				this.charLabel1.label.text = labelA;
+				this.charLabel2.label.text = labelB;
 				
 				var pushMoney = function(player, dollar, playerIndex) {
 					player.money++;
