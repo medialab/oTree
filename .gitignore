@@ -7,3 +7,4 @@ staticfiles
 *.sqlite3
 _coverage_results
 exports_iat/*.csv
+_static_root
