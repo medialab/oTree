@@ -7,45 +7,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-04 14:11+0100\n"
-"PO-Revision-Date: 2016-10-14 11:39+0200\n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
+"PO-Revision-Date: 2016-11-15 13:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.8\n"
 
-#: models.py:57
+#: models.py:52
 msgid "Overall, how satisfied are you with life as a whole these days?"
 msgstr "최근 당신은 당신의 삶의 대하여 전반적으로 얼마나 만족하십니까?"
 
-#: models.py:60
+#: models.py:55
 msgid "0 - Not at all satisfied"
 msgstr "0 - 전혀 만족스럽지 않다 "
 
-#: models.py:70
+#: models.py:65
 msgid "10 - Completely satisfied"
 msgstr "10 - 매우 만족스럽다"
 
-#: models.py:71 models.py:92 models.py:113 models.py:134 models.py:155
-#: models.py:176 models.py:203 models.py:224 models.py:247 models.py:268
-#: models.py:290 models.py:310 models.py:330 models.py:350 models.py:370
-#: models.py:390 models.py:410 models.py:423 models.py:455 models.py:475
-#: models.py:495 models.py:515 models.py:535 models.py:555 models.py:575
-#: models.py:596 models.py:616 models.py:637 models.py:657 models.py:678
-#: models.py:794 models.py:819 models.py:838 models.py:856 models.py:869
+#: models.py:66 models.py:87 models.py:108 models.py:129 models.py:150
+#: models.py:171 models.py:198 models.py:219 models.py:242 models.py:263
+#: models.py:285 models.py:305 models.py:325 models.py:345 models.py:365
+#: models.py:385 models.py:405 models.py:418 models.py:450 models.py:470
+#: models.py:490 models.py:510 models.py:530 models.py:550 models.py:570
+#: models.py:591 models.py:611 models.py:632 models.py:652 models.py:673
+#: models.py:789 models.py:814 models.py:833 models.py:851 models.py:864
 #: templates/survey_i18n/Survey10.html:43
 #: templates/survey_i18n/Survey10.html:80
 #: templates/survey_i18n/Survey10B.html:26
 #: templates/survey_i18n/Survey10B.html:35
-#: templates/survey_i18n/Survey10D.html:27
-#: templates/survey_i18n/Survey10D.html:36 views.py:317 views.py:347
+#: templates/survey_i18n/Survey10D.html:26 views.py:318 views.py:348
 msgid "Don't know"
 msgstr "모르겠다 "
 
-#: models.py:78
+#: models.py:73
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
 "you can't be too careful in dealing with people?"
@@ -53,15 +52,15 @@ msgstr ""
 "일반적으로, 당신은 대부분의 다른 사람들을 신뢰할 만하다고 생각합니까? 혹은 항"
 "상 경계해야 한다고 생각합니까?"
 
-#: models.py:81
+#: models.py:76
 msgid "0 -You can't be too careful"
 msgstr "0 - 항상 경계한다"
 
-#: models.py:91
+#: models.py:86
 msgid "10 - Most people can be trusted"
 msgstr "10 - 대부분의 사람들을 신뢰한다"
 
-#: models.py:99
+#: models.py:94
 msgid ""
 "How do you see yourself: are you generally a person who is fully prepared to "
 "take risks or do you try to avoid taking risks?"
@@ -69,15 +68,15 @@ msgstr ""
 "당신은 일반적으로 위험을 기꺼이 감수하는 편입니까? 혹은 위험을 피하는 편입니"
 "까?"
 
-#: models.py:102
+#: models.py:97
 msgid "0 - Completely unwilling to take risks"
 msgstr "0 - 전혀 위험을 감수하고 싶지 않다"
 
-#: models.py:112
+#: models.py:107
 msgid "10 - Very willing to take risks"
 msgstr "10 - 기꺼이 위험을 감수할 것이다"
 
-#: models.py:120
+#: models.py:115
 msgid ""
 "How willing are you to punish someone who treats you unfairly, even if there "
 "may be costs for you?"
@@ -85,15 +84,15 @@ msgstr ""
 "당신은 대가를 지불하고서라도 당신을 불공평하게 대하는 사람을, 얼마나 처벌할 "
 "의향이 있으십니까?"
 
-#: models.py:123 models.py:144 models.py:165
+#: models.py:118 models.py:139 models.py:160
 msgid "0 - Completely unwilling to do so"
 msgstr "0 - 그럴 의향이 전혀 없다"
 
-#: models.py:133 models.py:154 models.py:175
+#: models.py:128 models.py:149 models.py:170
 msgid "10 - Very willing to do so"
 msgstr "10 - 매우 그럴 의향이 있다"
 
-#: models.py:141
+#: models.py:136
 msgid ""
 "How willing are you to punish someone who treats others unfairly, even if "
 "there may be costs for you?"
@@ -101,7 +100,7 @@ msgstr ""
 "당신은 대가를 지불하고서라도 다른 사람들을 불공평하게 대하는 사람을, 얼마나 "
 "처벌할 의향이 있으십니까?"
 
-#: models.py:162
+#: models.py:157
 msgid ""
 "How willing are you to give to good causes without expecting anything in "
 "return? "
@@ -109,19 +108,19 @@ msgstr ""
 "당신은 보상으로 그 어떤 것도 바라지 않고 선의를 제공할 의향이 얼마나 있으십니"
 "까?"
 
-#: models.py:189
+#: models.py:184
 msgid "When someone does me a favour I am willing to return it."
 msgstr "누군가가 나에게 호의를 베풀면, 나는 그에 보답할 의향이 있다."
 
-#: models.py:192 models.py:213 models.py:444 models.py:783
+#: models.py:187 models.py:208 models.py:439 models.py:778
 msgid "0 - Does not describe me at all"
 msgstr "0 - 나는 전혀 그런 사람이 아니다."
 
-#: models.py:202 models.py:223 models.py:454 models.py:793
+#: models.py:197 models.py:218 models.py:449 models.py:788
 msgid "10 - Describes me perfectly"
 msgstr "10 - 나는 완벽하게 그런 사람이다."
 
-#: models.py:210
+#: models.py:205
 msgid ""
 "If I am treated very unjustly, I will take revenge     at the first "
 "occasion, even if there is a cost to do so."
@@ -129,7 +128,7 @@ msgstr ""
 "만약 내가 부당하게 대우받는다면, 나는 대가를 지불하고서라도 곧바로 보복할 것"
 "이다."
 
-#: models.py:233
+#: models.py:228
 msgid ""
 "Would you say that most of the time people are only     looking out for "
 "themselves or that they mostly try to help each other?"
@@ -137,15 +136,15 @@ msgstr ""
 "당신은 사람들이 오직 자신의 이익만 챙기는 편이라 생각하십니까? 혹은 대부분 서"
 "로 도우려 노력하는 편이라 생각하십니까?"
 
-#: models.py:236
+#: models.py:231
 msgid "0 - People are only looking out for themselves "
 msgstr "0 - 사람들은 오직 자신의 이만을 챙긴다"
 
-#: models.py:246
+#: models.py:241
 msgid "10 - People mostly try to help each other"
 msgstr "10 -사람들은 대부분 서로를 도우려 노력한다  "
 
-#: models.py:254
+#: models.py:249
 msgid ""
 "Do you think most people would try to take advantage     of you if they got "
 "a chance, or would they try to be fair?"
@@ -153,15 +152,15 @@ msgstr ""
 "당신은 대부분의 사람들이 기회가 있다면 당신을 이용하려 할 것이라 생각하십니"
 "까? 혹은 공정하려 노력할 것이라 생각하십니까?"
 
-#: models.py:257
+#: models.py:252
 msgid "0 - Most people would try to take advantage of me"
 msgstr "0 - 대부분 나를 이용하려 한다 "
 
-#: models.py:267
+#: models.py:262
 msgid "10 - Most people would try to be fair"
 msgstr "10 - 대부분 공정하려 노력한다 "
 
-#: models.py:275
+#: models.py:270
 msgid ""
 "Can you tell us whether you think the following     action can always be "
 "justified, never be justified, or something in     between"
@@ -169,51 +168,51 @@ msgstr ""
 "다음의 행동이 항상 정당화 될 수 있는지, 절대 정당화될 수 없는지, 혹은 양쪽 모"
 "두 어느 정도 가능한다고 생각하시는지에 대하여 응답해주세요:"
 
-#: models.py:279
+#: models.py:274
 msgid "0 - This action is never wrong"
 msgstr "0 - 이 행동은 절대 잘못되지 않았다"
 
-#: models.py:289
+#: models.py:284
 msgid "10 - This action is always wrong"
 msgstr "10 - 이 행동은 언제나 잘못되었다"
 
-#: models.py:297
+#: models.py:292
 msgid "Your family:"
 msgstr "당신의 가족:"
 
-#: models.py:299 models.py:319 models.py:339 models.py:359 models.py:379
-#: models.py:399 models.py:464 models.py:484 models.py:504 models.py:524
-#: models.py:544 models.py:564
+#: models.py:294 models.py:314 models.py:334 models.py:354 models.py:374
+#: models.py:394 models.py:459 models.py:479 models.py:499 models.py:519
+#: models.py:539 models.py:559
 msgid "0 - I don't trust them at all"
 msgstr "0 - 전혀 신뢰할 수 없다 "
 
-#: models.py:309 models.py:329 models.py:349 models.py:369 models.py:389
-#: models.py:409 models.py:474 models.py:494 models.py:514 models.py:534
-#: models.py:554 models.py:574
+#: models.py:304 models.py:324 models.py:344 models.py:364 models.py:384
+#: models.py:404 models.py:469 models.py:489 models.py:509 models.py:529
+#: models.py:549 models.py:569
 msgid "10 - I fully trust them"
 msgstr "10 - 매우 신뢰한다 "
 
-#: models.py:317
+#: models.py:312
 msgid "People in your neighbourhood:"
 msgstr "이웃:"
 
-#: models.py:337
+#: models.py:332
 msgid "People you know personally:"
 msgstr "지인:"
 
-#: models.py:357
+#: models.py:352
 msgid "People you meet for the first time:"
 msgstr "처음 만난 사람:"
 
-#: models.py:377
+#: models.py:372
 msgid "People of another religion:"
 msgstr "다른 종교를 가진 사람"
 
-#: models.py:397
+#: models.py:392
 msgid "People of another nationality:"
 msgstr "다른 국적 사람"
 
-#: models.py:417
+#: models.py:412
 msgid ""
 "If you lost a wallet or a purse that contained items of great value to you, "
 "and it was found by a stranger, do you think it would be returned with its "
@@ -222,77 +221,77 @@ msgstr ""
 "당신이 귀중품이 담긴 지갑을 잃어버렸을 때, 누군가가 그것을 발견한다고 가정합"
 "시다. 당신은 귀중품이 그대로 담긴 지갑을 찾을 수 있을 것이라 생각하십니까?"
 
-#: models.py:421 models.py:433 models.py:817 models.py:903
+#: models.py:416 models.py:428 models.py:812 models.py:898
 msgid "Yes"
 msgstr "예 "
 
-#: models.py:422 models.py:434 models.py:818 models.py:904
+#: models.py:417 models.py:429 models.py:813 models.py:899
 msgid "No"
 msgstr "아니오 "
 
-#: models.py:430
+#: models.py:425
 msgid "Did you vote in the last national election?"
 msgstr "당신은 지난 총선에서 투표를 하셨습니까?"
 
-#: models.py:435
+#: models.py:430
 msgid "I could not vote"
 msgstr "투표하지 않았다 "
 
-#: models.py:442
+#: models.py:437
 msgid "I am good at math."
 msgstr "나는 수학을 잘 한다."
 
-#: models.py:462
+#: models.py:457
 msgid "Your government:"
 msgstr "당신의 정부:"
 
-#: models.py:482
+#: models.py:477
 msgid "The parliament:"
 msgstr "국회:"
 
-#: models.py:502
+#: models.py:497
 msgid "The judicial system:"
 msgstr "사법제도:"
 
-#: models.py:522
+#: models.py:517
 msgid "The media:"
 msgstr "언론매체:"
 
-#: models.py:542
+#: models.py:537
 msgid "Financial Institutions (e.g. banks):"
 msgstr "금융 기관 (예: 은행):"
 
-#: models.py:562
+#: models.py:557
 msgid "The police:"
 msgstr "경찰:"
 
-#: models.py:582
+#: models.py:577
 msgid "Public institutions deliver public services in the best possible way."
 msgstr "공공 기관들은 최선을 다해 가능한 방법으로 공공 서비스를 제공한다."
 
-#: models.py:585 models.py:605 models.py:626 models.py:646 models.py:667
+#: models.py:580 models.py:600 models.py:621 models.py:641 models.py:662
 msgid "0 - I don't agree at all"
 msgstr "0 - 전혀 동의하지 않는다 "
 
-#: models.py:595 models.py:615 models.py:636 models.py:656 models.py:677
+#: models.py:590 models.py:610 models.py:631 models.py:651 models.py:672
 msgid "10 - I fully agree"
 msgstr "10 - 전적으로 동의한다 "
 
-#: models.py:603
+#: models.py:598
 msgid "Public institutions pursue long term objectives."
 msgstr "공공 기관들은 장기적인 업무 목표를 추구한다.  "
 
-#: models.py:623
+#: models.py:618
 msgid ""
 "People working in public institutions behave according to ethical standards "
 "aimed at avoiding corruption."
 msgstr "공공 기관 근무자들은 부패를 막는 윤리적 기준에 따라서 행동한다. "
 
-#: models.py:644
+#: models.py:639
 msgid "Public institutions are transparent."
 msgstr "공공 기관들은 투명하게 운영된다."
 
-#: models.py:664
+#: models.py:659
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
 "race, age or economic condition equally."
@@ -300,112 +299,112 @@ msgstr ""
 "공공 기관들은 시민들의 성별, 인종, 나이 또는 경제적 지위와 관계 없이 모든 시"
 "민들을 공정하게 대우한다."
 
-#: models.py:685
+#: models.py:680
 msgid "What is your date of birth?"
 msgstr "당신의 생년월일은 언제입니까?"
 
-#: models.py:691
+#: models.py:686
 msgid "Male"
 msgstr "남성"
 
-#: models.py:691
+#: models.py:686
 msgid "Female"
 msgstr "여성 "
 
-#: models.py:691 models.py:916 models.py:927
+#: models.py:686 models.py:911 models.py:922
 msgid "Other"
 msgstr "그 외 "
 
-#: models.py:692
+#: models.py:687
 msgid "What is your gender?"
 msgstr "당신의 성별은 무엇입니까?"
 
-#: models.py:701
+#: models.py:696
 msgid "How many people live in your household (including yourself)?"
 msgstr "당신을 포함하여 당신과 함께 살고 있는 가족 구성원은 총 몇 명입니까?"
 
-#: models.py:724
+#: models.py:719
 msgid "In which country were you born?"
 msgstr "출생 국가는 어디입니까? "
 
-#: models.py:728
+#: models.py:723
 msgid "I was born here"
 msgstr "나는 이곳에서 태어났다 "
 
-#: models.py:735
+#: models.py:730
 msgid "Do you live in a:"
 msgstr "당신이 사는 곳은:"
 
-#: models.py:737
+#: models.py:732
 msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
 msgstr "광역 대도시권 (거주자 1백 5십만명 이상)"
 
-#: models.py:739
+#: models.py:734
 msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
 msgstr "중간 크기의 대도시권 (거주자 5십만명 이상 - 1백 5십만명 미만)"
 
-#: models.py:741
+#: models.py:736
 msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
 msgstr "작은 대도시권 (거주자 2십만명 이상 - 5십만명 미만)"
 
-#: models.py:743
+#: models.py:738
 msgid "Town (50.000 to 200.000 inhabitants)"
 msgstr "소도시 (거주자 5만명 이상 - 2십만명 미만)"
 
-#: models.py:744
+#: models.py:739
 msgid "Village (Less than 50.000 inhabitants)"
 msgstr "마을 (거주자 5만명 미만)"
 
-#: models.py:745
+#: models.py:740
 msgid "Rural area"
 msgstr "시골 지역"
 
-#: models.py:754
+#: models.py:749
 msgid "Which of these best describes your situation?"
 msgstr "현재 귀하의 상황을 가장 잘 설명하는 보기는 무엇입니까?"
 
-#: models.py:756
+#: models.py:751
 msgid "At work as an employee"
 msgstr "직장인(회사원)이다"
 
-#: models.py:757
+#: models.py:752
 msgid "Employer/self-employed"
 msgstr "고용주/개인 사업자이다"
 
-#: models.py:758
+#: models.py:753
 msgid "Unemployed"
 msgstr "실직 상태이다"
 
-#: models.py:760
+#: models.py:755
 msgid ""
 "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
 msgstr "노동 인구가 아니다. (예: 주부, 학생, 은퇴자, 일할 수 없는 상태)"
 
-#: models.py:767
+#: models.py:762
 msgid "Do you work in the...?"
 msgstr "귀하의 근무지는? "
 
-#: models.py:769
+#: models.py:764
 msgid "Central, regional or local government administration"
 msgstr "중앙, 지역 또는 지방 행정 부문 "
 
-#: models.py:771
+#: models.py:766
 msgid "Public sector, other"
 msgstr "공공 부문 "
 
-#: models.py:772
+#: models.py:767
 msgid "Private (for profit) sector"
 msgstr "영리 목적의 사기업 또는 사적 부문"
 
-#: models.py:773
+#: models.py:768
 msgid "Not for profit sector"
 msgstr "비영리 부문"
 
-#: models.py:774
+#: models.py:769
 msgid "Not applicable"
 msgstr "해당 없음"
 
-#: models.py:780
+#: models.py:775
 msgid ""
 "As long as I am not convinced otherwise, I assume that people have only the "
 "best intentions."
@@ -413,7 +412,7 @@ msgstr ""
 "내가 달리 설득되지 않는 한, 나는 일단 사람들이 항상 선한 의도만으로 행동한다"
 "고 생각한다."
 
-#: models.py:805
+#: models.py:800
 msgid ""
 "Just to confirm, which of these income bands corresponds best to your "
 "personal income? Remember, we are asking for your individual income, after "
@@ -422,47 +421,45 @@ msgstr ""
 "다시 한 번 확인차, 당신의 개인 수입은 어느 소득 범위에 해당하는지 알려주십시"
 "오. 반드시 세금을 제한 세후 소득으로 답변해 주시기 바랍니다."
 
-#: models.py:815
+#: models.py:810
 msgid "Did you or your household save any money in the previous year?"
 msgstr "본인 혹은 본인의 가정은 올해 저축한 돈이 있습니까?"
 
-#: models.py:825
+#: models.py:820
 msgid "How important would you say religion is in your own life?"
 msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
 
-#: models.py:827
+#: models.py:822
 msgid "0 - Not important at all"
-msgstr "0 - 전혀 만족스럽지 않다 "
+msgstr "0 - 전혀 중요하 않다"
 
-#: models.py:837
+#: models.py:832
 msgid "10 - Very important"
-msgstr "10 - 매우 그럴 의향이 있다"
+msgstr "10 - 매우 중요하"
 
-#: models.py:849
+#: models.py:844
 msgid ""
 "The other participants in the first tasks are real persons who participated "
 "in the same study."
-msgstr ""
-"첫 번째 과제를 수행한 다른 참가자들은 나와 같은 연구에 참가한 바로 그 사람들"
-"이다."
+msgstr "나와 같이 첫번째 과제에 수행한 참가자들은 실제 사람들이다. "
 
-#: models.py:852 models.py:865
+#: models.py:847 models.py:860
 msgid "No trust at all"
 msgstr "전혀 믿지 않는다 "
 
-#: models.py:853 models.py:866
+#: models.py:848 models.py:861
 msgid "Little trust"
 msgstr "거의 믿지 않는다 "
 
-#: models.py:854 models.py:867
+#: models.py:849 models.py:862
 msgid "Quite a bit of trust"
 msgstr "꽤 믿는다 "
 
-#: models.py:855 models.py:868
+#: models.py:850 models.py:863
 msgid "A lot of trust"
-msgstr "확신한다."
+msgstr "확신한다"
 
-#: models.py:862
+#: models.py:857
 msgid ""
 "My final earnings will be calculated according to the rules stated in the "
 "description of the study and will be paid to me."
@@ -470,94 +467,94 @@ msgstr ""
 "나의 최종 획득 금액은, 연구와 관련된 안내대로 원칙에 따라 계산될 것이며 나에"
 "게 실제로 지급될 것이다"
 
-#: models.py:875
+#: models.py:870
 msgid ""
 "At the end of this study, how would you say that you read the descriptions "
 "associated with each of the sections?"
 msgstr "각 섹션별로 제시된 설명들을 어떻게 읽으셨습니까?"
 
-#: models.py:878
+#: models.py:873
 msgid "With very little care"
 msgstr "전혀 주의 깊게 읽지 않았다"
 
-#: models.py:879
+#: models.py:874
 msgid "With little care"
 msgstr "주의 깊게 읽지 않았다"
 
-#: models.py:880
+#: models.py:875
 msgid "With care"
 msgstr "주의 깊게 읽었다"
 
-#: models.py:881
+#: models.py:876
 msgid "With a lot of care"
 msgstr "매우 주의 깊게 읽었다"
 
-#: models.py:882
+#: models.py:877
 msgid "With extreme care"
 msgstr "최고로 주의 깊게 읽었다"
 
-#: models.py:888
+#: models.py:883
 msgid "Were you in a calm environment when you answered the questions?"
 msgstr "각 문항에 응답하실 떄, 당신은 조용한 환경에 계셨습니까?"
 
-#: models.py:891
+#: models.py:886
 msgid "Not calm at all"
 msgstr "전혀 조용하지 않았다 "
 
-#: models.py:892
+#: models.py:887
 msgid "Not very calm"
 msgstr "별로 조용하지 않았다 "
 
-#: models.py:893
+#: models.py:888
 msgid "Fairly calm"
 msgstr "꽤 조용했다 "
 
-#: models.py:894
+#: models.py:889
 msgid "Very calm"
 msgstr "매우 조용했다 "
 
-#: models.py:900
+#: models.py:895
 msgid ""
 "Have you ever participated in another study that seemed close to this one?"
 msgstr "당신은 본 연구와 비슷한 연구에 참여한 적이 있으십니까?"
 
-#: models.py:910
+#: models.py:905
 msgid "Which device did you take this study on?"
 msgstr "어떤 기기를 사용하여 본 연구에 참가하셨습니까?"
 
-#: models.py:912
+#: models.py:907
 msgid "Desktop"
 msgstr "데스크톱 컴퓨터"
 
-#: models.py:913
+#: models.py:908
 msgid "Laptop (non-touchscreen)"
 msgstr "노트북 (터치스크린이 아닌 형태)"
 
-#: models.py:914
+#: models.py:909
 msgid "Laptop (touchscreen)"
 msgstr "노트북 (터치스크린)"
 
-#: models.py:915
+#: models.py:910
 msgid "Tablet"
 msgstr "태블릿"
 
-#: models.py:922
+#: models.py:917
 msgid "Which browser did you take this survey on?"
 msgstr "본 연구에 참여하실 때 사용하신 브라우저는 어떤 것입니까?"
 
-#: models.py:924
+#: models.py:919
 msgid "Google Chrome"
 msgstr "구글 크롬"
 
-#: models.py:925
+#: models.py:920
 msgid "Firefox"
 msgstr "파이어폭스"
 
-#: models.py:926
+#: models.py:921
 msgid "Internet Explorer"
 msgstr "인터넷 익스플로러"
 
-#: models.py:933
+#: models.py:928
 msgid ""
 "If you have any comments about your experience taking this survey, with "
 "regard to the functionality of the platform, or the content of the tasks and "
@@ -566,7 +563,7 @@ msgstr ""
 "본 연구에 임하시는 동안 경험하신 플랫폼, 또는 주어진 과제와 질문의 내용에 관"
 "하여 의견이 있으시다면 피드백을 부탁 드립니다."
 
-#: templates/survey_i18n/Survey01.html:34
+#: templates/survey_i18n/Survey01.html:35
 #: templates/survey_i18n/Survey02.html:37
 #: templates/survey_i18n/Survey02A.html:38
 #: templates/survey_i18n/Survey03.html:32
@@ -583,12 +580,12 @@ msgstr ""
 #: templates/survey_i18n/Survey10A.html:28
 #: templates/survey_i18n/Survey10B.html:42
 #: templates/survey_i18n/Survey10C.html:39
-#: templates/survey_i18n/Survey10D.html:43
+#: templates/survey_i18n/Survey10D.html:32
 #: templates/survey_i18n/Survey10E.html:17
 #: templates/survey_i18n/Survey10F.html:27
 #: templates/survey_i18n/Survey10G.html:49
 #: templates/survey_i18n/Survey11.html:25
-#: templates/survey_i18n/Survey12.html:17
+#: templates/survey_i18n/Survey12.html:19
 msgid "Next"
 msgstr "다음"
 
@@ -794,8 +791,8 @@ msgid ""
 "received <u>as an individual</u>, after taxes have been deducted? (Income "
 "can come from any of the sources mentioned in the previous question.)"
 msgstr ""
-"지난 1년 간 당신의 세후 개인 연소득은 얼마입니까? (소득은 이전의 질문에서 언"
-"급되었던 모든 소득원을 포함합니다.)"
+"지난 1년간 당신의 세후 개인 연소득은 얼마입니까? (소득은 이전의 질문에서 언급"
+"되었던 모든 소득원을 포함합니다.)"
 
 #: templates/survey_i18n/Survey10B.html:17
 msgid ""
@@ -852,8 +849,8 @@ msgid ""
 "after taxes have been deducted? (Income can come from any of the sources "
 "mentioned in the previous question.)"
 msgstr ""
-"지난 1년간 당신과 함께 거주하는 가족들의 세후 소득 총액은 얼마입니까? (소득"
-"은 이전의 질문에서 언급되었던 모든 소득원을 포함합니다.)"
+"지난 1년간 당신의 가정 (본인과 소득을 공유하는 경우 기준) 세후 소득 총액은 얼"
+"마입니까? (소득은 이전의 질문에서 언급되었던 모든 소득원을 포함합니다.)"
 
 #: templates/survey_i18n/Survey10C.html:30
 msgid "per year"
@@ -866,23 +863,22 @@ msgid ""
 "expenditures with). Remember, we are asking for the income of your "
 "<u>household</u>, after taxes have been deducted."
 msgstr ""
-"아래 소득 범위 중 어느 범위가 당신과 함께 거주하는 가족들(당신과 소득과 지출"
-"을 공유하는 사람들) 의 세후 소득에 해당합니까? 반드시 세후 개인 소득으로 응답"
-"하여 주십시오."
+"아래 소득 범위 중 어느 범위가 당신과 함께 거주하는 가정(당신과 소득과 지출을 "
+"공유하는 사람들) 의 세후 소득에 해당합니까? 반드시 세후 개인 소득으로 응답하"
+"여 주십시오."
 
-#: templates/survey_i18n/Survey10D.html:22
-#: templates/survey_i18n/Survey10D.html:31
+#: templates/survey_i18n/Survey10D.html:21
 msgid "0 to"
 msgstr "0 부터"
 
-#: templates/survey_i18n/Survey10D.html:31
-#: templates/survey_i18n/Survey10D.html:32
-#: templates/survey_i18n/Survey10D.html:33
-#: templates/survey_i18n/Survey10D.html:34
+#: templates/survey_i18n/Survey10D.html:21
+#: templates/survey_i18n/Survey10D.html:22
+#: templates/survey_i18n/Survey10D.html:23
+#: templates/survey_i18n/Survey10D.html:24
 msgid "euros per year"
 msgstr ""
 
-#: templates/survey_i18n/Survey10D.html:35
+#: templates/survey_i18n/Survey10D.html:25
 msgid "euros or more per year"
 msgstr ""
 
@@ -934,7 +930,7 @@ msgstr ""
 "당신이 의사 결정을 내릴 때, 다음 두 개의 서술문에 대하여 얼마나 신뢰하는지 응"
 "답하여 주십시오:"
 
-#: templates/survey_i18n/Survey12.html:12
+#: templates/survey_i18n/Survey12.html:14
 msgid ""
 "This is the very last screen, in the following screen we will show you your "
 "earnings!"
@@ -942,7 +938,7 @@ msgstr ""
 "연구의 가장 마지막 화면입니다. 다음 화면에서, 당신이 획득한 금액을 알려드리겠"
 "습니다!"
 
-#: views.py:49
+#: views.py:50
 msgid ""
 "Imagine the following situation: you won 1000 euros in a lottery. "
 "Considering your current situation, how much would you donate to a good "
@@ -951,7 +947,7 @@ msgstr ""
 "다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨"
 "습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
-#: views.py:52
+#: views.py:53
 msgid ""
 "Imagine the following situation: you won $1000 in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
@@ -959,7 +955,7 @@ msgstr ""
 "다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨"
 "습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
-#: views.py:55
+#: views.py:56
 msgid ""
 "Imagine the following situation: you won 1000 Won in a lottery. Considering "
 "your current situation, how much would you donate to a good cause?"
@@ -967,175 +963,175 @@ msgstr ""
 "다음의 상황을 상상해 보십시오: 당신은 복권에 당첨되어 1,200,000원을 획득하셨"
 "습니다. 당신의 현재 상황을 고려했을 때, 얼마 정도를 기부하시겠습니까?"
 
-#: views.py:63 views.py:310 views.py:340
+#: views.py:64 views.py:311 views.py:341
 msgid "€"
 msgstr ""
 
-#: views.py:67 views.py:311 views.py:341
+#: views.py:68 views.py:312 views.py:342
 msgid "$"
 msgstr ""
 
-#: views.py:71 views.py:312 views.py:342
+#: views.py:72 views.py:313 views.py:343
 msgid "Won"
 msgstr "원"
 
-#: views.py:102 views.py:111 views.py:120
+#: views.py:103 views.py:112 views.py:121
 msgid "no present"
 msgstr "기부하지 않겠다"
 
-#: views.py:103
+#: views.py:104
 msgid "the present worth 5 euros"
 msgstr ""
 
-#: views.py:104
+#: views.py:105
 msgid "the present worth 10 euros"
 msgstr ""
 
-#: views.py:105
+#: views.py:106
 msgid "the present worth 15 euros"
 msgstr ""
 
-#: views.py:106
+#: views.py:107
 msgid "the present worth 20 euros"
 msgstr ""
 
-#: views.py:107
+#: views.py:108
 msgid "the present worth 25 euros"
 msgstr ""
 
-#: views.py:108
+#: views.py:109
 msgid "the present worth 30 euros"
 msgstr ""
 
-#: views.py:112
+#: views.py:113
 msgid "the present worth $5"
 msgstr ""
 
-#: views.py:113
+#: views.py:114
 msgid "the present worth $10"
 msgstr ""
 
-#: views.py:114
+#: views.py:115
 msgid "the present worth $15"
 msgstr ""
 
-#: views.py:115
+#: views.py:116
 msgid "the present worth $20"
 msgstr ""
 
-#: views.py:116
+#: views.py:117
 msgid "the present worth $25"
 msgstr ""
 
-#: views.py:117
+#: views.py:118
 msgid "the present worth $30"
 msgstr ""
 
-#: views.py:121
+#: views.py:122
 msgid "the present worth 5.000 Won"
 msgstr "5,000원 상당의 선물"
 
-#: views.py:122
+#: views.py:123
 msgid "the present worth 10.000 Won"
 msgstr "10,000원 상당의 선물"
 
-#: views.py:123
+#: views.py:124
 msgid "the present worth 15.000 Won"
 msgstr "15,000원 상당의 선물"
 
-#: views.py:124
+#: views.py:125
 msgid "the present worth 20.000 Won"
 msgstr "20,000원 상당의 선물"
 
-#: views.py:125
+#: views.py:126
 msgid "the present worth 25.000 Won"
 msgstr "25,000원 상당의 선물"
 
-#: views.py:126
+#: views.py:127
 msgid "the present worth 30.000 Won"
 msgstr "30,000원 상당의 선물"
 
-#: views.py:185
+#: views.py:186
 msgid ""
 "When answering the following questions, please think about French "
 "institutions."
 msgstr "다음 질문에 응답하 때, 프랑스 제도에 관해 생각해 십시오."
 
-#: views.py:186
+#: views.py:187
 msgid ""
 "When answering the following questions, please think about the US "
 "institutions."
 msgstr ""
 
-#: views.py:187
+#: views.py:188
 msgid ""
 "When answering the following questions, please think about Korean "
 "institutions."
 msgstr "다음 질문에 응답하실 때, 한국의 제도에 관해 생각해 십시오."
 
-#: views.py:224
+#: views.py:225
 msgid "In what year did you arrive in France?"
 msgstr "당신은 몇 년도에 프랑스에 오셨습니까?"
 
-#: views.py:225
+#: views.py:226
 msgid "In what year did you arrive in the US?"
 msgstr ""
 
-#: views.py:226
+#: views.py:227
 msgid "In what year did you arrive in Korea?"
 msgstr "당신은 몇 년도에 한국에 오셨습니까?"
 
-#: views.py:245
+#: views.py:246
 msgid "Aucun diplôme"
 msgstr ""
 
-#: views.py:246
+#: views.py:247
 msgid "Brevet des collèges"
 msgstr ""
 
-#: views.py:247
+#: views.py:248
 msgid "CAP BEP ou équivalent"
 msgstr ""
 
-#: views.py:248
+#: views.py:249
 msgid "Baccalauréat"
 msgstr ""
 
-#: views.py:249
+#: views.py:250
 msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
 msgstr ""
 
-#: views.py:250
+#: views.py:251
 msgid "Licence (Bac + 3)"
 msgstr ""
 
-#: views.py:251
+#: views.py:252
 msgid "Master (Bac + 5) ou Doctorat"
 msgstr ""
 
-#: views.py:254 views.py:263
+#: views.py:255 views.py:264
 msgid "Less than high school"
 msgstr "고졸 이하 "
 
-#: views.py:255 views.py:264
+#: views.py:256 views.py:265
 msgid "High school"
 msgstr "고졸"
 
-#: views.py:256 views.py:265
+#: views.py:257 views.py:266
 msgid "Some college"
 msgstr "2년제 전문대 졸업"
 
-#: views.py:257 views.py:266
+#: views.py:258 views.py:267
 msgid ""
 "Diploma, trades certificate or other post school qualification other than "
 "university"
 msgstr "대학을 제외한 기타 전문 교육 기관 졸업"
 
-#: views.py:258 views.py:267
+#: views.py:259 views.py:268
 msgid "Undergraduate degree (e.g. BA, BS)"
 msgstr "4년제 대학 졸업"
 
-#: views.py:259 views.py:268
+#: views.py:260 views.py:269
 msgid "Post-graduate degree"
 msgstr "대학원 졸업"
 
