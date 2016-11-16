@@ -18,12 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.8.8\n"
 
-#: templates/iat/EndGame.html:12
+#: templates/iat/EndGame.html:9
 msgid "Congratulations!"
 msgstr "축하드립니다!"
 
-#: templates/iat/EndGame.html:13
-#, fuzzy
+#: templates/iat/EndGame.html:10
 msgid ""
 "You have now completed the sorting task. We will now move on to the last "
 "part of the study, where you are asked a few questions about yourself."
