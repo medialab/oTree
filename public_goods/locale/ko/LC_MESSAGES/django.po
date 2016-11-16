@@ -166,8 +166,8 @@ msgstr ""
 
 #: templates/public_goods/Instructions.html:26
 msgid ""
-"The total amount invested into the joint project is <strong>multiplied by "
-msgstr "공동 과제에 투자된 총 금액은 {양} 배만큼 곱해져 산출됩니다."
+"The total amount invested into the joint project is <strong>multiplied by %(Constants.efficiency_factor)s.</strong>"
+msgstr "공동 과제에 투자된 총 금액은 %(Constants.efficiency_factor)s 배만큼 곱해져 산출됩니다.</strong>"
 
 #: templates/public_goods/Instructions.html:27
 msgid ""
