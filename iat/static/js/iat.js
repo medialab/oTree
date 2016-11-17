@@ -343,7 +343,14 @@ $(function(window, undefined) {
       answerStore[type].push(
         _.assign(
           {},
-          {left: trial.left, right: trial.right, correctCategory: trial.correctCategory, stimuli: trial.stimuli},
+          {
+            id: trial.id,
+            left: trial.left,
+            right: trial.right,
+            correctCategory: trial.correctCategory,
+            correctPosition: trial.correctPosition,
+            stimuli: trial.stimuli
+          },
           {timing: timing, timedOut: timedOut ? true : false}
         )
       );
