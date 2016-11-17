@@ -266,7 +266,7 @@ class Group(BaseGroup):
         ))
         players = [
             p for p in players
-            if getattr(p, 'sent_back_amount_' + str(int(player_a_gave)))
+            if getattr(p, self.trust_sent_back_amount(player_a_gave))
         ]
 
         # Get relevant data from a chosen player.
@@ -275,11 +275,11 @@ class Group(BaseGroup):
             player_b = random.choice(players)
             matched_id = str(player_b.id)
             sent_back = getattr(
-                player_b, 'sent_back_amount_' + str(int(player_a_gave))
+                player_b, self.trust_sent_back_amount(player_a_gave)
             )
         else:
             player_b = random.choice(fallback_data['trust'])
-            sent_back = player_b['sent_back_amount_' + str(int(player_a_gave))]
+            sent_back = player_b[self.trust_sent_back_amount(player_a_gave)]
             matched_id = player_b['id']
 
         return [sent_back, matched_id]
@@ -398,43 +398,50 @@ class Group(BaseGroup):
         # String representation of relevant method in Trust Player model.
         sent_back_amount = None
 
-        # Base endowment for Korea, roughly equals €1.
-        k = 1200
-
         # If Player A sent 0, it's easy — 0.
         # Otherwise, find it.
         if given_by_player_a == 0:
             sent_back_amount = 'sent_back_amount_0'
         else:
             if not sent_back_amount:
-                # Korean is complex because of the numbers used (higher than
-                # a simple 0 to 10 units). So we simplify it by finding within
-                # which ranges the endowment goes, each range then matching
-                # a method name.
-                print(get_language()[:2])
-                if get_language()[:2] == 'ko':
-                    # Create a list of tuples representing ranges,
-                    # based on steps of 12000 Won just like the form
-                    # for Trust "send back" mentions.
-                    # Group those ranges in increasing order into a list
-                    # of 10 elements (each indices hence representing a range).
-                    r = [(k * i + 1, k + k * i) for i in range(0, 10)]
-
-                    # Test within which range the endowment fits.
-                    # i.e. (0, 12000) representing 0 <= n <= 1200.
-                    # If you get the index of this range and add 1
-                    # You get the desired output to use to create a proper
-                    # method name in Player matching the given money.
-                    i = list(
-                        map(lambda x: x[0] <= given_by_player_a <= x[1], r)
-                    ).index(True)
-                    sent_back_amount = 'sent_back_amount_' + str(i + 1)
-                else:
-                    sent_back_amount = (
-                        'sent_back_amount_' + str(given_by_player_a)
-                    )
+                sent_back_amount = self.trust_sent_back_amount(
+                    given_by_player_a
+                )
 
         return getattr(player, sent_back_amount)
+
+    def trust_sent_back_amount(self, base):
+        """Get Trust sent_back_amount value."""
+        # Base endowment for Korea, roughly equals €1.
+        k = 1200
+
+        # Korean is complex because of the numbers used (higher than
+        # a simple 0 to 10 units). So we simplify it by finding within
+        # which ranges the endowment goes, each range then matching
+        # a method name.
+        if get_language()[:2] == 'ko':
+            # Create a list of tuples representing ranges,
+            # based on steps of 12000 Won just like the form
+            # for Trust "send back" mentions.
+            # Group those ranges in increasing order into a list
+            # of 10 elements (each indices hence representing a range).
+            r = [(k * i + 1, k + k * i) for i in range(0, 10)]
+
+            # Test within which range the endowment fits.
+            # i.e. (0, 12000) representing 0 <= n <= 1200.
+            # If you get the index of this range and add 1
+            # You get the desired output to use to create a proper
+            # method name in Player matching the given money.
+            i = list(
+                map(lambda x: x[0] <= base <= x[1], r)
+            ).index(True)
+            sent_back_amount = 'sent_back_amount_' + str(i + 1)
+        else:
+            sent_back_amount = (
+                'sent_back_amount_' + str(base)
+            )
+
+        return sent_back_amount
 
 
 class Player(BasePlayer):
