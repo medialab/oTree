@@ -9,9 +9,9 @@
   $(function() {
     var startTime = {{global_time_start}},
         endTime = {{global_time_stop}},
-        threshold = {{threshold}},
+        threshold = +{{threshold}},
         redirection = '{{speedsters_redirection}}'
-        isSpeedster = (endTime - startTime) > threshold;
+        isSpeedster = (endTime - startTime) < threshold;
 
     // Return fragment of locale from given locale.
     function extractLang(lang) {
@@ -25,11 +25,11 @@
       }
     }).join('&');
 
-    var url = redirection + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
+    var url = redirection + '&' + fragment + '&lang=' + extractLang('{{language_code}}');
 
     if (isSpeedster) {
       console.log('Participant is a speedster... redirecting.');
-      window.location.href = redirection;
+      window.location.href = url;
     } else {
       console.log('Redirecting to Earnings page.')
       $('form').submit();
