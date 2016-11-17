@@ -88,8 +88,7 @@ class Group(BaseGroup):
         Save key variables and results exists in the model.
         """
         # Choose (and save reference in DB) a game.
-        # chosen_game = self.choose_game(Constants.eligible_games)
-        chosen_game = 'trust'
+        chosen_game = self.choose_game(Constants.eligible_games)
 
         # Get payoff from game.
         payoff = None
