@@ -30,7 +30,7 @@ keywords = {}
 # of the game who will not found anyone to match
 path = os.path.dirname(os.path.realpath(__file__)) + (
     get_language()[:2] == 'ko' and
-    '/fallback_da_ko.json' or '/fallback_data.json'
+    '/fallback_data_ko.json' or '/fallback_data.json'
 )
 with open(path) as json_file:
     fallback_data = json.load(json_file)
