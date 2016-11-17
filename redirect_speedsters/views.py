@@ -13,7 +13,9 @@ class CheckIfRedirect(Page):
             'threshold': self.session.config['speedsters_threshold'],
             'speedsters_redirection': (
                 self.session.config['quota_redirects']['speedster']
-            )
+            ),
+            'label': self.participant.label,
+            'language_code': self.session.vars['language_code'],
         }
 
 

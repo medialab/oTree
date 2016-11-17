@@ -13,6 +13,20 @@
         redirection = '{{speedsters_redirection}}'
         isSpeedster = (endTime - startTime) > threshold;
 
+    // Return fragment of locale from given locale.
+    function extractLang(lang) {
+      return lang.length > 2 ? lang.slice(0, 2) : lang;
+    }
+
+    // Build redirection link, and form payload.
+    var fragment = '{{label}}'.split('|').filter(function (f) {
+      if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
+        return f;
+      }
+    }).join('&');
+
+    var url = redirection + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
+
     if (isSpeedster) {
       console.log('Participant is a speedster... redirecting.');
       window.location.href = redirection;
