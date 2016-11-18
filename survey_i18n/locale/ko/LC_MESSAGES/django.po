@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: 2016-11-15 13:57+0100\n"
+"PO-Revision-Date: 2016-11-17 14:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: models.py:52
 msgid "Overall, how satisfied are you with life as a whole these days?"
@@ -431,11 +431,11 @@ msgstr "당신의 인생에서 종교는 얼마나 중요합니까?"
 
 #: models.py:822
 msgid "0 - Not important at all"
-msgstr "0 - 전혀 중요하 않다"
+msgstr "0 - 전혀 중요하지 않다"
 
 #: models.py:832
 msgid "10 - Very important"
-msgstr "10 - 매우 중요하"
+msgstr "10 - 매우 중요하다"
 
 #: models.py:844
 msgid ""

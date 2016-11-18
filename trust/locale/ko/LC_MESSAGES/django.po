@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: 2016-11-16 11:18+0100\n"
+"PO-Revision-Date: 2016-11-18 11:55+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko\n"
@@ -147,8 +147,9 @@ msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
 msgstr ""
-"작업이 모두 끝나면 해피머니 상품권 수령을 통해, 추가 금액을 획득하시게 됩니"
-"다."
+"MySurvey 참여 후2-3주내에 추가로 상금을 받으시게됩니다 (은행으로 송금). 만일 "
+"MySurvey측에 본인의 은행정보를 아직 공유하지 않으셨다면, 저희가 추후 공지해드"
+"리겠습니다."
 
 #: templates/trust/ExperimentIntroduction.html:29
 msgid "Data protection"
@@ -345,7 +346,7 @@ msgstr "당신은 이미 12,000원을 보유하고 있습니다."
 
 #: templates/trust/SendBack.html:16
 msgid "You already have 10 euros in your possession."
-msgstr "당신은 이미 12,000원을 보유하고 있습니다."
+msgstr ""
 
 #: templates/trust/Simulation.html:6
 msgid "Task One: Test Simulation"
