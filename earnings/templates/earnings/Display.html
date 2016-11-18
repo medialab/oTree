@@ -94,7 +94,8 @@ label {
         }
       }).join('&');
 
-      var url = '{{redirect}}' + '?' + fragment + '&lang=' + extractLang('{{language_code}}');
+      var lang = extractLang('{{language_code}}');
+      var url = '{{redirect}}' + (lang === 'ko' ? '&' : '?') + fragment + '&lang=' + lang;
       var csrf = $('input[name="csrfmiddlewaretoken"]').val();
       var postTo = $('input[name="origin_url"]').val();
 
