@@ -5,6 +5,7 @@ from __future__ import division
 from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
+from django.utils.translation import get_language
 import json
 import jsonfield
 # from otree.common import Currency
@@ -91,7 +92,10 @@ class Group(BaseGroup):
 
         If a key was passed and found in them, return the related value.
         """
-        # Initialize data on the very first call.
+        if get_language()[:2] != 'ko':
+            return ''
+
+        # Initialize data on the very first call, if needed.
         if self.initialized is False:
             self.init_quotas(
                 self.session.vars['total_population'],

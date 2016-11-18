@@ -12,9 +12,9 @@
         threshold = +{{threshold}},
         redirection = '{{speedsters_redirection}}'
         isSpeedster = (endTime - startTime) < threshold,
-        locale = extractLang('{{language_code}}'),
-        fragment,
-        url;
+        locale = extractLang('{{language_code}}');
+
+    var fragment, url;
 
     // Return fragment of locale from given locale.
     function extractLang(lang) {
@@ -23,7 +23,7 @@
 
     // Build redirection link, and form payload.
     if (locale === 'ko') {
-      url = redirection + '&' + '{{label}}';
+      url = redirection + '&participant_label={{label}}';
     } else {
       fragment = '{{label}}'.split('|').filter(function (f) {
         if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
