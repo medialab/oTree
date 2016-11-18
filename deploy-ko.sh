@@ -1,1 +1,1 @@
-git checkout deploy-ko-prod && git merge master && git push origin deploy-ko-prod && git checkout master
+git checkout deploy-ko-prod && git rebase master && git push origin deploy-ko-prod && git checkout master
