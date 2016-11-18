@@ -18,6 +18,21 @@ quota_redirects = {
     ),
 }
 
+quota_redirects_ko = {
+    'complete': (
+        'http://activities.mysurvey.com/Waypoint/waypoint/outbound.wp?status=C'
+    ),
+    'screen': (
+        'http://globaltestmarket.com/20/survey/finished.phtml?sco=s'
+    ),
+    'quota_full': (
+        'http://activities.mysurvey.com/Waypoint/waypoint/outbound.wp?status=Q'
+    ),
+    'speedster': (
+        'http://activities.mysurvey.com/Waypoint/waypoint/outbound.wp?status=Q1'
+    ),
+}
+
 quota_gender_age_groups_fr = {
     '1_18_24': {
         'percentage': 7, 'expected': total_fr * (7 / 100), 'currently': 0
