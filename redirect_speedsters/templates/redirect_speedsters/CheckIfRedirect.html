@@ -11,7 +11,10 @@
         endTime = {{global_time_stop}},
         threshold = +{{threshold}},
         redirection = '{{speedsters_redirection}}'
-        isSpeedster = (endTime - startTime) < threshold;
+        isSpeedster = (endTime - startTime) < threshold,
+        locale = extractLang('{{language_code}}'),
+        fragment,
+        url;
 
     // Return fragment of locale from given locale.
     function extractLang(lang) {
@@ -19,13 +22,17 @@
     }
 
     // Build redirection link, and form payload.
-    var fragment = '{{label}}'.split('|').filter(function (f) {
-      if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
-        return f;
-      }
-    }).join('&');
+    if (locale === 'ko') {
+      url = redirection + '&' + '{{label}}';
+    } else {
+      fragment = '{{label}}'.split('|').filter(function (f) {
+        if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
+          return f;
+        }
+      }).join('&');
 
-    var url = redirection + '&' + fragment + '&lang=' + extractLang('{{language_code}}');
+      url = redirection + '&' + fragment + '&lang=' + locale;
+    }
 
     if (isSpeedster) {
       console.log('Participant is a speedster... redirecting.');
