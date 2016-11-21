@@ -92,6 +92,7 @@ class Group(BaseGroup):
 
         If a key was passed and found in them, return the related value.
         """
+        print("LANGUAGE", get_language()[:2])
         if get_language()[:2] != 'ko':
             return ''
 
@@ -119,9 +120,9 @@ class Group(BaseGroup):
             gender_age_groups = json.dumps(gender_age_groups)
 
         return {
-            'total_population': json.loads(total_population),
+            'total_population': json.loads(total_population) or '',
             # 'income_groups': json.loads(income_groups),
-            'gender_age_groups': json.loads(gender_age_groups)
+            'gender_age_groups': json.loads(gender_age_groups) or ''
         }
 
     def save_quota_set(self, fieldname, data):
