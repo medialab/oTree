@@ -144,9 +144,9 @@ SESSION_CONFIGS = [
         'language_code': 'ko-kr',
         'payoff_group': 0,
         'speedsters_threshold': 10 * 60,
-        'quota_redirects': quota_redirects,
-        'quota_total_population': total_fr,
-        'quota_gender_age_groups': quota_gender_age_groups_fr,
+        'quota_redirects': quota_redirects_ko,
+        'quota_total_population': total_ko,
+        'quota_gender_age_groups': quota_gender_age_groups_ko,
     },
 
 
