@@ -98,9 +98,8 @@ class Group(BaseGroup):
         # Initialize data on the very first call, if needed.
         if self.initialized is False:
             self.init_quotas(
-                self.session.vars['total_population'],
-                #self.session.vars['income_groups'],
-                self.session.vars['gender_age_groups']
+                self.session.vars['total_population'] or '',
+                self.session.vars['gender_age_groups'] or ''
             )
 
         # Deserialize data.
