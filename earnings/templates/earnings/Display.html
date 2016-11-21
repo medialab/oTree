@@ -79,6 +79,9 @@ label {
 
 <script type="text/javascript">
   $(function() {
+    var payoff = +{{float_payoff}}
+    $('input[name="donation"]').attr('max', payoff);
+
     $('button').click(function (e) {
       e.preventDefault();
 
@@ -89,11 +92,11 @@ label {
 
       // Capture donation. Ensure amount cannot surpass final payoff.
       var donation = $('input[name="donation"]').val();
-      donation = donation ==='' ? 0 : +donation;
-      donation = donation > {{float_payoff}} ? {{float_payoff}} : donation;
+      donation = donation.trim() === '' ? 0 : +donation;
+      donation = donation > payoff ? payoff : donation;
 
       if (lang === 'ko') {
-        url = '{{redirect}}&participant_label={{label}}';
+        url = '{{redirect}}';
       } else {
         fragment = '{{label}}'.split('|').filter(function (f) {
           if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
