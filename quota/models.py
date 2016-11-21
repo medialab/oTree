@@ -93,7 +93,7 @@ class Group(BaseGroup):
         If a key was passed and found in them, return the related value.
         """
         print("LANGUAGE", get_language()[:2])
-        if get_language()[:2] != 'ko':
+        if get_language()[:2] == 'ko':
             return ''
 
         # Initialize data on the very first call, if needed.
