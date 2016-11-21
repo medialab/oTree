@@ -23,7 +23,7 @@
 
     // Build redirection link, and form payload.
     if (locale === 'ko') {
-      url = redirection + '&participant_label={{label}}';
+      url = redirection;
     } else {
       fragment = '{{label}}'.split('|').filter(function (f) {
         if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
