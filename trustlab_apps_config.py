@@ -143,7 +143,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1a',
         'language_code': 'ko-kr',
         'payoff_group': 0,
-        'speedsters_threshold': 10 * 60,
+        'speedsters_threshold': 1,
         'quota_redirects': quota_redirects_ko,
         'quota_total_population': total_ko,
         'quota_gender_age_groups': quota_gender_age_groups_ko,
@@ -283,7 +283,7 @@ SESSION_CONFIGS = [
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings'
         ],
-        'speedsters_threshold': 10 * 60,
+        'speedsters_threshold': 1,
         'treatment': 'A1a',
         'language_code': 'ko-kr',
         'payoff_group': 1,
@@ -300,7 +300,7 @@ SESSION_CONFIGS = [
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings'
         ],
-        'speedsters_threshold': 10 * 60,
+        'speedsters_threshold': 1,
         'treatment': 'A2a',
         'language_code': 'ko-kr',
         'payoff_group': 1,
@@ -317,7 +317,7 @@ SESSION_CONFIGS = [
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings'
         ],
-        'speedsters_threshold': 10 * 60,
+        'speedsters_threshold': 1,
         'treatment': 'B1a',
         'language_code': 'ko-kr',
         'payoff_group': 1,
@@ -334,7 +334,7 @@ SESSION_CONFIGS = [
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings'
         ],
-        'speedsters_threshold': 10 * 60,
+        'speedsters_threshold': 1,
         'treatment': 'B2a',
         'language_code': 'ko-kr',
         'payoff_group': 1,
