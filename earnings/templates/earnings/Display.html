@@ -82,7 +82,7 @@ label {
     var payoff = +{{float_payoff}}
     $('input[name="donation"]').attr('max', payoff);
 
-    $('button').click(function (e) {
+    $('form').submit(function (e) {
       e.preventDefault();
 
       var lang = extractLang('{{language_code}}');
