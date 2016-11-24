@@ -427,7 +427,7 @@ class Group(BaseGroup):
             # for Trust "send back" mentions.
             # Group those ranges in increasing order into a list
             # of 10 elements (each indices hence representing a range).
-            r = [(0, 1200)]
+            r = [(0, k)]
             r += [(k * i + 1, k + k * i) for i in range(1, 10)]
 
             # Test within which range the endowment fits.
