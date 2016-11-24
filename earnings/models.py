@@ -427,16 +427,19 @@ class Group(BaseGroup):
             # for Trust "send back" mentions.
             # Group those ranges in increasing order into a list
             # of 10 elements (each indices hence representing a range).
-            r = [(k * i + 1, k + k * i) for i in range(0, 10)]
+            r = [(0, 1200)]
+            r += [(k * i + 1, k + k * i) for i in range(1, 10)]
 
             # Test within which range the endowment fits.
-            # i.e. (0, 12000) representing 0 <= n <= 1200.
-            # If you get the index of this range and add 1
-            # You get the desired output to use to create a proper
+            # i.e. (0, 12000 representing 0 <= n <= 1200).
+            # If you find the fitting index of this range, and add 1,
+            # you get the desired output to use to create a proper
             # method name in Player matching the given money.
+            # If nothing is found, use fallback data.
             i = list(
                 map(lambda x: x[0] <= base <= x[1], r)
             ).index(True)
+
             sent_back_amount = 'sent_back_amount_' + str(i + 1)
         else:
             sent_back_amount = (
