@@ -83,6 +83,10 @@ label {
     $('input[name="donation"]').attr('max', payoff);
 
     $('form').submit(function (e) {
+      // IE hack.
+      if (window.event) {
+          window.event.returnValue = false;
+      }
       e.preventDefault();
 
       var lang = extractLang('{{language_code}}');
