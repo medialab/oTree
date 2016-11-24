@@ -82,7 +82,7 @@ label {
     var payoff = +{{float_payoff}}
     $('input[name="donation"]').attr('max', payoff);
 
-    $('form').submit(function (e) {
+    /*$('form').submit(function (e) {
       // IE hack.
       if (window.event) {
           window.event.returnValue = false;
@@ -119,7 +119,7 @@ label {
       // Send payload, then redirect.
       $.post(postTo, {csrfmiddlewaretoken: csrf, origin_url: postTo, donation: donation,}, function (data) {
         window.location.href = url;
-      });
+      });*/
     });
   });
 </script>

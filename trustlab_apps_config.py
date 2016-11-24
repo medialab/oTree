@@ -138,7 +138,7 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'trust', 'public_goods', 'dictator', 'earnings'
+            'trust', 'redirect_completes'
         ],
         'treatment': 'A1a',
         'language_code': 'ko-kr',
@@ -281,7 +281,7 @@ SESSION_CONFIGS = [
         'app_sequence': [
             'quota', 'timer_start', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings'
+            'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
         'treatment': 'A1a',
@@ -298,7 +298,7 @@ SESSION_CONFIGS = [
         'app_sequence': [
             'quota', 'timer_start', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings'
+            'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
         'treatment': 'A2a',
@@ -315,7 +315,7 @@ SESSION_CONFIGS = [
         'app_sequence': [
             'quota', 'timer_start', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings'
+            'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
         'treatment': 'B1a',
@@ -332,7 +332,7 @@ SESSION_CONFIGS = [
         'app_sequence': [
             'quota', 'timer_start', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings'
+            'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
         'treatment': 'B2a',
