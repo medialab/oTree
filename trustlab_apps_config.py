@@ -276,6 +276,75 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_run01_A1a_ko',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1a or A1b | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'quota', 'timer_start', 'trust', 'public_goods',
+            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 10 * 60,
+        'treatment': 'A1a',
+        'language_code': 'ko-kr',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_ko,
+        'quota_total_population': total_ko,
+        'quota_gender_age_groups': quota_gender_age_groups_ko,
+    },
+    {
+        'name': 'trustlab_2016_run01_A2a_ko',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2a or A2b | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'quota', 'timer_start', 'trust', 'public_goods',
+            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 10 * 60,
+        'treatment': 'A2a',
+        'language_code': 'ko-kr',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_ko,
+        'quota_total_population': total_ko,
+        'quota_gender_age_groups': quota_gender_age_groups_ko,
+    },
+    {
+        'name': 'trustlab_2016_run01_B1a_ko',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1a or B1b | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'quota', 'timer_start', 'trust', 'public_goods',
+            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 10 * 60,
+        'treatment': 'B1a',
+        'language_code': 'ko-kr',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_ko,
+        'quota_total_population': total_ko,
+        'quota_gender_age_groups': quota_gender_age_groups_ko,
+    },
+    {
+        'name': 'trustlab_2016_run01_B2a_ko',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2a or B2b | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'quota', 'timer_start', 'trust', 'public_goods',
+            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 10 * 60,
+        'treatment': 'B2a',
+        'language_code': 'ko-kr',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_ko,
+        'quota_total_population': total_ko,
+        'quota_gender_age_groups': quota_gender_age_groups_ko,
+    },
+
+    {
+        'name': 'trustlab_2016_run01_A1a_ko',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1a or A1b',
         'num_demo_participants': 126,
         'app_sequence': [
