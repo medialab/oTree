@@ -82,14 +82,21 @@ label {
     var payoff = +{{float_payoff}}
     $('input[name="donation"]').attr('max', payoff);
 
-    /*$('form').submit(function (e) {
-      // IE hack.
+    function submit(e) {
       if (window.event) {
           window.event.returnValue = false;
       }
       e.preventDefault();
 
-      var lang = extractLang('{{language_code}}');
+      var donation = $('input[name="donation"]').val();
+      donation = donation.trim() === '' ? 0 : +donation;
+      donation = donation > payoff ? payoff : donation;
+
+      $('form').off('submit', submit);
+
+      $('form').submit()
+
+      /*var lang = extractLang('{{language_code}}');
       var fragment, url;
       var csrf = $('input[name="csrfmiddlewaretoken"]').val();
       var postTo = $('input[name="origin_url"]').val();
@@ -120,7 +127,9 @@ label {
       $.post(postTo, {csrfmiddlewaretoken: csrf, origin_url: postTo, donation: donation,}, function (data) {
         window.location.href = url;
       });*/
-    });
+    }
+
+    $('form').on('submit', submit);
   });
 </script>
 

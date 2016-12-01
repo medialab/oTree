@@ -138,7 +138,8 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'trust', 'redirect_completes'
+            'timer_start', 'trust', 'public_goods',
+            'dictator', 'timer_stop', 'earnings', 'redirect_completes'
         ],
         'treatment': 'A1a',
         'language_code': 'ko-kr',
@@ -148,131 +149,6 @@ SESSION_CONFIGS = [
         'quota_total_population': total_ko,
         'quota_gender_age_groups': quota_gender_age_groups_ko,
     },
-
-
-    # {
-    #     'name': 'trustlab_2016_run01_A1a_fr_2',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1a or A1b | Payoff Group 2',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'A1a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 2,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_A2a_fr_2',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2a or A2b | Payoff Group 2',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'A2a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 2,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_B1a_fr_2',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1a or B1b | Payoff Group 2',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'B1a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 2,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_B2a_fr_2',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2a or B2b | Payoff Group 2',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'B2a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 2,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-
-
-
-    # {
-    #     'name': 'trustlab_2016_run01_A1a_fr',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path A1a or A1b',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'A1a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 1,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_A2a_fr',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path A2a or A2b',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'A2a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 1,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_B1a_fr',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path B1a or B1b',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'B1a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 1,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
-    # {
-    #     'name': 'trustlab_2016_run01_B2a_fr',
-    #     'display_name': 'TRUSTLAB | Sept 2016 | FR | path B2a or B2b',
-    #     'num_demo_participants': 126,
-    #     'app_sequence': [
-    #         'quota', 'trust', 'public_goods',
-    #         'dictator', 'iat', 'survey_i18n', 'earnings'
-    #     ],
-    #     'treatment': 'B2a',
-    #     'language_code': 'fr-fr',
-    #     'payoff_group': 1,
-    #     'quota_redirects': quota_redirects,
-    #     'quota_total_population': total_fr,
-    #     'quota_gender_age_groups': quota_gender_age_groups_fr,
-    # },
 
     {
         'name': 'trustlab_2016_run01_A1a_ko_prod',
