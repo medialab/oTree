@@ -13,7 +13,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import get_language
 # </standard imports>
 
-from django_countries.fields import CountryField
+from django_countries.fields import countries
 
 
 doc = """
@@ -23,6 +23,7 @@ on the locale, and some elements based on previous answers.
 
 
 _02A_altruism_max = get_language()[:2] == 'ko' and 1200000 or 1000
+
 
 class Constants(BaseConstants):
     """Constants for Survey."""
@@ -36,6 +37,7 @@ class Subsession(BaseSubsession):
     """Subsession for Survey."""
 
     def before_session_starts(self):
+        """Get language data before session starts."""
         if (
             'language_code' in self.session.config and
             'lang' not in self.session.vars
@@ -723,8 +725,10 @@ regardless of their gender, race, age or economic condition equally.'),
         )
     )
 
-    _07_which_country_were_you_born = CountryField(
-        verbose_name=_(u'In which country were you born?')
+    _07_which_country_were_you_born = models.CharField(
+        verbose_name=_(u'In which country were you born?'),
+        widget=widgets.Select(),
+        choices=tuple((code, _(name)) for code, name in list(countries))
     )
 
     _07_what_year_did_you_arrive_in_country = models.CharField(
@@ -815,7 +819,8 @@ your individual income, after taxes have been deducted.'),
     _10D_income = models.CharField()
 
     _10G_income = models.CharField(
-        verbose_name=_(u'Did you or your household save any money in the previous year?'),
+        verbose_name=_(u'Did you or your household save any \
+money in the previous year?'),
         choices=(
             ('Yes', _(u'Yes')),
             ('No', _(u'No')),
@@ -824,8 +829,9 @@ your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect()
     )
 
-    _10G_religion =  models.CharField(
-        verbose_name=_(u"How important would you say religion is in your own life?"),
+    _10G_religion = models.CharField(
+        verbose_name=_(u"How important would you say religion is in \
+your own life?"),
         choices=(
             ('0', _(u"0 - Not important at all")),
             ('1', '1'),
