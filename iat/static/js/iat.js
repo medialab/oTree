@@ -273,10 +273,12 @@ $(function(window, undefined) {
             id: id,
 
             // Set of French data for data recovery and reconciliation purposes.
-            correctCategory: capitalize(displayed[displayed.correct]['fr-fr']),
-            stimuli: displayed.showing['fr-fr'],
-            left: capitalize(displayed.left['fr-fr']),
-            right: capitalize(displayed.right['fr-fr']),
+            // That way, we always receive French text to analyze IAT results,
+            // no matter what languege we were testing for.
+            correctCategory: capitalize(displayed[displayed.correct]['fr']),
+            stimuli: displayed.showing['fr'],
+            left: capitalize(displayed.left['fr']),
+            right: capitalize(displayed.right['fr']),
             correctPosition: displayed.correct,
 
             // Set of localized data to display to user.
