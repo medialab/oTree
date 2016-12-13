@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 """Models for Survey."""
-# <standard imports>
 from __future__ import division
 from otree.db import models
 from otree.constants import BaseConstants
@@ -11,8 +10,6 @@ from django.forms import widgets as django_widgets
 from datetime import date
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import get_language
-# </standard imports>
-
 from django_countries.fields import countries
 
 
@@ -728,7 +725,9 @@ regardless of their gender, race, age or economic condition equally.'),
     _07_which_country_were_you_born = models.CharField(
         verbose_name=_(u'In which country were you born?'),
         widget=widgets.Select(),
-        choices=tuple((code, _(name)) for code, name in list(countries))
+        choices=tuple(
+            [(code, _(name)) for code, name in list(countries)]
+        )
     )
 
     _07_what_year_did_you_arrive_in_country = models.CharField(
