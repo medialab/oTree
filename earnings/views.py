@@ -29,9 +29,7 @@ class Display(Page):
         """Transform string representing money into float numbers."""
         return parse_decimal(
             (s or '0').strip('€').strip('$').strip('₩').strip(),
-            locale=environ.get(
-                'OTREE_LANGUAGE_CODE', self.session.config['language_code']
-            )[:2]
+            locale=environ.get('OTREE_LANGUAGE_CODE')
         )
 
     def vars_for_template(self):
@@ -97,7 +95,7 @@ class Display(Page):
                 'http://sciences-po.fr'
             ),
             'label': self.participant.label,
-            'language_code': self.session.vars['language_code'],
+            'lang': self.session.vars['lang'],
         }
 
 

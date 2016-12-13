@@ -11,7 +11,7 @@ def vars_for_all_templates(self):
         'instructions': 'iat/Instructions.html',
         'data': self.group.treatment()['data'],
         'order': self.group.treatment()['order'],
-        'language_code': self.group.treatment()['language_code']
+        'lang': self.group.treatment()['lang']
     }
 
 

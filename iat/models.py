@@ -72,8 +72,7 @@ class Group(BaseGroup):
         return {
             'data': self.session.vars['data'],
             'order': self.session.vars['order'],
-            'language_code': environ.get('OTREE_LANGUAGE_CODE', self.session.config['language_code']),
-            'oecd_iat': self.session.vars['oecd_iat']
+            'lang': environ.get('OTREE_LANGUAGE_CODE')
         }
 
 
