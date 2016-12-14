@@ -14,8 +14,9 @@
 
     IAT.begin(data, order, lang)
        .then(function(results) {
-         $('input[name="iat_results"]').val(JSON.stringify(results));
-         $('#form').submit();
+         console.log(results);
+         //$('input[name="iat_results"]').val(JSON.stringify(results));
+         //$('#form').submit();
        })
   </script>
 {% endblock %}

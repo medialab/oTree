@@ -47,6 +47,19 @@ $(function(window, undefined) {
       errors: [],
     };
 
+    var toCSV = {
+      results: [
+        'Trial ID,Player MTurk ID,Code,Label,Time started' +
+        'Left category,Right category,Stimuli word' +
+        'Correct position,Correct category,Time taken'
+      ],
+      errors: [
+        'Trial ID,MTurk ID,Code,Label,Time started,Left category' +
+        'Right category,Stimuli word,Correct position' +
+        'Correct category,Failed by time out,Time taken'
+      ]
+    };
+
     /**
      * Informations to be taken from config.
      */
@@ -61,21 +74,21 @@ $(function(window, undefined) {
      * Deal differenly if the data set is a pause message: display message
      * and framing words grabbed for the *next* incoming trial.
      *
-     * @param  {Object} data         Trial data.
+     * @param  {Object} trial         Trial data.
      * @param  {Object} queue        The entire payload of trials.
      * @param  {int}    trialIndex   Index of currently shown trial/screen.
      * @return {void}
      */
-    function updateUIText(data, queue, trialIndex) {
-      if (!data.hasOwnProperty('message')) {
+    function updateUIText(trial, queue, trialIndex) {
+      if (!isPauseScreen(trial)) {
         hidePauseMessage();
-        $uiCategoryLeft.html(data._left);
-        $uiCategoryRight.html(data._right);
-        $uiStimuli.html(data._stimuli);
+        $uiCategoryLeft.html(trial._left);
+        $uiCategoryRight.html(trial._right);
+        $uiStimuli.html(trial._stimuli);
       } else {
         showPauseMessage(
-          data.message[lang],
-          data.cta,
+          trial.message[lang],
+          trial.cta,
           {
             'left': queue[trialIndex+1]._left,
             'right': queue[trialIndex+1]._right
@@ -240,7 +253,7 @@ $(function(window, undefined) {
      * @return {Array}  The ready-to-use, stack of trial objects.
      */
     function prepareTrials(data, order, lang) {
-      var resultTrials = [],
+      var preparedTrials = [],
           id = 0;
 
       // Boolean switch: starts truthy and gets toggled when we place
@@ -249,7 +262,7 @@ $(function(window, undefined) {
       var toggleOrderFlag = true;
 
       // Push opening pause screen in.
-      resultTrials.push({
+      preparedTrials.push({
         message: pauseScreens.message[0],
         cta: pauseScreens.cta[lang]
       });
@@ -265,7 +278,7 @@ $(function(window, undefined) {
           if (i > 0 && j === 0) {
             var k = toggleOrderFlag ? 1 : 2;
             toggleOrderFlag = !toggleOrderFlag;
-            resultTrials.push({
+            preparedTrials.push({
               message: pauseScreens.message[k],
               cta: pauseScreens.cta[lang]
             });
@@ -274,7 +287,7 @@ $(function(window, undefined) {
           // Push an element in the set.
           // This is basically the bulk of our user's run,
           // containing all trials data that she will go through.
-          resultTrials.push({
+          preparedTrials.push({
             id: id,
 
             // Set of French data for data recovery and reconciliation purposes.
@@ -296,7 +309,7 @@ $(function(window, undefined) {
         });
       });
 
-      return resultTrials;
+      return preparedTrials;
     }
 
     /**
@@ -311,6 +324,16 @@ $(function(window, undefined) {
       pauseScreens = dataStore.pauses;
       leftAndRightKeys[keyCodeLeft] = 'left';
       leftAndRightKeys[keyCodeRight] = 'right';
+    }
+
+    /**
+     * State whether the trial is actually a pause screen.
+     *
+     * @param  {Object}  trial The trial object to test.
+     * @return {Boolean} True if it is a pause screen.
+     */
+    function isPauseScreen(trial) {
+      return trial.hasOwnProperty('message');
     }
 
     /**
@@ -377,7 +400,7 @@ $(function(window, undefined) {
      * @return {Object} Promise, resolved when trial is done.
      */
     function waitForAnswer(trial) {
-      console.log(trial)
+      // console.log('Trial --- ' trial);
       var deferred = $.Deferred();
       var timer = Timer;
       var keyPressed = null;
@@ -392,7 +415,7 @@ $(function(window, undefined) {
         displayWrongAnswerFeedback(false);
         dispose();
 
-        if (!trial.hasOwnProperty('message')) {
+        if (!isPauseScreen(trial)) {
           timeLimitForAnswer = setTimeout(timeLimitHandler, answerTimeLimit * 1000);
           $window.on('keyup', keyUpHandler);
           $('.btn-left').on('click touchstart', leftBtnHandler);
@@ -529,6 +552,61 @@ $(function(window, undefined) {
     }
 
     /**
+     * Compute stored JSON data and transform it into accumulative
+     * arrays of CSV-formatted results/errors during the user's run.
+     *
+     * @param  {Object} store An instance of answerStore holding JSON values.
+     * @return {Object} A object with two arrays (results/errors) cumulating CSV-formatted data.
+     */
+    function computeResults(store) {
+      var toCSV = {results: [], errors: []};
+
+      toCSV.results = toCSV.results.concat(
+        answerStore.results.map(function (a) {
+          // List of columns below. Columns between angle brackets are not used here
+          // and therefor replaced by an empty string.
+          // Trial ID, <MTurk ID>, <Code>, <Label>, <Time started>, Left category, Right category
+          // Stimuli word, Correct position, Correct category, Time taken
+          return a.id + ',,,,' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+                 a.correctPosition + ',' + a.correctCategory + ',' + a.timing;
+        })
+      );
+
+      toCSV.errors = toCSV.errors.concat(
+        answerStore.errors.map(function (a) {
+          // Trial ID, <MTurk ID>, <Code>, <Label>, <Time started>, Left category,
+          // Right category, Stimuli word, Correct position, Correct category,
+          // Failed by time out, Time taken
+          return a.id + ',,,,' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+                 a.correctPosition + ',' + a.correctCategory + ',' +
+                 a.timedOut + ',' + a.timing
+        })
+      );
+
+      return toCSV;
+    }
+
+    /**
+     * Reduve the given toCSV set of data, from object containing results/errors
+     * arrays of CSV-formatted rows, to an object containing the same fields
+     * holding CSV-formatted string, with new line separator between rows.
+     *
+     * @param  {Object} toCSV
+     * @return {Object} The final object with CSV-formatted string properties.
+     */
+    function finalizeCSV(toCSV) {              // => {results: string[], errors: string[]}
+      return Object.keys(toCSV)                // => ['results', 'errors']
+                   .map(function (k) {
+                      var o = {};
+                      o[k] = toCSV[k].join('\n');
+                      return o;
+                    })                         // => [{'results': string}, {'errors': string}]
+                    .reduce(function (a, b) {
+                      return Object.assign({}, a, b)
+                    }, {});                    // => {results: string, errors: string}
+    }
+
+    /**
      * Start the queue of blocks of trials.
      * Built as a promise resolving the answers/errors payload
      * once the entire suite of blocks is completed.
@@ -550,7 +628,10 @@ $(function(window, undefined) {
        * @return {Object} Promise.
        */
       var showTrial = function(trial, trialIndex) {
-        // console.log(trial);
+        if (trialIndex > 0 && isPauseScreen(trial)) {
+          toCSV = Object.assign({}, toCSV, computeResults(answerStore));
+        }
+
         updateUIText(trial, queue, trialIndex);
         return waitForAnswer(trial);
       };
@@ -567,7 +648,7 @@ $(function(window, undefined) {
               return loadTrial(currentTrialIndex);
             });
         } else {
-          deferred.resolve(answerStore);
+          deferred.resolve(finalizeCSV(toCSV));
         }
       };
 
@@ -582,7 +663,7 @@ $(function(window, undefined) {
      */
     return {
       begin: function(data, order, lang) {
-        console.log('IAT Starting — current locale is', lang);
+        console.log('IAT Starting — current locale is "' + lang + '"');
         return loadBlocks(data, order, lang);
       }
     }
