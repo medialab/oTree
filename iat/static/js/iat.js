@@ -258,8 +258,10 @@ $(function(window, undefined) {
       // then arrange the trials based on given order.
       randomizeTrialsSets(order).forEach(function(character, i) {
         shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
-          // Skip the first round, then on each new round,
-          // push in a relevant pause screen before actual trials.
+          // Whenever j === 0, we are at the very beginning of a new trials set.
+          // --
+          // Skip the first round, then on each following round,
+          // place a relevant pause screen before actual trials starts.
           if (i > 0 && j === 0) {
             var k = toggleOrderFlag ? 1 : 2;
             toggleOrderFlag = !toggleOrderFlag;
@@ -269,6 +271,9 @@ $(function(window, undefined) {
             });
           }
 
+          // Push an element in the set.
+          // This is basically the bulk of our user's run,
+          // containing all trials data that she will go through.
           resultTrials.push({
             id: id,
 
@@ -294,6 +299,11 @@ $(function(window, undefined) {
       return resultTrials;
     }
 
+    /**
+     * Apply configuration from data passed in.
+     *
+     * @param {Array}  dataStore
+     */
     function setConfiguration(dataStore) {
       keyCodeLeft = dataStore.config.keycodes.left;
       keyCodeRight = dataStore.config.keycodes.right;
