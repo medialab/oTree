@@ -7,7 +7,6 @@ config = {
     'display_name': 'Quota',
     'num_demo_participants': 100,
     'app_sequence': ['quota'],
-    'language_code': 'fr-fr',
 
     # URL stems for redirections
     'quota_redirects': {

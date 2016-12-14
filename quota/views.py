@@ -9,7 +9,7 @@ def vars_for_all_templates(self):
         'quotas': self.group.get_quotas(),
         'label': self.participant.label,
         'total_population': self.group.total_population,
-        'language_code': self.session.vars['language_code'],
+        'lang': self.session.vars['lang'],
         'redirects': self.session.vars['redirects']
     }
 

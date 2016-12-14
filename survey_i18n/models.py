@@ -19,7 +19,7 @@ on the locale, and some elements based on previous answers.
 """
 
 
-_02A_altruism_max = get_language()[:2] == 'ko' and 1200000 or 1000
+_02A_altruism_max = get_language() == 'ko' and 1200000 or 1000
 
 
 class Constants(BaseConstants):
@@ -35,13 +35,7 @@ class Subsession(BaseSubsession):
 
     def before_session_starts(self):
         """Get language data before session starts."""
-        if (
-            'language_code' in self.session.config and
-            'lang' not in self.session.vars
-        ):
-            self.session.vars['lang'] = (
-                self.session.config['language_code'][:2]
-            )
+        self.session.vars['lang'] = get_language()
 
 
 class Group(BaseGroup):

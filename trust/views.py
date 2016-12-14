@@ -13,7 +13,7 @@ def vars_for_all_templates(self):
     return {
         'instructions': 'trust/Instructions.html',
         'total_q': 1,
-        'lang': get_language()[:2] or self.session.vars['lang']
+        'lang': get_language() or self.session.vars['lang']
     }
 
 

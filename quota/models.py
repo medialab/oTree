@@ -33,12 +33,7 @@ class Subsession(BaseSubsession):
         Store it in session vars. In the first view of the app,
         we will use it to initialize control data for quota monitoring.
         """
-        if 'language_code' in self.session.config:
-            self.session.vars['language_code'] = (
-                self.session.config['language_code']
-            )
-        else:
-            self.session.vars['language_code'] = {}
+        self.session.vars['lang'] = get_language()
 
         if 'quota_redirects' in self.session.config:
             self.session.vars['redirects'] = (
@@ -92,7 +87,7 @@ class Group(BaseGroup):
 
         If a key was passed and found in them, return the related value.
         """
-        if get_language()[:2] == 'ko':
+        if get_language() == 'ko':
             return ''
 
         # Initialize data on the very first call, if needed.

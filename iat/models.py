@@ -57,12 +57,6 @@ class Subsession(BaseSubsession):
                 'iat/static/' + self.session.vars['iat_file'], 'r'
             ).read()
 
-            # Special page rendering for IAT end page if this is OECD's
-            # IAT MTurk experiment...
-            self.session.vars['oecd_iat'] = self.session.config[
-                'treatment'
-            ] in ('C1a', 'C2a')
-
 
 class Group(BaseGroup):
     """Group for IAT."""
@@ -72,8 +66,7 @@ class Group(BaseGroup):
         return {
             'data': self.session.vars['data'],
             'order': self.session.vars['order'],
-            'language_code': environ.get('OTREE_LANGUAGE_CODE', self.session.config['language_code']),
-            'oecd_iat': self.session.vars['oecd_iat']
+            'lang': environ.get('OTREE_LANGUAGE_CODE')
         }
 
 

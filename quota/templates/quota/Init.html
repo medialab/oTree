@@ -12,13 +12,13 @@
   <p>Quota: {{quotas}} </p>
   <p>Total population: {{total_population}} </p>
   <p>Label: {{label}} </p>
-  <p>Language: {{language_code}}</p>
+  <p>Language: {{lang}}</p>
   <p>Redirects: {{redirects}}</p>
   -->
 
   <script type="text/javascript">
     $(function () {
-      var locale = extractLang('{{language_code}}');
+      var locale = extractLang('{{lang}}');
       var labelData = getLabelData('{{label}}');
 
       var quotaData;

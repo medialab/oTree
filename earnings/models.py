@@ -29,7 +29,7 @@ keywords = {}
 # Load fallback data for the very first players
 # of the game who will not found anyone to match
 path = os.path.dirname(os.path.realpath(__file__)) + (
-    get_language()[:2] == 'ko' and
+    get_language() == 'ko' and
     '/fallback_data_ko.json' or '/fallback_data.json'
 )
 with open(path) as json_file:
@@ -67,10 +67,7 @@ class Subsession(BaseSubsession):
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
 
-        if 'language_code' in self.session.config:
-            self.session.vars['language_code'] = (
-                self.session.config['language_code']
-            )
+        self.session.vars['lang'] = get_language()
 
         if 'quota_redirects' in self.session.config:
             self.session.vars['redirect'] = (
@@ -137,7 +134,7 @@ class Group(BaseGroup):
         matched_id = None
         with_role = None
 
-        base_money = get_language()[:2] == 'ko' and 12000 or 10
+        base_money = get_language() == 'ko' and 12000 or 10
 
         trust_game_player_a_transfer = None
         trust_game_player_b_transfer = None
@@ -185,7 +182,7 @@ class Group(BaseGroup):
         payoff = None
         matched_id = None
 
-        base_money = get_language()[:2] == 'ko' and 12000 or 10
+        base_money = get_language() == 'ko' and 12000 or 10
 
         player_a_transfer = None
         player_b_transfer = None
@@ -222,7 +219,7 @@ class Group(BaseGroup):
         my_contrib = None
         payoff = None
         joint_sum = None
-        base_money = get_language()[:2] == 'ko' and 12000 or 10
+        base_money = get_language() == 'ko' and 12000 or 10
 
         # Get the occurence of this player when she played 'Public Goods'.
         for p in player.participant.get_players():
@@ -421,7 +418,7 @@ class Group(BaseGroup):
         # a simple 0 to 10 units). So we simplify it by finding within
         # which ranges the endowment goes, each range then matching
         # a method name.
-        if get_language()[:2] == 'ko':
+        if get_language() == 'ko':
             # Create a list of tuples representing ranges,
             # based on steps of 12000 Won just like the form
             # for Trust "send back" mentions.

@@ -11,7 +11,7 @@ def vars_for_all_templates(self):
         'instructions': 'iat/Instructions.html',
         'data': self.group.treatment()['data'],
         'order': self.group.treatment()['order'],
-        'language_code': self.group.treatment()['language_code']
+        'lang': self.group.treatment()['lang']
     }
 
 
@@ -26,17 +26,6 @@ class EndGame(Page):
     """End of game page."""
 
     form_model = models.Player
-
-    def vars_for_template(self):
-        """Make data available in template."""
-        return {
-            'normal_render': self.group.treatment()[
-                'oecd_iat'
-            ] is True and 'hide' or '',
-            'oecd_render': self.group.treatment()[
-                'oecd_iat'
-            ] is not True and 'hide' or ''
-        }
 
 
 class IAT(Page):
