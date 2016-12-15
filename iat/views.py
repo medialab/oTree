@@ -34,5 +34,13 @@ class IAT(Page):
     form_model = models.Player
     form_fields = ['iat_results']
 
+    def vars_for_template(self):
+        """Pass usable data to template."""
+        return {
+            'participant_id': self.player.id,
+            'participant_code': self.player.participant.code,
+            'participant_label': self.player.participant.label
+        }
+
 
 page_sequence = [IAT, EndGame]
