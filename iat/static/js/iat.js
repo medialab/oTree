@@ -67,6 +67,7 @@ $(function(window, undefined) {
         keyCodeRight = null,
         answerTimeLimit = null,
         leftAndRightKeys = {},
+        participant = {},
         pauseScreens = [];
 
     /**
@@ -324,6 +325,7 @@ $(function(window, undefined) {
       pauseScreens = dataStore.pauses;
       leftAndRightKeys[keyCodeLeft] = 'left';
       leftAndRightKeys[keyCodeRight] = 'right';
+      participant = dataStore.participant;
     }
 
     /**
@@ -376,7 +378,7 @@ $(function(window, undefined) {
      */
     function save(type, trial, timing, timedOut) {
       answerStore[type].push(
-        _.assign(
+        Object.assign(
           {},
           {
             id: trial.id,
@@ -555,29 +557,32 @@ $(function(window, undefined) {
      * Compute stored JSON data and transform it into accumulative
      * arrays of CSV-formatted results/errors during the user's run.
      *
-     * @param  {Object} store An instance of answerStore holding JSON values.
+     * @param  {Object} store        An instance of answerStore holding JSON values.
+     * @param  {Object} participant  Holds global data on the player used in resulting table.
      * @return {Object} A object with two arrays (results/errors) cumulating CSV-formatted data.
      */
-    function computeResults(store) {
+    function computeResults(store, participant) {
+      console.log(participant)
       var toCSV = {results: [], errors: []};
+      var mturkId = participant.hasOwnProperty('mturkId') ? participant.mturkId : 'N/A'
 
       toCSV.results = toCSV.results.concat(
         answerStore.results.map(function (a) {
-          // List of columns below. Columns between angle brackets are not used here
-          // and therefor replaced by an empty string.
-          // Trial ID, <MTurk ID>, <Code>, <Label>, <Time started>, Left category, Right category
+          // Trial ID, MTurk ID, Code, Label, left category, Right category
           // Stimuli word, Correct position, Correct category, Time taken
-          return a.id + ',,,,' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+          return a.id + ',' + mturkId + ',' + participant.code + ',' +
+                 participant.label + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' + a.timing;
         })
       );
 
       toCSV.errors = toCSV.errors.concat(
         answerStore.errors.map(function (a) {
-          // Trial ID, <MTurk ID>, <Code>, <Label>, <Time started>, Left category,
+          // Trial ID, MTurk ID, Code, Label, left category,
           // Right category, Stimuli word, Correct position, Correct category,
           // Failed by time out, Time taken
-          return a.id + ',,,,' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+          return a.id + ',' + mturkId + ',' + participant.code + ',' +
+                 participant.label + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' +
                  a.timedOut + ',' + a.timing
         })
@@ -625,27 +630,33 @@ $(function(window, undefined) {
        *
        * @param  {Object} trial        The trial to display.
        * @param  {int}    trialIndex   Index of currently shown trial/screen.
+       * @param  {Object} participant  Holds global data on the player used in resulting table.
        * @return {Object} Promise.
        */
-      var showTrial = function(trial, trialIndex) {
+      var showTrial = function(trial, trialIndex, participant) {
         if (trialIndex > 0 && isPauseScreen(trial)) {
-          toCSV = Object.assign({}, toCSV, computeResults(answerStore));
+          toCSV = Object.assign({}, toCSV, computeResults(answerStore, participant));
         }
 
         updateUIText(trial, queue, trialIndex);
         return waitForAnswer(trial);
       };
 
-      var loadTrial = function(trialIndex) {
-        // Pass and show next trial. Do it recursively as long as
-        // you have trials to display. When queue of trials is empty,
-        // resolve promise with all the results.
+      /**
+       * Pass and show next trial. Do it recursively as long as
+       * you have trials to display. When queue of trials is empty,
+       * resolve promise with all the results.
+       *
+       * @param  {int}    trialIndex   Index of currently shown trial/screen.
+       * @param  {Object} participant  Holds global data on the player used in resulting table.
+       */
+      var loadTrial = function(trialIndex, participant) {
         if (trialIndex < totalNumOfTrials) {
           currentTrialIndex++;
 
-          return showTrial(queue[trialIndex], trialIndex)
+          return showTrial(queue[trialIndex], trialIndex, participant)
             .then(function() {
-              return loadTrial(currentTrialIndex);
+              return loadTrial(currentTrialIndex, participant);
             });
         } else {
           deferred.resolve(finalizeCSV(toCSV));
@@ -653,7 +664,7 @@ $(function(window, undefined) {
       };
 
       // Start first trial.
-      loadTrial(0);
+      loadTrial(0, participant);
 
       return deferred.promise();
     }
