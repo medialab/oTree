@@ -562,7 +562,6 @@ $(function(window, undefined) {
      * @return {Object} A object with two arrays (results/errors) cumulating CSV-formatted data.
      */
     function computeResults(store, participant) {
-      console.log(participant)
       var toCSV = {results: [], errors: []};
       var mturkId = participant.hasOwnProperty('mturkId') ? participant.mturkId : 'N/A'
 
@@ -592,23 +591,34 @@ $(function(window, undefined) {
     }
 
     /**
+     * Clean input from remnants of HTML tags.
+     *
+     * @param  {string} input  The string to clean up.
+     * @return {string} The resulting, clean output.
+     */
+    function cleanHTML(input) {
+      return input.split(/<[^>]*>/g).join('');
+    }
+
+    /**
      * Reduve the given toCSV set of data, from object containing results/errors
      * arrays of CSV-formatted rows, to an object containing the same fields
      * holding CSV-formatted string, with new line separator between rows.
      *
-     * @param  {Object} toCSV
-     * @return {Object} The final object with CSV-formatted string properties.
+     * @param  {Object}   toCSV          Input data.
+     * @param  {Function} htmlCleanerFn  Function for removing HTML remnants.
+     * @return {Object}   The final object with CSV-formatted string properties.
      */
-    function finalizeCSV(toCSV) {              // => {results: string[], errors: string[]}
-      return Object.keys(toCSV)                // => ['results', 'errors']
+    function finalizeCSV(toCSV, htmlCleanerFn) {  // => {results: string[], errors: string[]}
+      return Object.keys(toCSV)                   // => ['results', 'errors']
                    .map(function (k) {
                       var o = {};
-                      o[k] = toCSV[k].join('\n');
+                      o[k] = htmlCleanerFn(toCSV[k].join('\n'));
                       return o;
-                    })                         // => [{'results': string}, {'errors': string}]
+                    })                            // => [{'results': string}, {'errors': string}]
                     .reduce(function (a, b) {
                       return Object.assign({}, a, b)
-                    }, {});                    // => {results: string, errors: string}
+                    }, {});                       // => {results: string, errors: string}
     }
 
     /**
@@ -647,24 +657,25 @@ $(function(window, undefined) {
        * you have trials to display. When queue of trials is empty,
        * resolve promise with all the results.
        *
-       * @param  {int}    trialIndex   Index of currently shown trial/screen.
-       * @param  {Object} participant  Holds global data on the player used in resulting table.
+       * @param  {int}      trialIndex     Index of currently shown trial/screen.
+       * @param  {Object}   participant    Holds global data on the player used in resulting table.
+       * @param  {Function} htmlCleanerFn  Function for removing HTML remnants.
        */
-      var loadTrial = function(trialIndex, participant) {
+      var loadTrial = function(trialIndex, participant, htmlCleanerFn) {
         if (trialIndex < totalNumOfTrials) {
           currentTrialIndex++;
 
           return showTrial(queue[trialIndex], trialIndex, participant)
             .then(function() {
-              return loadTrial(currentTrialIndex, participant);
+              return loadTrial(currentTrialIndex, participant, htmlCleanerFn);
             });
         } else {
-          deferred.resolve(finalizeCSV(toCSV));
+          deferred.resolve(finalizeCSV(toCSV, htmlCleanerFn));
         }
       };
 
       // Start first trial.
-      loadTrial(0, participant);
+      loadTrial(0, participant, cleanHTML);
 
       return deferred.promise();
     }
