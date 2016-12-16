@@ -1,15 +1,11 @@
 # -*- coding: utf-8 -*-
 """IAT game."""
 
-# <standard imports>
 from __future__ import division
 from otree.db import models
 from os import environ
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
-# </standard imports>
-
-import jsonfield
 
 author = 'Davy Peter Braun <davy.braun@sciencespo.fr>'
 
@@ -73,4 +69,4 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for IAT."""
 
-    iat_results = jsonfield.JSONField()
+    iat_results = models.TextField()

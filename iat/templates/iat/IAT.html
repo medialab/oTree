@@ -5,15 +5,21 @@
 
 {% block scripts %}
   <script src="/static/js/iat.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.9.0/lodash.min.js"></script>
-  <!-- <script src={% static "js/iat.js" %}></script> -->
   <script>
     var data = {{data|safe}},
         order = '{{order}}',
-        lang = '{{lang}}'
+        lang = '{{lang}}',
+        participant = {
+          id: '{{participant_id}}',
+          code: '{{participant_code}}',
+          label: '{{participant_label}}'
+        };
+
+    data.participant = participant;
 
     IAT.begin(data, order, lang)
        .then(function(results) {
+         console.log(results);
          $('input[name="iat_results"]').val(JSON.stringify(results));
          $('#form').submit();
        })
