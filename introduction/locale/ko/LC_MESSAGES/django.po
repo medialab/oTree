@@ -1,0 +1,218 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-09-30 16:02+0200\n"
+"PO-Revision-Date: 2016-11-18 11:55+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#: templates/introduction/GamesIntroduction.html:21
+msgid "Next"
+msgstr "다음"
+
+#: templates/introduction/ExperimentIntroduction.html:7
+msgid "Welcome!"
+msgstr "환영합니다!"
+
+#: templates/introduction/ExperimentIntroduction.html:8
+msgid ""
+"Sciences Po Paris invites you to participate in a quick online study on "
+"decision-making."
+msgstr ""
+"파리정치대학에서 진행 중인 의사 결정에 관한 짧은 온라인 연구에 참여해 주십시"
+"오."
+
+#: templates/introduction/ExperimentIntroduction.html:11
+msgid "Study information"
+msgstr "연구 정보"
+
+#: templates/introduction/ExperimentIntroduction.html:12
+msgid ""
+"The aim of this study is to learn more about how we as human beings behave – "
+"how do we make decisions? How do we interact with one another when faced "
+"with different choices? How do we feel about the people and institutions "
+"around us?"
+msgstr ""
+"본 연구의 목적은 인간이 어떻게 행동하는지에 대하여 알아보는 것입니다. 특히 어"
+"떻게 의사결정을 내리는지, 여러 다양한 상황에 직면했을 때 어떻게 다른 사람들"
+"과 상호작용하는지, 우리 주변의 사람들과 제도에 대해서는 어떻게 생각하는지에 "
+"대하여 알아보고자 합니다."
+
+#: templates/introduction/ExperimentIntroduction.html:13
+msgid "To find this out, you will be participating in different exercises:"
+msgstr "이를 알아보기 위해서 당신은 다양한 과제에 참여하게 됩니다."
+
+#: templates/introduction/ExperimentIntroduction.html:14
+msgid ""
+"In the first part, you will participate in three simple tasks, in anonymous "
+"interaction with one or more other people."
+msgstr ""
+"첫번째 섹션에서 당신은 한 명 또는 익명의 다수의 사람들과 함께 간단한 세 가지 "
+"과제를 수행하게 됩니다."
+
+#: templates/introduction/ExperimentIntroduction.html:15
+msgid "In the second part, you are going to sort different sets of words."
+msgstr ""
+"두번째 섹션에서 당신은 여러 가지 단어들을 분류하는 작업을 수행하게 됩니다."
+
+#: templates/introduction/ExperimentIntroduction.html:16
+msgid ""
+"In the third part, we ask you to answer a few questions about yourself and "
+"your opinions."
+msgstr ""
+"세번째 섹션에서는 당신 자신과 당신의 생각에 관한 몇 가지 질문에 답해주시면 됩"
+"니다."
+
+#: templates/introduction/ExperimentIntroduction.html:17
+msgid ""
+"The whole study should take you about 25 minutes. Note that <strong>you "
+"should complete this study in one sitting</strong>, without any extensive "
+"period of inactivity. For best results, minimize distractions and close "
+"other programs."
+msgstr ""
+"이 작업은 약 25분 간 진행될 예정입니다. 작업을 시작하고 나서는 모든 응답을 마"
+"칠 때까지 휴식을 취하실 수 없습니다. 최상의 결과를 얻기 위해 집중을 방해하는 "
+"모든 다른 작업들을 중단해주시고, 실행 중인 다른 프로그램도 종료해 주십시오."
+
+#: templates/introduction/ExperimentIntroduction.html:18
+msgid ""
+"If you are having trouble accessing the platform, we advise you to switch to "
+"Google Chrome instead."
+msgstr "본 플랫폼 접속에 문제가 있을 시, 구글 크롬 사용을 권장합니다."
+
+#: templates/introduction/ExperimentIntroduction.html:20
+msgid "Payment"
+msgstr "보상"
+
+#: templates/introduction/ExperimentIntroduction.html:21
+msgid ""
+"By participating in the study’s tasks, you can earn an additional amount of "
+"up to 40 euro."
+msgstr "이 작업에 참여하심으로써, 최대 48,000원까 획득하실 수 있습니다. "
+
+#: templates/introduction/ExperimentIntroduction.html:23
+msgid ""
+"This amount will depend on the strategic decisions you make together with "
+"the other participants during the study’s tasks. At the end of the study, "
+"one of the several tasks you have completed will be randomly selected."
+msgstr ""
+"이 금액은 본 작업을 수행하시는 동안 다른 참가자들과 함께 어떻게 의사결정을 내"
+"리시는지에 따라 달라집니다. 실험이 종료되면, 당신이 수행하신 여러 작업들 중 "
+"하나가 무작위로 선정될 것입니다."
+
+#: templates/introduction/ExperimentIntroduction.html:24
+#: templates/introduction/GamesIntroduction.html:18
+msgid ""
+"The amount of money you will receive will correspond to your earnings in "
+"this selected task."
+msgstr ""
+"이렇게 무작위 선정된 작업 내에서 획득하신 금액이 당신이 실제 획득하게 되실 금"
+"액입니다. "
+
+#: templates/introduction/ExperimentIntroduction.html:26
+msgid "You will receive your points via the usual system."
+msgstr "당신은 시스템을 통해 포인트를 획득합니다."
+
+#: templates/introduction/ExperimentIntroduction.html:27
+msgid ""
+"You will receive your additional money at the end of the study via HAPPY "
+"MONEY."
+msgstr ""
+"MySurvey 참여 후2-3주내에 추가로 상금을 받으시게됩니다 (은행으로 송금). 만일 "
+"MySurvey측에 본인의 은행정보를 아직 공유하지 않으셨다면, 저희가 추후 공지해드"
+"리겠습니다."
+
+#: templates/introduction/ExperimentIntroduction.html:29
+msgid "Data protection"
+msgstr "데이터 보호"
+
+#: templates/introduction/ExperimentIntroduction.html:32
+msgid ""
+"The data gathered in this study is subject to European privacy protocols, "
+"under the supervision of the European Research Council. We will use it for "
+"research purposes only."
+msgstr ""
+"본 연구에서 활용된 데이터는 유럽리서치위원회의 감독 하에 유럽 개인정보 보호법"
+"에 의거하여 보호됩니다. 수집된 데이터는 오직 연구 목적으로만 사용됩니다."
+
+#: templates/introduction/ExperimentIntroduction.html:34
+msgid ""
+"The data gathered in this study is subject to strict privacy protocols. We "
+"will use it for research purposes only."
+msgstr ""
+"본 연구에서 수집된 데이터는 엄격한 개인정보 보호법의 적용을 받습니다. 수집된 "
+"데이터는 오직 연구 목적으로만 사용됩니다."
+
+#: templates/introduction/ExperimentIntroduction.html:37
+msgid "Begin"
+msgstr "시작"
+
+#: templates/introduction/GamesIntroduction.html:6
+msgid "Section One: Tasks"
+msgstr "섹션 1: 과제"
+
+#: templates/introduction/GamesIntroduction.html:8
+msgid ""
+"We will start by giving you three tasks. This is the part of the study that "
+"will allow you to earn additional money."
+msgstr ""
+"세 가지 과제를 제시해 드립니다. 이 과제를 통해 당신은 추가적인 금액을 획득할 "
+"수 있습니다."
+
+#: templates/introduction/GamesIntroduction.html:9
+msgid ""
+"At the beginning of each task, you will be grouped with other study "
+"participants, who are respondents from France like you."
+msgstr ""
+"첫번째 과제에서 참가자는 두 명입니다.: 참가자 A와 B. 앞서 말씀드린 것처럼, 다"
+"른 참가자 또한 한국에 거주하고 있습니다."
+
+#: templates/introduction/GamesIntroduction.html:10
+msgid ""
+"<strong>In each task, the other participants you are grouped with will be "
+"different:</strong> the same person will never be in your group more than "
+"once. Note that the other participants may not be online at this exact "
+"moment – we will record your and their answers and will match you at the end "
+"of the study."
+msgstr ""
+"<strong>각 과제마다 당신은 새로운 참가자들과 팀을 다시 구성하게 됩니다:</"
+"strong> 즉, 이미 작업을 함께 수행했던 사람과 다시 팀을 구성하게 되지는 않습니"
+"다. 단, 다른 참가자들이 온라인 상에서 실시간으로 동시에 접속해 있지 않을 수 "
+"있습니다 - 과제 종료 시, 당신의 응답은 기록되어 다른 참가자들의 응답과 대조"
+"될 것입니다."
+
+#: templates/introduction/GamesIntroduction.html:12
+msgid "How will your earnings be calculated?"
+msgstr "획득할 수 있는 금액은 어떻게 계산이 되는지 알려드리겠습니다."
+
+#: templates/introduction/GamesIntroduction.html:14
+msgid ""
+"Your earnings in each task will depend on your and the other participants’ "
+"strategic decisions."
+msgstr ""
+"각 작업에서 획득할 수 있는 금액은 팀 구성원들의 전략적 의사결정에 따라 결정됩"
+"니다. "
+
+#: templates/introduction/GamesIntroduction.html:15
+msgid ""
+"Your answers in each task will be matched with those of other participants."
+msgstr "각 작업마다 당신의 응답은 다른 참가자들의 응답과 대조될 것입니다."
+
+#: templates/introduction/GamesIntroduction.html:17
+msgid ""
+"At the end of the study, one of the three tasks you have completed will be "
+"randomly selected."
+msgstr ""
+"모든 작업 종료 시, 수행하신 세 개의 과제 중 한 개의 과제가 무작위로 선정될 것"
+"입니다."

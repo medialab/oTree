@@ -17,22 +17,6 @@ def vars_for_all_templates(self):
     }
 
 
-class ExperimentIntroduction(Page):
-    """
-    Page introducing the entire experiment.
-
-    Assumes this is the first test.
-    """
-
-    pass
-
-
-class GamesIntroduction(Page):
-    """Page introducing the games. Assumes this is the first test."""
-
-    pass
-
-
 class Introduction(Page):
     """Page introducing the Trust game."""
 
@@ -282,8 +266,6 @@ class EndGame(Page):
 
 
 page_sequence = [
-    ExperimentIntroduction,
-    GamesIntroduction,
     Introduction,
     Simulation,
     Send,
