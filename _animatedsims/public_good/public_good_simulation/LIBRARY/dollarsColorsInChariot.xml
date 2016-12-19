@@ -1,0 +1,48 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="dollarsColorsInChariot" itemID="56cf2174-0000062f" symbolType="graphic" lastModified="1456415145">
+  <timeline>
+    <DOMTimeline name="dollarsColorsInChariot">
+      <layers>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="dollarGreen" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.674789428710938" d="0.674789428710938" tx="-17.5" ty="-3.4"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.1" y="6.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="dollarRed" selected="true" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.674789428710938" d="0.674789428710938" tx="-11" ty="0.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.1" y="6.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="dollarOrange" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.674789428710938" d="0.674789428710938" tx="-5.25" ty="-8.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.1" y="6.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+                <DOMSymbolInstance libraryItemName="dollarBlue" symbolType="graphic" loop="loop">
+                  <matrix>
+                    <Matrix a="0.674789428710938" d="0.674789428710938" tx="1.25" ty="-4.9"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="12.1" y="6.15"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

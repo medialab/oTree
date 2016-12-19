@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="participantLabel" itemID="56cf13db-000005af" lastModified="1456411611">
+  <timeline>
+    <DOMTimeline name="participantLabel">
+      <layers>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label" fontRenderingMode="standard" width="98" height="11.35" isSelectable="false" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix a="0.8460693359375" b="0.5330810546875" c="-1.11373901367188" d="0.480209350585938" tx="16.55" ty="2"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>participant B</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" autoKern="false" lineHeight="10.65" bitmapSize="240" face="GothamBold"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
