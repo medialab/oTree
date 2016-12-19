@@ -1,13 +1,13 @@
 TRUSTLAB
 ========
 > Web-based multiplayer strategy games and economics experiments to measure **trust**.
-> Part of the [**Sowell**](https://erc.europa.eu/) ERC-funded project.
+> Part of the **Sowell** [ERC](https://erc.europa.eu/)-funded project.
 
 ![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/refact-readme/_readmefiles/logos.jpg)
 
 ### Getting started
 
-**Trustlab** is based on [**oTree**](http://www.otree.org/), a Python, [Django]()-based framework for econn-games. Please refer to the following article regarding oTree:
+**Trustlab** is based on [**oTree**](http://www.otree.org/), a Python, [Django](https://djangoproject.com)-based framework for econn-games. Please refer to the following article regarding oTree:
 
 *[oTree—An open-source platform for laboratory, online, and field experiments](http://www.sciencedirect.com/science/article/pii/S2214635016000101)*
 
@@ -21,31 +21,49 @@ You may want to refer to [oTree's](http://otree.readthedocs.io/en/latest/install
 It is strongly suggested that you use a [`virtualenv`](https://virtualenv.pypa.io/en/stable/) in order to run your platform in the best possible way. If you do so, you should follow this [tutorial]() to know how to set up the necessary environment variables for your instance of Trustlab.
 
 #### Installing
-- Clone this directory.
-`git clone git@github.com:medialab/trustlab.git`
+- Clone this directory:
 
-- Install the dependencies.
-`pip install -r requirements_base.txt`
+```python
+git clone git@github.com:medialab/trustlab.git
+```
 
-- Set up the necessary environment variables ([see how-to for `virtualenv`]())
-`export OTREE_SECRET_KEY=...`
-`export OTREE_ADMIN_PASSWORD=...`
-`export OTREE_PRODUCTION=False`
-`export OTREE_ADMIN_PASSWORD=...`
-`export OTREE_SECRET_KEY=...`
-`export OTREE_AUTH_LEVEL=STUDY`
-`export OTREE_LANGUAGE_CODE=...`
-`export AWS_ACCESS_KEY_ID=...`
-`export AWS_SECRET_ACCESS_KEY=...`
+- Install the dependencies:
+
+```python
+pip install -r requirements_base.txt
+```
+
+- Set up the necessary environment variables ([see how-to for `virtualenv`]()):
+
+```python
+export OTREE_SECRET_KEY=...`
+export OTREE_ADMIN_PASSWORD=...
+export OTREE_PRODUCTION=False
+export OTREE_ADMIN_PASSWORD=...
+export OTREE_SECRET_KEY=...
+export OTREE_AUTH_LEVEL=STUDY
+export OTREE_LANGUAGE_CODE=...
+export AWS_ACCESS_KEY_ID=...
+export AWS_SECRET_ACCESS_KEY=...
+``
 
 - Reset your DB to run the migrations. From the console at the root of your project:
-`otree resetdb`
+
+```python
+otree resetdb
+```
 
 - If your `OTREE_PRODUCTION` setting is setting to `True`, build the static assets:
-`otree collectstatic`
+
+```python
+otree collectstatic
+```
 
 - Run the server.
-`otree runserver`
+
+```python
+otree runserver
+```
 
 - Check out [http://localhost:8000/](http://localhost:8000/), and use the credentials you've registered in your related environment variables to log in.
 
@@ -57,7 +75,7 @@ Don't forget to set up your environment variables, regardless of the deployment 
 
 ### Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/medialab/trustlab/blob/refact-readme/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/medialab/trustlab/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ### Versioning
 
@@ -65,9 +83,9 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ### Authors
 
- **Daniel L. Chen, Martin Schonger and Christopher Wickens** - *Initial work on oTree* - [oTree-org](https://github.com/oTree-org)
- **Davy Peter Braun** - *Initial work on Trustlab, including animated simulations, IAT...* - [dheavy](https://github.com/dheavy)
- **Paul Girard** - *Initial work and overwiew on Trustlab* - [paulgirard](https://github.com/paulgirard)
+ * **Daniel L. Chen, Martin Schonger and Christopher Wickens** - *Initial work on oTree* - [oTree-org](https://github.com/oTree-org)
+ * **Davy Peter Braun** - *Initial work on Trustlab, including animated simulations, IAT...* - [dheavy](https://github.com/dheavy)
+ * **Paul Girard** - *Overwiew of project* - [paulgirard](https://github.com/paulgirard)
 
 ### License
 
