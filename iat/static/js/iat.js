@@ -272,6 +272,17 @@ $(function(window, undefined) {
       // then arrange the trials based on given order.
       randomizeTrialsSets(order).forEach(function(character, i) {
         shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
+          function getLocalizedValue(trial, field, lang) {
+            if (trial[field] && trial[field][lang]) {
+              return trial[field][lang];
+            }
+            throw new Error(
+              'Cannot get localized value for trial. Make sure you are using ' +
+              '2 characters formatted locale (e.g. "en", not "en-us") in your ' +
+              'configuration (check value for OTREE_LANGUAGE_CODE).'
+            )
+          }
+
           // Whenever j === 0, we are at the very beginning of a new trials set.
           // --
           // Skip the first round, then on each following round,
@@ -294,16 +305,16 @@ $(function(window, undefined) {
             // Set of French data for data recovery and reconciliation purposes.
             // That way, we always receive French text to analyze IAT results,
             // no matter what languege we were testing for.
-            correctCategory: capitalize(displayed[displayed.correct]['fr']),
-            stimuli: displayed.showing['fr'],
-            left: capitalize(displayed.left['fr']),
-            right: capitalize(displayed.right['fr']),
+            correctCategory: capitalize(getLocalizedValue(displayed, displayed.correct, 'fr')),
+            stimuli: getLocalizedValue(displayed, 'showing', 'fr'),
+            left: capitalize(getLocalizedValue(displayed, 'left', 'fr')),
+            right: capitalize(getLocalizedValue(displayed, 'right', 'fr')),
             correctPosition: displayed.correct,
 
             // Set of localized data to display to user.
-            _stimuli: displayed.showing[lang],
-            _left: capitalize(displayed.left[lang]),
-            _right: capitalize(displayed.right[lang])
+            _stimuli: getLocalizedValue(displayed, 'showing', lang),
+            _left: capitalize(getLocalizedValue(displayed, 'left', lang)),
+            _right: capitalize(getLocalizedValue(displayed, 'right', lang))
           });
 
           id++;
