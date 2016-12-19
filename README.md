@@ -23,19 +23,19 @@ It is strongly suggested that you use a [`virtualenv`](https://virtualenv.pypa.i
 #### Installing
 - Clone this directory:
 
-```python
+```bash
 git clone git@github.com:medialab/trustlab.git
 ```
 
 - Install the dependencies:
 
-```python
+```bash
 pip install -r requirements_base.txt
 ```
 
 - Set up the necessary environment variables ([see how-to for `virtualenv`]()):
 
-```python
+```bash
 export OTREE_SECRET_KEY=...`
 export OTREE_ADMIN_PASSWORD=...
 export OTREE_PRODUCTION=False
@@ -49,19 +49,19 @@ export AWS_SECRET_ACCESS_KEY=...
 
 - Reset your DB to run the migrations. From the console at the root of your project:
 
-```python
+```bash
 otree resetdb
 ```
 
 - If your `OTREE_PRODUCTION` setting is setting to `True`, build the static assets:
 
-```python
+```bash
 otree collectstatic
 ```
 
 - Run the server.
 
-```python
+```bash
 otree runserver
 ```
 
