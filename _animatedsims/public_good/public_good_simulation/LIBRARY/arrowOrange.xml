@@ -1,0 +1,45 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="arrowOrange" itemID="56cf1409-000005be" symbolType="graphic" lastModified="1456411657">
+  <timeline>
+    <DOMTimeline name="arrowOrange">
+      <layers>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#CD7448"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="3" joints="miter">
+                        <fill>
+                          <SolidColor color="#CD7448"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!141 821S4|393 937!393 937[583 1017 1025 1105!1025 1105[1467 1193 2149 1000!2149 1000[2831 806 3565 477!3565 477[4298 148 4620 0"/>
+                    <Edge fillStyle0="1" edges="!25 727S1|0 885!0 885|141 821!141 821|281 757!281 757|25 727"/>
+                    <Edge cubics="!281 757(;281,757 25,727 25,727q281 757 25 727);"/>
+                    <Edge cubics="!25 727(;25,727 0,885 0,885q25 727 0 885);"/>
+                    <Edge cubics="!0 885(0,885;0,885 141,821 141,821q0 885 141 821)141,821;"/>
+                    <Edge cubics="!141 821(141,821;141,821 281,757 281,757q141 821 281 757);"/>
+                    <Edge cubics="!393 937(;520,990 730,1046 1025,1105q393 937Q583 1017q1025 1105)1025,1105;"/>
+                    <Edge cubics="!2149 1000(2149,1000;2604,871 3076,696 3565,477q2149 1000Q2831 806q3565 477);"/>
+                    <Edge cubics="!1025 1105(;1320,1164 1694,1129 2149,1000q1025 1105Q1467 1193q2149 1000);"/>
+                    <Edge cubics="!3565 477(;4054,258 4405,99 4620,0q3565 477Q4298 148q4620 0);"/>
+                    <Edge cubics="!141 821(;141,821 393,937 393,937q141 821 393 937);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

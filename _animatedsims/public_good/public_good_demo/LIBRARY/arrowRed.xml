@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="arrowRed" itemID="56cf13ee-000005b5" symbolType="graphic" lastModified="1456411630">
+  <timeline>
+    <DOMTimeline name="arrowRed">
+      <layers>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#CC3367"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="3" joints="miter">
+                        <fill>
+                          <SolidColor color="#CC3367"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!141 94S4[2487 1525 3717 1758!3717 1758[4947 1991 5775 1840!5775 1840[6603 1689 7337 1360!7337 1360[8070 1031 8392 883"/>
+                    <Edge fillStyle0="1" edges="!25 0S1|0 158!0 158|141 94!141 94|281 30!281 30|25 0"/>
+                    <Edge cubics="!7337 1360(;7826,1141 8177,982 8392,883q7337 1360Q8070 1031q8392 883);"/>
+                    <Edge cubics="!281 30(;281,30 25,0 25,0q281 30 25 0);"/>
+                    <Edge cubics="!25 0(;25,0 0,158 0,158q25 0 0 158);"/>
+                    <Edge cubics="!0 158(;0,158 141,94 141,94q0 158 141 94);"/>
+                    <Edge cubics="!141 94(;141,94 281,30 281,30q141 94 281 30);"/>
+                    <Edge cubics="!5775 1840(5775,1840;6327,1739 6848,1579 7337,1360q5775 1840Q6603 1689q7337 1360);"/>
+                    <Edge cubics="!3717 1758(;4537,1913 5223,1941 5775,1840q3717 1758Q4947 1991q5775 1840);"/>
+                    <Edge cubics="!141 94(;1705,1048 2897,1603 3717,1758q141 94Q2487 1525q3717 1758);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
