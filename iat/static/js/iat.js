@@ -379,7 +379,7 @@ $(function (window, undefined) {
             timeStarted + "," + order + "," +  errorPercentage + "," + platform + '\n'
           )
 
-          results.meta = meta.join('\n');
+          results.meta = meta.join('\\n');
 
           return deferred.resolve(results);
         });
@@ -613,7 +613,7 @@ $(function (window, undefined) {
      * @return {string} The resulting, clean output.
      */
     function cleanHTML(input) {
-      return input.split(/<[^>]*>/g).join('');
+      return input.split(/<[^>]*>/g).join(' ').trim();
     }
 
     /**
@@ -629,7 +629,7 @@ $(function (window, undefined) {
       return Object.keys(toCSV)                   // => ['successes', 'failures', 'meta']
                    .map(function (k) {
                      var o = {};
-                     o[k] = htmlCleanerFn(toCSV[k].join('\n'));
+                     o[k] = htmlCleanerFn(toCSV[k].join('\\n'));
                      return o;
                    })                            // => [{'successes': string}, {'failures': string}, {'meta': string}]
                    .reduce(function (a, b) {
