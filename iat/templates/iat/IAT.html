@@ -20,7 +20,9 @@
     IAT.begin(data, order, lang)
        .then(function(results) {
          console.log(results);
-         $('input[name="iat_results"]').val(JSON.stringify(results));
+         $('input[name="iat_meta"]').val(results.meta);
+         $('input[name="iat_successes"]').val(results.successes);
+         $('input[name="iat_failures"]').val(results.failures);
          $('#form').submit();
        })
   </script>
@@ -127,7 +129,9 @@
 
     </style>
 
-    <input type="hidden" name="iat_results" />
+    <input type="hidden" name="iat_meta" />
+    <input type="hidden" name="iat_successes" />
+    <input type="hidden" name="iat_failures" />
 
     <main id="iat_test">
       <div class="row">
