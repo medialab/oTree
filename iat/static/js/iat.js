@@ -43,20 +43,23 @@ $(function(window, undefined) {
         PAUSE_SCREEN_DELAY = 5000;
 
     var answerStore = {
-      results: [],
-      errors: [],
+      successes: [],
+      failures: [],
     };
 
     var toCSV = {
-      results: [
+      successes: [
         'Trial ID,Player MTurk ID,Code,Label,Time started' +
         'Left category,Right category,Stimuli word' +
         'Correct position,Correct category,Time taken'
       ],
-      errors: [
+      failures: [
         'Trial ID,MTurk ID,Code,Label,Time started,Left category' +
         'Right category,Stimuli word,Correct position' +
         'Correct category,Failed by time out,Time taken'
+      ],
+      meta: [
+        'ID in group,Code,Label,Time started,Trials order,Error Percentage'
       ]
     };
 
@@ -365,7 +368,9 @@ $(function(window, undefined) {
 
       startBlocks(prepareTrials(dataStore, order, lang))
         .then(function(results) {
-          var errorPercentage = (results.errors.length / results.results.length) * 100;
+          var errorPercentage = (results.failures.length / results.successes.length) * 100;
+
+
           results['error_percentage'] = errorPercentage;
 
           results['order'] = order;
@@ -382,7 +387,7 @@ $(function(window, undefined) {
     /**
      * Save the correct or wrong input from user, with timing for each round.
      *
-     * @param  {String} type   'results' or 'errors', according to the keys in `answerStore`.
+     * @param  {String} type   'successes' or 'failures', according to the keys in `answerStore`.
      * @param  {Object} trial  The current trial object.
      * @param  {String} timing The elapsed time for this answer, as taken by the Timer instance.
      * @return {void}
@@ -406,8 +411,8 @@ $(function(window, undefined) {
 
     /**
      * Promise encapsulating all the process of waiting for the user's answer.
-     * It does resolve anything, but when it does resolve, it means the current trial is finished,
-     * and we have saved results (and optional errors).
+     * When it does resolve, it means the current trial is finished,
+     * and we have saved successes (and optional failures).
      *
      * @param  {Object} trial The current trial.
      * @return {Object} Promise, resolved when trial is done.
@@ -496,7 +501,7 @@ $(function(window, undefined) {
       function checkUserInputValidity(leftOrRight) {
         if (answerIsOk(leftOrRight)) {
           dispose();
-          save('results', trial, timer.getElapsed())
+          save('successes', trial, timer.getElapsed())
           return deferred.resolve();
         }
 
@@ -531,7 +536,7 @@ $(function(window, undefined) {
        * @return {void}
        */
       function setError(trial, timing, timedOut) {
-        save('errors', trial, timing, timedOut);
+        save('failures', trial, timing, timedOut);
         reset();
       }
 
@@ -566,18 +571,18 @@ $(function(window, undefined) {
 
     /**
      * Compute stored JSON data and transform it into accumulative
-     * arrays of CSV-formatted results/errors during the user's run.
+     * arrays of CSV-formatted successes/failures during the user's run.
      *
      * @param  {Object} store        An instance of answerStore holding JSON values.
      * @param  {Object} participant  Holds global data on the player used in resulting table.
-     * @return {Object} A object with two arrays (results/errors) cumulating CSV-formatted data.
+     * @return {Object} A object with two arrays (successes/failures) cumulating CSV-formatted data.
      */
     function computeResults(store, participant) {
-      var toCSV = {results: [], errors: []};
+      var toCSV = {successes: [], failures: []};
       var mturkId = participant.hasOwnProperty('mturkId') ? participant.mturkId : 'N/A'
 
-      toCSV.results = toCSV.results.concat(
-        answerStore.results.map(function (a) {
+      toCSV.successes = toCSV.successes.concat(
+        answerStore.successes.map(function (a) {
           // Trial ID, MTurk ID, Code, Label, left category, Right category
           // Stimuli word, Correct position, Correct category, Time taken
           return a.id + ',' + mturkId + ',' + participant.code + ',' +
@@ -586,8 +591,8 @@ $(function(window, undefined) {
         })
       );
 
-      toCSV.errors = toCSV.errors.concat(
-        answerStore.errors.map(function (a) {
+      toCSV.failures = toCSV.failures.concat(
+        answerStore.failures.map(function (a) {
           // Trial ID, MTurk ID, Code, Label, left category,
           // Right category, Stimuli word, Correct position, Correct category,
           // Failed by time out, Time taken
@@ -612,7 +617,7 @@ $(function(window, undefined) {
     }
 
     /**
-     * Reduve the given toCSV set of data, from object containing results/errors
+     * Reduve the given toCSV set of data, from object containing successes/failures
      * arrays of CSV-formatted rows, to an object containing the same fields
      * holding CSV-formatted string, with new line separator between rows.
      *
@@ -620,21 +625,21 @@ $(function(window, undefined) {
      * @param  {Function} htmlCleanerFn  Function for removing HTML remnants.
      * @return {Object}   The final object with CSV-formatted string properties.
      */
-    function finalizeCSV(toCSV, htmlCleanerFn) {  // => {results: string[], errors: string[]}
-      return Object.keys(toCSV)                   // => ['results', 'errors']
+    function finalizeCSV(toCSV, htmlCleanerFn) {  // => {successes: string[], failures: string[]}
+      return Object.keys(toCSV)                   // => ['successes', 'failures']
                    .map(function (k) {
-                      var o = {};
-                      o[k] = htmlCleanerFn(toCSV[k].join('\n'));
-                      return o;
-                    })                            // => [{'results': string}, {'errors': string}]
-                    .reduce(function (a, b) {
-                      return Object.assign({}, a, b)
-                    }, {});                       // => {results: string, errors: string}
+                     var o = {};
+                     o[k] = htmlCleanerFn(toCSV[k].join('\n'));
+                     return o;
+                   })                            // => [{'successes': string}, {'failures': string}]
+                   .reduce(function (a, b) {
+                     return Object.assign({}, a, b)
+                   }, {meta: toCSV.meta});       // => {successes: string, failures: string}
     }
 
     /**
      * Start the queue of blocks of trials.
-     * Built as a promise resolving the answers/errors payload
+     * Built as a promise resolving the answers/failures payload
      * once the entire suite of blocks is completed.
      *
      * @param  {Array} queue Queue of trials objects.
