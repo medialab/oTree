@@ -8,3 +8,5 @@ staticfiles
 _coverage_results
 exports_iat/*.csv
 _static_root
+_bin/iat_exporter/node_modules
+_bin/iat_exporter/*.log

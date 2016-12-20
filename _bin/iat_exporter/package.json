@@ -1,0 +1,44 @@
+{
+  "name": "iat-data-exporter",
+  "productName": "IAT Data Exporter",
+  "version": "2.0.0",
+  "description": "Drag and drop IAT results to get formatted data.",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:medialab/trustlab.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "Davy Peter Braun",
+    "email": "davy.braun@sciencespo.fr",
+    "url": "http://davybraun.com"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.3",
+    "electron-debug": "^1.0.0",
+    "electron-prebuilt": "^1.4.10",
+    "express": "^4.14.0",
+    "papaparse": "^4.1.2",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron": "^1.4.10",
+    "electron-packager": "^8.0.0",
+    "electron-prebuilt": "^1.4.10"
+  }
+}

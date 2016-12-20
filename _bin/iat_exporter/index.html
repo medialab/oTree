@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAT Data Exporter</title>
+  <link rel="stylesheet" type="text/css" href="./vendors/dropzone/basic.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendors/dropzone/dropzone.min.css">
+</head>
+<style type="text/css">
+  html, body {
+    position: relative;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  #zone {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
+<body>
+  <form class="dropzone" id="zone" action="/">
+
+  <script>
+    const Dropzone = require(__dirname + '/vendors/dropzone/dropzone.min');
+
+    Dropzone.options.zone = {
+      autoProcessQueue: false,
+      init: function() {
+        this.on("addedfile", function(file, e) {
+          console.log(e)
+          const reader = new FileReader();
+          reader.onload = e => {
+            var data = atob(e.target.result.substring(21));
+            data = data.split('\n');
+            console.log(data[1].substring(data.indexOf('"')).split())
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+    };
+  </script>
+</body>
+</html>
