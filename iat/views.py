@@ -32,7 +32,7 @@ class IAT(Page):
     """Main game page."""
 
     form_model = models.Player
-    form_fields = ['iat_results']
+    form_fields = ['iat_successes', 'iat_failures', 'iat_meta']
 
     def vars_for_template(self):
         """Pass usable data to template."""

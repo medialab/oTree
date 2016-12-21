@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IAT Data Exporter</title>
+  <link rel="stylesheet" type="text/css" href="./vendors/dropzone/basic.min.css">
+  <link rel="stylesheet" type="text/css" href="./vendors/dropzone/dropzone.min.css">
+</head>
+<style type="text/css">
+  html, body {
+    position: relative;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  #zone {
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
+<body>
+  <form class="dropzone" id="zone" action="/">
+
+  <script>
+    const Dropzone = require(__dirname + '/vendors/dropzone/dropzone.min');
+    const Base64 = require('js-base64').Base64;
+
+    Dropzone.options.zone = {
+      autoProcessQueue: false,
+      init: function() {
+        this.on("addedfile", function(file) {
+          const reader = new FileReader();
+          reader.onload = e => {
+            var data = Base64.decode(e.target.result.substring(21));
+            data = data
+              .split('\n')  // Split on rows. Make them into array of strings.
+              .slice(1)     // Copy (to return an) array including all but first line (an unused oTree table header...)
+              .map(d => {
+                // Trim out all non IAT related content (keep success/error/meta).
+                return d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'));
+              })
+              .filter(d => {
+                // Filter out all empty rows (i.e. non-played/no results yet).
+                return d !== '';
+              })
+              .map(d => {
+                // Split success, errors and meta data into new array
+                return d.split('","');
+              })
+              .reduce((data, d) => {
+                // Reduce multidimensional array resulting from previous operation into one-level array.
+                // Results in data[0] being
+                return data.concat(d);
+              })
+              .forEach((d, i) => {
+                let csvData = d.split('\\n');
+                let csv = `data:text/csv;charset=utf-8,${escape(csvData.join('\n'))}`;
+
+                let link = document.createElement('a');
+                link.download = `${['IAT_results', 'IAT_errors', 'IAT_meta'][i]}.csv`;
+                link.href = csv;
+
+                document.body.appendChild(link);
+                link.click();
+
+                document.body.removeChild(link);
+                delete link;
+              });
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+    };
+  </script>
+</body>
+</html>

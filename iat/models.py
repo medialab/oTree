@@ -69,4 +69,6 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player for IAT."""
 
-    iat_results = models.TextField()
+    iat_successes = models.TextField()
+    iat_failures = models.TextField()
+    iat_meta = models.TextField()

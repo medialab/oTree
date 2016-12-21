@@ -1,8 +1,8 @@
-$(function(window, undefined) {
+$(function (window, undefined) {
   /**
    * Timer for measuring user input speed.
    */
-  var Timer = (function() {
+  var Timer = (function () {
     var startTime = new Date().getTime();
     var elapsed = 0;
 
@@ -29,7 +29,7 @@ $(function(window, undefined) {
     };
   })();
 
-  window.IAT = (function(window, undefined) {
+  window.IAT = (function (window, undefined) {
     /**
      * Reference to UI pieces manipulated via jQuery.
      */
@@ -43,20 +43,23 @@ $(function(window, undefined) {
         PAUSE_SCREEN_DELAY = 5000;
 
     var answerStore = {
-      results: [],
-      errors: [],
+      successes: [],
+      failures: [],
     };
 
     var toCSV = {
-      results: [
-        'Trial ID,Player MTurk ID,Code,Label,Time started' +
-        'Left category,Right category,Stimuli word' +
+      successes: [
+        'Trial ID,Player ID in group,Code,Label,Time started,' +
+        'Left category,Right category,Stimuli word,' +
         'Correct position,Correct category,Time taken'
       ],
-      errors: [
-        'Trial ID,MTurk ID,Code,Label,Time started,Left category' +
-        'Right category,Stimuli word,Correct position' +
+      failures: [
+        'Trial ID,Player ID in group,Code,Label,Time started,Left category,' +
+        'Right category,Stimuli word,Correct position,' +
         'Correct category,Failed by time out,Time taken'
+      ],
+      meta: [
+        'Player ID in group,Code,Label,Time started,Trials order,Error Percentage,Platform'
       ]
     };
 
@@ -143,7 +146,7 @@ $(function(window, undefined) {
           .animate({opacity: 1}, 100);
       } else {
         $uiWrongAnswerCross
-          .animate({opacity: 0}, 100, function() {
+          .animate({opacity: 0}, 100, function () {
             $uiWrongAnswerCross.css('display', 'none');
           });
       }
@@ -270,8 +273,8 @@ $(function(window, undefined) {
 
       // Randomize orders of set of trials,
       // then arrange the trials based on given order.
-      randomizeTrialsSets(order).forEach(function(character, i) {
-        shuffleArray(data.trials[character].displayed).forEach(function(displayed, j) {
+      randomizeTrialsSets(order).forEach(function (character, i) {
+        shuffleArray(data.trials[character].displayed).forEach(function (displayed, j) {
           function getLocalizedValue(trial, field, lang) {
             if (trial[field] && trial[field][lang]) {
               return trial[field][lang];
@@ -354,24 +357,29 @@ $(function(window, undefined) {
      * then return the results as a promise.
      *
      * @param  {Array}  dataStore
-     * @param  {string} order The order of passage, such as "A B C D"...
-     * @param  {string} lang  Language code to base sets on.
+     * @param  {string} order        The order of passage, such as "A B C D"...
+     * @param  {string} lang         Language code to base sets on.
+     * @param  {string} timeStarted  A UTC date string informing when the test was started.
      * @return {Object} A promise resolving with the results payload.
      */
-    function loadBlocks(dataStore, order, lang) {
+    function loadBlocks(dataStore, order, lang, timeStarted, toCSV) {
       setConfiguration(dataStore);
 
       var deferred = $.Deferred();
 
-      startBlocks(prepareTrials(dataStore, order, lang))
-        .then(function(results) {
-          var errorPercentage = (results.errors.length / results.results.length) * 100;
-          results['error_percentage'] = errorPercentage;
-
-          results['order'] = order;
-
+      startBlocks(prepareTrials(dataStore, order, lang), toCSV, timeStarted)
+        .then(function (results) {
+          var errorPercentage = (results.failures.length / results.successes.length) * 100;
           var platform = mightBeUsingTablet ? 'tablet' : 'desktop';
-          results['platform'] = platform;
+
+          // Player ID in group, Code, Label, Time started, Trials order, Error Percentage, Platform'
+          var meta = results.meta.slice(0).split();
+          meta.push(
+            dataStore.participant.id + "," + dataStore.participant.code + "," + dataStore.participant.label + "," +
+            timeStarted + "," + order + "," +  errorPercentage + "," + platform + '\n'
+          )
+
+          results.meta = meta.join('\\n');
 
           return deferred.resolve(results);
         });
@@ -382,7 +390,7 @@ $(function(window, undefined) {
     /**
      * Save the correct or wrong input from user, with timing for each round.
      *
-     * @param  {String} type   'results' or 'errors', according to the keys in `answerStore`.
+     * @param  {String} type   'successes' or 'failures', according to the keys in `answerStore`.
      * @param  {Object} trial  The current trial object.
      * @param  {String} timing The elapsed time for this answer, as taken by the Timer instance.
      * @return {void}
@@ -406,8 +414,8 @@ $(function(window, undefined) {
 
     /**
      * Promise encapsulating all the process of waiting for the user's answer.
-     * It does resolve anything, but when it does resolve, it means the current trial is finished,
-     * and we have saved results (and optional errors).
+     * When it does resolve, it means the current trial is finished,
+     * and we have saved successes (and optional failures).
      *
      * @param  {Object} trial The current trial.
      * @return {Object} Promise, resolved when trial is done.
@@ -446,7 +454,7 @@ $(function(window, undefined) {
        */
       function setWaitingPauseScreen() {
         dispose();
-        setTimeout(function() {
+        setTimeout(function () {
           function next(e) {
             $window.off('keyup', next);
             $window.off('click touchstart', next);
@@ -496,7 +504,7 @@ $(function(window, undefined) {
       function checkUserInputValidity(leftOrRight) {
         if (answerIsOk(leftOrRight)) {
           dispose();
-          save('results', trial, timer.getElapsed())
+          save('successes', trial, timer.getElapsed())
           return deferred.resolve();
         }
 
@@ -531,7 +539,7 @@ $(function(window, undefined) {
        * @return {void}
        */
       function setError(trial, timing, timedOut) {
-        save('errors', trial, timing, timedOut);
+        save('failures', trial, timing, timedOut);
         reset();
       }
 
@@ -566,33 +574,31 @@ $(function(window, undefined) {
 
     /**
      * Compute stored JSON data and transform it into accumulative
-     * arrays of CSV-formatted results/errors during the user's run.
+     * arrays of CSV-formatted successes/failures during the user's run.
      *
      * @param  {Object} store        An instance of answerStore holding JSON values.
      * @param  {Object} participant  Holds global data on the player used in resulting table.
-     * @return {Object} A object with two arrays (results/errors) cumulating CSV-formatted data.
+     * @param  {string} timeStarted  Time at which the experiment started for the user.
+     * @return {Object} A object with two arrays (successes/failures) cumulating CSV-formatted data.
      */
-    function computeResults(store, participant) {
-      var toCSV = {results: [], errors: []};
-      var mturkId = participant.hasOwnProperty('mturkId') ? participant.mturkId : 'N/A'
-
-      toCSV.results = toCSV.results.concat(
-        answerStore.results.map(function (a) {
-          // Trial ID, MTurk ID, Code, Label, left category, Right category
+    function computeResults(store, participant, timeStarted, toCSV) {
+      toCSV.successes = toCSV.successes.concat(
+        answerStore.successes.map(function (a) {
+          // Trial ID, MTurk ID, Code, Label, Time started, Left category, Right category
           // Stimuli word, Correct position, Correct category, Time taken
-          return a.id + ',' + mturkId + ',' + participant.code + ',' +
-                 participant.label + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+          return a.id + ',' + participant.id + ',' + participant.code + ',' +
+                 participant.label + ',' + timeStarted + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' + a.timing;
         })
       );
 
-      toCSV.errors = toCSV.errors.concat(
-        answerStore.errors.map(function (a) {
-          // Trial ID, MTurk ID, Code, Label, left category,
+      toCSV.failures = toCSV.failures.concat(
+        answerStore.failures.map(function (a) {
+          // Trial ID, MTurk ID, Code, Label,Time started, Left category,
           // Right category, Stimuli word, Correct position, Correct category,
           // Failed by time out, Time taken
-          return a.id + ',' + mturkId + ',' + participant.code + ',' +
-                 participant.label + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
+          return a.id + ',' + participant.id + ',' + participant.code + ',' +
+                 participant.label + ',' + timeStarted + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' +
                  a.timedOut + ',' + a.timing
         })
@@ -608,11 +614,11 @@ $(function(window, undefined) {
      * @return {string} The resulting, clean output.
      */
     function cleanHTML(input) {
-      return input.split(/<[^>]*>/g).join('');
+      return input.split(/<[^>]*>/g).join(' ').trim();
     }
 
     /**
-     * Reduve the given toCSV set of data, from object containing results/errors
+     * Reduve the given toCSV set of data, from object containing successes/failures
      * arrays of CSV-formatted rows, to an object containing the same fields
      * holding CSV-formatted string, with new line separator between rows.
      *
@@ -620,27 +626,27 @@ $(function(window, undefined) {
      * @param  {Function} htmlCleanerFn  Function for removing HTML remnants.
      * @return {Object}   The final object with CSV-formatted string properties.
      */
-    function finalizeCSV(toCSV, htmlCleanerFn) {  // => {results: string[], errors: string[]}
-      return Object.keys(toCSV)                   // => ['results', 'errors']
+    function finalizeCSV(toCSV, htmlCleanerFn) {  // => {successes: string[], failures: string[], meta: string[]}
+      return Object.keys(toCSV)                   // => ['successes', 'failures', 'meta']
                    .map(function (k) {
-                      var o = {};
-                      o[k] = htmlCleanerFn(toCSV[k].join('\n'));
-                      return o;
-                    })                            // => [{'results': string}, {'errors': string}]
-                    .reduce(function (a, b) {
-                      return Object.assign({}, a, b)
-                    }, {});                       // => {results: string, errors: string}
+                     var o = {};
+                     o[k] = htmlCleanerFn(toCSV[k].join('\\n'));
+                     return o;
+                   })                            // => [{'successes': string}, {'failures': string}, {'meta': string}]
+                   .reduce(function (a, b) {
+                     return Object.assign({}, a, b)
+                   }, {});                       // => {successes: string, failures: string, meta: string}
     }
 
     /**
      * Start the queue of blocks of trials.
-     * Built as a promise resolving the answers/errors payload
+     * Built as a promise resolving the answers/failures payload
      * once the entire suite of blocks is completed.
      *
      * @param  {Array} queue Queue of trials objects.
      * @return {Object} Promise.
      */
-    function startBlocks(queue) {
+    function startBlocks(queue, toCSV, timeStarted) {
       var deferred = $.Deferred();
       var currentTrialIndex = 0;
       var totalNumOfTrials = queue.length;
@@ -652,11 +658,12 @@ $(function(window, undefined) {
        * @param  {Object} trial        The trial to display.
        * @param  {int}    trialIndex   Index of currently shown trial/screen.
        * @param  {Object} participant  Holds global data on the player used in resulting table.
+       * @param  {string} timeStarted  Time at which the experiment started for the user.
        * @return {Object} Promise.
        */
-      var showTrial = function(trial, trialIndex, participant) {
+      var showTrial = function (trial, trialIndex, participant, timeStarted, toCSV) {
         if (trialIndex > 0 && isPauseScreen(trial)) {
-          toCSV = Object.assign({}, toCSV, computeResults(answerStore, participant));
+          toCSV = Object.assign({}, toCSV, computeResults(answerStore, participant, timeStarted, toCSV));
         }
 
         updateUIText(trial, queue, trialIndex);
@@ -670,15 +677,16 @@ $(function(window, undefined) {
        *
        * @param  {int}      trialIndex     Index of currently shown trial/screen.
        * @param  {Object}   participant    Holds global data on the player used in resulting table.
+       * @param  {string} timeStarted  Time at which the experiment started for the user.
        * @param  {Function} htmlCleanerFn  Function for removing HTML remnants.
        */
-      var loadTrial = function(trialIndex, participant, htmlCleanerFn) {
+      var loadTrial = function (trialIndex, participant, timeStarted, htmlCleanerFn) {
         if (trialIndex < totalNumOfTrials) {
           currentTrialIndex++;
 
-          return showTrial(queue[trialIndex], trialIndex, participant)
-            .then(function() {
-              return loadTrial(currentTrialIndex, participant, htmlCleanerFn);
+          return showTrial(queue[trialIndex], trialIndex, participant, timeStarted, toCSV)
+            .then(function () {
+              return loadTrial(currentTrialIndex, participant, timeStarted, htmlCleanerFn);
             });
         } else {
           deferred.resolve(finalizeCSV(toCSV, htmlCleanerFn));
@@ -686,7 +694,7 @@ $(function(window, undefined) {
       };
 
       // Start first trial.
-      loadTrial(0, participant, cleanHTML);
+      loadTrial(0, participant, timeStarted, cleanHTML);
 
       return deferred.promise();
     }
@@ -695,9 +703,9 @@ $(function(window, undefined) {
      * Public API.
      */
     return {
-      begin: function(data, order, lang) {
+      begin: function (data, order, lang) {
         console.log('IAT Starting — current locale is "' + lang + '"');
-        return loadBlocks(data, order, lang);
+        return loadBlocks(data, order, lang, new Date().toISOString().slice(0, 19).replace('T', ' '), toCSV);
       }
     }
   })(window, undefined);
