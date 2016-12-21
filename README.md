@@ -9,7 +9,7 @@ TRUSTLAB
 
 **Trustlab** is based on [**oTree**](http://www.otree.org/), a Python, [Django](https://djangoproject.com)-based framework for econn-games. Please refer to the following article regarding oTree:
 
-*[oTree—An open-source platform for laboratory, online, and field experiments](http://www.sciencedirect.com/science/article/pii/S2214635016000101)*
+*[Chen, D.L., Schonger, M., Wickens, C., 2016. oTree - An open-source platform for laboratory, online and field experiments. Journal of Behavioral and Experimental Finance, vol 9: 88-97](http://www.sciencedirect.com/science/article/pii/S2214635016000101)*
 
 **Trustlab** also includes a working version of the [Implicit Association Test](https://implicit.harvard.edu/implicit/education.html), and several changes to the base games it restricts itself to (**Trust**, **Dictator**, **Public Good**)... among other things.
 
