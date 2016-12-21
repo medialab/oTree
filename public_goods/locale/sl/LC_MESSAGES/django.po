@@ -1,0 +1,307 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-21 13:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: templates/public_goods/Contribute.html:6
+msgid "Task Two: Real Decision"
+msgstr ""
+
+#: templates/public_goods/Contribute.html:7
+msgid ""
+"Now the real task starts. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
+msgstr ""
+
+#: templates/public_goods/Contribute.html:10
+msgid ""
+"You have 12.000 Won in your possession. You may choose to keep this money, "
+"or choose to invest it in the joint project. <strong>How much do you want to "
+"invest into the joint project?</strong>"
+msgstr ""
+
+#: templates/public_goods/Contribute.html:12
+msgid ""
+"You have 10 euros in your possession. You may choose to keep this money, or "
+"choose to invest it in the joint project. <strong>How much do you want to "
+"invest into the joint project?</strong>"
+msgstr ""
+
+#: templates/public_goods/Contribute.html:18
+#: templates/public_goods/ContributeBack.html:24
+#: templates/public_goods/DecisionInstructions.html:11
+#: templates/public_goods/EndGame.html:12
+#: templates/public_goods/Introduction.html:8
+#: templates/public_goods/Simulation.html:116
+msgid "Next"
+msgstr ""
+
+#: templates/public_goods/ContributeBack.html:8
+msgid "Task Two: Real decision continued"
+msgstr ""
+
+#: templates/public_goods/ContributeBack.html:9
+msgid ""
+"Now imagine that this time, you find out how much money the other three "
+"members of your group are transferring into the joint pot."
+msgstr ""
+
+#: templates/public_goods/ContributeBack.html:10
+msgid ""
+"All of your choices below can impact how much money you will receive at the "
+"end of the study."
+msgstr ""
+
+#: templates/public_goods/DecisionInstructions.html:6
+msgid ""
+"On the next page, you decide how much of your {{amount}} you want to "
+"transfer to the common project."
+msgstr ""
+
+#: templates/public_goods/DecisionInstructions.html:7
+msgid "You will be asked to do it in two different situations:"
+msgstr ""
+
+#: templates/public_goods/DecisionInstructions.html:8
+msgid ""
+"In the first step, you simply decide how much of your {{amount}} you want to "
+"put into the common project."
+msgstr ""
+
+#: templates/public_goods/DecisionInstructions.html:9
+msgid ""
+"In the second step, you have the opportunity to decide upon your "
+"contribution based on the contribution of other group members."
+msgstr ""
+
+#: templates/public_goods/EndGame.html:10
+msgid "Thank you very much for entering your choice."
+msgstr ""
+
+#: templates/public_goods/EndGame.html:11
+msgid ""
+"We have recorded your decision. Again, your payoff will depend on the "
+"actions of the other players. Now, please proceed to the third task."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:6
+msgid "Task Two: Introduction"
+msgstr ""
+
+#: templates/public_goods/Instructions.html:7
+msgid ""
+"In the second task, groups of <strong>4 participants</strong> (yourself and "
+"3 other people) are formed"
+msgstr ""
+
+#: templates/public_goods/Instructions.html:8
+msgid ""
+"Remember, the participants in this group are different from the person you "
+"interacted with in the previous task. However, they all live in the France."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:9
+msgid "These are the rules:"
+msgstr ""
+
+#: templates/public_goods/Instructions.html:13
+msgid "At the beginning, each group member has 12.000 Won."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:15
+msgid "At the beginning, each group member has 10 euros."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:19
+msgid ""
+"Every group member has to choose how much of these 12.000 Won he or she "
+"wants to keep and how much he or she wants to transfer into a <strong>joint "
+"project</strong>."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:21
+msgid ""
+"Every group member has to choose how much of these 10 euros he or she wants "
+"to keep and how much he or she wants to transfer into a <strong>joint "
+"project</strong>."
+msgstr ""
+
+#: templates/public_goods/Instructions.html:24
+#, python-format
+msgid ""
+"The total amount invested into the joint project is <strong>multiplied by "
+"%(Constants.efficiency_factor)s.</strong>"
+msgstr ""
+
+#: templates/public_goods/Instructions.html:25
+msgid ""
+"At the end, the money in the joint project will be re-divided and "
+"<strong>split equally between all 4 group members</strong> (including "
+"yourself)."
+msgstr ""
+
+#: templates/public_goods/Simulation.html:6
+msgid "Task Two: Test Simulation"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:8
+msgid ""
+"This is not the real task yet, but a simulation to help you understand the "
+"rules better. You can use the test screen below to play with the different "
+"choices of the four participants."
+msgstr ""
+
+#: templates/public_goods/Simulation.html:9
+msgid "Whenever you are ready to proceed to the real task, click next."
+msgstr ""
+
+#: templates/public_goods/Simulation.html:88
+msgid "€"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:95
+msgid "Amount sent by Participant A"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:100
+msgid "Amount sent by Participant B"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:105
+msgid "Amount sent by Participant C"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:110
+msgid "Amount sent by Participant D"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:115
+msgid "Send"
+msgstr ""
+
+#: views.py:59
+msgid "10 euros"
+msgstr ""
+
+#: views.py:60
+msgid "$10"
+msgstr ""
+
+#: views.py:61
+msgid "12.000 Won"
+msgstr ""
+
+#: views.py:89 views.py:91
+msgid "If on average, each of the other     group members contributes 0 euro:"
+msgstr ""
+
+#: views.py:93
+msgid "If on average, each of the other     group members contributes 0 Won:"
+msgstr ""
+
+#: views.py:98 views.py:100
+msgid "If on average, each of the other     group members contributes 1 euro:"
+msgstr ""
+
+#: views.py:102
+msgid ""
+"If on average, each of the other     group members contributes 1.200 Won Won:"
+msgstr ""
+
+#: views.py:107 views.py:109
+msgid "If on average, each of the other     group members contributes 2 euros:"
+msgstr ""
+
+#: views.py:111
+msgid ""
+"If on average, each of the other     group members contributes 2.400 Won:"
+msgstr ""
+
+#: views.py:116 views.py:118
+msgid "If on average, each of the other     group members contributes 3 euros:"
+msgstr ""
+
+#: views.py:120
+msgid ""
+"If on average, each of the other     group members contributes 3.600 Won:"
+msgstr ""
+
+#: views.py:125 views.py:127
+msgid "If on average, each of the other     group members contributes 4 euros:"
+msgstr ""
+
+#: views.py:129
+msgid ""
+"If on average, each of the other     group members contributes 4.800 Won:"
+msgstr ""
+
+#: views.py:134 views.py:136
+msgid "If on average, each of the other     group members contributes 5 euros:"
+msgstr ""
+
+#: views.py:138
+msgid ""
+"If on average, each of the other     group members contributes 6.000 Won:"
+msgstr ""
+
+#: views.py:143 views.py:145
+msgid "If on average, each of the other     group members contributes 6 euros:"
+msgstr ""
+
+#: views.py:147
+msgid ""
+"If on average, each of the other     group members contributes 7.200 Won:"
+msgstr ""
+
+#: views.py:152 views.py:154
+msgid "If on average, each of the other     group members contributes 7 euros:"
+msgstr ""
+
+#: views.py:156
+msgid ""
+"If on average, each of the other     group members contributes 8.400 Won:"
+msgstr ""
+
+#: views.py:161 views.py:163
+msgid "If on average, each of the other     group members contributes 8 euros:"
+msgstr ""
+
+#: views.py:165
+msgid ""
+"If on average, each of the other     group members contributes 9.600 Won:"
+msgstr ""
+
+#: views.py:170 views.py:172
+msgid "If on average, each of the other     group members contributes 9 euros:"
+msgstr ""
+
+#: views.py:174
+msgid ""
+"If on average, each of the other     group members contributes 10.800 Won:"
+msgstr ""
+
+#: views.py:179 views.py:181
+msgid ""
+"If on average, each of the other     group members contributes 10 euros:"
+msgstr ""
+
+#: views.py:183
+msgid ""
+"If on average, each of the other     group members contributes 12.000 Won:"
+msgstr ""
