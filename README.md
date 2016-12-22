@@ -3,7 +3,7 @@ TRUSTLAB
 > Web-based multiplayer strategy games and economics experiments to measure **trust**.
 > Part of the **Sowell** [ERC](https://erc.europa.eu/)-funded project.
 
-![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/refact-readme/_readmefiles/logos.jpg)
+![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/refact/_readmefiles/logos.jpg)
 
 ### Getting started
 
