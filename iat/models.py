@@ -28,16 +28,10 @@ class Subsession(BaseSubsession):
     def before_session_starts(self):
         """Derive data from chosen treatment."""
         treatments = {
-            'A1a': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
-            'A1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
-            'A2a': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
-            'A2b': {'order': 'ACBDFE', 'iat_file': 'iat_2.json'},
-            'B1a': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
-            'B1b': {'order': 'ACBEDGF', 'iat_file': 'iat_1.json'},
-            'B2a': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
-            'B2b': {'order': 'ACBDFE', 'iat_file': 'iat_2.json'},
-            'C1a': {'order': 'ABC', 'iat_file': 'iat_3.json'},
-            'C2a': {'order': 'ABC', 'iat_file': 'iat_4.json'},
+            'A1': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
+            'A2': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
+            'B1': {'order': 'ABCDEFG', 'iat_file': 'iat_1.json'},
+            'B2': {'order': 'ABCDEF', 'iat_file': 'iat_2.json'},
         }
 
         if 'treatment' in self.session.config:
