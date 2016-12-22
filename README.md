@@ -13,7 +13,7 @@ TRUSTLAB
 
 **Trustlab** also includes a working version of the [Implicit Association Test](https://implicit.harvard.edu/implicit/education.html), and several changes to the base games it restricts itself to (**Trust**, **Dictator**, **Public Good**)... among other things.
 
-If you're comfortable with the oTree platform, you should be up-to-speed in no time. Nevertheless, there are several idiosyncrasies you should be aware of in order to run Trustlab properly. They are listed below, and in the [Wiki]().
+If you're comfortable with the oTree platform, you should be up-to-speed in no time. Nevertheless, there are several idiosyncrasies you should be aware of in order to run Trustlab properly. They are listed below, and in the [Wiki](https://github.com/medialab/trustlab/wiki).
 
 #### Prerequisites
 You may want to refer to [oTree's](http://otree.readthedocs.io/en/latest/install.html) installation tutorial. In a nutshell, you need Python 3.5 and `pip`, to be able to install oTree using the latter (`pip3 install -U otree-core`).
