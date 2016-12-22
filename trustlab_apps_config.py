@@ -36,7 +36,7 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'timer_stop', 'earnings', 'redirect_completes'
         ],
         'treatment': 'A1a',
@@ -51,7 +51,7 @@ SESSION_CONFIGS = [
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -66,7 +66,7 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -81,7 +81,7 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -96,7 +96,7 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -111,7 +111,7 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1a or A1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -125,7 +125,7 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2a or A2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -139,7 +139,7 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1a or B1b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
@@ -153,7 +153,7 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2a or B2b',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'trust', 'public_goods',
+            'timer_start', 'introduction', 'trust', 'public_goods',
             'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
