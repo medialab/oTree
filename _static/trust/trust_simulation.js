@@ -1,70 +1,9 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
-lib.webFontTxtInst = {}; 
-var loadedTypekitCount = 0;
-var loadedGoogleCount = 0;
-var gFontsUpdateCacheList = [];
-var tFontsUpdateCacheList = [];
 lib.ssMetadata = [];
 
 
-
-lib.updateListCache = function (cacheList) {		
-	for(var i = 0; i < cacheList.length; i++) {		
-		if(cacheList[i].cacheCanvas)		
-			cacheList[i].updateCache();		
-	}		
-};		
-
-lib.addElementsToCache = function (textInst, cacheList) {		
-	var cur = textInst;		
-	while(cur != exportRoot) {		
-		if(cacheList.indexOf(cur) != -1)		
-			break;		
-		cur = cur.parent;		
-	}		
-	if(cur != exportRoot) {		
-		var cur2 = textInst;		
-		var index = cacheList.indexOf(cur);		
-		while(cur2 != cur) {		
-			cacheList.splice(index, 0, cur2);		
-			cur2 = cur2.parent;		
-			index++;		
-		}		
-	}		
-	else {		
-		cur = textInst;		
-		while(cur != exportRoot) {		
-			cacheList.push(cur);		
-			cur = cur.parent;		
-		}		
-	}		
-};		
-
-lib.gfontAvailable = function(family, totalGoogleCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
-
-	loadedGoogleCount++;		
-	if(loadedGoogleCount == totalGoogleCount) {		
-		lib.updateListCache(gFontsUpdateCacheList);		
-	}		
-};		
-
-lib.tfontAvailable = function(family, totalTypekitCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
-
-	loadedTypekitCount++;		
-	if(loadedTypekitCount == totalTypekitCount) {		
-		lib.updateListCache(tFontsUpdateCacheList);		
-	}		
-};
 // symbols:
 // helper functions:
 
@@ -1264,400 +1203,386 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 
 	// timeline functions:
 	this.frame_34 = function() {
-		if (window) {
-			/**
-			 * Define/get default values.
-			 */
-			var startAmount = 10;
-			var multiplier = 3;
-			var labelA = 'participant A';
-			var labelB = 'participant B';
-			var currency = '€';
-			var locale = 'fr';
+		if (!window) {
+		  throw new Error('window object not found');
+		}
 		
-			if (document) {
-				var canvas = document.getElementsByTagName('canvas')[0];
-				if (canvas) {
-					labelA = canvas.getAttribute('data-participants-label-a') || labelA;
-					labelB = canvas.getAttribute('data-participants-label-b') || labelB;
-					multiplier = canvas.getAttribute('data-multiplier') || multiplier;
-					startAmount = canvas.getAttribute('data-start-amount') || startAmount;
-					currency = canvas.getAttribute('data-currency') || currency;
-					locale = canvas.getAttribute('data-locale') || locale;
-				}
-			}
-			
-			function setMoneyText(money) {
-				return currency + money.toString();
-			}
-			
-			function createDollar(color) {
-				switch (color) {
-					case 'green': 
-						dollar = new lib.dollarGreen;
-						break;
-					case 'orange':
-						dollar = new lib.dollarOrange;
-						break;
-					case 'grey':
-						dollar = new lib.dollarGrey;
-						break;
-				}
-				
-				return dollar;
-			}
 		
-			/**
-			 * Operations on carts.
-			 */
-			var carts = function () {
-				var X_OFFSET = 18;
-				var Y_OFFSET = 9;
-				var Z_OFFSET = 3;
-				
-				this.cart1.bubble.alpha = 0;
-				this.cart2.bubble.alpha = 0;
-				
-				var pushMoney = function(cart, dollar) {
-					cart.money++;
-					if (locale === 'ko') {
-						if (cart.money % 1000 === 0) {
-							cart.stack.push(dollar);
-							cart.instance.addChild(dollar);
-						}
-					} else {
-						cart.stack.push(dollar);
-						cart.instance.addChild(dollar);
-					}
-					cart.instance.bubble.alpha = 1;
-					cart.instance.bubble.label.text = currency + cart.money.toString();
-				}
-				
-				var popMoney = function(cart) {
-					if (cart.stack.length > 0) {
-						cart.money--;
-						cart.instance.bubble.label.text = currency + cart.money.toString();
-						if (locale === 'ko') {
-							if (cart.money % 1000 === 0) {
-								cart.instance.removeChild(cart.stack.pop());
-							}				
-						} else {
-							cart.instance.removeChild(cart.stack.pop());
-						}
-						return true;
-					}
-				}
-				
-				if (locale === 'ko') {
-					this.cart1.bubble.label.font = "18px 'Gotham Medium'";
-					this.cart2.bubble.label.font = "18px 'Gotham Medium'";
-				}
+		/**
+		 * Get or define values.
+		 * Defaults to 'fr' values.
+		 * Read FAQ to learn how to set values:
+		 * TODO: add FAQ URL
+		 */
+		var locale = 'ko';
+		var startAmount = 12000;
+		var multiplier = 3;
+		var labelA = 'participant A';
+		var labelB = 'participant B';
+		var currency = '€';
 		
-				var carts = [{
-					money: 0,
-					color: '',
-					instance: this.cart1,
-					stack: []
-				}, {
-					money: 0,
-					color: '',
-					instance: this.cart2,
-					stack: []
-				}];
+		if (window.document) {
+		  var canvas = document.getElementsByName('canvas')[0];
 		
-				var increment = function (cartIndex, color) {
-					var cart = carts[cartIndex];
-					var dollar = createDollar(color);
-					
-					dollar.x = X_OFFSET;
-					dollar.y = Y_OFFSET - Z_OFFSET * cart.stack.length;
-					
-					pushMoney(cart, dollar);
-					return this;
-				}.bind(this);
-				
-				var decrement = function (cartIndex) {
-					var cart = carts[cartIndex];
-					popMoney(cart);
-					return this;
-				}.bind(this);
-				
-				var batchRemove = function (cartIndex) {
-					var total = carts[cartIndex].money;
-					var i = total;
-					while (i > 0) {
-						decrement(cartIndex);
-						i--;
-					}
-					return total;
-				}
-				
-				var batchAdd = function (cartIndex, amount, color) {
-					for (var i = 0; i < amount; i++) {
-						increment(cartIndex, color);
-					}
-				}
-				
-				var move = function (cartIndex) {
-					if (cartIndex === 0) {
-						this.gotoAndPlay('first_move');
-					} else {
-						this.gotoAndPlay('second_move');
-						var self = this;
-						setTimeout(function () {
-							self.cart1.bubble.alpha = 0;
-							self.cart2.bubble.alpha = 0;
-						}, 2000);
-					}
-					return this;
-				}.bind(this);
-				
-				var multiplyMoney = function (cartIndex, multiplier) {
-					window.TRUST.multipliedMoney = carts[cartIndex].money * multiplier;
-					batchRemove(cartIndex);
-					batchAdd(cartIndex, window.TRUST.multipliedMoney, 'grey');
-				}
-				
-				var reset = function () {
-					this.cart1.bubble.alpha = 0;
-					this.cart2.bubble.alpha = 0;
-					carts[0].money = 0;
-					carts[0].color = '';
-					carts[0].stack = [];
-					carts[1].money = 0;
-					carts[0].color = '';
-					carts[0].stack = [];
-				}.bind(this);
+		  // Override defaults with data-attributes found on host canvas.
+		  if (canvas) {
+		    locale = canvas.getAttribute('data-locale') || locale;
+		    labelA = canvas.getAttribute('data-participants-label-a') || labelA;
+		    labelB = canvas.getAttribute('data-participants-label-b') || labelB;
+		    multiplier = canvas.getAttribute('data-multiplier') || multiplier;
+		    startAmount = canvas.getAttribute('data-start-amount') || startAmount;
+		    currency = canvas.getAttribute('data-currency') || currency;
+		  }
+		}
 		
-				return {
-					increment: increment,
-					decrement: decrement,
-					move: move,
-					multiply: multiplyMoney,
-					removeAll: batchRemove,
-					reset: reset,
-					carts: carts
-				}
-			}.bind(this);
+		/**
+		 * MAIN
+		 * ----
+		 */
+		var players = Players.bind(this)();
+		var carts = Carts.bind(this)();
 		
-			/**
-			 * Operations on players.
-			 */
-			var players = function () {
-				var X_OFFSET = 0;
-				var Y_OFFSET = 22.5;
-				var Z_OFFSET = 2.5;
-				
-				var players = [{
-					money: 0,
-					instance: this.stack1,
-					stack: []
-				}, {
-					money: 0,
-					instance: this.stack2,
-					stack: []
-				}];
-				
-				if (locale === 'ko') {
-					this.bubble1.label.font = "18px 'Gotham Medium'";
-					this.bubble2.label.font = "18px 'Gotham Medium'";
-				}
-				
-				this.charLabel1.label.text = labelA;
-				this.charLabel2.label.text = labelB;
-				
-				var pushMoney = function(player, dollar, playerIndex) {
-					player.money++;
-					if (locale === 'ko') {
-						if (player.money % 1000 === 0) {
-							player.stack.push(dollar);
-							player.instance.addChild(dollar);
-						}
-					} else {
-						player.stack.push(dollar);
-						player.instance.addChild(dollar);
-					}
-					var bubble = playerIndex === 0 ? this.bubble1 : this.bubble2;
-					bubble.label.text = setMoneyText(player.money.toString());
-					return this;
-				}.bind(this);
-				
-				var popMoney = function(player, playerIndex) {
-					if (player.money > 0) {
-						player.money--;
-						
-						var bubble = playerIndex === 0 ? this.bubble1 : this.bubble2;
-						bubble.label.text = setMoneyText(player.money.toString());
-						
-						if (locale === 'ko') {
-							if (player.money % 1000 === 0) {
-								player.instance.removeChild(player.stack.pop());
-							}
-						} else {
-							player.instance.removeChild(player.stack.pop());
-						}
-					}
-					return this;
-				}.bind(this);
+		window.TRUST = init.bind(this)();
 		
-				var increment = function (i, moneyColor, force) {
-					var p = players[i];
-						
-					var dollar = createDollar(moneyColor);
-					dollar.x = X_OFFSET;
-					dollar.y = Y_OFFSET - Z_OFFSET * p.stack.length;
-					
-					pushMoney(p, dollar, i);
-					return this;
-				}.bind(this);
+		function init() {
+		  return {
+		    operate: operate.bind(this)(players, carts),
+		    reset: reset.bind(this)
+		  };
+		}
 		
-				var decrement = function (i) {
-					popMoney(players[i], i);
-					return this;
-				}.bind(this);
-				
-				var reset = function () {
-					while (players[0].stack.length > 0) {
-						decrement(0);
-					}
-					
-					while (players[1].stack.length > 0) {
-						decrement(1);
-					}
-					
-					for (var i = 0; i < players.length; i++) {
-						var colors = ['green', 'orange'];
-						while (players[i].money < startAmount) {
-							increment(i, colors[i]);
-						}
-					}
-				}.bind(this);
-				
-				var getMaxPlayer1Money = function () {
-					return players[0].money;
-				}.bind(this);
-				
-				var getMaxPlayer2Money = function () {
-					return players[1].money;
-				}.bind(this);
-				
-				reset();
+		function reset() {
+		  this.gotoAndPlay('start');
+		  players.reset();
+		  carts.reset();
+		}
 		
-				return {
-					increment: increment,
-					decrement: decrement,
-					reset: reset,
-					getMaxPlayer1Money: getMaxPlayer1Money,
-					getMaxPlayer2Money: getMaxPlayer2Money
-				}
-			}.bind(this);
-			
-			/**
-			 * API mixing operations.
-			 */
-			var playersControls = players();
-			var cartsControls = carts();
-			
-			var operate = function (p, c) {
-				var players = p;
-				var carts = c;
-				
-				var playerPutsOwnMoney = function (playerIndex, cartIndex, moneyColor) {
-					players.decrement(playerIndex);
-					
-					var color = moneyColor ? moneyColor : (playerIndex === 0 ? 'green' : 'orange')
-					carts.increment(cartIndex, color);
-				}
-				
-				var playerTakesMoney = function (playerIndex, cartIndex, moneyColor) {
-					players.increment(playerIndex, moneyColor);
-					carts.decrement(cartIndex);
-				}
-				
-				var moveCart1 = function () {
-					carts.move(0);
-				}
-				
-				var moveCart2 = function () {
-					carts.move(1);
-				}
-				
-				var incrementFromCartToCart = function(from, to) {
-					if (carts.decrement(from)) {
-						carts.increment(to, 'grey');
-					}
-				}
-				
-				var decrementFromCartToCart = function(from, to) {
-					if (carts.decrement(to)) {
-						carts.increment(from, 'grey');
-					}
-				}
-				
-				var passInFactory = function () {
-					carts.multiply(0, multiplier);
-				}
-				
-				var dispatchFinalGains = function () {
-					var giveToPlayer1 = carts.removeAll(1);
-					for (var i = 0; i < giveToPlayer1; i++) {
-						players.increment(0, 'grey');
-					}
-					
-					var giveToPlayer2 = carts.removeAll(0);
-					for (var j = 0; j < giveToPlayer2; j++) {
-						players.increment(1, 'grey', true);
-					}
-				}
-				
-				var getMaxCart1Money = function () {
-					return carts.carts[0].money;
-				}
-				
-				var getMaxCart2Money = function () {
-					return carts.carts[1].money;
-				}
-				
-				var getMaxPlayer1Money = function () {
-					return players.getMaxPlayer1Money();
-				}
-				
-				var getMaxPlayer2Money = function () {
-					return players.getMaxPlayer2Money();
-				}
-				
-				return {
-					playerPutsOwnMoney: playerPutsOwnMoney,
-					playerTakesMoney: playerTakesMoney,
-					moveCart1: moveCart1,
-					moveCart2: moveCart2,
-					passInFactory: passInFactory,
-					incrementFromCartToCart: incrementFromCartToCart,
-					decrementFromCartToCart: decrementFromCartToCart,
-					dispatchFinalGains: dispatchFinalGains,
-					
-					getMaxCart1Money: getMaxCart1Money,
-					getMaxCart2Money: getMaxCart2Money,
-					getMaxPlayer1Money: getMaxPlayer1Money,
-					getMaxPlayer2Money: getMaxPlayer2Money
-				}
-			}.bind(this);
-			
-			var reset = function () {
-				this.gotoAndPlay('start');
-				playersControls.reset();
-				cartsControls.reset();
-			}.bind(this);
+		function operate(players, carts) {
+		  function playerPutsOwnMoney(pIndex, cIndex, color) {
+		    if (players.decrement(pIndex)) {
+		      carts.increment(cIndex, color ? color : (pIndex === 0 ? 'green' : 'orange'));
+		    }
+		  }
 		
-			var init = function () {
-				return {
-					operate: operate(playersControls, cartsControls),
-					reset: reset
-				}
-			}.bind(this)
+		  function playerTakesMoney(pIndex, cIndex, color) {
+		    if (carts.decrement(cIndex)) {
+		      players.increment(pIndex, color);
+		    }
+		  }
 		
-			var TRUST = init();
-			window.TRUST = TRUST;
+		  function moveCart(index) {
+		    return function () {
+		      return carts.move(index);
+		    };
+		  }
+		
+		  function moveMoneyFromCartToCart(from, to) {
+		    return function () {
+		      if (carts.decrement(from)) {
+		        return carts.increment(to, 'grey');
+		      }
+		    };
+		  }
+		
+		  function passInFactory() {
+		    carts.multiply(0, multiplier);
+		  }
+		
+		  function dispatchFinalGains() {
+		    var giveToPlayer1 = carts.removeAll(1);
+		    for (var i = 0; i < giveToPlayer1; i++) {
+		      players.increment(0, 'grey');
+		    }
+		
+		    var giveToPlayer2 = carts.removeAll(0);
+		    for (var j = 0; j < giveToPlayer2; j++) {
+		      players.increment(1, 'grey', true);
+		    }
+		  }
+		
+		  function getMaxCartMoney(index) {
+		    return function () {
+		      return carts.getCarts()[index].money;
+		    };
+		  }
+		
+		  function getMaxPlayerMoney(index) {
+		    return function () {
+		      return players.getPlayers()[index].money;
+		    };
+		  }
+		
+		  return {
+		    playerPutsOwnMoney: playerPutsOwnMoney,
+		    playerTakesMoney: playerTakesMoney,
+		    moveCart1: moveCart.call(this, 0),
+		    moveCart2: moveCart.call(this, 1),
+		    passInFactory: passInFactory,
+		    incrementFromCartToCart: moveMoneyFromCartToCart.call(this, 0, 1),
+		    decrementFromCartToCart: moveMoneyFromCartToCart.call(this, 1, 0),
+		    dispatchFinalGains: dispatchFinalGains,
+		
+		    getMaxCart1Money: getMaxCartMoney.call(this, 0),
+		    getMaxCart2Money: getMaxCartMoney.call(this, 1),
+		    getMaxPlayer1Money: getMaxPlayerMoney.call(this, 0),
+		    getMaxPlayer2Money: getMaxPlayerMoney.call(this, 0)
+		  };
+		}
+		
+		/**
+		 * HELPER FUNCTIONS
+		 * ----------------
+		 */
+		function createBanknote(color) {
+		  if (!lib) throw new Error('Animate\'s "lib" namespace could not be found');
+		
+		  var Note = lib['dollar' + color.substring(0, 1).toUpperCase() + color.substring(1).toLowerCase()];
+		  if (!Note) throw new Error('Could not create banknote based on color ' + color);
+		  return new Note();
+		}
+		
+		function setMoneyText(amount) {
+		  return currency + amount.toString();
+		}
+		
+		function canUpdateBanknotes(amount) {
+		  return locale !== 'ko' || (locale === 'ko' && amount % 1000 === 0);
+		}
+		
+		/**
+		 * ENTITIES
+		 * --------
+		 */
+		function Carts() {
+		  // Constants used for placing banknotes.
+		  var X_OFFSET = 18;
+		  var Y_OFFSET = 9;
+		  var Z_OFFSET = 3;
+		
+		  // Store references to cart-related data in a dedicated array.
+		  // - money is the amount of money held on the cart
+		  // - color is a string referencing the color of the relevant UI banknote element
+		  // - instance references the UI element of one of the 2 carts
+		  // - stack is an array of references of UI banknote elements displayed on this cart
+		  var carts = [{
+		    money: 0,
+		    color: '',
+		    instance: this.cart1,
+		    stack: []
+		  }, {
+		    money: 0,
+		    color: '',
+		    instance: this.cart2,
+		    stack: []
+		  }];
+		
+		  // Below are references of UI elements in Animate's library.
+		  // Set default values for starters, and Korean font display.
+		  this.cart1.bubble.alpha = 0;
+		  this.cart2.bubble.alpha = 0;
+		
+		  if (locale === 'ko') {
+		    this.cart1.bubble.label.font = "18px 'Gotham Medium'";
+		    this.cart2.bubble.label.font = "18px 'Gotham Medium'";
+		  }
+		
+		  function increment(index, color) {
+		    var banknote = createBanknote(color);
+		    var cart = carts[index];
+		    banknote.x = X_OFFSET;
+		    banknote.y = Y_OFFSET - Z_OFFSET * cart.stack.length;
+		    addMoney(cart, banknote);
+		  }
+		
+		  function decrement(index) {
+		    return removeMoney(carts[index]);
+		  }
+		
+		  function move(index) {
+		    if (+index === 0) {
+		      this.gotoAndPlay('first_move');
+		    } else {
+		      this.gotoAndPlay('second_move');
+		      setTimeout(function () {
+		        this.cart1.bubble.alpha = 0;
+		        this.cart2.bubble.alpha = 0;
+		      }.bind(this), 2000);
+		    }
+		  }
+		
+		  function multiply(index) {
+		    if (!window.TRUST) throw new Error('Could not find namespace TRUST');
+		
+		    var newAmount = carts[index].money * multiplier;
+		    window.TRUST.multipliedMoney = newAmount;
+		
+		    batchRemoveMoney(index);
+		    batchAddMoney(index, newAmount, 'grey');
+		  }
+		
+		  function reset() {
+		    this.cart1.bubble.alpha = 0;
+		    this.cart2.bubble.alpha = 0;
+		
+		    this.cart1.money = 0;
+		    this.cart2.money = 0;
+		
+		    this.cart1.stack = [];
+		    this.cart2.stack = [];
+		  }
+		
+		  function getCarts() {
+		    return carts;
+		  }
+		
+		  function addMoney(cart, banknote) {
+		    // Increment money and update displayed stack of banknotes.
+		    // Korean should add new banknote once every 1000 won.
+		    if (canUpdateBanknotes(++cart.money)) {
+		      cart.stack.push(banknote);
+		      setTimeout(function () {
+		        cart.instance.addChild(banknote);
+		      }, 0);
+		    }
+		
+		    // Update text UI accordingly.
+		    if (cart.instance.bubble.alpha < 1) {
+		      cart.instance.bubble.alpha = 1;
+		    }
+		
+		    cart.instance.bubble.label.text = setMoneyText(cart.money);
+		  }
+		
+		  function removeMoney(cart) {
+		    if (cart.money > 0) {
+		      if (canUpdateBanknotes(--cart.money)) {
+		        var removed = cart.stack.pop();
+		        setTimeout(function () {
+		          cart.instance.removeChild(removed);
+		        }, 0);
+		      }
+		      cart.instance.bubble.label.text = setMoneyText(cart.money);
+		      return true;
+		    }
+		
+		    return false;
+		  }
+		
+		  function batchAddMoney(index, amount, color) {
+		    for (var i = 0; i < amount; i++) {
+		      increment(index, color);
+		    }
+		  }
+		
+		  function batchRemoveMoney(index) {
+		    var cart = carts[index];
+		    var total = cart.money;
+		    while (cart.money > 0) {
+		      decrement(index);
+		    }
+		    return total;
+		  }
+		
+		  return {
+		    increment: increment.bind(this),
+		    decrement: decrement.bind(this),
+		    multiply: multiply.bind(this),
+		    removeAll: batchRemoveMoney.bind(this),
+		    reset: reset.bind(this),
+		    getCarts: getCarts.bind(this),
+		    move: move.bind(this)
+		  };
+		}
+		
+		function Players() {
+		  var X_OFFSET = 0;
+		  var Y_OFFSET = 22.5;
+		  var Z_OFFSET = 2.5;
+		
+		  // Store references to player-related data in a dedicated array.
+		  // - money is the amount of money the player owns
+		  // - instance references the UI element representing a stack of banknotes next to her
+		  // - stack is an array of references of UI banknote elements
+		  var players = [{
+		    money: 0,
+		    instance: this.stack1,
+		    bubble: this.bubble1,
+		    stack: []
+		  }, {
+		    money: 0,
+		    instance: this.stack2,
+		    bubble: this.bubble2,
+		    stack: []
+		  }];
+		
+		  reset();
+		
+		  function setBubble(index, amount) {
+		    players[index].bubble.label.text = setMoneyText(amount);
+		  }
+		
+		  function addMoney(player, banknote, index) {
+		    if (canUpdateBanknotes(++player.money)) {
+		      player.stack.push(banknote);
+		      setTimeout(function () {
+		        player.instance.addChild(banknote);
+		      }, 0);
+		    }
+		
+		    setBubble(index, player.money)
+		  }
+		
+		  function removeMoney(player, index) {
+		    if (player.money > 0) {
+		      setBubble(index, --player.money)
+		
+		      if (canUpdateBanknotes(player.money)) {
+		        var removed = player.stack.pop()
+		        setTimeout(function () {
+		          player.instance.removeChild(removed);
+		        }, 0);
+		      }
+		
+		      return true;
+		    }
+		    return false;
+		  }
+		
+		  function increment(index, color, force) {
+		    var banknote = createBanknote(color);
+		    var player = players[index];
+		    banknote.x = X_OFFSET;
+		    banknote.y = Y_OFFSET - Z_OFFSET * player.stack.length;
+		
+		    addMoney(player, banknote, index);
+		  }
+		
+		  function decrement(index) {
+		    return removeMoney(players[index], index);
+		  }
+		
+		  function reset() {
+		    players.forEach(function (player, index) {
+		      while (player.money > 0) {
+		        decrement(index);
+		      }
+		
+		      while (player.money < startAmount) {
+		        increment(index, ['green', 'orange'][index]);
+		      }
+		    });
+		  }
+		
+		  function getPlayers() {
+		    return players;
+		  }
+		
+		  return {
+		    increment: increment.bind(this),
+		    decrement: decrement.bind(this),
+		    reset: reset.bind(this),
+		    getPlayers: getPlayers.bind(this)
+		  };
 		}
 	}
 	this.frame_84 = function() {
@@ -1989,7 +1914,6 @@ lib.properties = {
 	fps: 30,
 	color: "#CCD1DB",
 	opacity: 1.00,
-	webfonts: {},
 	manifest: [],
 	preloads: []
 };
