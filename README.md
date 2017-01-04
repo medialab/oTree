@@ -1,7 +1,8 @@
 TRUSTLAB
 ========
 > Web-based multiplayer strategy games and economics experiments to measure **trust**.
-> Part of the **Sowell** [ERC](https://erc.europa.eu/)-funded project.
+> This software is developed with the financial support of the European Research Council
+> under the European Community’s Horizon H2020 Program (H2020-ERC-2014-CoG Grant Agreement n° 647870).
 
 ![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/refact/_readmefiles/logos.jpg)
 
