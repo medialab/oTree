@@ -36,8 +36,8 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'treatment': 'A1',
@@ -52,8 +52,8 @@ SESSION_CONFIGS = [
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 10 * 60,
@@ -67,8 +67,8 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 10 * 60,
@@ -82,8 +82,8 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 10 * 60,
@@ -97,8 +97,8 @@ Payoff Group 2 (production)',
 Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 10 * 60,
@@ -112,8 +112,8 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
@@ -126,8 +126,8 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
@@ -140,8 +140,8 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
@@ -154,8 +154,8 @@ Payoff Group 2 (production)',
         'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2',
         'num_demo_participants': 126,
         'app_sequence': [
-            'timer_start', 'introduction', 'trust', 'public_goods',
-            'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
         'speedsters_threshold': 1,
