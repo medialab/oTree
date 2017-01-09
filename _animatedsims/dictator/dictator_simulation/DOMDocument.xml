@@ -1,10 +1,10 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 15.2 build 66" majorVersion="15" minorVersion="2" buildNumber="66" timelineLabelWidth="240" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.8" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.0 build 119" majorVersion="16" buildNumber="119" timelineLabelWidth="240" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
      <symbols>
           <Include href="bubble_left.xml" loadImmediate="false" itemID="56cdc520-000001bf" lastModified="1459764824"/>
           <Include href="bubble_right.xml" loadImmediate="false" itemID="5742fb9f-000000ab" lastModified="1464007593"/>
           <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1478097464"/>
           <Include href="character.xml" itemIcon="1" loadImmediate="false" itemID="56c33d7f-00000262" lastModified="1455635899"/>
-          <Include href="chariot.xml" loadImmediate="false" itemID="56c33b2a-00000220" lastModified="1464006357"/>
+          <Include href="chariot.xml" loadImmediate="false" itemID="56c33b2a-00000220" lastModified="1483977395"/>
           <Include href="conveyor.xml" itemIcon="1" loadImmediate="false" itemID="56c33b06-00000219" lastModified="1455635206"/>
           <Include href="dollarsGreen.xml" itemIcon="1" loadImmediate="false" itemID="56cc893e-0000007d" lastModified="1456245054"/>
           <Include href="dollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56cc9234-00000172" lastModified="1456247414"/>
@@ -3576,8 +3576,8 @@ window.DICTATOR = (function () {
      <persistentData>
           <PD n="Arrêter la lecture à partir de cette image" t="i" v="2"/>
           <PD n="Evénement MouseClick" t="i" v="2"/>
-          <PD n="Lire un clip" t="i" v="2"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
+          <PD n="Lire un clip" t="i" v="2"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory/>

@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.7" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 15.2 build 66" majorVersion="15" minorVersion="2" buildNumber="66" guidesVisible="false" timelineLabelWidth="240" viewAngle3D="59.1837342884091" previewFrame="46" templateFilename="/Users/davy.braun/Library/Application Support/Adobe/Animate CC 2015/fr_FR/Configuration/Templates/HTML5 Canvas/sowell_animations/sowell_animations.xfl" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.8" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.0 build 119" majorVersion="16" buildNumber="119" guidesVisible="false" timelineLabelWidth="240" viewAngle3D="59.1837342884091" previewFrame="46" templateFilename="/Users/davy.braun/Library/Application Support/Adobe/Animate CC 2015/fr_FR/Configuration/Templates/HTML5 Canvas/sowell_animations/sowell_animations.xfl" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
      <brushdefinitions>
           <Include href="PaintBrushDefinitions.xml"/>
      </brushdefinitions>
@@ -10,7 +10,7 @@
           <Include href="arrowGreen.xml" itemIcon="1" loadImmediate="false" itemID="56cf140f-000005c2" lastModified="1456411663"/>
           <Include href="arrowOrange.xml" itemIcon="1" loadImmediate="false" itemID="56cf1409-000005be" lastModified="1456411657"/>
           <Include href="arrowRed.xml" itemIcon="1" loadImmediate="false" itemID="56cf13ee-000005b5" lastModified="1456411630"/>
-          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1464255246"/>
+          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1483977499"/>
           <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1459418581"/>
           <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1464255241"/>
           <Include href="bubbleRed.xml" loadImmediate="false" itemID="56cf1576-00000604" lastModified="1459418606"/>
@@ -34,7 +34,7 @@
           <Include href="startScreen.xml" loadImmediate="false" itemID="56cc8937-0000007c" lastModified="1456245551"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="38">
+          <DOMTimeline name="Séquence 1" currentFrame="499">
                <layers>
                     <DOMLayer name="Calque 2" color="#9933CC">
                          <frames>
@@ -65,7 +65,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="global scripts" color="#808080" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="global scripts" color="#808080" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="35" keyMode="9728">
                                    <elements/>
@@ -597,19 +597,19 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 4" color="#4F80FF" autoNamed="false">
+                    <DOMLayer name="bubble 4" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="50" keyMode="9728">
                                    <elements/>
                               </DOMFrame>
                               <DOMFrame index="50" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4">
+                                        <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="547.55" centerPoint3DY="321.7">
                                              <matrix>
-                                                  <Matrix a="0.0835418701171875" b="0.052215576171875" d="0.0835418701171875" tx="544.35" ty="316.2"/>
+                                                  <Matrix a="0.0984954833984375" d="0.083526611328125" tx="543.75" ty="318.25"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.9"/>
+                                                  <Point x="38.6" y="41.3"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -618,10 +618,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="539.55" centerPoint3DY="305.75">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="514" ty="261.85"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="509.4" ty="277.8"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -630,10 +630,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="539.55" centerPoint3DY="305.75">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="514" ty="261.85"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="509.4" ty="277.8"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -657,10 +657,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="547.55" centerPoint3DY="321.7">
                                              <matrix>
-                                                  <Matrix a="0.0835418701171875" b="0.052215576171875" d="0.0835418701171875" tx="544.35" ty="316.2"/>
+                                                  <Matrix a="0.0984954833984375" d="0.083526611328125" tx="543.75" ty="318.25"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.9"/>
+                                                  <Point x="38.6" y="41.3"/>
                                              </transformationPoint>
                                              <color>
                                                   <Color alphaMultiplier="0"/>
@@ -672,10 +672,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="539.55" centerPoint3DY="305.75">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="514" ty="261.85"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="509.4" ty="277.8"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -684,22 +684,22 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="539.55" centerPoint3DY="305.75">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="514" ty="261.85"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="509.4" ty="277.8"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
                               <DOMFrame index="499" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="547.55" centerPoint3DY="321.7">
+                                        <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" selected="true" centerPoint3DX="547.55" centerPoint3DY="321.7">
                                              <matrix>
-                                                  <Matrix a="0.0835418701171875" b="0.052215576171875" d="0.0835418701171875" tx="544.35" ty="316.2"/>
+                                                  <Matrix a="0.0984954833984375" d="0.083526611328125" tx="543.75" ty="318.25"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.9"/>
+                                                  <Point x="38.6" y="41.3"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -713,12 +713,12 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="50" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3">
+                                        <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="476.1" centerPoint3DY="278.55">
                                              <matrix>
-                                                  <Matrix a="0.141311645507812" b="0.08831787109375" d="0.141311645507812" tx="471.15" ty="269.25"/>
+                                                  <Matrix a="0.166610717773438" d="0.141281127929688" tx="470.15" ty="272.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.4" y="41.75"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -727,10 +727,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="460.55" centerPoint3DY="254.6">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="435" ty="210.7"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="430.4" ty="226.7"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -739,10 +739,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="460.55" centerPoint3DY="254.6">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="435" ty="210.7"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="430.4" ty="226.7"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -766,10 +766,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="476.55" centerPoint3DY="278.55">
                                              <matrix>
-                                                  <Matrix a="0.141311645507812" b="0.08831787109375" d="0.141311645507812" tx="471.15" ty="269.25"/>
+                                                  <Matrix a="0.166610717773438" d="0.141281127929688" tx="470.15" ty="272.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.4" y="41.75"/>
                                              </transformationPoint>
                                              <color>
                                                   <Color alphaMultiplier="0"/>
@@ -781,10 +781,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="460.55" centerPoint3DY="254.6">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="435" ty="210.7"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="430.4" ty="226.7"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -793,10 +793,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="460.55" centerPoint3DY="254.6">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="435" ty="210.7"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="430.4" ty="226.7"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -805,10 +805,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="476.55" centerPoint3DY="278.55">
                                              <matrix>
-                                                  <Matrix a="0.141311645507812" b="0.08831787109375" d="0.141311645507812" tx="471.15" ty="269.25"/>
+                                                  <Matrix a="0.166610717773438" d="0.141281127929688" tx="470.15" ty="272.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.4" y="41.75"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -822,12 +822,12 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="50" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2">
+                                        <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="400.1" centerPoint3DY="231.8">
                                              <matrix>
-                                                  <Matrix a="0.124252319335938" b="0.077667236328125" d="0.124252319335938" tx="395.35" ty="223.65"/>
+                                                  <Matrix a="0.146514892578125" d="0.124237060546875" tx="394.45" ty="226.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.25" y="42.1"/>
+                                                  <Point x="38.55" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -836,10 +836,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="376.15" centerPoint3DY="199.85">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="350.6" ty="155.95"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="346" ty="171.95"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -848,10 +848,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="376.15" centerPoint3DY="199.85">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="350.6" ty="155.95"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="346" ty="171.95"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -875,10 +875,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="400.1" centerPoint3DY="231.8">
                                              <matrix>
-                                                  <Matrix a="0.124252319335938" b="0.077667236328125" d="0.124252319335938" tx="395.35" ty="223.65"/>
+                                                  <Matrix a="0.146514892578125" d="0.124237060546875" tx="394.45" ty="226.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.25" y="42.1"/>
+                                                  <Point x="38.55" y="41.85"/>
                                              </transformationPoint>
                                              <color>
                                                   <Color alphaMultiplier="0"/>
@@ -890,10 +890,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="376.15" centerPoint3DY="199.85">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="350.6" ty="155.95"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="346" ty="171.95"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -902,10 +902,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="376.15" centerPoint3DY="199.85">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="350.6" ty="155.95"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="346" ty="171.95"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.8"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -914,10 +914,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="400.1" centerPoint3DY="231.8">
                                              <matrix>
-                                                  <Matrix a="0.124252319335938" b="0.077667236328125" d="0.124252319335938" tx="395.35" ty="223.65"/>
+                                                  <Matrix a="0.146514892578125" d="0.124237060546875" tx="394.45" ty="226.65"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.25" y="42.1"/>
+                                                  <Point x="38.55" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -931,12 +931,12 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="50" duration="4" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1">
+                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="193.4" centerPoint3DY="104.25">
                                              <matrix>
-                                                  <Matrix a="0.11773681640625" b="0.0735931396484375" d="0.11773681640625" tx="188.9" ty="96.5"/>
+                                                  <Matrix a="0.138824462890625" d="0.117721557617188" tx="188.1" ty="99.35"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.2" y="41.6"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -945,10 +945,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="169.4" centerPoint3DY="80.25">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="143.85" ty="36.35"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="139.25" ty="52.3"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -957,10 +957,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="169.4" centerPoint3DY="80.25">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="143.85" ty="36.35"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="139.25" ty="52.3"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -984,10 +984,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="193.4" centerPoint3DY="104.25">
                                              <matrix>
-                                                  <Matrix a="0.11773681640625" b="0.0735931396484375" d="0.11773681640625" tx="188.9" ty="96.5"/>
+                                                  <Matrix a="0.138824462890625" d="0.117721557617188" tx="188.1" ty="99.35"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.2" y="41.6"/>
                                              </transformationPoint>
                                              <color>
                                                   <Color alphaMultiplier="0"/>
@@ -999,10 +999,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="169.4" centerPoint3DY="80.25">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="143.85" ty="36.35"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="139.25" ty="52.3"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -1011,10 +1011,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="169.4" centerPoint3DY="80.25">
                                              <matrix>
-                                                  <Matrix a="0.666671752929688" b="0.416671752929688" d="0.666671752929688" tx="143.85" ty="36.35"/>
+                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="139.25" ty="52.3"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.3" y="41.8"/>
+                                                  <Point x="38.35" y="41.85"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -1023,10 +1023,10 @@ this.gotoAndPlay('results');]]></script>
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="193.4" centerPoint3DY="104.25">
                                              <matrix>
-                                                  <Matrix a="0.11773681640625" b="0.0735931396484375" d="0.11773681640625" tx="188.9" ty="96.5"/>
+                                                  <Matrix a="0.138824462890625" d="0.117721557617188" tx="188.1" ty="99.35"/>
                                              </matrix>
                                              <transformationPoint>
-                                                  <Point x="38.2" y="41.95"/>
+                                                  <Point x="38.2" y="41.6"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -1481,7 +1481,7 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="59" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="arrowRed" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="arrowRed" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="115.25" ty="362.2"/>
                                              </matrix>
@@ -1542,7 +1542,7 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="59" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="arrowBlue" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="arrowBlue" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="129.8" ty="355.95"/>
                                              </matrix>
@@ -1603,7 +1603,7 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="59" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="arrowOrange" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="arrowOrange" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="143.85" ty="313.35"/>
                                              </matrix>
@@ -1664,7 +1664,7 @@ this.gotoAndPlay('results');]]></script>
                               </DOMFrame>
                               <DOMFrame index="59" duration="9" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="arrowGreen" selected="true" symbolType="graphic" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="arrowGreen" symbolType="graphic" loop="loop">
                                              <matrix>
                                                   <Matrix tx="53.4" ty="177.25"/>
                                              </matrix>
@@ -3943,8 +3943,8 @@ this.gotoAndPlay('results');]]></script>
      <persistentData>
           <PD n="Arrêter la lecture à partir de cette image" t="i" v="2"/>
           <PD n="Evénement MouseClick" t="i" v="2"/>
-          <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
           <PD n="Lire un clip" t="i" v="2"/>
+          <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory/>

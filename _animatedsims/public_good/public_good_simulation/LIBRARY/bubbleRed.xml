@@ -5,11 +5,11 @@
   <timeline>
     <DOMTimeline name="bubbleRed">
       <layers>
-        <DOMLayer name="Calque 2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="Calque 2" color="#9933CC">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="label" selected="true" fontRenderingMode="standard" left="10.7" width="35.7" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline no wrap">
+                <DOMDynamicText name="label" fontRenderingMode="standard" left="10.7" width="35.7" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix tx="10" ty="31.8"/>
                   </matrix>
@@ -38,7 +38,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Calque 1" color="#4F80FF">
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
