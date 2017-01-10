@@ -11,7 +11,7 @@ from django.utils.translation import get_language
 
 doc = """
 One player decides how to divide a certain amount between himself and the other
-player.
+player. Trustlab's version of the game uses the Strategic Method.
 """
 
 source_code = "https://github.com/oTree-org/oTree/tree/master/dictator"

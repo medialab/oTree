@@ -17,8 +17,8 @@ from dictator import models as DictatorModels  # noqa
 from django.utils.translation import get_language
 
 doc = """
-This application calculates earnings for the Trustlab experiments,
-and provides a webpage instructing participants of their final earnings.
+Calculates earnings for the Trustlab experiments,
+and displays a webpage informing participants of their final earnings.
 """
 source_code = ""
 bibliography = ()

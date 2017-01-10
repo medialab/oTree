@@ -7,7 +7,8 @@ from otree.api import (
 author = 'Your name here'
 
 doc = """
-Your app description
+Enforces the presence of a <strong>participant_label</strong> variable in the URL used by the participant.
+<br>No URL stops the progression right away.
 """
 
 

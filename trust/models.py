@@ -10,7 +10,8 @@ This is a standard 2-player trust game where the amount sent by player 1 gets
 tripled. The trust game was first proposed by
 <a href="http://econweb.ucsd.edu/~jandreon/Econ264/papers/Berg%20et%20al%20GEB%201995.pdf" target="_blank">
     Berg, Dickhaut, and McCabe (1995)
-</a>.
+</a>.<br>
+Trustlab's version uses the strategic method.
 """
 
 amount_allocated = get_language() == 'ko' and 12000 or 10

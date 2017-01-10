@@ -10,7 +10,7 @@ from otree.models import BaseSubsession, BaseGroup, BasePlayer
 author = 'Davy Peter Braun <davy.braun@sciencespo.fr>'
 
 doc = """
-An implementation of the Implicit Association Test for oTree.
+Implementation of the <a href="https://implicit.harvard.edu/implicit/education.html" target="_blank" rel="noopener">Implicit Association Test for oTree</a>.
 """
 
 
