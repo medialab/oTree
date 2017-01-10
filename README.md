@@ -57,7 +57,7 @@ otree resetdb
 - If your `OTREE_PRODUCTION` setting is setting to `True`, build the static assets:
 
 ```bash
-otree collectstatic
+otree exportstatic
 ```
 
 - Run the server.
