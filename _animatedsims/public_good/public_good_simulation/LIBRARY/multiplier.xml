@@ -6,7 +6,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="label" selected="true" fontRenderingMode="standard" width="100" height="50.6" isSelectable="false" lineType="multiline no wrap">
+                <DOMDynamicText name="label" selected="true" fontRenderingMode="standard" width="100" height="50.6" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix tx="-54.4" ty="-8.9"/>
                   </matrix>

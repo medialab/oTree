@@ -1,9 +1,70 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtInst = {}; 
+var loadedTypekitCount = 0;
+var loadedGoogleCount = 0;
+var gFontsUpdateCacheList = [];
+var tFontsUpdateCacheList = [];
 lib.ssMetadata = [];
 
 
+
+lib.updateListCache = function (cacheList) {		
+	for(var i = 0; i < cacheList.length; i++) {		
+		if(cacheList[i].cacheCanvas)		
+			cacheList[i].updateCache();		
+	}		
+};		
+
+lib.addElementsToCache = function (textInst, cacheList) {		
+	var cur = textInst;		
+	while(cur != exportRoot) {		
+		if(cacheList.indexOf(cur) != -1)		
+			break;		
+		cur = cur.parent;		
+	}		
+	if(cur != exportRoot) {		
+		var cur2 = textInst;		
+		var index = cacheList.indexOf(cur);		
+		while(cur2 != cur) {		
+			cacheList.splice(index, 0, cur2);		
+			cur2 = cur2.parent;		
+			index++;		
+		}		
+	}		
+	else {		
+		cur = textInst;		
+		while(cur != exportRoot) {		
+			cacheList.push(cur);		
+			cur = cur.parent;		
+		}		
+	}		
+};		
+
+lib.gfontAvailable = function(family, totalGoogleCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
+
+	loadedGoogleCount++;		
+	if(loadedGoogleCount == totalGoogleCount) {		
+		lib.updateListCache(gFontsUpdateCacheList);		
+	}		
+};		
+
+lib.tfontAvailable = function(family, totalTypekitCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
+
+	loadedTypekitCount++;		
+	if(loadedTypekitCount == totalTypekitCount) {		
+		lib.updateListCache(tFontsUpdateCacheList);		
+	}		
+};
 // symbols:
 // helper functions:
 
@@ -1194,12 +1255,12 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 
 	// Calque 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#0099FF").s().p("Ai8ErQgsgZgmgmQhwhwgBieQABifBwhxQBwhwCeAAQCfAABxBwQBvBxAACfQAACehvBwQhxBwifAAQgmAAglgGIhxBNg");
-	this.shape.setTransform(38.4,41.9);
+	this.shape.graphics.f("#0099FF").s().p("ACGFOQgvAQg1AFQieAOh5hmQh6hmgOieQgOidBmh6QBmh6CfgOQCdgNB6BmQB5BmAOCeQAOCdhmB6QgZAegdAYIgOCJg");
+	this.shape.setTransform(36,42.2);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.bubbleBlue, new cjs.Rectangle(0,0,76.7,83.8), null);
+}).prototype = getMCSymbolPrototype(lib.bubbleBlue, new cjs.Rectangle(-2.3,1.2,76.7,82.1), null);
 
 
 (lib.arrowRed = function(mode,startPosition,loop) {
@@ -1607,34 +1668,34 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 	// bubble 4
 	this.bubble4 = new lib.bubbleRed();
 	this.bubble4.parent = this;
-	this.bubble4.setTransform(547.6,321.7,0.099,0.084,0,0,32,38.3,41.9);
+	this.bubble4.setTransform(547.6,321.7,0.098,0.084,0,0,0,38.6,41.3);
 	this.bubble4._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble4).wait(50).to({_off:false},0).to({regY:41.8,scaleX:0.79,scaleY:0.67,x:539.6,y:305.7},4,cjs.Ease.get(1)).wait(1).to({regY:41.9,scaleX:0.1,scaleY:0.08,x:547.6,y:321.7,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regY:41.8,scaleX:0.79,scaleY:0.67,x:539.6,y:305.7,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regY:41.9,scaleX:0.1,scaleY:0.08,x:547.6,y:321.7},5,cjs.Ease.get(1)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.bubble4).wait(50).to({_off:false},0).to({regX:38.4,regY:41.9,scaleX:0.79,scaleY:0.67,x:539.6,y:305.8},4,cjs.Ease.get(1)).wait(1).to({regX:38.3,scaleX:0.1,scaleY:0.08,skewY:32,x:547.6,y:321.7,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.6,regY:41.3,scaleX:0.1,skewY:0},0).to({regX:38.4,regY:41.9,scaleX:0.79,scaleY:0.67,x:539.6,y:305.8,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.6,regY:41.3,scaleX:0.1,scaleY:0.08,x:547.6,y:321.7},5,cjs.Ease.get(1)).wait(1));
 
 	// bubble 3
 	this.bubble3 = new lib.bubbleBlue();
 	this.bubble3.parent = this;
-	this.bubble3.setTransform(476.6,278.6,0.167,0.141,0,0,32,38.2,42);
+	this.bubble3.setTransform(476.6,278.6,0.167,0.141,0,0,0,38.4,41.8);
 	this.bubble3._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble3).wait(50).to({_off:false},0).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:460.6,y:254.5},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42,scaleX:0.17,scaleY:0.14,x:476.6,y:278.6,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:460.6,y:254.5,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.2,regY:42,scaleX:0.17,scaleY:0.14,x:476.6,y:278.6},5,cjs.Ease.get(1)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.bubble3).wait(50).to({_off:false},0).to({scaleX:0.79,scaleY:0.67,x:460.6,y:254.6},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42,scaleX:0.17,scaleY:0.14,skewY:32,x:476.6,y:278.6,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.4,regY:41.8,skewY:0},0).to({scaleX:0.79,scaleY:0.67,x:460.6,y:254.6,alpha:1},3,cjs.Ease.get(1)).wait(234).to({scaleX:0.17,scaleY:0.14,x:476.6,y:278.6},5,cjs.Ease.get(1)).wait(1));
 
 	// bubble 2
 	this.bubble2 = new lib.bubbleOrange();
 	this.bubble2.parent = this;
-	this.bubble2.setTransform(400.1,231.9,0.147,0.124,0,0,32,38.2,42.1);
+	this.bubble2.setTransform(400.1,231.9,0.147,0.124,0,0,0,38.6,41.9);
 	this.bubble2._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble2).wait(50).to({_off:false},0).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:376.2,y:199.8},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42.1,scaleX:0.15,scaleY:0.12,x:400.1,y:231.9,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:376.2,y:199.8,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.2,regY:42.1,scaleX:0.15,scaleY:0.12,x:400.1,y:231.9},5,cjs.Ease.get(1)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.bubble2).wait(50).to({_off:false},0).to({regX:38.4,regY:41.8,scaleX:0.79,scaleY:0.67,x:376.2,y:199.8},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42.1,scaleX:0.15,scaleY:0.12,skewY:32,x:400.1,y:231.9,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.6,regY:41.9,skewY:0},0).to({regX:38.4,regY:41.8,scaleX:0.79,scaleY:0.67,x:376.2,y:199.8,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.6,regY:41.9,scaleX:0.15,scaleY:0.12,x:400.1,y:231.9},5,cjs.Ease.get(1)).wait(1));
 
 	// bubble 1
 	this.bubble1 = new lib.bubbleGreen();
 	this.bubble1.parent = this;
-	this.bubble1.setTransform(193.4,104.3,0.139,0.118,0,0,32,38.2,42);
+	this.bubble1.setTransform(193.4,104.3,0.139,0.118,0,0,0,38.2,41.6);
 	this.bubble1._off = true;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble1).wait(50).to({_off:false},0).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:169.4,y:80.2},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42,scaleX:0.14,scaleY:0.12,x:193.4,y:104.3,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regX:38.3,regY:41.8,scaleX:0.79,scaleY:0.67,x:169.4,y:80.2,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.2,regY:42,scaleX:0.14,scaleY:0.12,x:193.4,y:104.3},5,cjs.Ease.get(1)).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.bubble1).wait(50).to({_off:false},0).to({regX:38.4,regY:41.9,scaleX:0.79,scaleY:0.67,x:169.5,y:80.3},4,cjs.Ease.get(1)).wait(1).to({regX:38.2,regY:42,scaleX:0.14,scaleY:0.12,skewY:32,x:193.4,y:104.3,alpha:0},3,cjs.Ease.get(1)).wait(199).to({regY:41.6,skewY:0},0).to({regX:38.4,regY:41.9,scaleX:0.79,scaleY:0.67,x:169.5,y:80.3,alpha:1},3,cjs.Ease.get(1)).wait(234).to({regX:38.2,regY:41.6,scaleX:0.14,scaleY:0.12,x:193.4,y:104.3},5,cjs.Ease.get(1)).wait(1));
 
 	// mask (mask)
 	var mask = new cjs.Shape();
@@ -2158,6 +2219,7 @@ lib.properties = {
 	fps: 30,
 	color: "#CCD1DB",
 	opacity: 1.00,
+	webfonts: {},
 	manifest: [],
 	preloads: []
 };

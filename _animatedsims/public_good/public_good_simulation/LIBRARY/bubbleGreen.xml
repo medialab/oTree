@@ -9,7 +9,7 @@
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>
-                <DOMDynamicText name="label" fontRenderingMode="standard" left="10.7" width="35.7" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline no wrap">
+                <DOMDynamicText name="label" fontRenderingMode="standard" left="10.7" width="35.7" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline">
                   <matrix>
                     <Matrix tx="10" ty="31.8"/>
                   </matrix>
