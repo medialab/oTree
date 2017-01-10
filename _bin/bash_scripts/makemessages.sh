@@ -1,2 +1,9 @@
 #!/bin/bash
-cd introduction && django-makemessages && cd ../trust && django-admin makemessages && cd ../public_goods && django-admin makemessages && cd ../dictator && django-admin makemessages && cd ../iat && django-admin makemessages && cd ../survey_i18n && django-admin makemessages && cd ../earnings && django-admin makemessages && cd ../
+cd ./introduction && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../trust && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../public_goods && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../dictator && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../iat && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../survey_i18n && $(which django-admin) makemessages --settings=otree.settings &&\
+cd ../earnings && $(which django-admin) makemessages --settings=otree.settings &&
+cd ../
