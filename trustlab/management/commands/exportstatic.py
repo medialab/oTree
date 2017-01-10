@@ -11,6 +11,6 @@ class Command(BaseCommand):
   help = 'Copy exported simulations into static files directory before running "collectstatic" command.'
 
   def handle(self, *args, **options):
-    """Runs command."""
+    """Run command."""
     subprocess.call([BASE_DIR + '/_bin/bash_scripts/copysims.sh'], shell=True)
     call_command('collectstatic')
