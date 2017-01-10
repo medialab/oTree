@@ -30,6 +30,14 @@ quota_redirects_ko = {
     ),
 }
 
+ROOMS_DEFAULTS = {}
+ROOMS = [
+    {
+        'name': 'test',
+        'display_name': 'Test Room (for developement and test purposes)'
+    }
+]
+
 SESSION_CONFIGS = [
     {
         'name': 'test',
