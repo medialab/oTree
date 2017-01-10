@@ -146,7 +146,7 @@ msgstr ""
 #, python-format
 msgid ""
 "The total amount invested into the joint project is <strong>multiplied by "
-"%(Constants.efficiency_factor)s.</strong>"
+"%(factor)s.</strong>"
 msgstr ""
 
 #: templates/public_goods/Instructions.html:25
