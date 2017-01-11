@@ -11,7 +11,7 @@ class Command(BaseCommand):
 
     def add_arguments(self, parser):
         """Add arguments."""
-        parser.add_argument('locale', metavar='locale', help='A 2-character locale code (i.e. \'en\'')
+        parser.add_argument('locale', metavar='locale', help='A 2-character locale code (i.e. \'en\')')
 
     def handle(self, *args, **options):
         """Run command."""
