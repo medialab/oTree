@@ -1,19 +1,17 @@
 # -*- coding: utf-8 -*-
 """Models for Dictator game."""
 
-# <standard imports>
 from __future__ import division
 from otree.db import models
 from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree.common import Currency
 from django.utils.translation import get_language
-# </standard imports>
 
 
 doc = """
 One player decides how to divide a certain amount between himself and the other
-player.
+player. Trustlab's version of the game uses the Strategic Method.
 """
 
 source_code = "https://github.com/oTree-org/oTree/tree/master/dictator"
@@ -42,7 +40,7 @@ links = {
 
 keywords = ("Dictator Game", "Fairness", "Homo Economicus")
 
-allocated_amount = (get_language()[:2] == 'ko') and 12000 or 10
+allocated_amount = (get_language() == 'ko') and 12000 or 10
 
 
 class Constants(BaseConstants):
@@ -69,13 +67,7 @@ class Subsession(BaseSubsession):
         """
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
-        if (
-            'language_code' in self.session.config and
-            'lang' not in self.session.vars
-        ):
-            self.session.vars['lang'] = (
-                self.session.config['language_code'][:2]
-            )
+        self.session.vars['lang'] = get_language()
 
 
 class Group(BaseGroup):

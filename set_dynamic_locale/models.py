@@ -32,14 +32,13 @@ class Subsession(BaseSubsession):
             )
             activate(self.session.config['language_code'])
         else:
-            self.session.vars['lang'] = 'en-us'
-        print('set_dynamic_locale language code: ', get_language())
+            self.session.vars['lang'] = 'en'
 
-        if self.session.vars['lang'] == 'en-us':
+        if self.session.vars['lang'] == 'en':
             otree.settings.REAL_WORLD_CURRENCY_CODE = 'EUR'
-        elif self.session.vars['lang'] == 'fr-fr':
+        elif self.session.vars['lang'] == 'fr':
             otree.settings.REAL_WORLD_CURRENCY_CODE = 'EUR'
-        elif self.session.vars['lang'] == 'ko-kr':
+        elif self.session.vars['lang'] == 'ko':
             otree.settings.REAL_WORLD_CURRENCY_CODE = 'KRW'
         else:
             otree.settings.REAL_WORLD_CURRENCY_CODE = 'EUR'

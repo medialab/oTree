@@ -1,0 +1,74 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleBlue" itemID="5735d693-000001b4" lastModified="1483977499">
+  <persistentData>
+    <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
+  </persistentData>
+  <timeline>
+    <DOMTimeline name="bubbleBlue">
+      <layers>
+        <DOMLayer name="Calque 2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label" fontRenderingMode="standard" left="10.7" width="35.7" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline">
+                  <matrix>
+                    <Matrix tx="10" ty="31.8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>10</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="17.8" size="20" bitmapSize="400" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                    <DOMTextRun>
+                      <characters>€</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="23.55" size="20" bitmapSize="400" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="17.8" size="20" bitmapSize="400" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#0099FF"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle0="1" edges="!227 1379[470 1583 787 1555!787 1555[893 1545 988 1512!988 1512|1171 1666!1171 1666|1200 1392!1200 1392[1257 1344 1307 1284!1307 1284[1511 1041 1484 724!1484 724[1456 408 1213 204!1213 204[969 0 653 27!653 27[336 55 132 298!132 298[-72
+ 542 -44 858!-44 858[-17 1175 227 1379"/>
+                    <Edge cubics="!1213 204(1213,204;1050,68 863,8 653,27q1213 204Q969 0q653 27)653,27;"/>
+                    <Edge cubics="!653 27(;442,45 268,136 132,298q653 27Q336 55q132 298);"/>
+                    <Edge cubics="!132 298(;-4,461 -64,648 -44,858q132 298Q-72 542q-44 858)-44,858;"/>
+                    <Edge cubics="!787 1555(;857,1549 923,1535 988,1512q787 1555Q893 1545q988 1512);"/>
+                    <Edge cubics="!1200 1392(1200,1392;1236,1361 1273,1325 1307,1284q1200 1392Q1257 1344q1307 1284)1307,1284;"/>
+                    <Edge cubics="!1307 1284(;1443,1122 1503,935 1484,724q1307 1284Q1511 1041q1484 724);"/>
+                    <Edge cubics="!1484 724(;1466,514 1375,340 1213,204q1484 724Q1456 408q1213 204);"/>
+                    <Edge cubics="!227 1379(;389,1515 576,1575 787,1555q227 1379Q470 1583q787 1555);"/>
+                    <Edge cubics="!-44 858(-44,858;-27,1069 64,1243 227,1379q-44 858Q-17 1175q227 1379);"/>
+                    <Edge cubics="!1171 1666(;1171,1666 1200,1392 1200,1392q1171 1666 1200 1392);"/>
+                    <Edge cubics="!988 1512(;988,1512 1171,1666 1171,1666q988 1512 1171 1666);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

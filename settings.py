@@ -65,20 +65,19 @@ AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY')
 
 # e.g. en, de, fr, it, ja, zh-hans
 # see: https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code
-LANGUAGE_CODE = environ.get('OTREE_LANGUAGE_CODE', 'fr-fr')
+LANGUAGE_CODE = environ.get('OTREE_LANGUAGE_CODE', 'fr')
 
 # e.g. EUR, CAD, GBP, CHF, CNY, JPY
 REAL_WORLD_CURRENCY_CODE = ''
-if LANGUAGE_CODE == 'fr-fr' or LANGUAGE_CODE == 'en-us':
+if LANGUAGE_CODE == 'fr' or LANGUAGE_CODE == 'en':
     REAL_WORLD_CURRENCY_CODE = 'EUR'
-elif LANGUAGE_CODE == 'ko-kr':
+elif LANGUAGE_CODE == 'ko':
     REAL_WORLD_CURRENCY_CODE = 'KRW'
 
 USE_POINTS = False
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
-# if an app is included in SESSION_CONFIGS, you don't need to list it here
-INSTALLED_APPS = ['otree']
+INSTALLED_APPS = ['otree', 'trustlab']
 
 # SENTRY_DSN = ''
 
@@ -124,6 +123,9 @@ SESSION_CONFIG_DEFAULTS = {
 
 
 SESSION_CONFIGS = trustlab_apps_config.SESSION_CONFIGS
+
+ROOMS_DEFAULTS = trustlab_apps_config.ROOMS_DEFAULTS
+ROOMS = trustlab_apps_config.ROOMS
 
 # anything you put after the below line will override
 # oTree's default settings. Use with caution.

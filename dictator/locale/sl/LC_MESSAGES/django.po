@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-21 13:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: templates/dictator/EndGame.html:8
+msgid "Thank once again!"
+msgstr ""
+
+#: templates/dictator/EndGame.html:9
+msgid ""
+"You have completed all tasks in this section and we have recorded all your "
+"choices. Let's go to the second section of the study, where you will be "
+"asked to sort a number of words and be timed while doing so."
+msgstr ""
+
+#: templates/dictator/EndGame.html:10 templates/dictator/Offer.html:13
+#: templates/dictator/Simulation.html:56
+msgid "Next"
+msgstr ""
+
+#: templates/dictator/Instructions.html:6
+msgid "Task Three: Introduction"
+msgstr ""
+
+#: templates/dictator/Instructions.html:8
+msgid ""
+"This last task involves <strong>two participants</strong> – Participant A "
+"and Participant B."
+msgstr ""
+
+#: templates/dictator/Instructions.html:9
+msgid ""
+"Remember, the other participant is different from the ones you interacted "
+"with in the previous two tasks."
+msgstr ""
+
+#: templates/dictator/Instructions.html:10
+msgid "These are the rules:"
+msgstr ""
+
+#: templates/dictator/Instructions.html:12
+#, python-format
+msgid "At the beginning, Participant A receives %(amount)s."
+msgstr ""
+
+#: templates/dictator/Instructions.html:13
+msgid "Participant B does not receive any money — he or she has 0."
+msgstr ""
+
+#: templates/dictator/Instructions.html:14
+#, python-format
+msgid ""
+"Participant A must now decide if he or she wants to transfer any of his or "
+"her %(amount)s to Participant B."
+msgstr ""
+
+#: templates/dictator/Instructions.html:15
+msgid ""
+"This transfer is not multiplied by any number and Participant B cannot "
+"transfer any amount back to Participant A."
+msgstr ""
+
+#: templates/dictator/Instructions.html:17
+msgid ""
+"Your role (Participant A or Participant B) is revealed to you at the "
+"beginning of the task."
+msgstr ""
+
+#: templates/dictator/Instructions.html:18
+msgid ""
+"Because this task is simple, there will be no simulator to test out "
+"different choices."
+msgstr ""
+
+#: templates/dictator/Offer.html:6
+msgid "Task Three: Real Decision"
+msgstr ""
+
+#: templates/dictator/Offer.html:7
+msgid ""
+"This is the real third task. Once you have made your decision and clicked "
+"the “Next” button, you cannot return to this screen."
+msgstr ""
+
+#: templates/dictator/Offer.html:8
+msgid "You were selected to be in the role of <strong>Participant A</strong>."
+msgstr ""
+
+#: templates/dictator/Offer.html:9
+#, python-format
+msgid "You have %(amount)s in your possession."
+msgstr ""
+
+#: templates/dictator/Offer.html:9
+msgid "How much do you want to transfer to Participant B?"
+msgstr ""
+
+#: templates/dictator/Simulation.html:6
+msgid "Task Three: Simulation"
+msgstr ""
+
+#: templates/dictator/Simulation.html:8
+msgid ""
+"If you wish, you can use this test screen to play with different choices of "
+"Participant A, to understand the task better."
+msgstr ""
+
+#: templates/dictator/Simulation.html:9
+msgid "Whenever you are ready to proceed to the real task, click next."
+msgstr ""
+
+#: templates/dictator/Simulation.html:45
+msgid "€"
+msgstr ""
+
+#: templates/dictator/Simulation.html:53
+msgid "Amount sent by Participant A"
+msgstr ""
+
+#: templates/dictator/Simulation.html:55
+msgid "Send"
+msgstr ""
+
+#: views.py:45 views.py:62
+msgid "10 euros"
+msgstr ""
+
+#: views.py:46 views.py:63
+msgid "$10"
+msgstr ""
+
+#: views.py:47 views.py:64
+msgid "12.000 Won"
+msgstr ""

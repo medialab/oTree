@@ -15,7 +15,7 @@ class CheckIfRedirect(Page):
                 self.session.config['quota_redirects']['speedster']
             ),
             'label': self.participant.label,
-            'language_code': self.session.vars['language_code'],
+            'lang': self.session.vars['lang'],
         }
 
 

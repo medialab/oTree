@@ -12,7 +12,7 @@ from django.utils.translation import get_language
 
 doc = """
 This is a one-period public goods game with 3 players. Assignment to groups is
-random.
+random. Trustlab's version uses the Strategic Method.
 """
 
 
@@ -31,7 +31,7 @@ links = {
 
 keywords = ("Public Goods",)
 
-allocated_amount = get_language()[:2] == 'ko' and 12000 or 10
+allocated_amount = get_language() == 'ko' and 12000 or 10
 
 
 class Constants(BaseConstants):

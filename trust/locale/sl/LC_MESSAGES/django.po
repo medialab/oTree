@@ -1,0 +1,296 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-12-21 13:14+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+
+#: templates/trust/EndGame.html:7
+msgid "Thank you very much for entering your choice."
+msgstr ""
+
+#: templates/trust/EndGame.html:8
+msgid ""
+"We have recorded your decision. Your payoff for this task will depend on the "
+"action of your partner in this task, Participant B."
+msgstr ""
+
+#: templates/trust/EndGame.html:9
+msgid "Now, please proceed to the second task."
+msgstr ""
+
+#: templates/trust/EndGame.html:10 templates/trust/Send.html:21
+#: templates/trust/SendBack.html:30 templates/trust/Simulation.html:167
+msgid "Next"
+msgstr ""
+
+#: templates/trust/Instructions.html:6
+msgid "Task One: Introduction"
+msgstr ""
+
+#: templates/trust/Instructions.html:8
+msgid ""
+"In the first task, <strong>two people participate</strong>: Participant A "
+"and Participant B. As mentioned before, this other participant also lives in "
+"France."
+msgstr ""
+
+#: templates/trust/Instructions.html:9
+msgid "These are the rules of the task:"
+msgstr ""
+
+#: templates/trust/Instructions.html:11
+msgid "At the beginning of the task, both participants receive 10 euros."
+msgstr ""
+
+#: templates/trust/Instructions.html:14
+msgid ""
+"Participant A has the option to transfer none, part or all of his or her "
+"12.000 Won to Participant B."
+msgstr ""
+
+#: templates/trust/Instructions.html:16
+msgid ""
+"Participant A has the option to transfer none, part or all of his or her 10 "
+"euros to Participant B."
+msgstr ""
+
+#: templates/trust/Instructions.html:19
+msgid "Whatever amount Participant A sends is multiplied by 3."
+msgstr ""
+
+#: templates/trust/Instructions.html:20
+msgid ""
+"Participant B, after receiving the transfer of Participant A, has to decide "
+"how much, if any, money he or she want to send back to Participant A."
+msgstr ""
+
+#: templates/trust/Instructions.html:22
+msgid "Your role (A or B) will be revealed at the beginning of the task."
+msgstr ""
+
+#: templates/trust/Send.html:7
+msgid "Task One: Real task"
+msgstr ""
+
+#: templates/trust/Send.html:9
+msgid ""
+"Now the real task 1 starts. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
+msgstr ""
+
+#: templates/trust/Send.html:10
+msgid "You were selected to be in the role of <strong>Participant A</strong>."
+msgstr ""
+
+#: templates/trust/Send.html:13
+msgid ""
+"You have 12.000 Won in your possession. <strong>How much do you want to send "
+"to Participant B?</strong>"
+msgstr ""
+
+#: templates/trust/Send.html:15
+msgid ""
+"You have 10 euros in your possession. <strong>How much do you want to send "
+"to Participant B?</strong>"
+msgstr ""
+
+#: templates/trust/SendBack.html:7
+msgid "Task One: Real decision"
+msgstr ""
+
+#: templates/trust/SendBack.html:9
+msgid ""
+"Now the real task starts. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
+msgstr ""
+
+#: templates/trust/SendBack.html:10
+msgid "You were selected to be in the role of <strong>Participant B</strong>."
+msgstr ""
+
+#: templates/trust/SendBack.html:11
+msgid ""
+"If Participant A sends you any of the amounts listed in the table below, "
+"<strong>how much money do you want to send back to Participant A</strong>?"
+msgstr ""
+
+#: templates/trust/SendBack.html:14
+msgid "You already have 12.000 Won in your possession."
+msgstr ""
+
+#: templates/trust/SendBack.html:16
+msgid "You already have 10 euros in your possession."
+msgstr ""
+
+#: templates/trust/Simulation.html:6
+msgid "Task One: Test Simulation"
+msgstr ""
+
+#: templates/trust/Simulation.html:8
+msgid ""
+"This is not the real task yet, but a simulation to help you understand the "
+"rules better."
+msgstr ""
+
+#: templates/trust/Simulation.html:9
+msgid ""
+"You can use the test screen below to play with the different choices of the "
+"two participants."
+msgstr ""
+
+#: templates/trust/Simulation.html:10
+msgid ""
+"Between each test, click the “reset to zero” button below to reset the "
+"calculator."
+msgstr ""
+
+#: templates/trust/Simulation.html:141
+msgid "€"
+msgstr ""
+
+#: templates/trust/Simulation.html:143
+msgid "Participant A"
+msgstr ""
+
+#: templates/trust/Simulation.html:144
+msgid "Participant B"
+msgstr ""
+
+#: templates/trust/Simulation.html:150
+msgid "Amount sent by Participant A"
+msgstr ""
+
+#: templates/trust/Simulation.html:152 templates/trust/Simulation.html:160
+msgid "Send"
+msgstr ""
+
+#: templates/trust/Simulation.html:158
+msgid "Amount sent by Participant B"
+msgstr ""
+
+#: templates/trust/Simulation.html:165
+msgid "Reset to zero"
+msgstr ""
+
+#: views.py:54 views.py:55
+msgid "Please enter a number from 0 to 10"
+msgstr ""
+
+#: views.py:56
+msgid "Please enter a number from 0 to 12.000"
+msgstr ""
+
+#: views.py:91 views.py:94
+msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
+msgstr ""
+
+#: views.py:97
+msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
+msgstr ""
+
+#: views.py:103 views.py:106
+msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
+msgstr ""
+
+#: views.py:109
+msgid ""
+"If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)"
+msgstr ""
+
+#: views.py:115 views.py:118
+msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
+msgstr ""
+
+#: views.py:121
+msgid ""
+"If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)"
+msgstr ""
+
+#: views.py:127 views.py:130
+msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
+msgstr ""
+
+#: views.py:133
+msgid ""
+"If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
+msgstr ""
+
+#: views.py:139 views.py:142
+msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
+msgstr ""
+
+#: views.py:145
+msgid ""
+"If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
+msgstr ""
+
+#: views.py:151 views.py:154
+msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
+msgstr ""
+
+#: views.py:157
+msgid ""
+"If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
+msgstr ""
+
+#: views.py:163 views.py:166
+msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
+msgstr ""
+
+#: views.py:169
+msgid ""
+"If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)"
+msgstr ""
+
+#: views.py:175 views.py:178
+msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
+msgstr ""
+
+#: views.py:181
+msgid ""
+"If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)"
+msgstr ""
+
+#: views.py:187 views.py:190
+msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
+msgstr ""
+
+#: views.py:193
+msgid ""
+"If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)"
+msgstr ""
+
+#: views.py:199 views.py:202
+msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
+msgstr ""
+
+#: views.py:205
+msgid ""
+"If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 "
+"Won)"
+msgstr ""
+
+#: views.py:211 views.py:214
+msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
+msgstr ""
+
+#: views.py:217
+msgid ""
+"If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 "
+"Won)"
+msgstr ""

@@ -1,0 +1,44 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="arrowBlue" itemID="56cf13f6-000005ba" symbolType="graphic" lastModified="1456411638">
+  <timeline>
+    <DOMTimeline name="arrowBlue">
+      <layers>
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#3DBACC"/>
+                    </FillStyle>
+                  </fills>
+                  <strokes>
+                    <StrokeStyle index="1">
+                      <SolidStroke scaleMode="normal" weight="3" joints="miter">
+                        <fill>
+                          <SolidColor color="#3CBACC"/>
+                        </fill>
+                      </SolidStroke>
+                    </StrokeStyle>
+                  </strokes>
+                  <edges>
+                    <Edge strokeStyle="1" edges="!141 94S4[1322 711 2226 953!2226 953[3130 1195 3941 1045!3941 1045[4752 894 5486 565!5486 565[6219 236 6541 88"/>
+                    <Edge fillStyle0="1" edges="!25 0S1|0 158!0 158|141 94!141 94|281 30!281 30|25 0"/>
+                    <Edge cubics="!5486 565(;5975,346 6326,187 6541,88q5486 565Q6219 236q6541 88);"/>
+                    <Edge cubics="!281 30(;281,30 25,0 25,0q281 30 25 0);"/>
+                    <Edge cubics="!25 0(;25,0 0,158 0,158q25 0 0 158);"/>
+                    <Edge cubics="!0 158(;0,158 141,94 141,94q0 158 141 94);"/>
+                    <Edge cubics="!141 94(;141,94 281,30 281,30q141 94 281 30);"/>
+                    <Edge cubics="!3941 1045(;4482,944 4997,784 5486,565q3941 1045Q4752 894q5486 565);"/>
+                    <Edge cubics="!2226 953(;2829,1114 3400,1145 3941,1045q2226 953Q3130 1195q3941 1045);"/>
+                    <Edge cubics="!141 94(141,94;928,505 1623,792 2226,953q141 94Q1322 711q2226 953);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

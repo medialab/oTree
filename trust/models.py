@@ -10,10 +10,11 @@ This is a standard 2-player trust game where the amount sent by player 1 gets
 tripled. The trust game was first proposed by
 <a href="http://econweb.ucsd.edu/~jandreon/Econ264/papers/Berg%20et%20al%20GEB%201995.pdf" target="_blank">
     Berg, Dickhaut, and McCabe (1995)
-</a>.
+</a>.<br>
+Trustlab's version uses the strategic method.
 """
 
-amount_allocated = get_language()[:2] == 'ko' and 12000 or 10
+amount_allocated = get_language() == 'ko' and 12000 or 10
 
 
 def get_amount_allocated(base_fr_money):
@@ -22,7 +23,7 @@ def get_amount_allocated(base_fr_money):
 
     Calculate different results depending on locale.
     """
-    if get_language()[:2] == 'ko':
+    if get_language() == 'ko':
         amount_allocated = 12000
         added = base_fr_money * 1200
     else:
@@ -52,13 +53,7 @@ class Subsession(BaseSubsession):
         """Set treatment of the game (see settings.py) as global var."""
         if 'treatment' in self.session.config:
             self.session.vars['treatment'] = self.session.config['treatment']
-        if (
-            'language_code' in self.session.config and
-            'lang' not in self.session.vars
-        ):
-            self.session.vars['lang'] = (
-                self.session.config['language_code'][:2]
-            )
+        self.session.vars['lang'] = get_language()
 
 
 class Group(BaseGroup):

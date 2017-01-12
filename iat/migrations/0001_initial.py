@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from django.db import migrations, models
-import jsonfield.fields
 import otree_save_the_change.mixins
 import otree.db.models
 
@@ -36,7 +35,7 @@ class Migration(migrations.Migration):
                 ('round_number', otree.db.models.PositiveIntegerField(null=True, db_index=True)),
                 ('id_in_group', otree.db.models.PositiveIntegerField(null=True, db_index=True)),
                 ('payoff', otree.db.models.CurrencyField(max_digits=12, null=True)),
-                ('iat_results', jsonfield.fields.JSONField()),
+                ('iat_results', otree.db.models.TextField()),
                 ('total_time', otree.db.models.CharField(max_length=500, null=True, blank=True)),
                 ('group', otree.db.models.ForeignKey(to='iat.Group', null=True)),
                 ('participant', otree.db.models.ForeignKey(related_name='iat_player', to='otree.Participant')),

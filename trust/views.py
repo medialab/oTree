@@ -13,24 +13,8 @@ def vars_for_all_templates(self):
     return {
         'instructions': 'trust/Instructions.html',
         'total_q': 1,
-        'lang': get_language()[:2] or self.session.vars['lang']
+        'lang': get_language() or self.session.vars['lang']
     }
-
-
-class ExperimentIntroduction(Page):
-    """
-    Page introducing the entire experiment.
-
-    Assumes this is the first test.
-    """
-
-    pass
-
-
-class GamesIntroduction(Page):
-    """Page introducing the games. Assumes this is the first test."""
-
-    pass
 
 
 class Introduction(Page):
@@ -282,8 +266,6 @@ class EndGame(Page):
 
 
 page_sequence = [
-    ExperimentIntroduction,
-    GamesIntroduction,
     Introduction,
     Simulation,
     Send,

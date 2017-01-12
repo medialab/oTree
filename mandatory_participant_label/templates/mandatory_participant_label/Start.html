@@ -1,0 +1,23 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+
+{% block content %}
+    <br>
+    <div class="alert alert-danger hide" role="alert"></div>
+
+    <script type="text/javascript">
+      $(function () {
+        var participantLabel = '{{participant_label}}'.trim();
+
+        if (!participantLabel || participantLabel === '') {
+          $('.alert')
+            .html('Participant label is missing. Aborting...')
+            .removeClass('hide');
+          return;
+        }
+
+        $('#form').submit();
+      });
+    </script>
+
+{% endblock %}

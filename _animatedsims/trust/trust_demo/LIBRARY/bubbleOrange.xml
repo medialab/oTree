@@ -1,0 +1,79 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleOrange" itemID="56cf14e5-000005cf" lastModified="1456415527">
+  <persistentData>
+    <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
+  </persistentData>
+  <timeline>
+    <DOMTimeline name="bubbleOrange">
+      <layers>
+        <DOMLayer name="Calque 2" color="#9933CC" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMDynamicText name="label" fontRenderingMode="standard" width="57.1" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline no wrap">
+                  <matrix>
+                    <Matrix tx="10" ty="31.8"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>10</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="28.45" size="32" bitmapSize="640" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                    <DOMTextRun>
+                      <characters>€</characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="37.7" size="32" bitmapSize="640" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                    <DOMTextRun>
+                      <characters></characters>
+                      <textAttrs>
+                        <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="28.45" size="32" bitmapSize="640" face="GothamMedium" fillColor="#FFFFFF"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMDynamicText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Calque 1" color="#4F80FF">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#FF6600"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!1534 767[1534 1085 1309 1309!1309 1309[#4D0.EC #569.6B 1146 1436!1146 1436|1146 1675!1146 1675|917.5 1520.5!917.5 1520.5[#34D.27 1534 767 1534!767 1534[449 1534 224 1309!224 1309[0 1085 0 767!0 767[0 449 224 224!224 224[449 0 767 0!767
+ 0[1085 0 1309 224!1309 224[1534 449 1534 767"/>
+                    <Edge cubics="!0 767(0,767;0,555 75,374 224,224q0 767Q0 449q224 224)224,224;"/>
+                    <Edge cubics="!224 224(;374,75 555,0 767,0q224 224Q449 0q767 0);"/>
+                    <Edge cubics="!767 0(;979,0 1160,75 1309,224q767 0Q1085 0q1309 224)1309,224;"/>
+                    <Edge cubics="!1309 1309(;1259,1359 1205,1401 1146,1436q1309 1309Q1233 1385q1146 1436);"/>
+                    <Edge cubics="!1146 1436(;1077,1477 1001,1505 918,1521q1146 1436Q1040 1498q918 1521)918,1521;"/>
+                    <Edge cubics="!918 1521(918,1521;871,1529 820,1534 767,1534q918 1521Q845 1534q767 1534)767,1534;"/>
+                    <Edge cubics="!767 1534(;555,1534 374,1459 224,1309q767 1534Q449 1534q224 1309);"/>
+                    <Edge cubics="!224 1309(;75,1160 0,979 0,767q224 1309Q0 1085q0 767);"/>
+                    <Edge cubics="!1534 767(;1534,979 1459,1160 1309,1309q1534 767Q1534 1085q1309 1309);"/>
+                    <Edge cubics="!1309 224(1309,224;1459,374 1534,555 1534,767q1309 224Q1534 449q1534 767);"/>
+                    <Edge cubics="!753 1215(753,1215;753,1215 1146,1215 1146,1215q753 1215 1146 1215);"/>
+                    <Edge cubics="!1146 1675(;1146,1675 918,1521 918,1521q1146 1675 918 1521);"/>
+                    <Edge cubics="!918 1521(;918,1521 753,1409 753,1409q918 1521 753 1409);"/>
+                    <Edge cubics="!1146 1215(;1146,1215 1146,1436 1146,1436q1146 1215 1146 1436);"/>
+                    <Edge cubics="!1146 1436(;1146,1436 1146,1675 1146,1675q1146 1436 1146 1675);"/>
+                    <Edge cubics="!753 1409(;753,1409 753,1215 753,1215q753 1409 753 1215);"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>
