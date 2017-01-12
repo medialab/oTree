@@ -70,3 +70,7 @@ input {
 .btn.btn-primary {
     margin-bottom: 1em;
 }
+
+.page-header {
+    display: none;
+}
