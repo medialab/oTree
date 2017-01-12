@@ -77,7 +77,7 @@ elif LANGUAGE_CODE == 'ko':
 USE_POINTS = False
 
 # if an app is included in SESSION_CONFIGS, you don't need to list it here
-INSTALLED_APPS = ['otree', 'trustlab']
+INSTALLED_APPS = ['otree', 'django_countries', 'trustlab']
 
 # SENTRY_DSN = ''
 
