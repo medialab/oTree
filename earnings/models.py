@@ -147,7 +147,7 @@ class Group(BaseGroup):
                     with_role = 'A'
                     given_by_player_a = p.sent_amount
                     given_by_player_b, matched_id = self.strat_trust_a(
-                        p, given_by_player_a
+                        p, float(given_by_player_a)
                     )
                     payoff = (
                         base_money - given_by_player_a + given_by_player_b
@@ -161,7 +161,7 @@ class Group(BaseGroup):
                     with_role = 'B'
                     given_by_player_a, matched_id = self.strat_trust_b(p)
                     given_by_player_b = self.trust_sent_back(
-                        p, given_by_player_a
+                        p, float(given_by_player_a)
                     )
                     payoff = base_money + (
                         given_by_player_a * TrustConsts.multiplication_factor

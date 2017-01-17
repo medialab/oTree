@@ -1,3 +1,7 @@
+.page-header {
+    display: none !important;
+}
+
 .box {
 	width:100%;
 	height:100%;
@@ -18,8 +22,6 @@
 .well {
     display: none;
 }
-
-.page-header{display: none}
 
 input {
     margin-bottom: 2em;
@@ -69,8 +71,4 @@ input {
 
 .btn.btn-primary {
     margin-bottom: 1em;
-}
-
-.page-header {
-    display: none;
 }

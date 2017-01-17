@@ -10,7 +10,7 @@ label {
 }
 </style>
 
-<br/><br/><br/><br/><br/>
+<br/>
 <h3>{% trans "Thank you very much for your participation in this study!" %}</h3>
 <p>{% blocktrans %}After being matched with the other players, your earnings have been calculated as {{payoff}}.{% endblocktrans %}</p>
 
@@ -79,8 +79,9 @@ label {
 
 <script type="text/javascript">
   $(function() {
-    var payoff = +{{float_payoff}}
-    $('input[name="donation"]').attr('max', payoff);
+    var payoff = +'{{float_payoff}}'.replace(',', '.');
+    var $donationInput = $('input[name="donation"]');
+    $donationInput.attr('max', payoff);
 
     function submit(e) {
       if (window.event) {
@@ -90,46 +91,20 @@ label {
 
       var donation = $('input[name="donation"]').val();
       donation = donation.trim() === '' ? 0 : +donation;
-      donation = donation > payoff ? payoff : donation;
+
+      if (donation > payoff) {
+        $donationInput.parent().parent().addClass('has-error');
+        return;
+      }
+
+      $donationInput.parent().parent().removeClass('has-error');
 
       $('form').off('submit', submit);
 
-      $('form').submit()
-
-      /*var lang = extractLang('{{lang}}');
-      var fragment, url;
-      var csrf = $('input[name="csrfmiddlewaretoken"]').val();
-      var postTo = $('input[name="origin_url"]').val();
-
-      // Capture donation. Ensure amount cannot surpass final payoff.
-      var donation = $('input[name="donation"]').val();
-      donation = donation.trim() === '' ? 0 : +donation;
-      donation = donation > payoff ? payoff : donation;
-
-      if (lang === 'ko') {
-        url = '{{redirect}}';
-      } else {
-        fragment = '{{label}}'.split('|').filter(function (f) {
-          if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
-            return f;
-          }
-        }).join('&');
-
-        url = '{{redirect}}' + '?' + fragment + '&lang=' + lang;
-      }
-
-      // Return fragment of locale from given locale.
-      function extractLang(lang) {
-        return lang.length > 2 ? lang.slice(0, 2) : lang;
-      }
-
-      // Send payload, then redirect.
-      $.post(postTo, {csrfmiddlewaretoken: csrf, origin_url: postTo, donation: donation,}, function (data) {
-        window.location.href = url;
-      });*/
+      $('form').submit();
     }
 
-    $('form').on('submit', submit);
+    $('.btn').on('click', submit);
   });
 </script>
 
