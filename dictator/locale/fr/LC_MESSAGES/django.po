@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-09-30 16:02+0200\n"
-"PO-Revision-Date: 2016-09-20 13:06+0200\n"
+"PO-Revision-Date: 2017-01-17 11:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: templates/dictator/EndGame.html:9
 msgid "Thank once again!"
@@ -24,8 +24,8 @@ msgstr "Merci encore !"
 #: templates/dictator/EndGame.html:10
 msgid ""
 "You have completed all tasks in this section and we have recorded all your "
-"choices. Let's go to the second section of the study, where you will be "
-"asked to sort a number of words and be timed while doing so."
+"choices. Let's go to the second section of the study, where you will be asked to "
+"sort a number of words and be timed while doing so."
 msgstr ""
 "Vous avez terminé toutes les tâches de cette section. Vos choix ont été "
 "enregistrés. Entamons maintenant la deuxième section de cette étude, durant "
@@ -42,16 +42,16 @@ msgstr "Tâche 3 : Introduction"
 
 #: templates/dictator/Instructions.html:10
 msgid ""
-"This last task involves <strong>two participants</strong> – Participant A "
-"and Participant B."
+"This last task involves <strong>two participants</strong> – Participant A and "
+"Participant B."
 msgstr ""
-"Cette dernière tâche implique <strong>deux participants</strong> – "
-"Participant A et Participant B."
+"Cette dernière tâche implique <strong>deux participants</strong> – Participant A "
+"et Participant B."
 
 #: templates/dictator/Instructions.html:11
 msgid ""
-"Remember, the other participant is different from the ones you interacted "
-"with in the previous two tasks."
+"Remember, the other participant is different from the ones you interacted with in "
+"the previous two tasks."
 msgstr ""
 "Rappel : l’autre participant est différent de ceux avec lesquels vous avez "
 "interagi dans les deux tâches précédentes."
@@ -70,37 +70,34 @@ msgid "Participant B does not receive any money — he or she has 0."
 msgstr "Le Participant B ne reçoit rien - il/elle dispose de 0."
 
 #: templates/dictator/Instructions.html:16
-#, fuzzy, python-format
-#| msgid ""
-#| "Participant A must now decide if he or she wants to transfer any of his "
-#| "or her %(amount)s to Participant B."
+#, python-format
 msgid ""
-"Participant A must now decide if he or she wants to transfer any of his or "
-"her %(amount)s to Participant B."
+"Participant A must now decide if he or she wants to transfer any of his or her "
+"%(amount)s to Participant B."
 msgstr ""
-"Le Participant A doit maintenant décider si il/elle souhaite transférer 0, "
-"tout ou une partie de ses 10 euros au Participant B."
+"Le Participant A doit maintenant décider si il/elle souhaite transférer 0, tout "
+"ou une partie de ses %(amount)s au Participant B."
 
 #: templates/dictator/Instructions.html:17
 msgid ""
-"This transfer is not multiplied by any number and Participant B cannot "
-"transfer any amount back to Participant A."
+"This transfer is not multiplied by any number and Participant B cannot transfer "
+"any amount back to Participant A."
 msgstr ""
 "Le transfert n’est pas multiplié, et le Participant B ne peut pas transférer "
 "d’argent au Participant A."
 
 #: templates/dictator/Instructions.html:19
 msgid ""
-"Your role (Participant A or Participant B) is revealed to you at the "
-"beginning of the task."
+"Your role (Participant A or Participant B) is revealed to you at the beginning of "
+"the task."
 msgstr ""
 "Votre rôle (Participant A ou Participant B) vous sera précisé au début de la "
 "tâche."
 
 #: templates/dictator/Instructions.html:20
 msgid ""
-"Because this task is simple, there will be no simulator to test out "
-"different choices."
+"Because this task is simple, there will be no simulator to test out different "
+"choices."
 msgstr ""
 "Comme cette tâche est simple, il n'y aura pas de simulation pour tester "
 "différents choix."
@@ -111,18 +108,17 @@ msgstr "Tâche 3 : Décision réelle"
 
 #: templates/dictator/Offer.html:7
 msgid ""
-"This is the real third task. Once you have made your decision and clicked "
-"the “Next” button, you cannot return to this screen."
+"This is the real third task. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
 msgstr ""
-"Il s'agit de la véritable tâche 3. Une fois que vous avez pris votre "
-"décision et cliqué sur le bouton « Suivant », vous ne pouvez pas revenir à "
-"cet écran."
+"Il s'agit de la véritable tâche 3. Une fois que vous avez pris votre décision et "
+"cliqué sur le bouton « Suivant », vous ne pouvez pas revenir à cet écran."
 
 #: templates/dictator/Offer.html:8
 msgid "You were selected to be in the role of <strong>Participant A</strong>."
 msgstr ""
-"Vous avez été sélectionné(e) pour être dans le rôle du <strong>Participant "
-"A</strong>."
+"Vous avez été sélectionné(e) pour être dans le rôle du <strong>Participant A</"
+"strong>."
 
 #: templates/dictator/Offer.html:9
 #, python-format
@@ -143,14 +139,12 @@ msgid ""
 "Participant A, to understand the task better."
 msgstr ""
 "Si vous le souhaitez, vous pouvez utiliser cet écran de test pour jouer avec "
-"différents choix possibles du Participant A, afin de mieux comprendre la "
-"tâche."
+"différents choix possibles du Participant A, afin de mieux comprendre la tâche."
 
 #: templates/dictator/Simulation.html:9
 msgid "Whenever you are ready to proceed to the real task, click next."
 msgstr ""
-"Dès que vous êtes prêt(e) à commencer la tâche réelle, cliquez sur \"suivant"
-"\"."
+"Dès que vous êtes prêt(e) à commencer la tâche réelle, cliquez sur \"suivant\"."
 
 #: templates/dictator/Simulation.html:45
 msgid "€"
