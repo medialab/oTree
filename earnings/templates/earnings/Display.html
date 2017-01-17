@@ -85,7 +85,7 @@ label {
 
     function submit(e) {
       if (window.event) {
-          window.event.returnValue = false;
+        window.event.returnValue = false;
       }
       e.preventDefault();
 
@@ -100,7 +100,6 @@ label {
       $donationInput.parent().parent().removeClass('has-error');
 
       $('form').off('submit', submit);
-
       $('form').submit();
     }
 
