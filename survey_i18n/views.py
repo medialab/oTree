@@ -30,7 +30,7 @@ class Survey02(Page):
 
     form_model = models.Player
     form_fields = [
-        '_02_treats_you_unfairly',
+        # '_02_treats_you_unfairly',
         '_02_treats_others_unfairly',
         '_02_give_to_good_causes'
     ]
@@ -83,8 +83,7 @@ class Survey03(Page):
 
     form_model = models.Player
     form_fields = [
-        '_03_does_me_a_favor',
-        '_03_treated_injustly',
+        '_03_does_me_a_favor'
     ]
 
 
@@ -292,7 +291,6 @@ class Survey10(Page):
 
     form_model = models.Player
     form_fields = [
-        '_10_main_ways_income',
         '_10_household_income'
     ]
 
@@ -438,9 +436,9 @@ class EndGame(Page):
 page_sequence = [
     Survey01,
     Survey02,
-    Survey02A,
+    # Survey02A,
     Survey03,
-    Survey04,
+    # Survey04,
     Survey04A,
     Survey04B,
     Survey04C,

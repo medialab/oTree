@@ -44,9 +44,7 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 126,
         'app_sequence': [
-            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
-            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings', 'redirect_completes'
+            'survey_i18n'
         ],
         'treatment': 'A1',
         'payoff_group': 0,
