@@ -2,6 +2,10 @@
     display: none !important;
 }
 
+.container {
+    padding-top: 40px;
+}
+
 .box {
 	width:100%;
 	height:100%;
