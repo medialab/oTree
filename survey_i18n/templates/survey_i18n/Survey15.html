@@ -1,22 +1,36 @@
 {% extends "global/Base.html" %}
 {% load otree_tags %}
+{% load static %}
 {% load i18n %}
 
 {% block content %}
 
   <style>
-  thead tr th {
-    text-align: center;
-  }
+    thead tr th {
+      text-align: center;
+    }
 
-  th div {
-    font-weight: normal;
-  }
+    th div, th em {
+      font-weight: normal;
+    }
 
-  input[type=number].form-control {
-    width: 100%;
-    text-align: center;
-  }
+    th em {
+      font-size: 85%;
+    }
+
+    input[type=number].form-control {
+      width: 100%;
+      text-align: center;
+    }
+
+    #total {
+      font-weight: bold;
+      color: red;
+    }
+
+    #total.valid {
+      color: green;
+    }
   </style>
 
   <p>{% trans "Now we turn to government spending. The following is a list of key categories of government expenditures." %}
@@ -65,7 +79,8 @@
                 type="number" 
                 class="form-control" 
                 min="0" 
-                max="100">
+                max="100"
+                placeholder="0">
             </div>
           </td>
         </tr>
@@ -95,7 +110,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                value="0"
+                placeholder="0"
                 required>
             </div>
           </td>
@@ -126,7 +141,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                value="0"
+                placeholder="0"
                 required>
             </div>
           </td>
@@ -157,7 +172,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                value="0"
+                placeholder="0"
                 required>
             </div>
           </td>
@@ -188,7 +203,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                value="0"
+                placeholder="0"
                 required>
             </div>
           </td>
@@ -219,7 +234,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                value="0"
+                placeholder="0"
                 required>
             </div>
           </td>
@@ -248,7 +263,7 @@
                 min="0" 
                 max="100"
                 value="0"
-                required>
+                disabled>
             </div>
           </td>
         </tr>
@@ -256,6 +271,47 @@
     </table>
   </div>
 
-  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+  <p><button class="btn btn-primary pull-right" disabled>{% trans "Next" %}</button></p>
+  
+  <script>
+    $(function () {
+      var $exp1 = $('#id_expenditure_general_public_services_and_public_debt'),
+          $exp2 = $('#id_expenditure_defense_and_public_order'),
+          $exp3 = $('#id_expenditure_infrastucture_and_economic_affair'),
+          $exp4 = $('#id_expenditure_health_and_environmental_protection'),
+          $exp5 = $('#id_expenditure_education_and_culture'),
+          $exp6 = $('#id_expenditure_social_protection_and_housing'),
+          $total = $('#total'),
+          $btn = $('.btn');
+
+      var MAX = 100;
+
+      var $inputs = [$exp1, $exp2, $exp3, $exp4, $exp5, $exp6];
+
+      $inputs.forEach(function ($input) {
+        $input.on('keyup', update);
+      });
+
+      function update() {
+        var total = $inputs
+          .map(function ($input) {
+            return +$input.val();
+          })
+          .reduce(function (prev, curr) {
+            return prev + curr;
+          });
+
+        $total.val(total);
+
+        if (total === MAX) {
+          $total.addClass('valid');
+          $btn.removeAttr('disabled');
+        } else {
+          $total.removeClass('valid');
+          $btn.attr('disabled', true);
+        }
+      }
+    });
+  </script>
 
 {% endblock %}

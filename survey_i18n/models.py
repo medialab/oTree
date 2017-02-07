@@ -1106,43 +1106,31 @@ class Player(BasePlayer):
     expenditure_general_public_services_and_public_debt = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     expenditure_defense_and_public_order = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     expenditure_infrastucture_and_economic_affair = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     expenditure_health_and_environmental_protection = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     expenditure_education_and_culture = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     expenditure_social_protection_and_housing = models.CharField(
         initial=None,
         widget=widgets.NumberInput(),
-        min=0,
-        max=100
     )
 
     resources_top_1_percent = models.CharField(
