@@ -18,7 +18,7 @@ class Survey01(Page):
     form_model = models.Player
     form_fields = [
         'overall_how_satisfied_are_you_with_life',
-        'would_you_say_that_most_people_can_b_trusted'
+        'would_you_say_that_most_people_can_be_trusted'
     ]
 
 
@@ -104,7 +104,7 @@ class Survey09(Page):
 class Survey10(Page):
     form_model = models.Player
     form_fields = [
-        'satisfied_with_the_educatio_system',
+        'satisfied_with_the_education_system',
         'satisfied_with_the_health_care_system',
         'satisfied_with_public_transport',
         'satisfied_with_child_care_services',
@@ -187,14 +187,14 @@ class Survey18(Page):
     form_fields = [
         'household_expectations_for_the_12_months_to_come',
         'likely_to_still_have_a_job_in_6_months',
-        'likel_to_find_a_job_with_similar_salary_in_6_months'
+        'likely_to_find_a_job_with_similar_salary_in_6_months'
     ]
 
 
 class Survey19(Page):
     form_model = models.Player
     form_fields = [
-        'government_shoul_encourage_or_discourage_international_trade'
+        'government_should_encourage_or_discourage_international_trade'
     ]
 
 
@@ -230,7 +230,7 @@ class Survey23(Page):
     form_model = models.Player
     form_fields = [
         'statement_agreement_immigrants_are_not_integrated',
-        'statement_agreement_cculture_is_undermined_by_immigrants'
+        'statement_agreement_culture_is_undermined_by_immigrants'
     ]
 
 
@@ -318,6 +318,7 @@ class Survey34(Page):
     ]
 
 
+#TODO: Get country quintiles for Slovenia
 class Survey35(Page):
     form_model = models.Player
     form_fields = [
@@ -344,7 +345,7 @@ class Survey37(Page):
 class Survey38(Page):
     form_model = models.Player
     form_fields = [
-        'which_device_did_you_take_the_study_on',
+        'which_device_did_you_take_this_study_on',
         'open_comment'
     ]
 
