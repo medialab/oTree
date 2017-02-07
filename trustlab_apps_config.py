@@ -54,8 +54,7 @@ SESSION_CONFIGS = [
 
     {
         'name': 'trustlab_2016_A1_ko_prod',
-        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1 | \
-Payoff Group 2 (production)',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A1 | Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
             'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
@@ -69,8 +68,7 @@ Payoff Group 2 (production)',
     },
     {
         'name': 'trustlab_2016_A2_ko_prod',
-        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2 | \
-Payoff Group 2 (production)',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path A2 | Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
             'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
@@ -84,8 +82,7 @@ Payoff Group 2 (production)',
     },
     {
         'name': 'trustlab_2016_B1_ko_prod',
-        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1 | \
-Payoff Group 2 (production)',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B1 | Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
             'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
@@ -99,8 +96,7 @@ Payoff Group 2 (production)',
     },
     {
         'name': 'trustlab_2016_B2_ko_prod',
-        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2 | \
-Payoff Group 2 (production)',
+        'display_name': 'TRUSTLAB | Sept 2016 | KO | path B2 | Payoff Group 2 (production)',
         'num_demo_participants': 126,
         'app_sequence': [
             'mandatory_participant_label', 'timer_start', 'introduction', 'trust',

@@ -1,0 +1,19 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  {% formfield player.people_are_looking_for_themselves_or_try_to_help_others %}
+  {% formfield player.people_would_take_advantage_of_you_or_be_fair %}
+
+  <hr>
+
+  {% trans "Can you tell us whether you think the following action is always wrong, never wrong, or something in between:" %}
+
+  {% formfield player.receiving_government_benefits_to_which_you_are_not_entitled %}
+  {% formfield player.cheating_on_taxes_if_you_have_a_chance %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

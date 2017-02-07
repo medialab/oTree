@@ -1,0 +1,15 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <p>{% trans "How well does the following statement describe you as a person?" %}</p>
+
+  {% formfield player.i_am_good_at_math %}
+  {% formfield player.lost_your_wallet %}
+  {% formfield player.did_you_vote %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

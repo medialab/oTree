@@ -43,7 +43,7 @@ class Player(BasePlayer):
 
     overall_how_satisfied_are_you_with_life = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Overall, how satisfied are you with life as a whole these days?"),
         choices=(
             ('0', _(u"0 - Not at all satisfied")),
@@ -63,7 +63,7 @@ class Player(BasePlayer):
 
     would_you_say_that_most_people_can_be_trusted = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Generally speaking, would you say that most people can be trusted, or that you can’t be too careful in dealing with people?"),
         choices=(
             ('0', _(u"0 - Not at all satisfied")),
@@ -83,7 +83,7 @@ class Player(BasePlayer):
 
     to_punish_someone_who_treats_others_unfairly = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How willing are you to punish someone who treats others unfairly, even if there may be costs for you?"),
         choices=(
             ('0', _(u"0 - Completely unwilling to do so")),
@@ -103,7 +103,7 @@ class Player(BasePlayer):
     
     to_give_to_good_causes = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How willing are you to give to good causes without expecting anything in return?"),
         choices=(
             ('0', _(u"0 - Completely unwilling to do so")),
@@ -123,7 +123,7 @@ class Player(BasePlayer):
 
     fully_prepared_or_avoid_to_take_risks = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How do you see yourself: are you generally a person who is fully prepared to take risks or do you try to avoid taking risks?"),
         choices=(
             ('0', _(u"0 - Generally unwilling to take risks")),
@@ -143,7 +143,7 @@ class Player(BasePlayer):
 
     when_someone_does_me_a_favor = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"When someone does me a favour I am willing to return it. How well does this statement describe you as a person?"),
         choices=(
             ('0', _(u"0 - Does not describe me at all")),
@@ -163,7 +163,7 @@ class Player(BasePlayer):
 
     people_are_looking_for_themselves_or_try_to_help_others = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Would you say that most of the time people are only looking out for themselves or that they mostly try to help each other?"),
         choices=(
             ('0', _(u"0 - People are only looking out for themselves")),
@@ -183,7 +183,7 @@ class Player(BasePlayer):
 
     people_would_take_advantage_of_you_or_be_fair = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair?"),
         choices=(
             ('0', _(u"0 - Most people would try to take advantage of me")),
@@ -203,7 +203,7 @@ class Player(BasePlayer):
 
     receiving_government_benefits_to_which_you_are_not_entitled = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Receiving government benefits to which you are not entitled"),
         choices=(
             ('0', _(u"0 - This action is never wrong")),
@@ -223,7 +223,7 @@ class Player(BasePlayer):
 
     cheating_on_taxes_if_you_have_a_chance = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Cheating on taxes if you have a chance"),
         choices=(
             ('0', _(u"0 - This action is never wrong")),
@@ -243,7 +243,7 @@ class Player(BasePlayer):
 
     cheating_on_taxes_if_you_have_a_chance = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Cheating on taxes if you have a chance"),
         choices=(
             ('0', _(u"0 - This action is never wrong")),
@@ -263,7 +263,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_your_family = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Your family"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -283,7 +283,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_in_your_neighborhood = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People in your neighborhood"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -303,7 +303,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_you_know_personally = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People you know personally"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -323,7 +323,7 @@ class Player(BasePlayer):
     
     how_much_do_you_trust_people_you_meet_for_the_first_time = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People you meet for the first time"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -343,7 +343,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_of_another_religion = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People of another religion"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -363,7 +363,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_of_another_nationality = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People of another nationality"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -383,7 +383,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_who_immigrated = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People who immigrated to [country]"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -403,7 +403,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_people_who_seek_refuge = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People who come to [country] to seek refuge"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -423,7 +423,7 @@ class Player(BasePlayer):
 
     i_am_good_at_math = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"I am good at math"),
         choices=(
             ('0', _(u"0 - Does not describe me at all")),
@@ -443,7 +443,7 @@ class Player(BasePlayer):
 
     lost_your_wallet = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you lost a wallet or a purse that contained items of great value to you, and it was found by a stranger, do you think it would be returned with its contents, or not?"),
         choices=(
             ('Yes', _(u"Yes")),
@@ -454,7 +454,7 @@ class Player(BasePlayer):
 
     did_you_vote = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Did you vote in the last general elections?"),
         choices=(
             ('Yes', _(u"Yes")),
@@ -465,7 +465,7 @@ class Player(BasePlayer):
 
     how_much_do_you_trust_most_people_in_your_country = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"And now a general question about trust. On a scale from zero to ten, where zero is not at all and ten is completely, in general how much do you trust most people in your country?"),
         choices=(
             ('0', _(u"0 - Not at all")),
@@ -485,7 +485,7 @@ class Player(BasePlayer):
 
     trust_the_government = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The government"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -505,7 +505,7 @@ class Player(BasePlayer):
 
     trust_the_parliament = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The parliament"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -525,7 +525,7 @@ class Player(BasePlayer):
     
     trust_the_judicial_system = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The judicial system"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -545,7 +545,7 @@ class Player(BasePlayer):
 
     trust_the_police = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The police"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -565,7 +565,7 @@ class Player(BasePlayer):
 
     trust_the_media = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The media"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -585,7 +585,7 @@ class Player(BasePlayer):
 
     trust_financial_institutions = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Financial institutions (e.g. banks)"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
@@ -605,7 +605,7 @@ class Player(BasePlayer):
 
     public_institutions_deliver_service_in_the_best_way = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public institutions deliver public services in the best possible way"),
         choices=(
             ('0', _(u"0 - I don’t agree at all")),
@@ -625,7 +625,7 @@ class Player(BasePlayer):
 
     public_institutions_pursue_long_term_objectives = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public institutions pursue long term objectives"),
         choices=(
             ('0', _(u"0 - I don’t agree at all")),
@@ -645,7 +645,7 @@ class Player(BasePlayer):
 
     people_in_public_institutions_are_ethical_and_not_corrupt = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"People working in public institutions are ethical and not corrupt"),
         choices=(
             ('0', _(u"0 - I don’t agree at all")),
@@ -665,7 +665,7 @@ class Player(BasePlayer):
 
     public_institutions_are_transparent = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public institutions are transparent"),
         choices=(
             ('0', _(u"0 - I don’t agree at all")),
@@ -685,7 +685,7 @@ class Player(BasePlayer):
 
     public_institutions_treat_all_citizens_fairly = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public institutions treat all citizens fairly regardless of their gender, race, age or economic condition"),
         choices=(
             ('0', _(u"0 - I don’t agree at all")),
@@ -705,7 +705,7 @@ class Player(BasePlayer):
 
     satisfied_with_the_education_system = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"the Education system"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -725,7 +725,7 @@ class Player(BasePlayer):
 
     satisfied_with_the_health_care_system = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"the Health care system"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -745,7 +745,7 @@ class Player(BasePlayer):
     
     satisfied_with_public_transport = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public Transport"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -765,7 +765,7 @@ class Player(BasePlayer):
 
     satisfied_with_child_care_services = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Child care services"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -785,7 +785,7 @@ class Player(BasePlayer):
 
     satisfied_with_welfare_benefits = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Welfare benefits (unemployment benefits, disability benefits, income support)"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -805,7 +805,7 @@ class Player(BasePlayer):
 
     satisfied_with_public_housing = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Public housing"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -825,7 +825,7 @@ class Player(BasePlayer):
 
     satisfied_with_security_and_crime_prevention = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Security and crime prevention (police)"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -845,7 +845,7 @@ class Player(BasePlayer):
 
     satisfied_with_environmental_issues = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Environmental services (air and water quality, parks and green spaces)"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -865,7 +865,7 @@ class Player(BasePlayer):
 
     satisfied_with_cultural_facilities = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Cultural facilities (theaters, cinemas, libraries, museums, public social spaces)"),
         choices=(
             ('0', _(u"0 -  Not at all satisfied")),
@@ -885,7 +885,7 @@ class Player(BasePlayer):
 
     complaint_about_quality_of_public_service_likely_resolved = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you complain about bad quality of a public service, how likely is that the problem will be easily resolved?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -905,7 +905,7 @@ class Player(BasePlayer):
 
     technology_speed_up_likely_to_be_adopted = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a technology could speed up administrative procedures, how likely is it that a government agency will quickly adopt the new technology?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -925,7 +925,7 @@ class Player(BasePlayer):
 
     information_about_administrative_producedure_easy_to_find = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you need information about an administrative procedure, do you think it will be easy to find?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -945,7 +945,7 @@ class Player(BasePlayer):
 
     decision_affecting_community_likely_to_be_consulted_upon = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a decision affecting your community is to be taken by the local or regional government, how likely is it that you would be consulted upon?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -965,7 +965,7 @@ class Player(BasePlayer):
 
     start_a_business_conditions_stability = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you start a business today, do you think that the conditions under which you operate (taxes, regulations, etc.) will remain stable enough so that unexpected changes do not threaten your business?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -985,7 +985,7 @@ class Player(BasePlayer):
 
     natural_disaster_shelter_and_clothing_availability = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a natural disaster occurs do you think that the provision by government of adequate food, shelter and clothing will be available to people who are affected?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -1005,7 +1005,7 @@ class Player(BasePlayer):
 
     guilty_high_ranking_gov_employee_likely_prosecuted = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a high ranking government employee was guilty of misusing taxpayers’ money, do you think that he/she would be prosecuted?"),
         choices=(
             ('0', _(u"0 -  Very unlikely")),
@@ -1025,7 +1025,7 @@ class Player(BasePlayer):
 
     accept_or_refuse_administrative_procedures_speed_up_bribe = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If money is offered by citizens to government employees in order to speed up administrative procedures, do you think that they will accept or refuse the bribe?"),
         choices=(
             ('0', _(u"0 -  Most likely to accept the bribe")),
@@ -1045,7 +1045,7 @@ class Player(BasePlayer):
 
     high_ranking_gov_employee_accepts_well_paid_private_sector_job = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a high level politician would be offered a well-paid job in the private sector in exchange for political influence, do you think that he/she will accept reject the job?"),
         choices=(
             ('0', _(u"0 -  Most likely to accept the job")),
@@ -1065,7 +1065,7 @@ class Player(BasePlayer):
 
     accept_or_refuse_public_procurement_tender_allocation_bribe = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a parliamentarian could influence the allocation of a public procurement tender and receive a bribe in return, do you think that he/she will accept or reject the bribe?"),
         choices=(
             ('0', _(u"0 - Most likely to accept the bribe")),
@@ -1085,7 +1085,7 @@ class Player(BasePlayer):
 
     social_minority_citizen_likely_to_be_treated_equally = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a citizen belongs to a social minority (e.g. sexual, racial/ethnic and/or based on nationality), how likely is it that he or she will be treated equally by a government agency?"),
         choices=(
             ('0', _(u"0 - Very unlikely")),
@@ -1105,76 +1105,76 @@ class Player(BasePlayer):
 
     expenditure_general_public_services_and_public_debt = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     expenditure_defense_and_public_order = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     expenditure_infrastucture_and_economic_affair = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     expenditure_health_and_environmental_protection = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     expenditure_education_and_culture = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     expenditure_social_protection_and_housing = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     resources_top_1_percent = models.CharField(
         initial=None,
-        widgets=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
+        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
     )
 
     resources_next_9_percent = models.CharField(
         initial=None,
-        widgets=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
+        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
     )
 
     resources_next_40_percent = models.CharField(
         initial=None,
-        widgets=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
+        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
     )
 
     resources_bottom_50_percent = models.CharField(
         initial=None,
-        widgets=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
+        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
     )
 
     revenue_raised = models.CharField(
         initial=0,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100
     )
 
     how_many_children_part_of_the_richest_segment = models.CharField(
         initial=None,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100,
         verbose_name=_(u"Consider 100 children growing up in the poorest segment of society. How many children do you believe are able to become part of the richest segment of society when they are older?")
@@ -1182,7 +1182,7 @@ class Player(BasePlayer):
 
     not_much_or_plenty_of_opportunity = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Some people say there is not much opportunity to get ahead today for the average person. Others say anyone who works hard can climb up the ladder. Which one comes closer to the way you feel about this?"),
         choices=(
             ('0', _(u"0 - There is not much opportunity")),
@@ -1202,7 +1202,7 @@ class Player(BasePlayer):
 
     household_expectations_for_the_12_months_to_come = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"When it comes to the financial situation of your household, what are your expectations for the 12 months to come, will the next 12 months be better, worse, or the same?"),
         choices=(
             ('0', _(u"0 - Worse")),
@@ -1222,7 +1222,7 @@ class Player(BasePlayer):
 
     likely_to_still_have_a_job_in_6_months = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How likely do you think it is that you will still have a job in 6 months (if you have one now)?"),
         choices=(
             ('0', _(u"0 - Very unlikely")),
@@ -1242,7 +1242,7 @@ class Player(BasePlayer):
 
     likely_to_find_a_job_with_similar_salary_in_6_months = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you were to lose your job, how likely is it that you would find a job with a similar salary within 6 months?"),
         choices=(
             ('0', _(u"0 - Very unlikely")),
@@ -1262,7 +1262,7 @@ class Player(BasePlayer):
 
     government_should_encourage_or_discourage_international_trade = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"As you may know, international trade has increased substantially in recent years. Do you think government should try to encourage international trade or to discourage international trade?"),
         choices=(
             ('0', _(u"0 - Fully discourage international trade")),
@@ -1282,7 +1282,7 @@ class Player(BasePlayer):
 
     how_much_info_from_tv = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Television"),
         choices=(
             ('a lot', _(u"A lot")),
@@ -1294,7 +1294,7 @@ class Player(BasePlayer):
 
     how_much_info_from_internet = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"the Internet"),
         choices=(
             ('a lot', _(u"A lot")),
@@ -1306,7 +1306,7 @@ class Player(BasePlayer):
 
     how_much_info_from_family_friends_coworkers = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Family members, friends, co-workers"),
         choices=(
             ('a lot', _(u"A lot")),
@@ -1318,7 +1318,7 @@ class Player(BasePlayer):
 
     how_much_info_from_social_networks = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Social networks (twitter, facebook, etc…)"),
         choices=(
             ('a lot', _(u"A lot")),
@@ -1330,7 +1330,7 @@ class Player(BasePlayer):
 
     how_much_info_from_print_media = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Print media (newspapers, magazines)"),
         choices=(
             ('a lot', _(u"A lot")),
@@ -1343,7 +1343,7 @@ class Player(BasePlayer):
     # TODO: Check out the weird scale???
     most_likely_threatening_privacy_hackers = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Independent hackers"),
         choices=(
             ('0', _(u"0 - No threat")),
@@ -1363,7 +1363,7 @@ class Player(BasePlayer):
 
     most_likely_threatening_privacy_domestic_gov_agencies = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Domestic government agencies"),
         choices=(
             ('0', _(u"0 - No threat")),
@@ -1383,7 +1383,7 @@ class Player(BasePlayer):
 
     most_likely_threatening_privacy_foreign_gov_agencies = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Foreign government agencies"),
         choices=(
             ('0', _(u"0 - No threat")),
@@ -1403,7 +1403,7 @@ class Player(BasePlayer):
 
     most_likely_threatening_privacy_corporations = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Corporations"),
         choices=(
             ('0', _(u"0 - No threat")),
@@ -1423,7 +1423,7 @@ class Player(BasePlayer):
 
     estimation_of_foreigners_in_neighborhood = models.CharField(
         initial=0,
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=0,
         max=100,
         verbose_name=_(u"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not born in [country] or of whom at least one parent was not born in [country. Please give a percentage between 0 and 100.")
@@ -1431,7 +1431,7 @@ class Player(BasePlayer):
 
     statement_agreement_immigrants_are_not_integrated = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         choices=(
             ('0', '0 - Immigrants are not integrated in our society'),
             ('1', '1'),
@@ -1443,14 +1443,14 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Immigrants are well integrated in our society')
+            ('10', '10 -, Immigrants are well integrated in our society'),
             ('DK', _(u"Don't know"))
         )
     )
 
     statement_agreement_culture_is_undermined_by_immigrants = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         choices=(
             ('0', '0 - Our culture is undermined by immigrants'),
             ('1', '1'),
@@ -1462,14 +1462,14 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Our culture is enriched by immigrants')
+            ('10', '10 -, Our culture is enriched by immigrants'),
             ('DK', _(u"Don't know"))
         )
     )
 
     how_often_do_you_get_together_with_friends = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How often do you get together with friends?"),
         choices=(
             ('daily', _(u"Daily")),
@@ -1482,7 +1482,7 @@ class Player(BasePlayer):
 
     how_often_do_you_participate_in_voluntary_activities = models.CharField(
         initial=None,
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"How often do you participate in voluntary activities to help people other than your direct relatives, friends or colleagues?"),
         choices=(
             ('daily', _(u"Daily")),
@@ -1496,7 +1496,7 @@ class Player(BasePlayer):
     how_strongly_do_you_feel_connected_to_your_neighborhood = models.CharField(
         initial=None,
         verbose_name=_(u"How strongly do you feel connected to other people in your neighborhood?"),
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         choices=(
             ('0', '0 - Not at all'),
             ('1', '1'),
@@ -1508,7 +1508,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Very connected')
+            ('10', '10 -, Very connected'),
             ('DK', _(u"Don't know"))
         )
     )
@@ -1516,7 +1516,7 @@ class Player(BasePlayer):
     voting_can_or_cannot_make_a_difference = models.CharField(
         initial=None,
         verbose_name=_(u"Some people say that who people vote for does not make any difference to what happens. Others say that who people vote for can make a difference to what happens. Where would you place yourself?"),
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         choices=(
             ('0', '0 - Our culture is undermined by immigrants'),
             ('1', '1'),
@@ -1528,7 +1528,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Our culture is enriched by immigrants')
+            ('10', '10 -, Our culture is enriched by immigrants'),
             ('DK', _(u"Don't know"))
         )
     )
@@ -1536,7 +1536,7 @@ class Player(BasePlayer):
     political_left_center_right = models.CharField(
         initial=None,
         verbose_name=_(u"In political matters, people often talk of “the left” and “the right.” How would you place your views on this scale, generally speaking?"),
-        widgets=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelectHorizontal(),
         choices=(
             ('0', '0 - Left'),
             ('1', '1'),
@@ -1548,7 +1548,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Right')
+            ('10', '10 -, Right'),
             ('DK', _(u"Don't know"))
         )
     )
@@ -1596,7 +1596,7 @@ class Player(BasePlayer):
         verbose_name=_(u'In which country were you born?'),
         widget=widgets.Select(),
         choices=tuple(
-            [_(u"Other")]
+            [_(u"Other")] +
             [(code, _(name)) for code, name in list(countries)]
         )
     )
@@ -1702,7 +1702,7 @@ class Player(BasePlayer):
     individual_income_in_the_last_12_months = models.CharField(
         initial=0,
         verbose_name=_(u"In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"),
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=-1,
     )
 
@@ -1721,7 +1721,7 @@ class Player(BasePlayer):
     household_income_in_the_last_12_months = models.CharField(
         initial=0,
         verbose_name=_(u"In the last 12 months, what was the total income of your household after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"),
-        widgets=widgets.NumberInput(),
+        widget=widgets.NumberInput(),
         min=-1,
     )
 

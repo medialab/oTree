@@ -1,0 +1,17 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <p>{% trans "Do you agree with the following statements?" %}</p>
+
+  {% formfield player.public_institutions_deliver_service_in_the_best_way %}
+  {% formfield player.public_institutions_pursue_long_term_objectives %}
+  {% formfield player.people_in_public_institutions_are_ethical_and_not_corrupt %}
+  {% formfield player.public_institutions_are_transparent %}
+  {% formfield player.public_institutions_treat_all_citizens_fairly %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

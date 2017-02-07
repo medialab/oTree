@@ -1,0 +1,27 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <p>{% trans "We will continue to ask you some questions about your beliefs regarding people and society. Remember, all information you provide is anonymous and will not be linked to you in any way." %}</p>
+  <p>{% trans "How satisfied are you with the quality of:" %}</p>
+
+  {% formfield player.satisfied_with_the_education_system %}
+  {% formfield player.satisfied_with_the_health_care_system %}
+  {% formfield player.satisfied_with_public_transport %}
+  {% formfield player.satisfied_with_child_care_services %}
+  {% formfield player.satisfied_with_welfare_benefits %}
+  {% formfield player.satisfied_with_public_housing %}
+  {% formfield player.satisfied_with_security_and_crime_prevention %}
+  {% formfield player.satisfied_with_environmental_issues %}
+  {% formfield player.satisfied_with_cultural_facilities %}
+
+  <hr>
+
+  {% formfield player.complaint_about_quality_of_public_service_likely_resolved %}
+  {% formfield player.technology_speed_up_likely_to_be_adopted %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

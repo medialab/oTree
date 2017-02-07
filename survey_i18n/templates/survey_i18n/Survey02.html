@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  {% formfield player.to_punish_someone_who_treats_others_unfairly %}
+  {% formfield player.to_give_to_good_causes %}
+  
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

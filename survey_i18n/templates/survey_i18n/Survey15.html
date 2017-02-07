@@ -1,0 +1,255 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <style>
+  thead tr th {
+    text-align: center;
+  }
+
+  th div {
+    font-weight: normal;
+  }
+
+  input[type=number].form-control {
+    width: 100%;
+    text-align: center;
+  }
+  </style>
+
+  <p>{% trans "Now we turn to government spending. The following is a list of key categories of government expenditures." %}
+  <br>{% trans "The box on the left contains the current percentage of government expenditures allocated to this category in [country]." %}
+  <br>{% trans "Please enter in the box on the right your preferred distribution for each category (together the categories must sum to 100%)." %}</p>
+
+  <div class="table-responsive">
+    <table class="table table-hover">
+
+      <thead>
+        <tr>
+          <th></th>
+          <th>
+            <strong>{% trans "Current spending in [country]" %}</strong>
+            <br><em>{% trans "% of total public spending" %}</em>
+          </th>
+          <th>
+            <strong>{% trans "Preferred" %}</strong>
+            <br><em>{% trans "% of total public spending" %}</em>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th>
+            <strong>{% trans "General public services and public debt" %}</strong>
+            <div>(general government administration costs, international aid, public debt interest payments)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="17"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_general_public_services_and_public_debt" 
+                name="expenditure_general_public_services_and_public_debt" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <strong>{% trans "Defense and public order" %}</strong>
+            <div>(includes military spending, police services, law and order)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="9"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_defense_and_public_order" 
+                name="expenditure_defense_and_public_order" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <strong>{% trans "Infrastructure and economic affairs" %}</strong>
+            <div>(provision of transport infrastructure, investments in agriculture, mining and energy industries)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="11"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_infrastucture_and_economic_affair" 
+                name="expenditure_infrastucture_and_economic_affair" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <strong>{% trans "Health and environmental protection" %}</strong>
+            <div>(includes provision of public medical services and public environmental services)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="20"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_health_and_environmental_protection" 
+                name="expenditure_health_and_environmental_protection" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <strong>{% trans "Education and culture" %}</strong>
+            <div>(includes public provision of  education services, and public cultural spending)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="20"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_education_and_culture" 
+                name="expenditure_education_and_culture" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <th>
+            <strong>{% trans "Social protection and housing" %}</strong>
+            <div>(social transfers including for elderly, disabled, unemployed and low income people)</div>
+          </th>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="28"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="id_expenditure_social_protection_and_housing" 
+                name="expenditure_social_protection_and_housing" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <div class="form-group">
+              <input 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100" 
+                value="100"
+                disabled>
+            </div>
+          </td>
+          <td>
+            <div class="form-group">
+              <input 
+                id="total" 
+                name="total" 
+                type="number" 
+                class="form-control" 
+                min="0" 
+                max="100"
+                value="0">
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

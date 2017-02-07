@@ -1,0 +1,20 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <p>{% trans "Could you tell us for each of these groups how much you trust them?" %}</p>
+
+  {% formfield player.how_much_do_you_trust_your_family %}
+  {% formfield player.how_much_do_you_trust_people_in_your_neighborhood %}
+  {% formfield player.how_much_do_you_trust_people_you_know_personally %}
+  {% formfield player.how_much_do_you_trust_people_you_meet_for_the_first_time %}
+  {% formfield player.how_much_do_you_trust_people_of_another_religion %}
+  {% formfield player.how_much_do_you_trust_people_of_another_nationality %}
+  {% formfield player.how_much_do_you_trust_people_who_immigrated %}
+  {% formfield player.how_much_do_you_trust_people_who_seek_refuge %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  {% formfield player.fully_prepared_or_avoid_to_take_risks %}
+  {% formfield player.when_someone_does_me_a_favor %}
+  
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}
