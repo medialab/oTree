@@ -7,20 +7,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-09-30 16:02+0200\n"
+"POT-Creation-Date: 2017-02-08 15:16+0100\n"
 "PO-Revision-Date: 2016-10-02 15:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 1.8.9\n"
 
-#: templates/iat/EndGame.html:12
+#: templates/iat/EndGame.html:9
 msgid "Congratulations!"
 msgstr ""
 
-#: templates/iat/EndGame.html:13
+#: templates/iat/EndGame.html:10
 msgid ""
 "You have now completed the sorting task. We will now move on to the last "
 "part of the study, where you are asked a few questions about yourself."
@@ -172,1143 +173,958 @@ msgid ""
 "the words belongs to a category on the left, press the <strong style='color:"
 "pink'>E</strong> key.<br/>When the item belongs to a category on the right, "
 "press the <strong style='color:turquoise'>I</strong> key. Words belong to "
-"only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/><h3>Press "
-"any button (or touch anywhere) to begin.</h3><br/>"
+"only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:7 templates/iat/TranslationWords.html:9
+#: templates/iat/TranslationWords.html:6
+msgid "<h3>Press any button (or touch anywhere) to begin.</h3>"
+msgstr ""
+
+#: templates/iat/TranslationWords.html:8 templates/iat/TranslationWords.html:10
 msgid "Trustworthy --- Untrustworthy --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:8 templates/iat/TranslationWords.html:17
-#: templates/iat/TranslationWords.html:24
+#: templates/iat/TranslationWords.html:9 templates/iat/TranslationWords.html:18
+#: templates/iat/TranslationWords.html:25
 msgid "Trustworthy --- Untrustworthy --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:10
-#: templates/iat/TranslationWords.html:14
-#: templates/iat/TranslationWords.html:23
+#: templates/iat/TranslationWords.html:11
+#: templates/iat/TranslationWords.html:15
+#: templates/iat/TranslationWords.html:24
 msgid "Trustworthy --- Untrustworthy --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:11
+#: templates/iat/TranslationWords.html:12
 msgid "Trustworthy --- Untrustworthy --- Transparent"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:12
-#: templates/iat/TranslationWords.html:19
+#: templates/iat/TranslationWords.html:13
+#: templates/iat/TranslationWords.html:20
 msgid "Trustworthy --- Untrustworthy --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:13
-#: templates/iat/TranslationWords.html:22
+#: templates/iat/TranslationWords.html:14
+#: templates/iat/TranslationWords.html:23
 msgid "Trustworthy --- Untrustworthy --- Immoral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:15
-#: templates/iat/TranslationWords.html:18
+#: templates/iat/TranslationWords.html:16
+#: templates/iat/TranslationWords.html:19
 msgid "Trustworthy --- Untrustworthy --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:16
+#: templates/iat/TranslationWords.html:17
 msgid "Trustworthy --- Untrustworthy --- Capable"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:20
+#: templates/iat/TranslationWords.html:21
 msgid "Trustworthy --- Untrustworthy --- Inexperienced"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:21
+#: templates/iat/TranslationWords.html:22
 msgid "Trustworthy --- Untrustworthy --- Proficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:26
 #: templates/iat/TranslationWords.html:27
+#: templates/iat/TranslationWords.html:28
 msgid "Trustworthy or Government --- Untrustworthy --- Constitution"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:28
 #: templates/iat/TranslationWords.html:29
 #: templates/iat/TranslationWords.html:30
+#: templates/iat/TranslationWords.html:31
 msgid "Trustworthy or Government --- Untrustworthy --- Regulation"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:31
 #: templates/iat/TranslationWords.html:32
+#: templates/iat/TranslationWords.html:33
 msgid "Trustworthy or Government --- Untrustworthy --- State"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:33
 #: templates/iat/TranslationWords.html:34
 #: templates/iat/TranslationWords.html:35
+#: templates/iat/TranslationWords.html:36
 msgid "Trustworthy or Government --- Untrustworthy --- Civil servants"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:36
 #: templates/iat/TranslationWords.html:37
 #: templates/iat/TranslationWords.html:38
+#: templates/iat/TranslationWords.html:39
 msgid "Trustworthy or Government --- Untrustworthy --- Public administration"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:39
 #: templates/iat/TranslationWords.html:40
+#: templates/iat/TranslationWords.html:41
 msgid "Trustworthy or Government --- Untrustworthy --- Politicians"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:41
 #: templates/iat/TranslationWords.html:42
 #: templates/iat/TranslationWords.html:43
+#: templates/iat/TranslationWords.html:44
 msgid "Trustworthy or Government --- Untrustworthy --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:44
 #: templates/iat/TranslationWords.html:45
 #: templates/iat/TranslationWords.html:46
+#: templates/iat/TranslationWords.html:47
 msgid "Trustworthy or Government --- Untrustworthy --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:47
 #: templates/iat/TranslationWords.html:48
 #: templates/iat/TranslationWords.html:49
+#: templates/iat/TranslationWords.html:50
 msgid "Trustworthy or Government --- Untrustworthy --- Capable"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:50
 #: templates/iat/TranslationWords.html:51
+#: templates/iat/TranslationWords.html:52
 msgid "Trustworthy or Government --- Untrustworthy --- Proficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:52
 #: templates/iat/TranslationWords.html:53
 #: templates/iat/TranslationWords.html:54
+#: templates/iat/TranslationWords.html:55
 msgid "Trustworthy or Government --- Untrustworthy --- Transparent"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:56
 #: templates/iat/TranslationWords.html:57
 #: templates/iat/TranslationWords.html:58
 #: templates/iat/TranslationWords.html:59
+#: templates/iat/TranslationWords.html:60
 msgid "Trustworthy or Government --- Untrustworthy --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:60
 #: templates/iat/TranslationWords.html:61
 #: templates/iat/TranslationWords.html:62
 #: templates/iat/TranslationWords.html:63
+#: templates/iat/TranslationWords.html:64
 msgid "Trustworthy or Government --- Untrustworthy --- Immoral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:64
 #: templates/iat/TranslationWords.html:65
 #: templates/iat/TranslationWords.html:66
 #: templates/iat/TranslationWords.html:67
+#: templates/iat/TranslationWords.html:68
 msgid "Trustworthy or Government --- Untrustworthy --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:68
 #: templates/iat/TranslationWords.html:69
 #: templates/iat/TranslationWords.html:70
 #: templates/iat/TranslationWords.html:71
+#: templates/iat/TranslationWords.html:72
 msgid "Trustworthy or Government --- Untrustworthy --- Inexperienced"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:72
 #: templates/iat/TranslationWords.html:73
 #: templates/iat/TranslationWords.html:74
 #: templates/iat/TranslationWords.html:75
 #: templates/iat/TranslationWords.html:76
+#: templates/iat/TranslationWords.html:77
 msgid "Trustworthy or Government --- Untrustworthy --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:78
 #: templates/iat/TranslationWords.html:79
 #: templates/iat/TranslationWords.html:80
+#: templates/iat/TranslationWords.html:81
 msgid "Trustworthy --- Untrustworthy or Government --- Constitution"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:81
 #: templates/iat/TranslationWords.html:82
+#: templates/iat/TranslationWords.html:83
 msgid "Trustworthy --- Untrustworthy or Government --- Regulation"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:83
 #: templates/iat/TranslationWords.html:84
+#: templates/iat/TranslationWords.html:85
 msgid "Trustworthy --- Untrustworthy or Government --- State"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:85
 #: templates/iat/TranslationWords.html:86
 #: templates/iat/TranslationWords.html:87
+#: templates/iat/TranslationWords.html:88
 msgid "Trustworthy --- Untrustworthy or Government --- Civil servants"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:88
 #: templates/iat/TranslationWords.html:89
+#: templates/iat/TranslationWords.html:90
 msgid "Trustworthy --- Untrustworthy or Government --- Public administration"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:90
 #: templates/iat/TranslationWords.html:91
+#: templates/iat/TranslationWords.html:92
 msgid "Trustworthy --- Untrustworthy or Government --- Politicians"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:92
 #: templates/iat/TranslationWords.html:93
 #: templates/iat/TranslationWords.html:94
+#: templates/iat/TranslationWords.html:95
 msgid "Trustworthy --- Untrustworthy or Government --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:95
 #: templates/iat/TranslationWords.html:96
 #: templates/iat/TranslationWords.html:97
+#: templates/iat/TranslationWords.html:98
 msgid "Trustworthy --- Untrustworthy or Government --- Immoral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:98
 #: templates/iat/TranslationWords.html:99
 #: templates/iat/TranslationWords.html:100
+#: templates/iat/TranslationWords.html:101
 msgid "Trustworthy --- Untrustworthy or Government --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:101
 #: templates/iat/TranslationWords.html:102
 #: templates/iat/TranslationWords.html:103
+#: templates/iat/TranslationWords.html:104
 msgid "Trustworthy --- Untrustworthy or Government --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:104
 #: templates/iat/TranslationWords.html:105
+#: templates/iat/TranslationWords.html:106
 msgid "Trustworthy --- Untrustworthy or Government --- Inexperienced"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:107
 #: templates/iat/TranslationWords.html:108
 #: templates/iat/TranslationWords.html:109
 #: templates/iat/TranslationWords.html:110
 #: templates/iat/TranslationWords.html:111
+#: templates/iat/TranslationWords.html:112
 msgid "Trustworthy --- Untrustworthy or Government --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:112
 #: templates/iat/TranslationWords.html:113
 #: templates/iat/TranslationWords.html:114
 #: templates/iat/TranslationWords.html:115
+#: templates/iat/TranslationWords.html:116
 msgid "Trustworthy --- Untrustworthy or Government --- Capable"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:116
 #: templates/iat/TranslationWords.html:117
 #: templates/iat/TranslationWords.html:118
 #: templates/iat/TranslationWords.html:119
+#: templates/iat/TranslationWords.html:120
 msgid "Trustworthy --- Untrustworthy or Government --- Proficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:120
 #: templates/iat/TranslationWords.html:121
 #: templates/iat/TranslationWords.html:122
 #: templates/iat/TranslationWords.html:123
+#: templates/iat/TranslationWords.html:124
 msgid "Trustworthy --- Untrustworthy or Government --- Transparent"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:124
 #: templates/iat/TranslationWords.html:125
 #: templates/iat/TranslationWords.html:126
 #: templates/iat/TranslationWords.html:127
+#: templates/iat/TranslationWords.html:128
 msgid "Trustworthy --- Untrustworthy or Government --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:129
 #: templates/iat/TranslationWords.html:130
 #: templates/iat/TranslationWords.html:131
+#: templates/iat/TranslationWords.html:132
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lawyer"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:132
 #: templates/iat/TranslationWords.html:133
+#: templates/iat/TranslationWords.html:134
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Prosecutor"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:134
 #: templates/iat/TranslationWords.html:135
+#: templates/iat/TranslationWords.html:136
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Supreme Court"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:136
 #: templates/iat/TranslationWords.html:137
+#: templates/iat/TranslationWords.html:138
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Court"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:138
 #: templates/iat/TranslationWords.html:139
+#: templates/iat/TranslationWords.html:140
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Justice department"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:140
 #: templates/iat/TranslationWords.html:141
 #: templates/iat/TranslationWords.html:142
+#: templates/iat/TranslationWords.html:143
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Judge"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:143
 #: templates/iat/TranslationWords.html:144
 #: templates/iat/TranslationWords.html:145
+#: templates/iat/TranslationWords.html:146
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:146
 #: templates/iat/TranslationWords.html:147
+#: templates/iat/TranslationWords.html:148
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:148
 #: templates/iat/TranslationWords.html:149
 #: templates/iat/TranslationWords.html:150
+#: templates/iat/TranslationWords.html:151
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:151
 #: templates/iat/TranslationWords.html:152
 #: templates/iat/TranslationWords.html:153
+#: templates/iat/TranslationWords.html:154
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:154
 #: templates/iat/TranslationWords.html:155
 #: templates/iat/TranslationWords.html:156
+#: templates/iat/TranslationWords.html:157
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:158
 #: templates/iat/TranslationWords.html:159
 #: templates/iat/TranslationWords.html:160
 #: templates/iat/TranslationWords.html:161
+#: templates/iat/TranslationWords.html:162
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:162
 #: templates/iat/TranslationWords.html:163
 #: templates/iat/TranslationWords.html:164
 #: templates/iat/TranslationWords.html:165
 #: templates/iat/TranslationWords.html:166
+#: templates/iat/TranslationWords.html:167
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:167
 #: templates/iat/TranslationWords.html:168
 #: templates/iat/TranslationWords.html:169
 #: templates/iat/TranslationWords.html:170
+#: templates/iat/TranslationWords.html:171
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Immoral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:171
 #: templates/iat/TranslationWords.html:172
 #: templates/iat/TranslationWords.html:173
 #: templates/iat/TranslationWords.html:174
+#: templates/iat/TranslationWords.html:175
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inexperienced"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:175
 #: templates/iat/TranslationWords.html:176
 #: templates/iat/TranslationWords.html:177
 #: templates/iat/TranslationWords.html:178
+#: templates/iat/TranslationWords.html:179
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:180
 #: templates/iat/TranslationWords.html:181
 #: templates/iat/TranslationWords.html:182
+#: templates/iat/TranslationWords.html:183
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Judge"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:183
 #: templates/iat/TranslationWords.html:184
+#: templates/iat/TranslationWords.html:185
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Court"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:185
 #: templates/iat/TranslationWords.html:186
+#: templates/iat/TranslationWords.html:187
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Justice department"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:187
 #: templates/iat/TranslationWords.html:188
+#: templates/iat/TranslationWords.html:189
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Supreme Court"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:189
 #: templates/iat/TranslationWords.html:190
 #: templates/iat/TranslationWords.html:191
+#: templates/iat/TranslationWords.html:192
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lawyer"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:192
 #: templates/iat/TranslationWords.html:193
+#: templates/iat/TranslationWords.html:194
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Prosecuter"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:194
 #: templates/iat/TranslationWords.html:195
 #: templates/iat/TranslationWords.html:196
+#: templates/iat/TranslationWords.html:197
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:197
 #: templates/iat/TranslationWords.html:198
 #: templates/iat/TranslationWords.html:199
+#: templates/iat/TranslationWords.html:200
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:200
 #: templates/iat/TranslationWords.html:201
 #: templates/iat/TranslationWords.html:202
+#: templates/iat/TranslationWords.html:203
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Immoral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:203
 #: templates/iat/TranslationWords.html:204
+#: templates/iat/TranslationWords.html:205
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inexperienced"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:205
 #: templates/iat/TranslationWords.html:206
 #: templates/iat/TranslationWords.html:207
+#: templates/iat/TranslationWords.html:208
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:209
 #: templates/iat/TranslationWords.html:210
 #: templates/iat/TranslationWords.html:211
 #: templates/iat/TranslationWords.html:212
+#: templates/iat/TranslationWords.html:213
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:213
 #: templates/iat/TranslationWords.html:214
 #: templates/iat/TranslationWords.html:215
 #: templates/iat/TranslationWords.html:216
+#: templates/iat/TranslationWords.html:217
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Proficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:217
 #: templates/iat/TranslationWords.html:218
 #: templates/iat/TranslationWords.html:219
 #: templates/iat/TranslationWords.html:220
+#: templates/iat/TranslationWords.html:221
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Capable"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:221
 #: templates/iat/TranslationWords.html:222
 #: templates/iat/TranslationWords.html:223
 #: templates/iat/TranslationWords.html:224
+#: templates/iat/TranslationWords.html:225
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:225
 #: templates/iat/TranslationWords.html:226
 #: templates/iat/TranslationWords.html:227
 #: templates/iat/TranslationWords.html:228
+#: templates/iat/TranslationWords.html:229
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Transparent"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:231
-#: templates/iat/TranslationWords.html:232
 #: templates/iat/TranslationWords.html:233
-msgid "Trustworthy or Media --- Untrustworthy --- News"
+msgid "Competent --- Incompetent --- Capable"
+msgstr ""
+
+#: templates/iat/TranslationWords.html:232
+#: templates/iat/TranslationWords.html:248
+msgid "Competent --- Incompetent --- Skilful"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:234
+#: templates/iat/TranslationWords.html:238
+msgid "Competent --- Incompetent --- Inefficient"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:235
+msgid "Competent --- Incompetent --- Proficient"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:236
-msgid "Trustworthy or Media --- Untrustworthy --- Reporter"
+msgid "Competent --- Incompetent --- Unskilled"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:237
-#: templates/iat/TranslationWords.html:238
+#: templates/iat/TranslationWords.html:246
+msgid "Competent --- Incompetent --- Inexperienced"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:239
-msgid "Trustworthy or Media --- Untrustworthy --- Newspaper"
+#: templates/iat/TranslationWords.html:242
+msgid "Competent --- Incompetent --- Useless"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:240
+msgid "Competent --- Incompetent --- Smart"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:241
-#: templates/iat/TranslationWords.html:242
-msgid "Trustworthy or Media --- Untrustworthy --- Journalist"
+msgid "Competent --- Incompetent --- Reliable"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:243
+#: templates/iat/TranslationWords.html:247
+msgid "Competent --- Incompetent --- Powerless"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:244
-msgid "Trustworthy or Media --- Untrustworthy --- Headline"
+msgid "Competent --- Incompetent --- Weak"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:245
-#: templates/iat/TranslationWords.html:246
-#: templates/iat/TranslationWords.html:247
-msgid "Trustworthy or Media --- Untrustworthy --- Transparent"
+msgid "Competent --- Incompetent --- Bright"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:248
-#: templates/iat/TranslationWords.html:249
 #: templates/iat/TranslationWords.html:250
-msgid "Trustworthy or Media --- Untrustworthy --- Capable"
+#: templates/iat/TranslationWords.html:251
+msgid "Competent or Government --- Incompetent --- Constitution"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:251
 #: templates/iat/TranslationWords.html:252
 #: templates/iat/TranslationWords.html:253
-msgid "Trustworthy or Media --- Untrustworthy --- Truthful"
+#: templates/iat/TranslationWords.html:254
+msgid "Competent or Government --- Incompetent --- Regulation"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:254
 #: templates/iat/TranslationWords.html:255
 #: templates/iat/TranslationWords.html:256
-msgid "Trustworthy or Media --- Untrustworthy --- Moral"
+msgid "Competent or Government --- Incompetent --- State"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:257
 #: templates/iat/TranslationWords.html:258
-msgid "Trustworthy or Media --- Untrustworthy --- Proficient"
+#: templates/iat/TranslationWords.html:259
+msgid "Competent or Government --- Incompetent --- Civil Servants"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:260
 #: templates/iat/TranslationWords.html:261
+msgid "Competent or Government --- Incompetent --- Public Administration"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:262
 #: templates/iat/TranslationWords.html:263
-msgid "Trustworthy or Media --- Untrustworthy --- Inefficient"
+msgid "Competent or Government --- Incompetent --- Politicians"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:264
 #: templates/iat/TranslationWords.html:265
 #: templates/iat/TranslationWords.html:266
-#: templates/iat/TranslationWords.html:267
-msgid "Trustworthy or Media --- Untrustworthy --- Corrupt"
+msgid "Competent or Government --- Incompetent --- Skilful"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:267
 #: templates/iat/TranslationWords.html:268
 #: templates/iat/TranslationWords.html:269
+msgid "Competent or Government --- Incompetent --- Capable"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:270
 #: templates/iat/TranslationWords.html:271
-msgid "Trustworthy or Media --- Untrustworthy --- Inexperienced"
+msgid "Competent or Government --- Incompetent --- Bright"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:272
 #: templates/iat/TranslationWords.html:273
+msgid "Competent or Government --- Incompetent --- Reliable"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:274
 #: templates/iat/TranslationWords.html:275
-msgid "Trustworthy or Media --- Untrustworthy --- Immoral"
+msgid "Competent or Government --- Incompetent --- Smart"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:276
 #: templates/iat/TranslationWords.html:277
-#: templates/iat/TranslationWords.html:278
+msgid "Competent or Government --- Incompetent --- Proficient"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:279
 #: templates/iat/TranslationWords.html:280
-msgid "Trustworthy or Media --- Untrustworthy --- Lying"
+#: templates/iat/TranslationWords.html:281
+#: templates/iat/TranslationWords.html:282
+msgid "Competent or Government --- Incompetent --- Inexperienced"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:283
 #: templates/iat/TranslationWords.html:284
 #: templates/iat/TranslationWords.html:285
-msgid "Trustworthy --- Untrustworthy or Media --- Newspaper"
+msgid "Competent or Government --- Incompetent --- Useless"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:286
 #: templates/iat/TranslationWords.html:287
 #: templates/iat/TranslationWords.html:288
-msgid "Trustworthy --- Untrustworthy or Media --- Reporter"
+msgid "Competent or Government --- Incompetent --- Powerless"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:289
 #: templates/iat/TranslationWords.html:290
 #: templates/iat/TranslationWords.html:291
-msgid "Trustworthy --- Untrustworthy or Media --- Journalist"
+#: templates/iat/TranslationWords.html:292
+msgid "Competent or Government --- Incompetent --- Inefficient"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:292
 #: templates/iat/TranslationWords.html:293
 #: templates/iat/TranslationWords.html:294
-msgid "Trustworthy --- Untrustworthy or Media --- News"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:295
 #: templates/iat/TranslationWords.html:296
-msgid "Trustworthy --- Untrustworthy or Media --- Headline"
+msgid "Competent or Government --- Incompetent --- Weak"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:297
 #: templates/iat/TranslationWords.html:298
 #: templates/iat/TranslationWords.html:299
-msgid "Trustworthy --- Untrustworthy or Media --- Corrupt"
+msgid "Competent or Government --- Incompetent --- Unskilled"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:300
-#: templates/iat/TranslationWords.html:301
 #: templates/iat/TranslationWords.html:302
-msgid "Trustworthy --- Untrustworthy or Media --- Inefficient"
+#: templates/iat/TranslationWords.html:303
+msgid "Competent --- Incompetent or Government --- Public Administration"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:303
 #: templates/iat/TranslationWords.html:304
 #: templates/iat/TranslationWords.html:305
-msgid "Trustworthy --- Untrustworthy or Media --- Lying"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:306
-#: templates/iat/TranslationWords.html:307
-msgid "Trustworthy --- Untrustworthy or Media --- Inexperienced"
+msgid "Competent --- Incompetent or Government --- Civil Servants"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:307
 #: templates/iat/TranslationWords.html:308
 #: templates/iat/TranslationWords.html:309
-#: templates/iat/TranslationWords.html:310
-msgid "Trustworthy --- Untrustworthy or Media --- Immoral"
+msgid "Competent --- Incompetent or Government --- Regulation"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:310
+#: templates/iat/TranslationWords.html:311
 #: templates/iat/TranslationWords.html:312
+msgid "Competent --- Incompetent or Government --- State"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:313
 #: templates/iat/TranslationWords.html:314
 #: templates/iat/TranslationWords.html:315
-#: templates/iat/TranslationWords.html:316
-msgid "Trustworthy --- Untrustworthy or Media --- Truthful"
+msgid "Competent --- Incompetent or Government --- Constitution"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:316
 #: templates/iat/TranslationWords.html:317
+msgid "Competent --- Incompetent or Government --- Inexperienced"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:318
 #: templates/iat/TranslationWords.html:319
 #: templates/iat/TranslationWords.html:320
-msgid "Trustworthy --- Untrustworthy or Media --- Transparent"
+msgid "Competent --- Incompetent or Government --- Inefficient"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:321
 #: templates/iat/TranslationWords.html:322
+msgid "Competent --- Incompetent or Government --- Powerless"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:323
 #: templates/iat/TranslationWords.html:324
-msgid "Trustworthy --- Untrustworthy or Media --- Capable"
+msgid "Competent --- Incompetent or Government --- Useless"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:325
 #: templates/iat/TranslationWords.html:326
 #: templates/iat/TranslationWords.html:327
-#: templates/iat/TranslationWords.html:328
-msgid "Trustworthy --- Untrustworthy or Media --- Moral"
+msgid "Competent --- Incompetent or Government --- Unskilled"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:328
 #: templates/iat/TranslationWords.html:329
-#: templates/iat/TranslationWords.html:330
+msgid "Competent --- Incompetent or Government --- Weak"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:331
 #: templates/iat/TranslationWords.html:332
-msgid "Trustworthy --- Untrustworthy or Media --- Proficient"
+#: templates/iat/TranslationWords.html:333
+#: templates/iat/TranslationWords.html:334
+msgid "Competent --- Incompetent or Government --- Proficient"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:335
-#: templates/iat/TranslationWords.html:337
-msgid "Competent --- Incompetent --- Capable"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:336
-#: templates/iat/TranslationWords.html:352
-msgid "Competent --- Incompetent --- Skilful"
-msgstr ""
-
+#: templates/iat/TranslationWords.html:337
 #: templates/iat/TranslationWords.html:338
-#: templates/iat/TranslationWords.html:342
-msgid "Competent --- Incompetent --- Inefficient"
+msgid "Competent --- Incompetent or Government --- Reliable"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:339
-msgid "Competent --- Incompetent --- Proficient"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:340
-msgid "Competent --- Incompetent --- Unskilled"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:341
-#: templates/iat/TranslationWords.html:350
-msgid "Competent --- Incompetent --- Inexperienced"
+msgid "Competent --- Incompetent or Government --- Smart"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:342
 #: templates/iat/TranslationWords.html:343
-#: templates/iat/TranslationWords.html:346
-msgid "Competent --- Incompetent --- Useless"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:344
-msgid "Competent --- Incompetent --- Smart"
+msgid "Competent --- Incompetent or Government --- Capable"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:345
-msgid "Competent --- Incompetent --- Reliable"
-msgstr ""
-
+#: templates/iat/TranslationWords.html:346
 #: templates/iat/TranslationWords.html:347
-#: templates/iat/TranslationWords.html:351
-msgid "Competent --- Incompetent --- Powerless"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:348
-msgid "Competent --- Incompetent --- Weak"
+msgid "Competent --- Incompetent or Government --- Bright"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:349
-msgid "Competent --- Incompetent --- Bright"
+#: templates/iat/TranslationWords.html:350
+#: templates/iat/TranslationWords.html:351
+msgid "Competent --- Incompetent or Government --- Skilful"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:354
-#: templates/iat/TranslationWords.html:355
-msgid "Competent or Government --- Incompetent --- Constitution"
+#: templates/iat/TranslationWords.html:356
+msgid "Honest --- Dishonest --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:356
+#: templates/iat/TranslationWords.html:355
+#: templates/iat/TranslationWords.html:371
+msgid "Honest --- Dishonest --- Moral"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:357
+#: templates/iat/TranslationWords.html:361
+msgid "Honest --- Dishonest --- Lying"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:358
-msgid "Competent or Government --- Incompetent --- Regulation"
+msgid "Honest --- Dishonest --- Transparent"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:359
-#: templates/iat/TranslationWords.html:360
-msgid "Competent or Government --- Incompetent --- State"
+msgid "Honest --- Dishonest --- Corrupt"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:361
+#: templates/iat/TranslationWords.html:360
+#: templates/iat/TranslationWords.html:369
+msgid "Honest --- Dishonest --- Immoral"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:362
+#: templates/iat/TranslationWords.html:365
+msgid "Honest --- Dishonest --- Unfair"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:363
-msgid "Competent or Government --- Incompetent --- Civil Servants"
+msgid "Honest --- Dishonest --- Open"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:364
-#: templates/iat/TranslationWords.html:365
-msgid "Competent or Government --- Incompetent --- Public Administration"
+msgid "Honest --- Dishonest --- Credible"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:366
+#: templates/iat/TranslationWords.html:370
+msgid "Honest --- Dishonest --- Unscupulous"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:367
-msgid "Competent or Government --- Incompetent --- Politicians"
+msgid "Honest --- Dishonest --- Illegitimate"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:368
-#: templates/iat/TranslationWords.html:369
-#: templates/iat/TranslationWords.html:370
-msgid "Competent or Government --- Incompetent --- Skilful"
+msgid "Honest --- Dishonest --- Fair"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:371
-#: templates/iat/TranslationWords.html:372
 #: templates/iat/TranslationWords.html:373
-msgid "Competent or Government --- Incompetent --- Capable"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:374
+msgid "Honest or Government --- Dishonest --- Constitution"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:375
-msgid "Competent or Government --- Incompetent --- Bright"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:376
+msgid "Honest or Government --- Dishonest --- State"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:377
-msgid "Competent or Government --- Incompetent --- Reliable"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:378
-#: templates/iat/TranslationWords.html:379
-msgid "Competent or Government --- Incompetent --- Smart"
+msgid "Honest or Government --- Dishonest --- Public administration"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:379
 #: templates/iat/TranslationWords.html:380
+msgid "Honest or Government --- Dishonest --- Civil servants"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:381
-msgid "Competent or Government --- Incompetent --- Proficient"
+#: templates/iat/TranslationWords.html:382
+msgid "Honest or Government --- Dishonest --- Politicians"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:383
 #: templates/iat/TranslationWords.html:384
-#: templates/iat/TranslationWords.html:385
-#: templates/iat/TranslationWords.html:386
-msgid "Competent or Government --- Incompetent --- Inexperienced"
+msgid "Honest or Government --- Dishonest --- Court"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:385
+#: templates/iat/TranslationWords.html:386
 #: templates/iat/TranslationWords.html:387
+msgid "Honest or Government --- Dishonest --- Transparent"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:388
 #: templates/iat/TranslationWords.html:389
-msgid "Competent or Government --- Incompetent --- Useless"
+msgid "Honest or Government --- Dishonest --- Fair"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:390
 #: templates/iat/TranslationWords.html:391
-#: templates/iat/TranslationWords.html:392
-msgid "Competent or Government --- Incompetent --- Powerless"
+msgid "Honest or Government --- Dishonest --- Truthful"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:392
 #: templates/iat/TranslationWords.html:393
+msgid "Honest or Government --- Dishonest --- Open"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:394
 #: templates/iat/TranslationWords.html:395
 #: templates/iat/TranslationWords.html:396
-msgid "Competent or Government --- Incompetent --- Inefficient"
+msgid "Honest or Government --- Dishonest --- Credible"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:397
 #: templates/iat/TranslationWords.html:398
-#: templates/iat/TranslationWords.html:399
-#: templates/iat/TranslationWords.html:400
-msgid "Competent or Government --- Incompetent --- Weak"
+msgid "Honest or Government --- Dishonest --- Moral"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:400
 #: templates/iat/TranslationWords.html:401
 #: templates/iat/TranslationWords.html:402
 #: templates/iat/TranslationWords.html:403
-msgid "Competent or Government --- Incompetent --- Unskilled"
+msgid "Honest or Government --- Dishonest --- Immoral"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:404
+#: templates/iat/TranslationWords.html:405
 #: templates/iat/TranslationWords.html:406
 #: templates/iat/TranslationWords.html:407
-msgid "Competent --- Incompetent or Government --- Public Administration"
+msgid "Honest or Government --- Dishonest --- Corrupt"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:408
 #: templates/iat/TranslationWords.html:409
 #: templates/iat/TranslationWords.html:410
-msgid "Competent --- Incompetent or Government --- Civil Servants"
+msgid "Honest or Government --- Dishonest --- Unscrupulous"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:411
 #: templates/iat/TranslationWords.html:412
 #: templates/iat/TranslationWords.html:413
-msgid "Competent --- Incompetent or Government --- Regulation"
+#: templates/iat/TranslationWords.html:414
+msgid "Honest or Government --- Dishonest --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:414
 #: templates/iat/TranslationWords.html:415
 #: templates/iat/TranslationWords.html:416
-msgid "Competent --- Incompetent or Government --- State"
+#: templates/iat/TranslationWords.html:417
+msgid "Honest or Government --- Dishonest --- Illegitimate"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:417
 #: templates/iat/TranslationWords.html:418
 #: templates/iat/TranslationWords.html:419
-msgid "Competent --- Incompetent or Government --- Constitution"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:420
-#: templates/iat/TranslationWords.html:421
-msgid "Competent --- Incompetent or Government --- Inexperienced"
+msgid "Honest or Government --- Dishonest --- Unfair"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:422
 #: templates/iat/TranslationWords.html:423
 #: templates/iat/TranslationWords.html:424
-msgid "Competent --- Incompetent or Government --- Inefficient"
+msgid "Honest --- Dishonest or Government --- Public administration"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:425
 #: templates/iat/TranslationWords.html:426
-msgid "Competent --- Incompetent or Government --- Powerless"
+msgid "Honest --- Dishonest or Government --- Civil Servants"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:427
 #: templates/iat/TranslationWords.html:428
-msgid "Competent --- Incompetent or Government --- Useless"
+msgid "Honest --- Dishonest or Government --- Politicians"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:429
 #: templates/iat/TranslationWords.html:430
+msgid "Honest --- Dishonest or Government --- State"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:431
-msgid "Competent --- Incompetent or Government --- Unskilled"
-msgstr ""
-
 #: templates/iat/TranslationWords.html:432
-#: templates/iat/TranslationWords.html:433
-msgid "Competent --- Incompetent or Government --- Weak"
+msgid "Honest --- Dishonest or Government --- Constitution"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:433
+#: templates/iat/TranslationWords.html:434
 #: templates/iat/TranslationWords.html:435
+msgid "Honest --- Dishonest or Government --- Regulation"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:436
 #: templates/iat/TranslationWords.html:437
-#: templates/iat/TranslationWords.html:438
-msgid "Competent --- Incompetent or Government --- Proficient"
+msgid "Honest --- Dishonest or Government --- Unfair"
 msgstr ""
 
+#: templates/iat/TranslationWords.html:438
 #: templates/iat/TranslationWords.html:439
 #: templates/iat/TranslationWords.html:440
+msgid "Honest --- Dishonest or Government --- Corrupt"
+msgstr ""
+
 #: templates/iat/TranslationWords.html:441
 #: templates/iat/TranslationWords.html:442
-msgid "Competent --- Incompetent or Government --- Reliable"
+msgid "Honest --- Dishonest or Government --- Immoral"
 msgstr ""
 
 #: templates/iat/TranslationWords.html:443
 #: templates/iat/TranslationWords.html:444
-#: templates/iat/TranslationWords.html:445
-msgid "Competent --- Incompetent or Government --- Smart"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:446
-#: templates/iat/TranslationWords.html:447
-#: templates/iat/TranslationWords.html:448
-msgid "Competent --- Incompetent or Government --- Capable"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:449
-#: templates/iat/TranslationWords.html:450
-#: templates/iat/TranslationWords.html:451
-#: templates/iat/TranslationWords.html:452
-msgid "Competent --- Incompetent or Government --- Bright"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:453
-#: templates/iat/TranslationWords.html:454
-#: templates/iat/TranslationWords.html:455
-msgid "Competent --- Incompetent or Government --- Skilful"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:458
-#: templates/iat/TranslationWords.html:460
-msgid "Honest --- Dishonest --- Truthful"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:459
-#: templates/iat/TranslationWords.html:475
-msgid "Honest --- Dishonest --- Moral"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:461
-#: templates/iat/TranslationWords.html:465
-msgid "Honest --- Dishonest --- Lying"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:462
-msgid "Honest --- Dishonest --- Transparent"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:463
-msgid "Honest --- Dishonest --- Corrupt"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:464
-#: templates/iat/TranslationWords.html:473
-msgid "Honest --- Dishonest --- Immoral"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:466
-#: templates/iat/TranslationWords.html:469
-msgid "Honest --- Dishonest --- Unfair"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:467
-msgid "Honest --- Dishonest --- Open"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:468
-msgid "Honest --- Dishonest --- Credible"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:470
-#: templates/iat/TranslationWords.html:474
-msgid "Honest --- Dishonest --- Unscupulous"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:471
-msgid "Honest --- Dishonest --- Illegitimate"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:472
-msgid "Honest --- Dishonest --- Fair"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:477
-#: templates/iat/TranslationWords.html:478
-msgid "Honest or Government --- Dishonest --- Constitution"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:479
-#: templates/iat/TranslationWords.html:480
-msgid "Honest or Government --- Dishonest --- State"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:481
-#: templates/iat/TranslationWords.html:482
-msgid "Honest or Government --- Dishonest --- Public administration"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:483
-#: templates/iat/TranslationWords.html:484
-msgid "Honest or Government --- Dishonest --- Civil servants"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:485
-#: templates/iat/TranslationWords.html:486
-msgid "Honest or Government --- Dishonest --- Politicians"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:487
-#: templates/iat/TranslationWords.html:488
-msgid "Honest or Government --- Dishonest --- Court"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:489
-#: templates/iat/TranslationWords.html:490
-#: templates/iat/TranslationWords.html:491
-msgid "Honest or Government --- Dishonest --- Transparent"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:492
-#: templates/iat/TranslationWords.html:493
-msgid "Honest or Government --- Dishonest --- Fair"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:494
-#: templates/iat/TranslationWords.html:495
-msgid "Honest or Government --- Dishonest --- Truthful"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:496
-#: templates/iat/TranslationWords.html:497
-msgid "Honest or Government --- Dishonest --- Open"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:498
-#: templates/iat/TranslationWords.html:499
-#: templates/iat/TranslationWords.html:500
-msgid "Honest or Government --- Dishonest --- Credible"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:501
-#: templates/iat/TranslationWords.html:502
-msgid "Honest or Government --- Dishonest --- Moral"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:504
-#: templates/iat/TranslationWords.html:505
-#: templates/iat/TranslationWords.html:506
-#: templates/iat/TranslationWords.html:507
-msgid "Honest or Government --- Dishonest --- Immoral"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:508
-#: templates/iat/TranslationWords.html:509
-#: templates/iat/TranslationWords.html:510
-#: templates/iat/TranslationWords.html:511
-msgid "Honest or Government --- Dishonest --- Corrupt"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:512
-#: templates/iat/TranslationWords.html:513
-#: templates/iat/TranslationWords.html:514
-msgid "Honest or Government --- Dishonest --- Unscrupulous"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:515
-#: templates/iat/TranslationWords.html:516
-#: templates/iat/TranslationWords.html:517
-#: templates/iat/TranslationWords.html:518
-msgid "Honest or Government --- Dishonest --- Lying"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:519
-#: templates/iat/TranslationWords.html:520
-#: templates/iat/TranslationWords.html:521
-msgid "Honest or Government --- Dishonest --- Illegitimate"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:522
-#: templates/iat/TranslationWords.html:523
-#: templates/iat/TranslationWords.html:524
-msgid "Honest or Government --- Dishonest --- Unfair"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:526
-#: templates/iat/TranslationWords.html:527
-#: templates/iat/TranslationWords.html:528
-msgid "Honest --- Dishonest or Government --- Public administration"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:529
-#: templates/iat/TranslationWords.html:530
-msgid "Honest --- Dishonest or Government --- Civil Servants"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:531
-#: templates/iat/TranslationWords.html:532
-msgid "Honest --- Dishonest or Government --- Politicians"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:533
-#: templates/iat/TranslationWords.html:534
-msgid "Honest --- Dishonest or Government --- State"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:535
-#: templates/iat/TranslationWords.html:536
-msgid "Honest --- Dishonest or Government --- Constitution"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:537
-#: templates/iat/TranslationWords.html:538
-#: templates/iat/TranslationWords.html:539
-msgid "Honest --- Dishonest or Government --- Regulation"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:540
-#: templates/iat/TranslationWords.html:541
-msgid "Honest --- Dishonest or Government --- Unfair"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:542
-#: templates/iat/TranslationWords.html:543
-#: templates/iat/TranslationWords.html:544
-msgid "Honest --- Dishonest or Government --- Corrupt"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:545
-#: templates/iat/TranslationWords.html:546
-msgid "Honest --- Dishonest or Government --- Immoral"
-msgstr ""
-
-#: templates/iat/TranslationWords.html:547
-#: templates/iat/TranslationWords.html:548
 msgid "Honest --- Dishonest or Government --- Illegitimate"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:549
-#: templates/iat/TranslationWords.html:550
-#: templates/iat/TranslationWords.html:551
+#: templates/iat/TranslationWords.html:445
+#: templates/iat/TranslationWords.html:446
+#: templates/iat/TranslationWords.html:447
 msgid "Honest --- Dishonest or Government --- Lying"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:552
-#: templates/iat/TranslationWords.html:553
+#: templates/iat/TranslationWords.html:448
+#: templates/iat/TranslationWords.html:449
 msgid "Honest --- Dishonest or Government --- Unscrupulous"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:555
-#: templates/iat/TranslationWords.html:556
-#: templates/iat/TranslationWords.html:557
-#: templates/iat/TranslationWords.html:558
+#: templates/iat/TranslationWords.html:451
+#: templates/iat/TranslationWords.html:452
+#: templates/iat/TranslationWords.html:453
+#: templates/iat/TranslationWords.html:454
 msgid "Honest --- Dishonest or Government --- Moral"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:559
-#: templates/iat/TranslationWords.html:560
-#: templates/iat/TranslationWords.html:561
+#: templates/iat/TranslationWords.html:455
+#: templates/iat/TranslationWords.html:456
+#: templates/iat/TranslationWords.html:457
 msgid "Honest --- Dishonest or Government --- Fair"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:562
-#: templates/iat/TranslationWords.html:563
-#: templates/iat/TranslationWords.html:564
+#: templates/iat/TranslationWords.html:458
+#: templates/iat/TranslationWords.html:459
+#: templates/iat/TranslationWords.html:460
 msgid "Honest --- Dishonest or Government --- Open"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:565
-#: templates/iat/TranslationWords.html:566
-#: templates/iat/TranslationWords.html:567
-#: templates/iat/TranslationWords.html:568
+#: templates/iat/TranslationWords.html:461
+#: templates/iat/TranslationWords.html:462
+#: templates/iat/TranslationWords.html:463
+#: templates/iat/TranslationWords.html:464
 msgid "Honest --- Dishonest or Government --- Truthful"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:569
-#: templates/iat/TranslationWords.html:570
-#: templates/iat/TranslationWords.html:571
+#: templates/iat/TranslationWords.html:465
+#: templates/iat/TranslationWords.html:466
+#: templates/iat/TranslationWords.html:467
 msgid "Honest --- Dishonest or Government --- Credible"
 msgstr ""
 
-#: templates/iat/TranslationWords.html:572
-#: templates/iat/TranslationWords.html:573
-#: templates/iat/TranslationWords.html:574
-#: templates/iat/TranslationWords.html:575
+#: templates/iat/TranslationWords.html:468
+#: templates/iat/TranslationWords.html:469
+#: templates/iat/TranslationWords.html:470
+#: templates/iat/TranslationWords.html:471
 msgid "Honest --- Dishonest or Government --- Transparent"
 msgstr ""

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-04 14:11+0100\n"
+"POT-Creation-Date: 2017-02-08 15:16+0100\n"
 "PO-Revision-Date: 2016-10-02 15:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,1051 +17,1111 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.8.9\n"
 
-#: models.py:57
+#: models.py:47
 msgid "Overall, how satisfied are you with life as a whole these days?"
 msgstr ""
 
-#: models.py:60
+#: models.py:49 models.py:69
 msgid "0 - Not at all satisfied"
 msgstr ""
 
-#: models.py:70
+#: models.py:59 models.py:79 models.py:721 models.py:741 models.py:761
+#: models.py:781 models.py:801 models.py:821 models.py:841 models.py:861
+#: models.py:881
 msgid "10 - Completely satisfied"
 msgstr ""
 
-#: models.py:71 models.py:92 models.py:113 models.py:134 models.py:155
-#: models.py:176 models.py:203 models.py:224 models.py:247 models.py:268
-#: models.py:290 models.py:310 models.py:330 models.py:350 models.py:370
-#: models.py:390 models.py:410 models.py:423 models.py:455 models.py:475
-#: models.py:495 models.py:515 models.py:535 models.py:555 models.py:575
-#: models.py:596 models.py:616 models.py:637 models.py:657 models.py:678
-#: models.py:794 models.py:819 models.py:838 models.py:856 models.py:869
-#: templates/survey_i18n/Survey10.html:43
-#: templates/survey_i18n/Survey10.html:80
-#: templates/survey_i18n/Survey10B.html:26
-#: templates/survey_i18n/Survey10B.html:35
-#: templates/survey_i18n/Survey10D.html:27
-#: templates/survey_i18n/Survey10D.html:36 views.py:317 views.py:347
+#: models.py:60 models.py:80 models.py:100 models.py:120 models.py:140
+#: models.py:160 models.py:180 models.py:200 models.py:220 models.py:240
+#: models.py:260 models.py:280 models.py:300 models.py:320 models.py:340
+#: models.py:360 models.py:380 models.py:400 models.py:420 models.py:440
+#: models.py:451 models.py:482 models.py:502 models.py:522 models.py:542
+#: models.py:562 models.py:582 models.py:602 models.py:622 models.py:642
+#: models.py:662 models.py:682 models.py:702 models.py:722 models.py:742
+#: models.py:762 models.py:782 models.py:802 models.py:822 models.py:842
+#: models.py:862 models.py:882 models.py:902 models.py:922 models.py:942
+#: models.py:962 models.py:982 models.py:1002 models.py:1022 models.py:1042
+#: models.py:1062 models.py:1082 models.py:1102 models.py:1171 models.py:1191
+#: models.py:1251 models.py:1332 models.py:1352 models.py:1372 models.py:1392
+#: models.py:1417 models.py:1436 models.py:1482 models.py:1502 models.py:1522
+#: models.py:1668 models.py:1723
 msgid "Don't know"
 msgstr ""
 
-#: models.py:78
+#: models.py:67
 msgid ""
 "Generally speaking, would you say that most people can be trusted, or that "
-"you can't be too careful in dealing with people?"
+"you can’t be too careful in dealing with people?"
 msgstr ""
 
-#: models.py:81
-msgid "0 -You can't be too careful"
-msgstr ""
-
-#: models.py:91
-msgid "10 - Most people can be trusted"
-msgstr ""
-
-#: models.py:99
-msgid ""
-"How do you see yourself: are you generally a person who is fully prepared to "
-"take risks or do you try to avoid taking risks?"
-msgstr ""
-
-#: models.py:102
-msgid "0 - Completely unwilling to take risks"
-msgstr ""
-
-#: models.py:112
-msgid "10 - Very willing to take risks"
-msgstr ""
-
-#: models.py:120
-msgid ""
-"How willing are you to punish someone who treats you unfairly, even if there "
-"may be costs for you?"
-msgstr ""
-
-#: models.py:123 models.py:144 models.py:165
-msgid "0 - Completely unwilling to do so"
-msgstr ""
-
-#: models.py:133 models.py:154 models.py:175
-msgid "10 - Very willing to do so"
-msgstr ""
-
-#: models.py:141
+#: models.py:87
 msgid ""
 "How willing are you to punish someone who treats others unfairly, even if "
 "there may be costs for you?"
 msgstr ""
 
-#: models.py:162
-msgid ""
-"How willing are you to give to good causes without expecting anything in "
-"return? "
+#: models.py:89 models.py:109
+msgid "0 - Completely unwilling to do so"
 msgstr ""
 
-#: models.py:189
-msgid "When someone does me a favour I am willing to return it."
+#: models.py:99 models.py:119
+msgid "10 - Very willing to do so"
+msgstr ""
+
+#: models.py:107
+msgid ""
+"How willing are you to give to good causes without expecting anything in "
+"return?"
+msgstr ""
+
+#: models.py:127
+msgid ""
+"How do you see yourself: are you generally a person who is fully prepared to "
+"take risks or do you try to avoid taking risks?"
+msgstr ""
+
+#: models.py:129
+msgid "0 - Generally unwilling to take risks"
+msgstr ""
+
+#: models.py:139
+msgid "10 - Fully prepared to take risks"
+msgstr ""
+
+#: models.py:147
+#, fuzzy
+#| msgid "When someone does me a favour I am willing to return it."
+msgid ""
+"When someone does me a favour I am willing to return it. How well does this "
+"statement describe you as a person?"
 msgstr ""
 "When someone does me a favour I am willing to return it. How well does this "
 "statement describe you as a person?"
 
-#: models.py:192 models.py:213 models.py:444 models.py:783
+#: models.py:149 models.py:429 models.py:1657
 msgid "0 - Does not describe me at all"
 msgstr ""
 
-#: models.py:202 models.py:223 models.py:454 models.py:793
+#: models.py:159 models.py:439 models.py:1667
 msgid "10 - Describes me perfectly"
 msgstr ""
 
-#: models.py:210
+#: models.py:167
 msgid ""
-"If I am treated very unjustly, I will take revenge     at the first "
-"occasion, even if there is a cost to do so."
-msgstr ""
-"If I am treated very unjustly, I will take revenge     at the first "
-"occasion, even if there is a cost to do so. How well does this statement "
-"describe you as a person?"
-
-#: models.py:233
-msgid ""
-"Would you say that most of the time people are only     looking out for "
+"Would you say that most of the time people are only looking out for "
 "themselves or that they mostly try to help each other?"
 msgstr ""
 
-#: models.py:236
-msgid "0 - People are only looking out for themselves "
+#: models.py:169
+msgid "0 - People are only looking out for themselves"
 msgstr ""
 
-#: models.py:246
+#: models.py:179
 msgid "10 - People mostly try to help each other"
 msgstr ""
 
-#: models.py:254
+#: models.py:187
 msgid ""
-"Do you think most people would try to take advantage     of you if they got "
-"a chance, or would they try to be fair?"
+"Do you think most people would try to take advantage of you if they got a "
+"chance, or would they try to be fair?"
 msgstr ""
 
-#: models.py:257
+#: models.py:189
 msgid "0 - Most people would try to take advantage of me"
 msgstr ""
 
-#: models.py:267
+#: models.py:199
 msgid "10 - Most people would try to be fair"
 msgstr ""
 
-#: models.py:275
-msgid ""
-"Can you tell us whether you think the following     action can always be "
-"justified, never be justified, or something in     between"
+#: models.py:207
+msgid "Receiving government benefits to which you are not entitled"
 msgstr ""
 
-#: models.py:279
+#: models.py:209 models.py:229 models.py:249
 msgid "0 - This action is never wrong"
 msgstr ""
 
-#: models.py:289
+#: models.py:219 models.py:239 models.py:259
 msgid "10 - This action is always wrong"
 msgstr ""
 
-#: models.py:297
-msgid "Your family:"
+#: models.py:227 models.py:247
+msgid "Cheating on taxes if you have a chance"
 msgstr ""
 
-#: models.py:299 models.py:319 models.py:339 models.py:359 models.py:379
-#: models.py:399 models.py:464 models.py:484 models.py:504 models.py:524
-#: models.py:544 models.py:564
-msgid "0 - I don't trust them at all"
+#: models.py:267
+msgid "Your family"
 msgstr ""
 
-#: models.py:309 models.py:329 models.py:349 models.py:369 models.py:389
-#: models.py:409 models.py:474 models.py:494 models.py:514 models.py:534
-#: models.py:554 models.py:574
+#: models.py:269 models.py:289 models.py:309 models.py:329 models.py:349
+#: models.py:369 models.py:389 models.py:409 models.py:491 models.py:511
+#: models.py:531 models.py:551 models.py:571 models.py:591
+msgid "0 - I don’t trust them at all"
+msgstr ""
+
+#: models.py:279 models.py:299 models.py:319 models.py:339 models.py:359
+#: models.py:379 models.py:399 models.py:419 models.py:501 models.py:521
+#: models.py:541 models.py:561 models.py:581 models.py:601
 msgid "10 - I fully trust them"
 msgstr ""
 
-#: models.py:317
-msgid "People in your neighbourhood:"
+#: models.py:287
+msgid "People in your neighborhood"
 msgstr ""
 
-#: models.py:337
-msgid "People you know personally:"
+#: models.py:307
+msgid "People you know personally"
 msgstr ""
 
-#: models.py:357
-msgid "People you meet for the first time:"
+#: models.py:327
+msgid "People you meet for the first time"
 msgstr ""
 
-#: models.py:377
-msgid "People of another religion:"
+#: models.py:347
+msgid "People of another religion"
 msgstr ""
 
-#: models.py:397
-msgid "People of another nationality:"
+#: models.py:367
+msgid "People of another nationality"
 msgstr ""
 
-#: models.py:417
+#: models.py:387
+msgid "People who immigrated to [country]"
+msgstr ""
+
+#: models.py:407
+msgid "People who come to [country] to seek refuge"
+msgstr ""
+
+#: models.py:427
+msgid "I am good at math"
+msgstr ""
+
+#: models.py:447
 msgid ""
 "If you lost a wallet or a purse that contained items of great value to you, "
 "and it was found by a stranger, do you think it would be returned with its "
 "contents, or not?"
 msgstr ""
 
-#: models.py:421 models.py:433 models.py:817 models.py:903
+#: models.py:449 models.py:460
 msgid "Yes"
 msgstr ""
 
-#: models.py:422 models.py:434 models.py:818 models.py:904
+#: models.py:450 models.py:461
 msgid "No"
 msgstr ""
 
-#: models.py:430
-msgid "Did you vote in the last national election?"
-msgstr ""
-
-#: models.py:435
-msgid "I could not vote"
-msgstr ""
-
-#: models.py:442
-msgid "I am good at math."
+#: models.py:458
+msgid "Did you vote in the last general elections?"
 msgstr ""
 
 #: models.py:462
-msgid "Your government:"
+msgid "I couldn't vote"
 msgstr ""
 
-#: models.py:482
-msgid "The parliament:"
+#: models.py:469
+msgid ""
+"And now a general question about trust. On a scale from zero to ten, where "
+"zero is not at all and ten is completely, in general how much do you trust "
+"most people in your country?"
 msgstr ""
 
-#: models.py:502
-msgid "The judicial system:"
+#: models.py:471
+msgid "0 - Not at all"
 msgstr ""
 
-#: models.py:522
-msgid "The media:"
+#: models.py:481
+msgid "10 - Completely"
 msgstr ""
 
-#: models.py:542
-msgid "Financial Institutions (e.g. banks):"
+#: models.py:489
+msgid "The government"
 msgstr ""
 
-#: models.py:562
-msgid "The police:"
+#: models.py:509
+msgid "The parliament"
 msgstr ""
 
-#: models.py:582
-msgid "Public institutions deliver public services in the best possible way."
+#: models.py:529
+msgid "The judicial system"
 msgstr ""
 
-#: models.py:585 models.py:605 models.py:626 models.py:646 models.py:667
-msgid "0 - I don't agree at all"
+#: models.py:549
+msgid "The police"
 msgstr ""
 
-#: models.py:595 models.py:615 models.py:636 models.py:656 models.py:677
+#: models.py:569
+msgid "The media"
+msgstr ""
+
+#: models.py:589
+msgid "Financial institutions (e.g. banks)"
+msgstr ""
+
+#: models.py:609
+msgid "Public institutions deliver public services in the best possible way"
+msgstr ""
+
+#: models.py:611 models.py:631 models.py:651 models.py:671 models.py:691
+msgid "0 - I don’t agree at all"
+msgstr ""
+
+#: models.py:621 models.py:641 models.py:661 models.py:681 models.py:701
 msgid "10 - I fully agree"
 msgstr ""
 
-#: models.py:603
-msgid "Public institutions pursue long term objectives."
+#: models.py:629
+msgid "Public institutions pursue long term objectives"
 msgstr ""
 
-#: models.py:623
-msgid ""
-"People working in public institutions behave according to ethical standards "
-"aimed at avoiding corruption."
+#: models.py:649
+msgid "People working in public institutions are ethical and not corrupt"
 msgstr ""
 
-#: models.py:644
-msgid "Public institutions are transparent."
+#: models.py:669
+msgid "Public institutions are transparent"
 msgstr ""
 
-#: models.py:664
+#: models.py:689
 msgid ""
 "Public institutions treat all citizens fairly regardless of their gender, "
-"race, age or economic condition equally."
+"race, age or economic condition"
 msgstr ""
 
-#: models.py:685
+#: models.py:709
+msgid "the Education system"
+msgstr ""
+
+#: models.py:711 models.py:731 models.py:751 models.py:771 models.py:791
+#: models.py:811 models.py:831 models.py:851 models.py:871
+msgid "0 -  Not at all satisfied"
+msgstr ""
+
+#: models.py:729
+msgid "the Health care system"
+msgstr ""
+
+#: models.py:749
+msgid "Public Transport"
+msgstr ""
+
+#: models.py:769
+msgid "Child care services"
+msgstr ""
+
+#: models.py:789
+msgid ""
+"Welfare benefits (unemployment benefits, disability benefits, income support)"
+msgstr ""
+
+#: models.py:809
+msgid "Public housing"
+msgstr ""
+
+#: models.py:829
+msgid "Security and crime prevention (police)"
+msgstr ""
+
+#: models.py:849
+msgid "Environmental services (air and water quality, parks and green spaces)"
+msgstr ""
+
+#: models.py:869
+msgid ""
+"Cultural facilities (theaters, cinemas, libraries, museums, public social "
+"spaces)"
+msgstr ""
+
+#: models.py:889
+msgid ""
+"If you complain about bad quality of a public service, how likely is that "
+"the problem will be easily resolved?"
+msgstr ""
+
+#: models.py:891 models.py:911 models.py:931 models.py:951 models.py:971
+#: models.py:991 models.py:1011
+msgid "0 -  Very unlikely"
+msgstr ""
+
+#: models.py:901 models.py:921 models.py:941 models.py:961 models.py:981
+#: models.py:1001 models.py:1021 models.py:1101 models.py:1210 models.py:1230
+msgid "10 - Very likely"
+msgstr ""
+
+#: models.py:909
+msgid ""
+"If a technology could speed up administrative procedures, how likely is it "
+"that a government agency will quickly adopt the new technology?"
+msgstr ""
+
+#: models.py:929
+msgid ""
+"If you need information about an administrative procedure, do you think it "
+"will be easy to find?"
+msgstr ""
+
+#: models.py:949
+msgid ""
+"If a decision affecting your community is to be taken by the local or "
+"regional government, how likely is it that you would be consulted upon?"
+msgstr ""
+
+#: models.py:969
+msgid ""
+"If you start a business today, do you think that the conditions under which "
+"you operate (taxes, regulations, etc.) will remain stable enough so that "
+"unexpected changes do not threaten your business?"
+msgstr ""
+
+#: models.py:989
+msgid ""
+"If a natural disaster occurs do you think that the provision by government "
+"of adequate food, shelter and clothing will be available to people who are "
+"affected?"
+msgstr ""
+
+#: models.py:1009
+msgid ""
+"If a high ranking government employee was guilty of misusing taxpayers’ "
+"money, do you think that he/she would be prosecuted?"
+msgstr ""
+
+#: models.py:1029
+msgid ""
+"If money is offered by citizens to government employees in order to speed up "
+"administrative procedures, do you think that they will accept or refuse the "
+"bribe?"
+msgstr ""
+
+#: models.py:1031
+msgid "0 -  Most likely to accept the bribe"
+msgstr ""
+
+#: models.py:1041 models.py:1081
+msgid "10 - Most likely to refuse the bribe"
+msgstr ""
+
+#: models.py:1049
+msgid ""
+"If a high level politician would be offered a well-paid job in the private "
+"sector in exchange for political influence, do you think that he/she will "
+"accept reject the job?"
+msgstr ""
+
+#: models.py:1051
+msgid "0 -  Most likely to accept the job"
+msgstr ""
+
+#: models.py:1061
+msgid "10 - Most likely to refuse the job"
+msgstr ""
+
+#: models.py:1069
+msgid ""
+"If a parliamentarian could influence the allocation of a public procurement "
+"tender and receive a bribe in return, do you think that he/she will accept "
+"or reject the bribe?"
+msgstr ""
+
+#: models.py:1071
+msgid "0 - Most likely to accept the bribe"
+msgstr ""
+
+#: models.py:1089
+msgid ""
+"If a citizen belongs to a social minority (e.g. sexual, racial/ethnic and/or "
+"based on nationality), how likely is it that he or she will be treated "
+"equally by a government agency?"
+msgstr ""
+
+#: models.py:1091 models.py:1200 models.py:1220
+msgid "0 - Very unlikely"
+msgstr ""
+
+#: models.py:1152
+msgid ""
+"Consider 100 children growing up in the poorest segment of society. How many "
+"children do you believe are able to become part of the richest segment of "
+"society when they are older?"
+msgstr ""
+
+#: models.py:1158
+msgid ""
+"Some people say there is not much opportunity to get ahead today for the "
+"average person. Others say anyone who works hard can climb up the ladder. "
+"Which one comes closer to the way you feel about this?"
+msgstr ""
+
+#: models.py:1160
+msgid "0 - There is not much opportunity"
+msgstr ""
+
+#: models.py:1170
+msgid "10 - There is plenty of opportunity"
+msgstr ""
+
+#: models.py:1178
+msgid ""
+"When it comes to the financial situation of your household, what are your "
+"expectations for the 12 months to come, will the next 12 months be better, "
+"worse, or the same?"
+msgstr ""
+
+#: models.py:1180
+msgid "0 - Worse"
+msgstr ""
+
+#: models.py:1185
+msgid "5 - The same"
+msgstr ""
+
+#: models.py:1190
+msgid "10 - Better"
+msgstr ""
+
+#: models.py:1198
+msgid ""
+"How likely do you think it is that you will still have a job in 6 months (if "
+"you have one now)?"
+msgstr ""
+
+#: models.py:1211 models.py:1231 models.py:1649
+msgid "N/A"
+msgstr ""
+
+#: models.py:1218
+msgid ""
+"If you were to lose your job, how likely is it that you would find a job "
+"with a similar salary within 6 months?"
+msgstr ""
+
+#: models.py:1238
+msgid ""
+"As you may know, international trade has increased substantially in recent "
+"years. Do you think government should try to encourage international trade "
+"or to discourage international trade?"
+msgstr ""
+
+#: models.py:1240
+msgid "0 - Fully discourage international trade"
+msgstr ""
+
+#: models.py:1250
+msgid "10 - Fully encourage international trade"
+msgstr ""
+
+#: models.py:1258
+msgid "Television"
+msgstr ""
+
+#: models.py:1260 models.py:1272 models.py:1284 models.py:1296 models.py:1308
+msgid "A lot"
+msgstr ""
+
+#: models.py:1261 models.py:1273 models.py:1285 models.py:1297 models.py:1309
+msgid "Some"
+msgstr ""
+
+#: models.py:1262 models.py:1274 models.py:1286 models.py:1298 models.py:1310
+msgid "Little"
+msgstr ""
+
+#: models.py:1263 models.py:1275 models.py:1287 models.py:1299 models.py:1311
+msgid "None"
+msgstr ""
+
+#: models.py:1270
+msgid "the Internet"
+msgstr ""
+
+#: models.py:1282
+msgid "Family members, friends, co-workers"
+msgstr ""
+
+#: models.py:1294
+msgid "Social networks (twitter, facebook, etc…)"
+msgstr ""
+
+#: models.py:1306
+msgid "Print media (newspapers, magazines)"
+msgstr ""
+
+#: models.py:1319
+msgid "Independent hackers"
+msgstr ""
+
+#: models.py:1321 models.py:1341 models.py:1361 models.py:1381
+msgid "0 - No threat"
+msgstr ""
+
+#: models.py:1331 models.py:1351 models.py:1371 models.py:1391
+msgid "10 - A large threat"
+msgstr ""
+
+#: models.py:1339
+msgid "Domestic government agencies"
+msgstr ""
+
+#: models.py:1359
+msgid "Foreign government agencies"
+msgstr ""
+
+#: models.py:1379
+msgid "Corporations"
+msgstr ""
+
+#: models.py:1399
+msgid ""
+"How high do you estimate the percentage of people of non-[country] origin in "
+"your neighborhood to be? With non-[country] origin we mean people who were "
+"not born in [country] or of whom at least one parent was not born in "
+"[country]. Please give a percentage between 0 and 100."
+msgstr ""
+
+#: models.py:1443
+msgid "How often do you get together with friends?"
+msgstr ""
+
+#: models.py:1445 models.py:1458
+msgid "Daily"
+msgstr ""
+
+#: models.py:1446 models.py:1459
+msgid "Several days a week"
+msgstr ""
+
+#: models.py:1447 models.py:1460
+msgid "Once a week"
+msgstr ""
+
+#: models.py:1448 models.py:1461
+msgid "Less than once a week"
+msgstr ""
+
+#: models.py:1449 models.py:1462
+msgid "Never"
+msgstr ""
+
+#: models.py:1456
+msgid ""
+"How often do you participate in voluntary activities to help people other "
+"than your direct relatives, friends or colleagues?"
+msgstr ""
+
+#: models.py:1468
+msgid ""
+"How strongly do you feel connected to other people in your neighborhood?"
+msgstr ""
+
+#: models.py:1488
+msgid ""
+"Some people say that who people vote for does not make any difference to "
+"what happens. Others say that who people vote for can make a difference to "
+"what happens. Where would you place yourself?"
+msgstr ""
+
+#: models.py:1508
+msgid ""
+"In political matters, people often talk of “the left” and “the right.” How "
+"would you place your views on this scale, generally speaking?"
+msgstr ""
+
+#: models.py:1527
 msgid "What is your date of birth?"
 msgstr ""
 
-#: models.py:691
+#: models.py:1533
 msgid "Male"
 msgstr ""
 
-#: models.py:691
+#: models.py:1533
 msgid "Female"
 msgstr ""
 
-#: models.py:691 models.py:916 models.py:927
+#: models.py:1533 models.py:1569 models.py:1735
 msgid "Other"
 msgstr ""
 
-#: models.py:692
+#: models.py:1534
 msgid "What is your gender?"
 msgstr ""
 
-#: models.py:701
-msgid "How many people live in your household (including yourself)?"
+#: models.py:1539
+msgid "How many people live in your household (including yourself?)"
 msgstr ""
 
-#: models.py:724
+#: models.py:1553
+msgid "More than 10"
+msgstr ""
+
+#: models.py:1558
 msgid "In which country were you born?"
 msgstr ""
 
-#: models.py:728
+#: models.py:1566
+msgid "What is your nationality?"
+msgstr ""
+
+#: models.py:1576
+msgid "In what year did you arrive in [country]?"
+msgstr ""
+
+#: models.py:1577
 msgid "I was born here"
 msgstr ""
 
-#: models.py:735
-msgid "Do you live in a:"
+#: models.py:1582
+msgid "Were your parents born in [country]?"
 msgstr ""
 
-#: models.py:737
-msgid "Large Metropolitan area (More than 1,5 million inhabitants)"
+#: models.py:1585
+msgid "Yes, both parents"
 msgstr ""
 
-#: models.py:739
-msgid "Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)"
+#: models.py:1586
+msgid "Only 1 parent"
 msgstr ""
 
-#: models.py:741
-msgid "  Small metropolitan area (200.000 to 500.000 inhabitants)"
+#: models.py:1587
+msgid "Neither was born here"
 msgstr ""
 
-#: models.py:743
+#: models.py:1592
+msgid "Do you live in a...?"
+msgstr ""
+
+#: models.py:1597
+msgid "Small metropolitan area (200.000 to 500.000 inhabitants)"
+msgstr ""
+
+#: models.py:1598
 msgid "Town (50.000 to 200.000 inhabitants)"
 msgstr ""
 
-#: models.py:744
-msgid "Village (Less than 50.000 inhabitants)"
+#: models.py:1599
+msgid "Village (Less than 50,000 inhabitants)"
 msgstr ""
 
-#: models.py:745
+#: models.py:1600
 msgid "Rural area"
 msgstr ""
 
-#: models.py:754
+#: models.py:1605
+msgid "What is the highest level of education you have completed?"
+msgstr ""
+
+#: models.py:1608 models.py:1621
+msgid "Less than high school"
+msgstr ""
+
+#: models.py:1609 models.py:1622
+msgid "High school"
+msgstr ""
+
+#: models.py:1610 models.py:1623
+msgid "Some college"
+msgstr ""
+
+#: models.py:1611 models.py:1624
+msgid ""
+"Diploma, trades certificate or other post school qualification other than "
+"university"
+msgstr ""
+
+#: models.py:1612 models.py:1625
+msgid "Undergraduate degree (e.g. BA, BS)"
+msgstr ""
+
+#: models.py:1613 models.py:1626
+msgid "Post-graduate degree"
+msgstr ""
+
+#: models.py:1618
+msgid ""
+"What is the highest level of education that one of your parents has "
+"completed? (either one, or both have completed this level of education)"
+msgstr ""
+
+#: models.py:1631
 msgid "Which of these best describes your situation?"
 msgstr ""
 
-#: models.py:756
-msgid "At work as an employee"
+#: models.py:1634
+msgid "Employee"
 msgstr ""
 
-#: models.py:757
+#: models.py:1635
 msgid "Employer/self-employed"
 msgstr ""
 
-#: models.py:758
+#: models.py:1636
 msgid "Unemployed"
 msgstr ""
 
-#: models.py:760
+#: models.py:1637
 msgid ""
 "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
 msgstr ""
 
-#: models.py:767
-msgid "Do you work in the...?"
+#: models.py:1642
+msgid "Do you currently work in the…?"
 msgstr ""
 
-#: models.py:769
+#: models.py:1645
 msgid "Central, regional or local government administration"
 msgstr ""
 
-#: models.py:771
-msgid "Public sector, other"
+#: models.py:1646
+msgid "Public sector"
 msgstr ""
 
-#: models.py:772
+#: models.py:1647
 msgid "Private (for profit) sector"
 msgstr ""
 
-#: models.py:773
+#: models.py:1648
 msgid "Not for profit sector"
 msgstr ""
 
-#: models.py:774
-msgid "Not applicable"
-msgstr ""
-
-#: models.py:780
+#: models.py:1654
 msgid ""
-"As long as I am not convinced otherwise, I assume that people have only the "
-"best intentions."
+"How well does the following statement describe you as a person? As long as I "
+"am not convinced otherwise, I assume that people have only the best "
+"intentions?"
 msgstr ""
 
-#: models.py:805
+#: models.py:1674
+msgid ""
+"In the last 12 months, what was your total income, the income that you "
+"received as an individual, after taxes have been deducted? (Income can come "
+"salaries and wages, profit from self-employment, interest, rent, pension, "
+"social insurance payments and other benefits, among others)"
+msgstr ""
+
+#: models.py:1679
 msgid ""
 "Just to confirm, which of these income bands corresponds best to your "
 "personal income? Remember, we are asking for your individual income, after "
 "taxes have been deducted."
 msgstr ""
 
-#: models.py:815
-msgid "Did you or your household save any money in the previous year?"
+#: models.py:1682 models.py:1700
+msgid "0 to 9.000"
 msgstr ""
 
-#: models.py:825
+#: models.py:1683 models.py:1701
+msgid "9.001 to 12.500"
+msgstr ""
+
+#: models.py:1684 models.py:1702
+msgid "12.501 to 15.000"
+msgstr ""
+
+#: models.py:1685 models.py:1703
+msgid "15.001 to 20.000"
+msgstr ""
+
+#: models.py:1686 models.py:1704
+msgid "20.001 and above"
+msgstr ""
+
+#: models.py:1692
+msgid ""
+"In the last 12 months, what was the total income of your household after "
+"taxes have been deducted? (Income can come salaries and wages, profit from "
+"self-employment, interest, rent, pension, social insurance payments and "
+"other benefits, among others)"
+msgstr ""
+
+#: models.py:1697
+msgid ""
+"Just to confirm, which of these income bands corresponds best to your "
+"household income? Remember, we are asking for your individual income, after "
+"taxes have been deducted."
+msgstr ""
+
+#: models.py:1709 models.py:1728
 msgid "How important would you say religion is in your own life?"
 msgstr ""
 
-#: models.py:827
+#: models.py:1712
 msgid "0 - Not important at all"
 msgstr ""
 
-#: models.py:837
+#: models.py:1722
 msgid "10 - Very important"
 msgstr ""
 
-#: models.py:849
-msgid ""
-"The other participants in the first tasks are real persons who participated "
-"in the same study."
-msgstr ""
-
-#: models.py:852 models.py:865
-msgid "No trust at all"
-msgstr ""
-
-#: models.py:853 models.py:866
-msgid "Little trust"
-msgstr ""
-
-#: models.py:854 models.py:867
-msgid "Quite a bit of trust"
-msgstr ""
-
-#: models.py:855 models.py:868
-msgid "A lot of trust"
-msgstr ""
-
-#: models.py:862
-msgid ""
-"My final earnings will be calculated according to the rules stated in the "
-"description of the study and will be paid to me."
-msgstr ""
-
-#: models.py:875
-msgid ""
-"At the end of this study, how would you say that you read the descriptions "
-"associated with each of the sections?"
-msgstr ""
-
-#: models.py:878
-msgid "With very little care"
-msgstr ""
-
-#: models.py:879
-msgid "With little care"
-msgstr ""
-
-#: models.py:880
-msgid "With care"
-msgstr ""
-
-#: models.py:881
-msgid "With a lot of care"
-msgstr ""
-
-#: models.py:882
-msgid "With extreme care"
-msgstr ""
-
-#: models.py:888
-msgid "Were you in a calm environment when you answered the questions?"
-msgstr ""
-
-#: models.py:891
-msgid "Not calm at all"
-msgstr ""
-
-#: models.py:892
-msgid "Not very calm"
-msgstr ""
-
-#: models.py:893
-msgid "Fairly calm"
-msgstr ""
-
-#: models.py:894
-msgid "Very calm"
-msgstr ""
-
-#: models.py:900
-msgid ""
-"Have you ever participated in another study that seemed close to this one?"
-msgstr ""
-
-#: models.py:910
-msgid "Which device did you take this study on?"
-msgstr ""
-
-#: models.py:912
+#: models.py:1731
 msgid "Desktop"
 msgstr ""
 
-#: models.py:913
+#: models.py:1732
 msgid "Laptop (non-touchscreen)"
 msgstr ""
 
-#: models.py:914
+#: models.py:1733
 msgid "Laptop (touchscreen)"
 msgstr ""
 
-#: models.py:915
+#: models.py:1734
 msgid "Tablet"
 msgstr ""
 
-#: models.py:922
-msgid "Which browser did you take this survey on?"
-msgstr ""
-
-#: models.py:924
-msgid "Google Chrome"
-msgstr ""
-
-#: models.py:925
-msgid "Firefox"
-msgstr ""
-
-#: models.py:926
-msgid "Internet Explorer"
-msgstr ""
-
-#: models.py:933
+#: models.py:1741
 msgid ""
 "If you have any comments about your experience taking this survey, with "
 "regard to the functionality of the platform, or the content of the tasks and "
-"questions, please provide us with relevant feedback:"
+"questions, please provide us with relevant feedback"
 msgstr ""
 
-#: templates/survey_i18n/Survey01.html:34
-#: templates/survey_i18n/Survey02.html:37
-#: templates/survey_i18n/Survey02A.html:38
-#: templates/survey_i18n/Survey03.html:32
-#: templates/survey_i18n/Survey04.html:37
-#: templates/survey_i18n/Survey04A.html:38
-#: templates/survey_i18n/Survey04B.html:36
-#: templates/survey_i18n/Survey04C.html:33
-#: templates/survey_i18n/Survey05.html:45
-#: templates/survey_i18n/Survey06.html:40
-#: templates/survey_i18n/Survey07.html:76
-#: templates/survey_i18n/Survey08.html:31
-#: templates/survey_i18n/Survey09.html:32
-#: templates/survey_i18n/Survey10.html:118
-#: templates/survey_i18n/Survey10A.html:28
-#: templates/survey_i18n/Survey10B.html:42
-#: templates/survey_i18n/Survey10C.html:39
-#: templates/survey_i18n/Survey10D.html:43
-#: templates/survey_i18n/Survey10E.html:17
-#: templates/survey_i18n/Survey10F.html:27
-#: templates/survey_i18n/Survey10G.html:49
-#: templates/survey_i18n/Survey11.html:25
-#: templates/survey_i18n/Survey12.html:17
+#: templates/survey_i18n/Survey01.html:10
+#: templates/survey_i18n/Survey02.html:10
+#: templates/survey_i18n/Survey03.html:10
+#: templates/survey_i18n/Survey04.html:17
+#: templates/survey_i18n/Survey05.html:18
+#: templates/survey_i18n/Survey06.html:13 templates/survey_i18n/Survey07.html:9
+#: templates/survey_i18n/Survey08.html:16
+#: templates/survey_i18n/Survey09.html:15
+#: templates/survey_i18n/Survey10.html:25
+#: templates/survey_i18n/Survey11.html:10
+#: templates/survey_i18n/Survey12.html:10
+#: templates/survey_i18n/Survey13.html:12 templates/survey_i18n/Survey14.html:9
+#: templates/survey_i18n/Survey15.html:279
+#: templates/survey_i18n/Survey16.html:101
+#: templates/survey_i18n/Survey17.html:10
+#: templates/survey_i18n/Survey18.html:11 templates/survey_i18n/Survey19.html:9
+#: templates/survey_i18n/Survey20.html:15
+#: templates/survey_i18n/Survey21.html:14 templates/survey_i18n/Survey22.html:9
+#: templates/survey_i18n/Survey23.html:12
+#: templates/survey_i18n/Survey24.html:10 templates/survey_i18n/Survey25.html:9
+#: templates/survey_i18n/Survey26.html:10
+#: templates/survey_i18n/Survey27.html:12
+#: templates/survey_i18n/Survey28.html:11
+#: templates/survey_i18n/Survey29.html:12
+#: templates/survey_i18n/Survey30.html:15
+#: templates/survey_i18n/Survey31.html:15
+#: templates/survey_i18n/Survey32.html:16
+#: templates/survey_i18n/Survey33.html:15 templates/survey_i18n/Survey34.html:9
+#: templates/survey_i18n/Survey35.html:16
+#: templates/survey_i18n/Survey36.html:16 templates/survey_i18n/Survey37.html:9
+#: templates/survey_i18n/Survey38.html:10
 msgid "Next"
 msgstr ""
 
-#: templates/survey_i18n/Survey02.html:28
-msgid ""
-"How willing are you to punish someone who treats <em><u>you</u></em> "
-"unfairly, even if there may be costs for you?"
-msgstr ""
-
-#: templates/survey_i18n/Survey02.html:31
-msgid ""
-"How willing are you to punish someone who treats <em><u>others</u></em> "
-"unfairly, even if there may be costs for you?"
-msgstr ""
-
-#: templates/survey_i18n/Survey04.html:18
-msgid "Please think about what you would do in the following situation:"
-msgstr ""
-
-#: templates/survey_i18n/Survey04.html:22
-msgid ""
-"You are in an area you are not familiar with, and you realize that you lost "
-"your way. You ask a stranger for directions. The stranger offers to take you "
-"to your destination. Helping you costs the stranger about 20 Euro in total. "
-"However, the stranger says he or she does not want any money from you. You "
-"have 6 presents with you. The cheapest present costs 5 euros, the most "
-"expensive one costs 30 euros. Do you give one of the presents to the "
-"stranger as a “thank-you”-gift? If so, which present do you give to the "
-"stranger?"
-msgstr ""
-
-#: templates/survey_i18n/Survey04A.html:33
+#: templates/survey_i18n/Survey04.html:12
 msgid ""
 "Can you tell us whether you think the following action is always wrong, "
 "never wrong, or something in between:"
 msgstr ""
 
-#: templates/survey_i18n/Survey04A.html:34
-msgid "Receiving social allowances to which you are not entitled."
-msgstr ""
-
-#: templates/survey_i18n/Survey04B.html:27
+#: templates/survey_i18n/Survey05.html:7
 msgid "Could you tell us for each of these groups how much you trust them?"
 msgstr ""
 
-#: templates/survey_i18n/Survey04C.html:31
-#: templates/survey_i18n/Survey09.html:29
+#: templates/survey_i18n/Survey06.html:7
 msgid "How well does the following statement describe you as a person?"
 msgstr ""
 
-#: templates/survey_i18n/Survey05.html:29
+#: templates/survey_i18n/Survey08.html:7
 msgid ""
-"How much trust do you have in the following institutions to act in the best "
+"When answering the following questions, please think about [country] "
+"institutions. How much trust do you have in the following to act in the best "
 "interest of society?"
 msgstr ""
 
-#: templates/survey_i18n/Survey06.html:27
+#: templates/survey_i18n/Survey09.html:7
 msgid "Do you agree with the following statements?"
 msgstr ""
 
-#: templates/survey_i18n/Survey07.html:26
+#: templates/survey_i18n/Survey10.html:7
 msgid ""
-"We will now ask you questions about your personal situation. All data is "
-"anonymous and will not be shared with a third party."
+"We will continue to ask you some questions about your beliefs regarding "
+"people and society. Remember, all information you provide is anonymous and "
+"will not be linked to you in any way."
 msgstr ""
 
-#: templates/survey_i18n/Survey07.html:34
+#: templates/survey_i18n/Survey10.html:8
+msgid "How satisfied are you with the quality of:"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:36
 msgid ""
-"Click on all options below to show all the people who live in the same "
-"household as you. <br/>You can choose as many as you need."
+"Now we turn to government spending. The following is a list of key "
+"categories of government expenditures."
 msgstr ""
 
-#: templates/survey_i18n/Survey07.html:39
-msgid "My legal husband or wife"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:42
-msgid "My civil union partner"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:45
-msgid "My de-facto partner, boyfriend or girlfriend"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:48
-msgid "My mother and/or father"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:51
-msgid "My children"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:54
-msgid "My brothers and/or sisters"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:57
-msgid "My flatmates"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:60
-msgid "Alone"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:66
-msgid "Adults (18 years or older)"
-msgstr ""
-
-#: templates/survey_i18n/Survey07.html:67
-msgid "Children (younger than 18 years)"
-msgstr ""
-
-#: templates/survey_i18n/Survey08.html:15
-msgid "What is the highest level of education that you have completed?"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:17
+#: templates/survey_i18n/Survey15.html:37
 msgid ""
-"What are all the ways that you <u>as an individual</u> got income in the "
-"last 12 months ending today? <br/>Please choose the three most relevant "
-"options. <br/><br/>Please do not count loans as income."
+"The box on the left contains the current percentage of government "
+"expenditures allocated to this category in [country]."
 msgstr ""
 
-#: templates/survey_i18n/Survey10.html:22
-#: templates/survey_i18n/Survey10.html:59
-msgid "Salaries and wages"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:25
-#: templates/survey_i18n/Survey10.html:62
-msgid "Profit from self-employment or business"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:28
-#: templates/survey_i18n/Survey10.html:65
-msgid "Interest, dividends, rent, other investments"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:31
-#: templates/survey_i18n/Survey10.html:68
-msgid "Pension"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:34
-#: templates/survey_i18n/Survey10.html:71
-msgid "Social insurance payments, state benefits"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:37
-#: templates/survey_i18n/Survey10.html:74
-msgid "Other sources of income"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:40
-#: templates/survey_i18n/Survey10.html:77
-msgid "No source of income during that time"
-msgstr ""
-
-#: templates/survey_i18n/Survey10.html:50
+#: templates/survey_i18n/Survey15.html:38
+#, python-format
 msgid ""
-"Now think about the income of your household. This can be just you, or the "
-"collective income of your family, your parents, or whoever you share your "
-"income and expenditures with."
+"Please enter in the box on the right your preferred distribution for each "
+"category (together the categories must sum to 100%%)."
 msgstr ""
 
-#: templates/survey_i18n/Survey10.html:54
+#: templates/survey_i18n/Survey15.html:47
+msgid "Current spending in [country]"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:48
+#: templates/survey_i18n/Survey15.html:52
+#, python-format
+msgid "%% of total public spending"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:51
+msgid "Preferred"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:60
+msgid "General public services and public debt"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:61
 msgid ""
-"What are the main ways that <u>your household</u> received income in the "
-"last 12 months? <br/>Please choose the three most relevant options. <br/><br/"
-">Please do not count loans as income."
+"(general government administration costs, international aid, public debt "
+"interest payments)"
 msgstr ""
 
-#: templates/survey_i18n/Survey10A.html:13
+#: templates/survey_i18n/Survey15.html:90
+msgid "Defense and public order"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:91
+msgid "(includes military spending, police services, law and order)"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:121
+msgid "Infrastructure and economic affairs"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:122
 msgid ""
-"In the last 12 months, what was your total income, the income that you "
-"received <u>as an individual</u>, after taxes have been deducted? (Income "
-"can come from any of the sources mentioned in the previous question.)"
+"(provision of transport infrastructure, investments in agriculture, mining "
+"and energy industries)"
 msgstr ""
 
-#: templates/survey_i18n/Survey10B.html:17
+#: templates/survey_i18n/Survey15.html:152
+msgid "Health and environmental protection"
+msgstr ""
+
+#: templates/survey_i18n/Survey15.html:153
 msgid ""
-"Just to confirm, which of these income bands corresponds best to <u>your "
-"personal</u> income? Remember, we are asking for <u>your individual</u> "
-"income, after taxes have been deducted."
+"(includes provision of public medical services and public environmental "
+"services)"
 msgstr ""
 
-#: templates/survey_i18n/Survey10B.html:21
-msgid "0 to 13.000.000 Won per year"
+#: templates/survey_i18n/Survey15.html:183
+msgid "Education and culture"
 msgstr ""
 
-#: templates/survey_i18n/Survey10B.html:22
-msgid "13.000.000 to 20.000.000 Won per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:23
-msgid "20.000.000 to 25.000.000 Won per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:24
-msgid "25.000.000 to 34.000.000 Won per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:25
-msgid "34.000.000 Won or more per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:30
-msgid "0 to 15.000 euro per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:31
-msgid "15.000 to 20.000 euro per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:32
-msgid "20.000 to 25.000 euro per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:33
-msgid "25.000 to 32.000 euro per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10B.html:34
-msgid "32.000 euro per year or more"
-msgstr ""
-
-#: templates/survey_i18n/Survey10C.html:23
+#: templates/survey_i18n/Survey15.html:184
 msgid ""
-"In the last 12 months, what was the total income of <u>your household</u>, "
-"after taxes have been deducted? (Income can come from any of the sources "
-"mentioned in the previous question.)"
+"(includes public provision of  education services, and public cultural "
+"spending)"
 msgstr ""
 
-#: templates/survey_i18n/Survey10C.html:30
-msgid "per year"
+#: templates/survey_i18n/Survey15.html:214
+msgid "Social protection and housing"
 msgstr ""
 
-#: templates/survey_i18n/Survey10D.html:18
+#: templates/survey_i18n/Survey15.html:215
 msgid ""
-"Just to confirm, which of these income bands corresponds best to the income "
-"of your <u>entire household</u> (the people you share your income and "
-"expenditures with). Remember, we are asking for the income of your "
-"<u>household</u>, after taxes have been deducted."
+"(social transfers including for elderly, disabled, unemployed and low income "
+"people)"
 msgstr ""
 
-#: templates/survey_i18n/Survey10D.html:22
-#: templates/survey_i18n/Survey10D.html:31
-msgid "0 to"
-msgstr ""
-
-#: templates/survey_i18n/Survey10D.html:31
-#: templates/survey_i18n/Survey10D.html:32
-#: templates/survey_i18n/Survey10D.html:33
-#: templates/survey_i18n/Survey10D.html:34
-msgid "euros per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10D.html:35
-msgid "euros or more per year"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:26
-msgid "Are you:"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:29
-msgid " Buddhist"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:30
-msgid " Protestant"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:31
-msgid " Catholic"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:32
-msgid " Confucian"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:33
-msgid " Won Buddhist"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:34
-msgid " Other"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:35
-msgid " Not religious"
-msgstr ""
-
-#: templates/survey_i18n/Survey10G.html:36
-msgid " I don’t know"
-msgstr ""
-
-#: templates/survey_i18n/Survey11.html:15
-msgid "This is the last screen, you're almost done!"
-msgstr ""
-
-#: templates/survey_i18n/Survey11.html:16
+#: templates/survey_i18n/Survey15.html:295
 msgid ""
-"For information purposes, could you tell us to what extent you trusted the "
-"following two statements when you made your decisions:"
+"You have reached a balanced spending distribution. You can still make "
+"changes, or, if you are happy with this distribution of expenditures, you "
+"can proceed to the next question."
 msgstr ""
 
-#: templates/survey_i18n/Survey12.html:12
+#: templates/survey_i18n/Survey15.html:296
 msgid ""
-"This is the very last screen, in the following screen we will show you your "
-"earnings!"
+"You have not spent enough. Please increase spending in one or more "
+"categories."
 msgstr ""
 
-#: views.py:49
+#: templates/survey_i18n/Survey15.html:297
 msgid ""
-"Imagine the following situation: you won 1000 euros in a lottery. "
-"Considering your current situation, how much would you donate to a good "
-"cause?"
+"You are currently spending too much. Please lower spending in one or more "
+"categories."
 msgstr ""
 
-#: views.py:52
+#: templates/survey_i18n/Survey16.html:36
 msgid ""
-"Imagine the following situation: you won $1000 in a lottery. Considering "
-"your current situation, how much would you donate to a good cause?"
+"The government currently raises a certain amount of revenues through tax in "
+"order to sustain the current level of public spending. In your view, what "
+"would be the fair split of tax burden to sustain public spending?"
 msgstr ""
 
-#: views.py:55
+#: templates/survey_i18n/Survey16.html:37
 msgid ""
-"Imagine the following situation: you won 1000 Won in a lottery. Considering "
-"your current situation, how much would you donate to a good cause?"
+"Please use the sliders below to tell us how much you think each of the "
+"following groups should pay as a percentage of their available resources:"
 msgstr ""
 
-#: views.py:63 views.py:310 views.py:340
-msgid "€"
-msgstr ""
-
-#: views.py:67 views.py:311 views.py:341
-msgid "$"
-msgstr ""
-
-#: views.py:71 views.py:312 views.py:342
-msgid "Won"
-msgstr ""
-
-#: views.py:102 views.py:111 views.py:120
-msgid "no present"
-msgstr ""
-
-#: views.py:103
-msgid "the present worth 5 euros"
-msgstr ""
-
-#: views.py:104
-msgid "the present worth 10 euros"
-msgstr ""
-
-#: views.py:105
-msgid "the present worth 15 euros"
-msgstr ""
-
-#: views.py:106
-msgid "the present worth 20 euros"
-msgstr ""
-
-#: views.py:107
-msgid "the present worth 25 euros"
-msgstr ""
-
-#: views.py:108
-msgid "the present worth 30 euros"
-msgstr ""
-
-#: views.py:112
-msgid "the present worth $5"
-msgstr ""
-
-#: views.py:113
-msgid "the present worth $10"
-msgstr ""
-
-#: views.py:114
-msgid "the present worth $15"
-msgstr ""
-
-#: views.py:115
-msgid "the present worth $20"
-msgstr ""
-
-#: views.py:116
-msgid "the present worth $25"
-msgstr ""
-
-#: views.py:117
-msgid "the present worth $30"
-msgstr ""
-
-#: views.py:121
-msgid "the present worth 5.000 Won"
-msgstr ""
-
-#: views.py:122
-msgid "the present worth 10.000 Won"
-msgstr ""
-
-#: views.py:123
-msgid "the present worth 15.000 Won"
-msgstr ""
-
-#: views.py:124
-msgid "the present worth 20.000 Won"
-msgstr ""
-
-#: views.py:125
-msgid "the present worth 25.000 Won"
-msgstr ""
-
-#: views.py:126
-msgid "the present worth 30.000 Won"
-msgstr ""
-
-#: views.py:185
+#: templates/survey_i18n/Survey16.html:116
 msgid ""
-"When answering the following questions, please think about French "
-"institutions."
+"You have raised exactly enough revenue. You can still make changes, or, if "
+"you are happy with this division of the tax burden, you can proceed to the "
+"next question."
 msgstr ""
 
-#: views.py:186
+#: templates/survey_i18n/Survey16.html:117
+msgid "You have not raised enough revenue."
+msgstr ""
+
+#: templates/survey_i18n/Survey16.html:118
 msgid ""
-"When answering the following questions, please think about the US "
-"institutions."
+"You have raised too much revenue. You can lower the tax rate for one or more "
+"income groups."
 msgstr ""
 
-#: views.py:187
+#: templates/survey_i18n/Survey20.html:7
 msgid ""
-"When answering the following questions, please think about Korean "
-"institutions."
+"How much information about current events, public affairs, and the "
+"government do you get from:"
 msgstr ""
 
-#: views.py:224
-msgid "In what year did you arrive in France?"
-msgstr ""
-
-#: views.py:225
-msgid "In what year did you arrive in the US?"
-msgstr ""
-
-#: views.py:226
-msgid "In what year did you arrive in Korea?"
-msgstr ""
-
-#: views.py:245
-msgid "Aucun diplôme"
-msgstr ""
-
-#: views.py:246
-msgid "Brevet des collèges"
-msgstr ""
-
-#: views.py:247
-msgid "CAP BEP ou équivalent"
-msgstr ""
-
-#: views.py:248
-msgid "Baccalauréat"
-msgstr ""
-
-#: views.py:249
-msgid "Diplômé du supérieur court (BTS, DUT, etc.)"
-msgstr ""
-
-#: views.py:250
-msgid "Licence (Bac + 3)"
-msgstr ""
-
-#: views.py:251
-msgid "Master (Bac + 5) ou Doctorat"
-msgstr ""
-
-#: views.py:254 views.py:263
-msgid "Less than high school"
-msgstr ""
-
-#: views.py:255 views.py:264
-msgid "High school"
-msgstr ""
-
-#: views.py:256 views.py:265
-msgid "Some college"
-msgstr ""
-
-#: views.py:257 views.py:266
+#: templates/survey_i18n/Survey21.html:7
 msgid ""
-"Diploma, trades certificate or other post school qualification other than "
-"university"
+"Please indicate which of the following groups in your view are most likely "
+"to pose a threat to your online privacy?"
 msgstr ""
 
-#: views.py:258 views.py:267
-msgid "Undergraduate degree (e.g. BA, BS)"
+#: templates/survey_i18n/Survey23.html:7
+msgid "To what extent do you agree with the following statements?"
 msgstr ""
 
-#: views.py:259 views.py:268
-msgid "Post-graduate degree"
+#: templates/survey_i18n/Survey27.html:7
+msgid ""
+"We will now ask you questions about your personal situation. Remember, all "
+"data is anonymous and will not be shared with a third party."
 msgstr ""
+
+#: templates/survey_i18n/Survey28.html:9
+msgid "adults and children"
+msgstr ""
+
+#: templates/survey_i18n/Survey35.html:10
+#: templates/survey_i18n/Survey36.html:10
+msgid "I don't know"
+msgstr ""
+
+#~ msgid ""
+#~ "If I am treated very unjustly, I will take revenge     at the first "
+#~ "occasion, even if there is a cost to do so."
+#~ msgstr ""
+#~ "If I am treated very unjustly, I will take revenge     at the first "
+#~ "occasion, even if there is a cost to do so. How well does this statement "
+#~ "describe you as a person?"

@@ -66,6 +66,12 @@ AWS_SECRET_ACCESS_KEY = environ.get('AWS_SECRET_ACCESS_KEY')
 # e.g. en, de, fr, it, ja, zh-hans
 # see: https://docs.djangoproject.com/en/1.9/topics/i18n/#term-language-code
 LANGUAGE_CODE = environ.get('OTREE_LANGUAGE_CODE', 'fr')
+LANGUAGES = [
+    ('en', 'English'),
+    ('ko', 'Korean'),
+    ('fr', 'French'),
+    ('sl', 'Slovenian')
+]
 
 # e.g. EUR, CAD, GBP, CHF, CNY, JPY
 REAL_WORLD_CURRENCY_CODE = ''

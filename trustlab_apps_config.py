@@ -42,9 +42,9 @@ SESSION_CONFIGS = [
     {
         'name': 'test',
         'display_name': 'TEST',
-        'num_demo_participants': 126,
+        'num_demo_participants': 100,
         'app_sequence': [
-            'survey_i18n'
+            'survey_i18n', 'iat'
         ],
         'treatment': 'A1',
         'payoff_group': 0,
