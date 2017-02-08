@@ -1133,25 +1133,13 @@ class Player(BasePlayer):
         widget=widgets.NumberInput(),
     )
 
-    resources_top_1_percent = models.CharField(
-        initial=None,
-        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
-    )
+    resources_top_1_percent = models.CharField()
 
-    resources_next_9_percent = models.CharField(
-        initial=None,
-        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
-    )
+    resources_next_9_percent = models.CharField()
 
-    resources_next_40_percent = models.CharField(
-        initial=None,
-        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
-    )
+    resources_next_40_percent = models.CharField()
 
-    resources_bottom_50_percent = models.CharField(
-        initial=None,
-        widget=widgets.SliderInput(attrs={'step': '1', min: '0', max: '100'})
-    )
+    resources_bottom_50_percent = models.CharField()
 
     revenue_raised = models.CharField(
         initial=0,

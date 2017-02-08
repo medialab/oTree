@@ -1,0 +1,208 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+  <style>
+    .percent {
+      margin-top: 30px
+    }
+
+    .message {
+      margin-top: 2em;
+      text-align: center;
+      color: red;
+    }
+
+    .input-group, input.form-control, select.form-control, textarea.form-control {
+      max-width: 100%;
+    }
+
+    .error {
+      color: red;
+      font-weight: bold;
+    }
+
+    #feedback {
+      font-weight: bold;
+    }
+
+    /* Hide total value display "%" if value set too high */
+    .error ~ span {
+      visibility: hidden;
+    }
+  </style>
+
+  <p>{% trans "The government currently raises a certain amount of revenues through tax in order to sustain the current level of public spending. In your view, what would be the fair split of tax burden to sustain public spending?" %}</p>
+  <p>{% trans "Please use the sliders below to tell us how much you think each of the following groups should pay as a percentage of their available resources:" %}</p>
+
+  <hr>
+
+  <div class="ranges row">
+    <div>
+      <div class="col-sm-11 col-xs-8">
+        <label for="slider1">The top 1% (Richest)</label>
+        <input id="id_resources_top_1_percent" name="resources_top_1_percent" rel="value1" class="form-control value1" type="range" min="0" max="100" step="1" value="0" />
+      </div>
+      <div class="col-sm-1 col-xs-4">
+        <div><span id="percent1" class="percent value1">0</span><span>%</span></div>
+      </div>
+    </div>
+    
+    <div>
+      <div class="col-sm-11 col-xs-8">
+        <label for="slider2">The next 9%</label>
+        <input id="id_resources_next_9_percent" name="resources_next_9_percent" rel="value2" class="form-control value2" type="range" min="0" max="100" step="1" value="0" />
+      </div>
+      <div class="col-sm-1 col-xs-4">
+        <div><span id="percent2" class="percent value2">0</span><span>%</span></div>
+      </div>
+    </div>
+    
+    <div>
+      <div class="col-sm-11 col-xs-8">
+        <label for="slider3">The next 40%</label>
+        <input id="id_resources_next_40_percent" name="resources_next_40_percent" rel="value3" class="form-control value3" type="range" min="0" max="100" step="1" value="0" />
+      </div>
+      <div class="col-sm-1 col-xs-4">
+        <div><span id="percent3" class="percent value3">0</span><span>%</span></div>
+      </div>
+    </div>
+    
+    <div>
+      <div class="col-sm-11 col-xs-8">
+        <label for="slider4">The bottom 50%</label>
+        <input id="id_resources_bottom_50_percent" name="resources_bottom_50_percent" rel="value4" class="form-control value4" type="range" min="0" max="100" step="1" value="0" />
+      </div>
+      <div class="col-sm-1 col-xs-4">
+        <div><span id="percent4" class="percent value4">0</span><span>%</span></div>
+      </div>
+    </div>
+    
+    <hr>
+    
+    <div>
+      <div class="col-sm-11 col-xs-8">
+        <label for="slider-total">Revenue raised</label>
+        <input disabled id="slider-total" class="form-control value5" type="range" min="0" max="100" step="1" value="0" />
+      </div>
+      <div class="col-sm-1 col-xs-4">
+        <div><span id="percent5" rel="value5" class="percent value5">0</span><span>%</span></div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="row">
+    <p id="feedback" class="col-sm-12"></p>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary pull-right" disabled>{% trans "Next" %}</button>
+  </div>
+
+  <script>
+    $(function () {
+      var $slider1 = $('#id_resources_top_1_percent'),
+          $slider2 = $('#id_resources_next_9_percent'),
+          $slider3 = $('#id_resources_next_40_percent'),
+          $slider4 = $('#id_resources_bottom_50_percent'),
+          $sliderTotal = $('#slider-total'),
+          $totalValueDisplay = $('.percent.value5'),
+          $feedback = $('#feedback'),
+          $nextBtn = $('.btn');
+
+      var MAX = 100,
+          FEEDBACK_EXACT = '{% trans "You have raised exactly enough revenue. You can still make changes, or, if you are happy with this division of the tax burden, you can proceed to the next question." %}',
+          FEEDBACK_NOT_ENOUGH = '{% trans "You have not raised enough revenue." %}',
+          FEEDBACK_TOO_MUCH = '{% trans "You have raised too much revenue. You can lower the tax rate for one or more income groups." %}';
+
+      var values = {
+        value1: 0,
+        value2: 0,
+        value3: 0,
+        value4: 0
+      };
+
+      var $sliders = [$slider1, $slider2, $slider3, $slider4, $sliderTotal];
+
+
+      $sliders.forEach(function ($slider) {
+        $slider.on('input',  update);
+      });
+
+      function setTotalRange(val) {
+        $sliderTotal.val(+val);
+        $totalValueDisplay.html(val);
+      }
+
+      function setFeedback(type) {
+        var className,
+            baseClassName = 'col-sm-12',
+            totalTooHighError = false,
+            canProceed = false;
+
+        switch (type) {
+          case FEEDBACK_EXACT:
+            className = 'text-success';
+            canProceed = true;
+            break;
+
+          case FEEDBACK_NOT_ENOUGH:
+            className = 'text-warning';
+            break;
+
+          case FEEDBACK_TOO_MUCH:
+            className = 'text-danger';
+            totalTooHighError = true;
+            break;
+        }
+
+        setTimeout(function () {
+          $feedback
+            .removeClass()
+            .addClass(baseClassName + ' ' +className)
+            .html(type);
+
+          if (totalTooHighError) {
+            $totalValueDisplay.addClass('error');
+          } else {
+            $totalValueDisplay.removeClass('error');
+          }
+
+          canProceed ? $nextBtn.removeAttr('disabled') : $nextBtn.attr('disabled', true);
+        }, 0);
+      }
+
+      function update(e) {
+        var $slider = $(e.currentTarget);
+        var relatedValueName = $slider.attr('rel');
+        var $valueDisplay = $('.percent.' + relatedValueName);
+        var sliderValue = +$slider.val();
+
+        // Store range input value in corresponding field of values object.
+        values[relatedValueName] = sliderValue;
+        
+        // Update corresponding value display.
+        $valueDisplay.html(sliderValue);
+
+        // Calculate cumulated values.
+        var total = [values.value1, values.value2, values.value3, values.value4]
+          .reduce(function (prev, curr) {
+            return prev + curr;
+          });
+
+        if (total > MAX) {
+          setTotalRange('>100');
+          setFeedback(FEEDBACK_TOO_MUCH);
+        } else {
+          setTotalRange(total);
+          var feedbackType = total === 100 ? FEEDBACK_EXACT : FEEDBACK_NOT_ENOUGH;
+          setFeedback(feedbackType);
+        }
+      } 
+    });
+  </script>
+
+{% endblock %}

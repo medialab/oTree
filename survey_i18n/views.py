@@ -169,8 +169,7 @@ class Survey16(Page):
         'resources_top_1_percent',
         'resources_next_9_percent',
         'resources_next_40_percent',
-        'resources_bottom_50_percent',
-        'revenue_raised'
+        'resources_bottom_50_percent'
     ]
 
 
