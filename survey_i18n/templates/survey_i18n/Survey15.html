@@ -80,7 +80,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0">
+                value="0">
             </div>
           </td>
         </tr>
@@ -110,7 +110,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0"
+                value="0"
                 required>
             </div>
           </td>
@@ -141,7 +141,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0"
+                value="0"
                 required>
             </div>
           </td>
@@ -172,7 +172,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0"
+                value="0"
                 required>
             </div>
           </td>
@@ -203,7 +203,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0"
+                value="0"
                 required>
             </div>
           </td>
@@ -234,7 +234,7 @@
                 class="form-control" 
                 min="0" 
                 max="100"
-                placeholder="0"
+                value="0"
                 required>
             </div>
           </td>
@@ -271,7 +271,13 @@
     </table>
   </div>
 
-  <p><button class="btn btn-primary pull-right" disabled>{% trans "Next" %}</button></p>
+  <div class="row">
+    <p id="feedback" class="col-sm-12"></p>
+  </div>
+
+  <div class="row">
+    <button class="btn btn-primary pull-right" disabled>{% trans "Next" %}</button>
+  </div>
   
   <script>
     $(function () {
@@ -281,16 +287,58 @@
           $exp4 = $('#id_expenditure_health_and_environmental_protection'),
           $exp5 = $('#id_expenditure_education_and_culture'),
           $exp6 = $('#id_expenditure_social_protection_and_housing'),
+          $feedback = $('#feedback'),
           $total = $('#total'),
           $btn = $('.btn');
 
-      var MAX = 100;
+      var MAX = 100,
+          FEEDBACK_EXACT = '{% trans "You have reached a balanced spending distribution. You can still make changes, or, if you are happy with this distribution of expenditures, you can proceed to the next question." %}',
+          FEEDBACK_NOT_ENOUGH = '{% trans "You have not spent enough. Please increase spending in one or more categories." %}',
+          FEEDBACK_TOO_MUCH = '{% trans "You are currently spending too much. Please lower spending in one or more categories." %}';
 
       var $inputs = [$exp1, $exp2, $exp3, $exp4, $exp5, $exp6];
 
       $inputs.forEach(function ($input) {
-        $input.on('keyup', update);
+        $input.on('input', update);
       });
+
+      function setFeedback(type) {
+        var className,
+            baseClassName = 'col-sm-12',
+            totalTooHighError = false,
+            canProceed = false;
+
+        switch (type) {
+          case FEEDBACK_EXACT:
+            className = 'text-success';
+            canProceed = true;
+            break;
+
+          case FEEDBACK_NOT_ENOUGH:
+            className = 'text-warning';
+            break;
+
+          case FEEDBACK_TOO_MUCH:
+            className = 'text-danger';
+            totalTooHighError = true;
+            break;
+        }
+
+        setTimeout(function () {
+          $feedback
+            .removeClass()
+            .addClass(baseClassName + ' ' +className)
+            .html(type);
+
+          if (totalTooHighError) {
+            $totalValueDisplay.addClass('error');
+          } else {
+            $totalValueDisplay.removeClass('error');
+          }
+
+          canProceed ? $btn.removeAttr('disabled') : $btn.attr('disabled', true);
+        }, 0);
+      }
 
       function update() {
         var total = $inputs
@@ -302,6 +350,13 @@
           });
 
         $total.val(total);
+
+        if (total > MAX) {
+          setFeedback(FEEDBACK_TOO_MUCH);
+        } else {
+          var feedbackType = total === 100 ? FEEDBACK_EXACT : FEEDBACK_NOT_ENOUGH;
+          setFeedback(feedbackType);
+        }
 
         if (total === MAX) {
           $total.addClass('valid');
