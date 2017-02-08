@@ -1,0 +1,14 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <p>{% trans "We will now ask you questions about your personal situation. Remember, all data is anonymous and will not be shared with a third party." %}</p>
+
+  {% formfield player.date_of_birth %}
+  {% formfield player.gender %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

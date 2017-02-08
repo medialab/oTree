@@ -1,0 +1,13 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  {% formfield player.household_expectations_for_the_12_months_to_come %}
+  {% formfield player.likely_to_still_have_a_job_in_6_months %}
+  {% formfield player.likely_to_find_a_job_with_similar_salary_in_6_months %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

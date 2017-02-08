@@ -275,7 +275,7 @@ class Survey29(Page):
     form_model = models.Player
     form_fields = [
         'which_country_were_you_born',
-        'your_nationality',
+        'what_is_your_nationality',
         'when_did_you_arrive_in_country',
         'were_your_parents_born_in_country'
     ]

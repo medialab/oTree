@@ -57,7 +57,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u'10 - Completely satisfied')),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -77,7 +77,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -97,7 +97,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very willing to do so")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
     
@@ -117,7 +117,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very willing to do so")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -137,7 +137,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Fully prepared to take risks")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -157,7 +157,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Describes me perfectly")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -177,7 +177,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - People mostly try to help each other")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -197,7 +197,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Most people would try to be fair")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -217,7 +217,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - This action is always wrong")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -237,7 +237,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - This action is always wrong")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -257,7 +257,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - This action is always wrong")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -277,7 +277,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -297,7 +297,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -317,7 +317,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
     
@@ -337,7 +337,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -357,7 +357,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -377,7 +377,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -397,7 +397,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -417,7 +417,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -437,7 +437,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Describes me perfectly")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -448,7 +448,7 @@ class Player(BasePlayer):
         choices=(
             ('Yes', _(u"Yes")),
             ('No', _(u"No")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -479,7 +479,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -499,7 +499,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -519,7 +519,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
     
@@ -539,7 +539,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -559,7 +559,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -579,7 +579,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -599,7 +599,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully trust them")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -619,7 +619,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully agree")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -639,7 +639,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully agree")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -659,7 +659,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully agree")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -679,7 +679,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully agree")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -699,7 +699,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - I fully agree")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -719,7 +719,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -739,7 +739,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
     
@@ -759,7 +759,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -779,7 +779,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -799,7 +799,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -819,7 +819,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -839,7 +839,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -859,7 +859,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -879,7 +879,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Completely satisfied")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -899,7 +899,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -919,7 +919,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -939,7 +939,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -959,7 +959,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -979,7 +979,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -999,7 +999,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1019,7 +1019,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1039,7 +1039,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Most likely to refuse the bribe")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1059,7 +1059,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Most likely to refuse the job")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1079,7 +1079,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Most likely to refuse the bribe")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1099,7 +1099,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1143,16 +1143,12 @@ class Player(BasePlayer):
 
     revenue_raised = models.CharField(
         initial=0,
-        widget=widgets.NumberInput(),
-        min=0,
-        max=100
+        widget=widgets.NumberInput(attrs={'min': '0', 'max': '100', 'step': '1'})
     )
 
     how_many_children_part_of_the_richest_segment = models.CharField(
         initial=None,
-        widget=widgets.NumberInput(),
-        min=0,
-        max=100,
+        widget=widgets.NumberInput(attrs={'min': '0', 'max': '100', 'step': '1'}),
         verbose_name=_(u"Consider 100 children growing up in the poorest segment of society. How many children do you believe are able to become part of the richest segment of society when they are older?")
     )
 
@@ -1172,7 +1168,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - There is plenty of opportunity")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1192,7 +1188,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Better")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1212,7 +1208,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('NA', _(u"N/A"))
+            ('N/A', _(u"N/A"))
         )
     )
 
@@ -1232,7 +1228,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very likely")),
-            ('NA', _(u"N/A"))
+            ('N/A', _(u"N/A"))
         )
     )
 
@@ -1252,7 +1248,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Fully encourage international trade")),
-            ('NA', _(u"N/A"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1316,7 +1312,7 @@ class Player(BasePlayer):
         )
     )
 
-    # TODO: Check out the weird scale???
+    # TODO: Not sure about scale setup...
     most_likely_threatening_privacy_hackers = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
@@ -1333,7 +1329,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - A large threat")),
-            ('NA', _(u"N/A"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1353,7 +1349,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - A large threat")),
-            ('NA', _(u"N/A"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1373,7 +1369,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - A large threat")),
-            ('NA', _(u"N/A"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1393,16 +1389,14 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - A large threat")),
-            ('NA', _(u"N/A"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
     estimation_of_foreigners_in_neighborhood = models.CharField(
         initial=0,
-        widget=widgets.NumberInput(),
-        min=0,
-        max=100,
-        verbose_name=_(u"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not born in [country] or of whom at least one parent was not born in [country. Please give a percentage between 0 and 100.")
+        widget=widgets.NumberInput(attrs={'min': 0, 'max': 100, 'step': 1}),
+        verbose_name=_(u"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100.")
     )
 
     statement_agreement_immigrants_are_not_integrated = models.CharField(
@@ -1419,8 +1413,8 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Immigrants are well integrated in our society'),
-            ('DK', _(u"Don't know"))
+            ('10', '10 - Immigrants are well integrated in our society'),
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1438,8 +1432,8 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Our culture is enriched by immigrants'),
-            ('DK', _(u"Don't know"))
+            ('10', '10 - Our culture is enriched by immigrants'),
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1484,8 +1478,8 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Very connected'),
-            ('DK', _(u"Don't know"))
+            ('10', '10 - Very connected'),
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1494,7 +1488,7 @@ class Player(BasePlayer):
         verbose_name=_(u"Some people say that who people vote for does not make any difference to what happens. Others say that who people vote for can make a difference to what happens. Where would you place yourself?"),
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Our culture is undermined by immigrants'),
+            ('0', '0 - Voting does not make a difference'),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1504,8 +1498,8 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Our culture is enriched by immigrants'),
-            ('DK', _(u"Don't know"))
+            ('10', '10 - Voting can make a difference'),
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1524,8 +1518,8 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 -, Right'),
-            ('DK', _(u"Don't know"))
+            ('10', '10 - Right'),
+            ("Don't know", _(u"Don't know"))
         )
     )
 
@@ -1569,10 +1563,10 @@ class Player(BasePlayer):
     )
     
     what_is_your_nationality = models.CharField(
-        verbose_name=_(u'In which country were you born?'),
+        verbose_name=_(u'What is your nationality?'),
         widget=widgets.Select(),
         choices=tuple(
-            [_(u"Other")] +
+            [("Other", _(u"Other"))] +
             [(code, _(name)) for code, name in list(countries)]
         )
     )
@@ -1652,7 +1646,7 @@ class Player(BasePlayer):
             ('public sector', _(u"Public sector")),
             ('private (for profit) sector', _(u"Private (for profit) sector")),
             ('not for profit sector', _(u"Not for profit sector")),
-            ('NA', _(u"N/A")),
+            ('N/A', _(u"N/A")),
         )
     )
 
@@ -1678,8 +1672,7 @@ class Player(BasePlayer):
     individual_income_in_the_last_12_months = models.CharField(
         initial=0,
         verbose_name=_(u"In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"),
-        widget=widgets.NumberInput(),
-        min=-1,
+        widget=widgets.NumberInput(attrs={'min': -1}),
     )
 
     individual_income_confirmation = models.CharField(
@@ -1697,8 +1690,7 @@ class Player(BasePlayer):
     household_income_in_the_last_12_months = models.CharField(
         initial=0,
         verbose_name=_(u"In the last 12 months, what was the total income of your household after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"),
-        widget=widgets.NumberInput(),
-        min=-1,
+        widget=widgets.NumberInput(attrs={'min': -1})
     )
 
     household_income_confirmation = models.CharField(
@@ -1728,7 +1720,7 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Very important")),
-            ('DK', _(u"Don't know"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
