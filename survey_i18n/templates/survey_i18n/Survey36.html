@@ -1,0 +1,38 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  {% formfield player.household_income_in_the_last_12_months %}
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> {% trans "I don't know" %}
+    </label>
+  </div>
+  
+  {% formfield player.household_income_confirmation %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+  <script>
+    $(function () {
+      var $input = $('input[name="individual_income_in_the_last_12_months"]'),
+          $dk = $('input[type="checkbox"]');
+
+      var $form = $('form'),
+          $btn = $('.btn');
+
+      // Reset form input.
+      $input.attr('value', '');
+
+      $btn.on('click', function (e) {
+        if (+$input.val() < 0 || $input.val() === '' || $dk.is(':checked')) {
+          $input.val(-1);
+          $form.submit();
+        }
+      });
+    })
+  </script>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "global/Base.html" %}
+{% load otree_tags %}
+{% load i18n %}
+
+{% block content %}
+
+  <style>
+    label {
+      font-weight: normal;
+    }
+  </style>
+
+  {% formfield player.do_you_live_in_a %}
+
+  <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+{% endblock %}

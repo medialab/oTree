@@ -1589,11 +1589,11 @@ class Player(BasePlayer):
     )
 
     do_you_live_in_a = models.CharField(
-        verbose_name=_(u'Do you live in a?'),
-        widget=widgets.RadioSelectHorizontal(),
+        verbose_name=_(u'Do you live in a...?'),
+        widget=widgets.RadioSelect(),
         choices=(
-            ('large metropolitan area', _(u"Large Metropolitan area (More than 1,5 million inhabitants)")),
-            ('medium metropolitan area', _(u"Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)")),
+            # ('large metropolitan area', _(u"Large Metropolitan area (More than 1,5 million inhabitants)")),
+            # ('medium metropolitan area', _(u"Medium-sized metropolitan area (500.000 to 1,5 million inhabitants)")),
             ('small metropolitan area', _(u"Small metropolitan area (200.000 to 500.000 inhabitants)")),
             ('town', _(u"Town (50.000 to 200.000 inhabitants)")),
             ('village', _(u"Village (Less than 50,000 inhabitants)")),
@@ -1603,7 +1603,7 @@ class Player(BasePlayer):
 
     highest_level_of_education_you_have_completed = models.CharField(
         verbose_name=_(u'What is the highest level of education you have completed?'),
-        widget=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelect(),
         choices=(
             ('less than high school', _(u"Less than high school")),
             ('high school', _(u"High school")),
@@ -1616,7 +1616,7 @@ class Player(BasePlayer):
 
     highest_level_of_education_your_parent_has_completed = models.CharField(
         verbose_name=_(u'What is the highest level of education that one of your parents has completed? (either one, or both have completed this level of education)'),
-        widget=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelect(),
         choices=(
             ('less than high school', _(u"Less than high school")),
             ('high school', _(u"High school")),
@@ -1629,7 +1629,7 @@ class Player(BasePlayer):
 
     what_best_describes_your_situation = models.CharField(
         verbose_name=_(u'Which of these best describes your situation?'),
-        widget=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelect(),
         choices=(
             ('employee', _(u"Employee")),
             ('employer/self-employed', _(u"Employer/self-employed")),
@@ -1640,7 +1640,7 @@ class Player(BasePlayer):
 
     do_you_currently_work_in_the = models.CharField(
         verbose_name=_(u'Do you currently work in the…?'),
-        widget=widgets.RadioSelectHorizontal(),
+        widget=widgets.RadioSelect(),
         choices=(
             ('central, regional or local government administration', _(u"Central, regional or local government administration")),
             ('public sector', _(u"Public sector")),
@@ -1665,12 +1665,12 @@ class Player(BasePlayer):
             ('8', '8'),
             ('9', '9'),
             ('10', _(u"10 - Describes me perfectly")),
-            ('more than 10', _(u"More than 10"))
+            ("Don't know", _(u"Don't know"))
         )
     )
 
     individual_income_in_the_last_12_months = models.CharField(
-        initial=0,
+        blank=True,
         verbose_name=_(u"In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"),
         widget=widgets.NumberInput(attrs={'min': -1}),
     )
@@ -1679,11 +1679,11 @@ class Player(BasePlayer):
         verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect(),
         choices=(
-            ('1', _(u"quintile_1")),
-            ('2', _(u"quintile_2")),
-            ('3', _(u"quintile_3")),
-            ('4', _(u"quintile_4")),
-            ('5', _(u"quintile_5")),
+            ('0 to 9000 (1st quintile)', _(u"0 to 9.000")),
+            ('9001 to 12500 (2nd quintile)', _(u"9.001 to 12.500")),
+            ('12501 to 15000 (3rd quintile)', _(u"12.501 to 15.000")),
+            ('15001 to 20000 (4th quintile)', _(u"15.001 to 20.000")),
+            ('20001 > (5th quintile)', _(u"20.001 and above"))
         )
     )
 
@@ -1697,11 +1697,11 @@ class Player(BasePlayer):
         verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your household income? Remember, we are asking for your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect(),
         choices=(
-            ('1', _(u"quintile_1")),
-            ('2', _(u"quintile_2")),
-            ('3', _(u"quintile_3")),
-            ('4', _(u"quintile_4")),
-            ('5', _(u"quintile_5")),
+            ('0 to 9000 (1st quintile)', _(u"0 to 9.000")),
+            ('9001 to 12500 (2nd quintile)', _(u"9.001 to 12.500")),
+            ('12501 to 15000 (3rd quintile)', _(u"12.501 to 15.000")),
+            ('15001 to 20000 (4th quintile)', _(u"15.001 to 20.000")),
+            ('20001 > (5th quintile)', _(u"20.001 and above"))
         )
     )
 
@@ -1737,5 +1737,6 @@ class Player(BasePlayer):
     )
 
     open_comment = models.CharField(
+        blank=True,
         verbose_name=_(u'If you have any comments about your experience taking this survey, with regard to the functionality of the platform, or the content of the tasks and questions, please provide us with relevant feedback'),
     )
