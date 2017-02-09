@@ -44,7 +44,7 @@ SESSION_CONFIGS = [
         'display_name': 'TEST',
         'num_demo_participants': 100,
         'app_sequence': [
-            'survey_i18n', 'iat'
+            'trust'
         ],
         'treatment': 'A1',
         'payoff_group': 0,

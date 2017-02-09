@@ -34,8 +34,8 @@ class Simulation(Page):
 
     def vars_for_template(self):
         """Get vars for template."""
-        max = {'fr': 10, 'en': 10, 'ko': 12000}
-        step = {'fr': 1, 'en': 1, 'ko': 1000}
+        max = {'fr': 10, 'en': 10, 'sl': 10, 'ko': 12000}
+        step = {'fr': 1, 'en': 1, 'sl': 10, 'ko': 1000}
         return {
             'max': max[self.session.vars['lang']],
             'step': step[self.session.vars['lang']]
