@@ -45,16 +45,34 @@
 </div>
 
 <div class="row">
+  <div class="col-sm-6 col-xs-12">
+    <label for="pa">Amount sent by Participant A: <span>X</span></label>
+    <input id="pa" rel="A" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
+  </div>
+
+  <div class="col-sm-6 col-xs-12">
+    <label for="pa">Amount sent by Participant B: <span>X</span></label>
+    <input id="pb" disabled rel="B" class="form-control value5" type="range" min="0" max="0" step="1" value="0" />
+  </div>
+</div>
+
+<div class="row">
   <button class="btn btn-primary">{% trans "Next" %}</button>
   <button class="btn btn-default" type="button">{% trans "Reset to zero" %}</button>
 </div>
 
 <script>
   $(function () {
-    var participants = ['Participant A', 'Participant B'];
-    var participations = [7, 10];
-    var gains = [7, 10];
-    var losses = [3, 4];
+    // Set up chart.
+    var initA = 10,
+        initB = 0,
+        sentA = 0,
+        sentB = 0,
+        receivedA = 0,
+        receivedB = 0,
+        finalA = initA,
+        finalB = 0,
+        multiplier = 3;
 
     var chart = c3.generate({
       bindto: '#chart',
@@ -63,19 +81,19 @@
       },
       data: {
         columns: [
-          ['Contribution', 10, 7],
-          ['Gain', 4, 3],
-          ['Loss', 9, 2]
+          ['Sent', sentA, sentB],
+          ['Received', receivedA, receivedB],
+          ['Final gain', finalA, finalB]
         ],
         colors: {
-          'Contribution': '#0000FF', 
-          'Gain': '#00CC00', 
-          'Loss': '#FF0000'
+          'Sent': '#6392b1', 
+          'Received': '#b9758a', 
+          'Final gain': '#6c9c71'
         },
         types: {
-          'Contribution': 'bar',
-          'Gain': 'bar',
-          'Loss': 'bar',
+          'Sent': 'bar',
+          'Received': 'bar',
+          'Final gain': 'bar',
         },
         labels: true,
         names: {
@@ -87,7 +105,7 @@
       axis: {
         x:{
           type: 'category',
-          categories: participants
+          categories: ['Participant A', 'Participant B']
         },
         y: {
           label: {
@@ -102,11 +120,62 @@
     });
 
     chart.axis.max({
-        y: 20
+        y: 30
     });
     chart.axis.min({
         y: 2
     });
+
+    // Create interactions.
+    var $sliderA = $('#pa'),
+        $sliderB = $('#pb');
+
+    $sliderA.on('input', sliderInputHandler);
+    $sliderB.on('input', sliderInputHandler);
+
+    function sliderInputHandler(e) {
+      update(e.target.getAttribute('rel'), e.target.value);
+    }
+
+    function updateParticipantBSlider() {
+      if (receivedB > 0) {
+        $sliderB.removeAttr('disabled');
+      } else {
+        $sliderB.attr('disabled', true);
+      }
+
+      $sliderB.attr('max', receivedB);
+    }
+
+    function update(player, val) {
+      switch (player) {
+        case 'A':
+          sentA = +val;
+          break;
+
+        case 'B':
+          sentB = +val;
+          break;
+      }
+
+      // Final gains.
+      receivedA = sentB;                                 
+      receivedB = sentA * multiplier;           
+      // Prevent B from sending more than what he/she received!
+      sentB = sentB > receivedB ? receivedB : sentB;
+      finalA = initA - sentA + receivedA;
+      finalB = Math.max(initB + receivedB - sentB, 0);
+
+      updateParticipantBSlider();
+
+      chart.load({
+        columns: [
+          ['Sent', sentA, sentB],
+          ['Received', receivedA, receivedB],
+          ['Final gain', finalA, finalB]
+        ]
+      })
+    }
   });
 </script>
 {% endblock %}
