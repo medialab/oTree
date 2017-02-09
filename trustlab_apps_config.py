@@ -40,11 +40,23 @@ ROOMS = [
 
 SESSION_CONFIGS = [
     {
-        'name': 'test',
-        'display_name': 'TEST',
+        'name': 'test_trust',
+        'display_name': 'TRUST',
         'num_demo_participants': 100,
         'app_sequence': [
             'trust'
+        ],
+        'treatment': 'A1',
+        'payoff_group': 0,
+        'speedsters_threshold': 1,
+        'quota_redirects': quota_redirects_ko,
+    },
+    {
+        'name': 'test_survey',
+        'display_name': 'SURVEY',
+        'num_demo_participants': 100,
+        'app_sequence': [
+            'survey_i18n'
         ],
         'treatment': 'A1',
         'payoff_group': 0,
