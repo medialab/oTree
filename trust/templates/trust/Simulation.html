@@ -58,7 +58,7 @@
 
 <div class="row">
   <button class="btn btn-primary">{% trans "Next" %}</button>
-  <button class="btn btn-default" type="button">{% trans "Reset to zero" %}</button>
+  <button id="reset" class="btn btn-default" type="button">{% trans "Reset to zero" %}</button>
 </div>
 
 <script>
@@ -127,13 +127,22 @@
     var $sliderA = $('#pa'),
         $sliderB = $('#pb'),
         $sentLabelA = $('#sent-label-a'),
-        $sentLabelB = $('#sent-label-b');
+        $sentLabelB = $('#sent-label-b'),
+        $reset = $('#reset');
 
     $sliderA.on('input', sliderInputHandler);
     $sliderB.on('input', sliderInputHandler);
+    $reset.on('click', reset);
 
     function sliderInputHandler(e) {
       update(e.target.getAttribute('rel'), e.target.value);
+    }
+
+    function reset() {
+      sentA = 0;
+      sentB = 0;
+      update('B', 0);
+      update('A', 0);
     }
 
     function updateParticipantBSlider() {
@@ -145,7 +154,6 @@
 
       $sliderB.attr('max', receivedB);
     }
-
 
     function updateSentLabels() {
       $sentLabelA.html(sentA);
@@ -171,6 +179,11 @@
       finalA = initA - sentA + receivedA;
       finalB = Math.max(initB + receivedB - sentB, 0);
 
+      // Achieve two-way data-binding by updating
+      // slider values to ultimate sent amounts.
+      $sliderA.val(sentA);
+      $sliderB.val(sentB);
+
       // Update other UI elements (B's slider, "sent" labels)
       updateParticipantBSlider();
       updateSentLabels();
@@ -181,7 +194,7 @@
           ['Received', receivedA, receivedB],
           ['Final gain', finalA, finalB]
         ]
-      })
+      });
     }
   });
 </script>
