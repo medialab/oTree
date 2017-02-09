@@ -16,7 +16,7 @@
   button[type="button"] {
     margin-right: 1em;
   }
-  
+
   .c3-axis-x path.domain {
     d: path('M0,1V0H908V1');
   }
@@ -26,9 +26,9 @@
   }
 
   line {
-    stroke: rgba(0, 0, 0, 0.25); 
+    stroke: rgba(0, 0, 0, 0.25);
   }
-  
+
   .c3-axis line {
     stroke: black;
   }
@@ -46,12 +46,12 @@
 
 <div class="row">
   <div class="col-sm-6 col-xs-12">
-    <label for="pa">Amount sent by Participant A: <span>X</span></label>
+    <label for="pa">{% trans "Amount sent by Participant A (in €): " %}<span id="sent-label-a">0</span></label>
     <input id="pa" rel="A" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
   </div>
 
   <div class="col-sm-6 col-xs-12">
-    <label for="pa">Amount sent by Participant B: <span>X</span></label>
+    <label for="pa">{% trans "Amount sent by Participant B (in €): " %}<span id="sent-label-b">0</span></label>
     <input id="pb" disabled rel="B" class="form-control value5" type="range" min="0" max="0" step="1" value="0" />
   </div>
 </div>
@@ -86,8 +86,8 @@
           ['Final gain', finalA, finalB]
         ],
         colors: {
-          'Sent': '#6392b1', 
-          'Received': '#b9758a', 
+          'Sent': '#6392b1',
+          'Received': '#b9758a',
           'Final gain': '#6c9c71'
         },
         types: {
@@ -120,15 +120,17 @@
     });
 
     chart.axis.max({
-        y: 30
+      y: 30
     });
     chart.axis.min({
-        y: 2
+      y: 2
     });
 
     // Create interactions.
     var $sliderA = $('#pa'),
-        $sliderB = $('#pb');
+        $sliderB = $('#pb'),
+        $sentLabelA = $('#sent-label-a'),
+        $sentLabelB = $('#sent-label-b');
 
     $sliderA.on('input', sliderInputHandler);
     $sliderB.on('input', sliderInputHandler);
@@ -147,6 +149,12 @@
       $sliderB.attr('max', receivedB);
     }
 
+
+    function updateSentLabels() {
+      $sentLabelA.html(sentA);
+      $sentLabelB.html(sentB);
+    }
+
     function update(player, val) {
       switch (player) {
         case 'A':
@@ -158,15 +166,17 @@
           break;
       }
 
-      // Final gains.
-      receivedA = sentB;                                 
-      receivedB = sentA * multiplier;           
+      // Calculations.
+      receivedB = sentA * multiplier;
       // Prevent B from sending more than what he/she received!
       sentB = sentB > receivedB ? receivedB : sentB;
+      receivedA = sentB;
       finalA = initA - sentA + receivedA;
       finalB = Math.max(initB + receivedB - sentB, 0);
 
+      // Update other UI elements (B's slider, "sent" labels)
       updateParticipantBSlider();
+      updateSentLabels();
 
       chart.load({
         columns: [
