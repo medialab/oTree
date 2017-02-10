@@ -40,6 +40,18 @@ ROOMS = [
 
 SESSION_CONFIGS = [
     {
+        'name': 'test_intro',
+        'display_name': 'INTRODUCTION',
+        'num_demo_participants': 100,
+        'app_sequence': [
+            'introduction'
+        ],
+        'treatment': 'A1',
+        'payoff_group': 0,
+        'speedsters_threshold': 1,
+        'quota_redirects': quota_redirects_ko,
+    },
+    {
         'name': 'test_trust',
         'display_name': 'TRUST',
         'num_demo_participants': 100,
@@ -57,6 +69,18 @@ SESSION_CONFIGS = [
         'num_demo_participants': 100,
         'app_sequence': [
             'public_goods'
+        ],
+        'treatment': 'A1',
+        'payoff_group': 0,
+        'speedsters_threshold': 1,
+        'quota_redirects': quota_redirects_ko,
+    },
+    {
+        'name': 'test_dictator',
+        'display_name': 'DICTATOR',
+        'num_demo_participants': 100,
+        'app_sequence': [
+            'dictator'
         ],
         'treatment': 'A1',
         'payoff_group': 0,
