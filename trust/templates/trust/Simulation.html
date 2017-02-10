@@ -10,7 +10,7 @@
 {% block content %}
 <style>
   h1 {
-    color:#357EBD
+    color: #357EBD;
   }
 
   button[type="button"] {
@@ -72,7 +72,7 @@
         receivedB = 0,
         finalA = initA,
         finalB = 0,
-        multiplier = 3;
+        MULTIPLIER = 3;
 
     var chart = c3.generate({
       bindto: '#chart',
@@ -172,7 +172,7 @@
       }
 
       // Calculations.
-      receivedB = sentA * multiplier;
+      receivedB = sentA * MULTIPLIER;
       // Prevent B from sending more than what he/she received!
       sentB = sentB > receivedB ? receivedB : sentB;
       receivedA = sentB;

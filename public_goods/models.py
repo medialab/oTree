@@ -50,7 +50,11 @@ class Constants(BaseConstants):
 class Subsession(BaseSubsession):
     """Subsession for Public Goods."""
 
-    pass
+    def before_session_starts(self):
+        """Set treatment of the game (see settings.py) as global var."""
+        if 'treatment' in self.session.config:
+            self.session.vars['treatment'] = self.session.config['treatment']
+        self.session.vars['lang'] = get_language()
 
 
 class Group(BaseGroup):

@@ -1,123 +1,218 @@
 {% extends "global/Simulation.html" %}
-{% load i18n %}
 {% load staticfiles otree_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+{% endblock %}
 
 {% block content %}
-<h1 style="color:#008068">{% trans "Task Two: Test Simulation" %}</h1>
+<style>
+  h1 {
+    color: #008068;
+  }
+
+  button[type="button"] {
+    margin-right: 1em;
+  }
+
+  .c3-axis-x path.domain {
+    d: path('M0,1V0H908V1');
+  }
+
+  .c3-axis-y path.domain {
+    d: path('M -1 1 H 0 V 265.5 H -1');
+  }
+
+  line {
+    stroke: rgba(0, 0, 0, 0.25);
+  }
+
+  .c3-axis line {
+    stroke: black;
+  }
+</style>
+<h1>{% trans "Task Two: Test Simulation" %}</h1>
 <hr/>
 <p>{% trans "This is not the real task yet, but a simulation to help you understand the rules better. You can use the test screen below to play with the different choices of the four participants." %}</p>
 <p>{% trans "Whenever you are ready to proceed to the real task, click next." %}</p>
 
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="{% static "public_goods/public_goods_simulation.js" %}"></script>
-<style>.page-header{display: none}</style>
-<script>
-var canvas, stage, exportRoot;
-function init() {
-  canvas = document.getElementById("canvas");
-  exportRoot = new lib.public_good_simulation();
+<div class="row">
+  <div id="chart" class="col-sm-12"></div>
+</div>
 
-  stage = new createjs.Stage(canvas);
-  stage.addChild(exportRoot);
-  stage.update();
-
-  createjs.Ticker.setFPS(lib.properties.fps);
-  createjs.Ticker.addEventListener("tick", stage);
-
-  var $amountA = $('#amountA'),
-      $amountB = $('#amountB'),
-      $amountC = $('#amountC'),
-      $amountD = $('#amountD'),
-      MIN = 0,
-      MAX = {{max}};
-
-  $amountA.change(function (e) {
-    e.preventDefault();
-    window.PG.giveMoney(0, e.target.value);
-  });
-
-  $amountB.change(function (e) {
-    e.preventDefault();
-    window.PG.giveMoney(1, +e.target.value);
-  });
-
-  $amountC.change(function (e) {
-    e.preventDefault();
-    window.PG.giveMoney(2, +e.target.value);
-  });
-
-  $amountD.change(function (e) {
-    e.preventDefault();
-    window.PG.giveMoney(3, +e.target.value);
-  });
-
-  $('#send').click(function (e) {
-    e.preventDefault();
-
-    if (($amountA.val() === '' || $amountA.val() === null) ||
-        ($amountB.val() === '' || $amountB.val() === null) ||
-        ($amountC.val() === '' || $amountC.val() === null) ||
-        ($amountD.val() === '' || $amountD.val() === null) ||
-        ($amountA.val() < 0 || $amountA.val() > MAX) ||
-        ($amountB.val() < 0 || $amountB.val() > MAX) ||
-        ($amountC.val() < 0 || $amountC.val() > MAX) ||
-        ($amountD.val() < 0 || $amountD.val() > MAX)) {
-      $('.error').removeClass('hide');
-      return;
-    }
-
-    $('.error').addClass('hide');
-
-    $amountA.val('');
-    $amountB.val('');
-    $amountC.val('');
-    $amountD.val('');
-    window.PG.send();
-  });
-}
-
-$(function() { init() });
-</script>
-
-<div class="container">
-  <canvas id="canvas" width="600" height="480"
-          style="background-color:#CCD1DB"
-          class="col-sm-8 col-md-8 col-lg-6"
-          data-min="0"
-          data-max="{{max}}"
-          data-currency="{% trans '€' %}"
-          data-multiplier="{{Constants.efficiency_factor}}"
-          data-locale="{{lang}}"
-  >
-  </canvas>
-  <div class="form commands">
-    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
-      <label for="amount">{% trans "Amount sent by Participant A" %}</label>
-      <input class="form-control" type="number" id="amountA" min="0" max="{{max}}" step="{{step}}">
-    </div>
-
-    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
-      <label for="amount">{% trans "Amount sent by Participant B" %}</label>
-      <input class="form-control" type="number" id="amountB" min="0" max="{{max}}" step="{{step}}">
-    </div>
-
-    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
-      <label for="amount">{% trans "Amount sent by Participant C" %}</label>
-      <input class="form-control" type="number" id="amountC" min="0" max="{{max}}" step="{{step}}">
-    </div>
-
-    <div class="col-sm-2 col-md-2 col-lg-4 form-group">
-      <label for="amount">{% trans "Amount sent by Participant D" %}</label>
-      <input class="form-control" type="number" id="amountD" min="0" max="{{max}}" step="{{step}}">
-    </div>
-
-    <div class="col-sm-3 col-md-3 col-lg-3 col-sm-offset-6 col-md-offset-6 col-lg-offset-6 form-group">
-      <a class="btn btn-default col-sm-12 col-md-12 col-lg-12" style="top: -35px;" id="send">{% trans "Send" %}</a><br/><br/>
-      <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" style="top: -35px;" id="next">{% trans "Next" %}</button>
-    </div>
-
+<div class="row">
+  <div class="col-sm-3 col-xs-12">
+    <label for="pa">{% trans "Amount sent by Participant A (in €): " %}<span id="sent-label-a">0</span></label>
+    <input id="pa" rel="A" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
   </div>
 
+  <div class="col-sm-3 col-xs-12">
+    <label for="pa">{% trans "Amount sent by Participant B (in €): " %}<span id="sent-label-b">0</span></label>
+    <input id="pb" rel="B" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
+  </div>
+
+  <div class="col-sm-3 col-xs-12">
+    <label for="pc">{% trans "Amount sent by Participant C (in €): " %}<span id="sent-label-c">0</span></label>
+    <input id="pc" rel="C" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
+  </div>
+
+  <div class="col-sm-3 col-xs-12">
+    <label for="pd">{% trans "Amount sent by Participant D (in €): " %}<span id="sent-label-d">0</span></label>
+    <input id="pd" rel="D" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
+  </div>
 </div>
+
+<div class="row">
+  <button class="btn btn-primary">{% trans "Next" %}</button>
+  <button id="reset" class="btn btn-default" type="button">{% trans "Reset to zero" %}</button>
+</div>
+
+<script>
+  $(function () {
+    var initAmount = 10,
+        sentA = 0,
+        sentB = 0,
+        sentC = 0,
+        sentD = 0,
+        jointSum = 0,
+        finalGain = 0,
+        finalA = 0,
+        finalB = 0,
+        finalC = 0,
+        finalD = 0,
+        MULTIPLIER = 1.6,
+        NUM_PLAYER = 4;
+
+    var chart = c3.generate({
+      bindto: '#chart',
+      size: {height: '5%'},
+      data: {
+        columns: [
+          ['Sent', sentA, sentB, sentC, sentD],
+          ['Final gain', initAmount, initAmount, initAmount, initAmount],
+        ],
+        // colors: {},
+        types: {
+          'Sent': 'bar',
+          'Final gain': 'bar',
+        },
+        labels: true
+      },
+      axis: {
+        x:{
+          type: 'category',
+          categories: [
+            'Participant A', 'Participant B',
+            'Participant C', 'Participant D'
+          ]
+        },
+        y: {
+          label: {
+            text: 'Amounts',
+            position: 'outer-middle',
+            tick: {
+              outer: true
+            }
+          }
+        }
+      }
+    });
+
+    chart.axis.max({
+      y: 60
+    });
+
+    // Create interactions.
+    var $sliderA = $('#pa'),
+        $sliderB = $('#pb'),
+        $sliderC = $('#pc'),
+        $sliderD = $('#pd'),
+        $sentLabelA = $('#sent-label-a'),
+        $sentLabelB = $('#sent-label-b'),
+        $sentLabelC = $('#sent-label-c'),
+        $sentLabelD = $('#sent-label-d'),
+        $reset = $('#reset');
+
+    $sliderA.on('input', sliderInputHandler);
+    $sliderB.on('input', sliderInputHandler);
+    $sliderC.on('input', sliderInputHandler);
+    $sliderD.on('input', sliderInputHandler);
+
+    $reset.on('click', reset);
+
+    function sliderInputHandler(e) {
+      update(e.target.getAttribute('rel'), e.target.value);
+    }
+
+    function calculateFinalGain(sent) {
+      return Math.max(0, initAmount + finalGain - sent).toFixed(2);
+    }
+
+    function reset() {
+      sentA = 0;
+      sentB = 0;
+      sentC = 0;
+      sentD = 0;
+      update('A', 0);
+      update('B', 0);
+      update('C', 0);
+      update('D', 0);
+    }
+
+    function updateSentLabels() {
+      $sentLabelA.html(sentA);
+      $sentLabelB.html(sentB);
+      $sentLabelC.html(sentC);
+      $sentLabelD.html(sentD);
+    }
+
+    function update(player, val) {
+      switch (player) {
+        case 'A':
+          sentA = +val;
+          break;
+
+        case 'B':
+          sentB = +val;
+          break;
+
+        case 'C':
+          sentC = +val;
+          break;
+
+        case 'D':
+          sentD = +val;
+          break;
+      }
+
+      jointSum = (sentA + sentB + sentC + sentD) * MULTIPLIER;
+      finalGain = Math.max(0, jointSum / NUM_PLAYER);
+
+      finalA = calculateFinalGain(sentA);
+      finalB = calculateFinalGain(sentB);
+      finalC = calculateFinalGain(sentC);
+      finalD = calculateFinalGain(sentD);
+
+      // Achieve two-way data-binding by updating
+      // slider values to ultimate sent amounts.
+      $sliderA.val(sentA);
+      $sliderB.val(sentB);
+      $sliderC.val(sentC);
+      $sliderD.val(sentD);
+
+      updateSentLabels();
+
+      chart.load({
+        columns: [
+          ['Sent', sentA, sentB, sentC, sentD],
+          ['Final gain', finalA, finalB, finalC, finalD]
+        ]
+      });
+    }
+  });
+</script>
 
 {% endblock %}

@@ -32,8 +32,8 @@ class Simulation(Page):
     """Simulation for Public Goods."""
 
     def vars_for_template(self):
-        max = {'fr': 10, 'en': 10, 'ko': 12000}
-        step = {'fr': 1, 'en': 1, 'ko': 1}
+        max = {'fr': 10, 'en': 10, 'sl': 10, 'ko': 12000}
+        step = {'fr': 1, 'en': 1, 'sl': 1, 'ko': 1}
         return {
             'max': max[self.session.vars['lang']],
             'step': step[self.session.vars['lang']]
@@ -57,6 +57,7 @@ class Contribute(Page):
     def vars_for_template(self):
         amount = {
             'fr': _(u'10 euros'),
+            'sl': _(u'10 euros'),
             'en': _(u'$10'),
             'ko': _(u'12.000 Won')
         }
@@ -90,6 +91,8 @@ class ContributeBack(Page):
     group members contributes 0 euro:'),
             'en': _(u'If on average, each of the other \
     group members contributes 0 euro:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 0 euro:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 0 Won:')
         }
@@ -98,6 +101,8 @@ class ContributeBack(Page):
             'fr': _(u'If on average, each of the other \
     group members contributes 1 euro:'),
             'en': _(u'If on average, each of the other \
+    group members contributes 1 euro:'),
+            'sl': _(u'If on average, each of the other \
     group members contributes 1 euro:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 1.200 Won Won:')
@@ -108,6 +113,8 @@ class ContributeBack(Page):
     group members contributes 2 euros:'),
             'en': _(u'If on average, each of the other \
     group members contributes 2 euros:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 2 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 2.400 Won:')
         }
@@ -116,6 +123,8 @@ class ContributeBack(Page):
             'fr': _(u'If on average, each of the other \
     group members contributes 3 euros:'),
             'en': _(u'If on average, each of the other \
+    group members contributes 3 euros:'),
+            'sl': _(u'If on average, each of the other \
     group members contributes 3 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 3.600 Won:')
@@ -126,6 +135,8 @@ class ContributeBack(Page):
     group members contributes 4 euros:'),
             'en': _(u'If on average, each of the other \
     group members contributes 4 euros:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 4 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 4.800 Won:')
         }
@@ -134,6 +145,8 @@ class ContributeBack(Page):
             'fr': _(u'If on average, each of the other \
     group members contributes 5 euros:'),
             'en': _(u'If on average, each of the other \
+    group members contributes 5 euros:'),
+            'sl': _(u'If on average, each of the other \
     group members contributes 5 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 6.000 Won:')
@@ -144,6 +157,8 @@ class ContributeBack(Page):
     group members contributes 6 euros:'),
             'en': _(u'If on average, each of the other \
     group members contributes 6 euros:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 6 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 7.200 Won:')
         }
@@ -152,6 +167,8 @@ class ContributeBack(Page):
             'fr': _(u'If on average, each of the other \
     group members contributes 7 euros:'),
             'en': _(u'If on average, each of the other \
+    group members contributes 7 euros:'),
+            'sl': _(u'If on average, each of the other \
     group members contributes 7 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 8.400 Won:')
@@ -162,6 +179,8 @@ class ContributeBack(Page):
     group members contributes 8 euros:'),
             'en': _(u'If on average, each of the other \
     group members contributes 8 euros:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 8 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 9.600 Won:')
         }
@@ -171,6 +190,8 @@ class ContributeBack(Page):
     group members contributes 9 euros:'),
             'en': _(u'If on average, each of the other \
     group members contributes 9 euros:'),
+            'sl': _(u'If on average, each of the other \
+    group members contributes 9 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 10.800 Won:')
         }
@@ -179,6 +200,8 @@ class ContributeBack(Page):
             'fr': _(u'If on average, each of the other \
     group members contributes 10 euros:'),
             'en': _(u'If on average, each of the other \
+    group members contributes 10 euros:'),
+            'sl': _(u'If on average, each of the other \
     group members contributes 10 euros:'),
             'ko': _(u'If on average, each of the other \
     group members contributes 12.000 Won:')
