@@ -5,7 +5,6 @@
 {% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
 <h1>{% trans "Thank you very much for entering your choice." %}</h1>
-<p>{% trans "We have recorded your decision. Your payoff for this task will depend on the action of your partner in this task, Participant B." %}</p>
-<p>{% trans "Now, please proceed to the second task." %}</p>
+<p>{% trans "We have recorded your decision." %} {% trans "Now, please proceed to the second task." %}</p>
 <button class="btn btn-primary pull-right">{% trans "Next" %}</button>
 {% endblock %}
