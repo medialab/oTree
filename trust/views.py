@@ -6,14 +6,15 @@ from . import models
 from .models import amount_allocated
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import get_language
+from otree.api import Currency
 
 
 def vars_for_all_templates(self):
     """Provide global template variables."""
     return {
         'instructions': 'trust/Instructions.html',
-        'total_q': 1,
-        'lang': get_language() or self.session.vars['lang']
+        'lang': get_language() or self.session.vars['lang'],
+        'amount_allocated': Currency(amount_allocated)
     }
 
 
@@ -21,10 +22,6 @@ class Introduction(Page):
     """Page introducing the Trust game."""
 
     template_name = 'global/Introduction.html'
-
-    def vars_for_template(self):
-        """Local variables for the template."""
-        return {'amount_allocated': amount_allocated}
 
 
 class Simulation(Page):
@@ -58,7 +55,6 @@ class Send(Page):
         }
 
         return {
-            'amount_allocated': amount_allocated,
             'sent_amount_label': sent_amount_label[self.session.vars['lang']]
         }
 
