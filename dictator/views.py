@@ -22,18 +22,6 @@ class EndGame(Page):
     form_model = models.Player
 
 
-class Simulation(Page):
-    """Simulation page."""
-
-    def vars_for_template(self):
-        max = {'fr': 10, 'en': 10, 'ko': 12000}
-        step = {'fr': 1, 'en': 1, 'ko': 1000}
-        return {
-            'max': max[self.session.vars['lang']],
-            'step': step[self.session.vars['lang']]
-        }
-
-
 class Introduction(Page):
     """Introduction page."""
 
@@ -43,6 +31,7 @@ class Introduction(Page):
     def vars_for_template(self):
         amount = {
             'fr': _(u'10 euros'),
+            'sl': _(u'10 euros'),
             'en': _(u'$10'),
             'ko': _(u'12.000 Won')
         }
@@ -60,6 +49,7 @@ class Offer(Page):
     def vars_for_template(self):
         amount = {
             'fr': _(u'10 euros'),
+            'sl': _(u'10 euros'),
             'en': _(u'$10'),
             'ko': _(u'12.000 Won')
         }
@@ -70,7 +60,6 @@ class Offer(Page):
 
 page_sequence = [
     Introduction,
-    # Simulation,
     Offer,
     EndGame
 ]
