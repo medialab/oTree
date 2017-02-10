@@ -74,10 +74,10 @@ class SendContinued(Page):
 
     def vars_for_template(self):
         received_by_b = {
-            'fr': _(u'10 euros'),
-            'en': _(u'$10'),
-            'sl': _(u'10 euros'),
-            'ko': _(u'12.000 Won')
+            'fr': _(u'5 euros'),
+            'en': _(u'$5'),
+            'sl': _(u'5 euros'),
+            'ko': _(u'6.000 Won')
         }
 
         total_budget_b = {
@@ -314,10 +314,6 @@ class SendBack(Page):
                 sent_back_amount_10_label[self.session.vars['lang']]
             )
         }
-
-    def is_displayed(self):
-        """Display rule stating 'SendBack' appears for Player B only."""
-        return self.player.treatment()[:1] == 'B'
 
 
 class EndGame(Page):
