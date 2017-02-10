@@ -136,14 +136,27 @@
         $sentLabelD = $('#sent-label-d'),
         $reset = $('#reset');
 
-    $sliderA.on('input', sliderInputHandler);
-    $sliderB.on('input', sliderInputHandler);
-    $sliderC.on('input', sliderInputHandler);
-    $sliderD.on('input', sliderInputHandler);
+    // Circumvent bug in IE10 and above where range inputs DO have the "oninput" event,
+    // but DO NOT actually trigger it (false positive!)
+    // @see https://connect.microsoft.com/IE/feedback/details/856998/input-type-range-oninput-missing-onchange-wrong
+    var eventName = (function () {
+      if (navigator.userAgent.match(/MSIE 10/i) || navigator.userAgent.match(/Trident\/7\./)) {
+        return 'change';
+      }
+      return 'input'
+    })();
+
+    console.log(eventName)
+
+    $sliderA.on(eventName, sliderInputHandler);
+    $sliderB.on(eventName, sliderInputHandler);
+    $sliderC.on(eventName, sliderInputHandler);
+    $sliderD.on(eventName, sliderInputHandler);
 
     $reset.on('click', reset);
 
     function sliderInputHandler(e) {
+      console.log('sliderInputHandler')
       update(e.target.getAttribute('rel'), e.target.value);
     }
 
