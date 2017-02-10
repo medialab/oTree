@@ -52,7 +52,7 @@
 
   <div class="col-sm-6 col-xs-12">
     <label for="pa">{% trans "Amount sent by Participant B (in €): " %}<span id="sent-label-b">0</span></label>
-    <input id="pb" disabled rel="B" class="form-control value5" type="range" min="0" max="0" step="1" value="0" />
+    <input id="pb" rel="B" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
   </div>
 </div>
 
@@ -65,13 +65,13 @@
   $(function () {
     // Set up chart.
     var initA = 10,
-        initB = 0,
+        initB = 10,
         sentA = 0,
         sentB = 0,
         receivedA = 0,
         receivedB = 0,
         finalA = initA,
-        finalB = 0,
+        finalB = initB,
         MULTIPLIER = 3;
 
     var chart = c3.generate({
@@ -156,13 +156,13 @@
     }
 
     function updateParticipantBSlider() {
-      if (receivedB > 0) {
+      if ((initB + receivedB) > 0) {
         $sliderB.removeAttr('disabled');
       } else {
         $sliderB.attr('disabled', true);
       }
 
-      $sliderB.attr('max', receivedB);
+      $sliderB.attr('max', (initB + receivedB));
     }
 
     function updateSentLabels() {
@@ -184,7 +184,7 @@
       // Calculations.
       receivedB = sentA * MULTIPLIER;
       // Prevent B from sending more than what he/she received!
-      sentB = sentB > receivedB ? receivedB : sentB;
+      sentB = sentB > (initB + receivedB) ? (initB + receivedB) : sentB;
       receivedA = sentB;
       finalA = initA - sentA + receivedA;
       finalB = Math.max(initB + receivedB - sentB, 0);
