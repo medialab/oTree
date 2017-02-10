@@ -5,14 +5,15 @@ from __future__ import division
 from . import models
 from ._builtin import Page
 from otree.common import Currency
-from .models import Constants
+from .models import Constants, allocated_amount
 from django.utils.translation import ugettext_lazy as _
 
 
 def vars_for_all_templates(self):
     """Provide global template variables."""
     return {
-        'lang': self.session.vars['lang']
+        'lang': self.session.vars['lang'],
+        'allocated_amount': Currency(allocated_amount)
     }
 
 
