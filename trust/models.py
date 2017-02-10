@@ -65,6 +65,10 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player model for Trust."""
 
+    expected_return_from_b = models.CurrencyField(
+        min=Currency(0)
+    )
+
     sent_amount = models.CurrencyField(
         doc="""Amount sent by P1""",
         min=Currency(0),

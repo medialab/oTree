@@ -67,6 +67,33 @@ class Send(Page):
         return self.player.treatment()[:1] == 'A'
 
 
+class SendContinued(Page):
+
+    form_model = models.Player
+    form_fields = ['expected_return_from_b']
+
+    def vars_for_template(self):
+        received_by_b = {
+            'fr': _(u'10 euros'),
+            'en': _(u'$10'),
+            'sl': _(u'10 euros'),
+            'ko': _(u'12.000 Won')
+        }
+
+        total_budget_b = {
+            'fr': {'string': _(u'25 euros'), 'integer': 25},
+            'en': {'string': _(u'$25'), 'integer': 25},
+            'sl': {'string': _(u'25 euros'), 'integer': 25},
+            'ko': {'string': _(u'30.000 Won'), 'integer': 30000},
+        }
+
+        return {
+            'received_by_b': received_by_b[self.session.vars['lang']],
+            'total_budget_b_str': total_budget_b[self.session.vars['lang']]['string'],
+            'total_budget_b_int': total_budget_b[self.session.vars['lang']]['integer']
+        }
+
+
 class SendBack(Page):
     """Page where Player 2 sends mony in return for possible P1 grants."""
 
@@ -303,6 +330,7 @@ page_sequence = [
     Introduction,
     Simulation,
     Send,
+    SendContinued,
     SendBack,
     EndGame
 ]

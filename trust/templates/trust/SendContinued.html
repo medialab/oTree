@@ -1,0 +1,23 @@
+{% extends "global/Base.html" %}
+{% load staticfiles otree_tags %}
+{% load i18n %}
+
+{% block content %}
+<style type="text/css">label {font-weight: normal;}</style>
+<h1 style="color:#357EBD">{% trans "Task One: Real task" %}</h1>
+
+<p>{% blocktrans %}Suppose Participant B receives {{received_by_b}}, making her total budget 10 euro + {{received_by_b}} = {{total_budget_b_str}}.{% endblocktrans %}</p>
+<p>{% blocktrans %}What amount do you expect Participant B to return to you, Participant A?{% endblocktrans %}</p>
+<p>{% blocktrans %}Please enter a number from 0 to {{total_budget_b_str}}.{% endblocktrans %}</p>
+
+<hr/>
+{% formfield player.expected_return_from_b with label="" %}
+<p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
+
+<script>
+$(function () {
+  $('input').attr('max', '{{total_budget_b_int}}');
+});
+</script>
+
+{% endblock %}
