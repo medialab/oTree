@@ -42,49 +42,49 @@
     <div>
       <div class="col-sm-11 col-xs-8">
         <label for="slider1">The top 1% (Richest)</label>
-        <input id="id_resources_top_1_percent" name="resources_top_1_percent" rel="value1" class="form-control value1" type="range" min="0" max="100" step="1" value="0" />
+        <input id="id_resources_top_1_percent" name="resources_top_1_percent" rel="value1" class="form-control value1" type="range" min="0" max="75" step="1" value="0" />
       </div>
       <div class="col-sm-1 col-xs-4">
         <div><span id="percent1" class="percent value1">0</span><span>%</span></div>
       </div>
     </div>
-    
+
     <div>
       <div class="col-sm-11 col-xs-8">
         <label for="slider2">The next 9%</label>
-        <input id="id_resources_next_9_percent" name="resources_next_9_percent" rel="value2" class="form-control value2" type="range" min="0" max="100" step="1" value="0" />
+        <input id="id_resources_next_9_percent" name="resources_next_9_percent" rel="value2" class="form-control value2" type="range" min="0" max="75" step="1" value="0" />
       </div>
       <div class="col-sm-1 col-xs-4">
         <div><span id="percent2" class="percent value2">0</span><span>%</span></div>
       </div>
     </div>
-    
+
     <div>
       <div class="col-sm-11 col-xs-8">
         <label for="slider3">The next 40%</label>
-        <input id="id_resources_next_40_percent" name="resources_next_40_percent" rel="value3" class="form-control value3" type="range" min="0" max="100" step="1" value="0" />
+        <input id="id_resources_next_40_percent" name="resources_next_40_percent" rel="value3" class="form-control value3" type="range" min="0" max="75" step="1" value="0" />
       </div>
       <div class="col-sm-1 col-xs-4">
         <div><span id="percent3" class="percent value3">0</span><span>%</span></div>
       </div>
     </div>
-    
+
     <div>
       <div class="col-sm-11 col-xs-8">
         <label for="slider4">The bottom 50%</label>
-        <input id="id_resources_bottom_50_percent" name="resources_bottom_50_percent" rel="value4" class="form-control value4" type="range" min="0" max="100" step="1" value="0" />
+        <input id="id_resources_bottom_50_percent" name="resources_bottom_50_percent" rel="value4" class="form-control value4" type="range" min="0" max="75" step="1" value="0" />
       </div>
       <div class="col-sm-1 col-xs-4">
         <div><span id="percent4" class="percent value4">0</span><span>%</span></div>
       </div>
     </div>
-    
+
     <hr>
-    
+
     <div>
       <div class="col-sm-11 col-xs-8">
         <label for="slider-total">Revenue raised</label>
-        <input disabled id="slider-total" class="form-control value5" type="range" min="0" max="100" step="1" value="0" />
+        <input disabled id="slider-total" class="form-control value5" type="range" min="0" max="75" step="1" value="0" />
       </div>
       <div class="col-sm-1 col-xs-4">
         <div><span id="percent5" rel="value5" class="percent value5">0</span><span>%</span></div>
@@ -92,7 +92,7 @@
     </div>
 
   </div>
-  
+
   <div class="row">
     <p id="feedback" class="col-sm-12"></p>
   </div>
@@ -182,7 +182,7 @@
 
         // Store range input value in corresponding field of values object.
         values[relatedValueName] = sliderValue;
-        
+
         // Update corresponding value display.
         $valueDisplay.html(sliderValue);
 
@@ -200,7 +200,7 @@
           var feedbackType = total === 100 ? FEEDBACK_EXACT : FEEDBACK_NOT_ENOUGH;
           setFeedback(feedbackType);
         }
-      } 
+      }
     });
   </script>
 
