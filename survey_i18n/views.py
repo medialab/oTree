@@ -45,7 +45,7 @@ class Survey04(Page):
         'people_would_take_advantage_of_you_or_be_fair',
         'receiving_government_benefits_to_which_you_are_not_entitled',
         'cheating_on_taxes_if_you_have_a_chance'
-    ]   
+    ]
 
 
 class Survey05(Page):
@@ -222,7 +222,7 @@ class Survey22(Page):
     form_model = models.Player
     form_fields = [
         'estimation_of_foreigners_in_neighborhood'
-    ]   
+    ]
 
 
 class Survey23(Page):
@@ -350,42 +350,42 @@ class Survey38(Page):
 
 
 page_sequence = [
-    Survey01,
-    Survey02,
-    Survey03,
-    Survey04,
-    Survey05,
-    Survey06,
-    Survey07,
-    Survey08,
-    Survey09,
-    Survey10,
-    Survey11,
-    Survey12,
-    Survey13,
-    Survey14,
-    Survey15,
+    # Survey01,
+    # Survey02,
+    # Survey03,
+    # Survey04,
+    # Survey05,
+    # Survey06,
+    # Survey07,
+    # Survey08,
+    # Survey09,
+    # Survey10,
+    # Survey11,
+    # Survey12,
+    # Survey13,
+    # Survey14,
+    # Survey15,
     Survey16,
-    Survey17,
-    Survey18,
-    Survey19,
-    Survey20,
-    Survey21,
-    Survey22,
-    Survey23,
-    Survey24,
-    Survey25,
-    Survey26,
-    Survey27,
-    Survey28,
-    Survey29,
-    Survey30,
-    Survey31,
-    Survey32,
-    Survey33,
-    Survey34,
-    Survey35,
-    Survey36,
-    Survey37,
-    Survey38
+    # Survey17,
+    # Survey18,
+    # Survey19,
+    # Survey20,
+    # Survey21,
+    # Survey22,
+    # Survey23,
+    # Survey24,
+    # Survey25,
+    # Survey26,
+    # Survey27,
+    # Survey28,
+    # Survey29,
+    # Survey30,
+    # Survey31,
+    # Survey32,
+    # Survey33,
+    # Survey34,
+    # Survey35,
+    # Survey36,
+    # Survey37,
+    # Survey38
 ]
