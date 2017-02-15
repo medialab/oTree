@@ -463,7 +463,7 @@ page_sequence = [
     # Survey25,
     # Survey26,
     # Survey27,
-    # Survey28,
+    Survey28,
     # Survey29,
     # Survey30,
     # Survey31,
@@ -471,7 +471,7 @@ page_sequence = [
     # Survey33,
     # Survey34,
     # Survey35,
-    # Survey36,
+    Survey36,
     # Survey37,
     # Survey38
 ]
