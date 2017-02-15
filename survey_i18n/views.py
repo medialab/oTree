@@ -3,18 +3,19 @@
 from __future__ import division
 from ._builtin import Page
 from . import models
-import math
+from django.utils.translation import get_language
 from django.utils.translation import ugettext_lazy as _
 
 
 def vars_for_all_templates(self):
     """Provide global template variables."""
     return {
-        'lang': self.session.vars['lang']
+        'lang': self.session.vars['lang'] or get_language()
     }
 
 
 class Survey01(Page):
+
     form_model = models.Player
     form_fields = [
         'overall_how_satisfied_are_you_with_life',
@@ -23,6 +24,7 @@ class Survey01(Page):
 
 
 class Survey02(Page):
+
     form_model = models.Player
     form_fields = [
         'to_punish_someone_who_treats_others_unfairly',
@@ -31,6 +33,7 @@ class Survey02(Page):
 
 
 class Survey03(Page):
+
     form_model = models.Player
     form_fields = [
         'fully_prepared_or_avoid_to_take_risks',
@@ -39,6 +42,7 @@ class Survey03(Page):
 
 
 class Survey04(Page):
+
     form_model = models.Player
     form_fields = [
         'people_are_looking_for_themselves_or_try_to_help_others',
@@ -49,6 +53,7 @@ class Survey04(Page):
 
 
 class Survey05(Page):
+
     form_model = models.Player
     form_fields = [
         'how_much_do_you_trust_your_family',
@@ -63,6 +68,7 @@ class Survey05(Page):
 
 
 class Survey06(Page):
+
     form_model = models.Player
     form_fields = [
         'i_am_good_at_math',
@@ -72,6 +78,7 @@ class Survey06(Page):
 
 
 class Survey07(Page):
+
     form_model = models.Player
     form_fields = [
         'how_much_do_you_trust_most_people_in_your_country'
@@ -79,6 +86,7 @@ class Survey07(Page):
 
 
 class Survey08(Page):
+
     form_model = models.Player
     form_fields = [
         'trust_the_government',
@@ -91,6 +99,7 @@ class Survey08(Page):
 
 
 class Survey09(Page):
+
     form_model = models.Player
     form_fields = [
         'public_institutions_deliver_service_in_the_best_way',
@@ -102,6 +111,7 @@ class Survey09(Page):
 
 
 class Survey10(Page):
+
     form_model = models.Player
     form_fields = [
         'satisfied_with_the_education_system',
@@ -119,6 +129,7 @@ class Survey10(Page):
 
 
 class Survey11(Page):
+
     form_model = models.Player
     form_fields = [
         'information_about_administrative_producedure_easy_to_find',
@@ -127,6 +138,7 @@ class Survey11(Page):
 
 
 class Survey12(Page):
+
     form_model = models.Player
     form_fields = [
         'start_a_business_conditions_stability',
@@ -135,6 +147,7 @@ class Survey12(Page):
 
 
 class Survey13(Page):
+
     form_model = models.Player
     form_fields = [
         'guilty_high_ranking_gov_employee_likely_prosecuted',
@@ -145,6 +158,7 @@ class Survey13(Page):
 
 
 class Survey14(Page):
+
     form_model = models.Player
     form_fields = [
         'social_minority_citizen_likely_to_be_treated_equally'
@@ -152,6 +166,7 @@ class Survey14(Page):
 
 
 class Survey15(Page):
+
     form_model = models.Player
     form_fields = [
         'expenditure_general_public_services_and_public_debt',
@@ -164,6 +179,7 @@ class Survey15(Page):
 
 
 class Survey16(Page):
+
     form_model = models.Player
     form_fields = [
         'resources_top_1_percent',
@@ -174,6 +190,7 @@ class Survey16(Page):
 
 
 class Survey17(Page):
+
     form_model = models.Player
     form_fields = [
         'how_many_children_part_of_the_richest_segment',
@@ -182,6 +199,7 @@ class Survey17(Page):
 
 
 class Survey18(Page):
+
     form_model = models.Player
     form_fields = [
         'household_expectations_for_the_12_months_to_come',
@@ -191,6 +209,7 @@ class Survey18(Page):
 
 
 class Survey19(Page):
+
     form_model = models.Player
     form_fields = [
         'government_should_encourage_or_discourage_international_trade'
@@ -198,6 +217,7 @@ class Survey19(Page):
 
 
 class Survey20(Page):
+
     form_model = models.Player
     form_fields = [
         'how_much_info_from_tv',
@@ -209,6 +229,7 @@ class Survey20(Page):
 
 
 class Survey21(Page):
+
     form_model = models.Player
     form_fields = [
         'most_likely_threatening_privacy_hackers',
@@ -219,6 +240,7 @@ class Survey21(Page):
 
 
 class Survey22(Page):
+
     form_model = models.Player
     form_fields = [
         'estimation_of_foreigners_in_neighborhood'
@@ -226,6 +248,7 @@ class Survey22(Page):
 
 
 class Survey23(Page):
+
     form_model = models.Player
     form_fields = [
         'statement_agreement_immigrants_are_not_integrated',
@@ -234,6 +257,7 @@ class Survey23(Page):
 
 
 class Survey24(Page):
+
     form_model = models.Player
     form_fields = [
         'how_often_do_you_get_together_with_friends',
@@ -242,6 +266,7 @@ class Survey24(Page):
 
 
 class Survey25(Page):
+
     form_model = models.Player
     form_fields = [
         'how_strongly_do_you_feel_connected_to_your_neighborhood'
@@ -249,6 +274,7 @@ class Survey25(Page):
 
 
 class Survey26(Page):
+
     form_model = models.Player
     form_fields = [
         'voting_can_or_cannot_make_a_difference',
@@ -257,6 +283,7 @@ class Survey26(Page):
 
 
 class Survey27(Page):
+
     form_model = models.Player
     form_fields = [
         'date_of_birth',
@@ -265,6 +292,7 @@ class Survey27(Page):
 
 
 class Survey28(Page):
+
     form_model = models.Player
     form_fields = [
         'how_many_people_in_your_household'
@@ -272,6 +300,7 @@ class Survey28(Page):
 
 
 class Survey29(Page):
+
     form_model = models.Player
     form_fields = [
         'which_country_were_you_born',
@@ -282,6 +311,7 @@ class Survey29(Page):
 
 
 class Survey30(Page):
+
     form_model = models.Player
     form_fields = [
         'do_you_live_in_a'
@@ -289,6 +319,7 @@ class Survey30(Page):
 
 
 class Survey31(Page):
+
     form_model = models.Player
     form_fields = [
         'highest_level_of_education_you_have_completed'
@@ -296,6 +327,7 @@ class Survey31(Page):
 
 
 class Survey32(Page):
+
     form_model = models.Player
     form_fields = [
         'highest_level_of_education_your_parent_has_completed',
@@ -304,6 +336,7 @@ class Survey32(Page):
 
 
 class Survey33(Page):
+
     form_model = models.Player
     form_fields = [
         'do_you_currently_work_in_the'
@@ -311,14 +344,15 @@ class Survey33(Page):
 
 
 class Survey34(Page):
+
     form_model = models.Player
     form_fields = [
         'i_assume_that_people_have_only_the_best_intentions'
     ]
 
 
-#TODO: Get country quintiles for Slovenia
 class Survey35(Page):
+
     form_model = models.Player
     form_fields = [
         'individual_income_in_the_last_12_months',
@@ -327,14 +361,65 @@ class Survey35(Page):
 
 
 class Survey36(Page):
+
     form_model = models.Player
     form_fields = [
         'household_income_in_the_last_12_months',
         'household_income_confirmation'
     ]
 
+    def vars_for_template(self):
+        """Calculate dynamic ranges based on previous household size answer."""
+        round_to = 1000
+
+        values = {
+            'sl': {
+                'A': 9000,
+                'B': 12500,
+                'C': 15000,
+                'D': 20000,
+            },
+            'fr': {
+                'A': 15000,
+                'B': 20000,
+                'C': 25000,
+                'D': 32000
+            },
+            'en': {
+                'A': 15000,
+                'B': 20000,
+                'C': 25000,
+                'D': 32000
+            },
+            'ko': {
+                'A': 13000000,
+                'B': 20000000,
+                'C': 25000000,
+                'D': 34000000
+            }
+        }
+
+        n = int(self.player.how_many_people_in_your_household)
+        v = values[self.session.vars['lang']]
+
+        a = round(int(v['A'] * n) / round_to) * round_to
+        b = round(int(v['B'] * n) / round_to) * round_to
+        c = round(int(v['C'] * n) / round_to) * round_to
+        d = round(int(v['D'] * n) / round_to) * round_to
+
+        return {
+            'choices': [
+                _(u"{0} to {1}".format('0', str(a))),
+                _(u"{0} to {1}".format(str(a + 1), str(b))),
+                _(u"{0} to {1}".format(str(b + 1), str(c))),
+                _(u"{0} to {1}".format(str(c + 1), str(d))),
+                _(u"{0} and above".format(str(d + 1)))
+            ]
+        }
+
 
 class Survey37(Page):
+
     form_model = models.Player
     form_fields = [
         'how_important_is_religion'
@@ -342,6 +427,7 @@ class Survey37(Page):
 
 
 class Survey38(Page):
+
     form_model = models.Player
     form_fields = [
         'which_device_did_you_take_this_study_on',
@@ -350,42 +436,42 @@ class Survey38(Page):
 
 
 page_sequence = [
-    Survey01,
-    Survey02,
-    Survey03,
-    Survey04,
-    Survey05,
-    Survey06,
-    Survey07,
-    Survey08,
-    Survey09,
-    Survey10,
-    Survey11,
-    Survey12,
-    Survey13,
-    Survey14,
-    Survey15,
-    Survey16,
-    Survey17,
-    Survey18,
-    Survey19,
-    Survey20,
-    Survey21,
-    Survey22,
-    Survey23,
-    Survey24,
-    Survey25,
-    Survey26,
-    Survey27,
+    # Survey01,
+    # Survey02,
+    # Survey03,
+    # Survey04,
+    # Survey05,
+    # Survey06,
+    # Survey07,
+    # Survey08,
+    # Survey09,
+    # Survey10,
+    # Survey11,
+    # Survey12,
+    # Survey13,
+    # Survey14,
+    # Survey15,
+    # Survey16,
+    # Survey17,
+    # Survey18,
+    # Survey19,
+    # Survey20,
+    # Survey21,
+    # Survey22,
+    # Survey23,
+    # Survey24,
+    # Survey25,
+    # Survey26,
+    # Survey27,
     Survey28,
-    Survey29,
-    Survey30,
-    Survey31,
-    Survey32,
-    Survey33,
-    Survey34,
-    Survey35,
+    # Survey29,
+    # Survey30,
+    # Survey31,
+    # Survey32,
+    # Survey33,
+    # Survey34,
+    # Survey35,
     Survey36,
-    Survey37,
-    Survey38
+    # Survey37,
+    # Survey38
 ]

@@ -6,7 +6,6 @@ from otree.constants import BaseConstants
 from otree.models import BaseSubsession, BaseGroup, BasePlayer
 from otree import widgets
 from django.forms import extras
-from django.forms import widgets as django_widgets
 from datetime import date
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import get_language
@@ -36,7 +35,6 @@ class Subsession(BaseSubsession):
 class Group(BaseGroup):
 
     pass
-
 
 
 class Player(BasePlayer):
@@ -100,7 +98,7 @@ class Player(BasePlayer):
             ("Don't know", _(u"Don't know"))
         )
     )
-    
+
     to_give_to_good_causes = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
@@ -320,7 +318,7 @@ class Player(BasePlayer):
             ("Don't know", _(u"Don't know"))
         )
     )
-    
+
     how_much_do_you_trust_people_you_meet_for_the_first_time = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
@@ -522,7 +520,7 @@ class Player(BasePlayer):
             ("Don't know", _(u"Don't know"))
         )
     )
-    
+
     trust_the_judicial_system = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
@@ -742,7 +740,7 @@ class Player(BasePlayer):
             ("Don't know", _(u"Don't know"))
         )
     )
-    
+
     satisfied_with_public_transport = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
@@ -1534,7 +1532,7 @@ class Player(BasePlayer):
         verbose_name=_(u'What is your gender?'),
         widget=widgets.RadioSelectHorizontal()
     )
-    
+
     how_many_people_in_your_household = models.CharField(
         verbose_name=_(u'How many people live in your household (including yourself?)'),
         widget=widgets.Select(),
@@ -1561,7 +1559,7 @@ class Player(BasePlayer):
             [(code, _(name)) for code, name in list(countries)]
         )
     )
-    
+
     what_is_your_nationality = models.CharField(
         verbose_name=_(u'What is your nationality?'),
         widget=widgets.Select(),
@@ -1693,16 +1691,10 @@ class Player(BasePlayer):
         widget=widgets.NumberInput(attrs={'min': -1})
     )
 
+    # "Just to confirm, which of these income bands corresponds best to your household income?
+    # Remember, we are asking for your individual income, after taxes have been deducted."
     household_income_confirmation = models.CharField(
-        verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your household income? Remember, we are asking for your individual income, after taxes have been deducted.'),
-        widget=widgets.RadioSelect(),
-        choices=(
-            ('0 to 9000 (1st quintile)', _(u"0 to 9.000")),
-            ('9001 to 12500 (2nd quintile)', _(u"9.001 to 12.500")),
-            ('12501 to 15000 (3rd quintile)', _(u"12.501 to 15.000")),
-            ('15001 to 20000 (4th quintile)', _(u"15.001 to 20.000")),
-            ('20001 > (5th quintile)', _(u"20.001 and above"))
-        )
+        widget=widgets.RadioSelect()
     )
 
     how_important_is_religion = models.CharField(

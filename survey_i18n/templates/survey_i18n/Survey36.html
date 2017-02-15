@@ -10,14 +10,23 @@
       <input type="checkbox"> {% trans "I don't know" %}
     </label>
   </div>
-  
-  {% formfield player.household_income_confirmation %}
+
+  <div class="form-group required">
+    <label class="control-label" for="id_household_income_confirmation">{% trans "Just to confirm, which of these income bands corresponds best to your household income? Remember, we are asking for your individual income, after taxes have been deducted." %}</label>
+      <div class="controls  field-household_income_confirmation">
+        <ul>
+          {% for choice in choices %}
+            <li><label for="id_household_income_confirmation_{{forloop.counter0}}"><input type="radio" id="id_household_income_confirmation_{{index}}" value="{{choice}}" name="household_income_confirmation" required> {{choice}}</label></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
 
   <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
 
   <script>
     $(function () {
-      var $input = $('input[name="individual_income_in_the_last_12_months"]'),
+      var $input = $('input[name="household_income_in_the_last_12_months"]'),
           $dk = $('input[type="checkbox"]');
 
       var $form = $('form'),
@@ -27,7 +36,7 @@
       $input.attr('value', '');
 
       $btn.on('click', function (e) {
-        if (+$input.val() < 0 || $input.val() === '' || $dk.is(':checked')) {
+        if (+$input.val() < 0 || !$input.val().trim() || $dk.is(':checked')) {
           $input.val(-1);
           $form.submit();
         }
