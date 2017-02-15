@@ -886,7 +886,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you complain about bad quality of a public service, how likely is that the problem will be easily resolved?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -906,7 +906,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a technology could speed up administrative procedures, how likely is it that a government agency will quickly adopt the new technology?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -926,7 +926,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you need information about an administrative procedure, do you think it will be easy to find?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -946,7 +946,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a decision affecting your community is to be taken by the local or regional government, how likely is it that you would be consulted upon?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -966,7 +966,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If you start a business today, do you think that the conditions under which you operate (taxes, regulations, etc.) will remain stable enough so that unexpected changes do not threaten your business?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -986,7 +986,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a natural disaster occurs do you think that the provision by government of adequate food, shelter and clothing will be available to people who are affected?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1006,7 +1006,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"If a high ranking government employee was guilty of misusing taxpayers’ money, do you think that he/she would be prosecuted?"),
         choices=(
-            ('0', _(u"0 -  Very unlikely")),
+            ('0', _(u"0 - Very unlikely")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1394,14 +1394,16 @@ class Player(BasePlayer):
     estimation_of_foreigners_in_neighborhood = models.CharField(
         initial=0,
         widget=widgets.NumberInput(attrs={'min': 0, 'max': 100, 'step': 1}),
-        verbose_name=_(u"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100.")
+        verbose_name=_(
+            u"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100."
+        )
     )
 
     statement_agreement_immigrants_are_not_integrated = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Immigrants are not integrated in our society'),
+            ('0', _(u'0 - Immigrants are not integrated in our society')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1411,7 +1413,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 - Immigrants are well integrated in our society'),
+            ('10', _(u'10 - Immigrants are well integrated in our society')),
             ("Don't know", _(u"Don't know"))
         )
     )
@@ -1420,7 +1422,7 @@ class Player(BasePlayer):
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Our culture is undermined by immigrants'),
+            ('0', _(u'0 - Our culture is undermined by immigrants')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1430,7 +1432,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 - Our culture is enriched by immigrants'),
+            ('10', _(u'10 - Our culture is enriched by immigrants')),
             ("Don't know", _(u"Don't know"))
         )
     )
@@ -1466,7 +1468,7 @@ class Player(BasePlayer):
         verbose_name=_(u"How strongly do you feel connected to other people in your neighborhood?"),
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Not at all'),
+            ('0', _(u'0 - Not at all')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1476,7 +1478,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 - Very connected'),
+            ('10', _(u'10 - Very connected')),
             ("Don't know", _(u"Don't know"))
         )
     )
@@ -1486,7 +1488,7 @@ class Player(BasePlayer):
         verbose_name=_(u"Some people say that who people vote for does not make any difference to what happens. Others say that who people vote for can make a difference to what happens. Where would you place yourself?"),
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Voting does not make a difference'),
+            ('0', _(u'0 - Voting does not make a difference')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -1496,7 +1498,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 - Voting can make a difference'),
+            ('10', _(u'10 - Voting can make a difference')),
             ("Don't know", _(u"Don't know"))
         )
     )
@@ -1506,17 +1508,17 @@ class Player(BasePlayer):
         verbose_name=_(u"In political matters, people often talk of “the left” and “the right.” How would you place your views on this scale, generally speaking?"),
         widget=widgets.RadioSelectHorizontal(),
         choices=(
-            ('0', '0 - Left'),
+            ('0', _(u'0 - Left')),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
             ('4', '4'),
-            ('5', '5 - Center'),
+            ('5', _(u'5 - Center')),
             ('6', '6'),
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', '10 - Right'),
+            ('10', _(u'10 - Right')),
             ("Don't know", _(u"Don't know"))
         )
     )
