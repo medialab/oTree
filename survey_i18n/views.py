@@ -400,7 +400,11 @@ class Survey36(Page):
             }
         }
 
-        n = math.sqrt(int(self.player.how_many_people_in_your_household))
+        try:
+            n = math.sqrt(int(self.player.how_many_people_in_your_household))
+        except:
+            n = math.sqrt(10)
+
         v = values[self.session.vars['lang']]
 
         a = round(int(v['A'] * n) / round_to) * round_to
