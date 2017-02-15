@@ -1,6 +1,11 @@
 {% extends "global/Base.html" %}
 {% load otree_tags %}
+{% load static %}
 {% load i18n %}
+
+{% block script %}
+<script src="{% static "/global/custom.js" %}"></script>
+{% endblock %}
 
 {% block content %}
   <style>
@@ -155,8 +160,10 @@
 
       var $sliders = [$slider1, $slider2, $slider3, $slider4, $sliderTotal];
 
+      var eventName = getInputEventName();
+
       $sliders.forEach(function ($slider) {
-        $slider.on('input', update);
+        $slider.on(eventName, update);
       });
 
       function setTotalRange(val) {

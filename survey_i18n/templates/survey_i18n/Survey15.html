@@ -3,6 +3,10 @@
 {% load static %}
 {% load i18n %}
 
+{% block script %}
+<script src="{% static "/global/custom.js" %}"></script>
+{% endblock %}
+
 {% block content %}
 
   <style>
@@ -62,23 +66,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="17"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_general_public_services_and_public_debt" 
-                name="expenditure_general_public_services_and_public_debt" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_general_public_services_and_public_debt"
+                name="expenditure_general_public_services_and_public_debt"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0">
             </div>
@@ -92,23 +96,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="9"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_defense_and_public_order" 
-                name="expenditure_defense_and_public_order" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_defense_and_public_order"
+                name="expenditure_defense_and_public_order"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 required>
@@ -123,23 +127,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="11"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_infrastucture_and_economic_affair" 
-                name="expenditure_infrastucture_and_economic_affair" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_infrastucture_and_economic_affair"
+                name="expenditure_infrastucture_and_economic_affair"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 required>
@@ -154,23 +158,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="20"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_health_and_environmental_protection" 
-                name="expenditure_health_and_environmental_protection" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_health_and_environmental_protection"
+                name="expenditure_health_and_environmental_protection"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 required>
@@ -185,23 +189,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="20"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_education_and_culture" 
-                name="expenditure_education_and_culture" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_education_and_culture"
+                name="expenditure_education_and_culture"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 required>
@@ -216,23 +220,23 @@
           </th>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="28"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="id_expenditure_social_protection_and_housing" 
-                name="expenditure_social_protection_and_housing" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="id_expenditure_social_protection_and_housing"
+                name="expenditure_social_protection_and_housing"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 required>
@@ -244,23 +248,23 @@
           <td></td>
           <td>
             <div class="form-group">
-              <input 
-                type="number" 
-                class="form-control" 
-                min="0" 
-                max="100" 
+              <input
+                type="number"
+                class="form-control"
+                min="0"
+                max="100"
                 value="100"
                 disabled>
             </div>
           </td>
           <td>
             <div class="form-group">
-              <input 
-                id="total" 
-                name="total" 
-                type="number" 
-                class="form-control" 
-                min="0" 
+              <input
+                id="total"
+                name="total"
+                type="number"
+                class="form-control"
+                min="0"
                 max="100"
                 value="0"
                 disabled>
@@ -278,7 +282,7 @@
   <div class="row">
     <button class="btn btn-primary pull-right" disabled>{% trans "Next" %}</button>
   </div>
-  
+
   <script>
     $(function () {
       var $exp1 = $('#id_expenditure_general_public_services_and_public_debt'),
@@ -288,7 +292,7 @@
           $exp5 = $('#id_expenditure_education_and_culture'),
           $exp6 = $('#id_expenditure_social_protection_and_housing'),
           $feedback = $('#feedback'),
-          $total = $('#total'),
+          $totalValueDisplay = $('#total'),
           $btn = $('.btn');
 
       var MAX = 100,
@@ -298,8 +302,10 @@
 
       var $inputs = [$exp1, $exp2, $exp3, $exp4, $exp5, $exp6];
 
+      var eventName = getInputEventName();
+
       $inputs.forEach(function ($input) {
-        $input.on('input', update);
+        $input.on(eventName, update);
       });
 
       function setFeedback(type) {
@@ -349,7 +355,7 @@
             return prev + curr;
           });
 
-        $total.val(total);
+        $totalValueDisplay.val(total);
 
         if (total > MAX) {
           setFeedback(FEEDBACK_TOO_MUCH);
@@ -359,10 +365,10 @@
         }
 
         if (total === MAX) {
-          $total.addClass('valid');
+          $totalValueDisplay.addClass('valid');
           $btn.removeAttr('disabled');
         } else {
-          $total.removeClass('valid');
+          $totalValueDisplay.removeClass('valid');
           $btn.attr('disabled', true);
         }
       }
