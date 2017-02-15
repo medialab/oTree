@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-21 13:14+0100\n"
+"POT-Creation-Date: 2017-02-15 14:49+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,22 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
 
-#: templates/trust/EndGame.html:7
+#: templates/trust/EndGame.html:6
 msgid "Thank you very much for entering your choice."
 msgstr ""
 
-#: templates/trust/EndGame.html:8
-msgid ""
-"We have recorded your decision. Your payoff for this task will depend on the "
-"action of your partner in this task, Participant B."
+#: templates/trust/EndGame.html:7
+msgid "We have recorded your decision."
 msgstr ""
 
-#: templates/trust/EndGame.html:9
+#: templates/trust/EndGame.html:7
 msgid "Now, please proceed to the second task."
 msgstr ""
 
-#: templates/trust/EndGame.html:10 templates/trust/Send.html:21
-#: templates/trust/SendBack.html:30 templates/trust/Simulation.html:167
+#: templates/trust/EndGame.html:8 templates/trust/Send.html:16
+#: templates/trust/SendBack.html:28 templates/trust/SendContinued.html:15
+#: templates/trust/Simulation.html:62
 msgid "Next"
 msgstr ""
 
@@ -46,7 +45,7 @@ msgstr ""
 msgid ""
 "In the first task, <strong>two people participate</strong>: Participant A "
 "and Participant B. As mentioned before, this other participant also lives in "
-"France."
+"[country]."
 msgstr ""
 
 #: templates/trust/Instructions.html:9
@@ -80,10 +79,18 @@ msgid ""
 msgstr ""
 
 #: templates/trust/Instructions.html:22
-msgid "Your role (A or B) will be revealed at the beginning of the task."
+msgid ""
+"You are asked to make decisions in both role A and B. Which role you will be "
+"assigned to for payment will be determined randomly."
 msgstr ""
 
-#: templates/trust/Send.html:7
+#: templates/trust/Instructions.html:23
+msgid ""
+"In both cases, your interaction will be with a person who gets randomly "
+"assigned to the other role."
+msgstr ""
+
+#: templates/trust/Send.html:7 templates/trust/SendContinued.html:7
 msgid "Task One: Real task"
 msgstr ""
 
@@ -94,19 +101,15 @@ msgid ""
 msgstr ""
 
 #: templates/trust/Send.html:10
-msgid "You were selected to be in the role of <strong>Participant A</strong>."
+msgid ""
+"Suppose you are selected to be in the role of <strong>Participant A</strong>."
 msgstr ""
 
-#: templates/trust/Send.html:13
+#: templates/trust/Send.html:11
+#, python-format
 msgid ""
-"You have 12.000 Won in your possession. <strong>How much do you want to send "
-"to Participant B?</strong>"
-msgstr ""
-
-#: templates/trust/Send.html:15
-msgid ""
-"You have 10 euros in your possession. <strong>How much do you want to send "
-"to Participant B?</strong>"
+"You have %(amount_allocated)s in your possession. <strong>How much do you "
+"want to send to Participant B?</strong>"
 msgstr ""
 
 #: templates/trust/SendBack.html:7
@@ -114,182 +117,210 @@ msgid "Task One: Real decision"
 msgstr ""
 
 #: templates/trust/SendBack.html:9
-msgid ""
-"Now the real task starts. Once you have made your decision and clicked the "
-"“Next” button, you cannot return to this screen."
+msgid "Now, suppose you are selected to be in the role of Participant B."
 msgstr ""
 
 #: templates/trust/SendBack.html:10
-msgid "You were selected to be in the role of <strong>Participant B</strong>."
+msgid ""
+"On this screen you will make the decisions that will count if you are "
+"selected for that role."
 msgstr ""
 
 #: templates/trust/SendBack.html:11
+msgid ""
+"Once you have made your decision and clicked the “Next” button, you cannot "
+"return to this screen."
+msgstr ""
+
+#: templates/trust/SendBack.html:13
+#, python-format
+msgid "You already have %(amount_allocated)s in your possession."
+msgstr ""
+
+#: templates/trust/SendBack.html:14
 msgid ""
 "If Participant A sends you any of the amounts listed in the table below, "
 "<strong>how much money do you want to send back to Participant A</strong>?"
 msgstr ""
 
-#: templates/trust/SendBack.html:14
-msgid "You already have 12.000 Won in your possession."
+#: templates/trust/SendContinued.html:9
+#, python-format
+msgid ""
+"Suppose Participant B receives %(received_by_b)s, making her total budget 10 "
+"euros + %(received_by_b)s = %(total_budget_b_str)s."
 msgstr ""
 
-#: templates/trust/SendBack.html:16
-msgid "You already have 10 euros in your possession."
+#: templates/trust/SendContinued.html:10
+msgid ""
+"What amount do you expect Participant B to return to you, Participant A?"
 msgstr ""
 
-#: templates/trust/Simulation.html:6
+#: templates/trust/SendContinued.html:11
+#, python-format
+msgid "Please enter a number from 0 to %(total_budget_b_str)s."
+msgstr ""
+
+#: templates/trust/Simulation.html:39
 msgid "Task One: Test Simulation"
 msgstr ""
 
-#: templates/trust/Simulation.html:8
+#: templates/trust/Simulation.html:41
 msgid ""
 "This is not the real task yet, but a simulation to help you understand the "
 "rules better."
 msgstr ""
 
-#: templates/trust/Simulation.html:9
+#: templates/trust/Simulation.html:42
 msgid ""
 "You can use the test screen below to play with the different choices of the "
 "two participants."
 msgstr ""
 
-#: templates/trust/Simulation.html:10
+#: templates/trust/Simulation.html:43
 msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
 msgstr ""
 
-#: templates/trust/Simulation.html:141
-msgid "€"
+#: templates/trust/Simulation.html:51
+msgid "Amount sent by Participant A (in €): "
 msgstr ""
 
-#: templates/trust/Simulation.html:143
-msgid "Participant A"
+#: templates/trust/Simulation.html:56
+msgid "Amount sent by Participant B (in €): "
 msgstr ""
 
-#: templates/trust/Simulation.html:144
-msgid "Participant B"
-msgstr ""
-
-#: templates/trust/Simulation.html:150
-msgid "Amount sent by Participant A"
-msgstr ""
-
-#: templates/trust/Simulation.html:152 templates/trust/Simulation.html:160
-msgid "Send"
-msgstr ""
-
-#: templates/trust/Simulation.html:158
-msgid "Amount sent by Participant B"
-msgstr ""
-
-#: templates/trust/Simulation.html:165
+#: templates/trust/Simulation.html:63
 msgid "Reset to zero"
 msgstr ""
 
-#: views.py:54 views.py:55
+#: views.py:51 views.py:52 views.py:53
 msgid "Please enter a number from 0 to 10"
 msgstr ""
 
-#: views.py:56
+#: views.py:54
 msgid "Please enter a number from 0 to 12.000"
 msgstr ""
 
-#: views.py:91 views.py:94
+#: views.py:73 views.py:75
+msgid "5 euros"
+msgstr ""
+
+#: views.py:74
+msgid "$5"
+msgstr ""
+
+#: views.py:76
+msgid "6.000 Won"
+msgstr ""
+
+#: views.py:80 views.py:82
+msgid "25 euros"
+msgstr ""
+
+#: views.py:81
+msgid "$25"
+msgstr ""
+
+#: views.py:83
+msgid "30.000 Won"
+msgstr ""
+
+#: views.py:115 views.py:118 views.py:121
 msgid "If Participant A sends you 0€ (you receive 0€ × 3 = 0€)"
 msgstr ""
 
-#: views.py:97
+#: views.py:124
 msgid "If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)"
 msgstr ""
 
-#: views.py:103 views.py:106
+#: views.py:130 views.py:133 views.py:136
 msgid "If Participant A sends you 1€ (you receive 1€ × 3 = 3€)"
 msgstr ""
 
-#: views.py:109
+#: views.py:139
 msgid ""
 "If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)"
 msgstr ""
 
-#: views.py:115 views.py:118
+#: views.py:145 views.py:148 views.py:151
 msgid "If Participant A sends you 2€ (you receive 2€ × 3 = 6€)"
 msgstr ""
 
-#: views.py:121
+#: views.py:154
 msgid ""
 "If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)"
 msgstr ""
 
-#: views.py:127 views.py:130
+#: views.py:160 views.py:163 views.py:166
 msgid "If Participant A sends you 3€ (you receive 3€ × 3 = 9€)"
-msgstr ""
-
-#: views.py:133
-msgid ""
-"If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
-msgstr ""
-
-#: views.py:139 views.py:142
-msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
-msgstr ""
-
-#: views.py:145
-msgid ""
-"If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
-msgstr ""
-
-#: views.py:151 views.py:154
-msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
-msgstr ""
-
-#: views.py:157
-msgid ""
-"If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
-msgstr ""
-
-#: views.py:163 views.py:166
-msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
 msgstr ""
 
 #: views.py:169
 msgid ""
+"If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)"
+msgstr ""
+
+#: views.py:175 views.py:178 views.py:181
+msgid "If Participant A sends you 4€ (you receive 4€ × 3 = 12€)"
+msgstr ""
+
+#: views.py:184
+msgid ""
+"If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)"
+msgstr ""
+
+#: views.py:190 views.py:193 views.py:196
+msgid "If Participant A sends you 5€ (you receive 5€ × 3 = 15€)"
+msgstr ""
+
+#: views.py:199
+msgid ""
+"If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)"
+msgstr ""
+
+#: views.py:205 views.py:208 views.py:211
+msgid "If Participant A sends you 6€ (you receive 6€ × 3 = 18€)"
+msgstr ""
+
+#: views.py:214
+msgid ""
 "If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)"
 msgstr ""
 
-#: views.py:175 views.py:178
+#: views.py:220 views.py:223 views.py:226
 msgid "If Participant A sends you 7€ (you receive 7€ × 3 = 21€)"
 msgstr ""
 
-#: views.py:181
+#: views.py:229
 msgid ""
 "If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)"
 msgstr ""
 
-#: views.py:187 views.py:190
+#: views.py:235 views.py:238 views.py:241
 msgid "If Participant A sends you 8€ (you receive 8€ × 3 = 24€)"
 msgstr ""
 
-#: views.py:193
+#: views.py:244
 msgid ""
 "If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)"
 msgstr ""
 
-#: views.py:199 views.py:202
+#: views.py:250 views.py:253 views.py:256
 msgid "If Participant A sends you 9€ (you receive 9€ × 3 = 27€)"
 msgstr ""
 
-#: views.py:205
+#: views.py:259
 msgid ""
 "If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 "
 "Won)"
 msgstr ""
 
-#: views.py:211 views.py:214
+#: views.py:265 views.py:268 views.py:271
 msgid "If Participant A sends you 10€ (you receive 10€ ×3 = 30€)"
 msgstr ""
 
-#: views.py:217
+#: views.py:274
 msgid ""
 "If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 "
 "Won)"

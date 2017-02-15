@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-21 13:13+0100\n"
+"POT-Creation-Date: 2017-02-15 14:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,6 @@ msgid ""
 msgstr ""
 
 #: templates/dictator/EndGame.html:10 templates/dictator/Offer.html:13
-#: templates/dictator/Simulation.html:56
 msgid "Next"
 msgstr ""
 
@@ -79,8 +78,10 @@ msgstr ""
 
 #: templates/dictator/Instructions.html:17
 msgid ""
-"Your role (Participant A or Participant B) is revealed to you at the "
-"beginning of the task."
+"Your role as Participant A or B will be determined later. We ask you to make "
+"a choice as A in case this is your role. B has no decision to make. Remember "
+"that someone will be assigned to role B and that person's payment will be "
+"affected by your decision as A."
 msgstr ""
 
 #: templates/dictator/Instructions.html:18
@@ -100,7 +101,9 @@ msgid ""
 msgstr ""
 
 #: templates/dictator/Offer.html:8
-msgid "You were selected to be in the role of <strong>Participant A</strong>."
+msgid ""
+"Suppose that you are selected to be in the role of <strong>Participant A</"
+"strong>."
 msgstr ""
 
 #: templates/dictator/Offer.html:9
@@ -112,40 +115,14 @@ msgstr ""
 msgid "How much do you want to transfer to Participant B?"
 msgstr ""
 
-#: templates/dictator/Simulation.html:6
-msgid "Task Three: Simulation"
-msgstr ""
-
-#: templates/dictator/Simulation.html:8
-msgid ""
-"If you wish, you can use this test screen to play with different choices of "
-"Participant A, to understand the task better."
-msgstr ""
-
-#: templates/dictator/Simulation.html:9
-msgid "Whenever you are ready to proceed to the real task, click next."
-msgstr ""
-
-#: templates/dictator/Simulation.html:45
-msgid "€"
-msgstr ""
-
-#: templates/dictator/Simulation.html:53
-msgid "Amount sent by Participant A"
-msgstr ""
-
-#: templates/dictator/Simulation.html:55
-msgid "Send"
-msgstr ""
-
-#: views.py:45 views.py:62
+#: views.py:33 views.py:34 views.py:51 views.py:52
 msgid "10 euros"
 msgstr ""
 
-#: views.py:46 views.py:63
+#: views.py:35 views.py:53
 msgid "$10"
 msgstr ""
 
-#: views.py:47 views.py:64
+#: views.py:36 views.py:54
 msgid "12.000 Won"
 msgstr ""

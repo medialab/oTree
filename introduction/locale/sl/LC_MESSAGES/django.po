@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-12-21 13:13+0100\n"
+"POT-Creation-Date: 2017-02-15 14:42+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 #: templates/introduction/ExperimentIntroduction.html:21
 msgid ""
 "By participating in the study’s tasks, you can earn an additional amount of "
-"up to 40 euro."
+"up to 40 euros."
 msgstr ""
 
 #: templates/introduction/ExperimentIntroduction.html:23
@@ -92,7 +92,7 @@ msgid ""
 "one of the several tasks you have completed will be randomly selected."
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:24
+#: templates/introduction/ExperimentIntroduction.html:25
 #: templates/introduction/GamesIntroduction.html:18
 msgid ""
 "The amount of money you will receive will correspond to your earnings in "
@@ -100,33 +100,39 @@ msgid ""
 msgstr ""
 
 #: templates/introduction/ExperimentIntroduction.html:26
+msgid ""
+"Remember that your decisions will also affect the earnings that other people "
+"will receive!"
+msgstr ""
+
+#: templates/introduction/ExperimentIntroduction.html:29
 msgid "You will receive your points via the usual system."
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:27
+#: templates/introduction/ExperimentIntroduction.html:30
 msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:29
+#: templates/introduction/ExperimentIntroduction.html:32
 msgid "Data protection"
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:32
+#: templates/introduction/ExperimentIntroduction.html:35
 msgid ""
 "The data gathered in this study is subject to European privacy protocols, "
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:34
+#: templates/introduction/ExperimentIntroduction.html:37
 msgid ""
 "The data gathered in this study is subject to strict privacy protocols. We "
 "will use it for research purposes only."
 msgstr ""
 
-#: templates/introduction/ExperimentIntroduction.html:37
+#: templates/introduction/ExperimentIntroduction.html:40
 msgid "Begin"
 msgstr ""
 
@@ -143,7 +149,7 @@ msgstr ""
 #: templates/introduction/GamesIntroduction.html:9
 msgid ""
 "At the beginning of each task, you will be grouped with other study "
-"participants, who are respondents from France like you."
+"participants, who are respondents from [country] like you."
 msgstr ""
 
 #: templates/introduction/GamesIntroduction.html:10
