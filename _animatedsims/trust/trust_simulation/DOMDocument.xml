@@ -1,4 +1,4 @@
-<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.8" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.0 build 119" majorVersion="16" buildNumber="119" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C">
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.9" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.1 build 86" majorVersion="16" minorVersion="1" buildNumber="86" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C" fileGUID="A6E97D4A7DA24A38B70D0C5D375CC421">
      <symbols>
           <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1463146138"/>
           <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1456415541"/>
@@ -20,7 +20,7 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="269">
+          <DOMTimeline name="Séquence 1" currentFrame="409">
                <layers>
                     <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
                          <frames>
@@ -723,7 +723,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 2" color="#808080" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="bubble 2" color="#808080" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="77" keyMode="9728">
                                    <elements>
@@ -752,7 +752,7 @@ function Players() {
                                         </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
-                              <DOMFrame index="84" duration="170" keyMode="9728">
+                              <DOMFrame index="84" duration="326" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="413.75" centerPoint3DY="100.3">
                                              <matrix>
@@ -760,30 +760,6 @@ function Players() {
                                              </matrix>
                                              <transformationPoint>
                                                   <Point x="38.35" y="41.8"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                   </elements>
-                              </DOMFrame>
-                              <DOMFrame index="254" duration="5" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
-                                   <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="413.75" centerPoint3DY="100.3">
-                                             <matrix>
-                                                  <Matrix a="0.786148071289062" d="0.666656494140625" tx="383.6" ty="72.4"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="38.35" y="41.8"/>
-                                             </transformationPoint>
-                                        </DOMSymbolInstance>
-                                   </elements>
-                              </DOMFrame>
-                              <DOMFrame index="259" keyMode="9728">
-                                   <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="428.05" centerPoint3DY="126.05">
-                                             <matrix>
-                                                  <Matrix a="0.085662841796875" d="0.0726318359375" tx="429.45" ty="114.2"/>
-                                             </matrix>
-                                             <transformationPoint>
-                                                  <Point x="38.5" y="42"/>
                                              </transformationPoint>
                                         </DOMSymbolInstance>
                                    </elements>
@@ -856,7 +832,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 1" color="#009999" autoNamed="false">
+                    <DOMLayer name="bubble 1" color="#009999" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="77" keyMode="9728">
                                    <elements>
@@ -885,7 +861,7 @@ function Players() {
                                         </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
-                              <DOMFrame index="84" duration="187" keyMode="9728">
+                              <DOMFrame index="84" duration="326" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="114.1" centerPoint3DY="229.35">
                                              <matrix>
@@ -1856,6 +1832,9 @@ function Players() {
                </layers>
           </DOMTimeline>
      </timelines>
+     <scripts>
+          <GlobalScripts language="Javascript"/>
+     </scripts>
      <swatchLists>
           <swatchList>
                <swatchListInfo name="Default Swatches"/>
@@ -2120,8 +2099,8 @@ function Players() {
           </swatchList>
      </swatchLists>
      <persistentData>
-          <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
           <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
+          <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;false"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>

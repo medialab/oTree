@@ -1,70 +1,9 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
-lib.webFontTxtInst = {}; 
-var loadedTypekitCount = 0;
-var loadedGoogleCount = 0;
-var gFontsUpdateCacheList = [];
-var tFontsUpdateCacheList = [];
 lib.ssMetadata = [];
 
 
-
-lib.updateListCache = function (cacheList) {		
-	for(var i = 0; i < cacheList.length; i++) {		
-		if(cacheList[i].cacheCanvas)		
-			cacheList[i].updateCache();		
-	}		
-};		
-
-lib.addElementsToCache = function (textInst, cacheList) {		
-	var cur = textInst;		
-	while(cur != exportRoot) {		
-		if(cacheList.indexOf(cur) != -1)		
-			break;		
-		cur = cur.parent;		
-	}		
-	if(cur != exportRoot) {		
-		var cur2 = textInst;		
-		var index = cacheList.indexOf(cur);		
-		while(cur2 != cur) {		
-			cacheList.splice(index, 0, cur2);		
-			cur2 = cur2.parent;		
-			index++;		
-		}		
-	}		
-	else {		
-		cur = textInst;		
-		while(cur != exportRoot) {		
-			cacheList.push(cur);		
-			cur = cur.parent;		
-		}		
-	}		
-};		
-
-lib.gfontAvailable = function(family, totalGoogleCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
-
-	loadedGoogleCount++;		
-	if(loadedGoogleCount == totalGoogleCount) {		
-		lib.updateListCache(gFontsUpdateCacheList);		
-	}		
-};		
-
-lib.tfontAvailable = function(family, totalTypekitCount) {		
-	lib.properties.webfonts[family] = true;		
-	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
-	for(var f = 0; f < txtInst.length; ++f)		
-		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
-
-	loadedTypekitCount++;		
-	if(loadedTypekitCount == totalTypekitCount) {		
-		lib.updateListCache(tFontsUpdateCacheList);		
-	}		
-};
 // symbols:
 // helper functions:
 
@@ -1713,7 +1652,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.bubble2.setTransform(432.8,117.3,0.086,0.073,0,0,32,38.6,42);
 	this.bubble2.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble2).wait(77).to({regX:38.5,skewY:0,alpha:1},0).to({regX:38.4,regY:41.8,scaleX:0.79,scaleY:0.67,x:413.8,y:100.3},7).wait(170).to({regX:38.5,regY:42,scaleX:0.09,scaleY:0.07,x:432.8,y:117.3},5,cjs.Ease.get(1)).to({_off:true},1).wait(150));
+	this.timeline.addTween(cjs.Tween.get(this.bubble2).wait(77).to({regX:38.5,skewY:0,alpha:1},0).to({regX:38.4,regY:41.8,scaleX:0.79,scaleY:0.67,x:413.8,y:100.3},7).wait(326));
 
 	// dollar stack (orange)
 	this.stack2 = new lib.dollarStackOrange();
@@ -1740,7 +1679,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.bubble1.setTransform(131.1,259.4,0.083,0.07,0,0,32,38.4,42.1);
 	this.bubble1.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubble1).wait(77).to({regY:42.6,scaleX:0.09,skewY:0,alpha:1},0).to({regY:41.9,scaleX:0.79,scaleY:0.67,x:114.2,y:229.4},7,cjs.Ease.get(1)).to({_off:true},187).wait(139));
+	this.timeline.addTween(cjs.Tween.get(this.bubble1).wait(77).to({regY:42.6,scaleX:0.09,skewY:0,alpha:1},0).to({regY:41.9,scaleX:0.79,scaleY:0.67,x:114.2,y:229.4},7,cjs.Ease.get(1)).wait(326));
 
 	// dollarGrey
 	this.instance_1 = new lib.dollarGrey();
@@ -1975,7 +1914,6 @@ lib.properties = {
 	fps: 30,
 	color: "#CCD1DB",
 	opacity: 1.00,
-	webfonts: {},
 	manifest: [],
 	preloads: []
 };
