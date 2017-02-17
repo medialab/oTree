@@ -1390,7 +1390,7 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(115));
 
 	// Calque 5
 	this.gain = new lib.miniBubble();
@@ -1398,7 +1398,7 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
 	this.gain.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},106).wait(3).to({alpha:0},2).wait(1));
 
 	// Calque 2
 	this.label = new cjs.Text("10€", "20px 'Gotham Medium'", "#FFFFFF");
@@ -1408,14 +1408,14 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 	this.label.parent = this;
 	this.label.setTransform(38.6,31.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(115));
 
 	// Calque 1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FF0000").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
 	this.shape.setTransform(38.4,41.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
@@ -1430,7 +1430,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(115));
 
 	// Calque 5
 	this.gain = new lib.miniBubble();
@@ -1438,7 +1438,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
 	this.gain.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},106).wait(3).to({alpha:0},2).wait(1));
 
 	// Calque 2
 	this.label = new cjs.Text("10€", "20px 'Gotham Medium'", "#FFFFFF");
@@ -1448,14 +1448,14 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.label.parent = this;
 	this.label.setTransform(38.6,31.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(115));
 
 	// Calque 1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#FF6600").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
 	this.shape.setTransform(38.4,41.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
@@ -1470,7 +1470,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(115));
 
 	// Calque 5
 	this.gain = new lib.miniBubble();
@@ -1478,7 +1478,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
 	this.gain.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},106).wait(3).to({alpha:0},2).wait(1));
 
 	// Calque 2
 	this.label = new cjs.Text("10€", "20px 'Gotham Medium'", "#FFFFFF");
@@ -1488,14 +1488,14 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.label.parent = this;
 	this.label.setTransform(38.6,31.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(115));
 
 	// Calque 1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#93AD40").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
 	this.shape.setTransform(38.4,41.9);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
@@ -1510,7 +1510,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	}
 
 	// actions tween:
-	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(115));
 
 	// Calque 5
 	this.gain = new lib.miniBubble();
@@ -1518,7 +1518,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
 	this.gain.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},106).wait(3).to({alpha:0},2).wait(1));
 
 	// Calque 2
 	this.label = new cjs.Text("10€", "20px 'Gotham Medium'", "#FFFFFF");
@@ -1528,14 +1528,14 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.label.parent = this;
 	this.label.setTransform(38.6,31.8);
 
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(115));
 
 	// Calque 1
 	this.shape = new cjs.Shape();
 	this.shape.graphics.f("#0099FF").s().p("ACGFOQgvAQg1AFQieAOh5hmQh6hmgOieQgOidBmh6QBmh6CfgOQCdgNB6BmQB5BmAOCeQAOCdhmB6QgZAegdAYIgOCJg");
 	this.shape.setTransform(36,42.2);
 
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
 p.nominalBounds = new cjs.Rectangle(-2.3,-66.3,76.7,149.6);
@@ -1620,10 +1620,14 @@ p.nominalBounds = new cjs.Rectangle(-2.3,-66.3,76.7,149.6);
 		};
 		
 		Player.prototype.receiveMoney = function (amount) {
-			this.currentAmount += amount;
-			this.speak(currency + this.currentAmount.toFixed(2).toString());
-			this.bubble.gain.label.text = "+" + amount;
 			this.bubble.gotoAndPlay(2);
+			this.bubble.gain.label.text = "+" + amount.toFixed(2);
+			
+			var self = this;
+			setTimeout(function () {
+				self.currentAmount += amount;
+				self.speak(currency + self.currentAmount.toFixed(2).toString());
+			}, 4000);
 		};
 		
 		Player.prototype.speak = function (text) {

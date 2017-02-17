@@ -98,7 +98,7 @@
             </DOMFrame>
             <DOMFrame index="44" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" selected="true" centerPoint3DX="38.15" centerPoint3DY="-42.35">
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" centerPoint3DX="38.15" centerPoint3DY="-42.35">
                   <matrix>
                     <Matrix tx="13.4" ty="-66.35"/>
                   </matrix>

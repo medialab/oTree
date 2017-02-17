@@ -10,10 +10,10 @@
           <Include href="arrowGreen.xml" itemIcon="1" loadImmediate="false" itemID="56cf140f-000005c2" lastModified="1456411663"/>
           <Include href="arrowOrange.xml" itemIcon="1" loadImmediate="false" itemID="56cf1409-000005be" lastModified="1456411657"/>
           <Include href="arrowRed.xml" itemIcon="1" loadImmediate="false" itemID="56cf13ee-000005b5" lastModified="1456411630"/>
-          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487328810"/>
-          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487328754"/>
-          <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1487328785"/>
-          <Include href="bubbleRed.xml" loadImmediate="false" itemID="56cf1576-00000604" lastModified="1487328845"/>
+          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487340462"/>
+          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487340473"/>
+          <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1487340483"/>
+          <Include href="bubbleRed.xml" loadImmediate="false" itemID="56cf1576-00000604" lastModified="1487340491"/>
           <Include href="cart.xml" loadImmediate="false" itemID="56e2d0fc-000005ae" lastModified="1463149131"/>
           <Include href="character.xml" itemIcon="1" loadImmediate="false" itemID="56c33d7f-00000262" lastModified="1455635899"/>
           <Include href="chariot.xml" itemIcon="1" loadImmediate="false" itemID="56c33b2a-00000220" lastModified="1463148439"/>
@@ -29,13 +29,13 @@
           <Include href="factory.xml" loadImmediate="false" itemID="56cf10f8-0000059c" lastModified="1456410872"/>
           <Include href="floor.xml" itemIcon="1" loadImmediate="false" itemID="56c33808-000001c0" lastModified="1455636937"/>
           <Include href="gain.xml" loadImmediate="false" itemID="56cf2b69-00000812" lastModified="1456417641"/>
-          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487332630"/>
+          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487340446"/>
           <Include href="multiplier.xml" loadImmediate="false" itemID="56cf2218-000006c2" lastModified="1464791323"/>
           <Include href="participantLabel.xml" loadImmediate="false" itemID="56cf13db-000005af" lastModified="1456411611"/>
           <Include href="startScreen.xml" loadImmediate="false" itemID="56cc8937-0000007c" lastModified="1456245551"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="38">
+          <DOMTimeline name="Séquence 1" currentFrame="41">
                <layers>
                     <DOMLayer name="Calque 2" color="#9933CC">
                          <frames>
@@ -146,10 +146,14 @@ Player.prototype.giveMoney = function (amount) {
 };
 
 Player.prototype.receiveMoney = function (amount) {
-	this.currentAmount += amount;
-	this.speak(currency + this.currentAmount.toFixed(2).toString());
-	this.bubble.gain.label.text = "+" + amount;
 	this.bubble.gotoAndPlay(2);
+	this.bubble.gain.label.text = "+" + amount.toFixed(2);
+	
+	var self = this;
+	setTimeout(function () {
+		self.currentAmount += amount;
+		self.speak(currency + self.currentAmount.toFixed(2).toString());
+	}, 4000);
 };
 
 Player.prototype.speak = function (text) {
@@ -497,7 +501,7 @@ this.gotoAndPlay('results');]]></script>
                               <DOMFrame index="0" duration="35" keyMode="9728">
                                    <elements/>
                               </DOMFrame>
-                              <DOMFrame index="35" duration="15" keyMode="15872">
+                              <DOMFrame index="35" duration="15" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleRed" name="bubble4" centerPoint3DX="547.55" centerPoint3DY="321.7">
                                              <matrix>
@@ -546,7 +550,7 @@ this.gotoAndPlay('results');]]></script>
                               <DOMFrame index="0" duration="35" keyMode="9728">
                                    <elements/>
                               </DOMFrame>
-                              <DOMFrame index="35" duration="15" keyMode="15872">
+                              <DOMFrame index="35" duration="15" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleBlue" name="bubble3" centerPoint3DX="476.1" centerPoint3DY="278.55">
                                              <matrix>
@@ -595,7 +599,7 @@ this.gotoAndPlay('results');]]></script>
                               <DOMFrame index="0" duration="35" keyMode="9728">
                                    <elements/>
                               </DOMFrame>
-                              <DOMFrame index="35" duration="15" keyMode="15872">
+                              <DOMFrame index="35" duration="15" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleOrange" name="bubble2" centerPoint3DX="400.1" centerPoint3DY="231.8">
                                              <matrix>
@@ -644,7 +648,7 @@ this.gotoAndPlay('results');]]></script>
                               <DOMFrame index="0" duration="35" keyMode="9728">
                                    <elements/>
                               </DOMFrame>
-                              <DOMFrame index="35" duration="15" keyMode="15872">
+                              <DOMFrame index="35" duration="15" keyMode="9728">
                                    <elements>
                                         <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="193.4" centerPoint3DY="104.25">
                                              <matrix>
@@ -3601,8 +3605,8 @@ this.gotoAndPlay('results');]]></script>
      <persistentData>
           <PD n="Arrêter la lecture à partir de cette image" t="i" v="2"/>
           <PD n="Evénement MouseClick" t="i" v="2"/>
-          <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
           <PD n="Lire un clip" t="i" v="2"/>
+          <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory/>

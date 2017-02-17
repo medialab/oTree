@@ -21,7 +21,7 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="44">
+          <DOMTimeline name="Séquence 1" currentFrame="178">
                <layers>
                     <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
                          <frames>
@@ -77,7 +77,7 @@ window.TRUST.operate.dispatchFinalGains();]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="scripts" color="#FF4FFF" autoNamed="false">
+                    <DOMLayer name="scripts" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements/>
@@ -171,20 +171,24 @@ function operate(players, carts) {
 
   function dispatchFinalGains() {
     var giveToPlayer1 = +carts.removeAll(1);
-    for (var i = 0; i < giveToPlayer1; i++) {
-      players.increment(0, 'grey');
-    }
-
     var giveToPlayer2 = +carts.removeAll(0);
-    for (var j = 0; j < giveToPlayer2; j++) {
-      players.increment(1, 'grey', true);
-    }
+
 	
 	// Show gains.
-	players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1;
+	players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1.toFixed(2);
+	players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2.toFixed(2);
 	players.getPlayers()[0].bubble.gotoAndPlay(1);
-	players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2;
 	players.getPlayers()[1].bubble.gotoAndPlay(1);
+	
+	setTimeout(function () {
+		for (var i = 0; i < giveToPlayer1; i++) {
+		  players.increment(0, 'grey');
+		}
+		
+		for (var j = 0; j < giveToPlayer2; j++) {
+		  players.increment(1, 'grey', true);
+		}	
+	}, 1000);
   }
 
   function getMaxCartMoney(index) {
@@ -839,7 +843,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 1" color="#009999" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="bubble 1" color="#009999" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="77" keyMode="9728">
                                    <elements>
@@ -870,7 +874,7 @@ function Players() {
                               </DOMFrame>
                               <DOMFrame index="84" duration="326" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" selected="true" centerPoint3DX="114.1" centerPoint3DY="229.35">
+                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="114.1" centerPoint3DY="229.35">
                                              <matrix>
                                                   <Matrix a="0.786148071289062" d="0.666656494140625" tx="83.95" ty="201.4"/>
                                              </matrix>
@@ -2106,8 +2110,8 @@ function Players() {
           </swatchList>
      </swatchLists>
      <persistentData>
-          <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
           <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
+          <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;false"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>

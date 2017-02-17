@@ -1126,7 +1126,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 	this.shape_5.setTransform(0.7,2.2);
 
 	this.shape_6 = new cjs.Shape();
-	this.shape_6.graphics.f("#474747").s().p("EgkJAQrIhuhDICUgDIgmBGICRgFIgnBHgEgmoAPJIBZgoIgoBHgEAg2gRCIBdgqIEWCsIhcApg");
+	this.shape_6.graphics.f("#474747").s().p("EgkJAQrICRgFIgnBHgEgkJAQrIhuhDICUgDIgmBGgEgl3APoIgxgfIBZgoIgoBHgEAg2gRCIBdgqIEWCsIhcApg");
 	this.shape_6.setTransform(0,-6.5);
 
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_6},{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
@@ -1409,20 +1409,24 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		
 		  function dispatchFinalGains() {
 		    var giveToPlayer1 = +carts.removeAll(1);
-		    for (var i = 0; i < giveToPlayer1; i++) {
-		      players.increment(0, 'grey');
-		    }
-		
 		    var giveToPlayer2 = +carts.removeAll(0);
-		    for (var j = 0; j < giveToPlayer2; j++) {
-		      players.increment(1, 'grey', true);
-		    }
+		
 			
 			// Show gains.
-			players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1;
+			players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1.toFixed(2);
+			players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2.toFixed(2);
 			players.getPlayers()[0].bubble.gotoAndPlay(1);
-			players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2;
 			players.getPlayers()[1].bubble.gotoAndPlay(1);
+			
+			setTimeout(function () {
+				for (var i = 0; i < giveToPlayer1; i++) {
+				  players.increment(0, 'grey');
+				}
+				
+				for (var j = 0; j < giveToPlayer2; j++) {
+				  players.increment(1, 'grey', true);
+				}	
+			}, 1000);
 		  }
 		
 		  function getMaxCartMoney(index) {
