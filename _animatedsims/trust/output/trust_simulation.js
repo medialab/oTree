@@ -1,9 +1,70 @@
 (function (lib, img, cjs, ss, an) {
 
 var p; // shortcut to reference prototypes
+lib.webFontTxtInst = {}; 
+var loadedTypekitCount = 0;
+var loadedGoogleCount = 0;
+var gFontsUpdateCacheList = [];
+var tFontsUpdateCacheList = [];
 lib.ssMetadata = [];
 
 
+
+lib.updateListCache = function (cacheList) {		
+	for(var i = 0; i < cacheList.length; i++) {		
+		if(cacheList[i].cacheCanvas)		
+			cacheList[i].updateCache();		
+	}		
+};		
+
+lib.addElementsToCache = function (textInst, cacheList) {		
+	var cur = textInst;		
+	while(cur != exportRoot) {		
+		if(cacheList.indexOf(cur) != -1)		
+			break;		
+		cur = cur.parent;		
+	}		
+	if(cur != exportRoot) {		
+		var cur2 = textInst;		
+		var index = cacheList.indexOf(cur);		
+		while(cur2 != cur) {		
+			cacheList.splice(index, 0, cur2);		
+			cur2 = cur2.parent;		
+			index++;		
+		}		
+	}		
+	else {		
+		cur = textInst;		
+		while(cur != exportRoot) {		
+			cacheList.push(cur);		
+			cur = cur.parent;		
+		}		
+	}		
+};		
+
+lib.gfontAvailable = function(family, totalGoogleCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], gFontsUpdateCacheList);		
+
+	loadedGoogleCount++;		
+	if(loadedGoogleCount == totalGoogleCount) {		
+		lib.updateListCache(gFontsUpdateCacheList);		
+	}		
+};		
+
+lib.tfontAvailable = function(family, totalTypekitCount) {		
+	lib.properties.webfonts[family] = true;		
+	var txtInst = lib.webFontTxtInst && lib.webFontTxtInst[family] || [];		
+	for(var f = 0; f < txtInst.length; ++f)		
+		lib.addElementsToCache(txtInst[f], tFontsUpdateCacheList);		
+
+	loadedTypekitCount++;		
+	if(loadedTypekitCount == totalTypekitCount) {		
+		lib.updateListCache(tFontsUpdateCacheList);		
+	}		
+};
 // symbols:
 // helper functions:
 
@@ -64,6 +125,30 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.multiplier, new cjs.Rectangle(-61.5,-61.5,123.1,123.1), null);
+
+
+(lib.miniBubble = function(mode,startPosition,loop) {
+if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
+
+	// Calque 2
+	this.label = new cjs.Text("", "30px 'Gotham Medium'", "#FFFFFF");
+	this.label.name = "label";
+	this.label.textAlign = "center";
+	this.label.lineHeight = 29;
+	this.label.lineWidth = 67;
+	this.label.parent = this;
+	this.label.setTransform(24.8,12.5);
+
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#0099FF").s().p("AiqCqQhHhGAAhkQAAhjBHhGQBHhGBjAAQBkAABHBGQBHBGAABjQAABkhHBGQhHBGhkAAQhjAAhHhGg");
+	this.shape.setTransform(24.2,24);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
+
+}).prototype = getMCSymbolPrototype(lib.miniBubble, new cjs.Rectangle(-10.7,0,71.1,48), null);
 
 
 (lib.floor = function(mode,startPosition,loop) {
@@ -1087,52 +1172,6 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
 p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 
 
-(lib.bubbleOrange = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Calque 2
-	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
-	this.label.name = "label";
-	this.label.textAlign = "center";
-	this.label.lineHeight = 30;
-	this.label.parent = this;
-	this.label.setTransform(38.6,31.8);
-
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
-
-	// Calque 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#FF6600").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
-	this.shape.setTransform(38.4,41.9);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bubbleOrange, new cjs.Rectangle(0,0,76.7,83.8), null);
-
-
-(lib.bubbleGreen = function(mode,startPosition,loop) {
-	this.initialize(mode,startPosition,loop,{});
-
-	// Calque 2
-	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
-	this.label.name = "label";
-	this.label.textAlign = "center";
-	this.label.lineHeight = 30;
-	this.label.parent = this;
-	this.label.setTransform(38.6,31.8);
-
-	this.timeline.addTween(cjs.Tween.get(this.label).wait(1));
-
-	// Calque 1
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#93AD40").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
-	this.shape.setTransform(38.4,41.9);
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
-
-}).prototype = getMCSymbolPrototype(lib.bubbleGreen, new cjs.Rectangle(0,0,76.7,83.8), null);
-
-
 (lib.bubbleBlue = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1195,6 +1234,86 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 	this.timeline.addTween(cjs.Tween.get({}).to({state:[{t:this.shape_5},{t:this.shape_4},{t:this.shape_3},{t:this.shape_2},{t:this.shape_1},{t:this.shape}]}).wait(1));
 
 }).prototype = getMCSymbolPrototype(lib.cart, new cjs.Rectangle(0,-53.2,103.9,88.8), null);
+
+
+(lib.bubbleOrange = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+
+	// Calque 5
+	this.gain = new lib.miniBubble();
+	this.gain.parent = this;
+	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
+	this.gain.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+
+	// Calque 2
+	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
+	this.label.name = "label";
+	this.label.textAlign = "center";
+	this.label.lineHeight = 30;
+	this.label.parent = this;
+	this.label.setTransform(38.6,31.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#FF6600").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
+	this.shape.setTransform(38.4,41.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
+
+
+(lib.bubbleGreen = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.stop();
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(45));
+
+	// Calque 4
+	this.gain = new lib.miniBubble();
+	this.gain.parent = this;
+	this.gain.setTransform(37.6,-42.3,1,1,0,0,0,24.2,24);
+	this.gain.alpha = 0;
+
+	this.timeline.addTween(cjs.Tween.get(this.gain).wait(1).to({y:-0.3},0).to({y:-4.6,alpha:1},2,cjs.Ease.get(1)).to({y:-42.3},36).wait(3).to({alpha:0},2).wait(1));
+
+	// Calque 2
+	this.label = new cjs.Text("10€", "32px 'Gotham Medium'", "#FFFFFF");
+	this.label.name = "label";
+	this.label.textAlign = "center";
+	this.label.lineHeight = 30;
+	this.label.parent = this;
+	this.label.setTransform(38.6,31.8);
+
+	this.timeline.addTween(cjs.Tween.get(this.label).wait(45));
+
+	// Calque 1
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f("#93AD40").s().p("ABLFVQgkAHgnAAQieAAhxhwQhwhwAAieQAAifBwhxQBxhwCeAAQCfAABwBwQBxBxgBCfQABCehxBwQgmAmgrAZIAAB4g");
+	this.shape.setTransform(38.4,41.9);
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(45));
+
+}).prototype = p = new cjs.MovieClip();
+p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 
 
 // stage content:
@@ -1289,15 +1408,21 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		  }
 		
 		  function dispatchFinalGains() {
-		    var giveToPlayer1 = carts.removeAll(1);
+		    var giveToPlayer1 = +carts.removeAll(1);
 		    for (var i = 0; i < giveToPlayer1; i++) {
 		      players.increment(0, 'grey');
 		    }
 		
-		    var giveToPlayer2 = carts.removeAll(0);
+		    var giveToPlayer2 = +carts.removeAll(0);
 		    for (var j = 0; j < giveToPlayer2; j++) {
 		      players.increment(1, 'grey', true);
 		    }
+			
+			// Show gains.
+			players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1;
+			players.getPlayers()[0].bubble.gotoAndPlay(1);
+			players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2;
+			players.getPlayers()[1].bubble.gotoAndPlay(1);
 		  }
 		
 		  function getMaxCartMoney(index) {
@@ -1615,7 +1740,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.bubbleMultiplier.setTransform(274.1,205,0.141,0.161,0,0,32.7);
 	this.bubbleMultiplier.alpha = 0;
 
-	this.timeline.addTween(cjs.Tween.get(this.bubbleMultiplier).wait(119).to({scaleX:0.88,scaleY:1,skewY:32.6,y:163.4,alpha:1},4,cjs.Ease.get(1)).to({scaleX:0.88,y:141.7},28).to({scaleX:0.88,skewY:32.7,y:139,alpha:0},3).to({_off:true},146).wait(110));
+	this.timeline.addTween(cjs.Tween.get(this.bubbleMultiplier).wait(119).to({scaleX:0.88,scaleY:1,skewY:32.6,y:163.4,alpha:1},4,cjs.Ease.get(1)).to({scaleX:0.88,y:141.7},28).to({scaleX:0.88,skewY:32.7,y:139,alpha:0},3).to({_off:true},1).wait(255));
 
 	// chariot 2
 	this.cart2 = new lib.cart();
@@ -1914,6 +2039,7 @@ lib.properties = {
 	fps: 30,
 	color: "#CCD1DB",
 	opacity: 1.00,
+	webfonts: {},
 	manifest: [],
 	preloads: []
 };

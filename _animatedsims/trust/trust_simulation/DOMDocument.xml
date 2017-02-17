@@ -1,8 +1,8 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.9" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.1 build 86" majorVersion="16" minorVersion="1" buildNumber="86" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C" fileGUID="A6E97D4A7DA24A38B70D0C5D375CC421">
      <symbols>
-          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1463146138"/>
-          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1456415541"/>
-          <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1456415527"/>
+          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487258815"/>
+          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487259348"/>
+          <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1487259364"/>
           <Include href="cart.xml" loadImmediate="false" itemID="56e2d0fc-000005ae" lastModified="1463146065"/>
           <Include href="character.xml" itemIcon="1" loadImmediate="false" itemID="56c33d7f-00000262" lastModified="1455635899"/>
           <Include href="conveyor.xml" loadImmediate="false" itemID="56d06d00-00000362" lastModified="1457605260"/>
@@ -14,13 +14,14 @@
           <Include href="dollarStackOrange.xml" loadImmediate="false" itemID="56e29d57-000004b2" lastModified="1457713934"/>
           <Include href="factory.xml" loadImmediate="false" itemID="56cf10f8-0000059c" lastModified="1456410872"/>
           <Include href="floor.xml" itemIcon="1" loadImmediate="false" itemID="56c33808-000001c0" lastModified="1455636937"/>
+          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487259462"/>
           <Include href="multiplier.xml" loadImmediate="false" itemID="56cf2218-000006c2" lastModified="1456503557"/>
           <Include href="participantLabel.xml" loadImmediate="false" itemID="56cf13db-000005af" lastModified="1479291814"/>
           <Include href="startScreen.xml" loadImmediate="false" itemID="56cc8937-0000007c" lastModified="1456245551"/>
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="409">
+          <DOMTimeline name="Séquence 1" currentFrame="126">
                <layers>
                     <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
                          <frames>
@@ -76,7 +77,7 @@ window.TRUST.operate.dispatchFinalGains();]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="scripts" color="#FF4FFF" autoNamed="false">
+                    <DOMLayer name="scripts" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements/>
@@ -169,15 +170,21 @@ function operate(players, carts) {
   }
 
   function dispatchFinalGains() {
-    var giveToPlayer1 = carts.removeAll(1);
+    var giveToPlayer1 = +carts.removeAll(1);
     for (var i = 0; i < giveToPlayer1; i++) {
       players.increment(0, 'grey');
     }
 
-    var giveToPlayer2 = carts.removeAll(0);
+    var giveToPlayer2 = +carts.removeAll(0);
     for (var j = 0; j < giveToPlayer2; j++) {
       players.increment(1, 'grey', true);
     }
+	
+	// Show gains.
+	players.getPlayers()[0].bubble.gain.label.text = "+" + giveToPlayer1;
+	players.getPlayers()[0].bubble.gotoAndPlay(1);
+	players.getPlayers()[1].bubble.gain.label.text = "+" + giveToPlayer2;
+	players.getPlayers()[1].bubble.gotoAndPlay(1);
   }
 
   function getMaxCartMoney(index) {
@@ -551,9 +558,9 @@ function Players() {
                                         </DOMSymbolInstance>
                                    </elements>
                               </DOMFrame>
-                              <DOMFrame index="154" duration="146" keyMode="9728">
+                              <DOMFrame index="154" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="multiplier" name="bubbleMultiplier" centerPoint3DX="274.1" centerPoint3DY="139">
+                                        <DOMSymbolInstance libraryItemName="multiplier" name="bubbleMultiplier" selected="true" centerPoint3DX="274.1" centerPoint3DY="139">
                                              <matrix>
                                                   <Matrix a="0.740386962890625" b="0.4754638671875" tx="274.1" ty="139"/>
                                              </matrix>
@@ -832,7 +839,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 1" color="#009999" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="bubble 1" color="#009999" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="77" keyMode="9728">
                                    <elements>
@@ -891,7 +898,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="dollars 2" color="#808080" autoNamed="false" open="false" layerType="folder"/>
+                    <DOMLayer name="dollars 2" color="#808080" autoNamed="false" layerType="folder"/>
                     <DOMLayer name="d1 copy 10" color="#669900" parentLayerIndex="12" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="46" keyMode="9728">
@@ -1614,7 +1621,7 @@ function Players() {
                               </DOMFrame>
                               <DOMFrame index="299" duration="10" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="cart" selected="true" symbolType="graphic" centerPoint3DX="465.75" centerPoint3DY="202" loop="loop">
+                                        <DOMSymbolInstance libraryItemName="cart" symbolType="graphic" centerPoint3DX="465.75" centerPoint3DY="202" loop="loop">
                                              <matrix>
                                                   <Matrix tx="435.1" ty="183.95"/>
                                              </matrix>

@@ -1,13 +1,121 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleOrange" itemID="56cf14e5-000005cf" lastModified="1456415527">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleOrange" itemID="56cf14e5-000005cf" lastModified="1487259364">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
   <timeline>
-    <DOMTimeline name="bubbleOrange">
+    <DOMTimeline name="bubbleOrange" currentFrame="15">
       <layers>
-        <DOMLayer name="Calque 2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="a" color="#FF4FFF" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
+              <Framescript language="JavaScript">
+                <script><![CDATA[this.stop();]]></script>
+              </Framescript>
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="labels" color="#FF800A" current="true" isSelected="true" autoNamed="false">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+            <DOMFrame index="1" duration="44" keyMode="9728">
+              <elements/>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Calque 5" color="#009999">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-66.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="1" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017" acceleration="-100">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" centerPoint3DX="38.15" centerPoint3DY="-0.35">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-24.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="3" duration="36" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" selected="true" centerPoint3DX="38.15" centerPoint3DY="-4.65">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-28.65"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="39" duration="3" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" selected="true" centerPoint3DX="38.15" centerPoint3DY="-42.35">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-66.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="42" duration="2" tweenType="motion" motionTweenSnap="true" keyMode="22017">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" selected="true" centerPoint3DX="38.15" centerPoint3DY="-42.35">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-66.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+            <DOMFrame index="44" keyMode="9728">
+              <elements>
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" centerPoint3DX="38.15" centerPoint3DY="-42.35">
+                  <matrix>
+                    <Matrix tx="13.4" ty="-66.35"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="24.15" y="24"/>
+                  </transformationPoint>
+                  <color>
+                    <Color alphaMultiplier="0"/>
+                  </color>
+                </DOMSymbolInstance>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+        <DOMLayer name="Calque 2" color="#9933CC">
+          <frames>
+            <DOMFrame index="0" duration="45" keyMode="9728">
               <elements>
                 <DOMDynamicText name="label" fontRenderingMode="standard" width="57.1" height="45.95" autoExpand="true" isSelectable="false" lineType="multiline">
                   <matrix>
@@ -40,7 +148,7 @@
         </DOMLayer>
         <DOMLayer name="Calque 1" color="#4F80FF">
           <frames>
-            <DOMFrame index="0" keyMode="9728">
+            <DOMFrame index="0" duration="45" keyMode="9728">
               <elements>
                 <DOMShape>
                   <fills>
