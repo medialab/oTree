@@ -29,7 +29,7 @@
           <Include href="factory.xml" loadImmediate="false" itemID="56cf10f8-0000059c" lastModified="1456410872"/>
           <Include href="floor.xml" itemIcon="1" loadImmediate="false" itemID="56c33808-000001c0" lastModified="1455636937"/>
           <Include href="gain.xml" loadImmediate="false" itemID="56cf2b69-00000812" lastModified="1456417641"/>
-          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487332630"/>
+          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487332903"/>
           <Include href="multiplier.xml" loadImmediate="false" itemID="56cf2218-000006c2" lastModified="1464791323"/>
           <Include href="participantLabel.xml" loadImmediate="false" itemID="56cf13db-000005af" lastModified="1456411611"/>
           <Include href="startScreen.xml" loadImmediate="false" itemID="56cc8937-0000007c" lastModified="1456245551"/>

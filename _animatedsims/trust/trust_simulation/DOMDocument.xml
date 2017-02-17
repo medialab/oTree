@@ -1,7 +1,7 @@
 <DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" backgroundColor="#CCD1DB" width="600" height="480" frameRate="30" currentTimeline="1" xflVersion="2.9" creatorInfo="Adobe Animate CC" platform="Macintosh" versionInfo="Saved by Animate Macintosh 16.1 build 86" majorVersion="16" minorVersion="1" buildNumber="86" viewAngle3D="59.1837342884091" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C" fileGUID="A6E97D4A7DA24A38B70D0C5D375CC421">
      <symbols>
           <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487258815"/>
-          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487259348"/>
+          <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487328743"/>
           <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1487259364"/>
           <Include href="cart.xml" loadImmediate="false" itemID="56e2d0fc-000005ae" lastModified="1463146065"/>
           <Include href="character.xml" itemIcon="1" loadImmediate="false" itemID="56c33d7f-00000262" lastModified="1455635899"/>
@@ -21,7 +21,7 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="126">
+          <DOMTimeline name="Séquence 1" currentFrame="44">
                <layers>
                     <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
                          <frames>
@@ -77,7 +77,7 @@ window.TRUST.operate.dispatchFinalGains();]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="scripts" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="scripts" color="#FF4FFF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements/>
@@ -839,7 +839,7 @@ function Players() {
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="bubble 1" color="#009999" autoNamed="false">
+                    <DOMLayer name="bubble 1" color="#009999" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="77" keyMode="9728">
                                    <elements>
@@ -870,7 +870,7 @@ function Players() {
                               </DOMFrame>
                               <DOMFrame index="84" duration="326" keyMode="9728">
                                    <elements>
-                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" centerPoint3DX="114.1" centerPoint3DY="229.35">
+                                        <DOMSymbolInstance libraryItemName="bubbleGreen" name="bubble1" selected="true" centerPoint3DX="114.1" centerPoint3DY="229.35">
                                              <matrix>
                                                   <Matrix a="0.786148071289062" d="0.666656494140625" tx="83.95" ty="201.4"/>
                                              </matrix>

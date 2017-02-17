@@ -1,9 +1,9 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleGreen" itemID="56cf14da-000005cb" lastModified="1487259348" lastUniqueIdentifier="1">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleGreen" itemID="56cf14da-000005cb" lastModified="1487328743" lastUniqueIdentifier="1">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
   <timeline>
-    <DOMTimeline name="bubbleGreen" currentFrame="7">
+    <DOMTimeline name="bubbleGreen" currentFrame="44">
       <layers>
         <DOMLayer name="a" color="#FF800A" autoNamed="false">
           <frames>
@@ -98,7 +98,7 @@
             </DOMFrame>
             <DOMFrame index="44" keyMode="9728">
               <elements>
-                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" centerPoint3DX="38.15" centerPoint3DY="-42.35">
+                <DOMSymbolInstance libraryItemName="miniBubble" name="gain" selected="true" centerPoint3DX="38.15" centerPoint3DY="-42.35">
                   <matrix>
                     <Matrix tx="13.4" ty="-66.35"/>
                   </matrix>

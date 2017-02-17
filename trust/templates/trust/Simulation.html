@@ -8,199 +8,169 @@
 {% endblock %}
 
 {% block content %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
-
-<style>
-  h1 {
-    color: #357EBD;
-  }
-
-  button[type="button"] {
-    margin-right: 1em;
-  }
-
-  .c3-axis-x path.domain {
-    d: path('M0,1V0H908V1');
-  }
-
-  .c3-axis-y path.domain {
-    d: path('M -1 1 H 0 V 265.5 H -1');
-  }
-
-  line {
-    stroke: rgba(0, 0, 0, 0.25);
-  }
-
-  .c3-axis line {
-    stroke: black;
-  }
-</style>
-
-<h1>{% trans "Task One: Test Simulation" %}</h1>
+<h1 style="color:#357EBD">{% trans "Task One: Test Simulation" %}</h1>
 <hr/>
 <p>{% trans "This is not the real task yet, but a simulation to help you understand the rules better." %}</p>
 <p>{% trans "You can use the test screen below to play with the different choices of the two participants." %}</p>
 <br>{% trans "Between each test, click the “reset to zero” button below to reset the calculator." %}</p>
 
-<div class="row">
-  <div id="chart" class="col-sm-12"></div>
-</div>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="{% static "trust/trust_simulation.js" %}"></script>
 
-<div class="row">
-  <div class="col-sm-6 col-xs-12">
-    <label for="pa">{% trans "Amount sent by Participant A (in €): " %}<span id="sent-label-a">0</span></label>
-    <input id="pa" rel="A" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
-  </div>
-
-  <div class="col-sm-6 col-xs-12">
-    <label for="pa">{% trans "Amount sent by Participant B (in €): " %}<span id="sent-label-b">0</span></label>
-    <input id="pb" rel="B" class="form-control value5" type="range" min="0" max="10" step="1" value="0" />
-  </div>
-</div>
-
-<div class="row">
-  <button class="btn btn-primary">{% trans "Next" %}</button>
-  <button id="reset" class="btn btn-default" type="button">{% trans "Reset to zero" %}</button>
-</div>
+<style type="text/css">
+.btn {
+  float: left !important;
+}
+</style>
 
 <script>
-  $(function () {
-    // Set up chart.
-    var initA = 10,
-        initB = 10,
-        sentA = 0,
-        sentB = 0,
-        receivedA = 0,
-        receivedB = 0,
-        finalA = initA,
-        finalB = initB,
-        MULTIPLIER = 3;
+var canvas, stage, exportRoot;
+function init() {
+  canvas = document.getElementById("canvas");
+  exportRoot = new lib.trust_simulation();
 
-    var chart = c3.generate({
-      bindto: '#chart',
-      size: {
-        height: '5%'
-      },
-      data: {
-        columns: [
-          ['Sent', sentA, sentB],
-          ['Received', receivedA, receivedB],
-          ['Final gain', finalA, finalB]
-        ],
-        colors: {
-          'Sent': '#6392b1',
-          'Received': '#b9758a',
-          'Final gain': '#6c9c71'
-        },
-        types: {
-          'Sent': 'bar',
-          'Received': 'bar',
-          'Final gain': 'bar',
-        },
-        labels: true,
-        names: {
-          participants: 'Amount',
-          gains: 'Gain',
-          losses: 'Loss'
+  stage = new createjs.Stage(canvas);
+  stage.addChild(exportRoot);
+  stage.update();
+
+  createjs.Ticker.setFPS(lib.properties.fps);
+  createjs.Ticker.addEventListener("tick", stage);
+
+  var $amountA = $('#amountA');
+  var $amountB = $('#amountB');
+  var $sendA = $('#sendA');
+  var $sendB = $('#sendB');
+  var $reset = $('#reset');
+  var $next = $('#next')
+
+  var currentTry = 0;
+  var REQUIRED_TRIES = 1;
+  var PLAYER_1_ENDOWMENT = {{max}};
+
+  var playerAFinished = false;
+  var playerBFinished = false;
+
+  $sendA.click(function (e) {
+    e.preventDefault();
+
+    $reset.attr('disabled', true);
+
+    if (!playerAFinished) {
+      var val = $amountA.val();
+      if (val >= 0 && val <= PLAYER_1_ENDOWMENT) {
+        for (var i = 0; i < val; i++) {
+          window.TRUST.operate.playerPutsOwnMoney(0, 0);
         }
-      },
-      axis: {
-        x:{
-          type: 'category',
-          categories: ['Participant A', 'Participant B']
-        },
-        y: {
-          label: {
-            text: 'Amounts',
-            position: 'outer-middle',
-            tick: {
-              outer: true
-            }
-          }
-        }
+        window.TRUST.operate.moveCart1();
+        playerAFinished = true;
+
+        $sendA.attr('disabled', true);
+        $amountA.attr('disabled', true);
+
+        setTimeout(function () {
+          $sendB.attr('disabled', false);
+          $amountB.attr('disabled', false);
+        }, 4000);
       }
-    });
-
-    chart.axis.max({
-      y: 30
-    });
-
-    // Create interactions.
-    var $sliderA = $('#pa'),
-        $sliderB = $('#pb'),
-        $sentLabelA = $('#sent-label-a'),
-        $sentLabelB = $('#sent-label-b'),
-        $reset = $('#reset');
-
-    var eventName = getInputEventName();
-
-    $sliderA.on(eventName, sliderInputHandler);
-    $sliderB.on(eventName, sliderInputHandler);
-    $reset.on('click', reset);
-
-    function sliderInputHandler(e) {
-      update(e.target.getAttribute('rel'), e.target.value);
-    }
-
-    function reset() {
-      sentA = 0;
-      sentB = 0;
-      update('B', 0);
-      update('A', 0);
-    }
-
-    function updateParticipantBSlider() {
-      if ((initB + receivedB) > 0) {
-        $sliderB.removeAttr('disabled');
-      } else {
-        $sliderB.attr('disabled', true);
-      }
-
-      $sliderB.attr('max', (initB + receivedB));
-    }
-
-    function updateSentLabels() {
-      $sentLabelA.html(sentA);
-      $sentLabelB.html(sentB);
-    }
-
-    function update(player, val) {
-      switch (player) {
-        case 'A':
-          sentA = +val;
-          break;
-
-        case 'B':
-          sentB = +val;
-          break;
-      }
-
-      // Calculations.
-      receivedB = sentA * MULTIPLIER;
-      // Prevent B from sending more than what he/she received!
-      sentB = sentB > (initB + receivedB) ? (initB + receivedB) : sentB;
-      receivedA = sentB;
-      finalA = initA - sentA + receivedA;
-      finalB = Math.max(initB + receivedB - sentB, 0);
-
-      // Achieve two-way data-binding by updating
-      // slider values to ultimate sent amounts.
-      $sliderA.val(sentA);
-      $sliderB.val(sentB);
-
-      // Update other UI elements (B's slider, "sent" labels)
-      updateParticipantBSlider();
-      updateSentLabels();
-
-      chart.load({
-        columns: [
-          ['Sent', sentA, sentB],
-          ['Received', receivedA, receivedB],
-          ['Final gain', finalA, finalB]
-        ]
-      });
     }
   });
+
+  $sendB.click(function (e) {
+    e.preventDefault();
+    if (playerAFinished && !playerBFinished) {
+      var cartAmount = window.TRUST.operate.getMaxCart1Money();
+      var playerBAmount = window.TRUST.operate.getMaxPlayer2Money();
+      var val = $amountB.val();
+      var disposableAmount = cartAmount + playerBAmount;
+
+      if (val >= 0 && val <= disposableAmount) {
+
+        var i, j;
+
+        // Money from first cart, if enough.
+        if (val >= 0 && val <= cartAmount) {
+          for (i = 0; i < val; i++) {
+            window.TRUST.operate.incrementFromCartToCart(0, 1);
+          }
+        }
+
+        // Money from first cart and then, from player.
+        else if (val > cartAmount && val <= disposableAmount) {
+          for (i = 0; i < cartAmount; i++) {
+            window.TRUST.operate.incrementFromCartToCart(0, 1);
+          }
+
+          for (j = i; j < val; j++) {
+            window.TRUST.operate.playerPutsOwnMoney(1, 1);
+          }
+        }
+
+        window.TRUST.operate.moveCart2();
+        playerBFinished = true;
+
+        $sendB.attr('disabled', true);
+        $amountB.attr('disabled', true);
+
+        ++currentTry;
+
+        $reset.attr('disabled', false);
+      }
+    }
+  });
+
+  $reset.click(function (e) {
+    e.preventDefault();
+
+    window.TRUST.reset();
+
+    playerAFinished = playerBFinished = false;
+
+    $sendA.val(0);
+    $sendB.attr('disabled', true).val(0);
+    $amountA.attr('disabled', false);
+    $sendA.attr('disabled', false);
+    $amountB.attr('disabled', true);
+  });
+
+  setTimeout(function () {
+    $('.commands').removeClass('hide')
+  }, 3000);
+
+}
+$(function() { init() });
 </script>
+<div class="container">
+  <canvas id="canvas" width="600" height="480"
+          style="background-color:#CCD1DB"
+          class="col-sm-8 col-md-8 col-lg-6"
+          data-currency="{% trans '€' %}"
+          data-start-amount="{{max}}"
+          data-participants-label-a="{% trans 'Participant A' %}"
+          data-participants-label-b="{% trans 'Participant B' %}"
+          data-locale="{{lang}}"
+  >
+  </canvas>
+  <div class="form commands hide">
+    <div class="col-sm-2 col-md-2 col-lg-3 form-group">
+      <label for="amount">{% trans "Amount sent by Participant A" %}</label>
+      <input class="form-control" type="number" id="amountA" min="0" max="{{max}}">
+      <a class="btn btn-default" id="sendA">{% trans "Send" %}</a>
+    </div>
+  </div>
+
+  <div class="form commands hide">
+    <div class="col-sm-4 col-md-4 col-lg-4 form-group">
+      <label for="amount">{% trans "Amount sent by Participant B" %}</label>
+      <input class="form-control" type="number" id="amountB" min="0" max="{{max}}" disabled="disabled">
+      <a class="btn btn-default" id="sendB" disabled="disabled">{% trans "Send" %}</a>
+    </div>
+  </div>
+  <div class="col-sm-3 col-md-3 col-lg-3 commands hide">
+    <br><br>
+    <a class="btn btn-warning col-sm-12 col-md-12 col-lg-12" disabled="disabled" id="reset">{% trans "Reset to zero" %}</a>
+    <br><br><br>
+    <button class="btn btn-primary col-sm-12 col-md-12 col-lg-12" id="next">{% trans "Next" %}</button>
+  </div>
+</div>
+
 {% endblock %}
