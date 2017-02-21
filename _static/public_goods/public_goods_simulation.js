@@ -127,12 +127,12 @@ function getMCSymbolPrototype(symbol, nominalBounds, frameBounds) {
 
 	// Calque 1
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#0099FF").s().p("AiqCqQhHhGAAhkQAAhjBHhGQBHhGBjAAQBkAABHBGQBHBGAABjQAABkhHBGQhHBGhkAAQhjAAhHhGg");
+	this.shape.graphics.f("#0099FF").s().p("AjMDMQhVhUAAh4QAAh3BVhUQBVhUB3AAQB4AABVBUQBVBUAAB3QAAB4hVBUQhVBUh4AAQh3AAhVhUg");
 	this.shape.setTransform(24.2,24);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(1));
 
-}).prototype = getMCSymbolPrototype(lib.miniBubble, new cjs.Rectangle(-10.7,0,71.1,48), null);
+}).prototype = getMCSymbolPrototype(lib.miniBubble, new cjs.Rectangle(-10.7,-4.8,71.1,57.6), null);
 
 
 (lib.floor = function(mode,startPosition,loop) {
@@ -1418,7 +1418,7 @@ p.nominalBounds = new cjs.Rectangle(-17.5,-8.6,35,17.3);
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
+p.nominalBounds = new cjs.Rectangle(0,-71.1,76.7,154.9);
 
 
 (lib.bubbleOrange = function(mode,startPosition,loop) {
@@ -1458,7 +1458,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
+p.nominalBounds = new cjs.Rectangle(0,-71.1,76.7,154.9);
 
 
 (lib.bubbleGreen = function(mode,startPosition,loop) {
@@ -1498,7 +1498,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
+p.nominalBounds = new cjs.Rectangle(0,-71.1,76.7,154.9);
 
 
 (lib.bubbleBlue = function(mode,startPosition,loop) {
@@ -1538,7 +1538,7 @@ p.nominalBounds = new cjs.Rectangle(0,-66.3,76.7,150.1);
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(115));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-2.3,-66.3,76.7,149.6);
+p.nominalBounds = new cjs.Rectangle(-2.3,-71.1,76.7,154.5);
 
 
 // stage content:

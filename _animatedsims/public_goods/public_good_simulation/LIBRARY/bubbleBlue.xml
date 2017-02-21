@@ -1,9 +1,9 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleBlue" itemID="5735d693-000001b4" lastModified="1487340462">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="bubbleBlue" itemID="5735d693-000001b4" lastModified="1487691631">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
   <timeline>
-    <DOMTimeline name="bubbleBlue" currentFrame="114">
+    <DOMTimeline name="bubbleBlue">
       <layers>
         <DOMLayer name="a" color="#FF800A" autoNamed="false">
           <frames>
@@ -113,7 +113,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Calque 2" color="#9933CC" current="true" isSelected="true">
+        <DOMLayer name="Calque 2" color="#9933CC">
           <frames>
             <DOMFrame index="0" duration="115" keyMode="9728">
               <elements>
@@ -146,7 +146,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Calque 1" color="#4F80FF">
+        <DOMLayer name="Calque 1" color="#4F80FF" current="true" isSelected="true">
           <frames>
             <DOMFrame index="0" duration="115" keyMode="9728">
               <elements>

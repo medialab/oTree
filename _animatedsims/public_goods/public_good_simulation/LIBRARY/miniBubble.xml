@@ -1,4 +1,4 @@
-<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="miniBubble" itemID="58a5c135-0000003f" lastModified="1487340446">
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="miniBubble" itemID="58a5c135-0000003f" lastModified="1487691646">
   <persistentData>
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
@@ -37,7 +37,7 @@
                     </FillStyle>
                   </fills>
                   <edges>
-                    <Edge fillStyle1="1" edges="!967 480[967 679 825 819!825 819[683 960 483 960!483 960[284 960 142 819!142 819[0 679 0 479!0 479[0 280 142 140!142 140[284 0 483 0!483 0[683 0 825 140!825 140[967 280 967 480"/>
+                    <Edge fillStyle1="1" edges="!1064 480[1064 719 894 887!894 887[724 1056 484 1056!484 1056[245 1056 74 887!74 887[-96 719 -96 479!-96 479[-96 240 74 72!74 72[245 -96 484 -96!484 -96[724 -96 894 72!894 72[1064 240 1064 480"/>
                   </edges>
                 </DOMShape>
               </elements>

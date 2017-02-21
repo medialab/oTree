@@ -10,7 +10,7 @@
           <Include href="arrowGreen.xml" itemIcon="1" loadImmediate="false" itemID="56cf140f-000005c2" lastModified="1456411663"/>
           <Include href="arrowOrange.xml" itemIcon="1" loadImmediate="false" itemID="56cf1409-000005be" lastModified="1456411657"/>
           <Include href="arrowRed.xml" itemIcon="1" loadImmediate="false" itemID="56cf13ee-000005b5" lastModified="1456411630"/>
-          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487340462"/>
+          <Include href="bubbleBlue.xml" loadImmediate="false" itemID="5735d693-000001b4" lastModified="1487691631"/>
           <Include href="bubbleGreen.xml" loadImmediate="false" itemID="56cf14da-000005cb" lastModified="1487340473"/>
           <Include href="bubbleOrange.xml" loadImmediate="false" itemID="56cf14e5-000005cf" lastModified="1487340483"/>
           <Include href="bubbleRed.xml" loadImmediate="false" itemID="56cf1576-00000604" lastModified="1487340491"/>
@@ -29,7 +29,7 @@
           <Include href="factory.xml" loadImmediate="false" itemID="56cf10f8-0000059c" lastModified="1456410872"/>
           <Include href="floor.xml" itemIcon="1" loadImmediate="false" itemID="56c33808-000001c0" lastModified="1455636937"/>
           <Include href="gain.xml" loadImmediate="false" itemID="56cf2b69-00000812" lastModified="1456417641"/>
-          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487340446"/>
+          <Include href="miniBubble.xml" loadImmediate="false" itemID="58a5c135-0000003f" lastModified="1487691646"/>
           <Include href="multiplier.xml" loadImmediate="false" itemID="56cf2218-000006c2" lastModified="1464791323"/>
           <Include href="participantLabel.xml" loadImmediate="false" itemID="56cf13db-000005af" lastModified="1456411611"/>
           <Include href="startScreen.xml" loadImmediate="false" itemID="56cc8937-0000007c" lastModified="1456245551"/>
@@ -3605,8 +3605,8 @@ this.gotoAndPlay('results');]]></script>
      <persistentData>
           <PD n="Arrêter la lecture à partir de cette image" t="i" v="2"/>
           <PD n="Evénement MouseClick" t="i" v="2"/>
-          <PD n="Lire un clip" t="i" v="2"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
+          <PD n="Lire un clip" t="i" v="2"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>
      <publishHistory/>
