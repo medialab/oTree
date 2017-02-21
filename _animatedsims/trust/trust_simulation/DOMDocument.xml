@@ -21,7 +21,7 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="234" cameraLayerEnabled="true">
+          <DOMTimeline name="Séquence 1" currentFrame="164" cameraLayerEnabled="true">
                <layers>
                     <DOMLayer name="Camera" color="#0099FF" autoNamed="false" layerType="camera">
                          <frames>
@@ -39,7 +39,7 @@
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="stop()" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="84" keyMode="9728">
                                    <elements/>
@@ -65,7 +65,8 @@
                               <DOMFrame index="191" keyMode="9728">
                                    <Framescript language="JavaScript">
                                         <script><![CDATA[this.stop();
-window.TRUST.operate.dispatchGainToPlayer2();]]></script>
+window.TRUST.operate.dispatchGainToPlayer2();
+console.log(window.TRUST.operate.getMaxPlayer2Money());]]></script>
                                    </Framescript>
                                    <elements/>
                               </DOMFrame>
@@ -94,7 +95,7 @@ window.TRUST.operate.dispatchGain(0, 1);]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="scripts" color="#FF4FFF" autoNamed="false">
+                    <DOMLayer name="scripts" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements/>
@@ -230,6 +231,7 @@ function operate(players, carts) {
 
   function getMaxPlayerMoney(index) {
     return function () {
+	  console.log(index, players.getPlayers()[index].money)
       return players.getPlayers()[index].money;
     };
   }
@@ -252,7 +254,7 @@ function operate(players, carts) {
     getMaxCart1Money: getMaxCartMoney.call(this, 0),
     getMaxCart2Money: getMaxCartMoney.call(this, 1),
     getMaxPlayer1Money: getMaxPlayerMoney.call(this, 0),
-    getMaxPlayer2Money: getMaxPlayerMoney.call(this, 0)
+    getMaxPlayer2Money: getMaxPlayerMoney.call(this, 1)
   };
 }
 
