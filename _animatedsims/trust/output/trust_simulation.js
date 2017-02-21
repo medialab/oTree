@@ -1195,6 +1195,26 @@ p.nominalBounds = new cjs.Rectangle(0,0,10.4,54.9);
 }).prototype = getMCSymbolPrototype(lib.bubbleBlue, new cjs.Rectangle(0,0,76.7,83.8), null);
 
 
+(lib.___Camera___ = function(mode,startPosition,loop) {
+	this.initialize(mode,startPosition,loop,{});
+
+	// timeline functions:
+	this.frame_0 = function() {
+		this.visible = false;
+	}
+
+	// actions tween:
+	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(2));
+
+	// viewfinder
+	this.shape = new cjs.Shape();
+	this.shape.graphics.f().s("rgba(0,0,0,0)").ss(2,1,1,3,true).p("EAq+AfQMhV7AAAMAAAg+fMBV7AAAg");
+
+	this.timeline.addTween(cjs.Tween.get(this.shape).wait(2));
+
+}).prototype = p = new cjs.MovieClip();
+
+
 (lib.cart = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -1406,6 +1426,20 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		  function passInFactory() {
 		    carts.multiply(0, multiplier);
 		  }
+		  
+		  function dispatchGain(playerIndex, cartIndex) {
+			var giveToPlayer = +carts.removeAll(cartIndex);
+			var player = players.getPlayers()[playerIndex];
+			  
+			player.bubble.gain.label.text = "+" + giveToPlayer.toFixed(2);
+			player.bubble.gotoAndPlay(1);
+			  
+			setTimeout(function () {
+			  for (var i = 0; i < giveToPlayer; i++) {
+				players.increment(playerIndex, 'grey');
+			  }
+			}, 1000);
+		  }
 		
 		  function dispatchFinalGains() {
 		    var giveToPlayer1 = +carts.removeAll(1);
@@ -1449,8 +1483,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 		    passInFactory: passInFactory,
 		    incrementFromCartToCart: moveMoneyFromCartToCart.call(this, 0, 1),
 		    decrementFromCartToCart: moveMoneyFromCartToCart.call(this, 1, 0),
-		    dispatchFinalGains: dispatchFinalGains,
-		
+		    // dispatchFinalGains: dispatchFinalGains,
+			dispatchGainToPlayer1: function () {
+			  return dispatchGain(0, 1);	
+			},
+			dispatchGainToPlayer2: function () {
+			  return dispatchGain(1, 0);	
+			},
 		    getMaxCart1Money: getMaxCartMoney.call(this, 0),
 		    getMaxCart2Money: getMaxCartMoney.call(this, 1),
 		    getMaxPlayer1Money: getMaxPlayerMoney.call(this, 0),
@@ -1722,14 +1761,15 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	}
 	this.frame_191 = function() {
 		this.stop();
+		window.TRUST.operate.dispatchGainToPlayer2();
 	}
 	this.frame_234 = function() {
 		this.stop();
-		window.TRUST.operate.dispatchFinalGains();
+		window.TRUST.operate.dispatchGainToPlayer1();
 	}
 	this.frame_339 = function() {
 		this.stop();
-		window.TRUST.operate.dispatchFinalGains();
+		window.TRUST.operate.dispatchGain(0, 1);
 	}
 	this.frame_409 = function() {
 		this.gotoAndPlay('start');
@@ -1737,6 +1777,13 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).wait(34).call(this.frame_34).wait(50).call(this.frame_84).wait(39).call(this.frame_123).wait(68).call(this.frame_191).wait(43).call(this.frame_234).wait(105).call(this.frame_339).wait(70).call(this.frame_409).wait(1));
+
+	// Camera
+	this.___camera___instance = new lib.___Camera___();
+	this.___camera___instance.parent = this;
+	this.___camera___instance.setTransform(300,240);
+
+	this.timeline.addTween(cjs.Tween.get(this.___camera___instance).wait(410));
 
 	// multiplier
 	this.bubbleMultiplier = new lib.multiplier();
@@ -2035,7 +2082,7 @@ if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{ini
 	this.timeline.addTween(cjs.Tween.get(this.instance_26).wait(410));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(300.6,239.4,600,600.8);
+p.nominalBounds = new cjs.Rectangle(299,239,602,601.1);
 // library properties:
 lib.properties = {
 	width: 600,

@@ -21,9 +21,25 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="178">
+          <DOMTimeline name="Séquence 1" currentFrame="234" cameraLayerEnabled="true">
                <layers>
-                    <DOMLayer name="stop()" color="#4F80FF" autoNamed="false">
+                    <DOMLayer name="Camera" color="#0099FF" autoNamed="false" layerType="camera">
+                         <frames>
+                              <DOMFrame index="0" duration="410" keyMode="9728">
+                                   <elements>
+                                        <DOMSymbolInstance libraryItemName="__Camera__" name="___camera___instance">
+                                             <matrix>
+                                                  <Matrix tx="300" ty="240"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point/>
+                                             </transformationPoint>
+                                        </DOMSymbolInstance>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+                    <DOMLayer name="stop()" color="#4F80FF" current="true" isSelected="true" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="84" keyMode="9728">
                                    <elements/>
@@ -48,7 +64,8 @@
                               </DOMFrame>
                               <DOMFrame index="191" keyMode="9728">
                                    <Framescript language="JavaScript">
-                                        <script><![CDATA[this.stop();]]></script>
+                                        <script><![CDATA[this.stop();
+window.TRUST.operate.dispatchGainToPlayer2();]]></script>
                                    </Framescript>
                                    <elements/>
                               </DOMFrame>
@@ -58,7 +75,7 @@
                               <DOMFrame index="234" keyMode="9728">
                                    <Framescript language="JavaScript">
                                         <script><![CDATA[this.stop();
-window.TRUST.operate.dispatchFinalGains();]]></script>
+window.TRUST.operate.dispatchGainToPlayer1();]]></script>
                                    </Framescript>
                                    <elements/>
                               </DOMFrame>
@@ -68,7 +85,7 @@ window.TRUST.operate.dispatchFinalGains();]]></script>
                               <DOMFrame index="339" keyMode="9728">
                                    <Framescript language="JavaScript">
                                         <script><![CDATA[this.stop();
-window.TRUST.operate.dispatchFinalGains();]]></script>
+window.TRUST.operate.dispatchGain(0, 1);]]></script>
                                    </Framescript>
                                    <elements/>
                               </DOMFrame>
@@ -77,7 +94,7 @@ window.TRUST.operate.dispatchFinalGains();]]></script>
                               </DOMFrame>
                          </frames>
                     </DOMLayer>
-                    <DOMLayer name="scripts" color="#FF4FFF" current="true" isSelected="true" autoNamed="false">
+                    <DOMLayer name="scripts" color="#FF4FFF" autoNamed="false">
                          <frames>
                               <DOMFrame index="0" duration="34" keyMode="9728">
                                    <elements/>
@@ -168,6 +185,20 @@ function operate(players, carts) {
   function passInFactory() {
     carts.multiply(0, multiplier);
   }
+  
+  function dispatchGain(playerIndex, cartIndex) {
+	var giveToPlayer = +carts.removeAll(cartIndex);
+	var player = players.getPlayers()[playerIndex];
+	  
+	player.bubble.gain.label.text = "+" + giveToPlayer.toFixed(2);
+	player.bubble.gotoAndPlay(1);
+	  
+	setTimeout(function () {
+	  for (var i = 0; i < giveToPlayer; i++) {
+		players.increment(playerIndex, 'grey');
+	  }
+	}, 1000);
+  }
 
   function dispatchFinalGains() {
     var giveToPlayer1 = +carts.removeAll(1);
@@ -211,8 +242,13 @@ function operate(players, carts) {
     passInFactory: passInFactory,
     incrementFromCartToCart: moveMoneyFromCartToCart.call(this, 0, 1),
     decrementFromCartToCart: moveMoneyFromCartToCart.call(this, 1, 0),
-    dispatchFinalGains: dispatchFinalGains,
-
+    // dispatchFinalGains: dispatchFinalGains,
+	dispatchGainToPlayer1: function () {
+	  return dispatchGain(0, 1);	
+	},
+	dispatchGainToPlayer2: function () {
+	  return dispatchGain(1, 0);	
+	},
     getMaxCart1Money: getMaxCartMoney.call(this, 0),
     getMaxCart2Money: getMaxCartMoney.call(this, 1),
     getMaxPlayer1Money: getMaxPlayerMoney.call(this, 0),
@@ -2110,8 +2146,8 @@ function Players() {
           </swatchList>
      </swatchLists>
      <persistentData>
-          <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
           <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
+          <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;false"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>

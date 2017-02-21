@@ -3,9 +3,9 @@
     <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;true"/>
   </persistentData>
   <timeline>
-    <DOMTimeline name="bubbleGreen" currentFrame="44">
+    <DOMTimeline name="bubbleGreen">
       <layers>
-        <DOMLayer name="a" color="#FF800A" autoNamed="false">
+        <DOMLayer name="a" color="#FF800A" current="true" isSelected="true" autoNamed="false">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <Framescript language="JavaScript">
@@ -28,7 +28,7 @@
             </DOMFrame>
           </frames>
         </DOMLayer>
-        <DOMLayer name="Calque 4" color="#FF4FFF" current="true" isSelected="true">
+        <DOMLayer name="Calque 4" color="#FF4FFF">
           <frames>
             <DOMFrame index="0" keyMode="9728">
               <elements>

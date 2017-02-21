@@ -31,7 +31,27 @@ function handleComplete() {
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		createjs.Ticker.setFPS(lib.properties.fps);
-		createjs.Ticker.addEventListener("tick", stage);
+		createjs.Ticker.addEventListener("tick", handleTick)
+		function handleTick(event) {
+			var cameraInstance = exportRoot.___camera___instance;
+			if(cameraInstance)
+			{
+				if(cameraInstance._off != null && cameraInstance._off == true)
+					exportRoot.transformMatrix = new createjs.Matrix2D();
+				else
+				{
+					var mat = cameraInstance.getMatrix();
+					var stageCenter = { 'x' : lib.properties.width/2, 'y' : lib.properties.height/2 };
+					mat.tx -= stageCenter.x;
+					mat.ty -= stageCenter.y;
+					var inverseMat = mat.invert();
+					inverseMat.prependTransform(stageCenter.x, stageCenter.y, 1, 1, 0, 0, 0, 0, 0);
+					inverseMat.appendTransform(-stageCenter.x, -stageCenter.y, 1, 1, 0, 0, 0, 0, 0);
+					exportRoot.transformMatrix = inverseMat;
+				}
+			}
+			stage.update();
+		}
 	}	    
 	//Code to support hidpi screens and responsive scaling.
 	function makeResponsive(isResp, respDim, isScale, scaleType) {		
