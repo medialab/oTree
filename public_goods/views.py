@@ -88,80 +88,80 @@ class ContributeBack(Page):
     def vars_for_template(self):
         """Return variables available for template."""
         contribution_back_0_label = {
-            'fr': _(u'On average, each of the other group members contributes 0 euro:'),
-            'en': _(u'On average, each of the other group members contributes 0 euro:'),
-            'sl': _(u'On average, each of the other group members contributes 0 euro:'),
-            'ko': _(u'On average, each of the other group members contributes 0 Won:')
+            'fr': _(u'on average, each of the other group members contributes 0 euro:'),
+            'en': _(u'on average, each of the other group members contributes 0 euro:'),
+            'sl': _(u'on average, each of the other group members contributes 0 euro:'),
+            'ko': _(u'on average, each of the other group members contributes 0 Won:')
         }
 
         contribution_back_1_label = {
-            'fr': _(u'On average, each of the other group members contributes 1 euro:'),
-            'en': _(u'On average, each of the other group members contributes 1 euro:'),
-            'sl': _(u'On average, each of the other group members contributes 1 euro:'),
-            'ko': _(u'On average, each of the other group members contributes 1.200 Won Won:')
+            'fr': _(u'on average, each of the other group members contributes 1 euro:'),
+            'en': _(u'on average, each of the other group members contributes 1 euro:'),
+            'sl': _(u'on average, each of the other group members contributes 1 euro:'),
+            'ko': _(u'on average, each of the other group members contributes 1.200 Won Won:')
         }
 
         contribution_back_2_label = {
-            'fr': _(u'On average, each of the other group members contributes 2 euros:'),
-            'en': _(u'On average, each of the other group members contributes 2 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 2 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 2.400 Won:')
+            'fr': _(u'on average, each of the other group members contributes 2 euros:'),
+            'en': _(u'on average, each of the other group members contributes 2 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 2 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 2.400 Won:')
         }
 
         contribution_back_3_label = {
-            'fr': _(u'On average, each of the other group members contributes 3 euros:'),
-            'en': _(u'On average, each of the other group members contributes 3 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 3 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 3.600 Won:')
+            'fr': _(u'on average, each of the other group members contributes 3 euros:'),
+            'en': _(u'on average, each of the other group members contributes 3 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 3 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 3.600 Won:')
         }
 
         contribution_back_4_label = {
-            'fr': _(u'On average, each of the other group members contributes 4 euros:'),
-            'en': _(u'On average, each of the other group members contributes 4 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 4 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 4.800 Won:')
+            'fr': _(u'on average, each of the other group members contributes 4 euros:'),
+            'en': _(u'on average, each of the other group members contributes 4 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 4 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 4.800 Won:')
         }
 
         contribution_back_5_label = {
-            'fr': _(u'On average, each of the other group members contributes 5 euros:'),
-            'en': _(u'On average, each of the other group members contributes 5 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 5 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 6.000 Won:')
+            'fr': _(u'on average, each of the other group members contributes 5 euros:'),
+            'en': _(u'on average, each of the other group members contributes 5 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 5 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 6.000 Won:')
         }
 
         contribution_back_6_label = {
-            'fr': _(u'On average, each of the other group members contributes 6 euros:'),
-            'en': _(u'On average, each of the other group members contributes 6 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 6 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 7.200 Won:')
+            'fr': _(u'on average, each of the other group members contributes 6 euros:'),
+            'en': _(u'on average, each of the other group members contributes 6 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 6 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 7.200 Won:')
         }
 
         contribution_back_7_label = {
-            'fr': _(u'On average, each of the other group members contributes 7 euros:'),
-            'en': _(u'On average, each of the other group members contributes 7 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 7 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 8.400 Won:')
+            'fr': _(u'on average, each of the other group members contributes 7 euros:'),
+            'en': _(u'on average, each of the other group members contributes 7 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 7 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 8.400 Won:')
         }
 
         contribution_back_8_label = {
-            'fr': _(u'On average, each of the other group members contributes 8 euros:'),
-            'en': _(u'On average, each of the other group members contributes 8 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 8 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 9.600 Won:')
+            'fr': _(u'on average, each of the other group members contributes 8 euros:'),
+            'en': _(u'on average, each of the other group members contributes 8 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 8 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 9.600 Won:')
         }
 
         contribution_back_9_label = {
-            'fr': _(u'On average, each of the other group members contributes 9 euros:'),
-            'en': _(u'On average, each of the other group members contributes 9 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 9 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 10.800 Won:')
+            'fr': _(u'on average, each of the other group members contributes 9 euros:'),
+            'en': _(u'on average, each of the other group members contributes 9 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 9 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 10.800 Won:')
         }
 
         contribution_back_10_label = {
-            'fr': _(u'On average, each of the other group members contributes 10 euros:'),
-            'en': _(u'On average, each of the other group members contributes 10 euros:'),
-            'sl': _(u'On average, each of the other group members contributes 10 euros:'),
-            'ko': _(u'On average, each of the other group members contributes 12.000 Won:')
+            'fr': _(u'on average, each of the other group members contributes 10 euros:'),
+            'en': _(u'on average, each of the other group members contributes 10 euros:'),
+            'sl': _(u'on average, each of the other group members contributes 10 euros:'),
+            'ko': _(u'on average, each of the other group members contributes 12.000 Won:')
         }
 
         return {

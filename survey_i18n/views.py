@@ -414,11 +414,11 @@ class Survey36(Page):
 
         return {
             'choices': [
-                _(u"{0} - {1}".format('0', str(a))),
-                _(u"{0} - {1}".format(str(a + 1), str(b))),
-                _(u"{0} - {1}".format(str(b + 1), str(c))),
-                _(u"{0} - {1}".format(str(c + 1), str(d))),
-                _(u"{0} >".format(str(d + 1)))
+                _(u"€{0} - €{1}".format('0', str(a))),
+                _(u"€{0} - €{1}".format(str(a + 1), str(b))),
+                _(u"€{0} - €{1}".format(str(b + 1), str(c))),
+                _(u"€{0} - €{1}".format(str(c + 1), str(d))),
+                _(u"> €{0}".format(str(d + 1)))
             ]
         }
 

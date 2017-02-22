@@ -21,7 +21,7 @@
           <Include href="threeDollarsGrey.xml" itemIcon="1" loadImmediate="false" itemID="56d07828-0000044b" lastModified="1456502824"/>
      </symbols>
      <timelines>
-          <DOMTimeline name="Séquence 1" currentFrame="164" cameraLayerEnabled="true">
+          <DOMTimeline name="Séquence 1" currentFrame="34" cameraLayerEnabled="true">
                <layers>
                     <DOMLayer name="Camera" color="#0099FF" autoNamed="false" layerType="camera">
                          <frames>
@@ -140,6 +140,9 @@ if (window.document) {
  */
 var players = Players.bind(this)();
 var carts = Carts.bind(this)();
+
+this.charLabel1.label.text = labelA;
+this.charLabel2.label.text = labelB;
 
 window.TRUST = init.bind(this)();
 
@@ -2148,8 +2151,8 @@ function Players() {
           </swatchList>
      </swatchLists>
      <persistentData>
-          <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
           <PD n="Obtenir le numéro de l’image actuelle" t="i" v="2"/>
+          <PD n="Ajouter une occurrence depuis la bibliothèque" t="i" v="3"/>
           <PD n="CreateJSToolkit_timelinedata" v="version&#xA;0.1&#xA;loop&#xA;false"/>
      </persistentData>
      <PrinterSettings platform="macintosh"/>

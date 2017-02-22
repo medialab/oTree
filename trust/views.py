@@ -70,10 +70,10 @@ class SendContinued(Page):
 
     def vars_for_template(self):
         received_by_b = {
-            'fr': _(u'5 euros'),
-            'en': _(u'$5'),
-            'sl': _(u'5 euros'),
-            'ko': _(u'6.000 Won')
+            'fr': _(u'15 euros'),
+            'en': _(u'$15'),
+            'sl': _(u'15 euros'),
+            'ko': _(u'18.000 Won')
         }
 
         total_budget_b = {
@@ -112,13 +112,13 @@ class SendBack(Page):
         """Return variables for use in template."""
         sent_back_amount_0_label = {
             'fr': _(
-                u'If Participant A sends you 0€ (you receive 0€ × 3 = 0€)'
+                u'If Participant A sends you €0 (your total endowment is now €10)'
             ),
             'en': _(
-                u'If Participant A sends you 0€ (you receive 0€ × 3 = 0€)'
+                u'If Participant A sends you €0 (your total endowment is now €10)'
             ),
             'sl': _(
-                u'If Participant A sends you 0€ (you receive 0€ × 3 = 0€)'
+                u'If Participant A sends you €0 (your total endowment is now €10)'
             ),
             'ko': _(
                 u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
@@ -127,13 +127,13 @@ class SendBack(Page):
 
         sent_back_amount_1_label = {
             'fr': _(
-                u'If Participant A sends you 1€ (you receive 1€ × 3 = 3€)'
+                u'If Participant A sends you €1 (your total endowment is now €13)'
             ),
             'en': _(
-                u'If Participant A sends you 1€ (you receive 1€ × 3 = 3€)'
+                u'If Participant A sends you €1 (your total endowment is now €13)'
             ),
             'sl': _(
-                u'If Participant A sends you 1€ (you receive 1€ × 3 = 3€)'
+                u'If Participant A sends you €1 (your total endowment is now €13)'
             ),
             'ko': _(
                 u'If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)'
@@ -142,13 +142,13 @@ class SendBack(Page):
 
         sent_back_amount_2_label = {
             'fr': _(
-                u'If Participant A sends you 2€ (you receive 2€ × 3 = 6€)'
+                u'If Participant A sends you €2 (your total endowment is now €16)'
             ),
             'en': _(
-                u'If Participant A sends you 2€ (you receive 2€ × 3 = 6€)'
+                u'If Participant A sends you €2 (your total endowment is now €16)'
             ),
             'sl': _(
-                u'If Participant A sends you 2€ (you receive 2€ × 3 = 6€)'
+                u'If Participant A sends you €2 (your total endowment is now €16)'
             ),
             'ko': _(
                 u'If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)'
@@ -157,13 +157,13 @@ class SendBack(Page):
 
         sent_back_amount_3_label = {
             'fr': _(
-                u'If Participant A sends you 3€ (you receive 3€ × 3 = 9€)'
+                u'If Participant A sends you €3 (your total endowment is now €9)'
             ),
             'en': _(
-                u'If Participant A sends you 3€ (you receive 3€ × 3 = 9€)'
+                u'If Participant A sends you €3 (your total endowment is now €9)'
             ),
             'sl': _(
-                u'If Participant A sends you 3€ (you receive 3€ × 3 = 9€)'
+                u'If Participant A sends you €3 (your total endowment is now €9)'
             ),
             'ko': _(
                 u'If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)'
@@ -172,13 +172,13 @@ class SendBack(Page):
 
         sent_back_amount_4_label = {
             'fr': _(
-                u'If Participant A sends you 4€ (you receive 4€ × 3 = 12€)'
+                u'If Participant A sends you €4 (your total endowment is now €22)'
             ),
             'en': _(
-                u'If Participant A sends you 4€ (you receive 4€ × 3 = 12€)'
+                u'If Participant A sends you €4 (your total endowment is now €22)'
             ),
             'sl': _(
-                u'If Participant A sends you 4€ (you receive 4€ × 3 = 12€)'
+                u'If Participant A sends you €4 (your total endowment is now €22)'
             ),
             'ko': _(
                 u'If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)'
@@ -187,13 +187,13 @@ class SendBack(Page):
 
         sent_back_amount_5_label = {
             'fr': _(
-                u'If Participant A sends you 5€ (you receive 5€ × 3 = 15€)'
+                u'If Participant A sends you €5 (your total endowment is now €25)'
             ),
             'en': _(
-                u'If Participant A sends you 5€ (you receive 5€ × 3 = 15€)'
+                u'If Participant A sends you €5 (your total endowment is now €25)'
             ),
             'sl': _(
-                u'If Participant A sends you 5€ (you receive 5€ × 3 = 15€)'
+                u'If Participant A sends you €5 (your total endowment is now €25)'
             ),
             'ko': _(
                 u'If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)'
@@ -202,13 +202,13 @@ class SendBack(Page):
 
         sent_back_amount_6_label = {
             'fr': _(
-                u'If Participant A sends you 6€ (you receive 6€ × 3 = 18€)'
+                u'If Participant A sends you €6 (your total endowment is now €28)'
             ),
             'en': _(
-                u'If Participant A sends you 6€ (you receive 6€ × 3 = 18€)'
+                u'If Participant A sends you €6 (your total endowment is now €28)'
             ),
             'sl': _(
-                u'If Participant A sends you 6€ (you receive 6€ × 3 = 18€)'
+                u'If Participant A sends you €6 (your total endowment is now €28)'
             ),
             'ko': _(
                 u'If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)'
@@ -217,13 +217,13 @@ class SendBack(Page):
 
         sent_back_amount_7_label = {
             'fr': _(
-                u'If Participant A sends you 7€ (you receive 7€ × 3 = 21€)'
+                u'If Participant A sends you €7 (your total endowment is now €31)'
             ),
             'en': _(
-                u'If Participant A sends you 7€ (you receive 7€ × 3 = 21€)'
+                u'If Participant A sends you €7 (your total endowment is now €31)'
             ),
             'sl': _(
-                u'If Participant A sends you 7€ (you receive 7€ × 3 = 21€)'
+                u'If Participant A sends you €7 (your total endowment is now €31)'
             ),
             'ko': _(
                 u'If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)'
@@ -232,13 +232,13 @@ class SendBack(Page):
 
         sent_back_amount_8_label = {
             'fr': _(
-                u'If Participant A sends you 8€ (you receive 8€ × 3 = 24€)'
+                u'If Participant A sends you €8 (your total endowment is now €34)'
             ),
             'en': _(
-                u'If Participant A sends you 8€ (you receive 8€ × 3 = 24€)'
+                u'If Participant A sends you €8 (your total endowment is now €34)'
             ),
             'sl': _(
-                u'If Participant A sends you 8€ (you receive 8€ × 3 = 24€)'
+                u'If Participant A sends you €8 (your total endowment is now €34)'
             ),
             'ko': _(
                 u'If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)'
@@ -247,13 +247,13 @@ class SendBack(Page):
 
         sent_back_amount_9_label = {
             'fr': _(
-                u'If Participant A sends you 9€ (you receive 9€ × 3 = 27€)'
+                u'If Participant A sends you €9 (your total endowment is now €37)'
             ),
             'en': _(
-                u'If Participant A sends you 9€ (you receive 9€ × 3 = 27€)'
+                u'If Participant A sends you €9 (your total endowment is now €37)'
             ),
             'sl': _(
-                u'If Participant A sends you 9€ (you receive 9€ × 3 = 27€)'
+                u'If Participant A sends you €9 (your total endowment is now €37)'
             ),
             'ko': _(
                 u'If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 Won)'
@@ -262,13 +262,13 @@ class SendBack(Page):
 
         sent_back_amount_10_label = {
             'fr': _(
-                u'If Participant A sends you 10€ (you receive 10€ ×3 = 30€)'
+                u'If Participant A sends you €10 (your total endowment is now €40)'
             ),
             'en': _(
-                u'If Participant A sends you 10€ (you receive 10€ ×3 = 30€)'
+                u'If Participant A sends you €10 (your total endowment is now €40)'
             ),
             'sl': _(
-                u'If Participant A sends you 10€ (you receive 10€ ×3 = 30€)'
+                u'If Participant A sends you €10 (your total endowment is now €40)'
             ),
             'ko': _(
                 u'If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 Won)'

@@ -29,8 +29,8 @@
       $btn.on('click', function (e) {
         if (+$input.val() < 0 || $input.val() === '' || $dk.is(':checked')) {
           $input.val(-1);
-          $form.submit();
         }
+        $form.submit();
       });
     })
   </script>
