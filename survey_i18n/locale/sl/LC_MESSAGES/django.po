@@ -1100,10 +1100,10 @@ msgstr ""
 #, python-format
 msgid ""
 "Please enter in the box on the right your preferred distribution for each "
-"category (together the categories must sum to 100%%)."
+"category (<strong>together the categories must sum to 100%</strong>)."
 msgstr ""
 "Prosimo vas, da v okvir na desno vnestie vase prednostno distribucijo za "
-"vsako kategorijo (vse kategorije skupaj morajo biti 100%%)"
+"vsako kategorijo (<strong>vse kategorije skupaj morajo biti 100%</strong>)"
 
 #: templates/survey_i18n/Survey15.html:51
 msgid "Current spending in [country]"

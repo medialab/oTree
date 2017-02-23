@@ -123,11 +123,16 @@ class Survey10(Page):
         'satisfied_with_public_housing',
         'satisfied_with_security_and_crime_prevention',
         'satisfied_with_environmental_issues',
-        'satisfied_with_cultural_facilities',
+        'satisfied_with_cultural_facilities'
+    ]
+
+class Survey10_5(Page):
+
+    form_model = models.Player
+    form_fields = [
         'complaint_about_quality_of_public_service_likely_resolved',
         'technology_speed_up_likely_to_be_adopted'
     ]
-
 
 class Survey11(Page):
 
@@ -332,7 +337,6 @@ class Survey32(Page):
     form_model = models.Player
     form_fields = [
         'highest_level_of_education_your_parent_has_completed',
-        'what_best_describes_your_situation'
     ]
 
 
@@ -340,6 +344,7 @@ class Survey33(Page):
 
     form_model = models.Player
     form_fields = [
+        'what_best_describes_your_situation',
         'do_you_currently_work_in_the'
     ]
 
@@ -451,6 +456,7 @@ page_sequence = [
     Survey08,
     Survey09,
     Survey10,
+    Survey10_5,
     Survey11,
     Survey12,
     Survey13,

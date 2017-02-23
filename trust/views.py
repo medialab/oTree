@@ -112,166 +112,166 @@ class SendBack(Page):
         """Return variables for use in template."""
         sent_back_amount_0_label = {
             'fr': _(
-                u'If Participant A sends you €0 (your total endowment is now €10)'
+                u'If Participant A sends you €0 (your total endowment is now €10). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €0 (your total endowment is now €10)'
+                u'If Participant A sends you €0 (your total endowment is now €10). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €0 (your total endowment is now €10)'
+                u'If Participant A sends you €0 (your total endowment is now €10). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won)'
+                u'If Participant A sends you 0 Won (you receive 0 Won × 3 = 0 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_1_label = {
             'fr': _(
-                u'If Participant A sends you €1 (your total endowment is now €13)'
+                u'If Participant A sends you €1 (your total endowment is now €13). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €1 (your total endowment is now €13)'
+                u'If Participant A sends you €1 (your total endowment is now €13). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €1 (your total endowment is now €13)'
+                u'If Participant A sends you €1 (your total endowment is now €13). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won)'
+                u'If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_2_label = {
             'fr': _(
-                u'If Participant A sends you €2 (your total endowment is now €16)'
+                u'If Participant A sends you €2 (your total endowment is now €16). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €2 (your total endowment is now €16)'
+                u'If Participant A sends you €2 (your total endowment is now €16). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €2 (your total endowment is now €16)'
+                u'If Participant A sends you €2 (your total endowment is now €16). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won)'
+                u'If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_3_label = {
             'fr': _(
-                u'If Participant A sends you €3 (your total endowment is now €9)'
+                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €3 (your total endowment is now €9)'
+                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €3 (your total endowment is now €9)'
+                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won)'
+                u'If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_4_label = {
             'fr': _(
-                u'If Participant A sends you €4 (your total endowment is now €22)'
+                u'If Participant A sends you €4 (your total endowment is now €22). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €4 (your total endowment is now €22)'
+                u'If Participant A sends you €4 (your total endowment is now €22). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €4 (your total endowment is now €22)'
+                u'If Participant A sends you €4 (your total endowment is now €22). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won)'
+                u'If Participant A sends you 4.800 Won (you receive 4.800 Won × 3 = 14.400 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_5_label = {
             'fr': _(
-                u'If Participant A sends you €5 (your total endowment is now €25)'
+                u'If Participant A sends you €5 (your total endowment is now €25). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €5 (your total endowment is now €25)'
+                u'If Participant A sends you €5 (your total endowment is now €25). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €5 (your total endowment is now €25)'
+                u'If Participant A sends you €5 (your total endowment is now €25). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won)'
+                u'If Participant A sends you 6.000 Won (you receive 6.000 Won × 3 = 18.000 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_6_label = {
             'fr': _(
-                u'If Participant A sends you €6 (your total endowment is now €28)'
+                u'If Participant A sends you €6 (your total endowment is now €28). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €6 (your total endowment is now €28)'
+                u'If Participant A sends you €6 (your total endowment is now €28). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €6 (your total endowment is now €28)'
+                u'If Participant A sends you €6 (your total endowment is now €28). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won)'
+                u'If Participant A sends you 7.200 Won (you receive 7.200 Won × 3 = 21.600 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_7_label = {
             'fr': _(
-                u'If Participant A sends you €7 (your total endowment is now €31)'
+                u'If Participant A sends you €7 (your total endowment is now €31). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €7 (your total endowment is now €31)'
+                u'If Participant A sends you €7 (your total endowment is now €31). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €7 (your total endowment is now €31)'
+                u'If Participant A sends you €7 (your total endowment is now €31). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won)'
+                u'If Participant A sends you 8.400 Won (you receive 8.400 Won × 3 = 25.200 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_8_label = {
             'fr': _(
-                u'If Participant A sends you €8 (your total endowment is now €34)'
+                u'If Participant A sends you €8 (your total endowment is now €34). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €8 (your total endowment is now €34)'
+                u'If Participant A sends you €8 (your total endowment is now €34). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €8 (your total endowment is now €34)'
+                u'If Participant A sends you €8 (your total endowment is now €34). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won)'
+                u'If Participant A sends you 9.600 Won (you receive 9.600 Won × 3 = 28.800 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_9_label = {
             'fr': _(
-                u'If Participant A sends you €9 (your total endowment is now €37)'
+                u'If Participant A sends you €9 (your total endowment is now €37). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €9 (your total endowment is now €37)'
+                u'If Participant A sends you €9 (your total endowment is now €37). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €9 (your total endowment is now €37)'
+                u'If Participant A sends you €9 (your total endowment is now €37). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 Won)'
+                u'If Participant A sends you 10.800 Won (you receive 10.800 Won × 3 = 32.400 Won). How much will you send back to Participant A:'
             ),
         }
 
         sent_back_amount_10_label = {
             'fr': _(
-                u'If Participant A sends you €10 (your total endowment is now €40)'
+                u'If Participant A sends you €10 (your total endowment is now €40). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €10 (your total endowment is now €40)'
+                u'If Participant A sends you €10 (your total endowment is now €40). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €10 (your total endowment is now €40)'
+                u'If Participant A sends you €10 (your total endowment is now €40). How much will you send back to Participant A:'
             ),
             'ko': _(
-                u'If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 Won)'
+                u'If Participant A sends you 12.000 Won (you receive 12.000 Won × 3 = 36.000 Won). How much will you send back to Participant A:'
             ),
         }
 

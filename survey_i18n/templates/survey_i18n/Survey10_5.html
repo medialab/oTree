@@ -4,14 +4,8 @@
 
 {% block content %}
 
-  <style>
-    label {
-      font-weight: normal;
-    }
-  </style>
-
-  {% formfield player.what_best_describes_your_situation %}
-  {% formfield player.do_you_currently_work_in_the %}
+  {% formfield player.complaint_about_quality_of_public_service_likely_resolved %}
+  {% formfield player.technology_speed_up_likely_to_be_adopted %}
 
   <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
 

@@ -64,7 +64,7 @@ class Player(BasePlayer):
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"Generally speaking, would you say that most people can be trusted, or that you can’t be too careful in dealing with people?"),
         choices=(
-            ('0', _(u"0 - Not at all satisfied")),
+            ('0', _(u"0 - You can't be too careful")),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
@@ -74,7 +74,7 @@ class Player(BasePlayer):
             ('7', '7'),
             ('8', '8'),
             ('9', '9'),
-            ('10', _(u"10 - Completely satisfied")),
+            ('10', _(u"10 - Most people can be trusted")),
             ("Don't know", _(u"Don't know"))
         )
     )
