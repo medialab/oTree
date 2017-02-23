@@ -3,35 +3,37 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-15 14:42+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2017-02-23 17:12+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+"Language: sl\n"
 
 #: templates/iat/EndGame.html:9
 msgid "Congratulations!"
-msgstr ""
+msgstr "Cestitamo!"
 
 #: templates/iat/EndGame.html:10
 msgid ""
 "You have now completed the sorting task. We will now move on to the last "
 "part of the study, where you are asked a few questions about yourself."
 msgstr ""
+"Zdaj ste dokoncali nalogo razvrscanja! Zato se bomo premaknili na zadnji del "
+"raziskave, kjer boste dobili nekaj vprasanj o sebi."
 
 #: templates/iat/Instructions.html:9
 msgid "Words Task"
-msgstr ""
+msgstr "Naloga besed"
 
 #: templates/iat/Instructions.html:12
 msgid ""
@@ -40,6 +42,11 @@ msgid ""
 "categories will appear one-by-one in the middle of the screen. Two labels at "
 "the top will tell you which words go with each key."
 msgstr ""
+"Svoja sredinca ali kazalnika postavite na tipki <strong>LEVO</strong> in "
+"<strong>DESNO</strong>. V tem delu raziskave se bodo besede, ki "
+"predstavljajo kategorije ena za drugo pojavljale na sredini strani. Dva "
+"naslova na vrhu strani vam bosta povedala katere besede pripadajo "
+"posameznemu kljucu."
 
 #: templates/iat/Instructions.html:13
 msgid ""
@@ -49,32 +56,41 @@ msgid ""
 "easy correct classification and belongs to only one category. If you make an "
 "error, an X will appear – fix the error by hitting the other key."
 msgstr ""
+"V primeru, da predmet pripada kategoriji na <strong>levi</strong> pritisnite "
+"tipko <strong>E</strong>; v primeru, da predmet pripada kategoriji na  "
+"<strong>desni</strong> pritisnite tipko <strong>I</strong>. Vsaka beseda ima "
+"enostavno pravilno klasifikcaijo in pripada le eni kategoriji. Ce boste "
+"naredili napako se bo pojavil X – odpravite napako s pritiskom na drugo "
+"tipko."
 
 #: templates/iat/Instructions.html:14 templates/iat/Instructions.html.py:27
 msgid "A few rules to remember:"
-msgstr ""
+msgstr "Prosimo zapomnite si nekaj naslednjih pravil:"
 
 #: templates/iat/Instructions.html:16
 msgid "Keep your index fingers on the E and I keys to enable rapid response."
-msgstr ""
+msgstr "Za moznost hitrega odzivanja obdrzite svoja kazalca na E in I tipki."
 
 #: templates/iat/Instructions.html:17 templates/iat/Instructions.html.py:30
 msgid ""
 "The test gives no results if you go slow. Please try to go as fast as "
 "possible."
 msgstr ""
+"V primeru, da boste prepocasni vam test ne bo prikazal rezultatov. Prosimo "
+"poskusajte biti hitri kolikor je mogoce."
 
 #: templates/iat/Instructions.html:18 templates/iat/Instructions.html.py:31
 msgid "Expect to make a few mistakes because of going fast. That's OK."
 msgstr ""
+"Zaradi hitrosti, pricakujte, da boste naredili nekaj napak. Kar ni narobe."
 
 #: templates/iat/Instructions.html:19 templates/iat/Instructions.html.py:32
 msgid "For best results, avoid distractions and stay focused."
-msgstr ""
+msgstr "Za najboljse rezultate se izognite motnjam in ostanite osredotoceni."
 
 #: templates/iat/Instructions.html:21
 msgid "Press the space bar to begin."
-msgstr ""
+msgstr "Za zacetek pritisnite tipko za presledek."
 
 #: templates/iat/Instructions.html:25
 msgid ""
@@ -83,6 +99,11 @@ msgid ""
 "representing categories will appear one-by-one in the middle of the screen. "
 "Two labels at the top will tell you which words go with each key."
 msgstr ""
+"Svoja sredinca ali kazalnika postavite na tipki <strong>LEVO</strong> in "
+"<strong>DESNO</strong>. V tem delu raziskave se bodo besede, ki "
+"predstavljajo kategorije ena za drugo pojavljale na sredini strani. Dva "
+"naslova na vrhu strani vam bosta povedala katere besede pripadajo "
+"posameznemu kljucu."
 
 #: templates/iat/Instructions.html:26
 msgid ""
@@ -92,20 +113,27 @@ msgid ""
 "has an easy correct classification and belongs to only one category. If you "
 "make an error, an X will appear – fix the error by hitting the other key."
 msgstr ""
+"V primeru, da predmet pripada kategoriji na <strong>levi</strong> pritisnite "
+"tipko <strong>LEVO</strong>; v primeru, da predmet pripada kategoriji na  "
+"<strong>desni</strong> pritisnite tipko <strong>DESNO</strong>. Vsaka beseda "
+"ima enostavno pravilno klasifikcaijo in pripada le eni kategoriji. Ce boste "
+"naredili napako se bo pojavil X – odpravite napako s pritiskom na drugo "
+"tipko."
 
 #: templates/iat/Instructions.html:29
 msgid ""
 "Keep your index fingers on the LEFT and RIGHT buttons to enable rapid "
 "response."
 msgstr ""
+"Za moznost hitrega odzivanja obdrzite svoja kazalca na LENI in DESNI tipki."
 
 #: templates/iat/Instructions.html:34
 msgid "Tap the NEXT button to begin."
-msgstr ""
+msgstr "Za zacetek pritisnite tipko NAPREJ."
 
 #: templates/iat/Instructions.html:37
 msgid "Next"
-msgstr ""
+msgstr "Naprej"
 
 #: templates/iat/TranslationWords.html:3
 msgid ""
@@ -131,6 +159,29 @@ msgid ""
 "That's OK.<br/>For best results, avoid distractions and stay focused.</"
 "p><h3>Press any button (or touch anywhere) to begin.</h3>"
 msgstr ""
+"Svoja sredinska prsta ali kazalca postavite na tipki <strong style='color:"
+"pink'>E</strong> in <strong style='color:turquoise'>I</strong> na vasi "
+"tipkovnici <br/>(ali tipki <strong style='color:pink'>LEVO</strong> in "
+"<strong style='color:turquoise'>DESNO</strong> ce uporabljate tablico ali "
+"mobilno napravo). <br/> V tem delu raziskave se bodo besede, ki "
+"predstavljajo kategorije pojavile na sredini strani.</p><p> Naslovi na vrhu "
+"strani vam bodo povedali katere besede pripadajo posameznemu kljucu.</p><p> "
+"V primeru, da beseda pripada kategoriji na ='color:pink'>levi</strong> "
+"pritisnite tipko <strong style='color:pink'>E</strong>; v primeru da pripada "
+"kategoriji na <strong style='color:turquoise'>desni</strong> pritisnite "
+"tipko <strong style='color:turquoise'>I</strong> (ali se dotaknite tipke "
+"<strong style='color:pink'>LEVO</strong> in <strong style='color:"
+"turquoise'>DESNO</strong> na mobilni napravi). Vsaka beseda ima enostavno in "
+"pravilno klasifikcaijo in pripada le eni kategoriji. Ce boste naredili "
+"napako se bo pojavil <strong style='color:red'>X</strong>  – odpravite "
+"napako s pritiskom na drugo tipko.</p><p> Zapomnite si nekaj pravil:</p><p> "
+"Svoje prste ves cas obdrzite na tipkah <strong style='color:pink'>E</strong> "
+"in <strong style='color:turquoise'>I</strong> da se boste lahko hitro "
+"odzivali.<br/>V primeru, da boste prepocasni vam test ne bo prikazal "
+"rezultatov. Prosimo poskusajte biti hitri kolikor je mogoce<br/>Zaradi "
+"hitrosti pricakujte, da boste naredili nekaj napak. Kar ni narobe.<br/>Za "
+"najboljse rezultate se izognite motnjam in ostanite osredotoceni.</p><h3> Za "
+"zacetek pritisnite katerokoli tipko (ali se dotaknikte kjerkoli).</h3>"
 
 #: templates/iat/TranslationWords.html:4
 msgid ""
@@ -155,118 +206,141 @@ msgid ""
 "press the <strong style='color:turquoise'>I</strong> key. Words belong to "
 "only one category.<br/><strong>GO AS FAST AS YOU CAN.</strong><br/>"
 msgstr ""
+"<strong>Poglejte zgoraj, kategorije so se spremenile.</strong> Prav tako so "
+"se spremenile besede za razvrscanje.<br/>Pravila so kljub temu ostala enaka."
+"<br/>V primeru, da besede pripadajo kategorji na levi, pritisnite tipko "
+"<strong style='color:pink'>E</strong>.<br/>V primeru, da besede pripadajo "
+"kategoriji na desni, pritisnite tipko <strong style='color:turquoise'>I</"
+"strong>. Besede pripadajo le v eno kategorijo.<br/><strong>To naredite "
+"kolikor mogoce hitro.</strong><br/><h3> Za zacetek pritisnite katerokoli "
+"tipko (ali se dotaktnite kjer koli).</h3><br/>"
 
 #: templates/iat/TranslationWords.html:6
 msgid "<h3>Press any button (or touch anywhere) to begin.</h3>"
-msgstr ""
+msgstr "<h3>Pritiskom na katerokoli tipko, da začnete.</h3>"
 
 #: templates/iat/TranslationWords.html:8 templates/iat/TranslationWords.html:10
 msgid "Trustworthy --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Iskren"
 
 #: templates/iat/TranslationWords.html:9 templates/iat/TranslationWords.html:18
 #: templates/iat/TranslationWords.html:25
 msgid "Trustworthy --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Moralno"
 
 #: templates/iat/TranslationWords.html:11
 #: templates/iat/TranslationWords.html:15
 #: templates/iat/TranslationWords.html:24
 msgid "Trustworthy --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Lagati"
 
 #: templates/iat/TranslationWords.html:12
 msgid "Trustworthy --- Untrustworthy --- Transparent"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Transparenten"
 
 #: templates/iat/TranslationWords.html:13
 #: templates/iat/TranslationWords.html:20
 msgid "Trustworthy --- Untrustworthy --- Corrupt"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Podkupljiv"
 
 #: templates/iat/TranslationWords.html:14
 #: templates/iat/TranslationWords.html:23
 msgid "Trustworthy --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Nemoralno"
 
 #: templates/iat/TranslationWords.html:16
 #: templates/iat/TranslationWords.html:19
 msgid "Trustworthy --- Untrustworthy --- Inefficient"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Neucinkovit"
 
 #: templates/iat/TranslationWords.html:17
 msgid "Trustworthy --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Sposoben"
 
 #: templates/iat/TranslationWords.html:21
 msgid "Trustworthy --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Neizkusen"
 
 #: templates/iat/TranslationWords.html:22
 msgid "Trustworthy --- Untrustworthy --- Proficient"
-msgstr ""
+msgstr "Vreden zaupanja -— Nevereden zaupanja —- Usposobljen"
 
 #: templates/iat/TranslationWords.html:27
 #: templates/iat/TranslationWords.html:28
 msgid "Trustworthy or Government --- Untrustworthy --- Constitution"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Ustava"
 
 #: templates/iat/TranslationWords.html:29
 #: templates/iat/TranslationWords.html:30
 #: templates/iat/TranslationWords.html:31
 msgid "Trustworthy or Government --- Untrustworthy --- Regulation"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Ustava"
 
 #: templates/iat/TranslationWords.html:32
 #: templates/iat/TranslationWords.html:33
 msgid "Trustworthy or Government --- Untrustworthy --- State"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Drzava"
 
 #: templates/iat/TranslationWords.html:34
 #: templates/iat/TranslationWords.html:35
 #: templates/iat/TranslationWords.html:36
 msgid "Trustworthy or Government --- Untrustworthy --- Civil servants"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Javni "
+"usluzbenci"
 
 #: templates/iat/TranslationWords.html:37
 #: templates/iat/TranslationWords.html:38
 #: templates/iat/TranslationWords.html:39
 msgid "Trustworthy or Government --- Untrustworthy --- Public administration"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Javna "
+"administracija"
 
 #: templates/iat/TranslationWords.html:40
 #: templates/iat/TranslationWords.html:41
 msgid "Trustworthy or Government --- Untrustworthy --- Politicians"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Politiki"
 
 #: templates/iat/TranslationWords.html:42
 #: templates/iat/TranslationWords.html:43
 #: templates/iat/TranslationWords.html:44
 msgid "Trustworthy or Government --- Untrustworthy --- Moral"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Moralno"
 
 #: templates/iat/TranslationWords.html:45
 #: templates/iat/TranslationWords.html:46
 #: templates/iat/TranslationWords.html:47
 msgid "Trustworthy or Government --- Untrustworthy --- Truthful"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Iskren"
 
 #: templates/iat/TranslationWords.html:48
 #: templates/iat/TranslationWords.html:49
 #: templates/iat/TranslationWords.html:50
 msgid "Trustworthy or Government --- Untrustworthy --- Capable"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Sposoben"
 
 #: templates/iat/TranslationWords.html:51
 #: templates/iat/TranslationWords.html:52
 msgid "Trustworthy or Government --- Untrustworthy --- Proficient"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- "
+"Usposobljen"
 
 #: templates/iat/TranslationWords.html:53
 #: templates/iat/TranslationWords.html:54
 #: templates/iat/TranslationWords.html:55
 msgid "Trustworthy or Government --- Untrustworthy --- Transparent"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- "
+"Transparenten"
 
 #: templates/iat/TranslationWords.html:57
 #: templates/iat/TranslationWords.html:58
@@ -274,6 +348,8 @@ msgstr ""
 #: templates/iat/TranslationWords.html:60
 msgid "Trustworthy or Government --- Untrustworthy --- Inefficient"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- "
+"Neucinkovit"
 
 #: templates/iat/TranslationWords.html:61
 #: templates/iat/TranslationWords.html:62
@@ -281,6 +357,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:64
 msgid "Trustworthy or Government --- Untrustworthy --- Immoral"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Nemoralno"
 
 #: templates/iat/TranslationWords.html:65
 #: templates/iat/TranslationWords.html:66
@@ -288,6 +365,8 @@ msgstr ""
 #: templates/iat/TranslationWords.html:68
 msgid "Trustworthy or Government --- Untrustworthy --- Corrupt"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- "
+"Podkupljiv"
 
 #: templates/iat/TranslationWords.html:69
 #: templates/iat/TranslationWords.html:70
@@ -295,6 +374,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:72
 msgid "Trustworthy or Government --- Untrustworthy --- Inexperienced"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Neizkusen"
 
 #: templates/iat/TranslationWords.html:73
 #: templates/iat/TranslationWords.html:74
@@ -303,67 +383,81 @@ msgstr ""
 #: templates/iat/TranslationWords.html:77
 msgid "Trustworthy or Government --- Untrustworthy --- Lying"
 msgstr ""
+"Vreden zaupanja ali drzavna administracija -— Nevereden zaupanja —- Lagati"
 
 #: templates/iat/TranslationWords.html:79
 #: templates/iat/TranslationWords.html:80
 #: templates/iat/TranslationWords.html:81
 msgid "Trustworthy --- Untrustworthy or Government --- Constitution"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Ustava"
 
 #: templates/iat/TranslationWords.html:82
 #: templates/iat/TranslationWords.html:83
 msgid "Trustworthy --- Untrustworthy or Government --- Regulation"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Uredba"
 
 #: templates/iat/TranslationWords.html:84
 #: templates/iat/TranslationWords.html:85
 msgid "Trustworthy --- Untrustworthy or Government --- State"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Drzava"
 
 #: templates/iat/TranslationWords.html:86
 #: templates/iat/TranslationWords.html:87
 #: templates/iat/TranslationWords.html:88
 msgid "Trustworthy --- Untrustworthy or Government --- Civil servants"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Javni "
+"usluzbenci"
 
 #: templates/iat/TranslationWords.html:89
 #: templates/iat/TranslationWords.html:90
 msgid "Trustworthy --- Untrustworthy or Government --- Public administration"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Javna "
+"administracija"
 
 #: templates/iat/TranslationWords.html:91
 #: templates/iat/TranslationWords.html:92
 msgid "Trustworthy --- Untrustworthy or Government --- Politicians"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Politiki"
 
 #: templates/iat/TranslationWords.html:93
 #: templates/iat/TranslationWords.html:94
 #: templates/iat/TranslationWords.html:95
 msgid "Trustworthy --- Untrustworthy or Government --- Inefficient"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:96
 #: templates/iat/TranslationWords.html:97
 #: templates/iat/TranslationWords.html:98
 msgid "Trustworthy --- Untrustworthy or Government --- Immoral"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Nemoralno"
 
 #: templates/iat/TranslationWords.html:99
 #: templates/iat/TranslationWords.html:100
 #: templates/iat/TranslationWords.html:101
 msgid "Trustworthy --- Untrustworthy or Government --- Lying"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Lagati"
 
 #: templates/iat/TranslationWords.html:102
 #: templates/iat/TranslationWords.html:103
 #: templates/iat/TranslationWords.html:104
 msgid "Trustworthy --- Untrustworthy or Government --- Corrupt"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:105
 #: templates/iat/TranslationWords.html:106
 msgid "Trustworthy --- Untrustworthy or Government --- Inexperienced"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Neizkusen"
 
 #: templates/iat/TranslationWords.html:108
 #: templates/iat/TranslationWords.html:109
@@ -372,6 +466,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:112
 msgid "Trustworthy --- Untrustworthy or Government --- Truthful"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Iskren"
 
 #: templates/iat/TranslationWords.html:113
 #: templates/iat/TranslationWords.html:114
@@ -379,6 +474,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:116
 msgid "Trustworthy --- Untrustworthy or Government --- Capable"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Sposoben"
 
 #: templates/iat/TranslationWords.html:117
 #: templates/iat/TranslationWords.html:118
@@ -386,6 +482,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:120
 msgid "Trustworthy --- Untrustworthy or Government --- Proficient"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Usposobljen"
 
 #: templates/iat/TranslationWords.html:121
 #: templates/iat/TranslationWords.html:122
@@ -393,6 +490,8 @@ msgstr ""
 #: templates/iat/TranslationWords.html:124
 msgid "Trustworthy --- Untrustworthy or Government --- Transparent"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — "
+"Transparenten"
 
 #: templates/iat/TranslationWords.html:125
 #: templates/iat/TranslationWords.html:126
@@ -400,67 +499,73 @@ msgstr ""
 #: templates/iat/TranslationWords.html:128
 msgid "Trustworthy --- Untrustworthy or Government --- Moral"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali drzavna daministracija — Moralno"
 
 #: templates/iat/TranslationWords.html:130
 #: templates/iat/TranslationWords.html:131
 #: templates/iat/TranslationWords.html:132
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lawyer"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Odvetnik"
 
 #: templates/iat/TranslationWords.html:133
 #: templates/iat/TranslationWords.html:134
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Prosecutor"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Tozilec"
 
 #: templates/iat/TranslationWords.html:135
 #: templates/iat/TranslationWords.html:136
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Supreme Court"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Vrhovo sodisce"
 
 #: templates/iat/TranslationWords.html:137
 #: templates/iat/TranslationWords.html:138
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Court"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Sodisce"
 
 #: templates/iat/TranslationWords.html:139
 #: templates/iat/TranslationWords.html:140
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Justice department"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Ministrstvo za "
+"pravosodje"
 
 #: templates/iat/TranslationWords.html:141
 #: templates/iat/TranslationWords.html:142
 #: templates/iat/TranslationWords.html:143
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Judge"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Sodnik"
 
 #: templates/iat/TranslationWords.html:144
 #: templates/iat/TranslationWords.html:145
 #: templates/iat/TranslationWords.html:146
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Transparanten"
 
 #: templates/iat/TranslationWords.html:147
 #: templates/iat/TranslationWords.html:148
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Usposobljen"
 
 #: templates/iat/TranslationWords.html:149
 #: templates/iat/TranslationWords.html:150
 #: templates/iat/TranslationWords.html:151
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Iskren"
 
 #: templates/iat/TranslationWords.html:152
 #: templates/iat/TranslationWords.html:153
 #: templates/iat/TranslationWords.html:154
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Sposoben"
 
 #: templates/iat/TranslationWords.html:155
 #: templates/iat/TranslationWords.html:156
 #: templates/iat/TranslationWords.html:157
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Moral"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Moralno"
 
 #: templates/iat/TranslationWords.html:159
 #: templates/iat/TranslationWords.html:160
@@ -468,6 +573,7 @@ msgstr ""
 #: templates/iat/TranslationWords.html:162
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:163
 #: templates/iat/TranslationWords.html:164
@@ -475,21 +581,21 @@ msgstr ""
 #: templates/iat/TranslationWords.html:166
 #: templates/iat/TranslationWords.html:167
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Lagati"
 
 #: templates/iat/TranslationWords.html:168
 #: templates/iat/TranslationWords.html:169
 #: templates/iat/TranslationWords.html:170
 #: templates/iat/TranslationWords.html:171
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Immoral"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Nemoralno"
 
 #: templates/iat/TranslationWords.html:172
 #: templates/iat/TranslationWords.html:173
 #: templates/iat/TranslationWords.html:174
 #: templates/iat/TranslationWords.html:175
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inexperienced"
-msgstr ""
+msgstr "Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Neizkusen"
 
 #: templates/iat/TranslationWords.html:176
 #: templates/iat/TranslationWords.html:177
@@ -497,74 +603,79 @@ msgstr ""
 #: templates/iat/TranslationWords.html:179
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inefficient"
 msgstr ""
+"Vreden zaupanja ali pravosodni sistem — Nevereden zaupanja — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:181
 #: templates/iat/TranslationWords.html:182
 #: templates/iat/TranslationWords.html:183
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Judge"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Sodnik"
 
 #: templates/iat/TranslationWords.html:184
 #: templates/iat/TranslationWords.html:185
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Court"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Sodisce"
 
 #: templates/iat/TranslationWords.html:186
 #: templates/iat/TranslationWords.html:187
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Justice department"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Ministrstvo za "
+"pravosodje"
 
 #: templates/iat/TranslationWords.html:188
 #: templates/iat/TranslationWords.html:189
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Supreme Court"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Vrhovo sodisce"
 
 #: templates/iat/TranslationWords.html:190
 #: templates/iat/TranslationWords.html:191
 #: templates/iat/TranslationWords.html:192
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lawyer"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Odvetnik"
 
 #: templates/iat/TranslationWords.html:193
 #: templates/iat/TranslationWords.html:194
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Prosecuter"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Tozilec"
 
 #: templates/iat/TranslationWords.html:195
 #: templates/iat/TranslationWords.html:196
 #: templates/iat/TranslationWords.html:197
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inefficient"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:198
 #: templates/iat/TranslationWords.html:199
 #: templates/iat/TranslationWords.html:200
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lying"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Lagati"
 
 #: templates/iat/TranslationWords.html:201
 #: templates/iat/TranslationWords.html:202
 #: templates/iat/TranslationWords.html:203
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Immoral"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Nemoralno"
 
 #: templates/iat/TranslationWords.html:204
 #: templates/iat/TranslationWords.html:205
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inexperienced"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Neizkusen"
 
 #: templates/iat/TranslationWords.html:206
 #: templates/iat/TranslationWords.html:207
 #: templates/iat/TranslationWords.html:208
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Corrupt"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:210
 #: templates/iat/TranslationWords.html:211
 #: templates/iat/TranslationWords.html:212
 #: templates/iat/TranslationWords.html:213
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Moral"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Moralno"
 
 #: templates/iat/TranslationWords.html:214
 #: templates/iat/TranslationWords.html:215
@@ -572,20 +683,21 @@ msgstr ""
 #: templates/iat/TranslationWords.html:217
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Proficient"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Usposobijen"
 
 #: templates/iat/TranslationWords.html:218
 #: templates/iat/TranslationWords.html:219
 #: templates/iat/TranslationWords.html:220
 #: templates/iat/TranslationWords.html:221
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Capable"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Sposoben"
 
 #: templates/iat/TranslationWords.html:222
 #: templates/iat/TranslationWords.html:223
 #: templates/iat/TranslationWords.html:224
 #: templates/iat/TranslationWords.html:225
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Truthful"
-msgstr ""
+msgstr "Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Iskren"
 
 #: templates/iat/TranslationWords.html:226
 #: templates/iat/TranslationWords.html:227
@@ -593,518 +705,520 @@ msgstr ""
 #: templates/iat/TranslationWords.html:229
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Transparent"
 msgstr ""
+"Vreden zaupanja — Nevreden zaupanja ali pravosodni sistem — Transparenten"
 
 #: templates/iat/TranslationWords.html:231
 #: templates/iat/TranslationWords.html:233
 msgid "Competent --- Incompetent --- Capable"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Zmožen"
 
 #: templates/iat/TranslationWords.html:232
 #: templates/iat/TranslationWords.html:248
 msgid "Competent --- Incompetent --- Skilful"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Spreten"
 
 #: templates/iat/TranslationWords.html:234
 #: templates/iat/TranslationWords.html:238
 msgid "Competent --- Incompetent --- Inefficient"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:235
 msgid "Competent --- Incompetent --- Proficient"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Usposobljen"
 
 #: templates/iat/TranslationWords.html:236
 msgid "Competent --- Incompetent --- Unskilled"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Nekvalificirani"
 
 #: templates/iat/TranslationWords.html:237
 #: templates/iat/TranslationWords.html:246
 msgid "Competent --- Incompetent --- Inexperienced"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Neizkusen"
 
 #: templates/iat/TranslationWords.html:239
 #: templates/iat/TranslationWords.html:242
 msgid "Competent --- Incompetent --- Useless"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Neupraben"
 
 #: templates/iat/TranslationWords.html:240
 msgid "Competent --- Incompetent --- Smart"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Pameten"
 
 #: templates/iat/TranslationWords.html:241
 msgid "Competent --- Incompetent --- Reliable"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Zanesijiv"
 
 #: templates/iat/TranslationWords.html:243
 #: templates/iat/TranslationWords.html:247
 msgid "Competent --- Incompetent --- Powerless"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Nemocen"
 
 #: templates/iat/TranslationWords.html:244
 msgid "Competent --- Incompetent --- Weak"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Sibek"
 
 #: templates/iat/TranslationWords.html:245
 msgid "Competent --- Incompetent --- Bright"
-msgstr ""
+msgstr "Sposoben — Nesposoben — Bister"
 
 #: templates/iat/TranslationWords.html:250
 #: templates/iat/TranslationWords.html:251
 msgid "Competent or Government --- Incompetent --- Constitution"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Ustava"
 
 #: templates/iat/TranslationWords.html:252
 #: templates/iat/TranslationWords.html:253
 #: templates/iat/TranslationWords.html:254
 msgid "Competent or Government --- Incompetent --- Regulation"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Uredba"
 
 #: templates/iat/TranslationWords.html:255
 #: templates/iat/TranslationWords.html:256
 msgid "Competent or Government --- Incompetent --- State"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Drzava"
 
 #: templates/iat/TranslationWords.html:257
 #: templates/iat/TranslationWords.html:258
 #: templates/iat/TranslationWords.html:259
 msgid "Competent or Government --- Incompetent --- Civil Servants"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben —Javni usluzbenci"
 
 #: templates/iat/TranslationWords.html:260
 #: templates/iat/TranslationWords.html:261
 msgid "Competent or Government --- Incompetent --- Public Administration"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben —Javna administracija"
 
 #: templates/iat/TranslationWords.html:262
 #: templates/iat/TranslationWords.html:263
 msgid "Competent or Government --- Incompetent --- Politicians"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Politiki"
 
 #: templates/iat/TranslationWords.html:264
 #: templates/iat/TranslationWords.html:265
 #: templates/iat/TranslationWords.html:266
 msgid "Competent or Government --- Incompetent --- Skilful"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Spreten"
 
 #: templates/iat/TranslationWords.html:267
 #: templates/iat/TranslationWords.html:268
 #: templates/iat/TranslationWords.html:269
 msgid "Competent or Government --- Incompetent --- Capable"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Zmožen"
 
 #: templates/iat/TranslationWords.html:270
 #: templates/iat/TranslationWords.html:271
 msgid "Competent or Government --- Incompetent --- Bright"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Bister"
 
 #: templates/iat/TranslationWords.html:272
 #: templates/iat/TranslationWords.html:273
 msgid "Competent or Government --- Incompetent --- Reliable"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Zanesljiv"
 
 #: templates/iat/TranslationWords.html:274
 #: templates/iat/TranslationWords.html:275
 msgid "Competent or Government --- Incompetent --- Smart"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Pameten"
 
 #: templates/iat/TranslationWords.html:276
 #: templates/iat/TranslationWords.html:277
 msgid "Competent or Government --- Incompetent --- Proficient"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Usposobljen"
 
 #: templates/iat/TranslationWords.html:279
 #: templates/iat/TranslationWords.html:280
 #: templates/iat/TranslationWords.html:281
 #: templates/iat/TranslationWords.html:282
 msgid "Competent or Government --- Incompetent --- Inexperienced"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Neizkusen"
 
 #: templates/iat/TranslationWords.html:283
 #: templates/iat/TranslationWords.html:284
 #: templates/iat/TranslationWords.html:285
 msgid "Competent or Government --- Incompetent --- Useless"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Neupraben"
 
 #: templates/iat/TranslationWords.html:286
 #: templates/iat/TranslationWords.html:287
 #: templates/iat/TranslationWords.html:288
 msgid "Competent or Government --- Incompetent --- Powerless"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Nemocen"
 
 #: templates/iat/TranslationWords.html:289
 #: templates/iat/TranslationWords.html:290
 #: templates/iat/TranslationWords.html:291
 #: templates/iat/TranslationWords.html:292
 msgid "Competent or Government --- Incompetent --- Inefficient"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:293
 #: templates/iat/TranslationWords.html:294
 #: templates/iat/TranslationWords.html:295
 #: templates/iat/TranslationWords.html:296
 msgid "Competent or Government --- Incompetent --- Weak"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Sibek"
 
 #: templates/iat/TranslationWords.html:297
 #: templates/iat/TranslationWords.html:298
 #: templates/iat/TranslationWords.html:299
 msgid "Competent or Government --- Incompetent --- Unskilled"
-msgstr ""
+msgstr "Sposoben ali drzavna daministracija — Nesposoben — Nekvalificirani"
 
 #: templates/iat/TranslationWords.html:302
 #: templates/iat/TranslationWords.html:303
 msgid "Competent --- Incompetent or Government --- Public Administration"
 msgstr ""
+"Sposoben — Nesposoben ali drzavna daministracija — Javna administracija"
 
 #: templates/iat/TranslationWords.html:304
 #: templates/iat/TranslationWords.html:305
 #: templates/iat/TranslationWords.html:306
 msgid "Competent --- Incompetent or Government --- Civil Servants"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Javni usluzbenci"
 
 #: templates/iat/TranslationWords.html:307
 #: templates/iat/TranslationWords.html:308
 #: templates/iat/TranslationWords.html:309
 msgid "Competent --- Incompetent or Government --- Regulation"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Drzava"
 
 #: templates/iat/TranslationWords.html:310
 #: templates/iat/TranslationWords.html:311
 #: templates/iat/TranslationWords.html:312
 msgid "Competent --- Incompetent or Government --- State"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Drzava"
 
 #: templates/iat/TranslationWords.html:313
 #: templates/iat/TranslationWords.html:314
 #: templates/iat/TranslationWords.html:315
 msgid "Competent --- Incompetent or Government --- Constitution"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Ustava"
 
 #: templates/iat/TranslationWords.html:316
 #: templates/iat/TranslationWords.html:317
 msgid "Competent --- Incompetent or Government --- Inexperienced"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Neizkusen"
 
 #: templates/iat/TranslationWords.html:318
 #: templates/iat/TranslationWords.html:319
 #: templates/iat/TranslationWords.html:320
 msgid "Competent --- Incompetent or Government --- Inefficient"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:321
 #: templates/iat/TranslationWords.html:322
 msgid "Competent --- Incompetent or Government --- Powerless"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Nemocen"
 
 #: templates/iat/TranslationWords.html:323
 #: templates/iat/TranslationWords.html:324
 msgid "Competent --- Incompetent or Government --- Useless"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Neupraben"
 
 #: templates/iat/TranslationWords.html:325
 #: templates/iat/TranslationWords.html:326
 #: templates/iat/TranslationWords.html:327
 msgid "Competent --- Incompetent or Government --- Unskilled"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Nekvalificirani"
 
 #: templates/iat/TranslationWords.html:328
 #: templates/iat/TranslationWords.html:329
 msgid "Competent --- Incompetent or Government --- Weak"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Sibek"
 
 #: templates/iat/TranslationWords.html:331
 #: templates/iat/TranslationWords.html:332
 #: templates/iat/TranslationWords.html:333
 #: templates/iat/TranslationWords.html:334
 msgid "Competent --- Incompetent or Government --- Proficient"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Usposobljen"
 
 #: templates/iat/TranslationWords.html:335
 #: templates/iat/TranslationWords.html:336
 #: templates/iat/TranslationWords.html:337
 #: templates/iat/TranslationWords.html:338
 msgid "Competent --- Incompetent or Government --- Reliable"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Zanesljiv"
 
 #: templates/iat/TranslationWords.html:339
 #: templates/iat/TranslationWords.html:340
 #: templates/iat/TranslationWords.html:341
 msgid "Competent --- Incompetent or Government --- Smart"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Pameten"
 
 #: templates/iat/TranslationWords.html:342
 #: templates/iat/TranslationWords.html:343
 #: templates/iat/TranslationWords.html:344
 msgid "Competent --- Incompetent or Government --- Capable"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Zmožen"
 
 #: templates/iat/TranslationWords.html:345
 #: templates/iat/TranslationWords.html:346
 #: templates/iat/TranslationWords.html:347
 #: templates/iat/TranslationWords.html:348
 msgid "Competent --- Incompetent or Government --- Bright"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Bister"
 
 #: templates/iat/TranslationWords.html:349
 #: templates/iat/TranslationWords.html:350
 #: templates/iat/TranslationWords.html:351
 msgid "Competent --- Incompetent or Government --- Skilful"
-msgstr ""
+msgstr "Sposoben — Nesposoben ali drzavna daministracija — Spreten"
 
 #: templates/iat/TranslationWords.html:354
 #: templates/iat/TranslationWords.html:356
 msgid "Honest --- Dishonest --- Truthful"
-msgstr ""
+msgstr "Posten — Neposten — Iskren"
 
 #: templates/iat/TranslationWords.html:355
 #: templates/iat/TranslationWords.html:371
 msgid "Honest --- Dishonest --- Moral"
-msgstr ""
+msgstr "Posten — Neposten — Moralno"
 
 #: templates/iat/TranslationWords.html:357
 #: templates/iat/TranslationWords.html:361
 msgid "Honest --- Dishonest --- Lying"
-msgstr ""
+msgstr "Posten — Neposten — Lagati"
 
 #: templates/iat/TranslationWords.html:358
 msgid "Honest --- Dishonest --- Transparent"
-msgstr ""
+msgstr "Posten — Neposten — Transparanten"
 
 #: templates/iat/TranslationWords.html:359
 msgid "Honest --- Dishonest --- Corrupt"
-msgstr ""
+msgstr "Posten — Neposten — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:360
 #: templates/iat/TranslationWords.html:369
 msgid "Honest --- Dishonest --- Immoral"
-msgstr ""
+msgstr "Posten — Neposten — Nemoralno"
 
 #: templates/iat/TranslationWords.html:362
 #: templates/iat/TranslationWords.html:365
 msgid "Honest --- Dishonest --- Unfair"
-msgstr ""
+msgstr "Posten — Neposten — Nepravicen"
 
 #: templates/iat/TranslationWords.html:363
 msgid "Honest --- Dishonest --- Open"
-msgstr ""
+msgstr "Posten — Neposten — Odprt"
 
 #: templates/iat/TranslationWords.html:364
 msgid "Honest --- Dishonest --- Credible"
-msgstr ""
+msgstr "Posten — Neposten — Verodostojen"
 
 #: templates/iat/TranslationWords.html:366
 #: templates/iat/TranslationWords.html:370
 msgid "Honest --- Dishonest --- Unscupulous"
-msgstr ""
+msgstr "Posten — Neposten — Brezobziren"
 
 #: templates/iat/TranslationWords.html:367
 msgid "Honest --- Dishonest --- Illegitimate"
-msgstr ""
+msgstr "Posten — Neposten — Nelegitimen"
 
 #: templates/iat/TranslationWords.html:368
 msgid "Honest --- Dishonest --- Fair"
-msgstr ""
+msgstr "Posten — Neposten — Pravicen"
 
 #: templates/iat/TranslationWords.html:373
 #: templates/iat/TranslationWords.html:374
 msgid "Honest or Government --- Dishonest --- Constitution"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Ustava"
 
 #: templates/iat/TranslationWords.html:375
 #: templates/iat/TranslationWords.html:376
 msgid "Honest or Government --- Dishonest --- State"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten —Drzava"
 
 #: templates/iat/TranslationWords.html:377
 #: templates/iat/TranslationWords.html:378
 msgid "Honest or Government --- Dishonest --- Public administration"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Javna administracija"
 
 #: templates/iat/TranslationWords.html:379
 #: templates/iat/TranslationWords.html:380
 msgid "Honest or Government --- Dishonest --- Civil servants"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Javni usluzbenci"
 
 #: templates/iat/TranslationWords.html:381
 #: templates/iat/TranslationWords.html:382
 msgid "Honest or Government --- Dishonest --- Politicians"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Politiki"
 
 #: templates/iat/TranslationWords.html:383
 #: templates/iat/TranslationWords.html:384
 msgid "Honest or Government --- Dishonest --- Court"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Sodisce"
 
 #: templates/iat/TranslationWords.html:385
 #: templates/iat/TranslationWords.html:386
 #: templates/iat/TranslationWords.html:387
 msgid "Honest or Government --- Dishonest --- Transparent"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Transparanten"
 
 #: templates/iat/TranslationWords.html:388
 #: templates/iat/TranslationWords.html:389
 msgid "Honest or Government --- Dishonest --- Fair"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Pravicen"
 
 #: templates/iat/TranslationWords.html:390
 #: templates/iat/TranslationWords.html:391
 msgid "Honest or Government --- Dishonest --- Truthful"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Iskren"
 
 #: templates/iat/TranslationWords.html:392
 #: templates/iat/TranslationWords.html:393
 msgid "Honest or Government --- Dishonest --- Open"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Odprt"
 
 #: templates/iat/TranslationWords.html:394
 #: templates/iat/TranslationWords.html:395
 #: templates/iat/TranslationWords.html:396
 msgid "Honest or Government --- Dishonest --- Credible"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Verodostojen"
 
 #: templates/iat/TranslationWords.html:397
 #: templates/iat/TranslationWords.html:398
 msgid "Honest or Government --- Dishonest --- Moral"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Moralno"
 
 #: templates/iat/TranslationWords.html:400
 #: templates/iat/TranslationWords.html:401
 #: templates/iat/TranslationWords.html:402
 #: templates/iat/TranslationWords.html:403
 msgid "Honest or Government --- Dishonest --- Immoral"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Nemoralno"
 
 #: templates/iat/TranslationWords.html:404
 #: templates/iat/TranslationWords.html:405
 #: templates/iat/TranslationWords.html:406
 #: templates/iat/TranslationWords.html:407
 msgid "Honest or Government --- Dishonest --- Corrupt"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Pordkupljiv"
 
 #: templates/iat/TranslationWords.html:408
 #: templates/iat/TranslationWords.html:409
 #: templates/iat/TranslationWords.html:410
 msgid "Honest or Government --- Dishonest --- Unscrupulous"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Brezobziren"
 
 #: templates/iat/TranslationWords.html:411
 #: templates/iat/TranslationWords.html:412
 #: templates/iat/TranslationWords.html:413
 #: templates/iat/TranslationWords.html:414
 msgid "Honest or Government --- Dishonest --- Lying"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Lagati"
 
 #: templates/iat/TranslationWords.html:415
 #: templates/iat/TranslationWords.html:416
 #: templates/iat/TranslationWords.html:417
 msgid "Honest or Government --- Dishonest --- Illegitimate"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Nelegitimen"
 
 #: templates/iat/TranslationWords.html:418
 #: templates/iat/TranslationWords.html:419
 #: templates/iat/TranslationWords.html:420
 msgid "Honest or Government --- Dishonest --- Unfair"
-msgstr ""
+msgstr "Posten ali drzavna daministracija— Neposten — Nepravicen"
 
 #: templates/iat/TranslationWords.html:422
 #: templates/iat/TranslationWords.html:423
 #: templates/iat/TranslationWords.html:424
 msgid "Honest --- Dishonest or Government --- Public administration"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Javna administracija"
 
 #: templates/iat/TranslationWords.html:425
 #: templates/iat/TranslationWords.html:426
 msgid "Honest --- Dishonest or Government --- Civil Servants"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Javni usluzbenci"
 
 #: templates/iat/TranslationWords.html:427
 #: templates/iat/TranslationWords.html:428
 msgid "Honest --- Dishonest or Government --- Politicians"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Politiki"
 
 #: templates/iat/TranslationWords.html:429
 #: templates/iat/TranslationWords.html:430
 msgid "Honest --- Dishonest or Government --- State"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Drzava"
 
 #: templates/iat/TranslationWords.html:431
 #: templates/iat/TranslationWords.html:432
 msgid "Honest --- Dishonest or Government --- Constitution"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Ustava"
 
 #: templates/iat/TranslationWords.html:433
 #: templates/iat/TranslationWords.html:434
 #: templates/iat/TranslationWords.html:435
 msgid "Honest --- Dishonest or Government --- Regulation"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Uredba"
 
 #: templates/iat/TranslationWords.html:436
 #: templates/iat/TranslationWords.html:437
 msgid "Honest --- Dishonest or Government --- Unfair"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Nepravicen"
 
 #: templates/iat/TranslationWords.html:438
 #: templates/iat/TranslationWords.html:439
 #: templates/iat/TranslationWords.html:440
 msgid "Honest --- Dishonest or Government --- Corrupt"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:441
 #: templates/iat/TranslationWords.html:442
 msgid "Honest --- Dishonest or Government --- Immoral"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Nemoralno"
 
 #: templates/iat/TranslationWords.html:443
 #: templates/iat/TranslationWords.html:444
 msgid "Honest --- Dishonest or Government --- Illegitimate"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Nelegitimen"
 
 #: templates/iat/TranslationWords.html:445
 #: templates/iat/TranslationWords.html:446
 #: templates/iat/TranslationWords.html:447
 msgid "Honest --- Dishonest or Government --- Lying"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Lagati"
 
 #: templates/iat/TranslationWords.html:448
 #: templates/iat/TranslationWords.html:449
 msgid "Honest --- Dishonest or Government --- Unscrupulous"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Brezobziren"
 
 #: templates/iat/TranslationWords.html:451
 #: templates/iat/TranslationWords.html:452
 #: templates/iat/TranslationWords.html:453
 #: templates/iat/TranslationWords.html:454
 msgid "Honest --- Dishonest or Government --- Moral"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Moralno"
 
 #: templates/iat/TranslationWords.html:455
 #: templates/iat/TranslationWords.html:456
 #: templates/iat/TranslationWords.html:457
 msgid "Honest --- Dishonest or Government --- Fair"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Pravicen"
 
 #: templates/iat/TranslationWords.html:458
 #: templates/iat/TranslationWords.html:459
 #: templates/iat/TranslationWords.html:460
 msgid "Honest --- Dishonest or Government --- Open"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Odprt"
 
 #: templates/iat/TranslationWords.html:461
 #: templates/iat/TranslationWords.html:462
 #: templates/iat/TranslationWords.html:463
 #: templates/iat/TranslationWords.html:464
 msgid "Honest --- Dishonest or Government --- Truthful"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Iskren"
 
 #: templates/iat/TranslationWords.html:465
 #: templates/iat/TranslationWords.html:466
 #: templates/iat/TranslationWords.html:467
 msgid "Honest --- Dishonest or Government --- Credible"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Verodostojen"
 
 #: templates/iat/TranslationWords.html:468
 #: templates/iat/TranslationWords.html:469
 #: templates/iat/TranslationWords.html:470
 #: templates/iat/TranslationWords.html:471
 msgid "Honest --- Dishonest or Government --- Transparent"
-msgstr ""
+msgstr "Posten — Neposten ali drzavna daministracija — Transparanten"
