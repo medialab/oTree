@@ -129,7 +129,6 @@ SESSION_CONFIG_DEFAULTS = {
 
 
 SESSION_CONFIGS = trustlab_apps_config.SESSION_CONFIGS
-
 ROOMS_DEFAULTS = trustlab_apps_config.ROOMS_DEFAULTS
 ROOMS = trustlab_apps_config.ROOMS
 
