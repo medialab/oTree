@@ -140,14 +140,14 @@ class Survey10_5(Page):
     form_model = models.Player
     form_fields = [
         'complaint_about_quality_of_public_service_likely_resolved',
-        'technology_speed_up_likely_to_be_adopted'
+        # 'technology_speed_up_likely_to_be_adopted'
     ]
 
 class Survey11(Page):
 
     form_model = models.Player
     form_fields = [
-        'information_about_administrative_producedure_easy_to_find',
+        # 'information_about_administrative_producedure_easy_to_find',
         'decision_affecting_community_likely_to_be_consulted_upon'
     ]
 
@@ -156,7 +156,7 @@ class Survey12(Page):
 
     form_model = models.Player
     form_fields = [
-        'start_a_business_conditions_stability',
+        # 'start_a_business_conditions_stability',
         'natural_disaster_shelter_and_clothing_availability'
     ]
 
@@ -208,7 +208,7 @@ class Survey17(Page):
 
     form_model = models.Player
     form_fields = [
-        'how_many_children_part_of_the_richest_segment',
+        # 'how_many_children_part_of_the_richest_segment',
         'not_much_or_plenty_of_opportunity'
     ]
 
@@ -292,7 +292,7 @@ class Survey26(Page):
 
     form_model = models.Player
     form_fields = [
-        'voting_can_or_cannot_make_a_difference',
+        # 'voting_can_or_cannot_make_a_difference',
         'political_left_center_right'
     ]
 
@@ -470,7 +470,7 @@ page_sequence = [
     Survey13,
     Survey14,
     Survey15,
-    Survey16,
+    # Survey16,
     Survey17,
     Survey18,
     Survey19,

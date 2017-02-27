@@ -1718,6 +1718,25 @@ class Player(BasePlayer):
         )
     )
 
+    people_like_me_dont_have_a_say = models.CharField(
+        verbose_name=_(u"People like me don’t have any say about what the government does"),
+        widget=widgets.RadioSelectHorizontal(),
+        choices=(
+            ('0', _(u"0 - I don't agree at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u"10 - I fully agree")),
+            ("Don't know", _(u"Don't know"))
+        )
+    )
+
     which_device_did_you_take_this_study_on = models.CharField(
         verbose_name=_(u'Which device are you taking this study on?'),
         widget=widgets.RadioSelect(),
