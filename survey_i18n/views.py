@@ -15,6 +15,15 @@ def vars_for_all_templates(self):
     }
 
 
+# TODO: update "Which device are you taking this study on?" in SL
+class Survey00(Page):
+
+    form_model = models.Player
+    form_fields = [
+        'which_device_did_you_take_this_study_on'
+    ]
+
+
 class Survey01(Page):
 
     form_model = models.Player
@@ -440,7 +449,6 @@ class Survey38(Page):
 
     form_model = models.Player
     form_fields = [
-        'which_device_did_you_take_this_study_on',
         'open_comment'
     ]
 

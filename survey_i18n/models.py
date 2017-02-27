@@ -1719,7 +1719,7 @@ class Player(BasePlayer):
     )
 
     which_device_did_you_take_this_study_on = models.CharField(
-        verbose_name=_(u'How important would you say religion is in your own life?'),
+        verbose_name=_(u'Which device are you taking this study on?'),
         widget=widgets.RadioSelect(),
         choices=(
             ('desktop', _(u"Desktop")),
