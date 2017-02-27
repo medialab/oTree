@@ -293,6 +293,7 @@ class Survey26(Page):
     form_model = models.Player
     form_fields = [
         # 'voting_can_or_cannot_make_a_difference',
+        'people_like_me_dont_have_a_say',
         'political_left_center_right'
     ]
 
