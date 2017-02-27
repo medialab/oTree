@@ -77,6 +77,8 @@ LANGUAGES = [
 REAL_WORLD_CURRENCY_CODE = ''
 if LANGUAGE_CODE == 'ko':
     REAL_WORLD_CURRENCY_CODE = 'KRW'
+elif LANGUAGE_CODE == 'en':
+    REAL_WORLD_CURRENCY_CODE = 'USD'
 else:
     REAL_WORLD_CURRENCY_CODE = 'EUR'
 
@@ -98,19 +100,19 @@ oTree games
 # https://boto.readthedocs.org/en/latest/ref/mturk.html?highlight=mturk#module-boto.mturk.qualification
 
 mturk_hit_settings = {
-    'keywords': ['easy', 'bonus', 'choice', 'study'],
-    'title': 'Title for your experiment',
-    'description': 'Description for your experiment',
-    'frame_height': 500,
+    'keywords': ['Decision-making', 'sorting words', 'survey'],
+    'title': 'Study on decision-making  - bonus up to $40',
+    'description': '25 minute study on human decision-making and interaction, opportunity of receiving a bonus of up to $40 on top of the HIT reward, NEED TO USE CHROME OR FIREFOX',
+    'frame_height': 800,
     'preview_template': 'global/MTurkPreview.html',
-    'minutes_allotted_per_assignment': 60,
-    'expiration_hours': 7*24,  # 7 days
-    # 'grant_qualification_id': 'YOUR_QUALIFICATION_ID_HERE',# to prevent retakes
+    'minutes_allotted_per_assignment': 25,
+    'expiration_hours': 13,
+    'grant_qualification_id': environ.get('MTURK_GRANT_QUALIFICATION_ID', ''),  # to prevent retakes
     'qualification_requirements': [
-        # qualification.LocaleRequirement("EqualTo", "US"),
-        # qualification.PercentAssignmentsApprovedRequirement("GreaterThanOrEqualTo", 50),
-        # qualification.NumberHitsApprovedRequirement("GreaterThanOrEqualTo", 5),
-        # qualification.Requirement('YOUR_QUALIFICATION_ID_HERE', 'DoesNotExist')
+        qualification.LocaleRequirement("EqualTo", "US"),
+        qualification.PercentAssignmentsApprovedRequirement("GreaterThanOrEqualTo", 97),
+        qualification.NumberHitsApprovedRequirement("GreaterThanOrEqualTo", 5000),
+        qualification.Requirement(environ.get('MTURK_GRANT_QUALIFICATION_ID', ''), 'DoesNotExist')
     ]
 }
 
