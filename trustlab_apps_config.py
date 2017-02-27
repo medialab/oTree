@@ -150,7 +150,7 @@ SESSION_CONFIGS = [
             'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
             'redirect_speedsters', 'earnings', 'redirect_completes'
         ],
-        'speedsters_threshold': 1,
+        'speedsters_threshold': 10 * 60,
         'treatment': 'A1',
         'payoff_group': 1,
         'quota_redirects': quota_redirects_ko,

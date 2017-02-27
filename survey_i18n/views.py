@@ -455,6 +455,7 @@ class Survey38(Page):
 
 
 page_sequence = [
+    Survey00,
     Survey01,
     Survey02,
     Survey03,

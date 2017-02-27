@@ -9,6 +9,14 @@ from babel.numbers import parse_decimal
 from decimal import Decimal
 
 
+def vars_for_all_templates(self):
+        return {'mturk_code': self.participant.vars['uuid']}
+
+
+class MTurk(Page):
+    pass
+
+
 class Calculate(Page):
     """Calculate then redirect to last page."""
 
@@ -23,7 +31,7 @@ class Display(Page):
     """Display page."""
 
     form_model = models.Player
-    form_fields = ['donation']
+    form_fields = ['donation', 'mturk_uuid']
 
     def str_to_money(self, s):
         """Transform string representing money into float numbers."""
@@ -99,4 +107,4 @@ class Display(Page):
         }
 
 
-page_sequence = [Calculate, Display]
+page_sequence = [Calculate, Display, MTurk]
