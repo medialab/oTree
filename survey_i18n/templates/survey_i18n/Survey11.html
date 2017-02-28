@@ -4,7 +4,9 @@
 
 {% block content %}
 
+  {% formfield player.complaint_about_quality_of_public_service_likely_resolved %}
   {% formfield player.decision_affecting_community_likely_to_be_consulted_upon %}
+  {% formfield player.natural_disaster_shelter_and_clothing_availability %}
 
   <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
 

@@ -42,7 +42,9 @@ class Player(BasePlayer):
     overall_how_satisfied_are_you_with_life = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
-        verbose_name=_(u"Overall, how satisfied are you with life as a whole these days?"),
+        verbose_name=_(
+            u"Overall, how satisfied are you with life as a whole these days? The following question asks how satisfied you feel on a scale from 0 to 10. Zero means you feel \"not at all satisfied\" and 10 means \"completely satisfied\"."
+        ),
         choices=(
             ('0', _(u"0 - Not at all satisfied")),
             ('1', '1'),
@@ -485,6 +487,26 @@ class Player(BasePlayer):
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(u"The government"),
+        choices=(
+            ('0', _(u"0 - I don’t trust them at all")),
+            ('1', '1'),
+            ('2', '2'),
+            ('3', '3'),
+            ('4', '4'),
+            ('5', '5'),
+            ('6', '6'),
+            ('7', '7'),
+            ('8', '8'),
+            ('9', '9'),
+            ('10', _(u"10 - I fully trust them")),
+            ("Don't know", _(u"Don't know"))
+        )
+    )
+
+    trust_the_civil_service = models.CharField(
+        initial=None,
+        widget=widgets.RadioSelectHorizontal(),
+        verbose_name=_(u"The civil service"),
         choices=(
             ('0', _(u"0 - I don’t trust them at all")),
             ('1', '1'),
@@ -1615,7 +1637,7 @@ class Player(BasePlayer):
     )
 
     highest_level_of_education_your_parent_has_completed = models.CharField(
-        verbose_name=_(u'What is the highest level of education that one of your parents has completed? (either one, or both have completed this level of education)'),
+        verbose_name=_(u'What is the highest level of education that <strong>one of your parents</strong> has completed? (either one, or both have completed this level of education)'),
         widget=widgets.RadioSelect(),
         choices=(
             ('less than high school', _(u"Less than high school")),

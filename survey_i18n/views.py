@@ -100,6 +100,7 @@ class Survey08(Page):
     form_model = models.Player
     form_fields = [
         'trust_the_government',
+        'trust_the_civil_service',
         'trust_the_parliament',
         'trust_the_judicial_system',
         'trust_the_police',
@@ -139,7 +140,7 @@ class Survey10_5(Page):
 
     form_model = models.Player
     form_fields = [
-        'complaint_about_quality_of_public_service_likely_resolved',
+        # 'complaint_about_quality_of_public_service_likely_resolved',
         # 'technology_speed_up_likely_to_be_adopted'
     ]
 
@@ -148,7 +149,9 @@ class Survey11(Page):
     form_model = models.Player
     form_fields = [
         # 'information_about_administrative_producedure_easy_to_find',
-        'decision_affecting_community_likely_to_be_consulted_upon'
+        'complaint_about_quality_of_public_service_likely_resolved',
+        'decision_affecting_community_likely_to_be_consulted_upon',
+        'natural_disaster_shelter_and_clothing_availability'
     ]
 
 
@@ -157,7 +160,7 @@ class Survey12(Page):
     form_model = models.Player
     form_fields = [
         # 'start_a_business_conditions_stability',
-        'natural_disaster_shelter_and_clothing_availability'
+        # 'natural_disaster_shelter_and_clothing_availability'
     ]
 
 
@@ -165,7 +168,7 @@ class Survey13(Page):
 
     form_model = models.Player
     form_fields = [
-        'guilty_high_ranking_gov_employee_likely_prosecuted',
+        # 'guilty_high_ranking_gov_employee_likely_prosecuted',
         'accept_or_refuse_administrative_procedures_speed_up_bribe',
         'high_ranking_gov_employee_accepts_well_paid_private_sector_job',
         'accept_or_refuse_public_procurement_tender_allocation_bribe'
@@ -238,8 +241,8 @@ class Survey20(Page):
         'how_much_info_from_tv',
         'how_much_info_from_internet',
         'how_much_info_from_family_friends_coworkers',
-        'how_much_info_from_social_networks',
-        'how_much_info_from_print_media'
+        # 'how_much_info_from_social_networks',
+        # 'how_much_info_from_print_media'
     ]
 
 
@@ -459,25 +462,25 @@ page_sequence = [
     Survey01,
     Survey02,
     Survey03,
-    Survey04,
+    # Survey04,
     Survey05,
     Survey06,
     Survey07,
     Survey08,
     Survey09,
     Survey10,
-    Survey10_5,
+    # Survey10_5,
     Survey11,
-    Survey12,
+    # Survey12,
     Survey13,
     Survey14,
-    Survey15,
+    # Survey15,
     # Survey16,
     Survey17,
     Survey18,
     Survey19,
     Survey20,
-    Survey21,
+    # Survey21,
     Survey22,
     Survey23,
     Survey24,
@@ -490,7 +493,7 @@ page_sequence = [
     Survey31,
     Survey32,
     Survey33,
-    Survey34,
+    # Survey34,
     Survey35,
     Survey36,
     Survey37,
