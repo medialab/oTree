@@ -157,13 +157,13 @@ class SendBack(Page):
 
         sent_back_amount_3_label = {
             'fr': _(
-                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
+                u'If Participant A sends you €3 (your total endowment is now €19). How much will you send back to Participant A:'
             ),
             'en': _(
-                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
+                u'If Participant A sends you €3 (your total endowment is now €19). How much will you send back to Participant A:'
             ),
             'sl': _(
-                u'If Participant A sends you €3 (your total endowment is now €9). How much will you send back to Participant A:'
+                u'If Participant A sends you €3 (your total endowment is now €19). How much will you send back to Participant A:'
             ),
             'ko': _(
                 u'If Participant A sends you 3.600 Won (you receive 3.600 Won × 3 = 10.800 Won). How much will you send back to Participant A:'

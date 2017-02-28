@@ -6,7 +6,10 @@
 <h1 style="color:#800080">{% trans "Task Three: Introduction" %}</h1>
 <hr/>
 <p>{% trans "This last task involves <strong>two participants</strong> – Participant A and Participant B." %}</p>
-<p>{% trans "Remember, the other participant is different from the ones you interacted with in the previous two tasks." %}</p>
+<p>
+  {% trans "Remember, the other participant is different from the ones you interacted with in the previous two tasks." %}
+  {% trans "However, they all live in [country]." %}
+</p>
 <p>{% trans "These are the rules:" %}</p>
 <ul>
   <li>{% blocktrans %}At the beginning, Participant A receives {{amount}}.{% endblocktrans %}</li>

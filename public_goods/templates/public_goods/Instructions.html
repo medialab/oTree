@@ -9,12 +9,9 @@
 <p><strong>{% trans "These are the rules:" %}</strong></p>
 <ul>
   <li>{% blocktrans %}At the beginning, each group member has {{allocated_amount}}.{% endblocktrans %}</li>
-  <li>{% blocktrans %}Every group member has to choose how much of these {{allocated_amount}} he or she wants to keep and how much he or she wants to transfer into a <strong>joint project</strong>.{% endblocktrans %}</li>
+  <li>{% blocktrans %}Every group member has to choose how much of these {{allocated_amount}} he or she wants to keep and how much he or she wants to invest into a <strong>joint project</strong>.{% endblocktrans %}</li>
   <li>{% blocktrans with factor=Constants.efficiency_factor %}The total amount contributed into the joint project is <strong>multiplied by {{factor}}.</strong>{% endblocktrans %}</li>
   <li>{% trans "At the end, the money in the joint project will be re-divided and <strong>split equally between all 4 group members</strong> (including yourself)." %}</li>
 </ul>
-<p>{% trans "For example, if all 4 participants put all 10 of their euros into the joint project, the 40 euros become 64 euros, and when that is split equally, each participant gets 16 euros." %}</p>
-<p>{% trans "As another example, if each of the 4 participants keeps his or her 10 euros, then there is nothing to multiply in the joint project, and each participant gets 10 euros." %}</p>
-<p>{% trans "As a third example, suppose two participants put 10 euros each into the project and two put 5 euros each into the project. The joint project amounts to 30 x 1.6 = 48 euros." %} {% trans "The participants who put 10 euros in the project have not retained any money, so they each get 12 euros in total. The participants who put 5 euros in the project each retained 5 euros, so each of those participants ends up with 12 + 5 = 17 euros." %}</p>
 
 {% endblock %}

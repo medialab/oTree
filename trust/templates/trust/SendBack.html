@@ -10,8 +10,9 @@
 {% trans "On this screen you will make the decisions that will count if you are selected for that role." %}<br>
 {% trans "Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
 
-<p>{% blocktrans %}You already have {{amount_allocated}} in your possession.{% endblocktrans %}</p>
-<p>{% trans "If Participant A sends you any of the amounts listed in the table below, <strong>how much money do you want to send back to Participant A</strong>?" %}</p>
+<p>{% blocktrans %}As always, your initial endowment is {{amount_allocated}}.{% endblocktrans %}</p>
+<p>{% trans "If Participant A sends you any of the amounts listed in the table below, <strong>how much money (if any) do you want to send back to Participant A</strong>?" %}</p>
+<p>{% trans "Remember that Participant A also starts with an endowment of {{amount_allocated}}." %}</p>
 
 <p>{% trans "All of your choices below can impact how much money you will receive at the end of the study." %}</p>
 

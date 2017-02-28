@@ -6,7 +6,9 @@
 <h1 style="color:#800080">{% trans "Task Three: Real Decision" %}</h1>
 <p>{% trans "This is the real third task. Once you have made your decision and clicked the “Next” button, you cannot return to this screen." %}</p>
 <p>{% trans "Suppose that you are selected to be in the role of <strong>Participant A</strong>." %}</p>
-<p>{% blocktrans %}You have {{amount}} in your possession.{% endblocktrans %} <strong>{% trans "How much do you want to transfer to Participant B?" %}</strong> </p>
+<p>{% blocktrans %}You have {{amount}} in your possession.{% endblocktrans %}
+  <strong>{% trans "How much (if any) do you want to transfer to Participant B?" %}</strong>
+</p>
 <p>
 {% formfield player.given %}
 </p>
