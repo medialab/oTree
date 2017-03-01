@@ -29,7 +29,7 @@ class Survey01(Page):
     form_model = models.Player
     form_fields = [
         'overall_how_satisfied_are_you_with_life',
-        'would_you_say_that_most_people_can_be_trusted'
+        'how_much_do_you_trust_most_people_in_your_country'
     ]
 
 
@@ -91,7 +91,7 @@ class Survey07(Page):
 
     form_model = models.Player
     form_fields = [
-        'how_much_do_you_trust_most_people_in_your_country'
+        'would_you_say_that_most_people_can_be_trusted'
     ]
 
 
