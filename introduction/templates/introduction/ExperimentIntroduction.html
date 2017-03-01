@@ -5,7 +5,7 @@
 {% block content %}
   <h3>
   {% trans "Welcome!" %}<br/>
-  {% trans "Our research team including researchers from Sciences Po Paris, Brown University and Kiel University, invites you to participate in a quick online study on decision-making." %}
+  {% trans "Our research team* invites you to participate in a quick online study on decision-making." %}
   </h3>
 
   <h3>{% trans "Study information" %}</h3>
@@ -38,4 +38,8 @@
   {% endif %}
 
   <button class="btn btn-primary pull-right">{% trans "Begin" %}</button>
+
+  <br><br>
+
+  <h6>{% trans "*including researchers from Sciences Po Paris, Brown University and Kiel University" %}</h6>
 {% endblock %}

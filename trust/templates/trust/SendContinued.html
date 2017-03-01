@@ -7,8 +7,7 @@
 <h1 style="color:#357EBD">{% trans "Task One: Real Task continued (Participant A)" %}</h1>
 
 <p>{% blocktrans %}Suppose some Participant A has sent 5 euros, so Participant B receives {{received_by_b}}, making her total budget 10 euros + {{received_by_b}} = {{total_budget_b_str}}.{% endblocktrans %}</p>
-<p>{% trans "You, Participant A, have 5 euros left" %}
-<br>{% blocktrans %}What amount do you <strong>expect</strong> Participant B to return to you, Participant A?{% endblocktrans %}</p>
+<p>{% blocktrans %}What amount do you <strong>expect</strong> Participant B to return to this Participant A{% endblocktrans %}</p>
 <p>{% blocktrans %}Please enter a number from 0 to {{total_budget_b_str}}.{% endblocktrans %}</p>
 
 <hr/>
