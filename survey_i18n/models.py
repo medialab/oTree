@@ -43,7 +43,7 @@ class Player(BasePlayer):
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
         verbose_name=_(
-            u"Overall, how satisfied are you with life as a whole these days? The following question asks how satisfied you feel on a scale from 0 to 10. Zero means you feel \"not at all satisfied\" and 10 means \"completely satisfied\"."
+            u"The following question asks how satisfied you feel on a scale from 0 to 10. Zero means you feel \"not at all satisfied\" and 10 means \"completely satisfied\". Overall, how satisfied are you with life as a whole these days?"
         ),
         choices=(
             ('0', _(u"0 - Not at all satisfied")),
@@ -1701,11 +1701,11 @@ class Player(BasePlayer):
         verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect(),
         choices=(
-            ('0 to 9000 (1st quintile)', _(u"0 to 9.000")),
-            ('9001 to 12500 (2nd quintile)', _(u"9.001 to 12.500")),
-            ('12501 to 15000 (3rd quintile)', _(u"12.501 to 15.000")),
-            ('15001 to 20000 (4th quintile)', _(u"15.001 to 20.000")),
-            ('20001 > (5th quintile)', _(u"20.001 and above"))
+            ('0 to 9000 (1st quintile)', _(u"€0 to €9000")),
+            ('9001 to 12500 (2nd quintile)', _(u"€9001 to €12500")),
+            ('12501 to 15000 (3rd quintile)', _(u"€12501 to €15000")),
+            ('15001 to 20000 (4th quintile)', _(u"€15001 to €20000")),
+            ('20001 > (5th quintile)', _(u"€20001 and above"))
         )
     )
 

@@ -1,0 +1,295 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-03-01 15:24+0100\n"
+"PO-Revision-Date: 2017-03-01 17:33+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.8\n"
+
+#: templates/public_goods/Contribute.html:6
+msgid "Task Two: Real Task"
+msgstr "Naloga dva: Prava odločitev"
+
+#: templates/public_goods/Contribute.html:7
+msgid ""
+"Now the real task starts. Once you have made your decision and clicked the "
+"“Next” button, you cannot return to this screen."
+msgstr ""
+"Zdaj je pred nami prava naloga. Potem, ko se boste enkrat odločili in "
+"pritisnili tipko \"Naprej\", se ne boste mogli več vrniti nazaj na to stran."
+
+#: templates/public_goods/Contribute.html:9
+#, python-format
+msgid ""
+"You have %(allocated_amount)s in your possession. You may choose to keep "
+"this money, or choose to invest some (or all) of it in the joint project."
+msgstr ""
+"V svoji lasti imate %(allocated_amount)s. Na voljo imate dve izibri, denar "
+"lahko obdrzite ali pa ga investirate v skupen projekt. <strong> Koliko "
+"zelite investirati v skupen projekt?</strong>"
+
+#: templates/public_goods/Contribute.html:10
+msgid "How much (if any) do you want to invest into the joint project?"
+msgstr "Koliko (če sploh) zelite investirati v skupen projekt?"
+
+#: templates/public_goods/Contribute.html:16
+#: templates/public_goods/ContributeBack.html:25
+#: templates/public_goods/EndGame.html:12
+#: templates/public_goods/Introduction.html:8
+#: templates/public_goods/Simulation.html:121
+msgid "Next"
+msgstr "Naprej"
+
+#: templates/public_goods/ContributeBack.html:8
+msgid "Task Two: Real Task continued"
+msgstr "Naloga dva: Prava naloga se nadaljuje"
+
+#: templates/public_goods/ContributeBack.html:9
+msgid ""
+"Now imagine that this time, you find out how much money the other three "
+"members of your group are transferring into the joint pot."
+msgstr ""
+"Sedaj si zamislite, da tokrat izveste koliko denarja bodo v skupen projekt "
+"nakazali ostali trije člani vase skupine."
+
+#: templates/public_goods/ContributeBack.html:10
+msgid ""
+"All of your choices below can impact how much money you will receive at the "
+"end of the study."
+msgstr ""
+"Vse vaše naslednje odločitve lahko vplivajo na končen obseg denarja, ki ga "
+"boste dobili na koncu raziskave."
+
+#: templates/public_goods/ContributeBack.html:11
+msgid ""
+"Please indicate how much (if any) you would like to invest in the joint "
+"project:"
+msgstr ""
+"Prosimo, navedite koliko (če sploh) bi želeli investirati v skupen projekt."
+
+#: templates/public_goods/EndGame.html:10
+msgid "Thank you very much for entering your choice."
+msgstr "Najlepše se vam zahvaljujemo za vnos vase izbire."
+
+#: templates/public_goods/EndGame.html:11
+msgid ""
+"We have recorded your decision. Again, your payoff will depend on the "
+"actions of the other players. Now, please proceed to the third task."
+msgstr ""
+"Vaša odločitev je shranjena. Ponovno vas opozarjamo, da bo vaš zaslužek "
+"odvisen od dejanj ostalih igralcev. Sedaj, prosimo da nadaljujte s tretjo "
+"nalogo."
+
+#: templates/public_goods/Instructions.html:6
+msgid "Task Two: Introduction"
+msgstr "Naloga dva: Uvod"
+
+#: templates/public_goods/Instructions.html:7
+msgid ""
+"In the second task, groups of <strong>4 participants</strong> (yourself and "
+"3 other people) are formed"
+msgstr ""
+"V drugi nalogi so oblikovane skupine, v katerih so <strong>4 udeleženci</"
+"strong> (Vi in 3 druge osebe)"
+
+#: templates/public_goods/Instructions.html:8
+msgid ""
+"Remember, the participants in this group are different from the person you "
+"interacted with in the previous task. However, they all live in [country]."
+msgstr ""
+"Prosimo zapomnite si, da udeleženci v tej skupini niso osebe s katerimi ste "
+"se srečali v prejšnjih nalogah. Ne glede na to še vedno vsi živijo v "
+"Sloveniji."
+
+#: templates/public_goods/Instructions.html:9
+msgid "These are the rules:"
+msgstr "Pravila so naslednja:"
+
+#: templates/public_goods/Instructions.html:11
+#, python-format
+msgid "At the beginning, each group member has %(allocated_amount)s."
+msgstr "Na začetku ima vsak član skupine %(allocated_amount)s."
+
+#: templates/public_goods/Instructions.html:12
+#, python-format
+msgid ""
+"Every group member has to choose how much of these %(allocated_amount)s he "
+"or she wants to keep and how much he or she wants to invest into a "
+"<strong>joint project</strong>."
+msgstr ""
+"Vsak član ali članica skupine se mora odločiti koliko od teh "
+"%(allocated_amount)s želi obdržati in koliko nakazati v <strong>skupen "
+"projekt</strong>."
+
+#: templates/public_goods/Instructions.html:13
+#, python-format
+msgid ""
+"The total amount contributed into the joint project is <strong>multiplied by "
+"%(factor)s.</strong>"
+msgstr ""
+"Celoten znesek investiran v skupen projekt bo <strong> pomnožen z %(factor)s."
+"</strong>"
+
+#: templates/public_goods/Instructions.html:14
+msgid ""
+"At the end, the money in the joint project will be re-divided and "
+"<strong>split equally between all 4 group members</strong> (including "
+"yourself)."
+msgstr ""
+"Na koncu se bo denar v skupnem projektu ponovno razdeli in  <strong> "
+"enakomerno razdelil med vse štiri člane skupine</strong> (vključno z vami)."
+
+#: templates/public_goods/Simulation.html:11
+msgid "Task Two: Test Simulation"
+msgstr "Naloga dva: Preizkus s simulacijo"
+
+#: templates/public_goods/Simulation.html:13
+msgid ""
+"This is not the real task yet, but a simulation to help you understand the "
+"rules better. You can use the test screen below to play with the different "
+"choices of the four participants."
+msgstr ""
+"To ni prava naloga, ampak simulacija s katero vam želimo izboljšati "
+"razumneje pravil. Spodnjo stran lahko uporabite za testiranje različnih "
+"možnosti, ki jih imajo za izbore na voljo vsi štiri udeleženci."
+
+#: templates/public_goods/Simulation.html:14
+msgid "Whenever you are ready to proceed to the real task, click next."
+msgstr "Kadarkoli boste pripravljeni za pravo nalogo, pritisnite naprej."
+
+#: templates/public_goods/Simulation.html:93
+msgid "€"
+msgstr ""
+
+#: templates/public_goods/Simulation.html:100
+msgid "Amount sent by Participant A"
+msgstr "Znesek, ki ga pošlje Udeleženec A"
+
+#: templates/public_goods/Simulation.html:105
+msgid "Amount sent by Participant B"
+msgstr "Znesek, ki ga pošlje Udeleženec B"
+
+#: templates/public_goods/Simulation.html:110
+msgid "Amount sent by Participant C"
+msgstr "Znesek, ki ga pošlje Udeleženec C"
+
+#: templates/public_goods/Simulation.html:115
+msgid "Amount sent by Participant D"
+msgstr "Znesek, ki ga pošlje Udeleženec D"
+
+#: templates/public_goods/Simulation.html:120
+msgid "Send"
+msgstr "Pošlji"
+
+#: views.py:60 views.py:61
+msgid "10 euros"
+msgstr "10 evrov"
+
+#: views.py:62
+msgid "$10"
+msgstr ""
+
+#: views.py:63
+msgid "12.000 Won"
+msgstr ""
+
+#: views.py:91 views.py:92 views.py:93
+msgid "if on average, each of the other group members contributes 0 euro:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 0 evrov:"
+
+#: views.py:94
+msgid "if on average, each of the other group members contributes 0 Won:"
+msgstr ""
+
+#: views.py:98 views.py:99 views.py:100
+msgid "if on average, each of the other group members contributes 1 euro:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 1 evrov:"
+
+#: views.py:101
+msgid ""
+"if on average, each of the other group members contributes 1.200 Won Won:"
+msgstr ""
+
+#: views.py:105 views.py:106 views.py:107
+msgid "if on average, each of the other group members contributes 2 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 2 evrov:"
+
+#: views.py:108
+msgid "if on average, each of the other group members contributes 2.400 Won:"
+msgstr ""
+
+#: views.py:112 views.py:113 views.py:114
+msgid "if on average, each of the other group members contributes 3 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 3 evrov:"
+
+#: views.py:115
+msgid "if on average, each of the other group members contributes 3.600 Won:"
+msgstr ""
+
+#: views.py:119 views.py:120 views.py:121
+msgid "if on average, each of the other group members contributes 4 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 4 evrov:"
+
+#: views.py:122
+msgid "if on average, each of the other group members contributes 4.800 Won:"
+msgstr ""
+
+#: views.py:126 views.py:127 views.py:128
+msgid "if on average, each of the other group members contributes 5 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 5 evrov:"
+
+#: views.py:129
+msgid "if on average, each of the other group members contributes 6.000 Won:"
+msgstr ""
+
+#: views.py:133 views.py:134 views.py:135
+msgid "if on average, each of the other group members contributes 6 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 6 evrov:"
+
+#: views.py:136
+msgid "if on average, each of the other group members contributes 7.200 Won:"
+msgstr ""
+
+#: views.py:140 views.py:141 views.py:142
+msgid "if on average, each of the other group members contributes 7 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 7 evrov:"
+
+#: views.py:143
+msgid "if on average, each of the other group members contributes 8.400 Won:"
+msgstr ""
+
+#: views.py:147 views.py:148 views.py:149
+msgid "if on average, each of the other group members contributes 8 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 8 evrov:"
+
+#: views.py:150
+msgid "if on average, each of the other group members contributes 9.600 Won:"
+msgstr ""
+
+#: views.py:154 views.py:155 views.py:156
+msgid "if on average, each of the other group members contributes 9 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 9 evrov:"
+
+#: views.py:157
+msgid "if on average, each of the other group members contributes 10.800 Won:"
+msgstr ""
+
+#: views.py:161 views.py:162 views.py:163
+msgid "if on average, each of the other group members contributes 10 euros:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva 10 evrov:"
+
+#: views.py:164
+msgid "if on average, each of the other group members contributes 12.000 Won:"
+msgstr ""

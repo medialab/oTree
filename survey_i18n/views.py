@@ -6,6 +6,7 @@ from . import models
 import math
 from django.utils.translation import get_language
 from django.utils.translation import ugettext_lazy as _
+from otree.common import Currency
 
 
 def vars_for_all_templates(self):
@@ -432,11 +433,11 @@ class Survey36(Page):
 
         return {
             'choices': [
-                _(u"€{0} - €{1}".format('0', str(a))),
-                _(u"€{0} - €{1}".format(str(a + 1), str(b))),
-                _(u"€{0} - €{1}".format(str(b + 1), str(c))),
-                _(u"€{0} - €{1}".format(str(c + 1), str(d))),
-                _(u"> €{0}".format(str(d + 1)))
+                _(u"{0} - {1}".format(Currency(0), Currency(a))),
+                _(u"{0} - {1}".format(Currency(a + 1), Currency(b))),
+                _(u"{0} - {1}".format(Currency(b + 1), Currency(c))),
+                _(u"{0} - {1}".format(Currency(c + 1), Currency(d))),
+                _(u"> {0}".format(Currency(d + 1)))
             ]
         }
 
@@ -482,7 +483,7 @@ page_sequence = [
     Survey20,
     # Survey21,
     Survey22,
-    Survey23,
+    # Survey23,
     Survey24,
     Survey25,
     Survey26,

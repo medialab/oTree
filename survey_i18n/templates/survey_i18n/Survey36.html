@@ -3,8 +3,14 @@
 {% load i18n %}
 
 {% block content %}
+  <style type="text/css">
+    label {font-weight: normal}
+  </style>
 
-  {% formfield player.household_income_in_the_last_12_months %}
+  <label class="control-label" for="id_household_income_in_the_last_12_months">
+  {% trans "In the last 12 months, what was the total income <strong>of your household</strong> after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):" %}
+  </label>
+  {% formfield player.household_income_in_the_last_12_months with label="" %}
   <div class="checkbox">
     <label>
       <input type="checkbox"> {% trans "I don't know" %}

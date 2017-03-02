@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-23 17:21+0100\n"
+"PO-Revision-Date: 2017-02-24 13:32+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.9\n"
+
+#: templates/earnings/Calculate.html:7
+msgid "next"
+msgstr "Naprej"
+
+#: templates/earnings/Display.html:14
+msgid "Thank you very much for your participation in this study!"
+msgstr "Najlepše se vam zahvaljujemo za vašo udeležbo v raziskavi."
+
+#: templates/earnings/Display.html:15
+#, python-format
+msgid ""
+"After being matched with the other players, your earnings have been "
+"calculated as %(payoff)s."
+msgstr ""
+"Potem, ko ste bili povezani z ostalimi igralci so bili vasi zaslužki "
+"izračunani kot %(payoff)s."
+
+#: templates/earnings/Display.html:19 templates/earnings/Display.html.py:27
+msgid ""
+"You were selected to receive your reward based on your earnings in Task One."
+msgstr ""
+"Izbrani ste bili, da prejmete svojo nagrado na osnovi vašega zaslužka v "
+"nalogi ena."
+
+#: templates/earnings/Display.html:20
+#, python-format
+msgid ""
+"As Player A, you decided to transfer %(trust_game_player_a_transfer)s euros "
+"to player B."
+msgstr ""
+"Kot igralec A ste se odločili, da nakažete %(trust_game_player_a_transfer)s "
+"evrov igralcu B."
+
+#: templates/earnings/Display.html:21
+#, python-format
+msgid "Following, player B returned %(trust_game_player_b_transfer)s to you."
+msgstr "Potem vam igralec B vrne %(trust_game_player_b_transfer)s vam."
+
+#: templates/earnings/Display.html:22
+#, python-format
+msgid "Therefore, your total payoff for this task is %(payoff)s."
+msgstr "Zato je vas skupni izkupiček te naloge %(payoff)s."
+
+#: templates/earnings/Display.html:28
+#, python-format
+msgid ""
+"As Player B, you received %(trust_game_player_a_transfer)s euros from player "
+"A."
+msgstr ""
+"Kot igralec B ste prejeli %(trust_game_player_a_transfer)s evrov od igralca "
+"A."
+
+#: templates/earnings/Display.html:29
+#, python-format
+msgid ""
+"You decided to transfer %(trust_game_player_b_transfer)s euros back to "
+"player A."
+msgstr ""
+"Odločili ste se, da nakažete %(trust_game_player_b_transfer)s evrov nazaj "
+"igraicu A."
+
+#: templates/earnings/Display.html:30
+#, python-format
+msgid "Therefore, your total payoff for this task is %(payoff)s euros."
+msgstr "Zato je vas skupni izkupiček te naloge %(payoff)s evrov."
+
+#: templates/earnings/Display.html:35
+msgid ""
+"You were selected to receive your reward based on your earnings in Task Two."
+msgstr ""
+"Izbrani ste bili, da prejmete svojo nagrado na osnovi vašega zaslužka v "
+"nalogi tri."
+
+#: templates/earnings/Display.html:36
+#, python-format
+msgid ""
+"In this task, you invested %(pg_player_a_transfer)s into the joint project. "
+"The contributions of the other players were:"
+msgstr ""
+"V tej nalogi ste se odločili nakazati %(pg_player_a_transfer)s v skupen "
+"projekt. Prispevki ostalih igralcev je bil:"
+
+#: templates/earnings/Display.html:46
+#, python-format
+msgid ""
+"Collectively, you invested %(pg_amount)s. Your earnings from the joint "
+"project after the multiplication factor are %(pg_multiplied_amount)s."
+msgstr ""
+"Vsi skupaj ste investirali %(pg_amount)s. Vasi zaslužki iz skupnega projekta "
+"z upoštevanjem multplikacijskega faktorja so %(pg_multiplied_amount)s. "
+
+#: templates/earnings/Display.html:47
+#, python-format
+msgid "In total, your payoff for this task is %(payoff)s."
+msgstr "Skupaj, je izplačilo za to nalogo naslednje %(payoff)s."
+
+#: templates/earnings/Display.html:52 templates/earnings/Display.html.py:60
+msgid ""
+"You were selected to receive your reward based on your earnings in Task "
+"Three."
+msgstr ""
+"Izbrani ste bili, da prejmete svojo nagrado na osnovi vašega zaslužka v "
+"nalogi tri."
+
+#: templates/earnings/Display.html:53
+#, python-format
+msgid ""
+"In this task, you decided to transfer %(dictator_player_a_transfer)s to "
+"player B."
+msgstr ""
+"V tej nalogi ste se odločili nakazati %(dictator_player_a_transfer)s igraicu "
+"B."
+
+#: templates/earnings/Display.html:54
+#, python-format
+msgid ""
+"Your remaining endowment after the transfer is %(dictator_player_a_payoff)s."
+msgstr ""
+"Po nakazilu, je vas preostali obseg denarja: %(dictator_player_a_payoff)s."
+
+#: templates/earnings/Display.html:55
+#, python-format
+msgid "In total, your payoff for this task is %(dictator_player_a_payoff)s."
+msgstr ""
+"Skupaj, je izplačilo za to nalogo naslednje %(dictator_player_a_payoff)s."
+
+#: templates/earnings/Display.html:61
+msgid "In this task, you were selected to be Player B."
+msgstr "V tej nalogi ste izbrani za igralca B."
+
+#: templates/earnings/Display.html:62
+#, python-format
+msgid ""
+"In this task, the Player A you were matched with decided to transfer you "
+"%(dictator_player_a_transfer)s."
+msgstr ""
+"Igralec A s katerim ste v tej nalogi povezani, se je odločil da vam nakaze "
+"%(dictator_player_a_transfer)s. "
+
+#: templates/earnings/Display.html:63
+#, python-format
+msgid "In total, your payoff for this task is %(dictator_global_a_transfer)s."
+msgstr ""
+"Skupaj, je izplačilo za to nalogo naslednje %(dictator_global_a_transfer)s. "
+
+#: templates/earnings/Display.html:69
+msgid ""
+"Out of your earnings, you have the option to donate an amount of your choice "
+"to UNICEF, who work with children and mothers in developing countries."
+msgstr ""
+"Imate možnost, da od svojega zaslužka darujete UNICEFu, ki dela z otroki in "
+"materami v državah v razvoju, znesek po vasi izbiri."
+
+#: templates/earnings/Display.html:70
+msgid ""
+"You can find further information about their work here. Please enter the "
+"amount you wish to donate to UNICEF:"
+msgstr ""
+"Več informacij o njihovem delu lahko najdete tukaj. Prosimo vas vnesite "
+"znesek, ki ga želite darovati UNICEFu:"
+
+#: templates/earnings/Display.html:75
+msgid "(Should you not wish to donate anything at this point, please enter 0)."
+msgstr "(V primeru, da v tem trenutku ne želite darovati, prosimo vnesite 0)."
+
+#: templates/earnings/Display.html:76
+msgid ""
+"Once again, thank you very much for participating. You will now be "
+"redirected in order to collect your reward."
+msgstr ""
+"Ponovno se vam najlepše zahvaljujemo za vašo udeležbo. Za pridobitev vaše "
+"nagrade, boste sedaj boste preusmerjeni."
+
+#: templates/earnings/Display.html:78
+msgid "Finish study"
+msgstr "Raziskava je zaključena."

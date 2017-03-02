@@ -3,35 +3,36 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-02-23 17:21+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2017-03-01 15:24+0100\n"
+"PO-Revision-Date: 2017-03-01 17:41+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: templates/introduction/ExperimentIntroduction.html:7
 msgid "Welcome!"
-msgstr ""
+msgstr "Dobrodošli!"
 
 #: templates/introduction/ExperimentIntroduction.html:8
 msgid ""
-"Sciences Po Paris invites you to participate in a quick online study on "
+"Our research team* invites you to participate in a quick online study on "
 "decision-making."
 msgstr ""
+"Naš raziskovalni tim* vas vabi, da se udeležite hitre spletne raziskave o "
+"odločanju."
 
 #: templates/introduction/ExperimentIntroduction.html:11
 msgid "Study information"
-msgstr ""
+msgstr "Preučite informacije"
 
 #: templates/introduction/ExperimentIntroduction.html:12
 msgid ""
@@ -40,26 +41,32 @@ msgid ""
 "with different choices? How do we feel about the people and institutions "
 "around us?"
 msgstr ""
+"Namen študije je, bolje spoznati kako se človeška bitja obnašamo - kako "
+"sprejemamo odločitve? Kako se soočamo med sabo, ko smo pred različnimi "
+"odločitvami? Kako občutimo ljudi in institucije okoli sebe?"
 
 #: templates/introduction/ExperimentIntroduction.html:13
 msgid "To find this out, you will be participating in different exercises:"
-msgstr ""
+msgstr "Da bi to spoznali boste sodelovali pri različnih nalogah:"
 
 #: templates/introduction/ExperimentIntroduction.html:14
 msgid ""
 "In the first part, you will participate in three simple tasks, in anonymous "
 "interaction with one or more other people."
 msgstr ""
+"V prvem delu boste sodelovali pri treh preprostih nalogah z anonimnimi "
+"interakcijami z eno ali več osebami."
 
 #: templates/introduction/ExperimentIntroduction.html:15
 msgid "In the second part, you are going to sort different sets of words."
-msgstr ""
+msgstr "V drugem delu, boste razvrščali različne sklope besed."
 
 #: templates/introduction/ExperimentIntroduction.html:16
 msgid ""
 "In the third part, we ask you to answer a few questions about yourself and "
 "your opinions."
 msgstr ""
+"V tretjem delu boste dogovorili na nekaj vprašanj o sebi in vašemu mnenju."
 
 #: templates/introduction/ExperimentIntroduction.html:17
 msgid ""
@@ -68,22 +75,28 @@ msgid ""
 "period of inactivity. For best results, minimize distractions and close "
 "other programs."
 msgstr ""
+"Celotna raziskava naj bi trajala približno 25 minut. Opozorilo - <strong> "
+"Raziskavo morate dokončati v enem poskusu (seji) </strong> in brez daljših "
+"časovnih prekinitev. Za boljše rezultate zmanjšate motnje in zaprite ostale "
+"programe."
 
 #: templates/introduction/ExperimentIntroduction.html:18
 msgid ""
 "If you are having trouble accessing the platform, we advise you to switch to "
 "Google Chrome instead."
 msgstr ""
+"V primeru, da imate težave z dostopom do platforme vam svetujemo, da "
+"preklopite na Google Chrome."
 
 #: templates/introduction/ExperimentIntroduction.html:20
 msgid "Payment"
-msgstr ""
+msgstr "Plačilo"
 
 #: templates/introduction/ExperimentIntroduction.html:21
 msgid ""
-"By participating in the study’s tasks, you can earn an additional amount of "
-"up to 40 euros."
-msgstr ""
+"By participating in the study’s tasks, you can earn an amount of up to 40 "
+"euros."
+msgstr "Z udeležbo pri nalogah raziskave lahko zaslužite dodatnih 40 evrov."
 
 #: templates/introduction/ExperimentIntroduction.html:23
 msgid ""
@@ -91,33 +104,41 @@ msgid ""
 "the other participants during the study’s tasks. At the end of the study, "
 "one of the several tasks you have completed will be randomly selected."
 msgstr ""
+"Višina tega zneska bo odvisna od vaših strateških odločitvah, ki jih boste "
+"naredili skupaj z drugimi udeleženci pri izvajanju nalog raziskave. Ena od "
+"nalog, ki ste jih dokončali, bo na koncu raziskave naključno izbrana."
 
 #: templates/introduction/ExperimentIntroduction.html:25
-#: templates/introduction/GamesIntroduction.html:18
+#: templates/introduction/GamesIntroduction.html:17
 msgid ""
 "The amount of money you will receive will correspond to your earnings in "
 "this selected task."
 msgstr ""
+"Znesek denarja, ki ga boste prejeli bo ustrezal zaslužku iz izbrane naloge."
 
 #: templates/introduction/ExperimentIntroduction.html:26
 msgid ""
 "Remember that your decisions will also affect the earnings that other people "
 "will receive!"
 msgstr ""
+"Prosimo zapomnite si. Vaše odločitve bodo vplivale tudi na zaslužke drugih "
+"oseb!"
 
 #: templates/introduction/ExperimentIntroduction.html:29
 msgid "You will receive your points via the usual system."
-msgstr ""
+msgstr "Vase točke boste dobili preko običajnega sistema."
 
 #: templates/introduction/ExperimentIntroduction.html:30
 msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
 msgstr ""
+"Vaš dodaten denar boste dobili na koncu raziskave in sicer na enak način, "
+"kot boste dobili vašo fiksno nagrado."
 
 #: templates/introduction/ExperimentIntroduction.html:32
 msgid "Data protection"
-msgstr ""
+msgstr "Varstvo podatkov"
 
 #: templates/introduction/ExperimentIntroduction.html:35
 msgid ""
@@ -125,32 +146,49 @@ msgid ""
 "under the supervision of the European Research Council. We will use it for "
 "research purposes only."
 msgstr ""
+"Zbrani podatki v tej raziskavi so predmet Evropskih pravil o varstvu "
+"zasebnosti pod nadzorom Evropskega raziskovalnega sveta. Podatki bodo "
+"uporabljeni le za raziskovalne namene."
 
 #: templates/introduction/ExperimentIntroduction.html:37
 msgid ""
 "The data gathered in this study is subject to strict privacy protocols. We "
 "will use it for research purposes only."
 msgstr ""
+"Zbrani podatki v tej raziskavi so predmet strogih pravil o varstvu "
+"zasebnosti. Podatki bodo uporabljeni le za raziskovalne namene."
 
 #: templates/introduction/ExperimentIntroduction.html:40
 msgid "Begin"
+msgstr "Začnite"
+
+#: templates/introduction/ExperimentIntroduction.html:44
+msgid ""
+"*including researchers from Sciences Po Paris, Brown University and Kiel "
+"University"
 msgstr ""
+"*vključuje raziskovalce iz Sciences Po Paris, Brown University in Kiel "
+"University"
 
 #: templates/introduction/GamesIntroduction.html:6
 msgid "Section One: Tasks"
-msgstr ""
+msgstr "Poglavje ena: naloge"
 
 #: templates/introduction/GamesIntroduction.html:8
 msgid ""
 "We will start by giving you three tasks. This is the part of the study that "
 "will allow you to earn additional money."
 msgstr ""
+"Na začetku vsake naloge boste razvrščeni v skupine z ostalimi udeleženci, ki "
+"so prav tako iz Slovenije."
 
 #: templates/introduction/GamesIntroduction.html:9
 msgid ""
 "At the beginning of each task, you will be grouped with other study "
 "participants, who are respondents from [country] like you."
 msgstr ""
+"Na začetku vsake naloge boste razvrščeni v skupine z ostalimi udeleženci, ki "
+"so prav tako iz Slovenije."
 
 #: templates/introduction/GamesIntroduction.html:10
 msgid ""
@@ -160,28 +198,35 @@ msgid ""
 "moment – we will record your and their answers and will match you at the end "
 "of the study."
 msgstr ""
+"<strong>V vsaki nalogi bodo udeleženci druge osebe s katerimi boste "
+"razraščeni v skupine:</strong> ista oseba ne bo nikoli več kot enkrat v vaši "
+"skupni. Opozorilo, drugi udeleženci morda ne bodo na spletu v istem "
+"trenutku, kot vi – zato bomo vaš in njihov odgovor shranili in jih povezali "
+"na koncu raziskave."
 
 #: templates/introduction/GamesIntroduction.html:12
 msgid "How will your earnings be calculated?"
-msgstr ""
+msgstr "Kako bodo izračunani vaši zaslužki?"
 
 #: templates/introduction/GamesIntroduction.html:14
 msgid ""
 "Your earnings in each task will depend on your and the other participants’ "
 "strategic decisions."
 msgstr ""
+"V vsaki nalogi bodo vaši odgovori povezani z odgovori drugih udeležencev."
 
-#: templates/introduction/GamesIntroduction.html:15
-msgid ""
-"Your answers in each task will be matched with those of other participants."
-msgstr ""
-
-#: templates/introduction/GamesIntroduction.html:17
+#: templates/introduction/GamesIntroduction.html:16
 msgid ""
 "At the end of the study, one of the three tasks you have completed will be "
 "randomly selected."
 msgstr ""
+"Ena od treh nalog, ki ste jo zaključili, bo na koncu raziskave naključno "
+"izbrana."
+
+#: templates/introduction/GamesIntroduction.html:18
+msgid "In short, each task may determine your final payoff!"
+msgstr "Na kratko, vsaka naloga lahko določi vaš končen zaslužek!"
 
 #: templates/introduction/GamesIntroduction.html:21
 msgid "Next"
-msgstr ""
+msgstr "Naprej"

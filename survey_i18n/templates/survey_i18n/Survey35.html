@@ -4,14 +4,24 @@
 
 {% block content %}
 
-  {% formfield player.individual_income_in_the_last_12_months %}
+  <style type="text/css">
+    label {font-weight: normal}
+  </style>
+
+  <label class="control-label" for="id_individual_income_in_the_last_12_months">
+  {% trans "In the last 12 months, what was your total income, the income that you received <strong>as an individual</strong>, after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):" %}
+  </label>
+  {% formfield player.individual_income_in_the_last_12_months with label="" %}
   <div class="checkbox">
     <label>
       <input type="checkbox"> {% trans "I don't know" %}
     </label>
   </div>
 
-  {% formfield player.individual_income_confirmation %}
+  <label class="control-label" for="id_individual_income_confirmation">
+  {% trans "Just to confirm, which of these income bands corresponds best to your <strong>personal income</strong>? Remember, we are asking for <strong>your individual income</strong>, after taxes have been deducted." %}
+  </label>
+  {% formfield player.individual_income_confirmation with label="" %}
 
   <p><button type="button" class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
 
