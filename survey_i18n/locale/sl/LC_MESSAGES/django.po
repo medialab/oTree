@@ -841,7 +841,7 @@ msgid "Rural area"
 msgstr "Podeželju"
 
 #: models.py:1627
-msgid "What is the highest level of education you have completed?"
+msgid "What is the highest level of education <strong>you</strong> have completed?"
 msgstr "Katera je vaša najvišja stopnja izobrazbe, ki ste jo dokončali?"
 
 #: models.py:1630 models.py:1643
@@ -872,8 +872,8 @@ msgstr "Podiplomska stopnja izobrazbe"
 
 #: models.py:1640
 msgid ""
-"What is the highest level of education that <strong>one of your parents</"
-"strong> has completed? (either one, or both have completed this level of "
+"What is the highest level of education that <strong>one of your parents</strong>"
+"has completed? (either one, or both have completed this level of "
 "education)"
 msgstr ""
 "Katera je najvišja stopnja izobrazbe, ki jo je <strong>eden od vaših "

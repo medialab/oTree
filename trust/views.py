@@ -322,7 +322,7 @@ page_sequence = [
     Introduction,
     Simulation,
     Send,
-    SendContinued,
     SendBack,
+    SendContinued,
     EndGame
 ]

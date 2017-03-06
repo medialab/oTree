@@ -10,7 +10,11 @@
     }
   </style>
 
-  {% formfield player.highest_level_of_education_your_parent_has_completed %}
+  <label class="control-label" for="id_highest_level_of_education_your_parent_has_completed">
+    What is the highest level of education that <strong>one of your parents</strong> has completed? (either one, or both have completed this level of education):
+  </label>
+
+  {% formfield player.highest_level_of_education_your_parent_has_completed with label="" %}
 
   <p><button class="btn btn-primary pull-right">{% trans "Next" %}</button></p>
 

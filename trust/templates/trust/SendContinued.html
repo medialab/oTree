@@ -4,10 +4,17 @@
 
 {% block content %}
 <style type="text/css">label {font-weight: normal;}</style>
-<h1 style="color:#357EBD">{% trans "Task One: Real Task continued (Participant A)" %}</h1>
+<h1 style="color:#357EBD">{% trans "Task One: Hypothetical Scenario" %}</h1>
 
+
+<p>
+{% trans "You have just had the experience of playing as Participant A and Participant B." %}
+{% trans "The following is a question about your expectations of other people." %}
+{% trans "You are not playing as Participant A or Participant B, and this decision will not affect your earnings." %}
+{% trans "We want you to imagine the following scenario:" %}
+</p>
 <p>{% blocktrans %}Suppose some Participant A has sent 5 euros, so Participant B receives {{received_by_b}}, making her total budget 10 euros + {{received_by_b}} = {{total_budget_b_str}}.{% endblocktrans %}</p>
-<p>{% blocktrans %}What amount do you <strong>expect</strong> Participant B to return to this Participant A?{% endblocktrans %}</p>
+<p>{% blocktrans %}What amount do you <strong>expect</strong> most people to return to Participant A in this situation.{% endblocktrans %}</p>
 <p>{% blocktrans %}Please enter a number from 0 to {{total_budget_b_str}}.{% endblocktrans %}</p>
 
 <hr/>

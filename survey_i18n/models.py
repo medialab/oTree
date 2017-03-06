@@ -466,7 +466,7 @@ class Player(BasePlayer):
     how_much_do_you_trust_most_people_in_your_country = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
-        verbose_name=_(u"And now a general question about trust. On a scale from zero to ten, where zero is not at all and ten is completely, in general how much do you trust most people in your country?"),
+        verbose_name=_(u"And now a general question about trust. On a scale from zero to ten, where zero is not at all and ten is completely, in general how much do you trust most people?"),
         choices=(
             ('0', _(u"0 - Not at all")),
             ('1', '1'),
@@ -1701,11 +1701,11 @@ class Player(BasePlayer):
         verbose_name=_(u'Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have been deducted.'),
         widget=widgets.RadioSelect(),
         choices=(
-            ('0 to 9000 (1st quintile)', _(u"€0 to €9000")),
-            ('9001 to 12500 (2nd quintile)', _(u"€9001 to €12500")),
-            ('12501 to 15000 (3rd quintile)', _(u"€12501 to €15000")),
-            ('15001 to 20000 (4th quintile)', _(u"€15001 to €20000")),
-            ('20001 > (5th quintile)', _(u"€20001 and above"))
+            ('0 to 9000 (1st quintile)', _(u"€0 to €9,000.00")),
+            ('9001 to 12500 (2nd quintile)', _(u"€9,001.00 to €12,500.00")),
+            ('12501 to 15000 (3rd quintile)', _(u"€12,501.00 to €15,000.00")),
+            ('15001 to 20000 (4th quintile)', _(u"€15,001.00 to €20,000.00")),
+            ('20001 > (5th quintile)', _(u"> €20,001"))
         )
     )
 
@@ -1716,7 +1716,7 @@ class Player(BasePlayer):
     )
 
     # "Just to confirm, which of these income bands corresponds best to your household income?
-    # Remember, we are asking for your individual income, after taxes have been deducted."
+    # Remember, we are asking for your household income, after taxes have been deducted."
     household_income_confirmation = models.CharField(
         widget=widgets.RadioSelect()
     )
