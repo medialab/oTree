@@ -46,8 +46,28 @@ ROOMS = [
         'display_name': 'Test Room (for developement and test purposes)'
     },
     {
-        'name': 'slovenia',
-        'display_name': 'Slovenian Room'
+        'name': 'slovenia_1',
+        'display_name': 'Slovenian Room 1'
+    },
+    {
+        'name': 'slovenia_2',
+        'display_name': 'Slovenian Room 2'
+    },
+    {
+        'name': 'slovenia_3',
+        'display_name': 'Slovenian Room 3'
+    },
+    {
+        'name': 'slovenia_4',
+        'display_name': 'Slovenian Room 4'
+    },
+    {
+        'name': 'demo_1',
+        'display_name': 'Demo Room 1'
+    },
+    {
+        'name': 'demo_2',
+        'display_name': 'Demo Room 2'
     }
 ]
 
