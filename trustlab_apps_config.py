@@ -30,15 +30,58 @@ quota_redirects_ko = {
     ),
 }
 
+quota_redirects_sl = {
+    'complete': (
+        'http://globaltestmarket.com/20/survey/finished.phtml?lang=SLV'
+    ),
+    'speedster': (
+        'http://globaltestmarket.com/20/survey/finished.phtml?lang=SLV&sco=tf'
+    ),
+}
+
 ROOMS_DEFAULTS = {}
 ROOMS = [
     {
         'name': 'test',
         'display_name': 'Test Room (for developement and test purposes)'
+    },
+    {
+        'name': 'slovenia',
+        'display_name': 'Slovenian Room'
     }
 ]
 
 SESSION_CONFIGS = [
+    {
+        'name': 'demo_trustlab_2016_A1',
+        'display_name': 'TRUSTLAB | DEMO | path 1',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A1',
+        'payoff_group': 1,
+        'quota_redirects': quota_redirects_sl,
+    },
+    {
+        'name': 'demo_trustlab_2016_A2',
+        'display_name': 'TRUSTLAB | DEMO | path 2',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A2',
+        'payoff_group': 1,
+        'quota_redirects': quota_redirects_sl,
+    },
+
+
     {
         'name': 'test_intro',
         'display_name': 'INTRODUCTION',
@@ -49,7 +92,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'test_trust',
@@ -61,7 +104,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'test_pg',
@@ -73,7 +116,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'test_dictator',
@@ -85,7 +128,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'test_iat',
@@ -97,7 +140,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'test_survey',
@@ -109,7 +152,7 @@ SESSION_CONFIGS = [
         'treatment': 'A1',
         'payoff_group': 0,
         'speedsters_threshold': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
 
     {
@@ -124,7 +167,7 @@ SESSION_CONFIGS = [
         'speedsters_threshold': 1,
         'treatment': 'A1',
         'payoff_group': 2,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'trustlab_2016_A2_sl_prod',
@@ -138,7 +181,7 @@ SESSION_CONFIGS = [
         'speedsters_threshold': 1,
         'treatment': 'A2',
         'payoff_group': 2,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
 
     {
@@ -153,7 +196,7 @@ SESSION_CONFIGS = [
         'speedsters_threshold': 1,
         'treatment': 'A1',
         'payoff_group': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     },
     {
         'name': 'trustlab_2016_A2_sl',
@@ -167,6 +210,6 @@ SESSION_CONFIGS = [
         'speedsters_threshold': 1,
         'treatment': 'A2',
         'payoff_group': 1,
-        'quota_redirects': quota_redirects_ko,
+        'quota_redirects': quota_redirects_sl,
     }
 ]
