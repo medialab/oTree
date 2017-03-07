@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:05+0100\n"
-"PO-Revision-Date: 2017-03-07 12:59+0100\n"
+"PO-Revision-Date: 2017-03-07 15:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Task"
-msgstr "Naloga dva: Prava odločitev"
+msgstr "Druga naloga: prava odločitev"
 
 #: templates/public_goods/Contribute.html:7
 msgid ""
 "Now the real task starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
-"Zdaj je pred nami prava naloga. Potem, ko se boste enkrat odločili in "
-"pritisnili tipko \"Naprej\", se ne boste mogli več vrniti nazaj na to stran."
+"Zdaj se začne prava naloga. Ko se boste enkrat odločili in pritisnili tipko "
+"\"Naprej\", se ne boste mogli več vrniti nazaj na to stran."
 
 #: templates/public_goods/Contribute.html:9
 #, python-format
@@ -37,9 +37,9 @@ msgid ""
 "You have %(allocated_amount)s in your possession. You may choose to keep "
 "this money, or choose to invest some (or all) of it in the joint project."
 msgstr ""
-"V svoji lasti imate %(allocated_amount)s. Na voljo imate dve izibri, denar "
-"lahko obdrzite ali pa ga investirate v skupen projekt. <strong> Koliko "
-"zelite investirati v skupen projekt?</strong>"
+"V svoji lasti imate %(allocated_amount)s . Na voljo imate dve izbiri, denar "
+"lahko obdržite ali pa ga vložite  v skupen projekt. <strong> Koliko želite "
+"vložiti v skupen projekt?</strong>"
 
 #: templates/public_goods/Contribute.html:10
 msgid "How much (if any) do you want to invest into the joint project?"
@@ -55,30 +55,30 @@ msgstr "Naprej"
 
 #: templates/public_goods/ContributeBack.html:8
 msgid "Task Two: Real Task continued"
-msgstr "Naloga dva: Prava naloga se nadaljuje"
+msgstr "Druga naloga: prava odločitev - nadaljevanje"
 
 #: templates/public_goods/ContributeBack.html:9
 msgid ""
 "Now imagine that this time, you find out how much money the other three "
 "members of your group are transferring into the joint pot."
 msgstr ""
-"Sedaj si zamislite, da tokrat izveste koliko denarja bodo v skupen projekt "
-"nakazali ostali trije člani vase skupine."
+"Sedaj si zamislite, da  izveste koliko denarja bodo v skupen projekt "
+"nakazali ostali trije člani vaše skupine."
 
 #: templates/public_goods/ContributeBack.html:10
 msgid ""
 "All of your choices below can impact how much money you will receive at the "
 "end of the study."
 msgstr ""
-"Vse vaše naslednje odločitve lahko vplivajo na končen obseg denarja, ki ga "
-"boste dobili na koncu raziskave."
+"Vse vaše naslednje odločitve lahko vplivajo na končen zaslužek, ki ga boste "
+"dobili na koncu raziskave."
 
 #: templates/public_goods/ContributeBack.html:11
 msgid ""
 "Please indicate how much (if any) you would like to invest in the joint "
 "project:"
 msgstr ""
-"Prosimo, navedite koliko (če sploh) bi želeli investirati v skupen projekt."
+"Prosimo, navedite koliko (če sploh kaj) bi želeli vložiti v skupen projekt:"
 
 #: templates/public_goods/EndGame.html:10
 msgid "Thank you very much for entering your choice."
@@ -95,24 +95,23 @@ msgstr ""
 
 #: templates/public_goods/Instructions.html:6
 msgid "Task Two: Introduction"
-msgstr "Naloga dva: Uvod"
+msgstr "Druga naloga: uvod"
 
 #: templates/public_goods/Instructions.html:7
 msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
 msgstr ""
-"V drugi nalogi so oblikovane skupine, v katerih so <strong>4 udeleženci</"
-"strong> (Vi in 3 druge osebe)"
+"V drugi nalogi so oblikovane skupine s<strong>4 udeleženci</strong> (vi in 3 "
+"druge osebe)."
 
 #: templates/public_goods/Instructions.html:8
 msgid ""
 "Remember, the participants in this group are different from the person you "
 "interacted with in the previous task. However, they all live in [country]."
 msgstr ""
-"Prosimo zapomnite si, da udeleženci v tej skupini niso osebe s katerimi ste "
-"se srečali v prejšnjih nalogah. Ne glede na to še vedno vsi živijo v "
-"Sloveniji."
+"Zapomnite si, da udeleženci v tej skupini niso osebe s katerimi ste se "
+"srečali v prejšnjih nalogah. Ne glede na to še vedno vsi živijo v Sloveniji."
 
 #: templates/public_goods/Instructions.html:9
 msgid "These are the rules:"
@@ -130,9 +129,8 @@ msgid ""
 "or she wants to keep and how much he or she wants to invest into a "
 "<strong>joint project</strong>."
 msgstr ""
-"Vsak član ali članica skupine se mora odločiti koliko od teh "
-"%(allocated_amount)s želi obdržati in koliko nakazati v <strong>skupen "
-"projekt</strong>."
+"Vsak član skupine se mora odločiti koliko od teh %(allocated_amount)s želi "
+"obdržati in koliko vložiti v <strong>skupen projekt</strong>."
 
 #: templates/public_goods/Instructions.html:13
 #, python-format
@@ -140,8 +138,8 @@ msgid ""
 "The total amount contributed into the joint project is <strong>multiplied by "
 "%(factor)s.</strong>"
 msgstr ""
-"Celoten znesek investiran v skupen projekt bo <strong> pomnožen z %(factor)s."
-"</strong>"
+"Celoten znesek vložen v skupen projekt bo <strong>pomnožen z %(factor)s.</"
+"strong>"
 
 #: templates/public_goods/Instructions.html:14
 msgid ""
@@ -149,12 +147,12 @@ msgid ""
 "<strong>split equally between all 4 group members</strong> (including "
 "yourself)."
 msgstr ""
-"Na koncu se bo denar v skupnem projektu ponovno razdeli in  <strong> "
-"enakomerno razdelil med vse štiri člane skupine</strong> (vključno z vami)."
+"Na koncu se bo denar v skupnem projektu ponovno  <strong>enakomerno razdelil "
+"med vse štiri člane skupine</strong> (vključno z vami)."
 
 #: templates/public_goods/Simulation.html:11
 msgid "Task Two: Test Simulation"
-msgstr "Naloga dva: Preizkus s simulacijo"
+msgstr "Druga naloga: preizkus s simulacijo"
 
 #: templates/public_goods/Simulation.html:13
 msgid ""
@@ -162,9 +160,9 @@ msgid ""
 "rules better. You can use the test screen below to play with the different "
 "choices of the four participants."
 msgstr ""
-"To ni prava naloga, ampak simulacija s katero vam želimo izboljšati "
-"razumneje pravil. Spodnjo stran lahko uporabite za testiranje različnih "
-"možnosti, ki jih imajo za izbore na voljo vsi štiri udeleženci."
+"To ni prava naloga, ampak simulacija za boljše razumevanje pravil. Spodnjo "
+"stran lahko uporabite za testiranje različnih možnosti, ki jih imajo za "
+"izbore na voljo vsi štirje udeleženci."
 
 #: templates/public_goods/Simulation.html:14
 msgid "Whenever you are ready to proceed to the real task, click next."

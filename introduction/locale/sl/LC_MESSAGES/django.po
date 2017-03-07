@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-01 15:24+0100\n"
-"PO-Revision-Date: 2017-03-01 17:41+0100\n"
+"PO-Revision-Date: 2017-03-07 14:29+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "X-Generator: Poedit 1.8.8\n"
+"Language: sl\n"
 
 #: templates/introduction/ExperimentIntroduction.html:7
 msgid "Welcome!"
@@ -32,7 +33,7 @@ msgstr ""
 
 #: templates/introduction/ExperimentIntroduction.html:11
 msgid "Study information"
-msgstr "Preučite informacije"
+msgstr "Proučite informacije"
 
 #: templates/introduction/ExperimentIntroduction.html:12
 msgid ""
@@ -41,13 +42,13 @@ msgid ""
 "with different choices? How do we feel about the people and institutions "
 "around us?"
 msgstr ""
-"Namen študije je, bolje spoznati kako se človeška bitja obnašamo - kako "
-"sprejemamo odločitve? Kako se soočamo med sabo, ko smo pred različnimi "
-"odločitvami? Kako občutimo ljudi in institucije okoli sebe?"
+"Namen študije je bolje spoznati kako se človeška bitja obnašamo - kako "
+"sprejemamo odločitve? Kako sodelujemo med sabo, ko smo soočeni z različnimi "
+"izbirami? Kako občutimo ljudi in institucije okoli sebe?"
 
 #: templates/introduction/ExperimentIntroduction.html:13
 msgid "To find this out, you will be participating in different exercises:"
-msgstr "Da bi to spoznali boste sodelovali pri različnih nalogah:"
+msgstr "Da bi to spoznali, boste sodelovali pri različnih nalogah:"
 
 #: templates/introduction/ExperimentIntroduction.html:14
 msgid ""
@@ -66,7 +67,7 @@ msgid ""
 "In the third part, we ask you to answer a few questions about yourself and "
 "your opinions."
 msgstr ""
-"V tretjem delu boste dogovorili na nekaj vprašanj o sebi in vašemu mnenju."
+"V tretjem delu boste odgovorili na nekaj vprašanj o sebi in vašemu mnenju."
 
 #: templates/introduction/ExperimentIntroduction.html:17
 msgid ""
@@ -77,7 +78,7 @@ msgid ""
 msgstr ""
 "Celotna raziskava naj bi trajala približno 25 minut. Opozorilo - <strong> "
 "Raziskavo morate dokončati v enem poskusu (seji) </strong> in brez daljših "
-"časovnih prekinitev. Za boljše rezultate zmanjšate motnje in zaprite ostale "
+"časovnih prekinitev. Za boljše rezultate zmanjšajte motnje in zaprite ostale "
 "programe."
 
 #: templates/introduction/ExperimentIntroduction.html:18
@@ -85,8 +86,8 @@ msgid ""
 "If you are having trouble accessing the platform, we advise you to switch to "
 "Google Chrome instead."
 msgstr ""
-"V primeru, da imate težave z dostopom do platforme vam svetujemo, da "
-"preklopite na Google Chrome."
+"Če imate težave z dostopom do platforme vam svetujemo, da preklopite na "
+"Google Chrome."
 
 #: templates/introduction/ExperimentIntroduction.html:20
 msgid "Payment"
@@ -104,9 +105,9 @@ msgid ""
 "the other participants during the study’s tasks. At the end of the study, "
 "one of the several tasks you have completed will be randomly selected."
 msgstr ""
-"Višina tega zneska bo odvisna od vaših strateških odločitvah, ki jih boste "
-"naredili skupaj z drugimi udeleženci pri izvajanju nalog raziskave. Ena od "
-"nalog, ki ste jih dokončali, bo na koncu raziskave naključno izbrana."
+"Višina tega zneska bo odvisna od vaših strateških odločitev, ki jih boste "
+"naredili skupaj z drugimi udeleženci pri reševanju nalog. Ena od nalog, ki "
+"ste jih dokončali, bo na koncu raziskave naključno izbrana."
 
 #: templates/introduction/ExperimentIntroduction.html:25
 #: templates/introduction/GamesIntroduction.html:17
@@ -114,27 +115,27 @@ msgid ""
 "The amount of money you will receive will correspond to your earnings in "
 "this selected task."
 msgstr ""
-"Znesek denarja, ki ga boste prejeli bo ustrezal zaslužku iz izbrane naloge."
+"Znesek denarja, ki ga boste prejeli bo ustrezal zaslužku iz te izbrane "
+"naloge."
 
 #: templates/introduction/ExperimentIntroduction.html:26
 msgid ""
 "Remember that your decisions will also affect the earnings that other people "
 "will receive!"
 msgstr ""
-"Prosimo zapomnite si. Vaše odločitve bodo vplivale tudi na zaslužke drugih "
-"oseb!"
+"Zapomnite si, da bodovaše odločitve vplivale tudi na zaslužke drugih oseb!"
 
 #: templates/introduction/ExperimentIntroduction.html:29
 msgid "You will receive your points via the usual system."
-msgstr "Vase točke boste dobili preko običajnega sistema."
+msgstr "Vaše točke boste dobili prek običajnega sistema."
 
 #: templates/introduction/ExperimentIntroduction.html:30
 msgid ""
 "You will receive your additional money at the end of the study via HAPPY "
 "MONEY."
 msgstr ""
-"Vaš dodaten denar boste dobili na koncu raziskave in sicer na enak način, "
-"kot boste dobili vašo fiksno nagrado."
+"Vaš dodaten denar boste dobili na koncu na enak način, kot boste dobili vašo "
+"fiksno nagrado."
 
 #: templates/introduction/ExperimentIntroduction.html:32
 msgid "Data protection"
@@ -172,7 +173,7 @@ msgstr ""
 
 #: templates/introduction/GamesIntroduction.html:6
 msgid "Section One: Tasks"
-msgstr "Poglavje ena: naloge"
+msgstr "Prvi del: naloge"
 
 #: templates/introduction/GamesIntroduction.html:8
 msgid ""
@@ -188,7 +189,10 @@ msgid ""
 "participants, who are respondents from [country] like you."
 msgstr ""
 "Na začetku vsake naloge boste razvrščeni v skupine z ostalimi udeleženci, ki "
-"so prav tako iz Slovenije."
+"so prav tako iz Slovenije. <strong>V vsaki nalogi boste razvrščeni v skupine "
+"z drugimi osebami:</strong> ista oseba ne bo nikoli več kot enkrat v vaši "
+"skupini. Ker drugi udeleženci morda ne bodo na spletu v istem trenutku, kot "
+"vi bomo vaš in njihov odgovor shranili in jih povezali na koncu raziskave."
 
 #: templates/introduction/GamesIntroduction.html:10
 msgid ""
@@ -225,7 +229,7 @@ msgstr ""
 
 #: templates/introduction/GamesIntroduction.html:18
 msgid "In short, each task may determine your final payoff!"
-msgstr "Na kratko, vsaka naloga lahko določi vaš končen zaslužek!"
+msgstr "Na kratko, vsaka naloga lahko določi vaš končni zaslužek!"
 
 #: templates/introduction/GamesIntroduction.html:21
 msgid "Next"

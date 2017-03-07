@@ -8,101 +8,73 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-07 13:05+0100\n"
+"PO-Revision-Date: 2017-03-07 15:42+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: models.py:46
 msgid ""
-"The following question asks how satisfied you feel on a scale from 0 to 10. "
-"Zero means you feel \"not at all satisfied\" and 10 means \"completely "
-"satisfied\". Overall, how satisfied are you with life as a whole these days?"
+"The following question asks how satisfied you feel on a scale from 0 to 10. Zero means you feel \"not at all satisfied\" and 10 means \"completely satisfied"
+"\". Overall, how satisfied are you with life as a whole these days?"
 msgstr ""
-"Z naslednjim vprašanjem vas želimo vprašati kako zadovoljno se počutite na "
-"lestvici od 0 do 10. Nič pomeni, da se sploh ne počutite zadovoljno in 10, "
-"da se počutite popolnoma zadovoljno. Na splošno, kako ste te dni zadovoljni "
-"s svojim življenjem kot celoto?"
+"Z naslednjim vprašanjem vas želimo vprašati kako zadovoljno se počutite na lestvici od 0 do 10. Nič pomeni, da se sploh ne počutite zadovoljno in 10, da se "
+"počutite popolnoma zadovoljno. Na splošno, kako ste te dni zadovoljni s svojim življenjem kot celoto?"
 
 #: models.py:49
 msgid "0 - Not at all satisfied"
 msgstr "0 – Sploh nisem zadovoljen"
 
-#: models.py:59 models.py:741 models.py:761 models.py:781 models.py:801
-#: models.py:821 models.py:841 models.py:861 models.py:881 models.py:901
+#: models.py:59 models.py:741 models.py:761 models.py:781 models.py:801 models.py:821 models.py:841 models.py:861 models.py:881 models.py:901
 msgid "10 - Completely satisfied"
 msgstr "10 – Popolnoma sem zadovoljen"
 
-#: models.py:60 models.py:80 models.py:100 models.py:120 models.py:140
-#: models.py:160 models.py:180 models.py:200 models.py:220 models.py:240
-#: models.py:260 models.py:280 models.py:300 models.py:320 models.py:340
-#: models.py:360 models.py:380 models.py:400 models.py:420 models.py:440
-#: models.py:451 models.py:482 models.py:502 models.py:522 models.py:542
-#: models.py:562 models.py:582 models.py:602 models.py:622 models.py:642
-#: models.py:662 models.py:682 models.py:702 models.py:722 models.py:742
-#: models.py:762 models.py:782 models.py:802 models.py:822 models.py:842
-#: models.py:862 models.py:882 models.py:902 models.py:922 models.py:942
-#: models.py:962 models.py:982 models.py:1002 models.py:1022 models.py:1042
-#: models.py:1062 models.py:1082 models.py:1102 models.py:1122 models.py:1191
-#: models.py:1211 models.py:1271 models.py:1352 models.py:1372 models.py:1392
-#: models.py:1412 models.py:1439 models.py:1458 models.py:1504 models.py:1524
-#: models.py:1544 models.py:1690 models.py:1739 models.py:1758
+#: models.py:60 models.py:80 models.py:100 models.py:120 models.py:140 models.py:160 models.py:180 models.py:200 models.py:220 models.py:240 models.py:260
+#: models.py:280 models.py:300 models.py:320 models.py:340 models.py:360 models.py:380 models.py:400 models.py:420 models.py:440 models.py:451 models.py:482
+#: models.py:502 models.py:522 models.py:542 models.py:562 models.py:582 models.py:602 models.py:622 models.py:642 models.py:662 models.py:682 models.py:702
+#: models.py:722 models.py:742 models.py:762 models.py:782 models.py:802 models.py:822 models.py:842 models.py:862 models.py:882 models.py:902 models.py:922
+#: models.py:942 models.py:962 models.py:982 models.py:1002 models.py:1022 models.py:1042 models.py:1062 models.py:1082 models.py:1102 models.py:1122
+#: models.py:1191 models.py:1211 models.py:1271 models.py:1352 models.py:1372 models.py:1392 models.py:1412 models.py:1439 models.py:1458 models.py:1504
+#: models.py:1524 models.py:1544 models.py:1690 models.py:1739 models.py:1758
 msgid "Don't know"
 msgstr "Ne vem"
 
 #: models.py:67
-msgid ""
-"Generally speaking, would you say that most people can be trusted, or that "
-"you can’t be too careful in dealing with people?"
-msgstr ""
-"Na splošno ali bi lahko rekli, da lahko večini ljudem zaupate, ali da ne "
-"morete biti preveč previdni v ravnanju z ljudmi?"
+msgid "Generally speaking, would you say that most people can be trusted, or that you can’t be too careful in dealing with people?"
+msgstr "Na splošno ali bi lahko rekli, da lahko večini ljudem zaupate, ali da  previdnost ni nikoli odveč?"
 
 #: models.py:69
 msgid "0 - You can't be too careful"
-msgstr "0 - Ne moreš biti preveč previden"
+msgstr "0 - Previdnost ni nikoli odveč"
 
 #: models.py:79
 msgid "10 - Most people can be trusted"
 msgstr "10 - Večini ljudi lahko zaupam"
 
 #: models.py:87
-msgid ""
-"How willing are you to punish someone who treats others unfairly, even if "
-"there may be costs for you?"
-msgstr ""
-"Koliko ste pripravljeni kaznovati nekoga, ki vas obravnava nepravično, tudi "
-"če je možnost, da bi to povzročilo škodo vam?"
+msgid "How willing are you to punish someone who treats others unfairly, even if there may be costs for you?"
+msgstr "Koliko ste pripravljeni kaznovati nekoga, ki vas obravnava nepravično, tudi če je možnost, da bi to povzročilo škodo vam?"
 
 #: models.py:89 models.py:109
 msgid "0 - Completely unwilling to do so"
-msgstr "0 – Sploh nisem pripravljen to narediti"
+msgstr "0 – Sploh nisem pripravljen tega narediti"
 
 #: models.py:99 models.py:119
 msgid "10 - Very willing to do so"
 msgstr "10 - Zelo sem pripravljen to narediti"
 
 #: models.py:107
-msgid ""
-"How willing are you to give to good causes without expecting anything in "
-"return?"
-msgstr ""
-"Koliko pripravljeni dati za dobre namene ne da bi za to pričakovali kaj v "
-"zameno?"
+msgid "How willing are you to give to good causes without expecting anything in return?"
+msgstr "Koliko ste pripravljeni dati za dobre namene ne da bi za to pričakovali kaj v zameno?"
 
 #: models.py:127
-msgid ""
-"How do you see yourself: are you generally a person who is fully prepared to "
-"take risks or do you try to avoid taking risks?"
-msgstr ""
-"Kako vidite sebe: ste oseba, ki je na splošno pripravljena sprejemati "
-"tveganja ali se tveganjem raje izogibate?"
+msgid "How do you see yourself: are you generally a person who is fully prepared to take risks or do you try to avoid taking risks?"
+msgstr "Kako vidite sebe: ste oseba, ki je na splošno pripravljena sprejemati tveganja ali se tveganjem raje izogibate?"
 
 #: models.py:129
 msgid "0 - Generally unwilling to take risks"
@@ -113,28 +85,20 @@ msgid "10 - Fully prepared to take risks"
 msgstr "10 - Zelo sem pripravljen sprejemati tveganja "
 
 #: models.py:147
-msgid ""
-"When someone does me a favour I am willing to return it. How well does this "
-"statement describe you as a person?"
-msgstr ""
-"Če vam nekdo naredi uslugo ste jo pripravljeni vrniti. Kako dobro ta izjava "
-"opise vašo osebnost?"
+msgid "When someone does me a favour I am willing to return it. How well does this statement describe you as a person?"
+msgstr "Če vam nekdo naredi uslugo ste jo pripravljeni vrniti. Kako dobro ta izjava opise vašo osebnost?"
 
 #: models.py:149 models.py:429 models.py:1679
 msgid "0 - Does not describe me at all"
-msgstr "0 - Sploh me ne opise"
+msgstr "0 - Sploh me ne opiše"
 
 #: models.py:159 models.py:439 models.py:1689
 msgid "10 - Describes me perfectly"
 msgstr "10 -  Popolnoma me opiše"
 
 #: models.py:167
-msgid ""
-"Would you say that most of the time people are only looking out for "
-"themselves or that they mostly try to help each other?"
-msgstr ""
-"Ali lahko rečete, da večino časa ljudi gledajo samo na sebe ali da večinoma "
-"poskušajo pomagati drugim?"
+msgid "Would you say that most of the time people are only looking out for themselves or that they mostly try to help each other?"
+msgstr "Ali lahko rečete, da večino časa ljudi gledajo samo na sebe ali da večinoma poskušajo pomagati drugim?"
 
 #: models.py:169
 msgid "0 - People are only looking out for themselves"
@@ -145,12 +109,8 @@ msgid "10 - People mostly try to help each other"
 msgstr "10 -Ljudje večinoma poskušajo pomagati en drugemu"
 
 #: models.py:187
-msgid ""
-"Do you think most people would try to take advantage of you if they got a "
-"chance, or would they try to be fair?"
-msgstr ""
-"Ali mislite, da bi vas ljudje izkoristili, ko imajo priložnost ali bi "
-"poizkusili biti do vas pravični?"
+msgid "Do you think most people would try to take advantage of you if they got a chance, or would they try to be fair?"
+msgstr "Ali mislite, da bi vas ljudje izkoristili, ko imajo priložnost ali bi poizkusili biti do vas pravični?"
 
 #: models.py:189
 msgid "0 - Most people would try to take advantage of me"
@@ -180,15 +140,13 @@ msgstr "Goljufate pri davkih, če imate priložnost"
 msgid "Your family"
 msgstr "Vaša družina:"
 
-#: models.py:269 models.py:289 models.py:309 models.py:329 models.py:349
-#: models.py:369 models.py:389 models.py:409 models.py:491 models.py:511
-#: models.py:531 models.py:551 models.py:571 models.py:591 models.py:611
+#: models.py:269 models.py:289 models.py:309 models.py:329 models.py:349 models.py:369 models.py:389 models.py:409 models.py:491 models.py:511 models.py:531
+#: models.py:551 models.py:571 models.py:591 models.py:611
 msgid "0 - I don’t trust them at all"
 msgstr "0 – Sploh jim ne zaupam"
 
-#: models.py:279 models.py:299 models.py:319 models.py:339 models.py:359
-#: models.py:379 models.py:399 models.py:419 models.py:501 models.py:521
-#: models.py:541 models.py:561 models.py:581 models.py:601 models.py:621
+#: models.py:279 models.py:299 models.py:319 models.py:339 models.py:359 models.py:379 models.py:399 models.py:419 models.py:501 models.py:521 models.py:541
+#: models.py:561 models.py:581 models.py:601 models.py:621
 msgid "10 - I fully trust them"
 msgstr "10 - Popolnoma jim zaupam"
 
@@ -206,19 +164,19 @@ msgstr "Osebe, ki ste jih prvič srečali:"
 
 #: models.py:347
 msgid "People of another religion"
-msgstr "Osebe iz drugih veroizpovedih:"
+msgstr "Osebe drugih veroizpovedi:"
 
 #: models.py:367
 msgid "People of another nationality"
-msgstr "Osebe drugih nacionalnostih:"
+msgstr "Osebe drugih nacionalnosti:"
 
 #: models.py:387
 msgid "People who immigrated to [country]"
-msgstr "Osebe, ki so preselile v Slovenijo"
+msgstr "Osebe, ki so se priselile v Slovenijo:"
 
 #: models.py:407
 msgid "People who come to [country] to seek refuge"
-msgstr "Osebe, ki so prišle po zatočišče v Slovenijo"
+msgstr "Osebe, ki so prišle po zatočišče v Slovenijo:"
 
 #: models.py:427
 msgid "I am good at math"
@@ -226,13 +184,11 @@ msgstr "Sem dober v matematiki."
 
 #: models.py:447
 msgid ""
-"If you lost a wallet or a purse that contained items of great value to you, "
-"and it was found by a stranger, do you think it would be returned with its "
+"If you lost a wallet or a purse that contained items of great value to you, and it was found by a stranger, do you think it would be returned with its "
 "contents, or not?"
 msgstr ""
-"Če ste izgubili denarnico ali torbo z predmeti, ki so za vas zelo vredni in "
-"jo je našel tujec. Ali mislite, da bi vam vrnil denarnico ali torbico z "
-"vsemi predmeti ali ne?"
+"Izgubili ste denarnico ali torbo s predmeti, ki so za vas zelo vredni in jo je našel tujec. Ali mislite, da bi vam vrnil denarnico ali torbico z vsemi "
+"predmeti ali ne?"
 
 #: models.py:449 models.py:460
 msgid "Yes"
@@ -248,22 +204,14 @@ msgstr "Ali ste volili na prejšnjih volitvah?"
 
 #: models.py:462
 msgid "I couldn't vote"
-msgstr "Ne morem voliti"
+msgstr "Nisem mogel voliti"
 
 #: models.py:469
-#, fuzzy
-#| msgid ""
-#| "And now a general question about trust. On a scale from zero to ten, "
-#| "where zero is not at all and ten is completely, in general how much do "
-#| "you trust most people in your country?"
 msgid ""
-"And now a general question about trust. On a scale from zero to ten, where "
-"zero is not at all and ten is completely, in general how much do you trust "
-"most people?"
+"And now a general question about trust. On a scale from zero to ten, where zero is not at all and ten is completely, in general how much do you trust most "
+"people?"
 msgstr ""
-"Zdaj pa eno splošno vprašanje o zaupanju. Koliko na splošno zaupate ljudem v "
-"vasi državi na lestvici od 0 do 10 (kjer je 0 - sploh ne zaupam in 10 - "
-"popolnoma zaupam)"
+"Zdaj pa eno splošno vprašanje o zaupanju. Koliko na splošno zaupate ljudem na lestvici od 0 do 10 (kjer je 0 - sploh ne zaupam in 10 - popolnoma zaupam)?"
 
 #: models.py:471 models.py:1493
 msgid "0 - Not at all"
@@ -279,9 +227,7 @@ msgstr "Vaša vlada"
 
 #: models.py:509
 msgid "The civil service"
-msgstr ""
-"\t\n"
-"Družbene storitve"
+msgstr "Državna uprava"
 
 #: models.py:529
 msgid "The parliament"
@@ -311,8 +257,7 @@ msgstr "Javne institucije izvajajo javne storitve na najboljši možni način"
 msgid "0 - I don’t agree at all"
 msgstr "0 -  Sploh se ne strinjam"
 
-#: models.py:641 models.py:661 models.py:681 models.py:701 models.py:721
-#: models.py:1757
+#: models.py:641 models.py:661 models.py:681 models.py:701 models.py:721 models.py:1757
 msgid "10 - I fully agree"
 msgstr "10 – Popolnoma se strinjam"
 
@@ -329,19 +274,14 @@ msgid "Public institutions are transparent"
 msgstr "Javne institucije so transparentne"
 
 #: models.py:709
-msgid ""
-"Public institutions treat all citizens fairly regardless of their gender, "
-"race, age or economic condition"
-msgstr ""
-"Javne institucije obravnavajo vse državljane enako ne glede na njihov spol, "
-"raso, starost ali ekonomski položaj"
+msgid "Public institutions treat all citizens fairly regardless of their gender, race, age or economic condition"
+msgstr "Javne institucije obravnavajo vse državljane enako ne glede na njihov spol, raso, starost ali ekonomski položaj"
 
 #: models.py:729
 msgid "the Education system"
 msgstr "Izobraževalnim sistemom"
 
-#: models.py:731 models.py:751 models.py:771 models.py:791 models.py:811
-#: models.py:831 models.py:851 models.py:871 models.py:891
+#: models.py:731 models.py:751 models.py:771 models.py:791 models.py:811 models.py:831 models.py:851 models.py:871 models.py:891
 msgid "0 -  Not at all satisfied"
 msgstr "0 - V celoti nisem zadovoljen"
 
@@ -358,11 +298,8 @@ msgid "Child care services"
 msgstr "Centrom za socialno delo"
 
 #: models.py:809
-msgid ""
-"Welfare benefits (unemployment benefits, disability benefits, income support)"
-msgstr ""
-"Prejemki za socialno varnost (nadomestila za brezposelnost, nadomestila v "
-"primeru invalidnost, denarna socialna pomoč)"
+msgid "Welfare benefits (unemployment benefits, disability benefits, income support)"
+msgstr "Prejemki za socialno varnost (nadomestila za brezposelnost, nadomestila v primeru invalidnost, denarna socialna pomoč)"
 
 #: models.py:829
 msgid "Public housing"
@@ -377,91 +314,59 @@ msgid "Environmental services (air and water quality, parks and green spaces)"
 msgstr "Okoljske storitve (kakovost zraka in vode, parki in zelene površine)"
 
 #: models.py:889
-msgid ""
-"Cultural facilities (theaters, cinemas, libraries, museums, public social "
-"spaces)"
-msgstr ""
-"Kulturne ustanove (gledališča, kinematografi, knjižnice, muzeji, javni "
-"druzbeni prostori)"
+msgid "Cultural facilities (theaters, cinemas, libraries, museums, public social spaces)"
+msgstr "Kulturne ustanove (gledališča, kinematografi, knjižnice, muzeji, javni druzbeni prostori)"
 
 #: models.py:909
-msgid ""
-"If you complain about bad quality of a public service, how likely is that "
-"the problem will be easily resolved?"
-msgstr ""
-"V primeru, da se pritozujete zaradi slabe kakovosti javnih storitev, "
-"koliksna je verjetnost da bo problem enostanvo resen?"
+msgid "If you complain about bad quality of a public service, how likely is that the problem will be easily resolved?"
+msgstr "V primeru, da se pritozujete zaradi slabe kakovosti javnih storitev, koliksna je verjetnost da bo problem enostanvo resen?"
 
-#: models.py:911 models.py:931 models.py:951 models.py:971 models.py:991
-#: models.py:1011 models.py:1031 models.py:1111 models.py:1220 models.py:1240
+#: models.py:911 models.py:931 models.py:951 models.py:971 models.py:991 models.py:1011 models.py:1031 models.py:1111 models.py:1220 models.py:1240
 msgid "0 - Very unlikely"
 msgstr "0 - Ni verjetno"
 
-#: models.py:921 models.py:941 models.py:961 models.py:981 models.py:1001
-#: models.py:1021 models.py:1041 models.py:1121 models.py:1230 models.py:1250
+#: models.py:921 models.py:941 models.py:961 models.py:981 models.py:1001 models.py:1021 models.py:1041 models.py:1121 models.py:1230 models.py:1250
 msgid "10 - Very likely"
 msgstr "10 - Zelo verjetno"
 
 #: models.py:929
-msgid ""
-"If a technology could speed up administrative procedures, how likely is it "
-"that a government agency will quickly adopt the new technology?"
+msgid "If a technology could speed up administrative procedures, how likely is it that a government agency will quickly adopt the new technology?"
 msgstr ""
-"V primeru, da bi nova tehnologija lahko pospesila administrativne postopke, "
-"koliksna je verjetnost da javna institucija hitro sprejela novo tehnologijo?"
+"V primeru, da bi nova tehnologija lahko pospesila administrativne postopke, koliksna je verjetnost da javna institucija hitro sprejela novo tehnologijo?"
 
 #: models.py:949
-msgid ""
-"If you need information about an administrative procedure, do you think it "
-"will be easy to find?"
-msgstr ""
-"V primeru, da bi potrebovali informacije o administrativni proceduri, ali "
-"menite da bi bile lahko dostopne?"
+msgid "If you need information about an administrative procedure, do you think it will be easy to find?"
+msgstr "V primeru, da bi potrebovali informacije o administrativni proceduri, ali menite da bi bile lahko dostopne?"
 
 #: models.py:969
-msgid ""
-"If a decision affecting your community is to be taken by the local or "
-"regional government, how likely is it that you would be consulted upon?"
-msgstr ""
-"V primeru, da bi vlada sprejemala odločitev, ki bi neposredno vplivala na "
-"vašo skupnost, kako verjetno je da bi se posvetovali z vami?"
+msgid "If a decision affecting your community is to be taken by the local or regional government, how likely is it that you would be consulted upon?"
+msgstr "V primeru, da bi vlada sprejemala odločitev, ki bi neposredno vplivala na vašo skupnost, kako verjetno je da bi se posvetovali z vami?"
 
 #: models.py:989
 msgid ""
-"If you start a business today, do you think that the conditions under which "
-"you operate (taxes, regulations, etc.) will remain stable enough so that "
+"If you start a business today, do you think that the conditions under which you operate (taxes, regulations, etc.) will remain stable enough so that "
 "unexpected changes do not threaten your business?"
 msgstr ""
-"Če bi danes ustanovili podjetje, ali menite da bodo pogoji za poslovanje "
-"(npr. Davki, regulacija, ipd.) ostali dovolj stabilni, da bi lahko nemoteno "
+"Če bi danes ustanovili podjetje, ali menite da bodo pogoji za poslovanje (npr. Davki, regulacija, ipd.) ostali dovolj stabilni, da bi lahko nemoteno "
 "nadaljevali s poslovanjem?"
 
 #: models.py:1009
 msgid ""
-"If a natural disaster occurs do you think that the provision by government "
-"of adequate food, shelter and clothing will be available to people who are "
+"If a natural disaster occurs do you think that the provision by government of adequate food, shelter and clothing will be available to people who are "
 "affected?"
-msgstr ""
-"V primeru naravne katastrofe, ali menite da bo država lahko nudila ustrezno "
-"podporo preživelim v obliki hrane, zatočišča in oblačil?"
+msgstr "V primeru naravne katastrofe, ali menite da bo država lahko nudila ustrezno podporo preživelim v obliki hrane, zatočišča in oblačil?"
 
 #: models.py:1029
-msgid ""
-"If a high ranking government employee was guilty of misusing taxpayers’ "
-"money, do you think that he/she would be prosecuted?"
+msgid "If a high ranking government employee was guilty of misusing taxpayers’ money, do you think that he/she would be prosecuted?"
 msgstr ""
-"Ali menite, da bi bil visoko rangirani javni uslužbenc, ki je bil  spoznan "
-"kriv zlorabe javnih sredstev ali sprejemanja podkupnin iz strani velikih "
+"Ali menite, da bi bil visoko rangirani javni uslužbenc, ki je bil  spoznan kriv zlorabe javnih sredstev ali sprejemanja podkupnin iz strani velikih "
 "korporacij ustrezno kaznovan?"
 
 #: models.py:1049
 msgid ""
-"If money is offered by citizens to government employees in order to speed up "
-"administrative procedures, do you think that they will accept or refuse the "
+"If money is offered by citizens to government employees in order to speed up administrative procedures, do you think that they will accept or refuse the "
 "bribe?"
-msgstr ""
-"Ali menite, da bi javni uslužbenci zavrnili podkupnino iz strani državljana, "
-"ki želi pospešiti administrativno proceduro?"
+msgstr "Ali menite, da bi javni uslužbenci zavrnili podkupnino iz strani državljana, ki želi pospešiti administrativno proceduro?"
 
 #: models.py:1051
 msgid "0 -  Most likely to accept the bribe"
@@ -473,12 +378,9 @@ msgstr "10 - Najverjetnje bi zavrnli podkupnino"
 
 #: models.py:1069
 msgid ""
-"If a high level politician would be offered a well-paid job in the private "
-"sector in exchange for political influence, do you think that he/she will "
-"accept reject the job?"
-msgstr ""
-"Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro placano "
-"sluzbo v zasebnem sektorju, v zameno z politicnim vplivom?"
+"If a high level politician would be offered a well-paid job in the private sector in exchange for political influence, do you think that he/she will accept "
+"reject the job?"
+msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro placano sluzbo v zasebnem sektorju, v zameno z politicnim vplivom?"
 
 #: models.py:1071
 msgid "0 -  Most likely to accept the job"
@@ -490,12 +392,9 @@ msgstr "10 - Najverjetnje bi zavrnlisluzbo"
 
 #: models.py:1089
 msgid ""
-"If a parliamentarian could influence the allocation of a public procurement "
-"tender and receive a bribe in return, do you think that he/she will accept "
-"or reject the bribe?"
-msgstr ""
-"Ali menite, da bi poslanec sprejel ali zavrnil podkupnino, ce bi lahko "
-"vplival na proces javnega narocanja in zato dobil podkupnino?"
+"If a parliamentarian could influence the allocation of a public procurement tender and receive a bribe in return, do you think that he/she will accept or "
+"reject the bribe?"
+msgstr "Ali menite, da bi poslanec sprejel ali zavrnil podkupnino, ce bi lahko vplival na proces javnega narocanja in zato dobil podkupnino?"
 
 #: models.py:1091
 msgid "0 - Most likely to accept the bribe"
@@ -503,33 +402,26 @@ msgstr "0 - Najverjetnje bi sprejli podkupnino"
 
 #: models.py:1109
 msgid ""
-"If a citizen belongs to a social minority (e.g. sexual, racial/ethnic and/or "
-"based on nationality), how likely is it that he or she will be treated "
-"equally by a government agency?"
+"If a citizen belongs to a social minority (e.g. sexual, racial/ethnic and/or based on nationality), how likely is it that he or she will be treated equally "
+"by a government agency?"
 msgstr ""
-"V primeru, da državljan pripada manjšinski družbeni skupini (kot glede na "
-"spolno usmeritev, raso, etično pripadnost, nacionalnost) kakšna je "
-"verjetnost, da bo on ali ona obravnavana s strani državnih institucij enako?"
+"V primeru, da državljan pripada manjšinski družbeni skupini (kot glede na spolno usmeritev, raso, etično pripadnost, nacionalnost) kakšna je verjetnost, da "
+"bo on ali ona obravnavana s strani državnih institucij enako?"
 
 #: models.py:1172
 msgid ""
-"Consider 100 children growing up in the poorest segment of society. How many "
-"children do you believe are able to become part of the richest segment of "
+"Consider 100 children growing up in the poorest segment of society. How many children do you believe are able to become part of the richest segment of "
 "society when they are older?"
 msgstr ""
-"Razmislite, koliko od 100 otrok, ki odrašča v najrevnejšem segmentu družbe, "
-"bi bilo zmožnih postati del najbogatješega segmenta družbe ko bodo odrasli?"
+"Razmislite, koliko od 100 otrok, ki odrašča v najrevnejšem segmentu družbe, bi bilo zmožnih postati del najbogatješega segmenta družbe ko bodo odrasli?"
 
 #: models.py:1178
 msgid ""
-"Some people say there is not much opportunity to get ahead today for the "
-"average person. Others say anyone who works hard can climb up the ladder. "
-"Which one comes closer to the way you feel about this?"
+"Some people say there is not much opportunity to get ahead today for the average person. Others say anyone who works hard can climb up the ladder. Which "
+"one comes closer to the way you feel about this?"
 msgstr ""
-"Nekateri ljudje pravijo, da dan danes ni veliko možnosti za napredovanje "
-"povprečnega človeka. Drugi pravijo, da je veliko priložnosti in, da lahko "
-"vsakdo, ki trdo dela pride tako daleč kolikor hoče. Katero razmišljanje je "
-"bližje vašem mnenju?"
+"Nekateri ljudje pravijo, da dan danes ni veliko možnosti za napredovanje povprečnega človeka. Drugi pravijo, da je veliko priložnosti in, da lahko vsakdo, "
+"ki trdo dela pride tako daleč kolikor hoče. Katero razmišljanje je bližje vašem mnenju?"
 
 #: models.py:1180
 msgid "0 - There is not much opportunity"
@@ -541,13 +433,10 @@ msgstr "10 - Je veliko priložnosti"
 
 #: models.py:1198
 msgid ""
-"When it comes to the financial situation of your household, what are your "
-"expectations for the 12 months to come, will the next 12 months be better, "
-"worse, or the same?"
+"When it comes to the financial situation of your household, what are your expectations for the 12 months to come, will the next 12 months be better, worse, "
+"or the same?"
 msgstr ""
-"V povezavi s finančnim stanjem vašega gospodinjstva, kakšna so vaša "
-"pričakovanja za prihodnjih 12 mesecev? Bo naslednjih 12 mesecev bolje, "
-"slabše ali enako?"
+"V povezavi s finančnim stanjem vašega gospodinjstva, kakšna so vaša pričakovanja za prihodnjih 12 mesecev? Bo naslednjih 12 mesecev bolje, slabše ali enako?"
 
 #: models.py:1200
 msgid "0 - Worse"
@@ -562,33 +451,22 @@ msgid "10 - Better"
 msgstr "10 - Boljše"
 
 #: models.py:1218
-msgid ""
-"How likely do you think it is that you will still have a job in 6 months (if "
-"you have one now)?"
-msgstr ""
-"Kako bi ocenili verjetnost, da boste izgubili vašo službo v naslednjih 6ih "
-"mesecih?"
+msgid "How likely do you think it is that you will still have a job in 6 months (if you have one now)?"
+msgstr "Kako bi ocenili verjetnost, da boste izgubili vašo službo v naslednjih 6ih mesecih?"
 
 #: models.py:1231 models.py:1251 models.py:1671
 msgid "N/A"
 msgstr "ni podatkov"
 
 #: models.py:1238
-msgid ""
-"If you were to lose your job, how likely is it that you would find a job "
-"with a similar salary within 6 months?"
-msgstr ""
-"V primeru, da bi izgubili svojo službo, kako verjetno je da bi našli novo "
-"službo s podobno plačo?"
+msgid "If you were to lose your job, how likely is it that you would find a job with a similar salary within 6 months?"
+msgstr "V primeru, da bi izgubili svojo službo, kako verjetno je da bi našli novo službo s podobno plačo?"
 
 #: models.py:1258
 msgid ""
-"As you may know, international trade has increased substantially in recent "
-"years. Do you think government should try to encourage international trade "
-"or to discourage international trade?"
-msgstr ""
-"V zadnjih letih je mednarodno poslovanje izjemno naraslo. Ali menite, da bi "
-"morala vlada spodbujati ali omejevati mednarodno trgovanje?"
+"As you may know, international trade has increased substantially in recent years. Do you think government should try to encourage international trade or to "
+"discourage international trade?"
+msgstr "V zadnjih letih je mednarodno poslovanje izjemno naraslo. Ali menite, da bi morala vlada spodbujati ali omejevati mednarodno trgovanje?"
 
 #: models.py:1260
 msgid "0 - Fully discourage international trade"
@@ -660,15 +538,11 @@ msgstr "Korporacije"
 
 #: models.py:1420
 msgid ""
-"How high do you estimate the percentage of people of non-[country] origin in "
-"your neighborhood to be? With non-[country] origin we mean people who were "
-"not born in [country] or of whom at least one parent was not born in "
-"[country]. Please give a percentage between 0 and 100."
+"How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not "
+"born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100."
 msgstr ""
-"Kako visoko bi ocenili odstotek ljudi v vaši okolici,ki niso slovenskega "
-"rodu? S tem mislimo ljudi, ki niso bili rojeni v Sloveniji ali imajo vsaj "
-"enega star[a, ki ni rojen v Sloveniji. Prosimo navedite odstotek med 0 in "
-"100."
+"Kako visoko bi ocenili odstotek ljudi v vaši okolici,ki niso slovenskega rodu? S tem mislimo ljudi, ki niso bili rojeni v Sloveniji ali imajo vsaj enega "
+"star[a, ki ni rojen v Sloveniji. Prosimo navedite odstotek med 0 in 100."
 
 #: models.py:1428
 msgid "0 - Immigrants are not integrated in our society"
@@ -711,16 +585,11 @@ msgid "Never"
 msgstr "Nikoli"
 
 #: models.py:1478
-msgid ""
-"How often do you participate in voluntary activities to help people other "
-"than your direct relatives, friends or colleagues?"
-msgstr ""
-"Kako pogosto sodelujete v prostovoljskih aktivnostih, ki pomagajo ljudem ki "
-"niso vaši direktni sorodniki, prijatelji, znanci ali sodelavci?"
+msgid "How often do you participate in voluntary activities to help people other than your direct relatives, friends or colleagues?"
+msgstr "Kako pogosto sodelujete v prostovoljskih aktivnostih, ki pomagajo ljudem ki niso vaši direktni sorodniki, prijatelji, znanci ali sodelavci?"
 
 #: models.py:1490
-msgid ""
-"How strongly do you feel connected to other people in your neighborhood?"
+msgid "How strongly do you feel connected to other people in your neighborhood?"
 msgstr "Kako močno čutite, da ste povezani z ljudmi v vaši soseski?"
 
 #: models.py:1503
@@ -729,13 +598,11 @@ msgstr "10 - Zelo"
 
 #: models.py:1510
 msgid ""
-"Some people say that who people vote for does not make any difference to "
-"what happens. Others say that who people vote for can make a difference to "
-"what happens. Where would you place yourself?"
+"Some people say that who people vote for does not make any difference to what happens. Others say that who people vote for can make a difference to what "
+"happens. Where would you place yourself?"
 msgstr ""
-"Nekateri ljudje pravijo, da ne glede na to koga ljudje volijo, ne bo "
-"vplivalo na to kaj se bo zgodilo. Drugi pa pravijo, da glede na to koga "
-"volimo, bo vplivalo na dogajanje. Kam bi sebe uvrstili?"
+"Nekateri ljudje pravijo, da ne glede na to koga ljudje volijo, ne bo vplivalo na to kaj se bo zgodilo. Drugi pa pravijo, da glede na to koga volimo, bo "
+"vplivalo na dogajanje. Kam bi sebe uvrstili?"
 
 #: models.py:1513
 msgid "0 - Voting does not make a difference"
@@ -746,12 +613,9 @@ msgid "10 - Voting can make a difference"
 msgstr "10 - Volitve lahko kaj spremenijo"
 
 #: models.py:1530
-msgid ""
-"In political matters, people often talk of “the left” and “the right.” How "
-"would you place your views on this scale, generally speaking?"
+msgid "In political matters, people often talk of “the left” and “the right.” How would you place your views on this scale, generally speaking?"
 msgstr ""
-"Ljudje pogosto navedejo svojo politično opredelitev navzdol spektra \"leve\" "
-"in \"desne\" politike. Z uporabo te tradicionalne ločnice, kam na spekter bi "
+"Ljudje pogosto navedejo svojo politično opredelitev navzdol spektra \"leve\" in \"desne\" politike. Z uporabo te tradicionalne ločnice, kam na spekter bi "
 "uvrstili sebe?"
 
 #: models.py:1533
@@ -768,19 +632,19 @@ msgstr "10 - Desno"
 
 #: models.py:1549
 msgid "What is your date of birth?"
-msgstr "Vas datum rojstva?"
+msgstr "Vaš datum rojstva?"
 
 #: models.py:1555
 msgid "Male"
-msgstr "Moški"
+msgstr "moški"
 
 #: models.py:1555
 msgid "Female"
-msgstr "Zenska"
+msgstr "ženska"
 
 #: models.py:1555 models.py:1591 models.py:1770
 msgid "Other"
-msgstr "Drugo"
+msgstr "drugo"
 
 #: models.py:1556
 msgid "What is your gender?"
@@ -788,7 +652,7 @@ msgstr "Kaj ste po spolu?"
 
 #: models.py:1561
 msgid "How many people live in your household (including yourself?)"
-msgstr "Koliko ljudi živi v vasem gospodinjstvu (vključno z vami)?"
+msgstr "Koliko ljudi živi v vašem gospodinjstvu (vključno z vami)?"
 
 #: models.py:1575
 msgid "More than 10"
@@ -812,7 +676,7 @@ msgstr "Tukaj sem bil rojen"
 
 #: models.py:1604
 msgid "Were your parents born in [country]?"
-msgstr "Ali so vasi starši rojeni v Sloveniji"
+msgstr "Ali so vaši starši rojeni v Sloveniji?"
 
 #: models.py:1607
 msgid "Yes, both parents"
@@ -824,7 +688,7 @@ msgstr "Samo en starš"
 
 #: models.py:1609
 msgid "Neither was born here"
-msgstr "Noben od njiju se ni rodil tukaj"
+msgstr "Nobeden od njiju se ni rodil tukaj"
 
 #: models.py:1614
 msgid "Do you live in a...?"
@@ -840,7 +704,7 @@ msgstr "Mestu (50.000 - 200.000 prebivalcev)"
 
 #: models.py:1621
 msgid "Village (Less than 50,000 inhabitants)"
-msgstr "Vasi (manj kot 50.000 prebivalcev)"
+msgstr "Mestu (manj kot 50.000 prebivalcev)"
 
 #: models.py:1622
 msgid "Rural area"
@@ -863,14 +727,12 @@ msgid "Some college"
 msgstr "Višješolska izobrazba"
 
 #: models.py:1633 models.py:1646
-msgid ""
-"Diploma, trades certificate or other post school qualification other than "
-"university"
+msgid "Diploma, trades certificate or other post school qualification other than university"
 msgstr "Razni certifikati in kvalifikacije"
 
 #: models.py:1634 models.py:1647
 msgid "Undergraduate degree (e.g. BA, BS)"
-msgstr "Visokošolska ali univerzitetna"
+msgstr "Visokošolska ali univerzitetna izobrazba"
 
 #: models.py:1635 models.py:1648
 msgid "Post-graduate degree"
@@ -879,14 +741,11 @@ msgstr "Podiplomska stopnja izobrazbe"
 #: models.py:1640
 msgid ""
 "What is the highest level of education that <strong>one of your parents</strong> has completed? (either one, or both have completed this level of education)"
-msgstr ""
-"Katera je najvišja stopnja izobrazbe, ki jo je <strong>eden od vaših "
-"staršev</strong> dokončal? (ne glede ali jo je dokončal eden od staršev ali "
-"oba)  "
+msgstr "Katera je najvišja stopnja izobrazbe, ki jo je dokončal <strong>eden od vaših staršev<strong/>? (ne glede ali jo je dokončal eden od staršev ali oba)"
 
 #: models.py:1653
 msgid "Which of these best describes your situation?"
-msgstr "Kaj od tega na najboljši možni način opise vašo situacijo?"
+msgstr "Kaj od tega na najboljši možni način opiše vašo situacijo?"
 
 #: models.py:1656
 msgid "Employee"
@@ -901,8 +760,7 @@ msgid "Unemployed"
 msgstr "Brezposeln"
 
 #: models.py:1659
-msgid ""
-"Outside the labour force (e.g. homemaker, student, retired, unable to work)"
+msgid "Outside the labour force (e.g. homemaker, student, retired, unable to work)"
 msgstr "Neaktiven (študent, upokojenec, nezmožen za delo, gospodinja)"
 
 #: models.py:1664
@@ -911,7 +769,7 @@ msgstr "Ali delate v …?"
 
 #: models.py:1667
 msgid "Central, regional or local government administration"
-msgstr "Centralni, regionalni ali lokalni državni administraciji"
+msgstr "Centralni ali lokalni državni administraciji"
 
 #: models.py:1668
 msgid "Public sector"
@@ -927,33 +785,24 @@ msgstr "Neprofitni sektor"
 
 #: models.py:1676
 msgid ""
-"How well does the following statement describe you as a person? As long as I "
-"am not convinced otherwise, I assume that people have only the best "
-"intentions?"
-msgstr ""
-"Kako dobro naslednja izjava opiše vas kot osebo? V kolikor nisem prepričan "
-"drugače predpostavljam, da imajo ljudi v sebi samo dobre namene."
+"How well does the following statement describe you as a person? As long as I am not convinced otherwise, I assume that people have only the best intentions?"
+msgstr "Kako dobro naslednja izjava opiše vas kot osebo? V kolikor nisem prepričan drugače predpostavljam, da imajo ljudi v sebi samo dobre namene."
 
 #: models.py:1696
 msgid ""
-"In the last 12 months, what was your total income, the income that you "
-"received as an individual, after taxes have been deducted? (Income can come "
-"salaries and wages, profit from self-employment, interest, rent, pension, "
-"social insurance payments and other benefits, among others)"
+"In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come salaries "
+"and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"
 msgstr ""
-"Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot "
-"posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim "
-"se med dohodke šteje plača, dobiček od samozaposlitve, najemnina, obresti, "
-"pokojnina, socialni in drugi prejemkov) "
+"Kolikšen je bil vaš skupni dohodek, ki ste ga prejeli <strong>kot posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke "
+"šteje plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: models.py:1701
 msgid ""
-"Just to confirm, which of these income bands corresponds best to your "
-"personal income? Remember, we are asking for your individual income, after "
-"taxes have been deducted."
+"Just to confirm, which of these income bands corresponds best to your personal income? Remember, we are asking for your individual income, after taxes have "
+"been deducted."
 msgstr ""
-"Prosimo potrdite kateri o teh dohodkovnih razredov ustrezajo vašemu dohodku? "
-"Zapomnite si, sprašujemo vas po vašem dohodku po odmerjenemu davku. "
+"Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po "
+"<strong>vašem osebnem</strong> dohodku po odmeri davkov."
 
 #: models.py:1704
 msgid "€0 to €9,000.00"
@@ -977,23 +826,19 @@ msgstr ""
 
 #: models.py:1714
 msgid ""
-"In the last 12 months, what was the total income of your household after "
-"taxes have been deducted? (Income can come salaries and wages, profit from "
-"self-employment, interest, rent, pension, social insurance payments and "
-"other benefits, among others)"
+"In the last 12 months, what was the total income of your household after taxes have been deducted? (Income can come salaries and wages, profit from self-"
+"employment, interest, rent, pension, social insurance payments and other benefits, among others)"
 msgstr ""
-"Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v "
-"zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje "
-"plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in "
-"drugi prejemkov) "
+"Kolikšen je bil skupni dohodek <strong>vašega gospodinjstva</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje plača, "
+"dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: models.py:1725
 msgid "How important would you say religion is in your own life?"
-msgstr "Kako pomembna je vera v vasem življenju?"
+msgstr "Kako pomembna je vera v vašem življenju?"
 
 #: models.py:1728
 msgid "0 - Not important at all"
-msgstr "0 - Nepomembna"
+msgstr "0 – Popolnoma nepomembna"
 
 #: models.py:1738
 msgid "10 - Very important"
@@ -1029,54 +874,29 @@ msgstr "Tablico"
 
 #: models.py:1776
 msgid ""
-"If you have any comments about your experience taking this survey, with "
-"regard to the functionality of the platform, or the content of the tasks and "
+"If you have any comments about your experience taking this survey, with regard to the functionality of the platform, or the content of the tasks and "
 "questions, please provide us with relevant feedback"
 msgstr ""
-"Če imate kakšen komentar, pripombo ali predlog glede vprašalnika, "
-"funkcionalnosti platforme, vsebine vprašanj ali nalog nam prosim pošljite "
-"povratne informacije:"
+"Če imate kakšen komentar, pripombo ali predlog glede vprašalnika, funkcionalnosti platforme, vsebine vprašanj ali nalog nam prosim pošljite povratne "
+"informacije:"
 
-#: templates/survey_i18n/Survey00.html:9 templates/survey_i18n/Survey01.html:10
-#: templates/survey_i18n/Survey02.html:10
-#: templates/survey_i18n/Survey03.html:10
-#: templates/survey_i18n/Survey04.html:17
-#: templates/survey_i18n/Survey05.html:18
-#: templates/survey_i18n/Survey06.html:13 templates/survey_i18n/Survey07.html:9
-#: templates/survey_i18n/Survey08.html:17
-#: templates/survey_i18n/Survey09.html:15
-#: templates/survey_i18n/Survey10.html:20
-#: templates/survey_i18n/Survey10_5.html:9
-#: templates/survey_i18n/Survey11.html:11 templates/survey_i18n/Survey12.html:9
-#: templates/survey_i18n/Survey13.html:11 templates/survey_i18n/Survey14.html:9
-#: templates/survey_i18n/Survey15.html:283
-#: templates/survey_i18n/Survey16.html:111
-#: templates/survey_i18n/Survey17.html:9 templates/survey_i18n/Survey18.html:11
-#: templates/survey_i18n/Survey19.html:9 templates/survey_i18n/Survey20.html:13
-#: templates/survey_i18n/Survey21.html:14 templates/survey_i18n/Survey22.html:9
-#: templates/survey_i18n/Survey23.html:12
-#: templates/survey_i18n/Survey24.html:10 templates/survey_i18n/Survey25.html:9
-#: templates/survey_i18n/Survey26.html:10
-#: templates/survey_i18n/Survey27.html:12
-#: templates/survey_i18n/Survey28.html:11
-#: templates/survey_i18n/Survey29.html:12
-#: templates/survey_i18n/Survey30.html:15
-#: templates/survey_i18n/Survey31.html:19
-#: templates/survey_i18n/Survey32.html:19
-#: templates/survey_i18n/Survey33.html:16 templates/survey_i18n/Survey34.html:9
-#: templates/survey_i18n/Survey35.html:26
-#: templates/survey_i18n/Survey36.html:31 templates/survey_i18n/Survey37.html:9
+#: templates/survey_i18n/Survey00.html:9 templates/survey_i18n/Survey01.html:10 templates/survey_i18n/Survey02.html:10 templates/survey_i18n/Survey03.html:10
+#: templates/survey_i18n/Survey04.html:17 templates/survey_i18n/Survey05.html:18 templates/survey_i18n/Survey06.html:13 templates/survey_i18n/Survey07.html:9
+#: templates/survey_i18n/Survey08.html:17 templates/survey_i18n/Survey09.html:15 templates/survey_i18n/Survey10.html:20
+#: templates/survey_i18n/Survey10_5.html:9 templates/survey_i18n/Survey11.html:11 templates/survey_i18n/Survey12.html:9 templates/survey_i18n/Survey13.html:11
+#: templates/survey_i18n/Survey14.html:9 templates/survey_i18n/Survey15.html:283 templates/survey_i18n/Survey16.html:111 templates/survey_i18n/Survey17.html:9
+#: templates/survey_i18n/Survey18.html:11 templates/survey_i18n/Survey19.html:9 templates/survey_i18n/Survey20.html:13 templates/survey_i18n/Survey21.html:14
+#: templates/survey_i18n/Survey22.html:9 templates/survey_i18n/Survey23.html:12 templates/survey_i18n/Survey24.html:10 templates/survey_i18n/Survey25.html:9
+#: templates/survey_i18n/Survey26.html:10 templates/survey_i18n/Survey27.html:12 templates/survey_i18n/Survey28.html:11 templates/survey_i18n/Survey29.html:12
+#: templates/survey_i18n/Survey30.html:15 templates/survey_i18n/Survey31.html:19 templates/survey_i18n/Survey32.html:19 templates/survey_i18n/Survey33.html:16
+#: templates/survey_i18n/Survey34.html:9 templates/survey_i18n/Survey35.html:26 templates/survey_i18n/Survey36.html:31 templates/survey_i18n/Survey37.html:9
 #: templates/survey_i18n/Survey38.html:9
 msgid "Next"
 msgstr "Naprej"
 
 #: templates/survey_i18n/Survey04.html:12
-msgid ""
-"Can you tell us whether you think the following action is always wrong, "
-"never wrong, or something in between:"
-msgstr ""
-"Ali nam lahko poveste ali mislite, da je naslednje dejanje vedno napačno, "
-"nikoli napačno ali nekje na sredini:"
+msgid "Can you tell us whether you think the following action is always wrong, never wrong, or something in between:"
+msgstr "Ali nam lahko poveste ali mislite, da je naslednje dejanje vedno napačno, nikoli napačno ali nekje na sredini:"
 
 #: templates/survey_i18n/Survey05.html:7
 msgid "Could you tell us for each of these groups how much you trust them?"
@@ -1088,13 +908,11 @@ msgstr "Kako dobro naslednja izjava opiše vas kot osebo?"
 
 #: templates/survey_i18n/Survey08.html:7
 msgid ""
-"When answering the following questions, please think about [country] "
-"institutions. How much trust do you have in the following to act in the best "
-"interest of society?"
+"When answering the following questions, please think about [country] institutions. How much trust do you have in the following to act in the best interest "
+"of society?"
 msgstr ""
-"Prosimo, da imate pri odgovorih na naslednja vprašanja v mislih slovenske "
-"institucije. Koliko imate zaupanja, da naslednje institucije ravnajo v "
-"najboljšem interesu družbe?"
+"Prosimo, da imate pri odgovorih na naslednja vprašanja v mislih slovenske institucije. Koliko imate zaupanja, da naslednje institucije ravnajo v najboljšem "
+"interesu družbe?"
 
 #: templates/survey_i18n/Survey09.html:7
 msgid "Do you agree with the following statements?"
@@ -1102,48 +920,33 @@ msgstr "Ali se strinjate z naslednjimi izjavami?"
 
 #: templates/survey_i18n/Survey10.html:7
 msgid ""
-"We will continue to ask you some questions about your beliefs regarding "
-"people and society. Remember, all information you provide is anonymous and "
-"will not be linked to you in any way."
-msgstr ""
-"Nadaljevali bomo z vprašanji o vašem prepričanju o ljudeh in družbi. Vse "
-"informacije so anonimne in ne bodo na nikakršen način povezane z vami."
+"We will continue to ask you some questions about your beliefs regarding people and society. Remember, all information you provide is anonymous and will not "
+"be linked to you in any way."
+msgstr "Nadaljevali bomo z vprašanji o vašem prepričanju o ljudeh in družbi. Vse informacije so anonimne in ne bodo na nikakršen način povezane z vami."
 
 #: templates/survey_i18n/Survey10.html:8
 msgid "How satisfied are you with the quality of:"
 msgstr "Opredelite kako ste zadovoljni s kakovostjo naslednjih storitev:"
 
 #: templates/survey_i18n/Survey15.html:40
-msgid ""
-"Now we turn to government spending. The following is a list of key "
-"categories of government expenditures."
-msgstr ""
-"Sedaj se obrnimo k javni porabi. Spodaj je naveden seznam ključnih kategorij "
-"javnih izdatkov:"
+msgid "Now we turn to government spending. The following is a list of key categories of government expenditures."
+msgstr "Sedaj se obrnimo k javni porabi. Spodaj je naveden seznam ključnih kategorij javnih izdatkov:"
 
 #: templates/survey_i18n/Survey15.html:41
-msgid ""
-"The box on the left contains the current percentage of government "
-"expenditures allocated to this category in [country]."
-msgstr ""
-"Okvir na levi vsebuje trenutni odstotek od celotnih javnih izdatkov "
-"namenjenih za to kategorijo izdatkov v Sloveniji."
+msgid "The box on the left contains the current percentage of government expenditures allocated to this category in [country]."
+msgstr "Okvir na levi vsebuje trenutni odstotek od celotnih javnih izdatkov namenjenih za to kategorijo izdatkov v Sloveniji."
 
 #: templates/survey_i18n/Survey15.html:42
 #, python-format
-msgid ""
-"Please enter in the box on the right your preferred distribution for each "
-"category (<strong>together the categories must sum to 100%%</strong>)."
+msgid "Please enter in the box on the right your preferred distribution for each category (<strong>together the categories must sum to 100%%</strong>)."
 msgstr ""
-"Prosimo vas, da v okvir na desni vnesete vašo željeno strukturo izdatkov za "
-"vsako kategorijo (<strong>vse kategorije skupaj morajo biti 100%%</strong>)"
+"Prosimo vas, da v okvir na desni vnesete vašo željeno strukturo izdatkov za vsako kategorijo (<strong>vse kategorije skupaj morajo biti 100%%</strong>)"
 
 #: templates/survey_i18n/Survey15.html:51
 msgid "Current spending in [country]"
 msgstr "Trenutni izdatki v Sloveniji"
 
-#: templates/survey_i18n/Survey15.html:52
-#: templates/survey_i18n/Survey15.html:56
+#: templates/survey_i18n/Survey15.html:52 templates/survey_i18n/Survey15.html:56
 #, python-format
 msgid "%% of total public spending"
 msgstr "%% od vseh izdatkov skupaj"
@@ -1157,12 +960,8 @@ msgid "General public services and public debt"
 msgstr "Izdatki za financiranje javne uprave in javni dolg"
 
 #: templates/survey_i18n/Survey15.html:65
-msgid ""
-"(general government administration costs, international aid, public debt "
-"interest payments)"
-msgstr ""
-"(celotni izdatki države za financiranje javne uprave, mednarodna pomoč, "
-"izdatki za servisiranje javnega dolga)"
+msgid "(general government administration costs, international aid, public debt interest payments)"
+msgstr "(celotni izdatki države za financiranje javne uprave, mednarodna pomoč, izdatki za servisiranje javnega dolga)"
 
 #: templates/survey_i18n/Survey15.html:94
 msgid "Defense and public order"
@@ -1177,104 +976,69 @@ msgid "Infrastructure and economic affairs"
 msgstr "Infrastrukturo in gospodarske dejavnosti"
 
 #: templates/survey_i18n/Survey15.html:126
-msgid ""
-"(provision of transport infrastructure, investments in agriculture, mining "
-"and energy industries)"
-msgstr ""
-"(zagotavljanje prometne infrastrukture, investicije v kmetijstvu, rudarstvo "
-"in energetiko)"
+msgid "(provision of transport infrastructure, investments in agriculture, mining and energy industries)"
+msgstr "(zagotavljanje prometne infrastrukture, investicije v kmetijstvu, rudarstvo in energetiko)"
 
 #: templates/survey_i18n/Survey15.html:156
 msgid "Health and environmental protection"
 msgstr "Zdravstvo in varstvo okolja"
 
 #: templates/survey_i18n/Survey15.html:157
-msgid ""
-"(includes provision of public medical services and public environmental "
-"services)"
-msgstr ""
-"(vključuje izdatke za zagotavljanje storitev javnega zdravstva in javnih "
-"okoljskih storitev)"
+msgid "(includes provision of public medical services and public environmental services)"
+msgstr "(vključuje izdatke za zagotavljanje storitev javnega zdravstva in javnih okoljskih storitev)"
 
 #: templates/survey_i18n/Survey15.html:187
 msgid "Education and culture"
 msgstr "Izobraževanje in kultura"
 
 #: templates/survey_i18n/Survey15.html:188
-msgid ""
-"(includes public provision of  education services, and public cultural "
-"spending)"
-msgstr ""
-"(vključuje izdatke za zagotavljanje javnega izobraževanja in izdatkov za "
-"kulturo)"
+msgid "(includes public provision of  education services, and public cultural spending)"
+msgstr "(vključuje izdatke za zagotavljanje javnega izobraževanja in izdatkov za kulturo)"
 
 #: templates/survey_i18n/Survey15.html:218
 msgid "Social protection and housing"
 msgstr "Socialna varnost in nastanitev (stanovanjska dejavnost)"
 
 #: templates/survey_i18n/Survey15.html:219
-msgid ""
-"(social transfers including for elderly, disabled, unemployed and low income "
-"people)"
-msgstr ""
-"(socialni transferji za starost, invalidnost, brezposelnost in za osebe z "
-"nižjimi dohodki)"
+msgid "(social transfers including for elderly, disabled, unemployed and low income people)"
+msgstr "(socialni transferji za starost, invalidnost, brezposelnost in za osebe z nižjimi dohodki)"
 
 #: templates/survey_i18n/Survey15.html:299
 msgid ""
-"You have reached a balanced spending distribution. You can still make "
-"changes, or, if you are happy with this distribution of expenditures, you "
-"can proceed to the next question."
+"You have reached a balanced spending distribution. You can still make changes, or, if you are happy with this distribution of expenditures, you can proceed "
+"to the next question."
 msgstr ""
-"Dosegli ste uravnoteženo porazdelitev porabe. Se vedno lahko spreminjate "
-"ali, če ste zadovoljni s tako strukturo izdatkov, lahko preidete na "
-"naslednje vprašanje. "
+"Dosegli ste uravnoteženo porazdelitev porabe. Se vedno lahko spreminjate ali, če ste zadovoljni s tako strukturo izdatkov, lahko preidete na naslednje "
+"vprašanje. "
 
 #: templates/survey_i18n/Survey15.html:300
-msgid ""
-"You have not spent enough. Please increase spending in one or more "
-"categories."
-msgstr ""
-"Niste porabili dovolj. Prosimo povečajte svojo porabo v eni ali več "
-"kategorijah."
+msgid "You have not spent enough. Please increase spending in one or more categories."
+msgstr "Niste porabili dovolj. Prosimo povečajte svojo porabo v eni ali več kategorijah."
 
 #: templates/survey_i18n/Survey15.html:301
-msgid ""
-"You are currently spending too much. Please lower spending in one or more "
-"categories."
-msgstr ""
-"Trenutno porabite preveč. Prosimo znižajte porabo v eni ali več kategorijah."
+msgid "You are currently spending too much. Please lower spending in one or more categories."
+msgstr "Trenutno porabite preveč. Prosimo znižajte porabo v eni ali več kategorijah."
 
 #: templates/survey_i18n/Survey16.html:42
 msgid ""
-"The government currently raises a certain amount of revenues through tax in "
-"order to sustain the current level of public spending. In your view, what "
-"would be the fair split of tax burden to sustain public spending?"
+"The government currently raises a certain amount of revenues through tax in order to sustain the current level of public spending. In your view, what would "
+"be the fair split of tax burden to sustain public spending?"
 msgstr ""
-"Vlada potrebuje pridobiti določena sredstva od davka na dohodek, da lahko "
-"financira trenutno raven javne porabe. Po vašem mnenju, kakšna bi bila "
-"pravična razdelitev davčnega bremena za vzdrževanje javne porabe?"
+"Vlada potrebuje pridobiti določena sredstva od davka na dohodek, da lahko financira trenutno raven javne porabe. Po vašem mnenju, kakšna bi bila pravična "
+"razdelitev davčnega bremena za vzdrževanje javne porabe?"
 
 #: templates/survey_i18n/Survey16.html:44
-msgid ""
-"Please use the sliders below to tell us how much you think each of the "
-"following groups should pay as a percentage of their available resources."
-msgstr ""
-"Prosimo, uporabite drsnike in z njimi pokažite koliko menite da bi morala "
-"vsaka izmed spodaj navedenih skupin plačati v odstotkih njihovega celotnega "
-"dohodka: "
+msgid "Please use the sliders below to tell us how much you think each of the following groups should pay as a percentage of their available resources."
+msgstr "Prosimo uporabite drsnike spodaj in s tem označite kolikšen delež razpoložljivih sredstev mislite, da bi morala placate vsaka naslednja skupina."
 
 #: templates/survey_i18n/Survey16.html:45
-msgid ""
-"Each slider represents a segment of the population with a different income. "
-msgstr ""
+msgid "Each slider represents a segment of the population with a different income. "
+msgstr "Vsak drsnik predstavlja segment populacije z drugačnim dohodkom."
 
 #: templates/survey_i18n/Survey16.html:46
 #, python-format
-msgid ""
-"For example, the top 1%% represents a small group of rich people, whereas "
-"the bottom 50%% is the half of the population that earns the least."
-msgstr ""
+msgid "For example, the top 1%% represents a small group of rich people, whereas the bottom 50%% is the half of the population that earns the least."
+msgstr "Na primer, zgornji 1%% predstavlja majhno skupino bogatih, medtem ko spodnjih 50%% predstavlja polovico populacije, ki zasluži najmanj."
 
 #: templates/survey_i18n/Survey16.html:54
 #, python-format
@@ -1302,109 +1066,76 @@ msgstr "Zaslužili ste potreben dohodek"
 
 #: templates/survey_i18n/Survey16.html:154
 msgid ""
-"You have raised exactly enough revenue. You can still make changes, or, if "
-"you are happy with this division of the tax burden, you can proceed to the "
-"next question."
+"You have raised exactly enough revenue. You can still make changes, or, if you are happy with this division of the tax burden, you can proceed to the next "
+"question."
 msgstr ""
-"Zbrali ste natančno dovolj prihodkov. Se vedno lahko spreminjate ali, če ste "
-"zadovoljni s tako strukturo izdatkov, lahko preidete na naslednje vprašanje. "
+"Zbrali ste natančno dovolj prihodkov. Še vedno lahko spreminjate ali, če ste zadovoljni s tako strukturo izdatkov, lahko preidete na naslednje vprašanje."
 
 #: templates/survey_i18n/Survey16.html:155
 msgid "You have not raised enough revenue."
 msgstr "Niste zaslužili dovolj prihodkov."
 
 #: templates/survey_i18n/Survey16.html:156
-msgid ""
-"You have raised too much revenue. You can lower the tax rate for one or more "
-"income groups."
-msgstr ""
-"Zaslužili ste preveč prihodkov. Zato lahko znižate davek eni od dohodkovnih "
-"skupin."
+msgid "You have raised too much revenue. You can lower the tax rate for one or more income groups."
+msgstr "Zaslužili ste preveč prihodkov. Zato lahko znižate davek eni od dohodkovnih skupin."
 
 #: templates/survey_i18n/Survey20.html:7
-msgid ""
-"How much information about current events, public affairs, and the "
-"government do you get from:"
-msgstr ""
-"Koliko informacij pridobite o trenutnih dogodkih, javnih zadevah in državi "
-"od:"
+msgid "How much information about current events, public affairs, and the government do you get from:"
+msgstr "Koliko informacij pridobite o trenutnih dogodkih, javnih zadevah in državi od:"
 
 #: templates/survey_i18n/Survey21.html:7
-msgid ""
-"Please indicate which of the following groups in your view are most likely "
-"to pose a threat to your online privacy?"
-msgstr ""
-"Prosimo označite katera od spodnjih skupin bi po vasem mnenju najverjetneje "
-"ogrožala vašo zasebnost na spletu?"
+msgid "Please indicate which of the following groups in your view are most likely to pose a threat to your online privacy?"
+msgstr "Prosimo označite katera od spodnjih skupin bi po vasem mnenju najverjetneje ogrožala vašo zasebnost na spletu?"
 
 #: templates/survey_i18n/Survey23.html:7
 msgid "To what extent do you agree with the following statements?"
 msgstr "Kako močno se strinjate z naslednjimi trditvami:"
 
 #: templates/survey_i18n/Survey27.html:7
-msgid ""
-"We will now ask you questions about your personal situation. Remember, all "
-"data is anonymous and will not be shared with a third party."
-msgstr ""
-"Zdaj vam bomo zastavili vprašanja o vaši osebni situaciji. Vsi podatki so "
-"anonimni in ne bodo posredovani tretjim osebam."
+msgid "We will now ask you questions about your personal situation. Remember, all data is anonymous and will not be shared with a third party."
+msgstr "Zdaj vam bomo zastavili vprašanja o vaši osebni situaciji. Vsi podatki so anonimni in ne bodo posredovani tretjim osebam."
 
 #: templates/survey_i18n/Survey28.html:9
 msgid "adults and children"
-msgstr "Odrasli in otroki"
+msgstr "Odrasli in otroci"
 
 #: templates/survey_i18n/Survey31.html:14
-msgid ""
-"What is the highest level of education <strong>you</strong> have completed?"
+msgid "What is the highest level of education <strong>you</strong> have completed?"
 msgstr "Katera je vaša najvišja stopnja izobrazbe, ki ste jo dokončali?"
 
 #: templates/survey_i18n/Survey35.html:12
 msgid ""
-"In the last 12 months, what was your total income, the income that you "
-"received <strong>as an individual</strong>, after taxes have been deducted? "
-"(Income can come salaries and wages, profit from self-employment, interest, "
-"rent, pension, social insurance payments and other benefits, among others):"
+"In the last 12 months, what was your total income, the income that you received <strong>as an individual</strong>, after taxes have been deducted? (Income "
+"can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
 msgstr ""
-"Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot "
-"posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim "
-"se med dohodke šteje plača, dobiček od samozaposlitve, najemnina, obresti, "
-"pokojnina, socialni in drugi prejemkov)"
+"Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke "
+"šteje plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemkov)"
 
-#: templates/survey_i18n/Survey35.html:17
-#: templates/survey_i18n/Survey36.html:16
+#: templates/survey_i18n/Survey35.html:17 templates/survey_i18n/Survey36.html:16
 msgid "I don't know"
 msgstr "Ne vem"
 
 #: templates/survey_i18n/Survey35.html:22
 msgid ""
-"Just to confirm, which of these income bands corresponds best to your "
-"<strong>personal income</strong>? Remember, we are asking for <strong>your "
-"individual income</strong>, after taxes have been deducted."
+"Just to confirm, which of these income bands corresponds best to your <strong>personal income</strong>? Remember, we are asking for <strong>your individual "
+"income</strong>, after taxes have been deducted."
 msgstr ""
-"Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri "
-"ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po "
+"Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po "
 "<strong>vasem osebnem</strong> dohodku po odmeri davkov."
 
 #: templates/survey_i18n/Survey36.html:11
 msgid ""
-"In the last 12 months, what was the total income <strong>of your household</"
-"strong> after taxes have been deducted? (Income can come salaries and wages, "
-"profit from self-employment, interest, rent, pension, social insurance "
-"payments and other benefits, among others):"
+"In the last 12 months, what was the total income <strong>of your household</strong> after taxes have been deducted? (Income can come salaries and wages, "
+"profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
 msgstr ""
-"Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v "
-"zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje "
-"plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in "
-"drugi prejemkov)"
+"Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje plača, "
+"dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemkov)"
 
 #: templates/survey_i18n/Survey36.html:21
 msgid ""
-"Just to confirm, which of these income bands corresponds best to your "
-"household income? Remember, we are asking for your household income, after "
-"taxes have been deducted."
-msgstr ""
-"Prosimo potrdite kateri o teh dohodkovnih razredov ustrezajo vašemu dohodku? "
-"Zapomnite si, sprašujemo vas po vašem dohodku po odmerjenemu davku. "
+"Just to confirm, which of these income bands corresponds best to your household income? Remember, we are asking for your household income, after taxes have "
+"been deducted."
+msgstr "Samo za potrditev, kateri od teh <strong>dohodkovnih</strong> razponov najbolj ustreza dohodku vašega gospodinjstva (po odštetih davkih)?"
 
 #: views.py:436 views.py:437 views.py:438 views.py:439
 #, python-brace-format
