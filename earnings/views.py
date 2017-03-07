@@ -9,14 +9,6 @@ from babel.numbers import parse_decimal
 from decimal import Decimal
 
 
-def vars_for_all_templates(self):
-        return {'mturk_code': self.participant.vars['uuid']}
-
-
-class MTurk(Page):
-    pass
-
-
 class Calculate(Page):
     """Calculate then redirect to last page."""
 
@@ -107,4 +99,4 @@ class Display(Page):
         }
 
 
-page_sequence = [Calculate, Display, MTurk]
+page_sequence = [Calculate, Display]
