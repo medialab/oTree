@@ -13,7 +13,7 @@ def vars_for_all_templates(self):
     """Provide global template variables."""
     return {
         'instructions': 'trust/Instructions.html',
-        'lang': get_language(),
+        'lang': get_language() or self.session.vars['lang'],
         'amount_allocated': Currency(amount_allocated)
     }
 
