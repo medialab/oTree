@@ -32,7 +32,7 @@ class Introduction(Page):
         amount = {
             'fr': _(u'10 euros'),
             'sl': _(u'10 euros'),
-            'en': _(u'$10'),
+            'en': _(u'10 euros'),
             'ko': _(u'12.000 Won')
         }
         return {
@@ -50,7 +50,7 @@ class Offer(Page):
         amount = {
             'fr': _(u'10 euros'),
             'sl': _(u'10 euros'),
-            'en': _(u'$10'),
+            'en': _(u'10 euros'),
             'ko': _(u'12.000 Won')
         }
         return {

@@ -9,7 +9,7 @@
       $(function () {
         var participantLabel = '{{participant_label}}'.trim();
 
-        if (!participantLabel || participantLabel === '') {
+        if (!participantLabel || participantLabel === 'None') {
           $('.alert')
             .html('Participant label is missing. Aborting...')
             .removeClass('hide');

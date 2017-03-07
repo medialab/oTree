@@ -1,5 +1,11 @@
 {% extends "global/Base.html" %}
 {% load staticfiles otree_tags %}
+{% load static %}
+{% load i18n %}
+
+{% block script %}
+<script src="{% static "/global/custom.js" %}"></script>
+{% endblock %}
 
 {% block content %}
 
@@ -10,33 +16,11 @@
     var startTime = {{global_time_start}},
         endTime = {{global_time_stop}},
         threshold = +{{threshold}},
-        redirection = '{{speedsters_redirection}}'
-        isSpeedster = (endTime - startTime) < threshold,
-        locale = extractLang('{{lang}}');
-
-    var fragment, url;
-
-    // Return fragment of locale from given locale.
-    function extractLang(lang) {
-      return lang.length > 2 ? lang.slice(0, 2) : lang;
-    }
-
-    // Build redirection link, and form payload.
-    if (locale === 'ko') {
-      url = redirection;
-    } else {
-      fragment = '{{label}}'.split('|').filter(function (f) {
-        if (f.indexOf('ac') > -1 || f.indexOf('sc') > -1 || f.indexOf('sn') > -1 || f.indexOf('z') > -1) {
-          return f;
-        }
-      }).join('&');
-
-      url = redirection + '&' + fragment + '&lang=' + locale;
-    }
+        isSpeedster = (endTime - startTime) < threshold;
 
     if (isSpeedster) {
       console.log('Participant is a speedster... redirecting.');
-      window.location.href = url;
+      window.location.href = buildRedirectionLink('{{speedsters_redirection}}', '{{label}}');;
     } else {
       console.log('Redirecting to Earnings page.')
       $('form').submit();

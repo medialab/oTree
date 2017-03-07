@@ -7,3 +7,13 @@ function getInputEventName() {
   }
   return 'input'
 }
+
+function buildRedirectionLink(redirectionUrl, participantLabel) {
+  var vars = participantLabel.split('|').filter(function (f) {
+    if (f.indexOf('ac') > -1 || f.indexOf('sn') > -1) {
+      return f;
+    }
+  }).join('&');
+
+  return redirectionUrl + '&' + vars;
+}

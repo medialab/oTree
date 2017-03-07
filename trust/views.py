@@ -71,14 +71,14 @@ class SendContinued(Page):
     def vars_for_template(self):
         received_by_b = {
             'fr': _(u'15 euros'),
-            'en': _(u'$15'),
+            'en': _(u'15 euros'),
             'sl': _(u'15 euros'),
             'ko': _(u'18.000 Won')
         }
 
         total_budget_b = {
             'fr': {'string': _(u'25 euros'), 'integer': 25},
-            'en': {'string': _(u'$25'), 'integer': 25},
+            'en': {'string': _(u'25 euros'), 'integer': 25},
             'sl': {'string': _(u'25 euros'), 'integer': 25},
             'ko': {'string': _(u'30.000 Won'), 'integer': 30000},
         }
