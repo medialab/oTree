@@ -7,16 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-01 15:24+0100\n"
-"PO-Revision-Date: 2017-03-01 17:33+0100\n"
+"POT-Creation-Date: 2017-03-07 13:05+0100\n"
+"PO-Revision-Date: 2017-03-07 12:59+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Task"
@@ -171,7 +172,7 @@ msgstr "Kadarkoli boste pripravljeni za pravo nalogo, pritisnite naprej."
 
 #: templates/public_goods/Simulation.html:93
 msgid "€"
-msgstr ""
+msgstr "€"
 
 #: templates/public_goods/Simulation.html:100
 msgid "Amount sent by Participant A"
@@ -193,13 +194,9 @@ msgstr "Znesek, ki ga pošlje Udeleženec D"
 msgid "Send"
 msgstr "Pošlji"
 
-#: views.py:60 views.py:61
+#: views.py:60 views.py:61 views.py:62
 msgid "10 euros"
 msgstr "10 evrov"
-
-#: views.py:62
-msgid "$10"
-msgstr ""
 
 #: views.py:63
 msgid "12.000 Won"

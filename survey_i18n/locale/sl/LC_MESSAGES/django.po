@@ -7,22 +7,23 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-03-01 15:25+0100\n"
-"PO-Revision-Date: 2017-03-02 09:34+0100\n"
+"POT-Creation-Date: 2017-03-07 13:03+0100\n"
+"PO-Revision-Date: 2017-03-07 13:05+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: models.py:46
 msgid ""
-"The following question asks how satisfied you feel on a scale from 0 to 10."
-" Zero means you feel \"not at all satisfied\" and 10 means \"completely satisfied\"."
-" Overall, how satisfied are you with life as a whole these days?"
+"The following question asks how satisfied you feel on a scale from 0 to 10. "
+"Zero means you feel \"not at all satisfied\" and 10 means \"completely "
+"satisfied\". Overall, how satisfied are you with life as a whole these days?"
 msgstr ""
 "Z naslednjim vprašanjem vas želimo vprašati kako zadovoljno se počutite na "
 "lestvici od 0 do 10. Nič pomeni, da se sploh ne počutite zadovoljno in 10, "
@@ -250,10 +251,15 @@ msgid "I couldn't vote"
 msgstr "Ne morem voliti"
 
 #: models.py:469
+#, fuzzy
+#| msgid ""
+#| "And now a general question about trust. On a scale from zero to ten, "
+#| "where zero is not at all and ten is completely, in general how much do "
+#| "you trust most people in your country?"
 msgid ""
 "And now a general question about trust. On a scale from zero to ten, where "
 "zero is not at all and ten is completely, in general how much do you trust "
-"most people in your country?"
+"most people?"
 msgstr ""
 "Zdaj pa eno splošno vprašanje o zaupanju. Koliko na splošno zaupate ljudem v "
 "vasi državi na lestvici od 0 do 10 (kjer je 0 - sploh ne zaupam in 10 - "
@@ -841,7 +847,7 @@ msgid "Rural area"
 msgstr "Podeželju"
 
 #: models.py:1627
-msgid "What is the highest level of education <strong>you</strong> have completed?"
+msgid "What is the highest level of education you have completed?"
 msgstr "Katera je vaša najvišja stopnja izobrazbe, ki ste jo dokončali?"
 
 #: models.py:1630 models.py:1643
@@ -872,13 +878,11 @@ msgstr "Podiplomska stopnja izobrazbe"
 
 #: models.py:1640
 msgid ""
-"What is the highest level of education that <strong>one of your parents</strong>"
-"has completed? (either one, or both have completed this level of "
-"education)"
+"What is the highest level of education that <strong>one of your parents</strong> has completed? (either one, or both have completed this level of education)"
 msgstr ""
 "Katera je najvišja stopnja izobrazbe, ki jo je <strong>eden od vaših "
 "staršev</strong> dokončal? (ne glede ali jo je dokončal eden od staršev ali "
-"oba) "
+"oba)  "
 
 #: models.py:1653
 msgid "Which of these best describes your situation?"
@@ -932,51 +936,56 @@ msgstr ""
 
 #: models.py:1696
 msgid ""
-"In the last 12 months, what was your total income, the income that you received <strong>as an individual</strong>, after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
+"In the last 12 months, what was your total income, the income that you "
+"received as an individual, after taxes have been deducted? (Income can come "
+"salaries and wages, profit from self-employment, interest, rent, pension, "
+"social insurance payments and other benefits, among others)"
 msgstr ""
 "Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot "
 "posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim "
 "se med dohodke šteje plača, dobiček od samozaposlitve, najemnina, obresti, "
-"pokojnina, socialni in drugi prejemkov)"
+"pokojnina, socialni in drugi prejemkov) "
 
 #: models.py:1701
 msgid ""
 "Just to confirm, which of these income bands corresponds best to your "
-"<strong>personal income</strong>? Remember, we are asking for <strong>your individual income</strong>, after "
+"personal income? Remember, we are asking for your individual income, after "
 "taxes have been deducted."
 msgstr ""
-"Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri "
-"ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po <strong>vasem "
-"osebnem</strong> dohodku po odmeri davkov."
+"Prosimo potrdite kateri o teh dohodkovnih razredov ustrezajo vašemu dohodku? "
+"Zapomnite si, sprašujemo vas po vašem dohodku po odmerjenemu davku. "
 
 #: models.py:1704
-msgid "€0 to €9000"
-msgstr "0 do 9000 evrov na leto"
+msgid "€0 to €9,000.00"
+msgstr "0 do 9000 evrov na leto "
 
 #: models.py:1705
-msgid "€9001 to €12500"
-msgstr "9001 do 12500"
+msgid "€9,001.00 to €12,500.00"
+msgstr "9001 do 12500 "
 
 #: models.py:1706
-msgid "€12501 to €15000"
-msgstr "12501 do 15000"
+msgid "€12,501.00 to €15,000.00"
+msgstr "12501 do 15000 "
 
 #: models.py:1707
-msgid "€15001 to €20000"
-msgstr "15001 do 20000"
+msgid "€15,001.00 to €20,000.00"
+msgstr "15001 do 20000 "
 
 #: models.py:1708
-msgid "€20001 and above"
-msgstr "20001 evrov in več"
+msgid "> €20,001"
+msgstr ""
 
 #: models.py:1714
 msgid ""
-"In the last 12 months, what was the total income <strong>of your household</strong> after taxes have been deducted? (Income can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
+"In the last 12 months, what was the total income of your household after "
+"taxes have been deducted? (Income can come salaries and wages, profit from "
+"self-employment, interest, rent, pension, social insurance payments and "
+"other benefits, among others)"
 msgstr ""
 "Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v "
 "zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje "
 "plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in "
-"drugi prejemkov)"
+"drugi prejemkov) "
 
 #: models.py:1725
 msgid "How important would you say religion is in your own life?"
@@ -1041,7 +1050,7 @@ msgstr ""
 #: templates/survey_i18n/Survey11.html:11 templates/survey_i18n/Survey12.html:9
 #: templates/survey_i18n/Survey13.html:11 templates/survey_i18n/Survey14.html:9
 #: templates/survey_i18n/Survey15.html:283
-#: templates/survey_i18n/Survey16.html:107
+#: templates/survey_i18n/Survey16.html:111
 #: templates/survey_i18n/Survey17.html:9 templates/survey_i18n/Survey18.html:11
 #: templates/survey_i18n/Survey19.html:9 templates/survey_i18n/Survey20.html:13
 #: templates/survey_i18n/Survey21.html:14 templates/survey_i18n/Survey22.html:9
@@ -1052,11 +1061,11 @@ msgstr ""
 #: templates/survey_i18n/Survey28.html:11
 #: templates/survey_i18n/Survey29.html:12
 #: templates/survey_i18n/Survey30.html:15
-#: templates/survey_i18n/Survey31.html:15
-#: templates/survey_i18n/Survey32.html:15
+#: templates/survey_i18n/Survey31.html:19
+#: templates/survey_i18n/Survey32.html:19
 #: templates/survey_i18n/Survey33.html:16 templates/survey_i18n/Survey34.html:9
-#: templates/survey_i18n/Survey35.html:16
-#: templates/survey_i18n/Survey36.html:25 templates/survey_i18n/Survey37.html:9
+#: templates/survey_i18n/Survey35.html:26
+#: templates/survey_i18n/Survey36.html:31 templates/survey_i18n/Survey37.html:9
 #: templates/survey_i18n/Survey38.html:9
 msgid "Next"
 msgstr "Naprej"
@@ -1246,40 +1255,52 @@ msgstr ""
 "financira trenutno raven javne porabe. Po vašem mnenju, kakšna bi bila "
 "pravična razdelitev davčnega bremena za vzdrževanje javne porabe?"
 
-#: templates/survey_i18n/Survey16.html:43
+#: templates/survey_i18n/Survey16.html:44
 msgid ""
 "Please use the sliders below to tell us how much you think each of the "
-"following groups should pay as a percentage of their available resources:"
+"following groups should pay as a percentage of their available resources."
 msgstr ""
 "Prosimo, uporabite drsnike in z njimi pokažite koliko menite da bi morala "
 "vsaka izmed spodaj navedenih skupin plačati v odstotkih njihovega celotnega "
-"dohodka:"
+"dohodka: "
 
-#: templates/survey_i18n/Survey16.html:50
+#: templates/survey_i18n/Survey16.html:45
+msgid ""
+"Each slider represents a segment of the population with a different income. "
+msgstr ""
+
+#: templates/survey_i18n/Survey16.html:46
+#, python-format
+msgid ""
+"For example, the top 1%% represents a small group of rich people, whereas "
+"the bottom 50%% is the half of the population that earns the least."
+msgstr ""
+
+#: templates/survey_i18n/Survey16.html:54
 #, python-format
 msgid "The top 1%% (Richest)"
 msgstr "Zgornji 1%%"
 
-#: templates/survey_i18n/Survey16.html:60
+#: templates/survey_i18n/Survey16.html:64
 #, python-format
 msgid "The next 9%%"
 msgstr "Naslednjih 9%%"
 
-#: templates/survey_i18n/Survey16.html:70
+#: templates/survey_i18n/Survey16.html:74
 #, python-format
 msgid "The next 40%%"
 msgstr "Naslednjih 40%%"
 
-#: templates/survey_i18n/Survey16.html:80
+#: templates/survey_i18n/Survey16.html:84
 #, python-format
 msgid "The bottom 50%%"
 msgstr "Spondnjih 50%%"
 
-#: templates/survey_i18n/Survey16.html:92
+#: templates/survey_i18n/Survey16.html:96
 msgid "Revenue raised"
 msgstr "Zaslužili ste potreben dohodek"
 
-#: templates/survey_i18n/Survey16.html:150
+#: templates/survey_i18n/Survey16.html:154
 msgid ""
 "You have raised exactly enough revenue. You can still make changes, or, if "
 "you are happy with this division of the tax burden, you can proceed to the "
@@ -1288,11 +1309,11 @@ msgstr ""
 "Zbrali ste natančno dovolj prihodkov. Se vedno lahko spreminjate ali, če ste "
 "zadovoljni s tako strukturo izdatkov, lahko preidete na naslednje vprašanje. "
 
-#: templates/survey_i18n/Survey16.html:151
+#: templates/survey_i18n/Survey16.html:155
 msgid "You have not raised enough revenue."
 msgstr "Niste zaslužili dovolj prihodkov."
 
-#: templates/survey_i18n/Survey16.html:152
+#: templates/survey_i18n/Survey16.html:156
 msgid ""
 "You have raised too much revenue. You can lower the tax rate for one or more "
 "income groups."
@@ -1332,26 +1353,71 @@ msgstr ""
 msgid "adults and children"
 msgstr "Odrasli in otroki"
 
-#: templates/survey_i18n/Survey35.html:10
-#: templates/survey_i18n/Survey36.html:10
+#: templates/survey_i18n/Survey31.html:14
+msgid ""
+"What is the highest level of education <strong>you</strong> have completed?"
+msgstr "Katera je vaša najvišja stopnja izobrazbe, ki ste jo dokončali?"
+
+#: templates/survey_i18n/Survey35.html:12
+msgid ""
+"In the last 12 months, what was your total income, the income that you "
+"received <strong>as an individual</strong>, after taxes have been deducted? "
+"(Income can come salaries and wages, profit from self-employment, interest, "
+"rent, pension, social insurance payments and other benefits, among others):"
+msgstr ""
+"Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot "
+"posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim "
+"se med dohodke šteje plača, dobiček od samozaposlitve, najemnina, obresti, "
+"pokojnina, socialni in drugi prejemkov)"
+
+#: templates/survey_i18n/Survey35.html:17
+#: templates/survey_i18n/Survey36.html:16
 msgid "I don't know"
 msgstr "Ne vem"
 
-#: templates/survey_i18n/Survey36.html:15
+#: templates/survey_i18n/Survey35.html:22
 msgid ""
 "Just to confirm, which of these income bands corresponds best to your "
-"household income? Remember, we are asking for your individual income, after "
+"<strong>personal income</strong>? Remember, we are asking for <strong>your "
+"individual income</strong>, after taxes have been deducted."
+msgstr ""
+"Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri "
+"ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po "
+"<strong>vasem osebnem</strong> dohodku po odmeri davkov."
+
+#: templates/survey_i18n/Survey36.html:11
+msgid ""
+"In the last 12 months, what was the total income <strong>of your household</"
+"strong> after taxes have been deducted? (Income can come salaries and wages, "
+"profit from self-employment, interest, rent, pension, social insurance "
+"payments and other benefits, among others):"
+msgstr ""
+"Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v "
+"zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje "
+"plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in "
+"drugi prejemkov)"
+
+#: templates/survey_i18n/Survey36.html:21
+msgid ""
+"Just to confirm, which of these income bands corresponds best to your "
+"household income? Remember, we are asking for your household income, after "
 "taxes have been deducted."
 msgstr ""
 "Prosimo potrdite kateri o teh dohodkovnih razredov ustrezajo vašemu dohodku? "
-"Zapomnite si, sprašujemo vas po vašem dohodku po odmerjenemu davku."
+"Zapomnite si, sprašujemo vas po vašem dohodku po odmerjenemu davku. "
 
-#: views.py:435 views.py:436 views.py:437 views.py:438
+#: views.py:436 views.py:437 views.py:438 views.py:439
 #, python-brace-format
-msgid "€{0} - €{1}"
-msgstr "{0} do {1}"
+msgid "{0} - {1}"
+msgstr "{0} do {1} "
 
-#: views.py:439
+#: views.py:440
 #, python-brace-format
-msgid "> €{0}"
-msgstr "{0} in več"
+msgid "> {0}"
+msgstr ""
+
+#~ msgid "€20001 and above"
+#~ msgstr "20001 evrov in več"
+
+#~ msgid "> €{0}"
+#~ msgstr "{0} in več"

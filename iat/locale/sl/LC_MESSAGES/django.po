@@ -214,7 +214,7 @@ msgstr ""
 "<br/>V primeru, da besede pripadajo kategoriji na levi, pritisnite tipko "
 "<strong style='color:pink'>E</strong>.<br/>V primeru, da besede pripadajo "
 "kategoriji na desni, pritisnite tipko <strong style='color:turquoise'>I</"
-"strong>. Besede pripadajo le eni kategoriji.<br/><strong>. To naredite "
+"strong>. Besede pripadajo le eni kategoriji.<br/><strong>To naredite "
 "kolikor mogoče hitro.</strong><br/><h3> Za začetek pritisnite katerokoli "
 "tipko (ali se dotaknite kjer koli).</h3><br/>"
 
