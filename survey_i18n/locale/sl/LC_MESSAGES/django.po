@@ -741,7 +741,7 @@ msgstr "Podiplomska stopnja izobrazbe"
 #: models.py:1640
 msgid ""
 "What is the highest level of education that <strong>one of your parents</strong> has completed? (either one, or both have completed this level of education)"
-msgstr "Katera je najvišja stopnja izobrazbe, ki jo je dokončal <strong>eden od vaših staršev<strong/>? (ne glede ali jo je dokončal eden od staršev ali oba)"
+msgstr "Katera je najvišja stopnja izobrazbe, ki jo je dokončal <strong>eden od vaših staršev</strong>? (ne glede ali jo je dokončal eden od staršev ali oba)"
 
 #: models.py:1653
 msgid "Which of these best describes your situation?"
@@ -806,22 +806,22 @@ msgstr ""
 
 #: models.py:1704
 msgid "€0 to €9,000.00"
-msgstr "0 do 9000 evrov na leto "
+msgstr "0 do 9000 € na leto "
 
 #: models.py:1705
 msgid "€9,001.00 to €12,500.00"
-msgstr "9001 do 12500 "
+msgstr "9001 do 12500 € "
 
 #: models.py:1706
 msgid "€12,501.00 to €15,000.00"
-msgstr "12501 do 15000 "
+msgstr "12501 do 15000 € "
 
 #: models.py:1707
 msgid "€15,001.00 to €20,000.00"
-msgstr "15001 do 20000 "
+msgstr "15001 do 20000 € "
 
 #: models.py:1708
-msgid "> €20,001"
+msgid "> €20,001 €"
 msgstr ""
 
 #: models.py:1714
@@ -1042,23 +1042,23 @@ msgstr "Na primer, zgornji 1%% predstavlja majhno skupino bogatih, medtem ko spo
 
 #: templates/survey_i18n/Survey16.html:54
 #, python-format
-msgid "The top 1%% (Richest)"
-msgstr "Zgornji 1%%"
+msgid "The top 1% (Richest)"
+msgstr "Zgornji 1%"
 
 #: templates/survey_i18n/Survey16.html:64
 #, python-format
-msgid "The next 9%%"
-msgstr "Naslednjih 9%%"
+msgid "The next 9%"
+msgstr "Naslednjih 9%"
 
 #: templates/survey_i18n/Survey16.html:74
 #, python-format
-msgid "The next 40%%"
-msgstr "Naslednjih 40%%"
+msgid "The next 40%"
+msgstr "Naslednjih 40%"
 
 #: templates/survey_i18n/Survey16.html:84
 #, python-format
-msgid "The bottom 50%%"
-msgstr "Spondnjih 50%%"
+msgid "The bottom 50%"
+msgstr "Spondnjih 50%"
 
 #: templates/survey_i18n/Survey16.html:96
 msgid "Revenue raised"

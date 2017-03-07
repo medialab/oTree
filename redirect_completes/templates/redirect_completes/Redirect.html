@@ -10,7 +10,9 @@
 {% block content %}
 
 <script type="text/javascript">
-  window.location.href = buildRedirectionLink('{{redirect}}', '{{label}}');
+  $(function () {
+    window.location.href = buildRedirectionLink('{{redirect}}', '{{label}}');
+  });
 </script>
 
 {% endblock %}
