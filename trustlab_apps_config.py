@@ -160,6 +160,19 @@ SESSION_CONFIGS = [
     },
 
     {
+        'name': 'test_earnings',
+        'display_name': 'Test Earnings',
+        'num_demo_participants': 100,
+        'app_sequence': [
+            'trust', 'public_goods', 'dictator', 'earnings'
+        ],
+        'treatment': 'A1',
+        'payoff_group': 0,
+        'speedsters_threshold': 1,
+        'quota_redirects': quota_redirects_sl,
+    },
+
+    {
         'name': 'test_intro',
         'display_name': 'INTRODUCTION',
         'num_demo_participants': 100,
