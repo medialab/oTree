@@ -165,10 +165,9 @@ msgstr ""
 
 #: templates/earnings/Display.html:69
 msgid ""
-"Out of your earnings, you have the option to donate an amount of your choice "
-"to UNICEF, who work with children and mothers in developing countries."
+"Out of your earnings, you have the option to donate an amount of your choice to <a href="http://www.unicef.si/" target="_blank" rel="noopener">UNICEF</a>, who work with children and mothers in developing countries."
 msgstr ""
-"Imate možnost, da od svojega zaslužka darujete UNICEFu, ki dela z otroki in "
+"Imate možnost, da od svojega zaslužka darujete <a href="http://www.unicef.si/" target="_blank" rel="noopener">UNICEFu</a>, ki dela z otroki in "
 "materami v državah v razvoju, znesek po vasi izbiri."
 
 #: templates/earnings/Display.html:70
