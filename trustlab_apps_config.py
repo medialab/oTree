@@ -81,6 +81,63 @@ SESSION_CONFIGS = [
         'quota_redirects': quota_redirects_sl,
     },
 
+    {
+        'name': 'trustlab_2016_A1_sl_prod',
+        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 1 | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A1',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_sl,
+    },
+    {
+        'name': 'trustlab_2016_A2_sl_prod',
+        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 2 | Payoff Group 2 (production)',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A2',
+        'payoff_group': 2,
+        'quota_redirects': quota_redirects_sl,
+    },
+
+    {
+        'name': 'trustlab_2016_A1_sl',
+        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 1',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A1',
+        'payoff_group': 1,
+        'quota_redirects': quota_redirects_sl,
+    },
+    {
+        'name': 'trustlab_2016_A2_sl',
+        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 2',
+        'num_demo_participants': 126,
+        'app_sequence': [
+            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
+            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
+            'redirect_speedsters', 'earnings', 'redirect_completes'
+        ],
+        'speedsters_threshold': 1,
+        'treatment': 'A2',
+        'payoff_group': 1,
+        'quota_redirects': quota_redirects_sl,
+    },
 
     {
         'name': 'test_intro',
@@ -154,62 +211,4 @@ SESSION_CONFIGS = [
         'speedsters_threshold': 1,
         'quota_redirects': quota_redirects_sl,
     },
-
-    {
-        'name': 'trustlab_2016_A1_sl_prod',
-        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 1 | Payoff Group 2 (production)',
-        'num_demo_participants': 126,
-        'app_sequence': [
-            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
-            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings', 'redirect_completes'
-        ],
-        'speedsters_threshold': 1,
-        'treatment': 'A1',
-        'payoff_group': 2,
-        'quota_redirects': quota_redirects_sl,
-    },
-    {
-        'name': 'trustlab_2016_A2_sl_prod',
-        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 2 | Payoff Group 2 (production)',
-        'num_demo_participants': 126,
-        'app_sequence': [
-            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
-            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings', 'redirect_completes'
-        ],
-        'speedsters_threshold': 1,
-        'treatment': 'A2',
-        'payoff_group': 2,
-        'quota_redirects': quota_redirects_sl,
-    },
-
-    {
-        'name': 'trustlab_2016_A1_sl',
-        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 1',
-        'num_demo_participants': 126,
-        'app_sequence': [
-            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
-            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings', 'redirect_completes'
-        ],
-        'speedsters_threshold': 1,
-        'treatment': 'A1',
-        'payoff_group': 1,
-        'quota_redirects': quota_redirects_sl,
-    },
-    {
-        'name': 'trustlab_2016_A2_sl',
-        'display_name': 'TRUSTLAB | February 2017 | Slovenia | path 2',
-        'num_demo_participants': 126,
-        'app_sequence': [
-            'mandatory_participant_label', 'timer_start', 'introduction', 'trust',
-            'public_goods', 'dictator', 'iat', 'survey_i18n', 'timer_stop',
-            'redirect_speedsters', 'earnings', 'redirect_completes'
-        ],
-        'speedsters_threshold': 1,
-        'treatment': 'A2',
-        'payoff_group': 1,
-        'quota_redirects': quota_redirects_sl,
-    }
 ]
