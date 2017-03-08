@@ -241,26 +241,6 @@ class Player(BasePlayer):
         )
     )
 
-    cheating_on_taxes_if_you_have_a_chance = models.CharField(
-        initial=None,
-        widget=widgets.RadioSelectHorizontal(),
-        verbose_name=_(u"Cheating on taxes if you have a chance"),
-        choices=(
-            ('0', _(u"0 - This action is never wrong")),
-            ('1', '1'),
-            ('2', '2'),
-            ('3', '3'),
-            ('4', '4'),
-            ('5', '5'),
-            ('6', '6'),
-            ('7', '7'),
-            ('8', '8'),
-            ('9', '9'),
-            ('10', _(u"10 - This action is always wrong")),
-            ("Don't know", _(u"Don't know"))
-        )
-    )
-
     how_much_do_you_trust_your_family = models.CharField(
         initial=None,
         widget=widgets.RadioSelectHorizontal(),
