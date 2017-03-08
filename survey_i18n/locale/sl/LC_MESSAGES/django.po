@@ -805,24 +805,24 @@ msgstr ""
 "<strong>vašem osebnem</strong> dohodku po odmeri davkov."
 
 #: models.py:1704
-msgid "€0 to €9,000.00"
-msgstr "0 do 9000 € na leto "
+msgid "€0 to €5,500.00"
+msgstr "0 do 5500 € na leto "
 
 #: models.py:1705
-msgid "€9,001.00 to €12,500.00"
-msgstr "9001 do 12500 € "
+msgid "€5,501.00 to €7,500.00"
+msgstr "5501 do 7500 € "
 
 #: models.py:1706
-msgid "€12,501.00 to €15,000.00"
-msgstr "12501 do 15000 € "
+msgid "€7,501.00 to €9,000.00"
+msgstr "7501 do 9000 € "
 
 #: models.py:1707
-msgid "€15,001.00 to €20,000.00"
-msgstr "15001 do 20000 € "
+msgid "€9,001.00 to €11,000.00"
+msgstr "9001 do 11000 € "
 
 #: models.py:1708
-msgid "> €20,001 €"
-msgstr ""
+msgid "> €11,001.00"
+msgstr "> 11001 €"
 
 #: models.py:1714
 msgid ""
