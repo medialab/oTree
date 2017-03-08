@@ -31,7 +31,7 @@ class Display(Page):
     """Display page."""
 
     form_model = models.Player
-    form_fields = ['donation']
+    form_fields = ['donation', 'mturk_uuid']
 
     def str_to_money(self, s):
         """Transform string representing money into float numbers."""
