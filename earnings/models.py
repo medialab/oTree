@@ -449,6 +449,8 @@ class Group(BaseGroup):
 class Player(BasePlayer):
     """Player model."""
 
+    mturk_uuid = models.CharField(max_length=50)
+
     # Field used when user chooses to donate to UNICEF.
     donation = models.DecimalField(
         verbose_name='Please enter the amount you wish to donate to UNICEF',
