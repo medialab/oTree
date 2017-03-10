@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-07 15:42+0100\n"
+"PO-Revision-Date: 2017-03-10 11:36+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: models.py:46
 msgid ""
@@ -86,7 +86,7 @@ msgstr "10 - Zelo sem pripravljen sprejemati tveganja "
 
 #: models.py:147
 msgid "When someone does me a favour I am willing to return it. How well does this statement describe you as a person?"
-msgstr "Če vam nekdo naredi uslugo ste jo pripravljeni vrniti. Kako dobro ta izjava opise vašo osebnost?"
+msgstr "Če vam nekdo naredi uslugo ste jo pripravljeni vrniti. Kako dobro ta izjava opiše vašo osebnost?"
 
 #: models.py:149 models.py:429 models.py:1679
 msgid "0 - Does not describe me at all"
@@ -215,7 +215,7 @@ msgstr ""
 
 #: models.py:471 models.py:1493
 msgid "0 - Not at all"
-msgstr "0 - Sploh ne zaupam"
+msgstr "0 - Sploh ne"
 
 #: models.py:481
 msgid "10 - Completely"
@@ -251,7 +251,7 @@ msgstr "Finančne institucije (na primer banke)"
 
 #: models.py:629
 msgid "Public institutions deliver public services in the best possible way"
-msgstr "Javne institucije izvajajo javne storitve na najboljši možni način"
+msgstr "Javne institucije izvajajo javne storitve na najboljši možni način."
 
 #: models.py:631 models.py:651 models.py:671 models.py:691 models.py:711
 msgid "0 - I don’t agree at all"
@@ -267,15 +267,15 @@ msgstr "Javne institucije zasledujejo dolgoročne cilje."
 
 #: models.py:669
 msgid "People working in public institutions are ethical and not corrupt"
-msgstr "Osebe zaposlene v javnih institucijah so etnične in niso podkupljive."
+msgstr "Osebe zaposlene v javnih institucijah so etične in niso podkupljive."
 
 #: models.py:689
 msgid "Public institutions are transparent"
-msgstr "Javne institucije so transparentne"
+msgstr "Javne institucije so transparentne."
 
 #: models.py:709
 msgid "Public institutions treat all citizens fairly regardless of their gender, race, age or economic condition"
-msgstr "Javne institucije obravnavajo vse državljane enako ne glede na njihov spol, raso, starost ali ekonomski položaj"
+msgstr "Javne institucije obravnavajo vse državljane enako ne glede na njihov spol, raso, starost ali ekonomski položaj."
 
 #: models.py:729
 msgid "the Education system"
@@ -307,7 +307,7 @@ msgstr "Neprofitna in socialna stanovanja"
 
 #: models.py:849
 msgid "Security and crime prevention (police)"
-msgstr "Varnost in preprecevanje kriminala (policija)"
+msgstr "Varnost in preprečevanje  kriminala (policija)"
 
 #: models.py:869
 msgid "Environmental services (air and water quality, parks and green spaces)"
@@ -315,11 +315,11 @@ msgstr "Okoljske storitve (kakovost zraka in vode, parki in zelene površine)"
 
 #: models.py:889
 msgid "Cultural facilities (theaters, cinemas, libraries, museums, public social spaces)"
-msgstr "Kulturne ustanove (gledališča, kinematografi, knjižnice, muzeji, javni druzbeni prostori)"
+msgstr "Kulturne ustanove (gledališča, kinematografi, knjižnice, muzeji, javni družbeni prostori)"
 
 #: models.py:909
 msgid "If you complain about bad quality of a public service, how likely is that the problem will be easily resolved?"
-msgstr "V primeru, da se pritozujete zaradi slabe kakovosti javnih storitev, koliksna je verjetnost da bo problem enostanvo resen?"
+msgstr "V primeru, da se pritožujete zaradi slabe kakovosti javnih storitev, kolikšna je verjetnost da bo problem enostavno rešen?"
 
 #: models.py:911 models.py:931 models.py:951 models.py:971 models.py:991 models.py:1011 models.py:1031 models.py:1111 models.py:1220 models.py:1240
 msgid "0 - Very unlikely"
@@ -366,7 +366,7 @@ msgstr ""
 msgid ""
 "If money is offered by citizens to government employees in order to speed up administrative procedures, do you think that they will accept or refuse the "
 "bribe?"
-msgstr "Ali menite, da bi javni uslužbenci zavrnili podkupnino iz strani državljana, ki želi pospešiti administrativno proceduro?"
+msgstr "Ali menite, da bi javni uslužbenci zavrnili podkupnino s strani državljana, ki želi pospešiti administrativno proceduro?"
 
 #: models.py:1051
 msgid "0 -  Most likely to accept the bribe"
@@ -380,7 +380,7 @@ msgstr "10 - Najverjetnje bi zavrnli podkupnino"
 msgid ""
 "If a high level politician would be offered a well-paid job in the private sector in exchange for political influence, do you think that he/she will accept "
 "reject the job?"
-msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro placano sluzbo v zasebnem sektorju, v zameno z politicnim vplivom?"
+msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro plačano službo v zasebnem sektorju, v zameno z političnim vplivom?"
 
 #: models.py:1071
 msgid "0 -  Most likely to accept the job"
@@ -394,7 +394,7 @@ msgstr "10 - Najverjetnje bi zavrnlisluzbo"
 msgid ""
 "If a parliamentarian could influence the allocation of a public procurement tender and receive a bribe in return, do you think that he/she will accept or "
 "reject the bribe?"
-msgstr "Ali menite, da bi poslanec sprejel ali zavrnil podkupnino, ce bi lahko vplival na proces javnega narocanja in zato dobil podkupnino?"
+msgstr "Ali menite, da bi poslanec sprejel ali zavrnil podkupnino, če bi lahko vplival na proces javnega naročanja in zato dobil podkupnino?"
 
 #: models.py:1091
 msgid "0 - Most likely to accept the bribe"
@@ -420,8 +420,8 @@ msgid ""
 "Some people say there is not much opportunity to get ahead today for the average person. Others say anyone who works hard can climb up the ladder. Which "
 "one comes closer to the way you feel about this?"
 msgstr ""
-"Nekateri ljudje pravijo, da dan danes ni veliko možnosti za napredovanje povprečnega človeka. Drugi pravijo, da je veliko priložnosti in, da lahko vsakdo, "
-"ki trdo dela pride tako daleč kolikor hoče. Katero razmišljanje je bližje vašem mnenju?"
+"Nekateri ljudje pravijo, da dandanes ni veliko možnosti za napredovanje povprečnega človeka. Drugi pravijo, da je veliko priložnosti in, da lahko vsakdo, "
+"ki trdo dela pride tako daleč kolikor hoče. Katero razmišljanje vam je bližje?"
 
 #: models.py:1180
 msgid "0 - There is not much opportunity"
@@ -542,7 +542,7 @@ msgid ""
 "born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100."
 msgstr ""
 "Kako visoko bi ocenili odstotek ljudi v vaši okolici,ki niso slovenskega rodu? S tem mislimo ljudi, ki niso bili rojeni v Sloveniji ali imajo vsaj enega "
-"star[a, ki ni rojen v Sloveniji. Prosimo navedite odstotek med 0 in 100."
+"starša, ki ni rojen v Sloveniji. Prosimo navedite odstotek med 0 in 100."
 
 #: models.py:1428
 msgid "0 - Immigrants are not integrated in our society"
@@ -586,7 +586,7 @@ msgstr "Nikoli"
 
 #: models.py:1478
 msgid "How often do you participate in voluntary activities to help people other than your direct relatives, friends or colleagues?"
-msgstr "Kako pogosto sodelujete v prostovoljskih aktivnostih, ki pomagajo ljudem ki niso vaši direktni sorodniki, prijatelji, znanci ali sodelavci?"
+msgstr "Kako pogosto sodelujete v prostovoljskih aktivnostih, ki so namenjene pomoči tistim, ki niso vaši sorodniki, prijatelji, znanci ali sodelavci?"
 
 #: models.py:1490
 msgid "How strongly do you feel connected to other people in your neighborhood?"
@@ -696,7 +696,7 @@ msgstr "Ali živite v:"
 
 #: models.py:1619
 msgid "Small metropolitan area (200.000 to 500.000 inhabitants)"
-msgstr "V mestnem področju (200.000 - 500,000 prebivalcev)"
+msgstr "V mestnem področju (200.000 - 500.000 prebivalcev)"
 
 #: models.py:1620
 msgid "Town (50.000 to 200.000 inhabitants)"
@@ -716,7 +716,7 @@ msgstr "Katera je vaša najvišja stopnja izobrazbe, ki ste jo dokončali?"
 
 #: models.py:1630 models.py:1643
 msgid "Less than high school"
-msgstr "Nižje kot srednje šolska izobrazba"
+msgstr "Nižje kot srednješolska izobrazba"
 
 #: models.py:1631 models.py:1644
 msgid "High school"
@@ -1024,12 +1024,12 @@ msgid ""
 "The government currently raises a certain amount of revenues through tax in order to sustain the current level of public spending. In your view, what would "
 "be the fair split of tax burden to sustain public spending?"
 msgstr ""
-"Vlada potrebuje pridobiti določena sredstva od davka na dohodek, da lahko financira trenutno raven javne porabe. Po vašem mnenju, kakšna bi bila pravična "
+"Vlada želi pridobiti določena sredstva od davka na dohodek, da lahko financira trenutno raven javne porabe. Po vašem mnenju, kakšna bi bila pravična "
 "razdelitev davčnega bremena za vzdrževanje javne porabe?"
 
 #: templates/survey_i18n/Survey16.html:44
 msgid "Please use the sliders below to tell us how much you think each of the following groups should pay as a percentage of their available resources."
-msgstr "Prosimo uporabite drsnike spodaj in s tem označite kolikšen delež razpoložljivih sredstev mislite, da bi morala placate vsaka naslednja skupina."
+msgstr "Prosimo uporabite drsnike spodaj in s tem označite kolikšen delež razpoložljivih sredstev mislite, da bi morala plačati vsaka naslednja skupina."
 
 #: templates/survey_i18n/Survey16.html:45
 msgid "Each slider represents a segment of the population with a different income. "
@@ -1121,7 +1121,7 @@ msgid ""
 "income</strong>, after taxes have been deducted."
 msgstr ""
 "Prosimo potrdite. Kateri od teh dohodkovnih razredov v najboljši meri ustreza <strong>vašemu osebnemu</strong> dohodku? Ne pozabite, sprašujemo po "
-"<strong>vasem osebnem</strong> dohodku po odmeri davkov."
+"<strong>vašem osebnem</strong> dohodku po odmeri davkov."
 
 #: templates/survey_i18n/Survey36.html:11
 msgid ""

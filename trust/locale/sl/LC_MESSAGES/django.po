@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 14:59+0100\n"
-"PO-Revision-Date: 2017-03-07 15:13+0100\n"
+"PO-Revision-Date: 2017-03-10 11:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/trust/EndGame.html:6
 msgid "Thank you very much for entering your choice."
@@ -43,8 +43,8 @@ msgstr "Prva naloga: uvod"
 
 #: templates/trust/Instructions.html:8
 msgid ""
-"In the first task, <strong>two people participate</strong>: Participant A "
-"and Participant B. As mentioned before, this other participant also lives in "
+"In the first task, <strong>two people participate</strong>: Participant A and "
+"Participant B. As mentioned before, this other participant also lives in "
 "[country]."
 msgstr ""
 "V prvi nalogi <strong>sodelujeta dve osebi</strong>: udeleženec A in "
@@ -71,15 +71,13 @@ msgstr ""
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her 10 "
 "euros to Participant B."
-msgstr ""
-"Udeleženec A lahko  udeležencu B, ne nakaže nič, del ali vseh 10 evrov."
+msgstr "Udeleženec A lahko  udeležencu B, ne nakaže nič, del ali vseh 10 evrov."
 
 #: templates/trust/Instructions.html:19
-msgid ""
-"Whatever amount Participant A sends is <strong>multiplied by 3</strong>."
+msgid "Whatever amount Participant A sends is <strong>multiplied by 3</strong>."
 msgstr ""
-"Ne glede na znesek, ki ga bo poslal udeleženec A, se bo ta <strong>pomnožil "
-"s 3</strong>."
+"Ne glede na znesek, ki ga bo poslal udeleženec A, se bo ta <strong>pomnožil s "
+"3</strong>."
 
 #: templates/trust/Instructions.html:20
 msgid ""
@@ -94,9 +92,8 @@ msgid ""
 "<strong>You are asked to make decisions in both role A and B</strong>. Which "
 "role you will be assigned to for payment will be determined randomly."
 msgstr ""
-"<strong>Prosili vas bodo, da sprejmete odločitve tako v vlogi A kot tudi v "
-"vlogi B.</strong> Katera vloga vam bo dodeljena za plačilo bo izbrana "
-"naključno."
+"<strong>Prosimo vas, da sprejmete odločitve tako v vlogi A kot tudi v vlogi "
+"B. </strong> Vloga vam bo dodeljena naključno."
 
 #: templates/trust/Instructions.html:23
 msgid ""
@@ -115,8 +112,8 @@ msgid ""
 "Now the real task 1 starts. Once you have made your decision and clicked the "
 "“Next” button, you cannot return to this screen."
 msgstr ""
-"Sedaj se začne prava naloga. Potem, ko se boste enkrat odločili in "
-"pritisnili tipko \"Naprej\", se ne boste mogli več vrniti nazaj na to stran."
+"Sedaj se začne prava naloga. Potem, ko se boste enkrat odločili in pritisnili "
+"tipko \"Naprej\", se ne boste mogli več vrniti nazaj na to stran."
 
 #: templates/trust/Send.html:10
 msgid ""
@@ -205,8 +202,8 @@ msgstr "Sledi vprašanje v zvezi z vašimi pričakovanji glede drugih oseb."
 
 #: templates/trust/SendContinued.html:13
 msgid ""
-"You are not playing as Participant A or Participant B, and this decision "
-"will not affect your earnings."
+"You are not playing as Participant A or Participant B, and this decision will "
+"not affect your earnings."
 msgstr ""
 "Sedaj nastopate kot udeleženec A ali udeleženec B. Ta odločitev ne bo "
 "vplivala na vaš zaslužek."
@@ -231,8 +228,8 @@ msgid ""
 "What amount do you <strong>expect</strong> most people to return to "
 "Participant A in this situation?"
 msgstr ""
-"Kolikšen znesek <strong>pričakujete</strong> da večina ljudi povrne udeležncu "
-"A v tej situaciji?"
+"Kolikšen znesek <strong>pričakujete</strong> da večina ljudi povrne "
+"udeležencu A v tej situaciji?"
 
 #: templates/trust/SendContinued.html:18
 #, python-format
@@ -264,8 +261,8 @@ msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
 msgstr ""
-"Med vsakim testom pritisnite tipko \"ponastavi na nič\" pod tipko "
-"\"ponastavi računalnik\"."
+"Med vsakim testom pritisnite tipko \"ponastavi na nič\" pod tipko \"ponastavi "
+"računalnik\"."
 
 #: templates/trust/Simulation.html:146
 msgid "€"
@@ -343,8 +340,8 @@ msgstr ""
 
 #: views.py:139
 msgid ""
-"If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 "
-"Won). How much will you send back to Participant A:"
+"If Participant A sends you 1.200 Won (you receive 1.200 Won × 3 = 3.600 Won). "
+"How much will you send back to Participant A:"
 msgstr ""
 
 #: views.py:145 views.py:148 views.py:151
@@ -357,8 +354,8 @@ msgstr ""
 
 #: views.py:154
 msgid ""
-"If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 "
-"Won). How much will you send back to Participant A:"
+"If Participant A sends you 2.400 Won (you receive 2.400 Won × 3 = 7.200 Won). "
+"How much will you send back to Participant A:"
 msgstr ""
 
 #: views.py:160 views.py:163 views.py:166
@@ -395,7 +392,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €5 (vaši skupni prejemki so sedaj €25). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:199
 msgid ""
@@ -409,7 +406,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €6 (vaši skupni prejemki so sedaj €28). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:214
 msgid ""
@@ -423,7 +420,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €7 (vaši skupni prejemki so sedaj €31). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:229
 msgid ""
@@ -437,7 +434,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €8 (vaši skupni prejemki so sedaj €34). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:244
 msgid ""
@@ -451,7 +448,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €9 (vaši skupni prejemki so sedaj €37). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:259
 msgid ""
@@ -465,7 +462,7 @@ msgid ""
 "will you send back to Participant A:"
 msgstr ""
 "Če vam udeleženec A pošlje €10 (vaši skupni prejemki so sedaj €40). Koliko "
-"boste poslali nazaj udeleženec A:"
+"boste poslali nazaj udeležencu A:"
 
 #: views.py:274
 msgid ""

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:05+0100\n"
-"PO-Revision-Date: 2017-03-07 15:00+0100\n"
+"PO-Revision-Date: 2017-03-10 11:07+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/public_goods/Contribute.html:6
 msgid "Task Two: Real Task"
@@ -38,12 +38,11 @@ msgid ""
 "this money, or choose to invest some (or all) of it in the joint project."
 msgstr ""
 "V svoji lasti imate %(allocated_amount)s . Na voljo imate dve izbiri, denar "
-"lahko obdržite ali pa ga vložite  v skupen projekt. <strong> Koliko želite "
-"vložiti v skupen projekt?</strong>"
+"lahko obdržite ali pa ga vložite  v skupen projekt."
 
 #: templates/public_goods/Contribute.html:10
 msgid "How much (if any) do you want to invest into the joint project?"
-msgstr "Koliko (če sploh) zelite investirati v skupen projekt?"
+msgstr "<strong> Koliko želite vložiti v skupen projekt?</strong>"
 
 #: templates/public_goods/Contribute.html:16
 #: templates/public_goods/ContributeBack.html:25
@@ -82,16 +81,14 @@ msgstr ""
 
 #: templates/public_goods/EndGame.html:10
 msgid "Thank you very much for entering your choice."
-msgstr "Najlepše se vam zahvaljujemo za vnos vase izbire."
+msgstr "Najlepše se vam zahvaljujemo za vnos vaše izbire."
 
 #: templates/public_goods/EndGame.html:11
 msgid ""
 "We have recorded your decision. Again, your payoff will depend on the "
 "actions of the other players. Now, please proceed to the third task."
 msgstr ""
-"Vaša odločitev je shranjena. Ponovno vas opozarjamo, da bo vaš zaslužek "
-"odvisen od dejanj ostalih igralcev. Sedaj, prosimo da nadaljujte s tretjo "
-"nalogo."
+"Vaša odločitev je shranjena. Sedaj prosimo nadaljujte z drugim delom naloge."
 
 #: templates/public_goods/Instructions.html:6
 msgid "Task Two: Introduction"
@@ -102,8 +99,8 @@ msgid ""
 "In the second task, groups of <strong>4 participants</strong> (yourself and "
 "3 other people) are formed"
 msgstr ""
-"V drugi nalogi so oblikovane skupine s<strong>4 udeleženci</strong> (vi in 3 "
-"druge osebe)."
+"V drugi nalogi so oblikovane skupine s <strong>4 udeleženci</strong> (vi in "
+"3 druge osebe)."
 
 #: templates/public_goods/Instructions.html:8
 msgid ""
@@ -147,7 +144,7 @@ msgid ""
 "<strong>split equally between all 4 group members</strong> (including "
 "yourself)."
 msgstr ""
-"Na koncu se bo denar v skupnem projektu ponovno  <strong>enakomerno razdelil "
+"Na koncu se bo denar v skupnem projektu ponovno <strong>enakomerno razdelil "
 "med vse štiri člane skupine</strong> (vključno z vami)."
 
 #: templates/public_goods/Simulation.html:11
@@ -202,7 +199,7 @@ msgstr ""
 
 #: views.py:91 views.py:92 views.py:93
 msgid "if on average, each of the other group members contributes 0 euro:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 0 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €0:"
 
 #: views.py:94
 msgid "if on average, each of the other group members contributes 0 Won:"
@@ -210,7 +207,7 @@ msgstr ""
 
 #: views.py:98 views.py:99 views.py:100
 msgid "if on average, each of the other group members contributes 1 euro:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 1 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €1:"
 
 #: views.py:101
 msgid ""
@@ -219,7 +216,7 @@ msgstr ""
 
 #: views.py:105 views.py:106 views.py:107
 msgid "if on average, each of the other group members contributes 2 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 2 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €2:"
 
 #: views.py:108
 msgid "if on average, each of the other group members contributes 2.400 Won:"
@@ -227,7 +224,7 @@ msgstr ""
 
 #: views.py:112 views.py:113 views.py:114
 msgid "if on average, each of the other group members contributes 3 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 3 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €3:"
 
 #: views.py:115
 msgid "if on average, each of the other group members contributes 3.600 Won:"
@@ -235,7 +232,7 @@ msgstr ""
 
 #: views.py:119 views.py:120 views.py:121
 msgid "if on average, each of the other group members contributes 4 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 4 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €4:"
 
 #: views.py:122
 msgid "if on average, each of the other group members contributes 4.800 Won:"
@@ -243,7 +240,7 @@ msgstr ""
 
 #: views.py:126 views.py:127 views.py:128
 msgid "if on average, each of the other group members contributes 5 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 5 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €5:"
 
 #: views.py:129
 msgid "if on average, each of the other group members contributes 6.000 Won:"
@@ -251,7 +248,7 @@ msgstr ""
 
 #: views.py:133 views.py:134 views.py:135
 msgid "if on average, each of the other group members contributes 6 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 6 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €6:"
 
 #: views.py:136
 msgid "if on average, each of the other group members contributes 7.200 Won:"
@@ -259,7 +256,7 @@ msgstr ""
 
 #: views.py:140 views.py:141 views.py:142
 msgid "if on average, each of the other group members contributes 7 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 7 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €7:"
 
 #: views.py:143
 msgid "if on average, each of the other group members contributes 8.400 Won:"
@@ -267,7 +264,7 @@ msgstr ""
 
 #: views.py:147 views.py:148 views.py:149
 msgid "if on average, each of the other group members contributes 8 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 8 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €8:"
 
 #: views.py:150
 msgid "if on average, each of the other group members contributes 9.600 Won:"
@@ -275,7 +272,7 @@ msgstr ""
 
 #: views.py:154 views.py:155 views.py:156
 msgid "if on average, each of the other group members contributes 9 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 9 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €9:"
 
 #: views.py:157
 msgid "if on average, each of the other group members contributes 10.800 Won:"
@@ -283,7 +280,7 @@ msgstr ""
 
 #: views.py:161 views.py:162 views.py:163
 msgid "if on average, each of the other group members contributes 10 euros:"
-msgstr "Če v povprečju vsak od ostalih članov prispeva 10 evrov:"
+msgstr "Če v povprečju vsak od ostalih članov prispeva €10:"
 
 #: views.py:164
 msgid "if on average, each of the other group members contributes 12.000 Won:"

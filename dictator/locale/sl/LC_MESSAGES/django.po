@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:05+0100\n"
-"PO-Revision-Date: 2017-03-07 15:05+0100\n"
+"PO-Revision-Date: 2017-03-10 11:09+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/dictator/EndGame.html:8
 msgid "Thank once again!"
@@ -71,7 +71,7 @@ msgstr "Udeleženec A prejme na začetku %(amount)s."
 
 #: templates/dictator/Instructions.html:16
 msgid "Participant B does not receive any money — he or she has 0."
-msgstr "Udeleženec B ne prejme denarja - ma 0."
+msgstr "Udeleženec B ne prejme denarja - ima 0."
 
 #: templates/dictator/Instructions.html:17
 #, python-format
@@ -80,7 +80,7 @@ msgid ""
 "her %(amount)s to Participant B."
 msgstr ""
 "Sedaj se mora udeleženec A odločiti ali želi udeležencu B nakazati kaj od "
-"svojega %(amount)s."
+"svojih %(amount)s."
 
 #: templates/dictator/Instructions.html:18
 msgid ""
@@ -126,7 +126,7 @@ msgstr ""
 msgid ""
 "Suppose that you are selected to be in the role of <strong>Participant A</"
 "strong>."
-msgstr "Sedaj predpostavite, da ste izbrani za <strong>udeležnca A</strong>."
+msgstr "Sedaj predpostavite, da ste izbrani za <strong>udeleženca A</strong>."
 
 #: templates/dictator/Offer.html:9
 #, python-format
