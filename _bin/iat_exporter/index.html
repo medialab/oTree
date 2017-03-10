@@ -20,8 +20,10 @@
 <body>
   <form class="dropzone" id="zone" action="/">
 
-  <script>
-    const Dropzone = require(__dirname + '/vendors/dropzone/dropzone.min');
+  <script type="text/javascript">
+    const DOCUMENT_LINES_MAX_LIMIT = 10000;
+
+    const Dropzone = require('dropzone');
     const Base64 = require('js-base64').Base64;
 
     const SUCCESS_HEADER = 'Trial ID,Player ID in group,Code,Label,Time started,Left category,Right category,Stimuli word,Correct position,Correct category,Time taken';
@@ -63,22 +65,18 @@
                 // Trim out all non IAT related content (keep success/error/meta).
                 return d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'));
               })
-              .filter(d => {
-                // Filter out all empty rows (i.e. non-played/no results yet).
-                return d !== '';
-              })
-              .map(d => {
-                // Split success, errors and meta data into new array
-                return d.split('","');
-              })
+              // Filter out all empty rows (i.e. non-played/no results yet).
+              .filter(d => d)
+              // Split success, errors and meta data into new array
+              .map(d => d.split('","'))
               .reduce((p, c) => {
                 // Resulting array has 3 string elements,
                 // 0 -> concatenated successes,
                 // 1 -> concatenated errors,
                 // 2 -> concatenated metadata
-                p[0] += c[0].trim().split(SUCCESS_HEADER).join('') + '\n';
-                p[1] += c[1].trim().split(ERROR_HEADER).join('') + '\n';
-                p[2] += c[2].trim().split(META_HEADER).join('') + '\n';
+                if (c.length > 2) p[0] += c[0].trim().split(SUCCESS_HEADER).join('') + '\n';
+                if (c.length > 2) p[1] += c[1].trim().split(ERROR_HEADER).join('') + '\n';
+                if (c.length > 2) p[2] += c[2].trim().split(META_HEADER).join('') + '\n';
                 return p;
               }, [' '.trim(), ' '.trim(), ' '.trim()])
               .map((rawString, index) => {
@@ -90,16 +88,14 @@
                     chunkIndex = 0,
                     fileIndex = 0;
 
-                const NUM_IN_CHUNK = 5000;
-
                 // Create file header lines and file names based on current value of index.
                 const headers = [SUCCESS_HEADER, ERROR_HEADER, META_HEADER];
                 const names = ['IAT_results', 'IAT_errors', 'IAT_meta'];
 
-                for (chunkIndex; chunkIndex < lines.length; chunkIndex += NUM_IN_CHUNK) {
+                for (chunkIndex; chunkIndex < lines.length; chunkIndex += DOCUMENT_LINES_MAX_LIMIT) {
                   chunks = [];
                   chunks.push(headers[index]);
-                  chunks = chunks.concat(lines.slice(chunkIndex, chunkIndex + NUM_IN_CHUNK));
+                  chunks = chunks.concat(lines.slice(chunkIndex, chunkIndex + DOCUMENT_LINES_MAX_LIMIT));
                   download(chunks, generateFileName(names[index], fileIndex));
                   fileIndex++;
                 }

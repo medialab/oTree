@@ -19,7 +19,7 @@ const createWin = () => {
     slashes: true
   }));
 
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   win.on('closed', closedHandler);
 
   return win;
