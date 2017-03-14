@@ -433,7 +433,7 @@ $(function (window, undefined) {
             stimuli: trial.stimuli
           },
           {timing: timing, timedOut: timedOut ? true : false}
-        );
+        )
       );
     }
 
