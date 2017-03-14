@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 14:59+0100\n"
-"PO-Revision-Date: 2017-03-10 11:00+0100\n"
+"PO-Revision-Date: 2017-03-14 15:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: templates/trust/EndGame.html:6
 msgid "Thank you very much for entering your choice."
@@ -29,7 +29,7 @@ msgstr "Vaša odločitev je shranjena."
 
 #: templates/trust/EndGame.html:7
 msgid "Now, please proceed to the second task."
-msgstr "Sedaj prosimo nadaljujte z drugim delom naloge."
+msgstr "Sedaj prosimo nadaljujte z drugo nalogo."
 
 #: templates/trust/EndGame.html:8 templates/trust/Send.html:16
 #: templates/trust/SendBack.html:31 templates/trust/SendContinued.html:22
@@ -71,7 +71,7 @@ msgstr ""
 msgid ""
 "Participant A has the option to transfer none, part or all of his or her 10 "
 "euros to Participant B."
-msgstr "Udeleženec A lahko  udeležencu B, ne nakaže nič, del ali vseh 10 evrov."
+msgstr "Udeleženec A lahko udeležencu B ne nakaže nič, del ali vseh 10 evrov."
 
 #: templates/trust/Instructions.html:19
 msgid "Whatever amount Participant A sends is <strong>multiplied by 3</strong>."
@@ -158,7 +158,7 @@ msgstr ""
 #: templates/trust/SendBack.html:13
 #, python-format
 msgid "As always, your initial endowment is %(amount_allocated)s."
-msgstr "Kot običajnoznaša vaša začetna donacija %(amount_allocated)s."
+msgstr "Kot običajno znaša vaša začetna donacija %(amount_allocated)s."
 
 #: templates/trust/SendBack.html:14
 #, python-format
@@ -261,8 +261,8 @@ msgid ""
 "Between each test, click the “reset to zero” button below to reset the "
 "calculator."
 msgstr ""
-"Med vsakim testom pritisnite tipko \"ponastavi na nič\" pod tipko \"ponastavi "
-"računalnik\"."
+"Med vsakim testom pritisnite tipko \"ponastavi na nič\" za ponastavitev "
+"kalkulatorja."
 
 #: templates/trust/Simulation.html:146
 msgid "€"
