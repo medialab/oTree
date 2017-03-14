@@ -61,7 +61,7 @@
             data = data
               .split('\n')               // Split on rows. Make them into array of strings.
               .slice(1)                  // Copy (to return an) array including all but first line (an unused oTree table header...)
-              .map(d => d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'))); // Prune out all non IAT related content (keep success/error/meta).
+              .map(d => d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'))) // Prune out all non IAT related content (keep success/error/meta).
               .filter(d => d)            // Filter out all empty rows (i.e. non-played/no results yet).
               .map(d => d.split('","'))  // Split success, errors and meta data into new array
               .reduce((p, c) => {
@@ -75,6 +75,8 @@
                 return p;
               }, [' '.trim(), ' '.trim(), ' '.trim()])
               .map((rawString, index) => {
+                //console.log(rawString.split('\\n'));
+                return;
                 // Process and download data in chunks.
                 // Because there's a limit to the amount of data we can
                 // turn into inline dowloads....
