@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-10 11:36+0100\n"
+"PO-Revision-Date: 2017-03-13 10:40+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.8\n"
 
 #: models.py:46
 msgid ""
@@ -456,7 +456,7 @@ msgstr "Kako bi ocenili verjetnost, da boste izgubili vašo službo v naslednjih
 
 #: models.py:1231 models.py:1251 models.py:1671
 msgid "N/A"
-msgstr "ni podatkov"
+msgstr "Ni podatkov"
 
 #: models.py:1238
 msgid "If you were to lose your job, how likely is it that you would find a job with a similar salary within 6 months?"
@@ -615,7 +615,7 @@ msgstr "10 - Volitve lahko kaj spremenijo"
 #: models.py:1530
 msgid "In political matters, people often talk of “the left” and “the right.” How would you place your views on this scale, generally speaking?"
 msgstr ""
-"Ljudje pogosto navedejo svojo politično opredelitev navzdol spektra \"leve\" in \"desne\" politike. Z uporabo te tradicionalne ločnice, kam na spekter bi "
+"Ljudje pogosto navedejo svojo politično opredelitev na spektru \"leve\" in \"desne\" politike. Z uporabo te tradicionalne ločnice, kam na spekter bi "
 "uvrstili sebe?"
 
 #: models.py:1533
@@ -636,15 +636,15 @@ msgstr "Vaš datum rojstva?"
 
 #: models.py:1555
 msgid "Male"
-msgstr "moški"
+msgstr "Moški"
 
 #: models.py:1555
 msgid "Female"
-msgstr "ženska"
+msgstr "Ženska"
 
 #: models.py:1555 models.py:1591 models.py:1770
 msgid "Other"
-msgstr "drugo"
+msgstr "Drugo"
 
 #: models.py:1556
 msgid "What is your gender?"
@@ -854,7 +854,7 @@ msgstr "0 -  Sploh se ne strinjam"
 
 #: models.py:1763
 msgid "Which device are you taking this study on?"
-msgstr "Katera naprava je uporabljen v tej študiji?"
+msgstr "Katero napravo uporabljate v tej študiji?"
 
 #: models.py:1766
 msgid "Desktop"
@@ -1058,7 +1058,7 @@ msgstr "Naslednjih 40%"
 #: templates/survey_i18n/Survey16.html:84
 #, python-format
 msgid "The bottom 50%"
-msgstr "Spondnjih 50%"
+msgstr "Spodnjih 50%"
 
 #: templates/survey_i18n/Survey16.html:96
 msgid "Revenue raised"
