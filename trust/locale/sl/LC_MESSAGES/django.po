@@ -278,7 +278,7 @@ msgstr "Udeleženec B"
 
 #: templates/trust/Simulation.html:155
 msgid "Amount sent by Participant A"
-msgstr "Znesek, ki ga je poslal udeleženec A"
+msgstr ""Znesek, ki ga pošlje Udeleženec A"
 
 #: templates/trust/Simulation.html:157 templates/trust/Simulation.html:165
 msgid "Send"
@@ -286,7 +286,7 @@ msgstr "Pošlji"
 
 #: templates/trust/Simulation.html:163
 msgid "Amount sent by Participant B"
-msgstr "Znesek, ki ga je poslal udeleženec B"
+msgstr ""Znesek, ki ga pošlje Udeleženec B"
 
 #: templates/trust/Simulation.html:170
 msgid "Reset to zero"
