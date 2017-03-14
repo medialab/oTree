@@ -19,7 +19,7 @@
 
     IAT.begin(data, order, lang)
        .then(function(results) {
-         console.log(results);
+         // console.log(results);
          $('input[name="iat_meta"]').val(results.meta);
          $('input[name="iat_successes"]').val(results.successes);
          $('input[name="iat_failures"]').val(results.failures);

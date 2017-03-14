@@ -76,19 +76,16 @@ $(function (window, undefined) {
     };
 
     var toCSV = {
-      successes: [
-        'Trial ID,Player ID in group,Code,Label,Time started,' +
-        'Left category,Right category,Stimuli word,' +
-        'Correct position,Correct category,Time taken'
-      ],
-      failures: [
-        'Trial ID,Player ID in group,Code,Label,Time started,Left category,' +
-        'Right category,Stimuli word,Correct position,' +
-        'Correct category,Failed by time out,Time taken'
-      ],
-      meta: [
-        'Player ID in group,Code,Label,Time started,Trials order,Error Percentage,Platform'
-      ]
+      meta: ['Player ID in group,Code,Label,Time started,Trials order,Error Percentage,Platform']
+    };
+
+    var headers = {
+      successes: 'Trial ID,Player ID in group,Code,Label,Time started,' +
+                 'Left category,Right category,Stimuli word,' +
+                 'Correct position,Correct category,Time taken',
+      failures: 'Trial ID,Player ID in group,Code,Label,Time started,Left category,' +
+                'Right category,Stimuli word,Correct position,' +
+                'Correct category,Failed by time out,Time taken'
     };
 
     /**
@@ -436,7 +433,7 @@ $(function (window, undefined) {
             stimuli: trial.stimuli
           },
           {timing: timing, timedOut: timedOut ? true : false}
-        )
+        );
       );
     }
 
@@ -610,18 +607,15 @@ $(function (window, undefined) {
      * @return {Object} A object with two arrays (successes/failures) cumulating CSV-formatted data.
      */
     function computeResults(store, participant, timeStarted, toCSV) {
-      toCSV.successes = toCSV.successes.concat(
-        answerStore.successes.map(function (a) {
+      toCSV.successes = [headers.successes].concat(answerStore.successes.map(function (a) {
           // Trial ID, MTurk ID, Code, Label, Time started, Left category, Right category
           // Stimuli word, Correct position, Correct category, Time taken
           return a.id + ',' + participant.id + ',' + participant.code + ',' +
                  participant.label + ',' + timeStarted + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' + a.timing;
-        })
-      );
+      }));
 
-      toCSV.failures = toCSV.failures.concat(
-        answerStore.failures.map(function (a) {
+      toCSV.failures = [headers.failures].concat(answerStore.failures.map(function (a) {
           // Trial ID, MTurk ID, Code, Label,Time started, Left category,
           // Right category, Stimuli word, Correct position, Correct category,
           // Failed by time out, Time taken
@@ -629,8 +623,7 @@ $(function (window, undefined) {
                  participant.label + ',' + timeStarted + ',' + a.left + ',' + a.right + ',' + a.stimuli + ',' +
                  a.correctPosition + ',' + a.correctCategory + ',' +
                  a.timedOut + ',' + a.timing
-        })
-      );
+      }));
 
       return toCSV;
     }
@@ -691,7 +684,8 @@ $(function (window, undefined) {
        */
       var showTrial = function (trial, trialIndex, participant, timeStarted, toCSV) {
         if (trialIndex > 0 && isPauseScreen(trial)) {
-          toCSV = Object.assign({}, toCSV, computeResults(answerStore, participant, timeStarted, toCSV));
+          //toCSV = Object.assign({}, toCSV, computeResults(answerStore, participant, timeStarted, toCSV));
+          toCSV = computeResults(answerStore, participant, timeStarted, toCSV);
         }
 
         updateUIText(trial, queue, trialIndex);
