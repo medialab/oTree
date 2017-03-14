@@ -59,16 +59,11 @@
           reader.onload = e => {
             let data = Base64.decode(e.target.result.substring(21));
             data = data
-              .split('\n')  // Split on rows. Make them into array of strings.
-              .slice(1)     // Copy (to return an) array including all but first line (an unused oTree table header...)
-              .map(d => {
-                // Trim out all non IAT related content (keep success/error/meta).
-                return d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'));
-              })
-              // Filter out all empty rows (i.e. non-played/no results yet).
-              .filter(d => d)
-              // Split success, errors and meta data into new array
-              .map(d => d.split('","'))
+              .split('\n')               // Split on rows. Make them into array of strings.
+              .slice(1)                  // Copy (to return an) array including all but first line (an unused oTree table header...)
+              .map(d => d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'))); // Prune out all non IAT related content (keep success/error/meta).
+              .filter(d => d)            // Filter out all empty rows (i.e. non-played/no results yet).
+              .map(d => d.split('","'))  // Split success, errors and meta data into new array
               .reduce((p, c) => {
                 // Resulting array has 3 string elements,
                 // 0 -> concatenated successes,
