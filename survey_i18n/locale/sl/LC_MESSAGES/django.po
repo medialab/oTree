@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-16 09:37+0100\n"
+"PO-Revision-Date: 2017-03-16 12:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.9\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: models.py:46
 msgid ""
@@ -939,9 +939,9 @@ msgstr "Okvir na levi vsebuje trenutni odstotek od celotnih javnih izdatkov name
 
 #: templates/survey_i18n/Survey15.html:42
 #, python-format
-msgid "Please enter in the box on the right your preferred distribution for each category (<strong>together the categories must sum to 100%%</strong>)."
+msgid "Please enter in the box on the right your preferred distribution for each category (<strong>together the categories must sum to 100%</strong>)."
 msgstr ""
-"Prosimo vas, da v okvir na desni vnesete vašo željeno strukturo izdatkov za vsako kategorijo (<strong>vse kategorije skupaj morajo biti 100%%</strong>)"
+"Prosimo vas, da v okvir na desni vnesete vašo željeno strukturo izdatkov za vsako kategorijo (<strong>vse kategorije skupaj morajo biti 100&#37;</strong>)"
 
 #: templates/survey_i18n/Survey15.html:51
 msgid "Current spending in [country]"
@@ -949,8 +949,8 @@ msgstr "Trenutni izdatki v Sloveniji"
 
 #: templates/survey_i18n/Survey15.html:52 templates/survey_i18n/Survey15.html:56
 #, python-format
-msgid "%% of total public spending"
-msgstr "%% od vseh izdatkov skupaj"
+msgid "% of total public spending"
+msgstr "&#37; od vseh izdatkov skupaj"
 
 #: templates/survey_i18n/Survey15.html:55
 msgid "Preferred"
@@ -1038,23 +1038,23 @@ msgstr "Vsak drsnik predstavlja segment populacije z drugačnim dohodkom."
 
 #: templates/survey_i18n/Survey16.html:46
 #, python-format
-msgid "For example, the top 1%% represents a small group of rich people, whereas the bottom 50%% is the half of the population that earns the least."
-msgstr "Na primer, zgornji 1%% predstavlja majhno skupino bogatih, medtem ko spodnjih 50%% predstavlja polovico populacije, ki zasluži najmanj."
+msgid "For example, the top 1% represents a small group of rich people, whereas the bottom 50% is the half of the population that earns the least."
+msgstr "Na primer, zgornji 1&#37; predstavlja majhno skupino bogatih, medtem ko spodnjih 50&#37; predstavlja polovico populacije, ki zasluži najmanj."
 
 #: templates/survey_i18n/Survey16.html:54
 #, python-format
 msgid "The top 1% (Richest)"
-msgstr "Zgornjih 1%"
+msgstr "Zgornjih 1&#37;"
 
 #: templates/survey_i18n/Survey16.html:64
 #, python-format
 msgid "The next 9%"
-msgstr "Naslednjih 9%"
+msgstr "Naslednjih 9&#37;"
 
 #: templates/survey_i18n/Survey16.html:74
 #, python-format
 msgid "The next 40%"
-msgstr "Naslednjih 40%"
+msgstr "Naslednjih 40&#37;"
 
 #: templates/survey_i18n/Survey16.html:84
 #, python-format
