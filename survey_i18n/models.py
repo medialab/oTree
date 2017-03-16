@@ -1260,7 +1260,7 @@ class Player(BasePlayer):
             ('a lot', _(u"A lot")),
             ('some', _(u"Some")),
             ('little', _(u"Little")),
-            ('none', _(u"None"))
+            ('none', _(u"None "))
         )
     )
 
@@ -1272,7 +1272,7 @@ class Player(BasePlayer):
             ('a lot', _(u"A lot")),
             ('some', _(u"Some")),
             ('little', _(u"Little")),
-            ('none', _(u"None"))
+            ('none', _(u"None "))
         )
     )
 
@@ -1284,7 +1284,7 @@ class Player(BasePlayer):
             ('a lot', _(u"A lot")),
             ('some', _(u"Some")),
             ('little', _(u"Little")),
-            ('none', _(u"None"))
+            ('none', _(u"None "))
         )
     )
 
@@ -1296,7 +1296,7 @@ class Player(BasePlayer):
             ('a lot', _(u"A lot")),
             ('some', _(u"Some")),
             ('little', _(u"Little")),
-            ('none', _(u"None"))
+            ('none', _(u"None "))
         )
     )
 
@@ -1308,7 +1308,7 @@ class Player(BasePlayer):
             ('a lot', _(u"A lot")),
             ('some', _(u"Some")),
             ('little', _(u"Little")),
-            ('none', _(u"None"))
+            ('none', _(u"None "))
         )
     )
 

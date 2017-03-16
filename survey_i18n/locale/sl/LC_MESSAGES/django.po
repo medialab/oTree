@@ -494,7 +494,7 @@ msgid "Little"
 msgstr "Malo"
 
 #: models.py:1283 models.py:1295 models.py:1307 models.py:1319 models.py:1331
-msgid "None"
+msgid "None "
 msgstr "Nič"
 
 #: models.py:1290
@@ -949,7 +949,7 @@ msgstr "Trenutni izdatki v Sloveniji"
 
 #: templates/survey_i18n/Survey15.html:52 templates/survey_i18n/Survey15.html:56
 #, python-format
-msgid "% of total public spending"
+msgid "&#37; of total public spending"
 msgstr "&#37; od vseh izdatkov skupaj"
 
 #: templates/survey_i18n/Survey15.html:55
@@ -1038,7 +1038,7 @@ msgstr "Vsak drsnik predstavlja segment populacije z drugačnim dohodkom."
 
 #: templates/survey_i18n/Survey16.html:46
 #, python-format
-msgid "For example, the top 1% represents a small group of rich people, whereas the bottom 50% is the half of the population that earns the least."
+msgid "For example, the top 1&#37; represents a small group of rich people, whereas the bottom 50&#37; is the half of the population that earns the least."
 msgstr "Na primer, zgornji 1&#37; predstavlja majhno skupino bogatih, medtem ko spodnjih 50&#37; predstavlja polovico populacije, ki zasluži najmanj."
 
 #: templates/survey_i18n/Survey16.html:54
