@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-13 10:40+0100\n"
+"PO-Revision-Date: 2017-03-16 09:37+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: models.py:46
 msgid ""
@@ -295,7 +295,7 @@ msgstr "Javnim prevozom"
 
 #: models.py:789
 msgid "Child care services"
-msgstr "Centrom za socialno delo"
+msgstr "Centri za socialno delo"
 
 #: models.py:809
 msgid "Welfare benefits (unemployment benefits, disability benefits, income support)"
@@ -370,25 +370,25 @@ msgstr "Ali menite, da bi javni uslužbenci zavrnili podkupnino s strani državl
 
 #: models.py:1051
 msgid "0 -  Most likely to accept the bribe"
-msgstr "0 - Najverjetnje bi sprejli podkupnino"
+msgstr "0 - Najverjetnje bi sprejeli podkupnino"
 
 #: models.py:1061 models.py:1101
 msgid "10 - Most likely to refuse the bribe"
-msgstr "10 - Najverjetnje bi zavrnli podkupnino"
+msgstr "10 - Najverjetnje bi zavrnili podkupnino"
 
 #: models.py:1069
 msgid ""
 "If a high level politician would be offered a well-paid job in the private sector in exchange for political influence, do you think that he/she will accept "
 "reject the job?"
-msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro plačano službo v zasebnem sektorju, v zameno z političnim vplivom?"
+msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro plačano službo v zasebnem sektorju, v zameno z politični vpliv?"
 
 #: models.py:1071
 msgid "0 -  Most likely to accept the job"
-msgstr "0 - Najverjetnje bi sprejel sluzbo"
+msgstr "0 - Najverjetnje bi sprejel splužbo"
 
 #: models.py:1081
 msgid "10 - Most likely to refuse the job"
-msgstr "10 - Najverjetnje bi zavrnlisluzbo"
+msgstr "10 - Najverjetnje bi zavrnil službo"
 
 #: models.py:1089
 msgid ""
@@ -398,7 +398,7 @@ msgstr "Ali menite, da bi poslanec sprejel ali zavrnil podkupnino, če bi lahko 
 
 #: models.py:1091
 msgid "0 - Most likely to accept the bribe"
-msgstr "0 - Najverjetnje bi sprejli podkupnino"
+msgstr "0 - Najverjetnje bi sprejel podkupnino"
 
 #: models.py:1109
 msgid ""
@@ -420,8 +420,8 @@ msgid ""
 "Some people say there is not much opportunity to get ahead today for the average person. Others say anyone who works hard can climb up the ladder. Which "
 "one comes closer to the way you feel about this?"
 msgstr ""
-"Nekateri ljudje pravijo, da dandanes ni veliko možnosti za napredovanje povprečnega človeka. Drugi pravijo, da je veliko priložnosti in, da lahko vsakdo, "
-"ki trdo dela pride tako daleč kolikor hoče. Katero razmišljanje vam je bližje?"
+"Nekateri ljudje pravijo, da dandanes ni veliko možnosti za napredovanje povprečnega človeka. Drugi pravijo, da je veliko priložnosti in da lahko vsakdo, ki "
+"trdo dela pride tako daleč kolikor hoče. Katero razmišljanje vam je bližje?"
 
 #: models.py:1180
 msgid "0 - There is not much opportunity"
@@ -436,7 +436,8 @@ msgid ""
 "When it comes to the financial situation of your household, what are your expectations for the 12 months to come, will the next 12 months be better, worse, "
 "or the same?"
 msgstr ""
-"V povezavi s finančnim stanjem vašega gospodinjstva, kakšna so vaša pričakovanja za prihodnjih 12 mesecev? Bo naslednjih 12 mesecev bolje, slabše ali enako?"
+"V povezavi s finančnim stanjem vašega gospodinjstva, kakšna so vaša pričakovanja za prihodnjih 12 mesecev? Bo naslednjih 12 mesecev boljše, slabše ali "
+"enako?"
 
 #: models.py:1200
 msgid "0 - Worse"
@@ -470,7 +471,7 @@ msgstr "V zadnjih letih je mednarodno poslovanje izjemno naraslo. Ali menite, da
 
 #: models.py:1260
 msgid "0 - Fully discourage international trade"
-msgstr "0 - Popolnoma odvrača mednarodno trgovanje"
+msgstr "0 - Popolnoma odvračati mednarodno trgovanje"
 
 #: models.py:1270
 msgid "10 - Fully encourage international trade"
@@ -478,7 +479,7 @@ msgstr "10 - Popolnoma spodbujati mednarodno trgovanje"
 
 #: models.py:1278
 msgid "Television"
-msgstr "Televizija"
+msgstr "Televizije"
 
 #: models.py:1280 models.py:1292 models.py:1304 models.py:1316 models.py:1328
 msgid "A lot"
@@ -498,7 +499,7 @@ msgstr "Nič"
 
 #: models.py:1290
 msgid "the Internet"
-msgstr "Splet"
+msgstr "Spleta"
 
 #: models.py:1302
 msgid "Family members, friends, co-workers"
@@ -541,7 +542,7 @@ msgid ""
 "How high do you estimate the percentage of people of non-[country] origin in your neighborhood to be? With non-[country] origin we mean people who were not "
 "born in [country] or of whom at least one parent was not born in [country]. Please give a percentage between 0 and 100."
 msgstr ""
-"Kako visoko bi ocenili odstotek ljudi v vaši okolici,ki niso slovenskega rodu? S tem mislimo ljudi, ki niso bili rojeni v Sloveniji ali imajo vsaj enega "
+"Kako visoko bi ocenili odstotek ljudi v vaši okolici, ki niso slovenskega rodu? S tem mislimo ljudi, ki niso bili rojeni v Sloveniji ali imajo vsaj enega "
 "starša, ki ni rojen v Sloveniji. Prosimo navedite odstotek med 0 in 100."
 
 #: models.py:1428
@@ -810,19 +811,19 @@ msgstr "0 do 5500 € na leto "
 
 #: models.py:1705
 msgid "€5,501.00 to €7,500.00"
-msgstr "5501 do 7500 € "
+msgstr "5501 do 7500 € na leto"
 
 #: models.py:1706
 msgid "€7,501.00 to €9,000.00"
-msgstr "7501 do 9000 € "
+msgstr "7501 do 9000 € na leto"
 
 #: models.py:1707
 msgid "€9,001.00 to €11,000.00"
-msgstr "9001 do 11000 € "
+msgstr "9001 do 11000 € na leto"
 
 #: models.py:1708
 msgid "> €11,001.00"
-msgstr "> 11001 €"
+msgstr "> 11001 € na leto"
 
 #: models.py:1714
 msgid ""
@@ -1043,7 +1044,7 @@ msgstr "Na primer, zgornji 1%% predstavlja majhno skupino bogatih, medtem ko spo
 #: templates/survey_i18n/Survey16.html:54
 #, python-format
 msgid "The top 1% (Richest)"
-msgstr "Zgornji 1%"
+msgstr "Zgornjih 1%"
 
 #: templates/survey_i18n/Survey16.html:64
 #, python-format
@@ -1109,7 +1110,7 @@ msgid ""
 "can come salaries and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
 msgstr ""
 "Kolikšen je bil vaš skupen dohodek, ki ste ga prejeli <strong>kot posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke "
-"šteje plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemkov)"
+"šteje plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: templates/survey_i18n/Survey35.html:17 templates/survey_i18n/Survey36.html:16
 msgid "I don't know"
@@ -1129,7 +1130,7 @@ msgid ""
 "profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others):"
 msgstr ""
 "Kolikšen je bil skupen dohodek <strong>vašega gospodinjstva</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje plača, "
-"dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemkov)"
+"dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: templates/survey_i18n/Survey36.html:21
 msgid ""
