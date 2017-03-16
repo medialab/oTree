@@ -1541,7 +1541,6 @@ class Player(BasePlayer):
         verbose_name=_(u'How many people live in your household (including yourself?)'),
         widget=widgets.Select(),
         choices=(
-            ('0', '0'),
             ('1', '1'),
             ('2', '2'),
             ('3', '3'),
