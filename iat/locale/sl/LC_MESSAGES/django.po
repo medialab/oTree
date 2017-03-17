@@ -463,74 +463,74 @@ msgstr "Vreden zaupanja — Nevreden zaupanja ali Vlada — Moralno"
 #: templates/iat/TranslationWords.html:131
 #: templates/iat/TranslationWords.html:132
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lawyer"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Odvetnik"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Odvetnik"
 
 #: templates/iat/TranslationWords.html:133
 #: templates/iat/TranslationWords.html:134
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Prosecutor"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Tožilec"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Tožilec"
 
 #: templates/iat/TranslationWords.html:135
 #: templates/iat/TranslationWords.html:136
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Supreme Court"
 msgstr ""
-"Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Vrhovno sodišče"
+"Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Vrhovno sodišče"
 
 #: templates/iat/TranslationWords.html:137
 #: templates/iat/TranslationWords.html:138
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Court"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Sodišče"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Sodišče"
 
 #: templates/iat/TranslationWords.html:139
 #: templates/iat/TranslationWords.html:140
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Justice department"
 msgstr ""
-"Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Ministrstvo za "
+"Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Ministrstvo za "
 "pravosodje"
 
 #: templates/iat/TranslationWords.html:141
 #: templates/iat/TranslationWords.html:142
 #: templates/iat/TranslationWords.html:143
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Judge"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Sodnik"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Sodnik"
 
 #: templates/iat/TranslationWords.html:144
 #: templates/iat/TranslationWords.html:145
 #: templates/iat/TranslationWords.html:146
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Transparent"
 msgstr ""
-"Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Transparanten"
+"Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Transparanten"
 
 #: templates/iat/TranslationWords.html:147
 #: templates/iat/TranslationWords.html:148
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Proficient"
 msgstr ""
-"Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Usposobljen"
+"Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Usposobljen"
 
 #: templates/iat/TranslationWords.html:149
 #: templates/iat/TranslationWords.html:150
 #: templates/iat/TranslationWords.html:151
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Truthful"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Resničen"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Resničen"
 
 #: templates/iat/TranslationWords.html:152
 #: templates/iat/TranslationWords.html:153
 #: templates/iat/TranslationWords.html:154
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Capable"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Sposoben"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Sposoben"
 
 #: templates/iat/TranslationWords.html:155
 #: templates/iat/TranslationWords.html:156
 #: templates/iat/TranslationWords.html:157
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Moral"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Moralno"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Moralno"
 
 #: templates/iat/TranslationWords.html:159
 #: templates/iat/TranslationWords.html:160
 #: templates/iat/TranslationWords.html:161
 #: templates/iat/TranslationWords.html:162
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Corrupt"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Podkupljiv"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:163
 #: templates/iat/TranslationWords.html:164
@@ -538,21 +538,21 @@ msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Podkuplj
 #: templates/iat/TranslationWords.html:166
 #: templates/iat/TranslationWords.html:167
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Lying"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Lagati"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Lagati"
 
 #: templates/iat/TranslationWords.html:168
 #: templates/iat/TranslationWords.html:169
 #: templates/iat/TranslationWords.html:170
 #: templates/iat/TranslationWords.html:171
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Immoral"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Nemoralno"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Nemoralno"
 
 #: templates/iat/TranslationWords.html:172
 #: templates/iat/TranslationWords.html:173
 #: templates/iat/TranslationWords.html:174
 #: templates/iat/TranslationWords.html:175
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inexperienced"
-msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Neizkušen"
+msgstr "Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Neizkušen"
 
 #: templates/iat/TranslationWords.html:176
 #: templates/iat/TranslationWords.html:177
@@ -560,99 +560,99 @@ msgstr "Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Neizkuš
 #: templates/iat/TranslationWords.html:179
 msgid "Trustworthy or Judicial System --- Untrustworthy --- Inefficient"
 msgstr ""
-"Vreden zaupanja ali Pravosodi sistem — Nevereden zaupanja — Neučinkovit"
+"Vreden zaupanja ali Pravosodni — Nevereden zaupanja — Neučinkovit"
 
 #: templates/iat/TranslationWords.html:181
 #: templates/iat/TranslationWords.html:182
 #: templates/iat/TranslationWords.html:183
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Judge"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Sodnik"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Sodnik"
 
 #: templates/iat/TranslationWords.html:184
 #: templates/iat/TranslationWords.html:185
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Court"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Sodišče"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Sodišče"
 
 #: templates/iat/TranslationWords.html:186
 #: templates/iat/TranslationWords.html:187
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Justice department"
 msgstr ""
-"Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Ministrstvo za "
+"Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Ministrstvo za "
 "pravosodje"
 
 #: templates/iat/TranslationWords.html:188
 #: templates/iat/TranslationWords.html:189
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Supreme Court"
 msgstr ""
-"Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Vrhovno sodišče"
+"Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Vrhovno sodišče"
 
 #: templates/iat/TranslationWords.html:190
 #: templates/iat/TranslationWords.html:191
 #: templates/iat/TranslationWords.html:192
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lawyer"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Odvetnik"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Odvetnik"
 
 #: templates/iat/TranslationWords.html:193
 #: templates/iat/TranslationWords.html:194
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Prosecuter"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Tožilec"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Tožilec"
 
 #: templates/iat/TranslationWords.html:195
 #: templates/iat/TranslationWords.html:196
 #: templates/iat/TranslationWords.html:197
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inefficient"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Neucinkovit"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Neucinkovit"
 
 #: templates/iat/TranslationWords.html:198
 #: templates/iat/TranslationWords.html:199
 #: templates/iat/TranslationWords.html:200
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Lying"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Lagati"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Lagati"
 
 #: templates/iat/TranslationWords.html:201
 #: templates/iat/TranslationWords.html:202
 #: templates/iat/TranslationWords.html:203
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Immoral"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Nemoralno"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Nemoralno"
 
 #: templates/iat/TranslationWords.html:204
 #: templates/iat/TranslationWords.html:205
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Inexperienced"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Neizkušen"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Neizkušen"
 
 #: templates/iat/TranslationWords.html:206
 #: templates/iat/TranslationWords.html:207
 #: templates/iat/TranslationWords.html:208
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Corrupt"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Podkupljiv"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Podkupljiv"
 
 #: templates/iat/TranslationWords.html:210
 #: templates/iat/TranslationWords.html:211
 #: templates/iat/TranslationWords.html:212
 #: templates/iat/TranslationWords.html:213
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Moral"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Moralno"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Moralno"
 
 #: templates/iat/TranslationWords.html:214
 #: templates/iat/TranslationWords.html:215
 #: templates/iat/TranslationWords.html:216
 #: templates/iat/TranslationWords.html:217
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Proficient"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Usposobijen"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Usposobijen"
 
 #: templates/iat/TranslationWords.html:218
 #: templates/iat/TranslationWords.html:219
 #: templates/iat/TranslationWords.html:220
 #: templates/iat/TranslationWords.html:221
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Capable"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Sposoben"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Sposoben"
 
 #: templates/iat/TranslationWords.html:222
 #: templates/iat/TranslationWords.html:223
 #: templates/iat/TranslationWords.html:224
 #: templates/iat/TranslationWords.html:225
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Truthful"
-msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Resničen"
+msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Resničen"
 
 #: templates/iat/TranslationWords.html:226
 #: templates/iat/TranslationWords.html:227
@@ -660,7 +660,7 @@ msgstr "Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Resničen
 #: templates/iat/TranslationWords.html:229
 msgid "Trustworthy --- Untrustworthy or Judicial System --- Transparent"
 msgstr ""
-"Vreden zaupanja — Nevreden zaupanja ali Pravosodi sistem — Transparenten"
+"Vreden zaupanja — Nevreden zaupanja ali Pravosodni — Transparenten"
 
 #: templates/iat/TranslationWords.html:231
 #: templates/iat/TranslationWords.html:233
