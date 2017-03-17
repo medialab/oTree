@@ -170,19 +170,19 @@ msgstr "€"
 
 #: templates/public_goods/Simulation.html:100
 msgid "Amount sent by Participant A"
-msgstr "Znesek, ki ga pošlje Udeleženec A"
+msgstr "Znesek, ki ga pošlje udeleženec A"
 
 #: templates/public_goods/Simulation.html:105
 msgid "Amount sent by Participant B"
-msgstr "Znesek, ki ga pošlje Udeleženec B"
+msgstr "Znesek, ki ga pošlje udeleženec B"
 
 #: templates/public_goods/Simulation.html:110
 msgid "Amount sent by Participant C"
-msgstr "Znesek, ki ga pošlje Udeleženec C"
+msgstr "Znesek, ki ga pošlje udeleženec C"
 
 #: templates/public_goods/Simulation.html:115
 msgid "Amount sent by Participant D"
-msgstr "Znesek, ki ga pošlje Udeleženec D"
+msgstr "Znesek, ki ga pošlje udeleženec D"
 
 #: templates/public_goods/Simulation.html:120
 msgid "Send"

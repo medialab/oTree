@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 14:59+0100\n"
-"PO-Revision-Date: 2017-03-14 15:59+0100\n"
+"PO-Revision-Date: 2017-03-17 11:04+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
 "%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: templates/trust/EndGame.html:6
 msgid "Thank you very much for entering your choice."
@@ -221,7 +221,7 @@ msgid ""
 msgstr ""
 "Predpostavite, da je udeleženec A poslal 5 evrov, kar pomeni, da je "
 "udeleženec B prejel %(received_by_b)s in ima sedaj skupaj 10 + "
-"%(received_by_b)s = %(total_budget_b_str)s evrov."
+"%(received_by_b)s = %(total_budget_b_str)s."
 
 #: templates/trust/SendContinued.html:17
 msgid ""
@@ -278,7 +278,7 @@ msgstr "Udeleženec B"
 
 #: templates/trust/Simulation.html:155
 msgid "Amount sent by Participant A"
-msgstr ""Znesek, ki ga pošlje Udeleženec A"
+msgstr "Znesek, ki ga je poslal udeleženec A"
 
 #: templates/trust/Simulation.html:157 templates/trust/Simulation.html:165
 msgid "Send"
@@ -286,7 +286,7 @@ msgstr "Pošlji"
 
 #: templates/trust/Simulation.html:163
 msgid "Amount sent by Participant B"
-msgstr ""Znesek, ki ga pošlje Udeleženec B"
+msgstr "Znesek, ki ga je poslal udeleženec B"
 
 #: templates/trust/Simulation.html:170
 msgid "Reset to zero"

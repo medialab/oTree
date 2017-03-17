@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-03-07 13:03+0100\n"
-"PO-Revision-Date: 2017-03-16 12:59+0100\n"
+"PO-Revision-Date: 2017-03-17 11:07+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.9\n"
 
 #: models.py:46
 msgid ""
@@ -279,7 +279,7 @@ msgstr "Javne institucije obravnavajo vse državljane enako ne glede na njihov s
 
 #: models.py:729
 msgid "the Education system"
-msgstr "Izobraževalnim sistemom"
+msgstr "Izobraževalni sistem"
 
 #: models.py:731 models.py:751 models.py:771 models.py:791 models.py:811 models.py:831 models.py:851 models.py:871 models.py:891
 msgid "0 -  Not at all satisfied"
@@ -287,11 +287,11 @@ msgstr "0 - V celoti nisem zadovoljen"
 
 #: models.py:749
 msgid "the Health care system"
-msgstr "Zdravstvom"
+msgstr "Zdravstvo"
 
 #: models.py:769
 msgid "Public Transport"
-msgstr "Javnim prevozom"
+msgstr "Javni prevoz"
 
 #: models.py:789
 msgid "Child care services"
@@ -299,7 +299,7 @@ msgstr "Centri za socialno delo"
 
 #: models.py:809
 msgid "Welfare benefits (unemployment benefits, disability benefits, income support)"
-msgstr "Prejemki za socialno varnost (nadomestila za brezposelnost, nadomestila v primeru invalidnost, denarna socialna pomoč)"
+msgstr "Prejemki za socialno varnost (nadomestila za brezposelnost, nadomestila v primeru invalidnosti, denarna socialna pomoč)"
 
 #: models.py:829
 msgid "Public housing"
@@ -380,7 +380,7 @@ msgstr "10 - Najverjetnje bi zavrnili podkupnino"
 msgid ""
 "If a high level politician would be offered a well-paid job in the private sector in exchange for political influence, do you think that he/she will accept "
 "reject the job?"
-msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro plačano službo v zasebnem sektorju, v zameno z politični vpliv?"
+msgstr "Ali menite, da bi visoko rangiran politik sprejel ali zavrnil dobro plačano službo v zasebnem sektorju, v zameno za politični vpliv?"
 
 #: models.py:1071
 msgid "0 -  Most likely to accept the job"
@@ -794,7 +794,7 @@ msgid ""
 "In the last 12 months, what was your total income, the income that you received as an individual, after taxes have been deducted? (Income can come salaries "
 "and wages, profit from self-employment, interest, rent, pension, social insurance payments and other benefits, among others)"
 msgstr ""
-"Kolikšen je bil vaš skupni dohodek, ki ste ga prejeli <strong>kot posameznik</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke "
+"Kolikšen je bil vaš skupni dohodek, ki ste ga prejeli <strong>kot posameznik</strong> v zadnjih 12 mesecih po odmerjenem davku? (Med drugim se med dohodke "
 "šteje plača, dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: models.py:1701
@@ -830,7 +830,7 @@ msgid ""
 "In the last 12 months, what was the total income of your household after taxes have been deducted? (Income can come salaries and wages, profit from self-"
 "employment, interest, rent, pension, social insurance payments and other benefits, among others)"
 msgstr ""
-"Kolikšen je bil skupni dohodek <strong>vašega gospodinjstva</strong> v zadnjih 12 mesecih po odmerjenemu davku? (Med drugim se med dohodke šteje plača, "
+"Kolikšen je bil skupni dohodek <strong>vašega gospodinjstva</strong> v zadnjih 12 mesecih po odmerjenem davku? (Med drugim se med dohodke šteje plača, "
 "dobiček od samozaposlitve, najemnina, obresti, pokojnina, socialni in drugi prejemki)"
 
 #: models.py:1725
@@ -1059,7 +1059,7 @@ msgstr "Naslednjih 40&#37;"
 #: templates/survey_i18n/Survey16.html:84
 #, python-format
 msgid "The bottom 50%"
-msgstr "Spodnjih 50%"
+msgstr "Spodnjih 50&#37;"
 
 #: templates/survey_i18n/Survey16.html:96
 msgid "Revenue raised"
