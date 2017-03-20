@@ -12,7 +12,8 @@ class Redirect(Page):
                 'redirects' in self.session.vars and
                 self.session.vars['redirects']['complete'] or
                 'http://sciences-po.fr'
-            )
+            ),
+            'label': self.participant.label
         }
 
 

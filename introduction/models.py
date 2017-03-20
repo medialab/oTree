@@ -18,7 +18,11 @@ class Constants(BaseConstants):
 
 
 class Subsession(BaseSubsession):
-    pass
+    """Subsession for Introduction."""
+
+    def before_session_starts(self):
+        """Set treatment of the game (see settings.py) as global var."""
+        self.session.vars['redirects'] = self.session.config['quota_redirects']
 
 
 class Group(BaseGroup):
