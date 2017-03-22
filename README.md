@@ -4,7 +4,7 @@ TRUSTLAB
 > This software is developed with the financial support of the European Research Council
 > under the European Community’s Horizon H2020 Program (H2020-ERC-2014-CoG Grant Agreement n° 647870).
 
-![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/master/_readmefiles/logos.jpg)
+![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/master/logos_partners.jpg)
 
 ### Getting started
 
