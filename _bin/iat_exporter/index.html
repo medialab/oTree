@@ -8,7 +8,7 @@
 <style type="text/css">
   html, body {
     position: relative;
-    margin: 0;
+    margin: 15px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
 
@@ -18,95 +18,93 @@
   }
 </style>
 <body>
-  <form class="dropzone" id="zone" action="/">
+
+  <button style="padding:5px" onclick='processIATExport()' >transform IAT results</button><br><br>
+  <span id="counter"></span><br><br>
+  <span id="links"></span>
+
 
   <script type="text/javascript">
     const DOCUMENT_LINES_MAX_LIMIT = 10000;
 
-    const Dropzone = require('dropzone');
-    const Base64 = require('js-base64').Base64;
+
+    const csv = require('csv');
+    const _ = require('lodash');
+    const {dialog} = require('electron').remote;
+    const fs = require('fs');
+    const path = require('path');
+
 
     const SUCCESS_HEADER = 'Trial ID,Player ID in group,Code,Label,Time started,Left category,Right category,Stimuli word,Correct position,Correct category,Time taken';
     const ERROR_HEADER = 'Trial ID,Player ID in group,Code,Label,Time started,Left category,Right category,Stimuli word,Correct position,Correct category,Failed by time out,Time taken';
     const META_HEADER = 'Player ID in group,Code,Label,Time started,Trials order,Error Percentage,Platform';
 
-    function download(data, name) {
-      let csv = `data:text/csv;charset=utf-8,${encodeURI(data.join('\n'))}`;
-      let link = document.createElement('a');
-      link.download = name;
-      link.href = csv;
 
-      document.body.appendChild(link);
-      link.click();
-
-      document.body.removeChild(link);
-      delete link;
-    }
-
-    function generateFileName(stem, fileIndex) {
-      let name = stem + '_';
-      if (fileIndex < 10) {
-        name += '0';
-      }
-      return name + fileIndex + '.csv';
-    }
-
-    Dropzone.options.zone = {
-      autoProcessQueue: false,
-      init: function() {
-        this.on("addedfile", function(file) {
-          const reader = new FileReader();
-          reader.onload = e => {
-            let data = Base64.decode(e.target.result.substring(21));
-            data = data
-              .split('\n')               // Split on rows. Make them into array of strings.
-              .slice(1)                  // Copy (to return an) array including all but first line (an unused oTree table header...)
-              .map(d => d.substring(d.indexOf('"') + 1, d.lastIndexOf('"'))) // Prune out all non IAT related content (keep success/error/meta).
-              .filter(d => d)            // Filter out all empty rows (i.e. non-played/no results yet).
-              .map(d => d.split('","'))  // Split success, errors and meta data into new array
-              .reduce((p, c) => {
-                // Resulting array has 3 string elements,
-                // 0 -> concatenated successes,
-                // 1 -> concatenated errors,
-                // 2 -> concatenated metadata
-                if (c.length > 2) p[0] += c[0].trim().split(SUCCESS_HEADER).join('') + '\n';
-                if (c.length > 2) p[1] += c[1].trim().split(ERROR_HEADER).join('') + '\n';
-                if (c.length > 2) p[2] += c[2].trim().split(META_HEADER).join('') + '\n';
-                return p;
-              }, [' '.trim(), ' '.trim(), ' '.trim()])
-              .map((rawString, index) => {
-                //console.log(rawString.split('\\n'));
-                return;
-                // Process and download data in chunks.
-                // Because there's a limit to the amount of data we can
-                // turn into inline dowloads....
-                let chunks = [],
-                    lines = rawString.split('\\n').filter(l => l),  // turn to array of non-empty lines (strings)
-                    chunkIndex = 0,
-                    fileIndex = 0;
-
-                // Create file header lines and file names based on current value of index.
-                const headers = [SUCCESS_HEADER, ERROR_HEADER, META_HEADER];
-                const names = ['IAT_results', 'IAT_errors', 'IAT_meta'];
-
-                for (chunkIndex; chunkIndex < lines.length; chunkIndex += DOCUMENT_LINES_MAX_LIMIT) {
-                  chunks = [];
-                  chunks.push(headers[index]);
-                  chunks = chunks.concat(lines.slice(chunkIndex, chunkIndex + DOCUMENT_LINES_MAX_LIMIT));
-                  download(chunks, generateFileName(names[index], fileIndex));
-                  fileIndex++;
-                }
-
-                // Remove file GUI when we're done.
-                if (index === names.length) {
-                  document.body.removeChild(document.querySelector('.dropzone'));
-                }
-              });
-          };
-          reader.readAsDataURL(file);
+    function processIATExport(){
+      dialog.showOpenDialog({title:"choose a csv file exported from Dataclip",properties:['openFile'],},function (fileName) {
+        fileName = fileName[0]
+        const exportDirectory = path.dirname(fileName)
+        const IATexport = fs.createReadStream(fileName);
+        
+        const successFileName = path.join(exportDirectory,'iat_successes.csv');
+        fs.writeFileSync(successFileName,SUCCESS_HEADER+'\n\r')
+        const successOutput = fs.createWriteStream(successFileName,{
+          flags: 'a+',
+          defaultEncoding: 'utf8'
         });
-      }
-    };
+   
+
+        const failuresFileName = path.join(exportDirectory,'iat_failures.csv');
+        fs.writeFileSync(failuresFileName,ERROR_HEADER+'\n\r')
+        const failuresOutput = fs.createWriteStream(failuresFileName,{
+          flags: 'a+',
+          defaultEncoding: 'utf8'
+        });
+
+        const metaFileName = path.join(exportDirectory,'iat_meta.csv');
+        fs.writeFileSync(metaFileName,META_HEADER+'\n\r')
+        const metaOutput = fs.createWriteStream(metaFileName, {
+          flags: 'a+',
+          defaultEncoding: 'utf8'
+        });
+     
+         
+        const parser = csv.parse({columns: true});
+        let nbLineParsed = 0;
+        IATexport.pipe(parser).on('data',(l) =>{
+          const write = (data,output) =>{
+            csv.parse(data,{rowDelimiter:'\\n',columns:true},(err,csvdata) =>{
+              csv.stringify(csvdata,{header:false},(err,csvString) => {
+                output.write(csvString, 'utf8',
+                    err => {
+                      if (err){
+                        console.log(`Error while writing file ${err}`)
+                      }
+                });
+              });
+
+
+            });
+            
+          };
+          write(l['iat_successes'],successOutput);
+          write(l['iat_failures'],failuresOutput);
+          write(l['iat_meta'],metaOutput);
+          nbLineParsed++;
+          document.getElementById('counter').innerHTML =  `${nbLineParsed} line parsed`;
+          
+        }).on('finish', ()=> {
+          successOutput.close();
+          failuresOutput.close();
+          metaOutput.close();
+          results = 'results written in :<br>'+ ['iat_successes.csv','iat_meta.csv','iat_failures.csv']
+          .map(f => `${path.join(exportDirectory,f)}`).join('<br>')
+          
+          document.getElementById('links').innerHTML=results;
+          alert(`files correctly written to ${exportDirectory}`)
+        });
+      });
+  }
   </script>
 </body>
 </html>

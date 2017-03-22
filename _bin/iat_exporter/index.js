@@ -2,12 +2,14 @@ const {app, BrowserWindow} = require('electron');
 
 let win;
 
+app.disableHardwareAcceleration();
+
 const closedHandler = () => win = null;
 
 const createWin = () => {
   const win = new BrowserWindow({
-    width: 200,
-    height: 200,
+    width: 400,
+    height: 300,
     autoHideMenuBar: true,
     useContentSize: true,
     resizable: false
@@ -19,7 +21,7 @@ const createWin = () => {
     slashes: true
   }));
 
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   win.on('closed', closedHandler);
 
   return win;
