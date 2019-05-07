@@ -86,7 +86,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
  * **Daniel L. Chen, Martin Schonger and Christopher Wickens** - *Initial work on oTree* - [oTree-org](https://github.com/oTree-org)
  * **Davy Peter Braun** - *Initial work on Trustlab, including animated simulations, IAT...* - [dheavy](https://github.com/dheavy)
- * **Paul Girard** - *Overwiew of project* - [paulgirard](https://github.com/paulgirard)
+ * **Paul Girard** - *Overview of project* - [paulgirard](https://github.com/paulgirard)
 
 ### License
 
