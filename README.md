@@ -6,7 +6,7 @@ TRUSTLAB
 
 ![ERC and Sciences Po logos](https://raw.githubusercontent.com/medialab/trustlab/master/logos_partners.jpg)
 
-> The trustlab had a first life under the form of limesurvey experiments which were designed by Anne L'Hôte, Jérôme Hergeux and Yann Algan. To learn more see http://github.com/medialab/mango_trust and : Hergueux, Jérôme, et Nicolas Jacquemet. « Social Preferences in the Online Laboratory: A Randomized Experiment ». Experimental Economics 18, nᵒ 2 (1 juin 2015): 251‑83. https://doi.org/10.1007/s10683-014-9400-5.
+> The trustlab had a first life under the form of limesurvey experiments which were designed by Anne L'Hôte, Jérôme Hergueux and Yann Algan. To learn more see http://github.com/medialab/mango_trust and : Hergueux, Jérôme, et Nicolas Jacquemet. « Social Preferences in the Online Laboratory: A Randomized Experiment ». Experimental Economics 18, nᵒ 2 (1 juin 2015): 251‑83. https://doi.org/10.1007/s10683-014-9400-5.
 
 ### Getting started
 
